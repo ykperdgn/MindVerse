@@ -63,12 +63,11 @@
     <p class="text-green-700 mb-4">
       Bu makale size faydalı olduysa, sosyal medyada paylaşarak daha fazla kişinin
       bu değerli bilgilere ulaşmasına yardımcı olabilirsiniz!
-    </p>
-
-    <div class="flex flex-wrap gap-3">
+    </p>    <div class="flex flex-wrap gap-3">
       <button
         onclick="shareOnTwitter()"
-        class="flex items-center bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors"
+        class="flex items-center bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg"
+        title="Twitter'da paylaş - Yeni sekmede açılır"
       >
         <span class="mr-2">🐦</span>
         Twitter'da Paylaş
@@ -76,7 +75,8 @@
 
       <button
         onclick="shareOnFacebook()"
-        class="flex items-center bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-colors"
+        class="flex items-center bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg"
+        title="Facebook'ta paylaş - Yeni sekmede açılır"
       >
         <span class="mr-2">📘</span>
         Facebook'ta Paylaş
@@ -84,7 +84,8 @@
 
       <button
         onclick="shareOnWhatsApp()"
-        class="flex items-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors"
+        class="flex items-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg"
+        title="WhatsApp'ta paylaş - Uygulama/Web açılır"
       >
         <span class="mr-2">📱</span>
         WhatsApp'ta Paylaş
@@ -92,7 +93,8 @@
 
       <button
         onclick="copyToClipboard()"
-        class="flex items-center bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors"
+        class="flex items-center bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg"
+        title="Makale linkini kopyala"
       >
         <span class="mr-2">🔗</span>
         Linki Kopyala
@@ -134,38 +136,109 @@
     } else {
       showMessage('ℹ️ Bu e-posta adresi zaten kayıtlı.', 'info');
     }
-  }  // Sosyal medya paylaşım fonksiyonları
+  }  // Sosyal medya paylaşım fonksiyonları - Debug Mode
   function shareOnTwitter() {
+    console.log('Twitter buton tıklandı'); // Debug
     const url = window.location.href;
-    const title = document.title.replace(' | MindVerse', '');
+    const title = document.title.replace(' | MindVerse', '').replace(' | MindVerse Daily', '');
     const text = `📖 ${title}`;
-    const hashtags = 'mindverse,blog,bilgi,gelişim';
+    const hashtags = 'mindversedaily,blog,bilgi,gelişim,eğitim';
 
     const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}&hashtags=${hashtags}`;
-    window.open(twitterUrl, 'twitter-share', 'width=550,height=420,scrollbars=yes,resizable=yes');
+    console.log('Twitter URL:', twitterUrl); // Debug
+
+    // Popup açma - daha güvenilir yöntem
+    try {
+      const popup = window.open(twitterUrl, '_blank', 'width=550,height=420,scrollbars=yes,resizable=yes,noopener,noreferrer');
+      console.log('Popup açma denemesi:', popup); // Debug
+
+      // Popup açılamadıysa alternatif yöntem
+      if (!popup || popup.closed || typeof popup.closed === 'undefined') {
+        console.log('Popup bloklandı, yönlendirme yapılıyor'); // Debug
+        // Timeout ile yönlendirme - bazı tarayıcılar için gerekli
+        setTimeout(() => {
+          window.open(twitterUrl, '_blank');
+        }, 100);
+      }
+    } catch (error) {
+      console.error('Twitter paylaşım hatası:', error); // Debug
+      // Son çare - direkt yönlendirme
+      window.location.href = twitterUrl;
+    }
+
+    showMessage('🐦 Twitter paylaşım sayfası açılıyor...', 'info');
   }
 
   function shareOnFacebook() {
+    console.log('Facebook buton tıklandı'); // Debug
     const url = window.location.href;
     const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
-    window.open(facebookUrl, 'facebook-share', 'width=580,height=296,scrollbars=yes,resizable=yes');
-  }
+    console.log('Facebook URL:', facebookUrl); // Debug
 
+    try {
+      const popup = window.open(facebookUrl, '_blank', 'width=580,height=296,scrollbars=yes,resizable=yes,noopener,noreferrer');
+      console.log('Popup açma denemesi:', popup); // Debug
+
+      if (!popup || popup.closed || typeof popup.closed === 'undefined') {
+        console.log('Popup bloklandı, yönlendirme yapılıyor'); // Debug
+        setTimeout(() => {
+          window.open(facebookUrl, '_blank');
+        }, 100);
+      }
+    } catch (error) {
+      console.error('Facebook paylaşım hatası:', error); // Debug
+      window.location.href = facebookUrl;
+    }
+
+    showMessage('📘 Facebook paylaşım sayfası açılıyor...', 'info');
+  }
   function shareOnWhatsApp() {
+    console.log('WhatsApp buton tıklandı'); // Debug
     const url = window.location.href;
-    const title = document.title.replace(' | MindVerse', '');
+    const title = document.title.replace(' | MindVerse', '').replace(' | MindVerse Daily', '');
     const text = `📖 ${title}\n\n${url}`;
 
     // Mobil cihaz kontrolü
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    console.log('Mobil cihaz:', isMobile); // Debug
 
     if (isMobile) {
       // Mobil: WhatsApp uygulamasını aç
-      window.location.href = `whatsapp://send?text=${encodeURIComponent(text)}`;
+      const whatsappMobileUrl = `whatsapp://send?text=${encodeURIComponent(text)}`;
+      console.log('WhatsApp Mobile URL:', whatsappMobileUrl); // Debug
+      try {
+        window.location.href = whatsappMobileUrl;
+        showMessage('📱 WhatsApp uygulaması açılıyor...', 'info');
+      } catch (error) {
+        console.error('WhatsApp mobil hatası:', error); // Debug
+        // Fallback to web version
+        shareWhatsAppWeb(text);
+      }
     } else {
-      // Desktop: WhatsApp Web'i aç
-      window.open(`https://web.whatsapp.com/send?text=${encodeURIComponent(text)}`, 'whatsapp-share');
+      shareWhatsAppWeb(text);
     }
+  }
+
+  function shareWhatsAppWeb(text) {
+    const whatsappUrl = `https://web.whatsapp.com/send?text=${encodeURIComponent(text)}`;
+    console.log('WhatsApp Web URL:', whatsappUrl); // Debug
+
+    try {
+      const popup = window.open(whatsappUrl, '_blank', 'width=800,height=600,scrollbars=yes,resizable=yes,noopener,noreferrer');
+      console.log('WhatsApp popup açma denemesi:', popup); // Debug
+
+      if (!popup || popup.closed || typeof popup.closed === 'undefined') {
+        console.log('WhatsApp popup bloklandı, yönlendirme yapılıyor'); // Debug
+        setTimeout(() => {
+          window.open(whatsappUrl, '_blank');
+        }, 100);
+      }
+    } catch (error) {
+      console.error('WhatsApp web hatası:', error); // Debug
+      window.location.href = whatsappUrl;
+    }
+
+    showMessage('📱 WhatsApp Web açılıyor...', 'info');
   }
 
   function copyToClipboard() {
