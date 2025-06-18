@@ -4,7 +4,7 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  site: 'https://yourdomain.com', // Replace with your site's URL
+  site: 'https://mindverse.vercel.app', // Deploy URL'ini buraya yazabilirsin
   build: {
     outDir: 'dist',
   },

@@ -1,6 +1,5 @@
 ---
 import Layout from '../components/Layout.astro';
-import CategoryCard from '../components/CategoryCard.astro';
 
 const categories = [
   { name: 'Health', url: '/health', title: 'Sağlık', icon: '🏥' },
@@ -10,18 +9,9 @@ const categories = [
   { name: 'Space', url: '/space', title: 'Uzay', icon: '🚀' },
   { name: 'Quotes', url: '/quotes', title: 'Alıntılar', icon: '💭' },
 ];
-
 ---
-<Layout title="MindVerse - Çoklu Niş Bilgi Portalı">
-  <head>
-    <meta name="description" content="MindVerse - Sağlık, aşk, tarih, psikoloji, uzay ve alıntılar hakkında zengin içerikler sunan bilgi portalı. Güncel bilgiler ve uzman tavsiyeleri." />
-    <meta name="keywords" content="sağlık, aşk, tarih, psikoloji, uzay, alıntılar, bilgi, blog" />
-    <meta property="og:title" content="MindVerse - Çoklu Niş Bilgi Portalı" />
-    <meta property="og:description" content="Sağlık, aşk, tarih, psikoloji, uzay ve alıntılar hakkında güncel bilgiler" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-  </head>
 
+<Layout title="MindVerse - Çoklu Niş Bilgi Portalı">
   <header class="text-center py-10 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
     <h1 class="text-5xl font-bold mb-4">🌌 MindVerse</h1>
     <p class="text-xl mb-6">Bilginin sonsuz evrenini keşfedin</p>
@@ -29,7 +19,7 @@ const categories = [
   </header>
 
   <main class="container mx-auto px-4 py-8">
-    {/* Popüler içerikler hızlı erişim */}
+    <!-- Popüler içerikler hızlı erişim -->
     <div class="text-center mb-8">
       <a
         href="/popular"
@@ -42,11 +32,11 @@ const categories = [
       </a>
     </div>
 
-    {/* AdSense ana sayfa reklam alanı */}
-    <div class="col-span-full flex justify-center mb-8">
+    <!-- AdSense ana sayfa reklam alanı -->
+    <div class="flex justify-center mb-8">
       <div class="w-full max-w-lg">
         <ins class="adsbygoogle"
-          style={{ display: 'block' }}
+          style="display: block"
           data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
           data-ad-slot="1234567890"
           data-ad-format="auto"
@@ -79,11 +69,11 @@ const categories = [
       ))}
     </div>
 
-    {/* Alt reklam alanı */}
+    <!-- Alt reklam alanı -->
     <div class="flex justify-center mt-12">
       <div class="w-full max-w-lg">
         <ins class="adsbygoogle"
-          style={{ display: 'block' }}
+          style="display: block"
           data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
           data-ad-slot="1234567890"
           data-ad-format="auto"

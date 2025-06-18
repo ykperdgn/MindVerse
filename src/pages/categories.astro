@@ -16,12 +16,11 @@ const categoryInfo = {
 <Layout title="Tüm Kategoriler">
   <div class="container mx-auto px-4 py-8">
     <h1 class="text-4xl font-bold text-center mb-8">📁 Tüm Kategoriler</h1>
-    
-    {/* Reklam alanı */}
+      <!-- Reklam alanı -->
     <div class="flex justify-center mb-8">
       <div class="w-full max-w-lg">
         <ins class="adsbygoogle"
-          style={{ display: 'block' }}
+          style="display: block"
           data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
           data-ad-slot="1234567890"
           data-ad-format="auto"
@@ -33,7 +32,7 @@ const categoryInfo = {
       {categories.map(category => {
         const info = categoryInfo[category];
         return (
-          <a 
+          <a
             href={`/${category}`}
             class="block bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow border-l-4 border-blue-500 hover:border-blue-600"
           >
