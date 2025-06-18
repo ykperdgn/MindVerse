@@ -1,0 +1,194 @@
+[
+  {
+    "category": "health",
+    "emoji": "🏥",
+    "title": "Health Hakkında 10 Şaşırtıcı Gerçek",
+    "type": "facts",
+    "items": 10,
+    "target_words": 1200
+  },
+  {
+    "category": "health",
+    "emoji": "🏥",
+    "title": "Health İçin 15 Pratik İpucu",
+    "type": "tips",
+    "items": 15,
+    "target_words": 1500
+  },
+  {
+    "category": "health",
+    "emoji": "🏥",
+    "title": "Health Alanında 7 Yaygın Hata",
+    "type": "mistakes",
+    "items": 7,
+    "target_words": 1000
+  },
+  {
+    "category": "health",
+    "emoji": "🏥",
+    "title": "Health Başlangıç Rehberi: 5 Temel Adım",
+    "type": "beginner",
+    "items": 5,
+    "target_words": 800
+  },
+  {
+    "category": "love",
+    "emoji": "❤️",
+    "title": "Love Hakkında 10 Şaşırtıcı Gerçek",
+    "type": "facts",
+    "items": 10,
+    "target_words": 1200
+  },
+  {
+    "category": "love",
+    "emoji": "❤️",
+    "title": "Love İçin 15 Pratik İpucu",
+    "type": "tips",
+    "items": 15,
+    "target_words": 1500
+  },
+  {
+    "category": "love",
+    "emoji": "❤️",
+    "title": "Love Alanında 7 Yaygın Hata",
+    "type": "mistakes",
+    "items": 7,
+    "target_words": 1000
+  },
+  {
+    "category": "love",
+    "emoji": "❤️",
+    "title": "Love Başlangıç Rehberi: 5 Temel Adım",
+    "type": "beginner",
+    "items": 5,
+    "target_words": 800
+  },
+  {
+    "category": "history",
+    "emoji": "📚",
+    "title": "History Hakkında 10 Şaşırtıcı Gerçek",
+    "type": "facts",
+    "items": 10,
+    "target_words": 1200
+  },
+  {
+    "category": "history",
+    "emoji": "📚",
+    "title": "History İçin 15 Pratik İpucu",
+    "type": "tips",
+    "items": 15,
+    "target_words": 1500
+  },
+  {
+    "category": "history",
+    "emoji": "📚",
+    "title": "History Alanında 7 Yaygın Hata",
+    "type": "mistakes",
+    "items": 7,
+    "target_words": 1000
+  },
+  {
+    "category": "history",
+    "emoji": "📚",
+    "title": "History Başlangıç Rehberi: 5 Temel Adım",
+    "type": "beginner",
+    "items": 5,
+    "target_words": 800
+  },
+  {
+    "category": "psychology",
+    "emoji": "🧠",
+    "title": "Psychology Hakkında 10 Şaşırtıcı Gerçek",
+    "type": "facts",
+    "items": 10,
+    "target_words": 1200
+  },
+  {
+    "category": "psychology",
+    "emoji": "🧠",
+    "title": "Psychology İçin 15 Pratik İpucu",
+    "type": "tips",
+    "items": 15,
+    "target_words": 1500
+  },
+  {
+    "category": "psychology",
+    "emoji": "🧠",
+    "title": "Psychology Alanında 7 Yaygın Hata",
+    "type": "mistakes",
+    "items": 7,
+    "target_words": 1000
+  },
+  {
+    "category": "psychology",
+    "emoji": "🧠",
+    "title": "Psychology Başlangıç Rehberi: 5 Temel Adım",
+    "type": "beginner",
+    "items": 5,
+    "target_words": 800
+  },
+  {
+    "category": "space",
+    "emoji": "🚀",
+    "title": "Space Hakkında 10 Şaşırtıcı Gerçek",
+    "type": "facts",
+    "items": 10,
+    "target_words": 1200
+  },
+  {
+    "category": "space",
+    "emoji": "🚀",
+    "title": "Space İçin 15 Pratik İpucu",
+    "type": "tips",
+    "items": 15,
+    "target_words": 1500
+  },
+  {
+    "category": "space",
+    "emoji": "🚀",
+    "title": "Space Alanında 7 Yaygın Hata",
+    "type": "mistakes",
+    "items": 7,
+    "target_words": 1000
+  },
+  {
+    "category": "space",
+    "emoji": "🚀",
+    "title": "Space Başlangıç Rehberi: 5 Temel Adım",
+    "type": "beginner",
+    "items": 5,
+    "target_words": 800
+  },
+  {
+    "category": "quotes",
+    "emoji": "💭",
+    "title": "Quotes Hakkında 10 Şaşırtıcı Gerçek",
+    "type": "facts",
+    "items": 10,
+    "target_words": 1200
+  },
+  {
+    "category": "quotes",
+    "emoji": "💭",
+    "title": "Quotes İçin 15 Pratik İpucu",
+    "type": "tips",
+    "items": 15,
+    "target_words": 1500
+  },
+  {
+    "category": "quotes",
+    "emoji": "💭",
+    "title": "Quotes Alanında 7 Yaygın Hata",
+    "type": "mistakes",
+    "items": 7,
+    "target_words": 1000
+  },
+  {
+    "category": "quotes",
+    "emoji": "💭",
+    "title": "Quotes Başlangıç Rehberi: 5 Temel Adım",
+    "type": "beginner",
+    "items": 5,
+    "target_words": 800
+  }
+]

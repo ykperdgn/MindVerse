@@ -1,13 +1,90 @@
 ---
-const { title } = Astro.props;
+const { title, description, keywords, image, canonicalUrl } = Astro.props;
+
+// SEO meta verileri
+const siteTitle = title ? `${title} | MindVerse` : "MindVerse - Çoklu Niş Bilgi Portalı";
+const siteDescription = description || "Sağlık, aşk, tarih, psikoloji, uzay ve alıntılar kategorilerinde zengin içerikler. Güncel araştırmalar, uzman görüşleri ve pratik öneriler.";
+const siteKeywords = keywords || "sağlık, aşk, tarih, psikoloji, uzay, alıntılar, bilgi, araştırma, uzman, rehber";
+const siteImage = image || "https://mindverse-orcin.vercel.app/social-media/og-image.jpg";
+const currentUrl = canonicalUrl || Astro.url.href;
 ---
 
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{title || "MindVerse"}</title>
-  <meta name="description" content="MindVerse - Çoklu niş bilgi portalı">
+
+  <!-- SEO Meta Tags -->
+  <title>{siteTitle}</title>
+  <meta name="description" content={siteDescription}>
+  <meta name="keywords" content={siteKeywords}>
+  <meta name="author" content="MindVerse">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href={currentUrl}>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content={currentUrl}>
+  <meta property="og:title" content={siteTitle}>
+  <meta property="og:description" content={siteDescription}>
+  <meta property="og:image" content={siteImage}>
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:site_name" content="MindVerse">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content={currentUrl}>
+  <meta property="twitter:title" content={siteTitle}>
+  <meta property="twitter:description" content={siteDescription}>
+  <meta property="twitter:image" content={siteImage}>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <!-- Google Search Console (Doğrulama kodunu buraya ekleyin) -->
+  <meta name="google-site-verification" content="GOOGLE_SEARCH_CONSOLE_CODE" />
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://www.google-analytics.com">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+
+  <!-- Google Analytics (GA4) - Replace with your actual GA4 ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      page_title: document.title,
+      page_location: window.location.href,
+      custom_map: {
+        'custom_parameter_1': 'category',
+        'custom_parameter_2': 'article_type'
+      }
+    });
+  </script>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "MindVerse",
+      "description": "Çoklu niş bilgi portalı - Sağlık, aşk, tarih, psikoloji, uzay ve alıntılar",
+      "url": "https://mindverse-orcin.vercel.app",
+      "publisher": {
+        "@type": "Organization",
+        "name": "MindVerse",
+        "url": "https://mindverse-orcin.vercel.app"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://mindverse-orcin.vercel.app/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+
   <link rel="stylesheet" href="/src/styles/global.css">
 </head>
 <body>

@@ -1,0 +1,52 @@
+{
+  "tracking_start_date": "2025-06-18T22:26:13.985591",
+  "baseline_metrics": {
+    "daily_visitors": 50,
+    "monthly_visitors": 1500,
+    "pages": 55,
+    "articles": 30,
+    "categories": 6,
+    "seo_score": 85,
+    "social_followers": 0
+  },
+  "target_metrics": {
+    "daily_visitors": 500,
+    "monthly_visitors": 15000,
+    "organic_search": 8000,
+    "social_media": 3000,
+    "direct_traffic": 2000,
+    "newsletter_subscribers": 1000,
+    "pages": 120,
+    "articles": 80
+  },
+  "daily_tracking": {},
+  "weekly_reports": {},
+  "key_metrics": [
+    "daily_unique_visitors",
+    "organic_search_traffic",
+    "social_media_traffic",
+    "newsletter_subscribers",
+    "average_session_duration",
+    "bounce_rate",
+    "pages_per_session",
+    "conversion_rate"
+  ],
+  "traffic_sources": {
+    "organic_search": {
+      "current": 60,
+      "target": 70
+    },
+    "social_media": {
+      "current": 20,
+      "target": 25
+    },
+    "direct": {
+      "current": 15,
+      "target": 20
+    },
+    "referral": {
+      "current": 5,
+      "target": 10
+    }
+  }
+}

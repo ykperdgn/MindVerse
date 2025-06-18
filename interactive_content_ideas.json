@@ -1,0 +1,73 @@
+{
+  "polls_surveys": [
+    {
+      "title": "Hangi sağlık konusunda daha fazla içerik görmek istersiniz?",
+      "options": [
+        "Beslenme",
+        "Egzersiz",
+        "Mental Sağlık",
+        "Uyku Hijyeni"
+      ],
+      "category": "health"
+    },
+    {
+      "title": "İlişkilerde en zorlandığınız konu hangisi?",
+      "options": [
+        "İletişim",
+        "Güven",
+        "Zaman Yönetimi",
+        "Empati"
+      ],
+      "category": "love"
+    }
+  ],
+  "quizzes": [
+    {
+      "title": "Sağlık Bilginizi Test Edin",
+      "questions": 10,
+      "category": "health",
+      "reward": "Kişiselleştirilmiş beslenme önerileri"
+    },
+    {
+      "title": "Hangi Tarihsel Döneme Aitsiniz?",
+      "questions": 8,
+      "category": "history",
+      "reward": "Kişilik analizi raporu"
+    }
+  ],
+  "challenges": [
+    {
+      "title": "30 Günlük Sağlıklı Yaşam Challenge",
+      "duration": "30 gün",
+      "daily_tasks": true,
+      "category": "health"
+    },
+    {
+      "title": "7 Günlük Pozitif Düşünce Challenge",
+      "duration": "7 gün",
+      "daily_tasks": true,
+      "category": "psychology"
+    }
+  ],
+  "calculators": [
+    {
+      "title": "BMI Hesaplayıcı",
+      "inputs": [
+        "boy",
+        "kilo"
+      ],
+      "output": "BMI değeri ve öneriler",
+      "category": "health"
+    },
+    {
+      "title": "Günlük Kalori İhtiyacı Hesaplayıcı",
+      "inputs": [
+        "yaş",
+        "cinsiyet",
+        "aktivite_seviyesi"
+      ],
+      "output": "Önerilen kalori miktarı",
+      "category": "health"
+    }
+  ]
+}

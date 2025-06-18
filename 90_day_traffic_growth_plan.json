@@ -1,0 +1,254 @@
+{
+  "overview": {
+    "goal": "90 günde 10x trafik artışı (50 → 500 daily visitors)",
+    "strategy": "Ücretsiz yöntemlerle organik büyüme",
+    "budget": "0 TL (sadece zaman yatırımı)",
+    "success_metrics": {
+      "daily_visitors": 500,
+      "monthly_visitors": 15000,
+      "organic_search": 8000,
+      "social_media": 3000,
+      "direct_traffic": 2000,
+      "newsletter_subscribers": 1000,
+      "pages": 120,
+      "articles": 80
+    }
+  },
+  "phase_1_days_1_30": {
+    "name": "Temel Altyapı ve İçerik Boost",
+    "goals": [
+      "Google Analytics & Search Console kurulumu",
+      "SEO optimizasyonu tamamlama",
+      "20+ yeni makale",
+      "Sosyal medya hesapları aktifleştirme"
+    ],
+    "weekly_tasks": {
+      "week_1": {
+        "priority": "Setup & Optimization",
+        "tasks": [
+          "✅ Google Analytics 4 kurulumu",
+          "✅ Google Search Console kurulumu ve site verification",
+          "✅ Mailchimp hesabı oluştur ve newsletter entegrasyonu",
+          "✅ Twitter, Instagram, LinkedIn hesapları aç",
+          "📝 5 adet FAQ sayfası yaz (Featured Snippet için)",
+          "📝 3 adet listicle makale yaz",
+          "🔧 Site hızı optimizasyonu kontrol"
+        ],
+        "target_metrics": {
+          "new_articles": 8,
+          "daily_visitors": 75,
+          "newsletter_signups": 20
+        }
+      },
+      "week_2": {
+        "priority": "Content Creation Boost",
+        "tasks": [
+          "📝 Günde 1 makale yaz (7 makale/hafta)",
+          "🐦 Günde 3 tweet at",
+          "📷 Instagram'da günde 1 post",
+          "🔗 Her makaleye 3+ internal link ekle",
+          "📊 Google Search Console'da keyword analizi",
+          "📧 İlk newsletter kampanyası gönder",
+          "🎯 Long-tail keyword research"
+        ],
+        "target_metrics": {
+          "new_articles": 7,
+          "daily_visitors": 100,
+          "social_engagement": 50
+        }
+      },
+      "week_3": {
+        "priority": "SEO & Social Media Growth",
+        "tasks": [
+          "📝 5 adet 'How-to' rehber makale",
+          "🔍 Competitor backlink analysis",
+          "📱 Instagram Story ve Reels başlat",
+          "💼 LinkedIn'de article publishing",
+          "📊 Heatmap analizi (Hotjar free plan)",
+          "🎪 İlk interaktif quiz oluştur",
+          "📈 A/B test subject lines"
+        ],
+        "target_metrics": {
+          "new_articles": 5,
+          "daily_visitors": 125,
+          "newsletter_subscribers": 75
+        }
+      },
+      "week_4": {
+        "priority": "First Month Optimization",
+        "tasks": [
+          "📊 İlk ay analytics review",
+          "🔧 Underperforming content optimize et",
+          "🎯 En iyi performing keywords double down",
+          "🤝 İlk guest post opportunities araştır",
+          "📱 Social media scheduler kurulumu",
+          "💌 Email automation sequences test",
+          "🎨 Visual content creation için Canva master"
+        ],
+        "target_metrics": {
+          "new_articles": 5,
+          "daily_visitors": 150,
+          "newsletter_subscribers": 100
+        }
+      }
+    }
+  },
+  "phase_2_days_31_60": {
+    "name": "Sosyal Medya ve Email Marketing",
+    "goals": [
+      "300+ newsletter subscriber",
+      "Günlük sosyal medya paylaşımları",
+      "Featured snippet yakalama",
+      "Backlink building başlangıç"
+    ],
+    "weekly_tasks": {
+      "week_5": {
+        "priority": "Community Building Start",
+        "tasks": [
+          "👥 Sosyal medyada engagement artırma",
+          "🔗 Resource page outreach başlat",
+          "📝 Trend topics üzerine hızlı content",
+          "🎪 Weekly newsletter format optimize",
+          "📊 Google Trends integration",
+          "🤝 Industry influencer engagement",
+          "📱 TikTok account consideration"
+        ],
+        "target_metrics": {
+          "daily_visitors": 200,
+          "social_followers": 200,
+          "newsletter_subscribers": 150
+        }
+      },
+      "week_6": {
+        "priority": "Viral Content Creation",
+        "tasks": [
+          "🔥 Controversial/debate posts oluştur",
+          "📊 'Statistics post' serileri başlat",
+          "🎯 User Generated Content kampanyası",
+          "💬 Comment section optimization",
+          "📧 Re-engagement email campaign",
+          "🔍 Featured snippet optimization",
+          "📱 Cross-platform content repurposing"
+        ],
+        "target_metrics": {
+          "daily_visitors": 250,
+          "viral_potential_posts": 3,
+          "newsletter_subscribers": 200
+        }
+      },
+      "week_7": {
+        "priority": "SEO Domination",
+        "tasks": [
+          "🎯 Google Featured Snippet hunting",
+          "📝 Comprehensive pillar content",
+          "🔗 Internal linking structure optimize",
+          "📊 Competitor gap analysis",
+          "🤝 Backlink building sprint",
+          "📧 Newsletter referral program",
+          "🎪 Interactive content expansion"
+        ],
+        "target_metrics": {
+          "daily_visitors": 300,
+          "featured_snippets": 2,
+          "newsletter_subscribers": 250
+        }
+      },
+      "week_8": {
+        "priority": "Mid-Point Acceleration",
+        "tasks": [
+          "🚀 Best performing content 2.0 versions",
+          "📊 Deep analytics dive + optimization",
+          "🎯 Seasonal content calendar execution",
+          "🤝 Cross-promotion partnerships",
+          "📧 Email list segmentation",
+          "📱 Stories/Reels consistency",
+          "🔍 Long-tail keyword domination"
+        ],
+        "target_metrics": {
+          "daily_visitors": 350,
+          "newsletter_subscribers": 300,
+          "social_reach": 5000
+        }
+      }
+    }
+  },
+  "phase_3_days_61_90": {
+    "name": "Scale ve Optimization",
+    "goals": [
+      "500+ daily visitor",
+      "1000+ newsletter subscriber",
+      "Viral content creation",
+      "Community building"
+    ],
+    "weekly_tasks": {
+      "week_9": {
+        "priority": "Scale & Systematize",
+        "tasks": [
+          "🤖 Content creation workflow automation",
+          "📊 Advanced analytics setup",
+          "🎯 Conversion rate optimization",
+          "🤝 Strategic partnerships",
+          "📧 Advanced email segmentation",
+          "📱 Video content experimentation",
+          "🔍 Voice search optimization"
+        ],
+        "target_metrics": {
+          "daily_visitors": 400,
+          "newsletter_subscribers": 500,
+          "conversion_rate": "3%"
+        }
+      },
+      "week_10": {
+        "priority": "Viral Push",
+        "tasks": [
+          "🔥 Viral content creation sprint",
+          "📊 Data-driven content decisions",
+          "🎪 Interactive tools launch",
+          "🤝 Influencer collaboration",
+          "📧 Referral program optimization",
+          "📱 Live content experimentation",
+          "🎯 Trending hashtags hijacking"
+        ],
+        "target_metrics": {
+          "daily_visitors": 450,
+          "viral_posts": 2,
+          "newsletter_subscribers": 700
+        }
+      },
+      "week_11": {
+        "priority": "Community Excellence",
+        "tasks": [
+          "👥 Community management excellence",
+          "📊 User behavior analysis",
+          "🎯 Personalization implementation",
+          "🤝 User-generated content campaigns",
+          "📧 Loyalty program development",
+          "📱 Multi-platform content mastery",
+          "🔍 Search ranking domination"
+        ],
+        "target_metrics": {
+          "daily_visitors": 475,
+          "newsletter_subscribers": 850,
+          "engagement_rate": "8%"
+        }
+      },
+      "week_12": {
+        "priority": "Goal Achievement",
+        "tasks": [
+          "🎯 500 daily visitor milestone push",
+          "📊 Complete analytics review",
+          "🎪 Success story documentation",
+          "🤝 Future partnership planning",
+          "📧 1000 subscriber celebration",
+          "📱 Platform expansion planning",
+          "🚀 Next 90-day plan creation"
+        ],
+        "target_metrics": {
+          "daily_visitors": 500,
+          "newsletter_subscribers": 1000,
+          "total_articles": 80
+        }
+      }
+    }
+  }
+}

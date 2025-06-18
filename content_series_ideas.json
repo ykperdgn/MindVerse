@@ -1,0 +1,194 @@
+{
+  "category_series": [
+    {
+      "category": "health",
+      "emoji": "🏥",
+      "series": [
+        {
+          "title": "Health Temelleri Serisi",
+          "episodes": 5,
+          "frequency": "haftalık",
+          "target_audience": "başlangıç",
+          "goal": "temel bilgi aktarımı"
+        },
+        {
+          "title": "İleri Seviye Health Serisi",
+          "episodes": 8,
+          "frequency": "2 haftada bir",
+          "target_audience": "ileri",
+          "goal": "derinlemesine analiz"
+        },
+        {
+          "title": "Health Case Study Serisi",
+          "episodes": 6,
+          "frequency": "aylık",
+          "target_audience": "tüm seviyeler",
+          "goal": "gerçek örnekler"
+        }
+      ]
+    },
+    {
+      "category": "love",
+      "emoji": "❤️",
+      "series": [
+        {
+          "title": "Love Temelleri Serisi",
+          "episodes": 5,
+          "frequency": "haftalık",
+          "target_audience": "başlangıç",
+          "goal": "temel bilgi aktarımı"
+        },
+        {
+          "title": "İleri Seviye Love Serisi",
+          "episodes": 8,
+          "frequency": "2 haftada bir",
+          "target_audience": "ileri",
+          "goal": "derinlemesine analiz"
+        },
+        {
+          "title": "Love Case Study Serisi",
+          "episodes": 6,
+          "frequency": "aylık",
+          "target_audience": "tüm seviyeler",
+          "goal": "gerçek örnekler"
+        }
+      ]
+    },
+    {
+      "category": "history",
+      "emoji": "📚",
+      "series": [
+        {
+          "title": "History Temelleri Serisi",
+          "episodes": 5,
+          "frequency": "haftalık",
+          "target_audience": "başlangıç",
+          "goal": "temel bilgi aktarımı"
+        },
+        {
+          "title": "İleri Seviye History Serisi",
+          "episodes": 8,
+          "frequency": "2 haftada bir",
+          "target_audience": "ileri",
+          "goal": "derinlemesine analiz"
+        },
+        {
+          "title": "History Case Study Serisi",
+          "episodes": 6,
+          "frequency": "aylık",
+          "target_audience": "tüm seviyeler",
+          "goal": "gerçek örnekler"
+        }
+      ]
+    },
+    {
+      "category": "psychology",
+      "emoji": "🧠",
+      "series": [
+        {
+          "title": "Psychology Temelleri Serisi",
+          "episodes": 5,
+          "frequency": "haftalık",
+          "target_audience": "başlangıç",
+          "goal": "temel bilgi aktarımı"
+        },
+        {
+          "title": "İleri Seviye Psychology Serisi",
+          "episodes": 8,
+          "frequency": "2 haftada bir",
+          "target_audience": "ileri",
+          "goal": "derinlemesine analiz"
+        },
+        {
+          "title": "Psychology Case Study Serisi",
+          "episodes": 6,
+          "frequency": "aylık",
+          "target_audience": "tüm seviyeler",
+          "goal": "gerçek örnekler"
+        }
+      ]
+    },
+    {
+      "category": "space",
+      "emoji": "🚀",
+      "series": [
+        {
+          "title": "Space Temelleri Serisi",
+          "episodes": 5,
+          "frequency": "haftalık",
+          "target_audience": "başlangıç",
+          "goal": "temel bilgi aktarımı"
+        },
+        {
+          "title": "İleri Seviye Space Serisi",
+          "episodes": 8,
+          "frequency": "2 haftada bir",
+          "target_audience": "ileri",
+          "goal": "derinlemesine analiz"
+        },
+        {
+          "title": "Space Case Study Serisi",
+          "episodes": 6,
+          "frequency": "aylık",
+          "target_audience": "tüm seviyeler",
+          "goal": "gerçek örnekler"
+        }
+      ]
+    },
+    {
+      "category": "quotes",
+      "emoji": "💭",
+      "series": [
+        {
+          "title": "Quotes Temelleri Serisi",
+          "episodes": 5,
+          "frequency": "haftalık",
+          "target_audience": "başlangıç",
+          "goal": "temel bilgi aktarımı"
+        },
+        {
+          "title": "İleri Seviye Quotes Serisi",
+          "episodes": 8,
+          "frequency": "2 haftada bir",
+          "target_audience": "ileri",
+          "goal": "derinlemesine analiz"
+        },
+        {
+          "title": "Quotes Case Study Serisi",
+          "episodes": 6,
+          "frequency": "aylık",
+          "target_audience": "tüm seviyeler",
+          "goal": "gerçek örnekler"
+        }
+      ]
+    }
+  ],
+  "cross_category_series": [
+    {
+      "title": "Yaşam Kalitesi Artırma Serisi",
+      "categories": [
+        "health",
+        "psychology",
+        "love"
+      ],
+      "episodes": 12,
+      "goal": "holistik yaklaşım"
+    },
+    {
+      "title": "Bilim ve Tarih Kesişimi Serisi",
+      "categories": [
+        "history",
+        "space",
+        "psychology"
+      ],
+      "episodes": 8,
+      "goal": "interdisipliner perspektif"
+    }
+  ],
+  "implementation_guide": {
+    "planning": "Her seri için detaylı içerik takvimi oluştur",
+    "consistency": "Yayın programına sıkı sıkıya bağlı kal",
+    "promotion": "Her bölümde önceki ve sonraki bölümlere link ver",
+    "engagement": "Seri boyunca okuyucu feedback'i topla"
+  }
+}

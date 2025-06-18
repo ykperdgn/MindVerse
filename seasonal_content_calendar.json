@@ -1,0 +1,84 @@
+{
+  "spring": {
+    "months": [
+      "mart",
+      "nisan",
+      "mayıs"
+    ],
+    "themes": [
+      "yenilenme",
+      "başlangıçlar",
+      "doğa"
+    ],
+    "content_ideas": {
+      "health": [
+        "Bahar detoksu",
+        "Açık hava sporları",
+        "Alerjiler"
+      ],
+      "psychology": [
+        "Motivasyon artırma",
+        "Yeni hedefler",
+        "Pozitif enerji"
+      ],
+      "love": [
+        "Yeni ilişkiler",
+        "Romantik aktiviteler",
+        "İletişim"
+      ],
+      "history": [
+        "Tarihte bahar",
+        "Yeniden doğuş hikayeleri"
+      ],
+      "space": [
+        "Bahar takımyıldızları",
+        "Gezegen gözlemleri"
+      ],
+      "quotes": [
+        "Yenilenme sözleri",
+        "Motivasyon alıntıları"
+      ]
+    }
+  },
+  "summer": {
+    "months": [
+      "haziran",
+      "temmuz",
+      "ağustos"
+    ],
+    "themes": [
+      "enerji",
+      "aktivite",
+      "sosyalleşme"
+    ],
+    "content_ideas": {
+      "health": [
+        "Yaz beslenme",
+        "Su tüketimi",
+        "Güneş koruması"
+      ],
+      "psychology": [
+        "Sosyal psikoloji",
+        "Tatil psikolojisi",
+        "Mutluluk"
+      ],
+      "love": [
+        "Yaz aşkları",
+        "Tatil ilişkileri",
+        "Açık hava randevuları"
+      ],
+      "history": [
+        "Yaz savaşları",
+        "Antik olimpiyatlar"
+      ],
+      "space": [
+        "Yaz gökyüzü",
+        "Meteor yağmurları"
+      ],
+      "quotes": [
+        "Özgürlük sözleri",
+        "Macera alıntıları"
+      ]
+    }
+  }
+}
