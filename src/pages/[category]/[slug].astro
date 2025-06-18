@@ -9,12 +9,19 @@ export async function getStaticPaths() {
   const paths = [];
 
   for (const category of categories) {
-    const posts = await getCollection(category);
-    for (const post of posts) {
-      paths.push({
-        params: { category, slug: post.slug },
-        props: { post }
-      });
+    try {
+      const posts = await getCollection(category);
+      for (const post of posts) {
+        // Sadece geçerli slug'ı olan postları dahil et
+        if (post.slug && post.slug.trim() !== '') {
+          paths.push({
+            params: { category, slug: post.slug },
+            props: { post }
+          });
+        }
+      }
+    } catch (error) {
+      console.warn(`Error loading category ${category}:`, error);
     }
   }
 

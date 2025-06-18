@@ -1,18 +1,20 @@
 ---
-title: İletişim
+import Layout from '../components/Layout.astro';
 ---
 
-<main class="prose mx-auto my-12">
-  <h1>İletişim</h1>
-  <p>Her türlü görüş, öneri ve iş birliği talepleriniz için aşağıdaki e-posta adresinden bize ulaşabilirsiniz:</p>
-  <ul>
-    <li><strong>E-posta:</strong> <a href="mailto:info@mindversedaily.com">info@mindversedaily.com</a></li>
-  </ul>
-  <h2>İletişim Formu</h2>
-  <form name="contact" method="POST" data-netlify="true" class="flex flex-col gap-4 max-w-md">
-    <input type="text" name="name" placeholder="Adınız" required class="border p-2 rounded" />
-    <input type="email" name="email" placeholder="E-posta adresiniz" required class="border p-2 rounded" />
-    <textarea name="message" placeholder="Mesajınız" required class="border p-2 rounded"></textarea>
-    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Gönder</button>
-  </form>
-</main>
+<Layout title="İletişim - MindVerse Daily">
+  <main class="prose mx-auto my-12">
+    <h1>İletişim</h1>
+    <p>Her türlü görüş, öneri ve iş birliği talepleriniz için aşağıdaki e-posta adresinden bize ulaşabilirsiniz:</p>
+    <ul>
+      <li><strong>E-posta:</strong> <a href="mailto:info@mindversedaily.com">info@mindversedaily.com</a></li>
+    </ul>
+    <h2>İletişim Formu</h2>
+    <form name="contact" method="POST" data-netlify="true" class="flex flex-col gap-4 max-w-md">
+      <input type="text" name="name" placeholder="Adınız" required class="border p-2 rounded" />
+      <input type="email" name="email" placeholder="E-posta adresiniz" required class="border p-2 rounded" />
+      <textarea name="message" placeholder="Mesajınız" required class="border p-2 rounded"></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Gönder</button>
+    </form>
+  </main>
+</Layout>

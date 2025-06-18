@@ -596,9 +596,10 @@ tags: ['{category}', 'rehber', 'uzman-tavsiyeleri']
                 'Felsefe Sözleri',
                 'Başarı Alıntıları',
                 'Yaşam Hikmeti',
-                'İlham Verici Sözler'
-            ]
-        }        # Rastgele topic seç
+                'İlham Verici Sözler'            ]
+        }
+
+        # Rastgele topic seç
         topic = random.choice(topics.get(category, ['Genel Konu']))
 
         # İçerik üret
@@ -610,18 +611,19 @@ tags: ['{category}', 'rehber', 'uzman-tavsiyeleri']
         print(f"✅ {category} kategorisinde '{topic}' makalesi oluşturuldu!")
 
     def schedule_content_generation(self):
-        """İçerik üretimi programlama"""        # TEST - 3 dakika sonra
-        schedule.every().day.at("23:20").do(self.generate_daily_content)
+        """İçerik üretimi programlama"""
+        # TEST - Birkaç dakika sonra
+        schedule.every().day.at("02:40").do(self.generate_daily_content)
 
-        # Normal çalışma saati
-        schedule.every().day.at("23:00").do(self.generate_daily_content)
+        # Normal çalışma saati (gece geç saat)
+        schedule.every().day.at("02:30").do(self.generate_daily_content)
 
         # Hafta sonu ekstra makale
         schedule.every().saturday.at("15:00").do(self.generate_daily_content)
 
         print("📅 Otomatik içerik üretimi programlandı:")
-        print("   - TEST: Bugün 23:20 (3 dakika sonra!)")
-        print("   - Normal: Her gün 23:00")
+        print("   - TEST: Bugün 02:40 (Türkiye saati)")
+        print("   - Normal: Her gün 02:30 (gece sessiz saat)")
         print("   - Cumartesi 15:00: Ekstra makale")
 
         while True:
