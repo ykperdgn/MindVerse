@@ -136,9 +136,7 @@ class AutoContentGenerator:
                 "max_length": 800,
                 "temperature": 0.7
             }
-        }
-
-        response = requests.post(
+        }        response = requests.post(
             self.ai_apis['huggingface']['url'],
             headers=headers,
             json=payload,
@@ -148,26 +146,101 @@ class AutoContentGenerator:
         if response.status_code == 200:
             result = response.json()
             if isinstance(result, list) and len(result) > 0:
-                return result[0].get('generated_text', '').replace(prompt, '').strip()        # Fallback to template
+                return result[0].get('generated_text', '').replace(prompt, '').strip()
+
+        # Fallback to template
         return self.generate_template_content(topic, category)
 
     def generate_template_content(self, topic, category):
-        """Template tabanlı içerik üretimi - Uzun ve detaylı makaleler"""
-        templates = self.content_templates.get(category, [])
-        if not templates:
-            # Generic template - Daha uzun ve detaylı
-            content = f"""
-## {topic}
+        """Template tabanlı içerik üretimi - Her zaman uzun ve detaylı makaleler"""
 
-{topic} konusu günümüzde büyük önem taşımaktadır. Bu kapsamlı rehberde {topic.lower()} hakkında derinlemesine bilgiler, uzman önerileri ve pratik çözümler sunacağız.
+        # Her kategori için zengin topic listesi
+        category_topics = {
+            'health': [
+                'Bağışıklık Sistemini Güçlendirme',
+                'Kalp Sağlığını Koruma',
+                'Stres Yönetimi Teknikleri',
+                'Sağlıklı Beslenme Alışkanlıkları',
+                'Düzenli Egzersizin Faydaları',
+                'Uyku Kalitesini İyileştirme',
+                'Mental Sağlık ve Fiziksel Aktivite',
+                'Detoksifikasyon ve Temizlik',
+                'Yaşlanma Karşıtı Stratejiler'
+            ],
+            'psychology': [
+                'Motivasyon Artırma Yöntemleri',
+                'Özgüven Geliştirme Teknikleri',
+                'Anksiyete ile Başa Çıkma',
+                'Pozitif Düşünce Alışkanlıkları',
+                'Duygusal Zeka Geliştirme',
+                'Mindfulness ve Meditasyon',
+                'Karar Verme Psikolojisi',
+                'Sosyal Beceri Geliştirme',
+                'Öfke Yönetimi Stratejileri'
+            ],
+            'love': [
+                'Etkili İletişim Kurma',
+                'Güven İnşa Etme Yolları',
+                'Çatışma Çözüme Yaklaşımları',
+                'Romantizmi Canlı Tutma',
+                'Duygusal Bağ Güçlendirme',
+                'Karşılıklı Anlayış Geliştirme',
+                'İlişkilerde Sınır Belirleme',
+                'Aşkın Nörokimyası',
+                'Uzun Mesafeli İlişkiler'
+            ],
+            'history': [
+                'Antik Medeniyetler',
+                'Tarihi Keşifler',
+                'Büyük Savaşlar',
+                'Kültürel Dönüşümler',
+                'Bilimsel Devrimler',
+                'İmparatorlukların Yükselişi',
+                'Teknolojik İlerlemeler',
+                'Sosyal Hareketler'
+            ],
+            'space': [
+                'Gezegen Keşifleri',
+                'Uzay Teknolojileri',
+                'Astronomi Gözlemleri',
+                'Mars Misyonları',
+                'Kara Delik Araştırmaları',
+                'Galaksi Sistemleri',
+                'Uzaydaki Yaşam Arayışı',
+                'Kuantum Fiziği'
+            ],
+            'quotes': [
+                'Motivasyonel Alıntılar',
+                'Felsefe Sözleri',
+                'Başarı Alıntıları',
+                'Yaşam Hikmeti',
+                'İlham Verici Sözler',
+                'Büyük Düşünürler',
+                'Modern Motivasyon',
+                'Antik Hikmetler'
+            ]
+        }
+
+        # Seçilen kategoriden rastgele topic al veya verilen topic'i kullan
+        if topic in category_topics.get(category, []):
+            selected_topic = topic
+        else:
+            # Eğer verilen topic listede yoksa, kategoriye uygun rastgele birini seç
+            selected_topic = random.choice(category_topics.get(category, [topic]))
+
+        # Her zaman uzun ve detaylı makale üret
+        content = f"""
+## {selected_topic}
+
+{selected_topic} konusu günümüzde büyük önem taşımaktadır. Bu kapsamlı rehberde {selected_topic.lower()} hakkında derinlemesine bilgiler, uzman önerileri ve pratik çözümler sunacağız.
 
 ### Giriş
 
-Modern yaşamın karmaşık dinamikleri içinde {topic.lower()} konusu, hem bireysel gelişim hem de genel yaşam kalitesi açısından kritik bir rol oynamaktadır. Son yıllarda yapılan araştırmalar, bu alandaki gelişmelerin ne kadar önemli olduğunu gözler önüne sermektedir.
+Modern yaşamın karmaşık dinamikleri içinde {selected_topic.lower()} konusu, hem bireysel gelişim hem de genel yaşam kalitesi açısından kritik bir rol oynamaktadır. Son yıllarda yapılan araştırmalar, bu alandaki gelişmelerin ne kadar önemli olduğunu gözler önüne sermektedir.
 
 ### Temel Prensipler ve Bilimsel Yaklaşım
 
-{topic} ile ilgili temel bilgiler ve güncel bilimsel yaklaşımlar şu şekilde özetlenebilir:
+{selected_topic} ile ilgili temel bilgiler ve güncel bilimsel yaklaşımlar şu şekilde özetlenebilir:
 
 #### 1. Teorik Temeller
 - Konuyla ilgili temel kavramları anlamak
@@ -214,7 +287,7 @@ Modern yaşamın karmaşık dinamikleri içinde {topic.lower()} konusu, hem bire
 
 ### Önemli Hususlar ve Dikkat Edilmesi Gerekenler
 
-{topic} konusunda dikkat edilmesi gereken kritik noktalar:
+{selected_topic} konusunda dikkat edilmesi gereken kritik noktalar:
 
 - **Bilimsel Yaklaşım:** Kanıtlanmış yöntemleri tercih edin ve spekülatif bilgilerden kaçının
 - **Bireyselleştirme:** Her bireyin farklı ihtiyaçları olduğunu göz önünde bulundurun
@@ -233,16 +306,20 @@ Bu alanda sıkça karşılaşılan hatalar ve bunlara yönelik çözüm önerile
 
 ### Gelecek Perspektifleri ve Trendler
 
-{topic} alanında gelecekte beklenen gelişmeler:
+{selected_topic} alanında gelecekte beklenen gelişmeler:
 
 - Teknolojik yeniliklerin rolü
 - Bilimsel araştırmalardaki yeni bulgular
 - Toplumsal değişimlerin etkileri
 - Küresel trendler ve yerel uygulamalar
 
+### Kategori Özel İçerik - {category.title()}
+
+{self._get_category_specific_content(category, selected_topic)}
+
 ### Sonuç ve Eylem Planı
 
-{topic} hakkında edindiğiniz bu kapsamlı bilgileri pratik hayatınızda uygulamaya geçirmek için:
+{selected_topic} hakkında edindiğiniz bu kapsamlı bilgileri pratik hayatınızda uygulamaya geçirmek için:
 
 1. **Kısa Vadeli Hedefler (1-3 ay):**
    - Temel kavramları öğrenin
@@ -259,51 +336,152 @@ Bu alanda sıkça karşılaşılan hatalar ve bunlara yönelik çözüm önerile
    - Deneyimlerinizi başkalarıyla paylaşın
    - Sürekli öğrenme ve gelişim sürecini devam ettirin
 
-Unutmayın ki her bireyin ihtiyaçları farklıdır ve kişiselleştirilmiş yaklaşımlar her zaman daha etkili sonuçlar verir. Bu nehtde daha fazla bilgi için diğer makalelerimizi inceleyebilir, uzman tavsiyeleri alabilir ve sürekli öğrenme yolculuğunuza devam edebilirsiniz.
+Unutmayın ki her bireyin ihtiyaçları farklıdır ve kişiselleştirilmiş yaklaşımlar her zaman daha etkili sonuçlar verir. Bu konuda daha fazla bilgi için diğer makalelerimizi inceleyebilir, uzman tavsiyeleri alabilir ve sürekli öğrenme yolculuğunuza devam edebilirsiniz.
 
 **Önemli Not:** Bu rehberdeki öneriler genel bilgilendirme amaçlıdır. Spesifik durumlar için mutlaka uzman görüşü alınmalıdır.
 """
-        else:
-            template = random.choice(templates)
-            topic_item = random.choice(template['topics'])
-            content = f"""
-## {topic_item}
-
-{topic_item} konusu modern yaşamın önemli bir parçasıdır. Bu rehberde {topic_item.lower()} hakkında kapsamlı bilgiler bulacaksınız.
-
-### Temel Yaklaşımlar
-
-Uzmanlar {topic_item.lower()} konusunda şu temel yaklaşımları önermektedir:
-
-1. **Bilimsel Temeller**: Kanıtlanmış yöntemleri tercih edin
-2. **Kişisel Uyum**: Bireysel ihtiyaçlarınıza göre adapte edin
-3. **Süreklilik**: Düzenli uygulamaya önem verin
-4. **Sabır**: Sonuçlar için zaman tanıyın
-
-### Pratik Uygulamalar
-
-{topic_item} için önerilen praktik uygulamalar:
-
-- Günlük rutinler oluşturun
-- Hedeflerinizi belirleyin
-- İlerlemenizi takip edin
-- Gerektiğinde destek alın
-
-### Yaygın Hatalar
-
-Bu konuda yapılan yaygın hatalardan kaçının:
-
-- Aşırı beklentiler
-- Tutarsız uygulama
-- Uzman desteğini ihmal etme
-- Bireysel farklılıkları görmezden gelme
-
-### Sonuç ve Öneriler
-
-{topic_item} konusunda başarılı olmak için sabırlı, tutarlı ve bilgili yaklaşım sergilemek önemlidir. Bu rehberdeki önerileri hayatınıza adapte ederek olumlu değişiklikler yaratabilirsiniz.
-"""
 
         return content.strip()
+
+    def _get_category_specific_content(self, category, topic):
+        """Kategori-spesifik içerik üretir"""
+        category_content = {
+            'health': f"""
+#### Sağlık Uzmanlarının Önerileri
+
+{topic} konusunda sağlık uzmanları şu önerilerde bulunmaktadır:
+
+- **Beslenme:** Dengeli ve sağlıklı beslenme alışkanlıkları
+- **Egzersiz:** Düzenli fiziksel aktivite programları
+- **Uyku:** Kaliteli ve yeterli uyku düzeni
+- **Stres Yönetimi:** Etkili stres azaltma teknikleri
+- **Periyodik Kontrol:** Düzenli sağlık muayeneleri
+
+#### Bilimsel Araştırmalar
+
+Son araştırmaların gösterdiği üzere, {topic.lower()} konusunda yapılan çalışmalar umut verici sonuçlar ortaya koymaktadır. Özellikle:
+
+- Kapsamlı veri analizleri
+- Uzun vadeli gözlem çalışmaları
+- Klinik test sonuçları
+- Meta-analiz bulguları""",
+
+            'psychology': f"""
+#### Psikolojik Yaklaşımlar
+
+{topic} konusunda psikoloji alanından öneriler:
+
+- **Bilişsel Terapi:** Düşünce kalıplarını yeniden yapılandırma
+- **Davranışsal Teknikler:** Pozitif alışkanlık oluşturma
+- **Mindfulness:** Farkındalık ve meditasyon pratikleri
+- **Sosyal Destek:** İnsan ilişkilerinin önemi
+- **Kişisel Gelişim:** Sürekli öğrenme ve büyüme
+
+#### Psikolojik Araştırmalar
+
+Yapılan psikolojik araştırmalar {topic.lower()} konusunda şu sonuçları ortaya koymaktadır:
+
+- Nörolojik etki mekanizmaları
+- Davranışsal değişim modelleri
+- Sosyal psikoloji bulguları
+- Gelişimsel psikoloji perspektifleri""",
+
+            'love': f"""
+#### İlişki Uzmanlarının Tavsiyeleri
+
+{topic} konusunda ilişki uzmanları şu önerilerde bulunmaktadır:
+
+- **İletişim:** Açık ve dürüst iletişim kurma
+- **Empati:** Karşılıklı anlayış geliştirme
+- **Kalite Zaman:** Birlikte geçirilen anlamlı zamanlar
+- **Güven:** Karşılıklı güven inşa etme
+- **Büyüme:** Birlikte gelişim ve büyüme
+
+#### Aşk ve İlişki Araştırmaları
+
+Modern araştırmalar {topic.lower()} konusunda şu bulgulara işaret etmektedir:
+
+- Nörobiyolojik süreçler
+- Bağlanma teorileri
+- İletişim kalıpları
+- Uzun vadeli ilişki başarı faktörleri""",
+
+            'history': f"""
+#### Tarihçi Perspektifleri
+
+{topic} konusunda tarih uzmanları şu yaklaşımları benimser:
+
+- **Kaynak Analizi:** Birincil ve ikincil kaynakların incelenmesi
+- **Bağlam:** Tarihsel olayların çağdaş koşullar içinde değerlendirilmesi
+- **Karşılaştırmalı Analiz:** Farklı dönem ve bölgelerle karşılaştırma
+- **Süreklilik:** Tarihsel süreçlerin günümüze etkileri
+- **Objektiflik:** Önyargısız ve bilimsel yaklaşım
+
+#### Tarihsel Araştırmalar
+
+{topic.lower()} konusundaki son tarihsel araştırmalar:
+
+- Arkeolojik bulgular
+- Yeni keşfedilen belgeler
+- Teknolojik analiz yöntemleri
+- İnterdisipliner çalışmalar""",
+
+            'space': f"""
+#### Uzay Bilimcilerinin Görüşleri
+
+{topic} konusunda uzay bilimcileri şu yaklaşımları önerir:
+
+- **Gözlem:** Sistematik ve teknoloji destekli gözlemler
+- **Teorik Modeller:** Matematiksel ve fiziksel modelleme
+- **Deneysel Araştırma:** Laboratuvar ve uzay misyonları
+- **Teknolojik Yenilik:** Sürekli teknoloji geliştirme
+- **Uluslararası İşbirliği:** Küresel bilimsel ortaklıklar
+
+#### Uzay Araştırmaları
+
+{topic.lower()} alanındaki güncel araştırmalar:
+
+- Teleskop gözlemleri
+- Uzay misyonu verileri
+- Teorik fizik çalışmaları
+- Teknolojik gelişimler""",
+
+            'quotes': f"""
+#### Büyük Düşünürlerin Sözleri
+
+{topic} konusunda tarih boyunca büyük düşünürler şu sözleri söylemiştir:
+
+- **Antik Filozoflar:** Yaşam hikmeti ve değerler
+- **Modern Myasgalarımızler:** Çağdaş görüşler ve perspektifler
+- **Bilim İnsanları:** Akıl ve mantık temelli yaklaşımlar
+- **Sanatçılar:** Yaratıcılık ve ilham
+- **Liderler:** Vizyoner düşünce ve liderlik
+
+#### Motivasyonel Araştırmalar
+
+{topic.lower()} konusundaki motivasyon araştırmaları:
+
+- Psikolojik etki mekanizmaları
+- Davranışsal değişim süreçleri
+- Başarı hikayeleri analizi
+- Kişisel gelişim modelleri"""
+        }
+
+        return category_content.get(category, f"""
+#### Uzman Değerlendirmeleri
+
+{topic} konusunda uzmanlar genel olarak şu yaklaşımları önermektedir:
+
+- Bilimsel temelli yaklaşımlar
+- Kanıtlanmış metodolojiler
+- Sürekli öğrenme anlayışı
+- Pratik uygulama becerileri
+- Eleştirel düşünme yetenekleri
+
+#### Araştırma Sonuçları
+
+Bu alandaki son araştırmalar umut verici sonuçlar göstermektedir ve {topic.lower()} konusunda yeni perspektifler sunmaktadır.
+""")
 
     def create_article_file(self, title, content, category):
         """Makale dosyası oluşturma"""

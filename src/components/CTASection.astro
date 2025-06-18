@@ -183,7 +183,6 @@
       fallbackCopyToClipboard(url);
     }
   }
-
   function fallbackCopyToClipboard(url) {
     const textArea = document.createElement('textarea');
     textArea.value = url;
@@ -205,15 +204,6 @@
       showMessage('❌ Link kopyalanamadı. Manuel olarak kopyalayın.', 'error');
     }
 
-    document.body.removeChild(textArea);
-  }
-    textArea.select();
-    try {
-      document.execCommand('copy');
-      showMessage('🔗 Link başarıyla kopyalandı!', 'success');
-    } catch (err) {
-      showMessage('❌ Link kopyalanamadı. Manuel olarak kopyalayın.', 'error');
-    }
     document.body.removeChild(textArea);
   }
 
