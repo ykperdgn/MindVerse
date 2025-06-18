@@ -1,0 +1,94 @@
+---
+import Layout from '../components/Layout.astro';
+import CategoryCard from '../components/CategoryCard.astro';
+
+const categories = [
+  { name: 'Health', url: '/health', title: 'Sağlık', icon: '🏥' },
+  { name: 'Love', url: '/love', title: 'Aşk & İlişkiler', icon: '❤️' },
+  { name: 'History', url: '/history', title: 'Tarih', icon: '📚' },
+  { name: 'Psychology', url: '/psychology', title: 'Psikoloji', icon: '🧠' },
+  { name: 'Space', url: '/space', title: 'Uzay', icon: '🚀' },
+  { name: 'Quotes', url: '/quotes', title: 'Alıntılar', icon: '💭' },
+];
+
+---
+<Layout title="MindVerse - AI Destekli Bilgi Portalı">
+  <head>
+    <meta name="description" content="MindVerse - Sağlık, aşk, tarih, psikoloji, uzay ve alıntılar hakkında AI destekli bilgi portalı. Güncel içerikler ve uzman tavsiyeleri." />
+    <meta name="keywords" content="sağlık, aşk, tarih, psikoloji, uzay, alıntılar, bilgi, blog, AI" />
+    <meta property="og:title" content="MindVerse - AI Destekli Bilgi Portalı" />
+    <meta property="og:description" content="Sağlık, aşk, tarih, psikoloji, uzay ve alıntılar hakkında güncel bilgiler" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+
+  <header class="text-center py-10 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+    <h1 class="text-5xl font-bold mb-4">🌌 MindVerse</h1>
+    <p class="text-xl mb-6">Bilginin sonsuz evrenini keşfedin</p>
+    <p class="text-lg opacity-90">AI destekli içerikler • Güncel bilgiler • Uzman tavsiyeleri</p>
+  </header>
+
+  <main class="container mx-auto px-4 py-8">
+    {/* Popüler içerikler hızlı erişim */}
+    <div class="text-center mb-8">
+      <a
+        href="/popular"
+        class="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all transform hover:scale-105 shadow-lg"
+      >
+        🔥 Popüler İçerikler
+        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+
+    {/* AdSense ana sayfa reklam alanı */}
+    <div class="col-span-full flex justify-center mb-8">
+      <div class="w-full max-w-lg">
+        <ins class="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+          data-ad-slot="1234567890"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {categories.map(category => (
+        <a
+          href={category.url}
+          class="block bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all transform hover:scale-105 border-l-4 border-blue-500"
+        >
+          <div class="text-center">
+            <div class="text-4xl mb-4">{category.icon}</div>
+            <h2 class="text-xl font-bold mb-2 text-gray-800">{category.title}</h2>
+            <p class="text-gray-600 text-sm">
+              {category.name === 'Health' && 'Sağlıklı yaşam ipuçları ve medikal bilgiler'}
+              {category.name === 'Love' && 'İlişkiler, aşk ve duygusal bağlar hakkında'}
+              {category.name === 'History' && 'Tarihi olaylar ve kişiler'}
+              {category.name === 'Psychology' && 'İnsan davranışları ve zihin'}
+              {category.name === 'Space' && 'Uzay bilimleri ve astronomi'}
+              {category.name === 'Quotes' && 'İlham verici sözler ve alıntılar'}
+            </p>
+            <div class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded text-sm">
+              Keşfet →
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    {/* Alt reklam alanı */}
+    <div class="flex justify-center mt-12">
+      <div class="w-full max-w-lg">
+        <ins class="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+          data-ad-slot="1234567890"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      </div>
+    </div>
+  </main>
+</Layout>

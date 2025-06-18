@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Yasaklı alanlar (opsiyonel)
+# Disallow: /admin/
+# Disallow: /private/

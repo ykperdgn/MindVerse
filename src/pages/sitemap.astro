@@ -1,0 +1,51 @@
+---
+import Layout from '../components/Layout.astro';
+---
+
+<Layout title="Site Haritası">
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold text-center mb-8">🗺️ Site Haritası</h1>
+    
+    <div class="max-w-4xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-2xl font-bold mb-4 text-blue-600">Ana Sayfalar</h2>
+          <ul class="space-y-2">
+            <li><a href="/" class="text-blue-500 hover:underline">🏠 Ana Sayfa</a></li>
+            <li><a href="/popular" class="text-blue-500 hover:underline">🔥 Popüler İçerikler</a></li>
+            <li><a href="/categories" class="text-blue-500 hover:underline">📁 Tüm Kategoriler</a></li>
+            <li><a href="/sitemap" class="text-blue-500 hover:underline">🗺️ Site Haritası</a></li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-2xl font-bold mb-4 text-green-600">Kategoriler</h2>
+          <ul class="space-y-2">
+            <li><a href="/health" class="text-blue-500 hover:underline">🏥 Sağlık</a></li>
+            <li><a href="/love" class="text-blue-500 hover:underline">❤️ Aşk & İlişkiler</a></li>
+            <li><a href="/history" class="text-blue-500 hover:underline">📚 Tarih</a></li>
+            <li><a href="/psychology" class="text-blue-500 hover:underline">🧠 Psikoloji</a></li>
+            <li><a href="/space" class="text-blue-500 hover:underline">🚀 Uzay</a></li>
+            <li><a href="/quotes" class="text-blue-500 hover:underline">💭 Alıntılar</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 bg-gray-50 rounded-lg p-6">
+        <h2 class="text-2xl font-bold mb-4 text-purple-600">Öne Çıkan İçerikler</h2>
+        <div class="grid md:grid-cols-2 gap-4">
+          <ul class="space-y-2">
+            <li><a href="/health/2025-06-18-01" class="text-blue-500 hover:underline">Sağlıklı Yaşamın 5 Altın Kuralı</a></li>
+            <li><a href="/love/2025-06-18-01" class="text-blue-500 hover:underline">Aşkın Bilimi: Beyinde Neler Oluyor?</a></li>
+            <li><a href="/space/2025-06-18-01" class="text-blue-500 hover:underline">Evrenin Sırları: Karanlık Madde</a></li>
+          </ul>
+          <ul class="space-y-2">
+            <li><a href="/psychology/2025-06-18-01" class="text-blue-500 hover:underline">Psikolojik Dayanıklılık Nedir?</a></li>
+            <li><a href="/history/2025-06-18-01" class="text-blue-500 hover:underline">Tarihte Bugün: 18 Haziran</a></li>
+            <li><a href="/quotes/2025-06-18-01" class="text-blue-500 hover:underline">Günün Sözü</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
