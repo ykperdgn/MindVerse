@@ -131,12 +131,13 @@ class AutoContentGenerator:
         """
 
         payload = {
-            "inputs": prompt,
-            "parameters": {
+            "inputs": prompt,            "parameters": {
                 "max_length": 800,
                 "temperature": 0.7
             }
-        }        response = requests.post(
+        }
+
+        response = requests.post(
             self.ai_apis['huggingface']['url'],
             headers=headers,
             json=payload,
