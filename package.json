@@ -1,7 +1,7 @@
 {
   "name": "mindverse_blog",
   "version": "1.0.0",
-  "description": "An AI-powered multi-niche content portal.",
+  "description": "MindVerse - Çoklu kategorili bilgi portalı. Sağlık, aşk, tarih, psikoloji, uzay ve alıntılar kategorilerinde zengin içerikler.",
   "main": "src/pages/index.astro",
   "scripts": {
     "dev": "astro dev --port 4322",
@@ -21,11 +21,16 @@
     "eslint-plugin-prettier": "^4.0.0"
   },
   "keywords": [
-    "AI",
     "blog",
     "content",
     "portal",
-    "multi-niche"
+    "multi-niche",
+    "sağlık",
+    "aşk",
+    "tarih",
+    "psikoloji",
+    "uzay",
+    "alıntılar"
   ],
   "author": "Your Name",
   "license": "MIT"

@@ -1,11 +1,11 @@
-# 🌌 MindVerse - AI Destekli Bilgi Portalı
+# 🌌 MindVerse - Çoklu Niş Bilgi Portalı
 
-MindVerse, sağlık, aşk, tarih, psikoloji, uzay ve alıntılar kategorilerinde AI destekli içerikler sunan çok nişli bir bilgi portalıdır. Astro ve Tailwind CSS kullanılarak modern ve responsive bir deneyim sunmak üzere geliştirilmiştir.
+MindVerse, sağlık, aşk, tarih, psikoloji, uzay ve alıntılar kategorilerinde zengin içerikler sunan çok nişli bir bilgi portalıdır. Astro ve Tailwind CSS kullanılarak modern ve responsive bir deneyim sunmak üzere geliştirilmiştir.
 
 ## ✨ Özellikler
 
 - 🏥 **6 Farklı Kategori**: Sağlık, Aşk, Tarih, Psikoloji, Uzay, Alıntılar
-- 🤖 **AI Destekli İçerik**: Otomatik içerik üretimi
+- 📝 **Zengin İçerik**: Otomatik içerik üretimi sistemi
 - 🔍 **Kategoriye Özel Arama**: Her kategoride gelişmiş arama
 - 🔥 **Popüler İçerikler**: Görüntülenme bazlı sıralama
 - 💬 **Yorum Sistemi**: Kullanıcı etkileşimi
@@ -17,8 +17,8 @@ MindVerse, sağlık, aşk, tarih, psikoloji, uzay ve alıntılar kategorilerinde
 
 ```bash
 # Repository'yi klonlayın
-git clone https://github.com/yourusername/mindverse_blog.git
-cd mindverse_blog
+git clone https://github.com/ykperdgn/MindVerse.git
+cd MindVerse
 
 # Bağımlılıkları yükleyin
 npm install
@@ -154,4 +154,4 @@ Bu proje MIT lisansı ile lisanslanmıştır. Detaylar için [LICENSE](LICENSE) 
 
 ## 📞 İletişim
 
-Proje Linki: [https://github.com/yourusername/mindverse_blog](https://github.com/yourusername/mindverse_blog)
+Proje Linki: [https://github.com/ykperdgn/MindVerse](https://github.com/ykperdgn/MindVerse)
