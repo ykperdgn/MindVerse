@@ -15,14 +15,6 @@
       "source": "/(.*)",
       "destination": "https://www.mindversedaily.com/$1",
       "permanent": true
-    },
-    {
-      "handle": "filesystem"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/404.html",
-      "status": 404
     }
   ]
 }
