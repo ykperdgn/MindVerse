@@ -15,56 +15,56 @@ import xml.etree.ElementTree as ET
 
 class SEOBooster:
     def __init__(self):
-        self.base_url = "https://mindverse-orcin.vercel.app"
+        self.base_url = "https://www.mindversedaily.com"
         self.site_name = "MindVerse"
         self.categories = ['health', 'love', 'history', 'psychology', 'space', 'quotes']
-        
+
         # Türkçe ve İngilizce anahtar kelimeler
         self.keywords = {
             'health': {
                 'primary': ['sağlık', 'wellness', 'bağışıklık', 'beslenme', 'egzersiz'],
-                'long_tail': ['sağlıklı yaşam önerileri', 'bağışıklık sistemini güçlendirme', 
+                'long_tail': ['sağlıklı yaşam önerileri', 'bağışıklık sistemini güçlendirme',
                             'stres yönetimi teknikleri', 'uyku kalitesi artırma'],
-                'questions': ['nasıl sağlıklı yaşanır', 'bağışıklık nasıl güçlendirilir', 
+                'questions': ['nasıl sağlıklı yaşanır', 'bağışıklık nasıl güçlendirilir',
                             'stres nasıl yönetilir', 'uyku kalitesi nasıl artırılır']
             },
             'love': {
                 'primary': ['aşk', 'ilişki', 'sevgi', 'romantizm', 'dating'],
-                'long_tail': ['sağlıklı ilişki önerileri', 'aşk psikolojisi', 
+                'long_tail': ['sağlıklı ilişki önerileri', 'aşk psikolojisi',
                             'uzun mesafe ilişki', 'evlilik öncesi tavsiyeler'],
-                'questions': ['nasıl sağlıklı ilişki kurulur', 'aşk nedir', 
+                'questions': ['nasıl sağlıklı ilişki kurulur', 'aşk nedir',
                             'ilişkide sorunlar nasıl çözülür', 'sevgiyi nasıl koruyabilirim']
             },
             'history': {
                 'primary': ['tarih', 'geçmiş', 'medeniyet', 'kültür', 'arkeoloji'],
-                'long_tail': ['antik medeniyetler', 'tarihte bugün', 
+                'long_tail': ['antik medeniyetler', 'tarihte bugün',
                             'sanayi devrimi etkileri', 'büyük keşifler çağı'],
-                'questions': ['tarihte neler yaşandı', 'antik medeniyetler nasıldı', 
+                'questions': ['tarihte neler yaşandı', 'antik medeniyetler nasıldı',
                             'sanayi devrimi nedir', 'tarihi olaylar nelerdir']
             },
             'psychology': {
                 'primary': ['psikoloji', 'zihin', 'davranış', 'mental', 'bilinçaltı'],
-                'long_tail': ['motivasyon psikolojisi', 'karar verme psikolojisi', 
+                'long_tail': ['motivasyon psikolojisi', 'karar verme psikolojisi',
                             'bilinçaltının gücü', 'pozitif psikoloji'],
-                'questions': ['psikoloji nedir', 'motivasyon nasıl artırılır', 
+                'questions': ['psikoloji nedir', 'motivasyon nasıl artırılır',
                             'bilinçaltı nasıl çalışır', 'karar verme nasıl işler']
             },
             'space': {
                 'primary': ['uzay', 'astronomi', 'evren', 'gezegen', 'yıldız'],
-                'long_tail': ['kara delikler', 'karanlık madde', 
+                'long_tail': ['kara delikler', 'karanlık madde',
                             'uzay keşifleri', 'galaksi yapısı'],
-                'questions': ['uzay nedir', 'kara delikler nasıl oluşur', 
+                'questions': ['uzay nedir', 'kara delikler nasıl oluşur',
                             'evren nasıl genişliyor', 'uzayda yaşam var mı']
             },
             'quotes': {
                 'primary': ['alıntı', 'söz', 'motivasyon', 'ilham', 'özlü sözler'],
-                'long_tail': ['motivasyonel sözler', 'ilham verici alıntılar', 
+                'long_tail': ['motivasyonel sözler', 'ilham verici alıntılar',
                             'başarı sözleri', 'hayat felsefesi'],
-                'questions': ['en güzel sözler nelerdir', 'motivasyon sözleri', 
+                'questions': ['en güzel sözler nelerdir', 'motivasyon sözleri',
                             'ilham verici alıntılar', 'özlü sözler']
             }
         }
-    
+
     def analyze_current_seo(self):
         """Mevcut SEO durumunu analiz et"""
         analysis = {
@@ -81,25 +81,25 @@ class SEOBooster:
             "sitemap": True,  # sitemap.xml.ts mevcut
             "robots": True   # robots.txt mevcut
         }
-        
+
         return analysis
-    
+
     def check_title_optimization(self):
         """Title tag optimizasyonunu kontrol et"""
         issues = []
         recommendations = []
-        
+
         # Title uzunluğu kontrolü (50-60 karakter ideal)
         recommendations.append("Title'lar 50-60 karakter arası olmalı")
         recommendations.append("Ana anahtar kelime title'ın başında yer almalı")
         recommendations.append("Brand name (MindVerse) title'ın sonunda olmalı")
-        
+
         return {
             "status": "optimized",
             "issues": issues,
             "recommendations": recommendations
         }
-    
+
     def check_meta_descriptions(self):
         """Meta description kontrolü"""
         recommendations = [
@@ -108,12 +108,12 @@ class SEOBooster:
             "Ana anahtar kelime geçmeli",
             "Her sayfa için unique olmalı"
         ]
-        
+
         return {
             "status": "good",
             "recommendations": recommendations
         }
-    
+
     def check_heading_structure(self):
         """H1, H2, H3 yapısını kontrol et"""
         recommendations = [
@@ -122,16 +122,16 @@ class SEOBooster:
             "H3'ler alt konuları içermeli",
             "Heading'ler anahtar kelime içermeli"
         ]
-        
+
         return {
-            "status": "good", 
+            "status": "good",
             "recommendations": recommendations
         }
-    
+
     def analyze_keyword_density(self):
         """Anahtar kelime yoğunluğu analizi"""
         analysis = {}
-        
+
         for category, kw_data in self.keywords.items():
             analysis[category] = {
                 "primary_keywords": kw_data['primary'],
@@ -139,9 +139,9 @@ class SEOBooster:
                 "target_density": "2-3%",
                 "current_status": "to_be_measured"
             }
-        
+
         return analysis
-    
+
     def check_internal_linking(self):
         """İç bağlantı analizi"""
         recommendations = [
@@ -151,19 +151,19 @@ class SEOBooster:
             "Anchor text çeşitli olmalı",
             "Deep linking stratejisi uygulanmalı"
         ]
-        
+
         return {
             "status": "good",
             "recommendations": recommendations
         }
-    
+
     def generate_content_ideas(self):
         """SEO odaklı içerik fikirleri üret"""
         content_ideas = []
-        
+
         for category, kw_data in self.keywords.items():
             category_ideas = []
-            
+
             # Long-tail keyword bazlı içerikler
             for long_tail in kw_data['long_tail']:
                 category_ideas.append({
@@ -173,7 +173,7 @@ class SEOBooster:
                     "estimated_words": "1200-1500",
                     "target_audience": "Beginner to intermediate"
                 })
-            
+
             # Soru bazlı içerikler (featured snippet için)
             for question in kw_data['questions']:
                 category_ideas.append({
@@ -183,7 +183,7 @@ class SEOBooster:
                     "estimated_words": "800-1000",
                     "target_audience": "FAQ seekers"
                 })
-            
+
             # Listicle içerikler
             primary_kw = kw_data['primary'][0]
             category_ideas.extend([
@@ -200,14 +200,14 @@ class SEOBooster:
                     "estimated_words": "800-1000"
                 }
             ])
-            
+
             content_ideas.append({
                 "category": category,
                 "ideas": category_ideas
             })
-        
+
         return content_ideas
-    
+
     def create_keyword_research_file(self):
         """Anahtar kelime araştırması dosyası oluştur"""
         research = {
@@ -219,19 +219,19 @@ class SEOBooster:
             "competitor_analysis": self.suggest_competitor_analysis(),
             "free_tools": self.list_free_seo_tools()
         }
-        
+
         with open('seo_keyword_research.json', 'w', encoding='utf-8') as f:
             json.dump(research, f, ensure_ascii=False, indent=2)
-        
+
         print("✅ SEO anahtar kelime araştırması kaydedildi: seo_keyword_research.json")
         return research
-    
+
     def suggest_competitor_analysis(self):
         """Rakip analizi önerileri"""
         return {
             "turkish_competitors": [
                 "webmasterforum.com",
-                "teknoblog.com", 
+                "teknoblog.com",
                 "shiftdelete.net",
                 "webtekno.com"
             ],
@@ -250,7 +250,7 @@ class SEOBooster:
                 "SEMrush (ücretsiz limit)"
             ]
         }
-    
+
     def list_free_seo_tools(self):
         """Ücretsiz SEO araçları listesi"""
         return {
@@ -290,7 +290,7 @@ class SEOBooster:
                 "Rank Tracker"
             ]
         }
-    
+
     def generate_seo_checklist(self):
         """SEO kontrol listesi oluştur"""
         checklist = f"""
@@ -349,7 +349,7 @@ class SEOBooster:
 - [ ] Title tag analizi
 - [ ] Meta description review
 
-### Salı - Link Building  
+### Salı - Link Building
 - [ ] Internal linking review
 - [ ] Guest post opportunities
 - [ ] Resource page outreach
@@ -385,7 +385,7 @@ class SEOBooster:
 
 ### Günlük Kullanım
 - Google Search Console
-- Google Analytics  
+- Google Analytics
 - Google Trends
 
 ### Haftalık Kullanım
@@ -395,7 +395,7 @@ class SEOBooster:
 
 ### Aylık Kullanım
 - Ahrefs (1 günlük trial)
-- Moz (30 günlük trial) 
+- Moz (30 günlük trial)
 - Screaming Frog
 
 ## 📊 Takip Edilecek Metrikler
@@ -428,12 +428,12 @@ class SEOBooster:
 Generated: {datetime.now().strftime('%Y-%m-%d %H:%M')}
 Site: {self.base_url}
 """
-        
+
         with open('seo_checklist.md', 'w', encoding='utf-8') as f:
             f.write(checklist)
-        
+
         print("✅ SEO kontrol listesi oluşturuldu: seo_checklist.md")
-    
+
     def create_google_search_console_setup(self):
         """Google Search Console kurulum rehberi"""
         setup_guide = f"""
@@ -441,7 +441,7 @@ Site: {self.base_url}
 
 ## 1. Hesap Oluşturma
 1. https://search.google.com/search-console/ adresine git
-2. Google hesabınla giriş yap  
+2. Google hesabınla giriş yap
 3. "Özellik Ekle" tıkla
 4. "URL Öneki" seçeneğini seç
 5. Site URL'ini gir: {self.base_url}
@@ -467,7 +467,7 @@ Site: {self.base_url}
 
 ## 4. İlk Analiz (1 hafta sonra)
 - Search Results analizi
-- Coverage raporu  
+- Coverage raporu
 - Performance metrikleri
 - Mobile Usability kontrolü
 
@@ -481,30 +481,30 @@ Site: {self.base_url}
 ---
 Bu adımları tamamladıktan sonra 2-3 gün içinde veriler gelmeye başlar.
 """
-        
+
         with open('google_search_console_setup.md', 'w', encoding='utf-8') as f:
             f.write(setup_guide)
-        
+
         print("✅ Google Search Console kurulum rehberi: google_search_console_setup.md")
 
 def main():
     booster = SEOBooster()
-    
+
     print("🚀 MindVerse SEO Boost Sistemi Başlatılıyor...")
-    
+
     # SEO analizi yap
     analysis = booster.analyze_current_seo()
     print(f"📊 SEO analizi tamamlandı")
-    
+
     # Anahtar kelime araştırması
     keyword_research = booster.create_keyword_research_file()
-    
+
     # SEO kontrol listesi
     booster.generate_seo_checklist()
-    
-    # Google Search Console rehberi  
+
+    # Google Search Console rehberi
     booster.create_google_search_console_setup()
-    
+
     print(f"""
 📈 SEO Boost Sistemi Aktif!
 
@@ -515,7 +515,7 @@ def main():
 
 🎯 Sonraki Adımlar:
 1. Google Search Console kurulumu
-2. Google Analytics 4 kurulumu  
+2. Google Analytics 4 kurulumu
 3. Günlük SEO checklist takibi
 4. Haftalık anahtar kelime analizi
 5. Aylık rakip analizi
@@ -523,7 +523,7 @@ def main():
 🔧 Bu Hafta Odağı:
 - Technical SEO optimization ✅
 - Content SEO improvement 🔄
-- Keyword research 🔄  
+- Keyword research 🔄
 - Google tools setup 🔄
 
 📊 Hedef: 30 gün içinde organik trafik 2x artış

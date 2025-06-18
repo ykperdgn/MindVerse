@@ -16,10 +16,10 @@ import random
 
 class EmailMarketingSystem:
     def __init__(self):
-        self.base_url = "https://mindverse-orcin.vercel.app"
+        self.base_url = "https://www.mindversedaily.com"
         self.site_name = "MindVerse"
         self.categories = ['health', 'love', 'history', 'psychology', 'space', 'quotes']
-        
+
         # Email templates
         self.email_templates = {
             'welcome': {
@@ -39,7 +39,7 @@ class EmailMarketingSystem:
                 'category': 'targeted'
             }
         }
-        
+
         # Ücretsiz email servisleri
         self.free_services = {
             'mailchimp': {
@@ -63,7 +63,7 @@ class EmailMarketingSystem:
                 'setup_url': 'Google Account'
             }
         }
-    
+
     def create_welcome_email_template(self):
         """Hoş geldin email şablonu"""
         template = f"""
@@ -130,49 +130,49 @@ class EmailMarketingSystem:
             <h1>🌟 MindVerse'e Hoş Geldiniz!</h1>
             <p>Bilginin sonsuz evrenine hoş geldiniz</p>
         </div>
-        
+
         <div class="content">
             <h2>Merhaba!</h2>
             <p>MindVerse ailesine katıldığınız için çok mutluyuz! Artık her gün kaliteli, araştırma temelli içeriklerimize özel erişiminiz var.</p>
-            
+
             <h3>🎯 Size Özel İçeriklerimiz:</h3>
-            
+
             <div class="category-card">
                 <strong>🏥 Sağlık</strong><br>
                 Bilimsel temelli sağlık önerileri, beslenme rehberleri ve wellness ipuçları.
             </div>
-            
+
             <div class="category-card">
                 <strong>❤️ Aşk & İlişkiler</strong><br>
                 İlişki psikolojisi, aşk bilimleri ve duygusal zeka geliştirme.
             </div>
-            
+
             <div class="category-card">
                 <strong>📚 Tarih</strong><br>
                 Antik medeniyetler, tarihi keşifler ve kültürel miras.
             </div>
-            
+
             <div class="category-card">
                 <strong>🧠 Psikoloji</strong><br>
                 Zihin bilimi, motivasyon teknikleri ve kişisel gelişim.
             </div>
-            
+
             <div class="category-card">
                 <strong>🚀 Uzay</strong><br>
                 Astronomi, uzay keşifleri ve evrenin sırları.
             </div>
-            
+
             <div class="category-card">
                 <strong>💭 Alıntılar</strong><br>
                 İlham verici sözler, motivasyonel alıntılar ve bilge öğütler.
             </div>
-            
+
             <h3>🎁 İlk Hediyeniz:</h3>
             <p>Sizin için özel olarak seçtiklerimiz:</p>
-            
+
             <a href="{self.base_url}/popular" class="button">🔥 En Popüler İçerikler</a>
             <a href="{self.base_url}/search" class="button">🔍 İlgi Alanınızı Keşfedin</a>
-            
+
             <h3>📧 Neler Bekleyebilirsiniz?</h3>
             <ul>
                 <li><strong>Günlük İçerik:</strong> Her gün yeni bir makale</li>
@@ -180,10 +180,10 @@ class EmailMarketingSystem:
                 <li><strong>Özel Seriler:</strong> Derinlemesine araştırma yazıları</li>
                 <li><strong>İnteraktif İçerik:</strong> Anketler ve yorumlar</li>
             </ul>
-            
+
             <p><strong>Bir sonraki emailimiz:</strong> Yarın saat 09:00'da günlük bilgi dozunuz gelecek!</p>
         </div>
-        
+
         <div class="footer">
             <p>Bu emaili almak istemiyorsanız <a href="#">buradan</a> çıkabilirsiniz.</p>
             <p>© 2025 MindVerse. Tüm hakları saklıdır.</p>
@@ -193,12 +193,12 @@ class EmailMarketingSystem:
 </body>
 </html>
 """
-        
+
         with open('email_templates/welcome_email.html', 'w', encoding='utf-8') as f:
             f.write(template)
-        
+
         return template
-    
+
     def create_daily_digest_template(self):
         """Günlük özet email şablonu"""
         template = f"""
@@ -273,11 +273,11 @@ class EmailMarketingSystem:
             <h1>📚 Günlük Bilgi Dozu</h1>
             <p>{{date}} - Sizin için seçtiklerimiz</p>
         </div>
-        
+
         <div class="content">
             <h2>Merhaba!</h2>
             <p>Bugün sizin için özenle seçtiğimiz içerikler burada. Keyifli okumalar!</p>
-            
+
             <!-- Ana makale -->
             <div class="article-card">
                 <span class="category-badge">{{main_category}}</span>
@@ -285,7 +285,7 @@ class EmailMarketingSystem:
                 <p>{{main_summary}}</p>
                 <a href="{self.base_url}/{{main_category}}/{{main_slug}}" class="button">Devamını Oku →</a>
             </div>
-            
+
             <!-- İkinci makale -->
             <div class="article-card">
                 <span class="category-badge">{{second_category}}</span>
@@ -293,22 +293,22 @@ class EmailMarketingSystem:
                 <p>{{second_summary}}</p>
                 <a href="{self.base_url}/{{second_category}}/{{second_slug}}" class="button">Devamını Oku →</a>
             </div>
-            
+
             <h3>🔥 Bu Hafta Popüler Olan:</h3>
             <ul>
                 <li><a href="{self.base_url}/{{popular1_category}}/{{popular1_slug}}">{{popular1_title}}</a></li>
                 <li><a href="{self.base_url}/{{popular2_category}}/{{popular2_slug}}">{{popular2_title}}</a></li>
                 <li><a href="{self.base_url}/{{popular3_category}}/{{popular3_slug}}">{{popular3_title}}</a></li>
             </ul>
-            
+
             <h3>💡 Günün İpucu:</h3>
             <p><em>{{daily_tip}}</em></p>
-            
+
             <p style="text-align: center; margin-top: 30px;">
                 <a href="{self.base_url}" class="button">Tüm İçerikleri Gör</a>
             </p>
         </div>
-        
+
         <div class="footer">
             <p>Yarın aynı saatte yeni içeriklerle buradayız!</p>
             <p>Bu emaili almak istemiyorsanız <a href="#">buradan</a> çıkabilirsiniz.</p>
@@ -318,12 +318,12 @@ class EmailMarketingSystem:
 </body>
 </html>
 """
-        
+
         with open('email_templates/daily_digest.html', 'w', encoding='utf-8') as f:
             f.write(template)
-        
+
         return template
-    
+
     def create_weekly_roundup_template(self):
         """Haftalık özet email şablonu"""
         template = f"""
@@ -407,11 +407,11 @@ class EmailMarketingSystem:
             <h1>🔥 Bu Haftanın En İyileri</h1>
             <p>{{week_start}} - {{week_end}} Özeti</p>
         </div>
-        
+
         <div class="content">
             <h2>Merhaba!</h2>
             <p>Bu hafta MindVerse'te neler oldu? İşte öne çıkanlar:</p>
-            
+
             <div class="stats-grid">
                 <div class="stat-card">
                     <h3>{{total_views}}</h3>
@@ -422,48 +422,48 @@ class EmailMarketingSystem:
                     <p>Yeni Makale</p>
                 </div>
             </div>
-            
+
             <div class="top-articles">
                 <h3>🏆 Bu Haftanın En Çok Okunanları</h3>
-                
+
                 <div class="article-item">
                     <strong>1. {{top1_title}}</strong><br>
                     <small>{{top1_category}} • {{top1_views}} okuma</small>
                 </div>
-                
+
                 <div class="article-item">
                     <strong>2. {{top2_title}}</strong><br>
                     <small>{{top2_category}} • {{top2_views}} okuma</small>
                 </div>
-                
+
                 <div class="article-item">
                     <strong>3. {{top3_title}}</strong><br>
                     <small>{{top3_category}} • {{top3_views}} okuma</small>
                 </div>
-                
+
                 <div class="article-item">
                     <strong>4. {{top4_title}}</strong><br>
                     <small>{{top4_category}} • {{top4_views}} okuma</small>
                 </div>
-                
+
                 <div class="article-item">
                     <strong>5. {{top5_title}}</strong><br>
                     <small>{{top5_category}} • {{top5_views}} okuma</small>
                 </div>
             </div>
-            
+
             <h3>📊 Kategori Analizi</h3>
             <p>Bu hafta en çok ilgi gören kategori: <strong>{{trending_category}}</strong></p>
-            
+
             <h3>🎯 Gelecek Hafta</h3>
             <p>{{next_week_preview}}</p>
-            
+
             <p style="text-align: center; margin-top: 30px;">
                 <a href="{self.base_url}/popular" class="button">Popüler İçerikler</a>
                 <a href="{self.base_url}/categories" class="button">Tüm Kategoriler</a>
             </p>
         </div>
-        
+
         <div class="footer">
             <p>Bir sonraki haftalık özet 7 gün sonra gelecek!</p>
             <p>Bu emaili almak istemiyorsanız <a href="#">buradan</a> çıkabilirsiniz.</p>
@@ -473,12 +473,12 @@ class EmailMarketingSystem:
 </body>
 </html>
 """
-        
+
         with open('email_templates/weekly_roundup.html', 'w', encoding='utf-8') as f:
             f.write(template)
-        
+
         return template
-    
+
     def create_email_automation_sequences(self):
         """Email otomasyon sıralamaları"""
         sequences = {
@@ -539,7 +539,7 @@ class EmailMarketingSystem:
                         "topics": ["Bağışıklık", "Beslenme", "Egzersiz", "Mental Sağlık"]
                     },
                     {
-                        "name": "Psikoloji Serisi", 
+                        "name": "Psikoloji Serisi",
                         "duration_weeks": 4,
                         "category": "psychology",
                         "topics": ["Motivasyon", "Karar Verme", "İletişim", "Başarı"]
@@ -547,12 +547,12 @@ class EmailMarketingSystem:
                 ]
             }
         }
-        
+
         with open('email_automation_sequences.json', 'w', encoding='utf-8') as f:
             json.dump(sequences, f, ensure_ascii=False, indent=2)
-        
+
         return sequences
-    
+
     def create_mailchimp_integration_guide(self):
         """Mailchimp entegrasyon rehberi"""
         guide = f"""
@@ -560,7 +560,7 @@ class EmailMarketingSystem:
 
 ## 1. Mailchimp Hesap Kurulumu (ÜCRETSİZ)
 1. https://mailchimp.com adresine git
-2. "Sign Up Free" butonuna tıkla  
+2. "Sign Up Free" butonuna tıkla
 3. Email, username ve şifre belirle
 4. Hesabını doğrula
 
@@ -591,17 +591,17 @@ class EmailMarketingSystem:
 ```html
 <!-- Mevcut form yerine Mailchimp form -->
 <div id="mc_embed_signup">
-<form action="https://yourdomain.us1.list-manage.com/subscribe/post?u=USER_ID&amp;id=LIST_ID" 
-      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" 
+<form action="https://yourdomain.us1.list-manage.com/subscribe/post?u=USER_ID&amp;id=LIST_ID"
+      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
       class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
-        <input type="email" value="" name="EMAIL" class="email" 
+        <input type="email" value="" name="EMAIL" class="email"
                placeholder="E-posta adresiniz..." required>
         <div style="position: absolute; left: -5000px;" aria-hidden="true">
             <input type="text" name="b_USER_ID_LIST_ID" tabindex="-1" value="">
         </div>
         <div class="clear">
-            <input type="submit" value="Bültene Katıl" name="subscribe" 
+            <input type="submit" value="Bültene Katıl" name="subscribe"
                    id="mc-embedded-subscribe" class="button">
         </div>
     </div>
@@ -617,7 +617,7 @@ class EmailMarketingSystem:
 
 ### Template Listesi:
 - Welcome Email (Hoş geldin)
-- Daily Digest (Günlük özet)  
+- Daily Digest (Günlük özet)
 - Weekly Roundup (Haftalık özet)
 - Re-engagement (Geri kazanım)
 
@@ -629,7 +629,7 @@ class EmailMarketingSystem:
 ### Automation Akışı:
 ```
 Abone olur → Hoş geldin email (0 gün)
-           → Günlük digest (1 gün)  
+           → Günlük digest (1 gün)
            → Anket email (3 gün)
            → Haftalık özet (7 gün)
 ```
@@ -644,7 +644,7 @@ Abone olur → Hoş geldin email (0 gün)
 ## 7. Newsletter Analytics
 ### Takip Edilecek Metrikler:
 - **Open Rate:** %20+ (iyi)
-- **Click Rate:** %3+ (iyi)  
+- **Click Rate:** %3+ (iyi)
 - **Unsubscribe Rate:** %2'nin altı
 - **Growth Rate:** Aylık %10+
 
@@ -675,7 +675,7 @@ const serverPrefix = 'us1'; // API key'den çıkar
 
 async function addSubscriber(email) {{
     const url = `https://${{serverPrefix}}.api.mailchimp.com/3.0/lists/${{listId}}/members`;
-    
+
     const response = await fetch(url, {{
         method: 'POST',
         headers: {{
@@ -687,7 +687,7 @@ async function addSubscriber(email) {{
             status: 'subscribed'
         }})
     }});
-    
+
     return response.json();
 }}
 ```
@@ -700,7 +700,7 @@ async function addSubscriber(email) {{
 
 ### Salı-Cuma - Daily Digest
 - [ ] Content selection
-- [ ] Template customization  
+- [ ] Template customization
 - [ ] Schedule sending (09:00)
 
 ### Cuma - Weekly Roundup
@@ -718,41 +718,41 @@ async function addSubscriber(email) {{
 Generated: {datetime.now().strftime('%Y-%m-%d %H:%M')}
 Site: {self.base_url}
 """
-        
+
         with open('mailchimp_integration_guide.md', 'w', encoding='utf-8') as f:
             f.write(guide)
-        
+
         print("✅ Mailchimp entegrasyon rehberi: mailchimp_integration_guide.md")
-    
+
     def create_email_templates_folder(self):
         """Email template klasörü ve dosyaları oluştur"""
         os.makedirs('email_templates', exist_ok=True)
-        
+
         # Template'ları oluştur
         self.create_welcome_email_template()
-        self.create_daily_digest_template()  
+        self.create_daily_digest_template()
         self.create_weekly_roundup_template()
-        
+
         print("✅ Email template'ları oluşturuldu: email_templates/")
-    
+
     def generate_email_content_calendar(self):
         """30 günlük email içerik takvimi"""
         calendar = {}
-        
+
         # Email türleri ve frekansları
         daily_digest_days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday']
         weekly_roundup_day = 'sunday'
-        
+
         for day in range(30):
             date = (datetime.now() + timedelta(days=day)).strftime('%Y-%m-%d')
             weekday = (datetime.now() + timedelta(days=day)).strftime('%A').lower()
-            
+
             calendar[date] = {
                 'date': date,
                 'weekday': weekday,
                 'emails': []
             }
-            
+
             # Günlük digest (hafta içi)
             if weekday in daily_digest_days:
                 calendar[date]['emails'].append({
@@ -761,47 +761,47 @@ Site: {self.base_url}
                     'subject': f'📚 Günlük Bilgi Dozu - {date}',
                     'template': 'daily_digest'
                 })
-            
+
             # Haftalık özet (pazar)
             if weekday == weekly_roundup_day:
                 calendar[date]['emails'].append({
-                    'type': 'weekly_roundup', 
+                    'type': 'weekly_roundup',
                     'time': '10:00',
                     'subject': '🔥 Bu Haftanın En Popüler İçerikleri',
                     'template': 'weekly_roundup'
                 })
-            
+
             # Özel kampanyalar (2 haftada bir çarşamba)
             if weekday == 'wednesday' and day % 14 == 0:
                 calendar[date]['emails'].append({
                     'type': 'special_campaign',
-                    'time': '14:00', 
+                    'time': '14:00',
                     'subject': '🎯 Size Özel İçerik Önerileri',
                     'template': 'special_curated'
                 })
-        
+
         with open('email_content_calendar.json', 'w', encoding='utf-8') as f:
             json.dump(calendar, f, ensure_ascii=False, indent=2)
-        
+
         return calendar
 
 def main():
     email_system = EmailMarketingSystem()
-    
+
     print("📧 MindVerse Email Marketing Sistemi Başlatılıyor...")
-    
+
     # Email template'larını oluştur
     email_system.create_email_templates_folder()
-    
+
     # Otomasyon sıralarını oluştur
     sequences = email_system.create_email_automation_sequences()
-    
+
     # Mailchimp entegrasyon rehberi
     email_system.create_mailchimp_integration_guide()
-    
+
     # 30 günlük email takvimi
     calendar = email_system.generate_email_content_calendar()
-    
+
     print(f"""
 📬 Email Marketing Sistemi Hazır!
 

@@ -17,7 +17,7 @@ from pathlib import Path
 
 class AutoSocialMediaPoster:
     def __init__(self):
-        self.base_url = "https://mindverse-orcin.vercel.app"
+        self.base_url = "https://www.mindversedaily.com"
         self.automation_tools = {
             'buffer': {
                 'free_limit': '3 hesap, 10 post/ay',

@@ -12,7 +12,7 @@ from pathlib import Path
 
 class MasterTrafficPlanner:
     def __init__(self):
-        self.base_url = "https://mindverse-orcin.vercel.app"
+        self.base_url = "https://www.mindversedaily.com"
         self.current_status = {
             'daily_visitors': 50,  # Tahmin
             'monthly_visitors': 1500,

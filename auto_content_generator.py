@@ -18,6 +18,7 @@ import hashlib
 class AutoContentGenerator:
     def __init__(self):
         self.base_path = "src/content"
+        self.base_url = "https://www.mindversedaily.com"
         self.categories = ["health", "love", "history", "psychology", "space", "quotes"]
 
         # Ücretsiz AI API seçenekleri

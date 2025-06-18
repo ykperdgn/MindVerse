@@ -98,7 +98,7 @@ def create_og_image(title="MindVerse", subtitle="Çoklu Niş Bilgi Portalı", ca
             draw.text((text_x, text_y), badge_text, font=badge_font, fill='white')
 
         # URL
-        url_text = "mindverse-orcin.vercel.app"
+        url_text = "www.mindversedaily.com"
         url_font = ImageFont.load_default()
 
         url_bbox = draw.textbbox((0, 0), url_text, font=url_font)

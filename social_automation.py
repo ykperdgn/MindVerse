@@ -15,7 +15,7 @@ from pathlib import Path
 
 class SocialMediaAutomator:
     def __init__(self):
-        self.base_url = "https://mindverse-orcin.vercel.app"
+        self.base_url = "https://www.mindversedaily.com"
         self.categories = {
             'health': {'emoji': '🏥', 'hashtags': ['#sağlık', '#wellness', '#health', '#sağlıklıyaşam', '#tıp']},
             'love': {'emoji': '❤️', 'hashtags': ['#aşk', '#ilişkiler', '#love', '#relationship', '#dating']},
@@ -24,11 +24,11 @@ class SocialMediaAutomator:
             'space': {'emoji': '🚀', 'hashtags': ['#uzay', '#space', '#astronomi', '#bilim', '#keşif']},
             'quotes': {'emoji': '💭', 'hashtags': ['#alıntılar', '#quotes', '#motivasyon', '#ilham', '#söz']}
         }
-        
+
     def generate_tweets(self, count=50):
         """Twitter için otomatik tweet'ler oluştur"""
         tweets = []
-        
+
         # Günlük motivasyon tweet'leri
         motivation_tweets = [
             f"🌟 Bugün kendinizi geliştirmek için ne yapacaksınız? {self.base_url}/popular #motivasyon #gelişim",
@@ -37,7 +37,7 @@ class SocialMediaAutomator:
             f"🔥 En popüler içeriklerimize göz attınız mı? {self.base_url}/popular #trending",
             f"📖 Bugün hangi konuda bilgi edinmek istiyorsunız? {self.base_url} #soru #merak"
         ]
-        
+
         # Kategori bazlı tweet'ler
         for category, info in self.categories.items():
             hashtags = ' '.join(info['hashtags'][:3])
@@ -46,7 +46,7 @@ class SocialMediaAutomator:
                 f"🔍 {category.title()} kategorisinde aradığınızı bulamıyor musunuz? {self.base_url}/search {hashtags}",
                 f"📊 {category.title()} alanında en çok okunan yazılar: {self.base_url}/{category} {hashtags}"
             ])
-        
+
         # Etkileşim artırıcı sorular
         engagement_tweets = [
             f"❓ Hangi konuda daha fazla içerik görmek istersiniz? Yorumlarda belirtin! {self.base_url} #soru",
@@ -55,32 +55,32 @@ class SocialMediaAutomator:
             f"📝 Yeni bir şey öğrendiğinizde ilk kim ile paylaşıyorsunuz? {self.base_url} #paylaşım",
             f"⭐ Favori içerik türünüz hangisi? {self.base_url}/popular #favoriler"
         ]
-        
+
         tweets.extend(motivation_tweets)
         tweets.extend(engagement_tweets)
-        
+
         # Hashtag optimizasyonu ekle
         trending_hashtags = ['#eğitim', '#bilim', '#kültür', '#gelişim', '#öğrenme', '#araştırma', '#blog', '#içerik']
-        
+
         for i, tweet in enumerate(tweets):
             if len(tweets[i]) < 200:  # Twitter karakter limiti
                 extra_hashtag = random.choice(trending_hashtags)
                 if extra_hashtag not in tweet:
                     tweets[i] += f" {extra_hashtag}"
-        
+
         return tweets[:count]
-    
+
     def generate_facebook_posts(self, count=30):
         """Facebook için uzun format postlar"""
         posts = []
-        
+
         post_templates = [
             {
                 "title": "🧠 Psikoloji Dünyasından İlginç Gerçekler",
-                "content": """Psikoloji alanındaki en son araştırmalar şaşırtıcı sonuçlar ortaya çıkarıyor! 
+                "content": """Psikoloji alanındaki en son araştırmalar şaşırtıcı sonuçlar ortaya çıkarıyor!
 
 🔍 Bilincaltımızın günlük kararlarımıza etkisi
-💭 Motivasyon mekanizmalarının bilimsel temelleri  
+💭 Motivasyon mekanizmalarının bilimsel temelleri
 🎯 Başarıya giden zihinsel stratejiler
 
 Daha fazlası için: {url}/psychology
@@ -115,7 +115,7 @@ Uzay bilimlerindeki son keşifler: {url}/space
                 "category": "space"
             }
         ]
-        
+
         for template in post_templates:
             posts.append({
                 "title": template["title"],
@@ -123,13 +123,13 @@ Uzay bilimlerindeki son keşifler: {url}/space
                 "category": template["category"],
                 "hashtags": self.categories[template["category"]]["hashtags"]
             })
-        
+
         return posts * (count // len(post_templates) + 1)[:count]
-    
+
     def generate_instagram_posts(self, count=40):
         """Instagram için görsel odaklı postlar"""
         posts = []
-        
+
         for category, info in self.categories.items():
             # Her kategori için 6-7 post
             category_posts = [
@@ -145,7 +145,7 @@ Uzay bilimlerindeki son keşifler: {url}/space
                 }
             ]
             posts.extend(category_posts)
-        
+
         # Genel motivasyon postları
         motivation_posts = [
             {
@@ -159,21 +159,21 @@ Uzay bilimlerindeki son keşifler: {url}/space
                 "category": "general"
             }
         ]
-        
+
         posts.extend(motivation_posts)
         return posts[:count]
-    
+
     def generate_linkedin_posts(self, count=25):
         """LinkedIn için profesyonel içerikler"""
         posts = []
-        
+
         professional_templates = [
             {
                 "title": "Psikoloji ve İş Hayatı",
                 "content": """İş dünyasında psikolojik faktörlerin önemi her geçen gün artıyor.
 
 🎯 Liderlik psikolojisi
-🤝 Takım dinamikleri  
+🤝 Takım dinamikleri
 💼 Motivasyon teknikleri
 📈 Performans optimizasyonu
 
@@ -197,16 +197,16 @@ Profesyonel rehber: {url}/health
                 "category": "health"
             }
         ]
-        
+
         for template in professional_templates:
             posts.append({
                 "title": template["title"],
                 "content": template["content"].format(url=self.base_url),
                 "category": template["category"]
             })
-        
+
         return posts * (count // len(professional_templates) + 1)[:count]
-    
+
     def save_social_content(self):
         """Tüm sosyal medya içeriklerini kaydet"""
         social_content = {
@@ -217,19 +217,19 @@ Profesyonel rehber: {url}/health
             "linkedin": self.generate_linkedin_posts(),
             "posting_schedule": self.generate_posting_schedule()
         }
-        
+
         # JSON dosyasına kaydet
         with open('social_media_content.json', 'w', encoding='utf-8') as f:
             json.dump(social_content, f, ensure_ascii=False, indent=2)
-        
+
         print(f"✅ Sosyal medya içerikleri kaydedildi: social_media_content.json")
         return social_content
-    
+
     def generate_posting_schedule(self):
         """7 günlük paylaşım programı oluştur"""
         schedule = {}
         platforms = ['twitter', 'facebook', 'instagram', 'linkedin']
-        
+
         # En iyi paylaşım saatleri
         best_times = {
             'twitter': ['09:00', '12:00', '17:00', '20:00'],
@@ -237,11 +237,11 @@ Profesyonel rehber: {url}/health
             'instagram': ['11:00', '14:00', '17:00', '20:00'],
             'linkedin': ['08:00', '12:00', '14:00', '17:00']
         }
-        
+
         for day in range(7):
             date = (datetime.now() + timedelta(days=day)).strftime('%Y-%m-%d')
             schedule[date] = {}
-            
+
             for platform in platforms:
                 posts_per_day = {
                     'twitter': 4,
@@ -249,12 +249,12 @@ Profesyonel rehber: {url}/health
                     'instagram': 2,
                     'linkedin': 1
                 }[platform]
-                
+
                 times = random.sample(best_times[platform], min(posts_per_day, len(best_times[platform])))
                 schedule[date][platform] = times
-        
+
         return schedule
-    
+
     def create_social_media_guide(self):
         """Sosyal medya kullanım rehberi oluştur"""
         guide = f"""
@@ -325,7 +325,7 @@ Profesyonel rehber: {url}/health
 - Profile visits, follower growth
 - Link clicks, mentions
 
-### Facebook  
+### Facebook
 - Reach, engagement
 - Page likes, post shares
 - Website clicks
@@ -344,7 +344,7 @@ Profesyonel rehber: {url}/health
 
 ### Canva Şablonları (Ücretsiz)
 - Quote cards: motivasyonel sözler
-- Tip cards: kısa öneriler  
+- Tip cards: kısa öneriler
 - Statistics: istatistik paylaşımları
 - Behind the scenes: süreç görselleri
 
@@ -357,28 +357,28 @@ Profesyonel rehber: {url}/health
 Site URL: {self.base_url}
 Generated: {datetime.now().strftime('%Y-%m-%d %H:%M')}
 """
-        
+
         with open('social_media_guide.md', 'w', encoding='utf-8') as f:
             f.write(guide)
-        
+
         print("✅ Sosyal medya rehberi oluşturuldu: social_media_guide.md")
 
 def main():
     automator = SocialMediaAutomator()
-    
+
     print("🚀 MindVerse Sosyal Medya Otomasyonu Başlatılıyor...")
-    
+
     # İçerikleri oluştur ve kaydet
     content = automator.save_social_content()
-    
+
     # Rehber oluştur
     automator.create_social_media_guide()
-    
+
     # Özet bilgi
     print(f"""
 📊 Oluşturulan İçerik Özeti:
 - Twitter: {len(content['twitter'])} tweet
-- Facebook: {len(content['facebook'])} post  
+- Facebook: {len(content['facebook'])} post
 - Instagram: {len(content['instagram'])} post
 - LinkedIn: {len(content['linkedin'])} post
 

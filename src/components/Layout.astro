@@ -5,7 +5,7 @@ const { title, description, keywords, image, canonicalUrl } = Astro.props;
 const siteTitle = title ? `${title} | MindVerse` : "MindVerse - Çoklu Niş Bilgi Portalı";
 const siteDescription = description || "Sağlık, aşk, tarih, psikoloji, uzay ve alıntılar kategorilerinde zengin içerikler. Güncel araştırmalar, uzman görüşleri ve pratik öneriler.";
 const siteKeywords = keywords || "sağlık, aşk, tarih, psikoloji, uzay, alıntılar, bilgi, araştırma, uzman, rehber";
-const siteImage = image || "https://mindverse-orcin.vercel.app/social-media/og-image.jpg";
+const siteImage = image || "https://www.mindversedaily.com/social-media/og-image.jpg";
 const currentUrl = canonicalUrl || Astro.url.href;
 ---
 
@@ -63,7 +63,6 @@ const currentUrl = canonicalUrl || Astro.url.href;
       }
     });
   </script>
-
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json" is:inline>
     {
@@ -71,15 +70,15 @@ const currentUrl = canonicalUrl || Astro.url.href;
       "@type": "WebSite",
       "name": "MindVerse",
       "description": "Çoklu niş bilgi portalı - Sağlık, aşk, tarih, psikoloji, uzay ve alıntılar",
-      "url": "https://mindverse-orcin.vercel.app",
+      "url": "https://www.mindversedaily.com",
       "publisher": {
         "@type": "Organization",
         "name": "MindVerse",
-        "url": "https://mindverse-orcin.vercel.app"
+        "url": "https://www.mindversedaily.com"
       },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://mindverse-orcin.vercel.app/search?q={search_term_string}",
+        "target": "https://www.mindversedaily.com/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     }
