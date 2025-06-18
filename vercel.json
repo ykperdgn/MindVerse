@@ -12,20 +12,16 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "has": [
-        { "host": "mindversedaily.com" }
-      ],
-      "status": 308,
-      "headers": { "Location": "https://www.mindversedaily.com/$1" },
-      "continue": false
+      "source": "/(.*)",
+      "destination": "https://www.mindversedaily.com/$1",
+      "permanent": true
     },
     {
       "handle": "filesystem"
     },
     {
-      "src": "/(.*)",
-      "dest": "/404.html",
+      "source": "/(.*)",
+      "destination": "/404.html",
       "status": 404
     }
   ]
