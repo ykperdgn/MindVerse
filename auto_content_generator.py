@@ -235,25 +235,19 @@ Bu konuda yapılan yaygın hatalardan kaçının:
         # Tarih ve unique ID
         now = datetime.now()
         date_str = now.strftime('%Y-%m-%d')
-        unique_id = hashlib.md5(f"{title}{now}".encode()).hexdigest()[:8]
-
-        # Slug oluşturma
+        unique_id = hashlib.md5(f"{title}{now}".encode()).hexdigest()[:8]        # Slug oluşturma
         slug = title.lower()
         slug = slug.replace(' ', '-')
         slug = slug.replace('ı', 'i').replace('ğ', 'g').replace('ü', 'u')
         slug = slug.replace('ş', 's').replace('ö', 'o').replace('ç', 'c')
         slug = ''.join(c for c in slug if c.isalnum() or c == '-')
 
-        # Views sayısı (random)
-        views = random.randint(50, 500)
-
-        # Front matter
+        # Front matter (views kaldırıldı)
         frontmatter = f"""---
 title: '{title}'
 date: {now.strftime('%Y-%m-%d')}
 summary: '{title} hakkında detaylı rehber ve uzman önerileri.'
 tags: ['{category}', 'rehber', 'uzman-tavsiyeleri']
-views: {views}
 ---
 
 """

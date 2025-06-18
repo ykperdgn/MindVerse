@@ -99,15 +99,14 @@
       </button>
     </div>
   </div>
-
   <!-- İstatistik ve Motivasyon -->
   <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-6">
     <div class="flex items-center justify-between">
       <div>
         <h4 class="font-bold text-yellow-800 mb-2">📊 Bu İçerik Hakkında</h4>
         <p class="text-yellow-700 text-sm">
-          <span id="article-views">Yükleniyor...</span> kişi bu makaleyi okudu •
-          <span id="estimated-read-time">~5 dakika</span> okuma süresi
+          <span id="estimated-read-time">~3 dakika</span> okuma süresi •
+          Araştırma tabanlı güvenilir içerik
         </p>
       </div>
       <div class="text-4xl">
@@ -136,63 +135,89 @@
       showMessage('ℹ️ Bu e-posta adresi zaten kayıtlı.', 'info');
     }
   }
-
   // Sosyal medya paylaşım fonksiyonları
   function shareOnTwitter() {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent(document.title);
-    window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
+    const text = encodeURIComponent(`📖 ${document.title} - MindVerse Blog`);
+    const hashtags = 'mindverse,blog,bilgi,gelişim';
+    window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}&hashtags=${hashtags}`, '_blank', 'width=550,height=420');
   }
 
   function shareOnFacebook() {
     const url = encodeURIComponent(window.location.href);
-    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank', 'width=580,height=296');
   }
 
   function shareOnWhatsApp() {
-    const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent(document.title);
-    window.open(`https://wa.me/?text=${text} ${url}`, '_blank');
+    const url = window.location.href;
+    const text = `📖 ${document.title}\n\n${url}`;
+
+    // Mobil cihazlarda WhatsApp uygulamasını aç, desktop'ta web versiyonunu
+    if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      window.open(`whatsapp://send?text=${encodeURIComponent(text)}`, '_blank');
+    } else {
+      window.open(`https://web.whatsapp.com/send?text=${encodeURIComponent(text)}`, '_blank');
+    }
   }
 
   function copyToClipboard() {
-    navigator.clipboard.writeText(window.location.href).then(() => {
-      showMessage('🔗 Link kopyalandı!', 'success');
-    });
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        showMessage('🔗 Link başarıyla kopyalandı!', 'success');
+      }).catch(() => {
+        fallbackCopyToClipboard();
+      });
+    } else {
+      fallbackCopyToClipboard();
+    }
+  }
+
+  function fallbackCopyToClipboard() {
+    const textArea = document.createElement('textarea');
+    textArea.value = window.location.href;
+    textArea.style.position = 'fixed';
+    textArea.style.opacity = '0';
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    try {
+      document.execCommand('copy');
+      showMessage('🔗 Link başarıyla kopyalandı!', 'success');
+    } catch (err) {
+      showMessage('❌ Link kopyalanamadı. Manuel olarak kopyalayın.', 'error');
+    }
+    document.body.removeChild(textArea);
   }
 
   // Mesaj gösterme fonksiyonu
   function showMessage(message, type) {
     const messageDiv = document.createElement('div');
-    messageDiv.className = `fixed top-4 right-4 p-4 rounded-lg text-white z-50 ${
-      type === 'success' ? 'bg-green-500' : 'bg-blue-500'
+    messageDiv.className = `fixed top-4 right-4 p-4 rounded-lg text-white z-50 transition-all duration-300 transform ${
+      type === 'success' ? 'bg-green-500' :
+      type === 'error' ? 'bg-red-500' : 'bg-blue-500'
     }`;
     messageDiv.textContent = message;
+    messageDiv.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
 
     document.body.appendChild(messageDiv);
-    setTimeout(() => messageDiv.remove(), 3000);
+
+    // Animasyon ile göster
+    setTimeout(() => messageDiv.style.transform = 'translateX(0)', 10);
+
+    // 4 saniye sonra kaldır
+    setTimeout(() => {
+      messageDiv.style.transform = 'translateX(100%)';
+      setTimeout(() => messageDiv.remove(), 300);
+    }, 4000);
   }
 
-  // Sayfa yüklendiğinde makale istatistiklerini güncelle
+  // Sayfa yüklendiğinde okuma süresini hesapla
   document.addEventListener('DOMContentLoaded', function() {
-    // Görüntülenme sayısını artır ve göster
-    const currentUrl = window.location.pathname;
-    const viewsKey = `article_views_${currentUrl}`;
-    let views = parseInt(localStorage.getItem(viewsKey) || '0');
-    views += 1;
-    localStorage.setItem(viewsKey, views.toString());
-
-    // Görüntülenme sayısını göster
-    const viewsElement = document.getElementById('article-views');
-    if (viewsElement) {
-      viewsElement.textContent = views.toLocaleString('tr-TR');
-    }
-
     // Okuma süresini hesapla
-    const content = document.querySelector('.prose, article');
+    const content = document.querySelector('.prose, article, main');
     if (content) {
-      const wordCount = content.textContent.split(' ').length;
-      const readTime = Math.ceil(wordCount / 200); // Dakikada 200 kelime
+      const wordCount = content.textContent.trim().split(/\s+/).length;
+      const readTime = Math.max(1, Math.ceil(wordCount / 200)); // Dakikada 200 kelime, minimum 1 dakika
       const readTimeElement = document.getElementById('estimated-read-time');
       if (readTimeElement) {
         readTimeElement.textContent = `~${readTime} dakika`;
