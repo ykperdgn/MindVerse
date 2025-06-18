@@ -134,51 +134,79 @@
     } else {
       showMessage('ℹ️ Bu e-posta adresi zaten kayıtlı.', 'info');
     }
-  }
-  // Sosyal medya paylaşım fonksiyonları
+  }  // Sosyal medya paylaşım fonksiyonları
   function shareOnTwitter() {
-    const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent(`📖 ${document.title} - MindVerse Blog`);
+    const url = window.location.href;
+    const title = document.title.replace(' | MindVerse', '');
+    const text = `📖 ${title}`;
     const hashtags = 'mindverse,blog,bilgi,gelişim';
-    window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}&hashtags=${hashtags}`, '_blank', 'width=550,height=420');
+
+    const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}&hashtags=${hashtags}`;
+    window.open(twitterUrl, 'twitter-share', 'width=550,height=420,scrollbars=yes,resizable=yes');
   }
 
   function shareOnFacebook() {
-    const url = encodeURIComponent(window.location.href);
-    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank', 'width=580,height=296');
+    const url = window.location.href;
+    const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+    window.open(facebookUrl, 'facebook-share', 'width=580,height=296,scrollbars=yes,resizable=yes');
   }
 
   function shareOnWhatsApp() {
     const url = window.location.href;
-    const text = `📖 ${document.title}\n\n${url}`;
+    const title = document.title.replace(' | MindVerse', '');
+    const text = `📖 ${title}\n\n${url}`;
 
-    // Mobil cihazlarda WhatsApp uygulamasını aç, desktop'ta web versiyonunu
-    if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      window.open(`whatsapp://send?text=${encodeURIComponent(text)}`, '_blank');
+    // Mobil cihaz kontrolü
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      // Mobil: WhatsApp uygulamasını aç
+      window.location.href = `whatsapp://send?text=${encodeURIComponent(text)}`;
     } else {
-      window.open(`https://web.whatsapp.com/send?text=${encodeURIComponent(text)}`, '_blank');
+      // Desktop: WhatsApp Web'i aç
+      window.open(`https://web.whatsapp.com/send?text=${encodeURIComponent(text)}`, 'whatsapp-share');
     }
   }
 
   function copyToClipboard() {
+    const url = window.location.href;
+
+    // Modern tarayıcılar için Clipboard API
     if (navigator.clipboard && window.isSecureContext) {
-      navigator.clipboard.writeText(window.location.href).then(() => {
+      navigator.clipboard.writeText(url).then(() => {
         showMessage('🔗 Link başarıyla kopyalandı!', 'success');
       }).catch(() => {
-        fallbackCopyToClipboard();
+        fallbackCopyToClipboard(url);
       });
     } else {
-      fallbackCopyToClipboard();
+      // Eski tarayıcılar için fallback
+      fallbackCopyToClipboard(url);
     }
   }
 
-  function fallbackCopyToClipboard() {
+  function fallbackCopyToClipboard(url) {
     const textArea = document.createElement('textarea');
-    textArea.value = window.location.href;
+    textArea.value = url;
     textArea.style.position = 'fixed';
-    textArea.style.opacity = '0';
+    textArea.style.left = '-999999px';
+    textArea.style.top = '-999999px';
     document.body.appendChild(textArea);
     textArea.focus();
+    textArea.select();
+
+    try {
+      const successful = document.execCommand('copy');
+      if (successful) {
+        showMessage('🔗 Link başarıyla kopyalandı!', 'success');
+      } else {
+        showMessage('❌ Link kopyalanamadı. Manuel olarak kopyalayın.', 'error');
+      }
+    } catch (err) {
+      showMessage('❌ Link kopyalanamadı. Manuel olarak kopyalayın.', 'error');
+    }
+
+    document.body.removeChild(textArea);
+  }
     textArea.select();
     try {
       document.execCommand('copy');
