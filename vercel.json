@@ -23,7 +23,6 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "has": [{ "host": "mindversedaily.com" }],
       "destination": "https://www.mindversedaily.com/$1",
       "permanent": true
     }
