@@ -76,6 +76,28 @@
 <script>  // EmailJS Initialize (sayfa yüklendiğinde)
   document.addEventListener('DOMContentLoaded', function() {
     emailjs.init("bSthibpi4onPJsxgU"); // EmailJS Public Key - AKTIF!
+
+    // TEST EMAIL FONKSİYONU - Yakup'a test emaili gönder
+    window.sendTestEmail = function() {
+      emailjs.send('service_9nziaij', 'template_mindverse', {
+        from_email: 'yakuperdogan911@gmail.com',
+        from_name: 'Yakup Test',
+        signup_date: new Date().toLocaleDateString('tr-TR'),
+        site_url: 'https://www.mindversedaily.com',
+        to_email: 'yakuperdogan911@gmail.com'
+      }).then(() => {
+        console.log('✅ Test email başarıyla gönderildi!');
+        alert('✅ Test email yakuperdogan911@gmail.com adresine gönderildi!');
+      }).catch((error) => {
+        console.log('❌ Test email hatası:', error);
+        alert('❌ Test email gönderiminde hata: ' + error.text);
+      });
+    };
+
+    // Sayfa yüklendiğinde otomatik test email gönder
+    setTimeout(() => {
+      sendTestEmail();
+    }, 2000);
   });
 
   // Bülten kayıt fonksiyonu - EmailJS Aktif
