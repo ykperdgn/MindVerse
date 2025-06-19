@@ -1,6 +1,5 @@
 ---
 import Layout from '../../components/Layout.astro';
-import CTASection from '../../components/CTASection.astro';
 import RelatedPosts from '../../components/RelatedPosts.astro';
 import { getCollection, getEntry } from 'astro:content';
 
@@ -81,9 +80,6 @@ const { Content } = await post.render();
     </div>    <div class="prose prose-lg max-w-none mb-12">
       <Content />
     </div>
-
-    <!-- CTA Bölümü -->
-    <CTASection />
 
     <!-- Benzer İçerikler -->
     <RelatedPosts
