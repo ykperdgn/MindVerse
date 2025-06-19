@@ -145,25 +145,39 @@ const currentUrl = canonicalUrl || Astro.url.href;
     </main>
     <footer class="bg-white text-gray-800 border-t border-gray-200 p-6">
       <div class="container mx-auto">
-        <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6 gap-6">
           <div>
             <h3 class="font-bold text-xl mb-3 text-blue-600">🌌 MindVerse Daily</h3>
             <p class="text-gray-600 mb-4">Bilginin sonsuz evrenini keşfedin. Kaliteli, araştırma temelli içeriklerle hayatınıza değer katın.</p>
-            <div class="flex flex-wrap gap-2">
-              <a href="/health" class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm hover:bg-blue-200 transition-colors">🏥 Sağlık</a>
-              <a href="/love" class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm hover:bg-red-200 transition-colors">❤️ Aşk</a>
-              <a href="/history" class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm hover:bg-yellow-200 transition-colors">📚 Tarih</a>
-              <a href="/astrology" class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition-colors">🔮 Astroloji</a>
-            </div>
-          </div>
-          <div>
-            <h3 class="font-bold text-lg mb-3">📋 Hızlı Erişim</h3>
-            <div class="grid grid-cols-2 gap-3 text-sm">
-              <a href="/popular" class="block text-blue-600 hover:text-blue-800 transition-colors">🔥 Popüler İçerikler</a>
-              <a href="/categories" class="block text-blue-600 hover:text-blue-800 transition-colors">📂 Tüm Kategoriler</a>
-              <a href="/astrology" class="block text-blue-600 hover:text-blue-800 transition-colors">🔮 Astroloji</a>
-              <a href="/health" class="block text-blue-600 hover:text-blue-800 transition-colors">🏥 Sağlık</a>
-              <a href="/sitemap" class="block text-blue-600 hover:text-blue-800 transition-colors">🗺️ Site Haritası</a>
+            <div class="flex flex-wrap gap-3 md:gap-4 items-center">
+              <a href="/health" class="flex flex-col items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-lg hover:bg-blue-200 transition-colors shadow-sm">
+                <span class="text-2xl">🏥</span>
+                <span class="text-xs font-medium mt-1">Sağlık</span>
+              </a>
+              <a href="/love" class="flex flex-col items-center bg-red-100 text-red-800 px-4 py-2 rounded-full text-lg hover:bg-red-200 transition-colors shadow-sm">
+                <span class="text-2xl">❤️</span>
+                <span class="text-xs font-medium mt-1">Aşk</span>
+              </a>
+              <a href="/history" class="flex flex-col items-center bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-lg hover:bg-yellow-200 transition-colors shadow-sm">
+                <span class="text-2xl">📚</span>
+                <span class="text-xs font-medium mt-1">Tarih</span>
+              </a>
+              <a href="/astrology" class="flex flex-col items-center bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-lg hover:bg-purple-200 transition-colors shadow-sm">
+                <span class="text-2xl">🔮</span>
+                <span class="text-xs font-medium mt-1">Astroloji</span>
+              </a>
+              <a href="/psychology" class="flex flex-col items-center bg-pink-100 text-pink-800 px-4 py-2 rounded-full text-lg hover:bg-pink-200 transition-colors shadow-sm">
+                <span class="text-2xl">🧠</span>
+                <span class="text-xs font-medium mt-1">Psikoloji</span>
+              </a>
+              <a href="/space" class="flex flex-col items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-lg hover:bg-green-200 transition-colors shadow-sm">
+                <span class="text-2xl">🚀</span>
+                <span class="text-xs font-medium mt-1">Uzay</span>
+              </a>
+              <a href="/quotes" class="flex flex-col items-center bg-gray-100 text-gray-800 px-4 py-2 rounded-full text-lg hover:bg-gray-200 transition-colors shadow-sm">
+                <span class="text-2xl">💭</span>
+                <span class="text-xs font-medium mt-1">Alıntılar</span>
+              </a>
             </div>
           </div>
         </div>
