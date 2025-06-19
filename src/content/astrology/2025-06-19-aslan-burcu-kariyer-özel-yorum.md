@@ -1,13 +1,13 @@
 ---
-title: "Ruhsal Yolculuk - Aslan Burcu Haftalık Yorumu"
-description: "Aslan burcu için detaylı astroloji yorumu. ruhsal yolculuk konusunda rehberlik."
+title: "Kariyer Atılımı - Aslan Burcu Özel Yorumu"
+description: "Aslan burcu için detaylı astroloji yorumu. kariyer atılımı konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["aslan burcu", "haftalık yorum", "astroloji", "burç yorumu"]
+tags: ["aslan burcu", "kariyer yorum", "astroloji", "burç yorumu", "özel yorum"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Aslan Burcu Haftalık Yorumu
+# Aslan Burcu Kariyer Özel Yorumu
 
 🦁 **Aslan Burcu** (**23 Temmuz - 22 Ağustos**)
 

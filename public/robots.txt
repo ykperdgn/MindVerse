@@ -13,6 +13,9 @@ Allow: /space
 Allow: /quotes
 Allow: /popular
 Allow: /categories
+Allow: /astrology
+Allow: /astrology/yukselen-burc
+Allow: /astrology/sinastri
 
 # Crawl hızı ayarı (saniyede 1 istek)
 Crawl-delay: 1

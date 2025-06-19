@@ -1,13 +1,13 @@
 ---
-title: "Duygusal Denge - Yengeç Burcu Günlük Yorumu"
-description: "Yengeç burcu için detaylı astroloji yorumu. duygusal denge konusunda rehberlik."
+title: "Aşk Enerjisi - Yengeç Burcu Özel Yorumu"
+description: "Yengeç burcu için detaylı astroloji yorumu. aşk enerjisi konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["yengeç burcu", "günlük yorum", "astroloji", "burç yorumu"]
+tags: ["yengeç burcu", "aşk yorum", "astroloji", "burç yorumu", "özel yorum"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Yengeç Burcu Günlük Yorumu
+# Yengeç Burcu Aşk Özel Yorumu
 
 🦀 **Yengeç Burcu** (**21 Haziran - 22 Temmuz**)
 
