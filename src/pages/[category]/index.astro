@@ -3,7 +3,7 @@ import Layout from '../../components/Layout.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-  const categories = ['health', 'love', 'history', 'psychology', 'space', 'quotes', 'astrology'];
+  const categories = ['health', 'love', 'history', 'psychology', 'space', 'quotes', 'astrology', 'art', 'cinema', 'technology'];
   return categories.map(category => ({
     params: { category }
   }));

@@ -4,7 +4,7 @@ import RelatedPosts from '../../components/RelatedPosts.astro';
 import { getCollection, getEntry } from 'astro:content';
 
 export async function getStaticPaths() {
-  const categories = ['health', 'love', 'history', 'psychology', 'space', 'quotes', 'astrology'];
+  const categories = ['health', 'love', 'history', 'psychology', 'space', 'quotes', 'astrology', 'art', 'cinema', 'technology'];
   const paths = [];
 
   for (const category of categories) {

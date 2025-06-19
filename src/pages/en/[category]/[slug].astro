@@ -4,7 +4,7 @@ import RelatedPosts from '../../../components/RelatedPosts.astro';
 import { getCollection, getEntry } from 'astro:content';
 
 export async function getStaticPaths() {
-  const categories = ['health', 'love', 'history', 'psychology', 'space', 'quotes', 'astrology'];
+  const categories = ['health', 'love', 'history', 'psychology', 'space', 'quotes', 'astrology', 'art', 'cinema', 'technology'];
   const paths = [];
 
   for (const category of categories) {
@@ -40,7 +40,10 @@ const categoryInfo = {
   psychology: { name: 'Psychology', icon: '🧠' },
   space: { name: 'Space', icon: '🚀' },
   quotes: { name: 'Quotes', icon: '💭' },
-  astrology: { name: 'Astrology', icon: '🔮' }
+  astrology: { name: 'Astrology', icon: '🔮' },
+  art: { name: 'Art', icon: '🎨' },
+  cinema: { name: 'Cinema', icon: '🎬' },
+  technology: { name: 'Technology', icon: '💻' }
 };
 
 const categoryTitle = categoryInfo[category]?.name || category;
