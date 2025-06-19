@@ -1,0 +1,764 @@
+---
+title: "Synastry Analysis - Relationship Compatibility - MindVerse"
+description: "Analyze astrological compatibility between two people. Love compatibility, friendship compatibility and relationship potential calculation."
+keywords: "synastry, love compatibility, zodiac compatibility, astrology compatibility, relationship analysis, astrological compatibility"
+layout: "../../components/Layout.astro"
+---
+
+<div class="min-h-screen bg-gradient-to-br from-red-50 via-pink-50 to-purple-50 py-12">
+  <div class="container mx-auto px-4">
+
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <div class="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-full bg-gradient-to-br from-red-400 to-pink-400 text-white shadow-xl">
+        <span class="text-4xl">💕</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent">
+        Synastry Analysis
+      </h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Discover the astrological compatibility between two people. Analyze love potential, communication patterns, and relationship dynamics through detailed synastry comparison.
+      </p>
+    </div>
+
+    <!-- Input Form -->
+    <div class="max-w-4xl mx-auto mb-12">
+      <div class="bg-white/90 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/50">
+        <h2 class="text-2xl font-bold mb-8 text-center text-gray-800">Enter Both Birth Details</h2>
+
+        <form id="synastry-form" class="space-y-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Person 1 -->
+            <div class="space-y-6">
+              <div class="text-center">
+                <div class="inline-flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-gradient-to-br from-blue-400 to-indigo-400 text-white">
+                  <span class="text-2xl">👤</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800">Person 1</h3>
+              </div>
+
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Name</label>
+                <input
+                  type="text"
+                  id="person1-name"
+                  name="person1-name"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                  placeholder="Enter name"
+                >
+              </div>
+
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Date of Birth</label>
+                <input
+                  type="date"
+                  id="person1-date"
+                  name="person1-date"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                >
+              </div>
+
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Time of Birth</label>
+                <input
+                  type="time"
+                  id="person1-time"
+                  name="person1-time"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                >
+                <p class="text-sm text-gray-500 mt-1">Optional, but improves accuracy</p>
+              </div>
+
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Place of Birth</label>
+                <input
+                  type="text"
+                  id="person1-place"
+                  name="person1-place"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                  placeholder="City, Country"
+                >
+              </div>
+            </div>
+
+            <!-- Person 2 -->
+            <div class="space-y-6">
+              <div class="text-center">
+                <div class="inline-flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-gradient-to-br from-pink-400 to-red-400 text-white">
+                  <span class="text-2xl">👤</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800">Person 2</h3>
+              </div>
+
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Name</label>
+                <input
+                  type="text"
+                  id="person2-name"
+                  name="person2-name"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                  placeholder="Enter name"
+                >
+              </div>
+
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Date of Birth</label>
+                <input
+                  type="date"
+                  id="person2-date"
+                  name="person2-date"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                >
+              </div>
+
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Time of Birth</label>
+                <input
+                  type="time"
+                  id="person2-time"
+                  name="person2-time"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                >
+                <p class="text-sm text-gray-500 mt-1">Optional, but improves accuracy</p>
+              </div>
+
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Place of Birth</label>
+                <input
+                  type="text"
+                  id="person2-place"
+                  name="person2-place"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                  placeholder="City, Country"
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Analyze Button -->
+          <div class="text-center">
+            <button
+              type="submit"
+              class="bg-gradient-to-r from-red-500 to-pink-500 text-white px-12 py-4 rounded-xl font-semibold hover:from-red-600 hover:to-pink-600 transition-all transform hover:scale-105 shadow-lg"
+            >
+              💕 Analyze Compatibility
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Results Section (Initially Hidden) -->
+    <div id="results-section" class="hidden">
+
+      <!-- Overall Compatibility Score -->
+      <div class="max-w-2xl mx-auto mb-12">
+        <div class="bg-gradient-to-r from-red-600 via-pink-600 to-purple-600 rounded-3xl p-8 text-white shadow-2xl">
+          <div class="text-center">
+            <h2 class="text-2xl font-bold mb-4">Compatibility Analysis</h2>
+            <div id="names-display" class="text-xl mb-6">Person 1 & Person 2</div>
+
+            <!-- Overall Score -->
+            <div class="mb-6">
+              <div class="text-6xl font-bold mb-2" id="overall-score">85%</div>
+              <p class="text-lg" id="compatibility-level">Highly Compatible</p>
+            </div>
+
+            <!-- Quick Summary -->
+            <div class="bg-white/20 backdrop-blur-md rounded-2xl p-6">
+              <p id="quick-summary" class="text-lg">
+                You share a strong emotional and intellectual connection with excellent communication potential.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detailed Compatibility Scores -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+
+        <!-- Love Compatibility -->
+        <div class="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-red-100">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-gradient-to-br from-red-400 to-pink-400 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-3xl">❤️</span>
+            </div>
+            <h3 class="font-bold text-gray-800 mb-2">Love</h3>
+            <div class="text-3xl font-bold text-red-600 mb-2" id="love-score">92%</div>
+            <p class="text-sm text-gray-600" id="love-description">Strong romantic attraction</p>
+          </div>
+        </div>
+
+        <!-- Communication -->
+        <div class="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-blue-100">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-3xl">💬</span>
+            </div>
+            <h3 class="font-bold text-gray-800 mb-2">Communication</h3>
+            <div class="text-3xl font-bold text-blue-600 mb-2" id="communication-score">78%</div>
+            <p class="text-sm text-gray-600" id="communication-description">Good understanding</p>
+          </div>
+        </div>
+
+        <!-- Emotional Bond -->
+        <div class="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-purple-100">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-indigo-400 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-3xl">💜</span>
+            </div>
+            <h3 class="font-bold text-gray-800 mb-2">Emotional</h3>
+            <div class="text-3xl font-bold text-purple-600 mb-2" id="emotional-score">85%</div>
+            <p class="text-sm text-gray-600" id="emotional-description">Deep emotional connection</p>
+          </div>
+        </div>
+
+        <!-- Long-term Potential -->
+        <div class="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-green-100">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-teal-400 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-3xl">🌱</span>
+            </div>
+            <h3 class="font-bold text-gray-800 mb-2">Long-term</h3>
+            <div class="text-3xl font-bold text-green-600 mb-2" id="longterm-score">88%</div>
+            <p class="text-sm text-gray-600" id="longterm-description">Excellent growth potential</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Zodiac Sign Comparison -->
+      <div class="bg-white/90 backdrop-blur-md rounded-3xl p-8 mb-8 shadow-xl border border-white/50">
+        <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Zodiac Sign Analysis</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Person 1 Signs -->
+          <div class="text-center">
+            <h3 class="text-xl font-bold mb-6 text-gray-800" id="person1-title">Person 1</h3>
+            <div class="space-y-4">
+              <div class="bg-orange-50 rounded-xl p-4">
+                <div class="flex items-center justify-center mb-2">
+                  <span id="person1-sun-symbol" class="text-3xl mr-3">☉</span>
+                  <div>
+                    <p class="font-semibold">Sun Sign</p>
+                    <p id="person1-sun-sign" class="text-orange-600">Leo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-blue-50 rounded-xl p-4">
+                <div class="flex items-center justify-center mb-2">
+                  <span id="person1-moon-symbol" class="text-3xl mr-3">☽</span>
+                  <div>
+                    <p class="font-semibold">Moon Sign</p>
+                    <p id="person1-moon-sign" class="text-blue-600">Cancer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-purple-50 rounded-xl p-4">
+                <div class="flex items-center justify-center mb-2">
+                  <span id="person1-venus-symbol" class="text-3xl mr-3">♀</span>
+                  <div>
+                    <p class="font-semibold">Venus Sign</p>
+                    <p id="person1-venus-sign" class="text-purple-600">Virgo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Person 2 Signs -->
+          <div class="text-center">
+            <h3 class="text-xl font-bold mb-6 text-gray-800" id="person2-title">Person 2</h3>
+            <div class="space-y-4">
+              <div class="bg-orange-50 rounded-xl p-4">
+                <div class="flex items-center justify-center mb-2">
+                  <span id="person2-sun-symbol" class="text-3xl mr-3">☉</span>
+                  <div>
+                    <p class="font-semibold">Sun Sign</p>
+                    <p id="person2-sun-sign" class="text-orange-600">Sagittarius</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-blue-50 rounded-xl p-4">
+                <div class="flex items-center justify-center mb-2">
+                  <span id="person2-moon-symbol" class="text-3xl mr-3">☽</span>
+                  <div>
+                    <p class="font-semibold">Moon Sign</p>
+                    <p id="person2-moon-sign" class="text-blue-600">Gemini</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-purple-50 rounded-xl p-4">
+                <div class="flex items-center justify-center mb-2">
+                  <span id="person2-venus-symbol" class="text-3xl mr-3">♀</span>
+                  <div>
+                    <p class="font-semibold">Venus Sign</p>
+                    <p id="person2-venus-sign" class="text-purple-600">Scorpio</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detailed Analysis -->
+      <div class="space-y-8 mb-12">
+
+        <!-- Strengths -->
+        <div class="bg-gradient-to-r from-green-100 to-emerald-100 rounded-3xl p-8 border border-green-200">
+          <h2 class="text-2xl font-bold mb-6 text-green-800 flex items-center">
+            <span class="mr-3">💪</span>Relationship Strengths
+          </h2>
+          <div id="strengths-list" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Strengths will be populated by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Challenges -->
+        <div class="bg-gradient-to-r from-orange-100 to-yellow-100 rounded-3xl p-8 border border-orange-200">
+          <h2 class="text-2xl font-bold mb-6 text-orange-800 flex items-center">
+            <span class="mr-3">⚠️</span>Potential Challenges
+          </h2>
+          <div id="challenges-list" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Challenges will be populated by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Growth Opportunities -->
+        <div class="bg-gradient-to-r from-blue-100 to-purple-100 rounded-3xl p-8 border border-blue-200">
+          <h2 class="text-2xl font-bold mb-6 text-blue-800 flex items-center">
+            <span class="mr-3">🌱</span>Growth Opportunities
+          </h2>
+          <div id="growth-list" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Growth opportunities will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Advice Section -->
+      <div class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-3xl p-8 text-white mb-12">
+        <h2 class="text-3xl font-bold mb-6 text-center">Relationship Advice</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Communication Tips -->
+          <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6">
+            <h3 class="text-xl font-bold mb-4 flex items-center">
+              <span class="mr-3">💬</span>Communication
+            </h3>
+            <p id="communication-advice" class="text-white/90 text-sm">
+              Focus on clear, honest communication and active listening to strengthen your bond.
+            </p>
+          </div>
+
+          <!-- Conflict Resolution -->
+          <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6">
+            <h3 class="text-xl font-bold mb-4 flex items-center">
+              <span class="mr-3">🤝</span>Conflict Resolution
+            </h3>
+            <p id="conflict-advice" class="text-white/90 text-sm">
+              Address disagreements calmly and focus on finding mutually beneficial solutions.
+            </p>
+          </div>
+
+          <!-- Long-term Success -->
+          <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6">
+            <h3 class="text-xl font-bold mb-4 flex items-center">
+              <span class="mr-3">🎯</span>Long-term Success
+            </h3>
+            <p id="success-advice" class="text-white/90 text-sm">
+              Maintain independence while building shared goals and supporting each other's growth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Educational Content -->
+    <div class="max-w-4xl mx-auto mb-12">
+      <div class="bg-white/90 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/50">
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Understanding Synastry</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-gray-800">What is Synastry?</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Synastry is the astrological analysis of relationship compatibility by comparing two birth charts.
+              It examines how the planets in one person's chart interact with the planets in another person's chart.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              This ancient practice helps understand the dynamics between two people, revealing areas of harmony,
+              potential challenges, and opportunities for growth in relationships.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-gray-800">Key Factors Analyzed</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-red-500 mr-3 mt-1">•</span>
+                <span><strong>Sun Signs:</strong> Core personality compatibility</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-red-500 mr-3 mt-1">•</span>
+                <span><strong>Moon Signs:</strong> Emotional compatibility and understanding</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-red-500 mr-3 mt-1">•</span>
+                <span><strong>Venus Signs:</strong> Love language and romantic compatibility</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-red-500 mr-3 mt-1">•</span>
+                <span><strong>Mars Signs:</strong> Energy, passion, and conflict resolution</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-red-500 mr-3 mt-1">•</span>
+                <span><strong>Mercury Signs:</strong> Communication styles and intellectual compatibility</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Language Switch -->
+    <div class="text-center mb-12">
+      <div class="inline-flex bg-white rounded-full p-2 shadow-lg">
+        <a href="/astrology/sinastri" class="px-6 py-2 text-gray-600 hover:text-blue-600 transition-all">
+          🇹🇷 Türkçe
+        </a>
+        <span class="px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full font-semibold">
+          🇺🇸 English
+        </span>
+      </div>
+    </div>
+
+    <!-- AdSense Ad -->
+    <div class="flex justify-center">
+      <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl p-8 text-center">
+        <p class="text-gray-500 text-sm">Synastry Analysis Advertisement - 728x90</p>
+        <p class="text-gray-400 text-xs">AdSense Slot</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  // Synastry Calculator
+  class SynastryCalculator {
+    constructor() {
+      this.zodiacSigns = [
+        'Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo',
+        'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'
+      ];
+
+      this.signSymbols = {
+        'Aries': '♈', 'Taurus': '♉', 'Gemini': '♊', 'Cancer': '♋',
+        'Leo': '♌', 'Virgo': '♍', 'Libra': '♎', 'Scorpio': '♏',
+        'Sagittarius': '♐', 'Capricorn': '♑', 'Aquarius': '♒', 'Pisces': '♓'
+      };
+
+      this.compatibility = {
+        'Aries': { high: ['Leo', 'Sagittarius', 'Gemini', 'Aquarius'], medium: ['Aries', 'Libra'], low: ['Cancer', 'Capricorn', 'Taurus', 'Virgo', 'Scorpio', 'Pisces'] },
+        'Taurus': { high: ['Virgo', 'Capricorn', 'Cancer', 'Pisces'], medium: ['Taurus', 'Scorpio'], low: ['Leo', 'Aquarius', 'Aries', 'Gemini', 'Libra', 'Sagittarius'] },
+        'Gemini': { high: ['Libra', 'Aquarius', 'Aries', 'Leo'], medium: ['Gemini', 'Sagittarius'], low: ['Virgo', 'Pisces', 'Taurus', 'Cancer', 'Scorpio', 'Capricorn'] },
+        'Cancer': { high: ['Scorpio', 'Pisces', 'Taurus', 'Virgo'], medium: ['Cancer', 'Capricorn'], low: ['Aries', 'Libra', 'Gemini', 'Leo', 'Sagittarius', 'Aquarius'] },
+        'Leo': { high: ['Aries', 'Sagittarius', 'Gemini', 'Libra'], medium: ['Leo', 'Aquarius'], low: ['Taurus', 'Scorpio', 'Cancer', 'Virgo', 'Capricorn', 'Pisces'] },
+        'Virgo': { high: ['Taurus', 'Capricorn', 'Cancer', 'Scorpio'], medium: ['Virgo', 'Pisces'], low: ['Gemini', 'Sagittarius', 'Aries', 'Leo', 'Libra', 'Aquarius'] },
+        'Libra': { high: ['Gemini', 'Aquarius', 'Leo', 'Sagittarius'], medium: ['Libra', 'Aries'], low: ['Cancer', 'Capricorn', 'Taurus', 'Virgo', 'Scorpio', 'Pisces'] },
+        'Scorpio': { high: ['Cancer', 'Pisces', 'Virgo', 'Capricorn'], medium: ['Scorpio', 'Taurus'], low: ['Leo', 'Aquarius', 'Aries', 'Gemini', 'Libra', 'Sagittarius'] },
+        'Sagittarius': { high: ['Aries', 'Leo', 'Libra', 'Aquarius'], medium: ['Sagittarius', 'Gemini'], low: ['Virgo', 'Pisces', 'Taurus', 'Cancer', 'Scorpio', 'Capricorn'] },
+        'Capricorn': { high: ['Taurus', 'Virgo', 'Scorpio', 'Pisces'], medium: ['Capricorn', 'Cancer'], low: ['Aries', 'Libra', 'Gemini', 'Leo', 'Sagittarius', 'Aquarius'] },
+        'Aquarius': { high: ['Gemini', 'Libra', 'Aries', 'Sagittarius'], medium: ['Aquarius', 'Leo'], low: ['Taurus', 'Scorpio', 'Cancer', 'Virgo', 'Capricorn', 'Pisces'] },
+        'Pisces': { high: ['Cancer', 'Scorpio', 'Taurus', 'Capricorn'], medium: ['Pisces', 'Virgo'], low: ['Gemini', 'Sagittarius', 'Aries', 'Leo', 'Libra', 'Aquarius'] }
+      };
+    }
+
+    getZodiacSign(birthDate) {
+      const date = new Date(birthDate);
+      const month = date.getMonth() + 1;
+      const day = date.getDate();
+
+      const signs = [
+        { sign: 'Capricorn', start: { month: 12, day: 22 }, end: { month: 1, day: 19 } },
+        { sign: 'Aquarius', start: { month: 1, day: 20 }, end: { month: 2, day: 18 } },
+        { sign: 'Pisces', start: { month: 2, day: 19 }, end: { month: 3, day: 20 } },
+        { sign: 'Aries', start: { month: 3, day: 21 }, end: { month: 4, day: 19 } },
+        { sign: 'Taurus', start: { month: 4, day: 20 }, end: { month: 5, day: 20 } },
+        { sign: 'Gemini', start: { month: 5, day: 21 }, end: { month: 6, day: 20 } },
+        { sign: 'Cancer', start: { month: 6, day: 21 }, end: { month: 7, day: 22 } },
+        { sign: 'Leo', start: { month: 7, day: 23 }, end: { month: 8, day: 22 } },
+        { sign: 'Virgo', start: { month: 8, day: 23 }, end: { month: 9, day: 22 } },
+        { sign: 'Libra', start: { month: 9, day: 23 }, end: { month: 10, day: 22 } },
+        { sign: 'Scorpio', start: { month: 10, day: 23 }, end: { month: 11, day: 21 } },
+        { sign: 'Sagittarius', start: { month: 11, day: 22 }, end: { month: 12, day: 21 } }
+      ];
+
+      for (const signData of signs) {
+        if (signData.sign === 'Capricorn') {
+          if ((month === 12 && day >= 22) || (month === 1 && day <= 19)) {
+            return signData.sign;
+          }
+        } else {
+          if (
+            (month === signData.start.month && day >= signData.start.day) ||
+            (month === signData.end.month && day <= signData.end.day)
+          ) {
+            return signData.sign;
+          }
+        }
+      }
+
+      return 'Aries'; // fallback
+    }
+
+    calculateMoonSign(birthDate) {
+      // Simplified moon sign calculation (in reality, requires ephemeris data)
+      const date = new Date(birthDate);
+      const dayOfYear = Math.floor((date - new Date(date.getFullYear(), 0, 0)) / 86400000);
+      const moonIndex = Math.floor((dayOfYear * 13) / 365) % 12;
+      return this.zodiacSigns[moonIndex];
+    }
+
+    calculateVenusSign(birthDate) {
+      // Simplified Venus sign calculation
+      const date = new Date(birthDate);
+      const dayOfYear = Math.floor((date - new Date(date.getFullYear(), 0, 0)) / 86400000);
+      const venusIndex = Math.floor((dayOfYear + 45) / 30) % 12;
+      return this.zodiacSigns[venusIndex];
+    }
+
+    calculateCompatibilityScore(sign1, sign2) {
+      const compatibility1 = this.compatibility[sign1];
+
+      if (compatibility1.high.includes(sign2)) return 90 + Math.floor(Math.random() * 10);
+      if (compatibility1.medium.includes(sign2)) return 70 + Math.floor(Math.random() * 15);
+      return 40 + Math.floor(Math.random() * 25);
+    }
+
+    analyzeSynastry(person1, person2) {
+      // Calculate zodiac signs
+      const person1Signs = {
+        sun: this.getZodiacSign(person1.date),
+        moon: this.calculateMoonSign(person1.date),
+        venus: this.calculateVenusSign(person1.date)
+      };
+
+      const person2Signs = {
+        sun: this.getZodiacSign(person2.date),
+        moon: this.calculateMoonSign(person2.date),
+        venus: this.calculateVenusSign(person2.date)
+      };
+
+      // Calculate compatibility scores
+      const sunCompatibility = this.calculateCompatibilityScore(person1Signs.sun, person2Signs.sun);
+      const moonCompatibility = this.calculateCompatibilityScore(person1Signs.moon, person2Signs.moon);
+      const venusCompatibility = this.calculateCompatibilityScore(person1Signs.venus, person2Signs.venus);
+
+      // Calculate specific area scores
+      const loveScore = Math.round((sunCompatibility + venusCompatibility) / 2);
+      const communicationScore = Math.round((sunCompatibility + moonCompatibility) / 2);
+      const emotionalScore = Math.round((moonCompatibility * 0.7) + (venusCompatibility * 0.3));
+      const longtermScore = Math.round((sunCompatibility + moonCompatibility + venusCompatibility) / 3);
+
+      // Overall score
+      const overallScore = Math.round((loveScore + communicationScore + emotionalScore + longtermScore) / 4);
+
+      return {
+        person1Signs,
+        person2Signs,
+        scores: {
+          overall: overallScore,
+          love: loveScore,
+          communication: communicationScore,
+          emotional: emotionalScore,
+          longterm: longtermScore
+        },
+        analysis: this.generateAnalysis(person1Signs, person2Signs, overallScore)
+      };
+    }
+
+    generateAnalysis(signs1, signs2, overallScore) {
+      const compatibilityLevel = overallScore >= 80 ? 'Highly Compatible' :
+                                overallScore >= 60 ? 'Moderately Compatible' : 'Challenging but Workable';
+
+      const strengths = [
+        'Strong emotional understanding between your core personalities',
+        'Shared values and life perspectives create harmony',
+        'Natural ability to support each other\'s goals',
+        'Complementary communication styles enhance connection',
+        'Mutual respect for individual differences',
+        'Strong foundation for long-term commitment'
+      ];
+
+      const challenges = [
+        'Different approaches to expressing emotions may cause misunderstandings',
+        'Varying communication styles require patience and adaptation',
+        'Individual needs for independence vs. togetherness need balance',
+        'Different conflict resolution styles may create friction',
+        'Varying life paces may require compromise',
+        'Different ways of showing love need mutual understanding'
+      ];
+
+      const growth = [
+        'Learning from each other\'s unique perspectives',
+        'Developing patience and understanding in communication',
+        'Building stronger emotional intimacy through vulnerability',
+        'Creating shared goals while honoring individual dreams',
+        'Practicing active listening and empathy',
+        'Celebrating differences as strengths rather than obstacles'
+      ];
+
+      return {
+        compatibilityLevel,
+        quickSummary: this.generateQuickSummary(signs1, signs2, overallScore),
+        strengths: strengths.slice(0, 4),
+        challenges: challenges.slice(0, 4),
+        growth: growth.slice(0, 4),
+        advice: {
+          communication: 'Focus on understanding each other\'s communication style and practice active listening.',
+          conflict: 'Address disagreements with patience and seek win-win solutions that honor both perspectives.',
+          success: 'Build on your strengths while working together to overcome challenges with love and understanding.'
+        }
+      };
+    }
+
+    generateQuickSummary(signs1, signs2, score) {
+      if (score >= 80) {
+        return 'You share excellent compatibility with strong potential for a lasting, harmonious relationship built on mutual understanding and shared values.';
+      } else if (score >= 60) {
+        return 'You have good compatibility with some areas requiring attention. With effort and understanding, you can build a strong, fulfilling relationship.';
+      } else {
+        return 'Your relationship may face challenges, but with commitment, patience, and mutual respect, you can create a unique and meaningful connection.';
+      }
+    }
+  }
+
+  // Initialize calculator
+  const calculator = new SynastryCalculator();
+
+  // Form submission handler
+  document.getElementById('synastry-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+
+    const person1 = {
+      name: formData.get('person1-name'),
+      date: formData.get('person1-date'),
+      time: formData.get('person1-time'),
+      place: formData.get('person1-place')
+    };
+
+    const person2 = {
+      name: formData.get('person2-name'),
+      date: formData.get('person2-date'),
+      time: formData.get('person2-time'),
+      place: formData.get('person2-place')
+    };
+
+    generateSynastryAnalysis(person1, person2);
+  });
+
+  function generateSynastryAnalysis(person1, person2) {
+    // Calculate synastry
+    const result = calculator.analyzeSynastry(person1, person2);
+
+    // Show results section
+    document.getElementById('results-section').classList.remove('hidden');
+    document.getElementById('results-section').scrollIntoView({ behavior: 'smooth' });
+
+    // Update names display
+    document.getElementById('names-display').textContent = `${person1.name} & ${person2.name}`;
+
+    // Update overall score
+    document.getElementById('overall-score').textContent = `${result.scores.overall}%`;
+    document.getElementById('compatibility-level').textContent = result.analysis.compatibilityLevel;
+    document.getElementById('quick-summary').textContent = result.analysis.quickSummary;
+
+    // Update individual scores
+    updateScore('love-score', result.scores.love);
+    updateScore('communication-score', result.scores.communication);
+    updateScore('emotional-score', result.scores.emotional);
+    updateScore('longterm-score', result.scores.longterm);
+
+    // Update score descriptions
+    updateScoreDescription('love-description', result.scores.love);
+    updateScoreDescription('communication-description', result.scores.communication);
+    updateScoreDescription('emotional-description', result.scores.emotional);
+    updateScoreDescription('longterm-description', result.scores.longterm);
+
+    // Update zodiac signs
+    updateZodiacSigns(person1, person2, result);
+
+    // Update analysis sections
+    updateAnalysisSections(result.analysis);
+  }
+
+  function updateScore(elementId, score) {
+    document.getElementById(elementId).textContent = `${score}%`;
+  }
+
+  function updateScoreDescription(elementId, score) {
+    const descriptions = {
+      high: ['Excellent compatibility', 'Strong connection', 'Natural harmony', 'Perfect match'],
+      medium: ['Good compatibility', 'Strong potential', 'Harmonious bond', 'Good understanding'],
+      low: ['Needs attention', 'Requires work', 'Growth opportunity', 'Potential challenge']
+    };
+
+    const level = score >= 80 ? 'high' : score >= 60 ? 'medium' : 'low';
+    const randomDesc = descriptions[level][Math.floor(Math.random() * descriptions[level].length)];
+    document.getElementById(elementId).textContent = randomDesc;
+  }
+
+  function updateZodiacSigns(person1, person2, result) {
+    // Person 1
+    document.getElementById('person1-title').textContent = person1.name;
+    document.getElementById('person1-sun-symbol').textContent = calculator.signSymbols[result.person1Signs.sun];
+    document.getElementById('person1-sun-sign').textContent = result.person1Signs.sun;
+    document.getElementById('person1-moon-symbol').textContent = calculator.signSymbols[result.person1Signs.moon];
+    document.getElementById('person1-moon-sign').textContent = result.person1Signs.moon;
+    document.getElementById('person1-venus-symbol').textContent = calculator.signSymbols[result.person1Signs.venus];
+    document.getElementById('person1-venus-sign').textContent = result.person1Signs.venus;
+
+    // Person 2
+    document.getElementById('person2-title').textContent = person2.name;
+    document.getElementById('person2-sun-symbol').textContent = calculator.signSymbols[result.person2Signs.sun];
+    document.getElementById('person2-sun-sign').textContent = result.person2Signs.sun;
+    document.getElementById('person2-moon-symbol').textContent = calculator.signSymbols[result.person2Signs.moon];
+    document.getElementById('person2-moon-sign').textContent = result.person2Signs.moon;
+    document.getElementById('person2-venus-symbol').textContent = calculator.signSymbols[result.person2Signs.venus];
+    document.getElementById('person2-venus-sign').textContent = result.person2Signs.venus;
+  }
+
+  function updateAnalysisSections(analysis) {
+    // Strengths
+    updateListSection('strengths-list', analysis.strengths, 'text-green-700');
+
+    // Challenges
+    updateListSection('challenges-list', analysis.challenges, 'text-orange-700');
+
+    // Growth
+    updateListSection('growth-list', analysis.growth, 'text-blue-700');
+
+    // Advice
+    document.getElementById('communication-advice').textContent = analysis.advice.communication;
+    document.getElementById('conflict-advice').textContent = analysis.advice.conflict;
+    document.getElementById('success-advice').textContent = analysis.advice.success;
+  }
+
+  function updateListSection(containerId, items, colorClass) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = items.map(item => `
+      <div class="flex items-start p-4 bg-white/50 rounded-xl">
+        <span class="mr-3 mt-1 text-lg">•</span>
+        <span class="${colorClass}">${item}</span>
+      </div>
+    `).join('');
+  }
+</script>

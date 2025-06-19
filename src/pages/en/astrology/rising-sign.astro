@@ -1,0 +1,1065 @@
+---
+title: "Rising Sign Calculator - Ascendant Analysis - MindVerse"
+description: "Calculate your rising sign (ascendant) and discover how it influences your personality and first impressions."
+keywords: "rising sign, ascendant, astrology calculator, personality analysis, first impression"
+layout: "../../components/Layout.astro"
+---
+
+<div class="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 py-12">
+  <div class="container mx-auto px-4">
+
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <div class="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 text-white shadow-xl">
+        <span class="text-4xl">🌅</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+        Rising Sign Calculator
+      </h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Discover your ascendant sign and learn how it shapes your personality, appearance, and the first impression you make on others.
+      </p>
+    </div>
+
+    <!-- Calculator Form -->
+    <div class="max-w-2xl mx-auto mb-12">
+      <div class="bg-white/90 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/50">
+        <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Calculate Your Rising Sign</h2>
+        
+        <form id="rising-sign-form" class="space-y-6">
+          <!-- Date of Birth -->
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">
+              <span class="flex items-center">
+                <span class="mr-2">📅</span>
+                Date of Birth
+              </span>
+            </label>
+            <input 
+              type="date" 
+              id="birth-date" 
+              name="birth-date" 
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+            >
+          </div>
+
+          <!-- Time of Birth -->
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">
+              <span class="flex items-center">
+                <span class="mr-2">⏰</span>
+                Exact Time of Birth
+              </span>
+            </label>
+            <input 
+              type="time" 
+              id="birth-time" 
+              name="birth-time" 
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+            >
+            <p class="text-sm text-gray-500 mt-2">
+              ⚠️ Exact birth time is crucial for accurate rising sign calculation. Even a few minutes can change your ascendant.
+            </p>
+          </div>
+
+          <!-- Place of Birth -->
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">
+              <span class="flex items-center">
+                <span class="mr-2">📍</span>
+                Place of Birth
+              </span>
+            </label>
+            <input 
+              type="text" 
+              id="birth-place" 
+              name="birth-place" 
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+              placeholder="City, Country (e.g., New York, USA)"
+            >
+            <p class="text-sm text-gray-500 mt-2">
+              Location affects the calculation due to time zones and geographical coordinates.
+            </p>
+          </div>
+
+          <!-- Calculate Button -->
+          <button 
+            type="submit" 
+            class="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-4 rounded-xl font-semibold hover:from-purple-600 hover:to-pink-600 transition-all transform hover:scale-105 shadow-lg"
+          >
+            🌅 Calculate Rising Sign
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Results Section (Initially Hidden) -->
+    <div id="results-section" class="hidden">
+      
+      <!-- Rising Sign Result -->
+      <div class="max-w-4xl mx-auto mb-8">
+        <div class="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 rounded-3xl p-8 text-white shadow-2xl">
+          <div class="text-center">
+            <div id="rising-symbol" class="text-8xl mb-4">♈</div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              Your Rising Sign is <span id="rising-sign-name">Aries</span>
+            </h2>
+            <p id="rising-degree" class="text-xl mb-6">0° 0'</p>
+            <div class="bg-white/20 backdrop-blur-md rounded-2xl p-6 max-w-2xl mx-auto">
+              <p id="rising-tagline" class="text-lg font-medium">
+                "You appear dynamic, energetic, and ready for action"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detailed Analysis -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        
+        <!-- Personality Traits -->
+        <div class="bg-white/90 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/50">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center mr-4">
+              <span class="text-2xl">👤</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800">Personality Traits</h3>
+          </div>
+          <div id="personality-traits" class="space-y-3">
+            <!-- Traits will be populated by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Physical Appearance -->
+        <div class="bg-white/90 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/50">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-500 rounded-full flex items-center justify-center mr-4">
+              <span class="text-2xl">🪞</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800">Physical Tendencies</h3>
+          </div>
+          <div id="physical-traits" class="space-y-3">
+            <!-- Physical traits will be populated by JavaScript -->
+          </div>
+        </div>
+
+        <!-- First Impression -->
+        <div class="bg-white/90 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/50">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mr-4">
+              <span class="text-2xl">✨</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800">First Impression</h3>
+          </div>
+          <div id="first-impression" class="space-y-3">
+            <!-- First impression traits will be populated by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Life Approach -->
+        <div class="bg-white/90 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/50">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-500 rounded-full flex items-center justify-center mr-4">
+              <span class="text-2xl">🎯</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800">Life Approach</h3>
+          </div>
+          <div id="life-approach" class="space-y-3">
+            <!-- Life approach will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Compatibility -->
+      <div class="bg-white/90 backdrop-blur-md rounded-3xl p-8 mb-8 shadow-xl border border-white/50">
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Rising Sign Compatibility</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Most Compatible -->
+          <div class="text-center">
+            <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-emerald-400 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-3xl">💚</span>
+            </div>
+            <h3 class="font-bold text-gray-800 mb-3">Most Compatible</h3>
+            <div id="most-compatible" class="space-y-2">
+              <!-- Compatible signs will be populated -->
+            </div>
+          </div>
+
+          <!-- Challenging -->
+          <div class="text-center">
+            <div class="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-3xl">⚡</span>
+            </div>
+            <h3 class="font-bold text-gray-800 mb-3">Challenging</h3>
+            <div id="challenging-signs" class="space-y-2">
+              <!-- Challenging signs will be populated -->
+            </div>
+          </div>
+
+          <!-- Growth Opportunities -->
+          <div class="text-center">
+            <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-3xl">🌱</span>
+            </div>
+            <h3 class="font-bold text-gray-800 mb-3">Growth Partners</h3>
+            <div id="growth-partners" class="space-y-2">
+              <!-- Growth partners will be populated -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Personal Development -->
+      <div class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-3xl p-8 text-white mb-8">
+        <h2 class="text-3xl font-bold mb-6 text-center">Personal Development Insights</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Strengths -->
+          <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6">
+            <h3 class="text-xl font-bold mb-4 flex items-center">
+              <span class="mr-3">💪</span>Natural Strengths
+            </h3>
+            <div id="strengths-list" class="space-y-2">
+              <!-- Strengths will be populated -->
+            </div>
+          </div>
+
+          <!-- Areas for Growth -->
+          <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6">
+            <h3 class="text-xl font-bold mb-4 flex items-center">
+              <span class="mr-3">🌱</span>Areas for Growth
+            </h3>
+            <div id="growth-areas" class="space-y-2">
+              <!-- Growth areas will be populated -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Advice -->
+        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 mt-6">
+          <h3 class="text-xl font-bold mb-4 flex items-center">
+            <span class="mr-3">💡</span>Personal Advice
+          </h3>
+          <p id="personal-advice" class="text-white/90 leading-relaxed">
+            <!-- Personal advice will be populated -->
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Educational Content -->
+    <div class="max-w-4xl mx-auto mb-12">
+      <div class="bg-white/90 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/50">
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Understanding Your Rising Sign</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-gray-800">What is a Rising Sign?</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Your rising sign, also called the ascendant, is the zodiac sign that was rising on the eastern horizon 
+              at the exact moment and location of your birth. It represents the "mask" you wear when meeting new people 
+              and how others perceive you initially.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              Unlike your sun sign (which represents your core self) or moon sign (your emotional nature), 
+              your rising sign influences your outward personality, physical appearance, and immediate reactions to new situations.
+            </p>
+          </div>
+          
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-gray-800">Why Time and Place Matter</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              The rising sign changes approximately every 2 hours, making your exact birth time crucial for accuracy. 
+              Even a difference of 15-30 minutes can result in a different rising sign.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              Your birth location is equally important because it determines the local horizon and time zone, 
+              which directly affects which sign was rising at your birth moment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Language Switch -->
+    <div class="text-center mb-12">
+      <div class="inline-flex bg-white rounded-full p-2 shadow-lg">
+        <a href="/astrology/yukselen-burc" class="px-6 py-2 text-gray-600 hover:text-blue-600 transition-all">
+          🇹🇷 Türkçe
+        </a>
+        <span class="px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full font-semibold">
+          🇺🇸 English
+        </span>
+      </div>
+    </div>
+
+    <!-- AdSense Ad -->
+    <div class="flex justify-center">
+      <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl p-8 text-center">
+        <p class="text-gray-500 text-sm">Rising Sign Calculator Advertisement - 728x90</p>
+        <p class="text-gray-400 text-xs">AdSense Slot</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  // Rising Sign Calculator
+  class RisingSignCalculator {
+    constructor() {
+      this.zodiacSigns = {
+        'Aries': {
+          symbol: '♈',
+          element: 'Fire',
+          quality: 'Cardinal',
+          ruler: 'Mars',
+          tagline: "You appear dynamic, energetic, and ready for action",
+          personality: [
+            'Direct and straightforward in approach',
+            'Natural leadership qualities shine through',
+            'Quick to make decisions and take action',
+            'Confident and assertive presence',
+            'Pioneering spirit in new situations'
+          ],
+          physical: [
+            'Strong, athletic build tendency',
+            'Prominent facial features, especially eyebrows',
+            'Quick, decisive movements',
+            'Often has a youthful appearance',
+            'Energetic and vigorous demeanor'
+          ],
+          firstImpression: [
+            'Confident and self-assured',
+            'Ready to take charge',
+            'Enthusiastic and energetic',
+            'Competitive and ambitious',
+            'Independent and self-reliant'
+          ],
+          lifeApproach: [
+            'Head-first into new experiences',
+            'Direct confrontation of challenges',
+            'Quick decision-making style',
+            'Values independence and freedom',
+            'Prefers action over contemplation'
+          ],
+          compatible: ['Leo', 'Sagittarius', 'Gemini'],
+          challenging: ['Cancer', 'Capricorn'],
+          growth: ['Libra', 'Scorpio'],
+          strengths: [
+            'Natural leadership abilities',
+            'Courage in facing challenges',
+            'Ability to inspire others',
+            'Quick problem-solving skills'
+          ],
+          growthAreas: [
+            'Developing patience',
+            'Listening before acting',
+            'Considering others\' feelings',
+            'Following through on commitments'
+          ],
+          advice: "Embrace your natural leadership while learning to pause and consider the impact of your actions on others. Your enthusiasm is contagious—use it to inspire positive change."
+        },
+        'Taurus': {
+          symbol: '♉',
+          element: 'Earth',
+          quality: 'Fixed',
+          ruler: 'Venus',
+          tagline: "You appear stable, reliable, and naturally attractive",
+          personality: [
+            'Calm and composed demeanor',
+            'Practical approach to life',
+            'Strong sense of determination',
+            'Values comfort and security',
+            'Patient and methodical'
+          ],
+          physical: [
+            'Sturdy, well-proportioned build',
+            'Pleasant, harmonious features',
+            'Graceful, deliberate movements',
+            'Often has beautiful voice or smile',
+            'Natural sense of style'
+          ],
+          firstImpression: [
+            'Dependable and trustworthy',
+            'Calm under pressure',
+            'Practical and sensible',
+            'Appreciates beauty and comfort',
+            'Strong and stable presence'
+          ],
+          lifeApproach: [
+            'Steady progress toward goals',
+            'Values quality over quantity',
+            'Prefers proven methods',
+            'Builds lasting foundations',
+            'Seeks security and stability'
+          ],
+          compatible: ['Virgo', 'Capricorn', 'Cancer'],
+          challenging: ['Leo', 'Aquarius'],
+          growth: ['Scorpio', 'Sagittarius'],
+          strengths: [
+            'Exceptional persistence',
+            'Practical wisdom',
+            'Ability to create beauty',
+            'Strong sense of loyalty'
+          ],
+          growthAreas: [
+            'Embracing change',
+            'Avoiding stubbornness',
+            'Being more flexible',
+            'Trying new approaches'
+          ],
+          advice: "Your natural stability is a gift to others. Learn to balance your need for security with openness to new experiences that can enrich your life."
+        },
+        'Gemini': {
+          symbol: '♊',
+          element: 'Air',
+          quality: 'Mutable',
+          ruler: 'Mercury',
+          tagline: "You appear curious, witty, and intellectually engaging",
+          personality: [
+            'Quick-thinking and articulate',
+            'Curious about everything',
+            'Adaptable to different situations',
+            'Socially engaging and charming',
+            'Versatile and multi-talented'
+          ],
+          physical: [
+            'Youthful appearance regardless of age',
+            'Expressive eyes and animated features',
+            'Quick, agile movements',
+            'Often tall and slender',
+            'Mobile, changeable expressions'
+          ],
+          firstImpression: [
+            'Intelligent and well-informed',
+            'Friendly and approachable',
+            'Quick-witted and humorous',
+            'Interested in others',
+            'Mentally agile and sharp'
+          ],
+          lifeApproach: [
+            'Learning through experience',
+            'Connecting with many people',
+            'Gathering diverse information',
+            'Adapting to circumstances',
+            'Exploring multiple interests'
+          ],
+          compatible: ['Libra', 'Aquarius', 'Aries'],
+          challenging: ['Virgo', 'Pisces'],
+          growth: ['Sagittarius', 'Capricorn'],
+          strengths: [
+            'Excellent communication skills',
+            'Quick learning ability',
+            'Social versatility',
+            'Intellectual curiosity'
+          ],
+          growthAreas: [
+            'Developing deeper focus',
+            'Following through on commitments',
+            'Managing scattered energy',
+            'Cultivating emotional depth'
+          ],
+          advice: "Your intellectual gifts and social skills are remarkable. Focus on developing depth alongside your natural breadth of interests to achieve lasting fulfillment."
+        },
+        'Cancer': {
+          symbol: '♋',
+          element: 'Water',
+          quality: 'Cardinal',
+          ruler: 'Moon',
+          tagline: "You appear nurturing, intuitive, and emotionally intelligent",
+          personality: [
+            'Emotionally intuitive and sensitive',
+            'Protective of loved ones',
+            'Strong connection to home and family',
+            'Caring and nurturing nature',
+            'Highly empathetic'
+          ],
+          physical: [
+            'Soft, rounded features',
+            'Expressive, soulful eyes',
+            'Gentle, flowing movements',
+            'Often has a maternal/paternal quality',
+            'Changeable moods reflected in appearance'
+          ],
+          firstImpression: [
+            'Warm and welcoming',
+            'Emotionally available',
+            'Protective and caring',
+            'Intuitive and perceptive',
+            'Family-oriented'
+          ],
+          lifeApproach: [
+            'Following emotional guidance',
+            'Creating safe spaces',
+            'Nurturing growth in others',
+            'Honoring traditions',
+            'Building emotional connections'
+          ],
+          compatible: ['Scorpio', 'Pisces', 'Taurus'],
+          challenging: ['Aries', 'Libra'],
+          growth: ['Capricorn', 'Aquarius'],
+          strengths: [
+            'Deep emotional intelligence',
+            'Strong protective instincts',
+            'Intuitive understanding',
+            'Ability to create emotional safety'
+          ],
+          growthAreas: [
+            'Managing emotional overwhelm',
+            'Setting healthy boundaries',
+            'Balancing giving and receiving',
+            'Developing emotional objectivity'
+          ],
+          advice: "Your emotional intelligence and nurturing nature are powerful gifts. Learn to protect your own emotional well-being while caring for others."
+        },
+        'Leo': {
+          symbol: '♌',
+          element: 'Fire',
+          quality: 'Fixed',
+          ruler: 'Sun',
+          tagline: "You appear confident, charismatic, and naturally magnetic",
+          personality: [
+            'Confident and self-assured',
+            'Natural performer and entertainer',
+            'Generous and warm-hearted',
+            'Strong creative expression',
+            'Leadership through inspiration'
+          ],
+          physical: [
+            'Regal, dignified bearing',
+            'Strong, proud posture',
+            'Luxurious hair (often mane-like)',
+            'Dramatic, expressive features',
+            'Natural stage presence'
+          ],
+          firstImpression: [
+            'Confident and charismatic',
+            'Entertaining and engaging',
+            'Generous and warm',
+            'Creative and artistic',
+            'Natural leader'
+          ],
+          lifeApproach: [
+            'Creating and performing',
+            'Inspiring others',
+            'Seeking recognition',
+            'Expressing creativity',
+            'Leading with heart'
+          ],
+          compatible: ['Aries', 'Sagittarius', 'Gemini'],
+          challenging: ['Taurus', 'Scorpio'],
+          growth: ['Aquarius', 'Pisces'],
+          strengths: [
+            'Natural charisma',
+            'Creative self-expression',
+            'Ability to inspire others',
+            'Generous spirit'
+          ],
+          growthAreas: [
+            'Managing ego needs',
+            'Sharing the spotlight',
+            'Accepting criticism gracefully',
+            'Developing humility'
+          ],
+          advice: "Your natural magnetism and creative gifts are meant to inspire others. Use your charisma to lift others up while staying grounded in authentic self-expression."
+        },
+        'Virgo': {
+          symbol: '♍',
+          element: 'Earth',
+          quality: 'Mutable',
+          ruler: 'Mercury',
+          tagline: "You appear practical, helpful, and detail-oriented",
+          personality: [
+            'Analytical and detail-oriented',
+            'Helpful and service-minded',
+            'Practical and efficient',
+            'Health and wellness conscious',
+            'Modest and humble'
+          ],
+          physical: [
+            'Clean, well-groomed appearance',
+            'Precise, economical movements',
+            'Often has a youthful look',
+            'Careful attention to health',
+            'Simple, practical style'
+          ],
+          firstImpression: [
+            'Organized and efficient',
+            'Helpful and supportive',
+            'Intelligent and analytical',
+            'Reliable and trustworthy',
+            'Health-conscious'
+          ],
+          lifeApproach: [
+            'Perfecting skills and systems',
+            'Serving others',
+            'Analyzing and improving',
+            'Maintaining health',
+            'Working steadily toward goals'
+          ],
+          compatible: ['Taurus', 'Capricorn', 'Cancer'],
+          challenging: ['Gemini', 'Sagittarius'],
+          growth: ['Pisces', 'Aries'],
+          strengths: [
+            'Exceptional attention to detail',
+            'Strong analytical skills',
+            'Desire to help others',
+            'Practical problem-solving'
+          ],
+          growthAreas: [
+            'Avoiding excessive criticism',
+            'Embracing imperfection',
+            'Trusting intuition',
+            'Seeing the bigger picture'
+          ],
+          advice: "Your analytical gifts and desire to help are valuable assets. Learn to balance your perfectionist tendencies with acceptance of life's natural imperfections."
+        },
+        'Libra': {
+          symbol: '♎',
+          element: 'Air',
+          quality: 'Cardinal',
+          ruler: 'Venus',
+          tagline: "You appear charming, diplomatic, and naturally harmonious",
+          personality: [
+            'Diplomatic and peace-making',
+            'Aesthetically refined',
+            'Social and relationship-focused',
+            'Fair and justice-oriented',
+            'Charming and gracious'
+          ],
+          physical: [
+            'Balanced, symmetrical features',
+            'Graceful, elegant movements',
+            'Natural sense of style',
+            'Pleasant, harmonious appearance',
+            'Often conventionally attractive'
+          ],
+          firstImpression: [
+            'Charming and diplomatic',
+            'Socially graceful',
+            'Aesthetically aware',
+            'Fair and balanced',
+            'Relationship-oriented'
+          ],
+          lifeApproach: [
+            'Creating harmony and beauty',
+            'Building relationships',
+            'Seeking balance',
+            'Mediating conflicts',
+            'Appreciating art and culture'
+          ],
+          compatible: ['Gemini', 'Aquarius', 'Leo'],
+          challenging: ['Cancer', 'Capricorn'],
+          growth: ['Aries', 'Taurus'],
+          strengths: [
+            'Natural diplomacy',
+            'Aesthetic sensibility',
+            'Ability to see all sides',
+            'Social grace'
+          ],
+          growthAreas: [
+            'Making decisive choices',
+            'Asserting personal needs',
+            'Avoiding people-pleasing',
+            'Developing independence'
+          ],
+          advice: "Your gift for creating harmony and beauty enriches everyone around you. Learn to balance your concern for others with attention to your own needs and desires."
+        },
+        'Scorpio': {
+          symbol: '♏',
+          element: 'Water',
+          quality: 'Fixed',
+          ruler: 'Pluto',
+          tagline: "You appear intense, mysterious, and magnetically powerful",
+          personality: [
+            'Intense and passionate',
+            'Psychologically perceptive',
+            'Mysterious and private',
+            'Transformative and healing',
+            'Emotionally powerful'
+          ],
+          physical: [
+            'Penetrating, magnetic eyes',
+            'Strong, powerful presence',
+            'Often dark or striking features',
+            'Controlled, purposeful movements',
+            'Mysterious, alluring quality'
+          ],
+          firstImpression: [
+            'Intense and powerful',
+            'Mysterious and intriguing',
+            'Emotionally deep',
+            'Psychologically astute',
+            'Transformative presence'
+          ],
+          lifeApproach: [
+            'Seeking deep truth',
+            'Transforming self and others',
+            'Exploring hidden mysteries',
+            'Emotional healing',
+            'Pursuing authentic power'
+          ],
+          compatible: ['Cancer', 'Pisces', 'Virgo'],
+          challenging: ['Leo', 'Aquarius'],
+          growth: ['Taurus', 'Gemini'],
+          strengths: [
+            'Deep psychological insight',
+            'Transformative power',
+            'Emotional intensity',
+            'Ability to heal others'
+          ],
+          growthAreas: [
+            'Managing intensity',
+            'Trusting others',
+            'Releasing control',
+            'Expressing vulnerability'
+          ],
+          advice: "Your emotional depth and transformative power are extraordinary gifts. Learn to use your intensity to heal and empower rather than to control or overwhelm."
+        },
+        'Sagittarius': {
+          symbol: '♐',
+          element: 'Fire',
+          quality: 'Mutable',
+          ruler: 'Jupiter',
+          tagline: "You appear adventurous, optimistic, and philosophically minded",
+          personality: [
+            'Adventurous and freedom-loving',
+            'Optimistic and enthusiastic',
+            'Philosophical and wise',
+            'Direct and honest',
+            'Internationally minded'
+          ],
+          physical: [
+            'Tall, athletic build tendency',
+            'Open, friendly expression',
+            'Energetic, expansive movements',
+            'Often has long legs',
+            'Adventurous, outdoorsy appearance'
+          ],
+          firstImpression: [
+            'Optimistic and enthusiastic',
+            'Adventurous and free-spirited',
+            'Honest and direct',
+            'Intellectually curious',
+            'Internationally aware'
+          ],
+          lifeApproach: [
+            'Exploring new horizons',
+            'Seeking truth and meaning',
+            'Spreading optimism',
+            'Learning through experience',
+            'Sharing wisdom'
+          ],
+          compatible: ['Aries', 'Leo', 'Libra'],
+          challenging: ['Virgo', 'Pisces'],
+          growth: ['Gemini', 'Cancer'],
+          strengths: [
+            'Natural optimism',
+            'Philosophical wisdom',
+            'Adventurous spirit',
+            'Ability to inspire others'
+          ],
+          growthAreas: [
+            'Developing tact',
+            'Finishing what you start',
+            'Considering others\' feelings',
+            'Staying grounded'
+          ],
+          advice: "Your optimism and wisdom are gifts that can inspire others to expand their horizons. Balance your love of freedom with consideration for those who depend on you."
+        },
+        'Capricorn': {
+          symbol: '♑',
+          element: 'Earth',
+          quality: 'Cardinal',
+          ruler: 'Saturn',
+          tagline: "You appear ambitious, responsible, and naturally authoritative",
+          personality: [
+            'Ambitious and goal-oriented',
+            'Responsible and disciplined',
+            'Traditional and conservative',
+            'Practical and realistic',
+            'Authoritative and mature'
+          ],
+          physical: [
+            'Strong bone structure',
+            'Dignified, formal bearing',
+            'Often ages gracefully',
+            'Conservative, classic style',
+            'Serious, composed expression'
+          ],
+          firstImpression: [
+            'Responsible and mature',
+            'Ambitious and driven',
+            'Reliable and stable',
+            'Professional and serious',
+            'Naturally authoritative'
+          ],
+          lifeApproach: [
+            'Building lasting achievements',
+            'Climbing the ladder of success',
+            'Taking responsibility',
+            'Planning for the future',
+            'Maintaining traditions'
+          ],
+          compatible: ['Taurus', 'Virgo', 'Scorpio'],
+          challenging: ['Aries', 'Libra'],
+          growth: ['Cancer', 'Leo'],
+          strengths: [
+            'Natural leadership ability',
+            'Strong work ethic',
+            'Long-term planning skills',
+            'Ability to achieve goals'
+          ],
+          growthAreas: [
+            'Balancing work and play',
+            'Expressing emotions',
+            'Being more flexible',
+            'Enjoying the present moment'
+          ],
+          advice: "Your natural authority and ambition can take you far. Remember to balance your drive for success with emotional expression and enjoyment of life's pleasures."
+        },
+        'Aquarius': {
+          symbol: '♒',
+          element: 'Air',
+          quality: 'Fixed',
+          ruler: 'Uranus',
+          tagline: "You appear unique, progressive, and intellectually innovative",
+          personality: [
+            'Independent and unique',
+            'Progressive and innovative',
+            'Humanitarian and idealistic',
+            'Intellectually oriented',
+            'Friendly but detached'
+          ],
+          physical: [
+            'Unique, distinctive appearance',
+            'Often tall and angular',
+            'Electric, unusual energy',
+            'Unconventional style choices',
+            'Bright, intelligent eyes'
+          ],
+          firstImpression: [
+            'Original and unique',
+            'Intellectually stimulating',
+            'Friendly but independent',
+            'Progressive and forward-thinking',
+            'Humanitarian and idealistic'
+          ],
+          lifeApproach: [
+            'Innovating and revolutionizing',
+            'Fighting for causes',
+            'Maintaining independence',
+            'Connecting with groups',
+            'Envisioning the future'
+          ],
+          compatible: ['Gemini', 'Libra', 'Sagittarius'],
+          challenging: ['Taurus', 'Scorpio'],
+          growth: ['Leo', 'Virgo'],
+          strengths: [
+            'Innovative thinking',
+            'Humanitarian spirit',
+            'Independent nature',
+            'Ability to see the future'
+          ],
+          growthAreas: [
+            'Connecting emotionally',
+            'Considering practical details',
+            'Being more personal',
+            'Following through on ideas'
+          ],
+          advice: "Your innovative spirit and humanitarian ideals can change the world. Learn to balance your intellectual gifts with emotional connection and practical application."
+        },
+        'Pisces': {
+          symbol: '♓',
+          element: 'Water',
+          quality: 'Mutable',
+          ruler: 'Neptune',
+          tagline: "You appear compassionate, intuitive, and spiritually aware",
+          personality: [
+            'Compassionate and empathetic',
+            'Intuitive and psychic',
+            'Artistic and imaginative',
+            'Spiritual and mystical',
+            'Adaptable and flowing'
+          ],
+          physical: [
+            'Soft, dreamy appearance',
+            'Large, expressive eyes',
+            'Flowing, graceful movements',
+            'Often has a ethereal quality',
+            'Changeable, fluid expression'
+          ],
+          firstImpression: [
+            'Compassionate and caring',
+            'Intuitive and perceptive',
+            'Artistic and creative',
+            'Spiritual and mystical',
+            'Gentle and sensitive'
+          ],
+          lifeApproach: [
+            'Following intuition',
+            'Serving others',
+            'Creating beauty',
+            'Exploring spirituality',
+            'Adapting to flow'
+          ],
+          compatible: ['Cancer', 'Scorpio', 'Capricorn'],
+          challenging: ['Gemini', 'Sagittarius'],
+          growth: ['Virgo', 'Libra'],
+          strengths: [
+            'Deep compassion',
+            'Artistic sensitivity',
+            'Intuitive wisdom',
+            'Spiritual awareness'
+          ],
+          growthAreas: [
+            'Setting clear boundaries',
+            'Staying grounded',
+            'Making practical decisions',
+            'Avoiding escapism'
+          ],
+          advice: "Your compassion and intuitive gifts are healing forces in the world. Learn to ground your sensitivity with practical boundaries and self-care."
+        }
+      };
+    }
+
+    calculateRisingSign(birthDate, birthTime, birthPlace) {
+      // Simplified calculation for demo purposes
+      // In reality, this requires complex astronomical calculations
+      
+      const date = new Date(birthDate + 'T' + birthTime);
+      const hour = date.getHours();
+      const minute = date.getMinutes();
+      
+      // Simple algorithm based on time (every 2 hours = new sign)
+      const timeValue = hour * 60 + minute;
+      const signIndex = Math.floor(timeValue / 120) % 12;
+      
+      const signs = Object.keys(this.zodiacSigns);
+      const selectedSign = signs[signIndex];
+      
+      // Calculate degree (simplified)
+      const degreeInSign = Math.floor((timeValue % 120) / 4);
+      const minuteInDegree = Math.floor(((timeValue % 120) % 4) * 15);
+      
+      return {
+        sign: selectedSign,
+        degree: degreeInSign,
+        minute: minuteInDegree,
+        data: this.zodiacSigns[selectedSign]
+      };
+    }
+  }
+
+  // Initialize calculator
+  const calculator = new RisingSignCalculator();
+
+  // Form submission handler
+  document.getElementById('rising-sign-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(this);
+    const birthData = {
+      date: formData.get('birth-date'),
+      time: formData.get('birth-time'),
+      place: formData.get('birth-place')
+    };
+
+    generateRisingSignAnalysis(birthData);
+  });
+
+  function generateRisingSignAnalysis(birthData) {
+    // Calculate rising sign
+    const result = calculator.calculateRisingSign(birthData.date, birthData.time, birthData.place);
+    
+    // Show results section
+    document.getElementById('results-section').classList.remove('hidden');
+    document.getElementById('results-section').scrollIntoView({ behavior: 'smooth' });
+
+    // Update main result
+    document.getElementById('rising-symbol').textContent = result.data.symbol;
+    document.getElementById('rising-sign-name').textContent = result.sign;
+    document.getElementById('rising-degree').textContent = `${result.degree}° ${result.minute}'`;
+    document.getElementById('rising-tagline').textContent = result.data.tagline;
+
+    // Update personality traits
+    updateSection('personality-traits', result.data.personality);
+    
+    // Update physical traits
+    updateSection('physical-traits', result.data.physical);
+    
+    // Update first impression
+    updateSection('first-impression', result.data.firstImpression);
+    
+    // Update life approach
+    updateSection('life-approach', result.data.lifeApproach);
+
+    // Update compatibility
+    updateCompatibility(result.data);
+
+    // Update personal development
+    updatePersonalDevelopment(result.data);
+  }
+
+  function updateSection(elementId, items) {
+    const container = document.getElementById(elementId);
+    container.innerHTML = items.map(item => `
+      <div class="flex items-start">
+        <span class="text-purple-500 mr-3 mt-1">•</span>
+        <span class="text-gray-700">${item}</span>
+      </div>
+    `).join('');
+  }
+
+  function updateCompatibility(data) {
+    // Most compatible
+    document.getElementById('most-compatible').innerHTML = data.compatible.map(sign => `
+      <div class="flex items-center justify-center">
+        <span class="text-lg mr-2">${calculator.zodiacSigns[sign].symbol}</span>
+        <span class="text-sm font-medium">${sign}</span>
+      </div>
+    `).join('');
+
+    // Challenging
+    document.getElementById('challenging-signs').innerHTML = data.challenging.map(sign => `
+      <div class="flex items-center justify-center">
+        <span class="text-lg mr-2">${calculator.zodiacSigns[sign].symbol}</span>
+        <span class="text-sm font-medium">${sign}</span>
+      </div>
+    `).join('');
+
+    // Growth partners
+    document.getElementById('growth-partners').innerHTML = data.growth.map(sign => `
+      <div class="flex items-center justify-center">
+        <span class="text-lg mr-2">${calculator.zodiacSigns[sign].symbol}</span>
+        <span class="text-sm font-medium">${sign}</span>
+      </div>
+    `).join('');
+  }
+
+  function updatePersonalDevelopment(data) {
+    // Strengths
+    document.getElementById('strengths-list').innerHTML = data.strengths.map(strength => `
+      <div class="flex items-start">
+        <span class="text-green-300 mr-3 mt-1">✓</span>
+        <span class="text-white/90">${strength}</span>
+      </div>
+    `).join('');
+
+    // Growth areas
+    document.getElementById('growth-areas').innerHTML = data.growthAreas.map(area => `
+      <div class="flex items-start">
+        <span class="text-blue-300 mr-3 mt-1">→</span>
+        <span class="text-white/90">${area}</span>
+      </div>
+    `).join('');
+
+    // Personal advice
+    document.getElementById('personal-advice').textContent = data.advice;
+  }
+</script>

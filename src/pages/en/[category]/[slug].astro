@@ -1,0 +1,266 @@
+---
+import Layout from '../../../components/Layout.astro';
+import RelatedPosts from '../../../components/RelatedPosts.astro';
+import { getCollection, getEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const categories = ['health', 'love', 'history', 'psychology', 'space', 'quotes', 'astrology'];
+  const paths = [];
+
+  for (const category of categories) {
+    try {
+      const posts = await getCollection(category);
+      for (const post of posts) {
+        if (post.slug && post.slug.trim() !== '') {
+          paths.push({
+            params: { category, slug: post.slug },
+            props: { post }
+          });
+        }
+      }
+    } catch (error) {
+      console.warn(`Error loading category ${category}:`, error);
+    }
+  }
+
+  return paths;
+}
+
+const { category, slug } = Astro.params;
+const { post } = Astro.props;
+
+// Render the content
+const { Content } = await post.render();
+
+// Category information for English
+const categoryInfo = {
+  health: { name: 'Health', icon: '🏥' },
+  love: { name: 'Love & Relationships', icon: '❤️' },
+  history: { name: 'History', icon: '🏛️' },
+  psychology: { name: 'Psychology', icon: '🧠' },
+  space: { name: 'Space', icon: '🚀' },
+  quotes: { name: 'Quotes', icon: '💭' },
+  astrology: { name: 'Astrology', icon: '🔮' }
+};
+
+const categoryTitle = categoryInfo[category]?.name || category;
+const englishTitle = `${post.data.title} - English Version`;
+---
+
+<Layout
+  title={englishTitle}
+  description={`${post.data.summary || post.data.title} - English content about ${category}.`}
+  keywords={`${category}, English, ${post.data.keywords || ''}`}
+>
+  <article class="max-w-4xl mx-auto px-4 py-8">
+    <!-- Article Header -->
+    <header class="article-header mb-8">
+      <div class="mb-4 flex items-center gap-4">
+        <span class="bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full capitalize flex items-center">
+          <span class="mr-2">{categoryInfo[category]?.icon}</span>
+          {categoryTitle}
+        </span>
+        <a href={`/${category}/${slug}`} class="bg-gray-100 text-gray-800 text-sm font-semibold px-3 py-1 rounded-full hover:bg-gray-200 transition-colors">
+          🇹🇷 Türkçe
+        </a>
+      </div>
+
+      <h1 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800 leading-tight">
+        {post.data.title}
+        <span class="block text-lg font-normal text-blue-600 mt-2">English Version</span>
+      </h1>
+
+      <div class="flex flex-wrap items-center gap-4 text-sm text-gray-600 mb-6">
+        <span class="flex items-center">
+          <span class="mr-2">📅</span>
+          {new Date(post.data.date).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          })}
+        </span>
+        <span class="flex items-center">
+          <span class="mr-2">👁️</span>
+          {post.data.views || 0} views
+        </span>
+        <span class="flex items-center">
+          <span class="mr-2">⏱️</span>
+          ~3 min read
+        </span>
+      </div>
+
+      {post.data.summary && (
+        <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
+          <p class="text-lg text-gray-700 leading-relaxed italic">
+            {post.data.summary}
+          </p>
+        </div>
+      )}
+    </header>
+
+    <!-- Language Notice -->
+    <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-8">
+      <div class="flex items-center">
+        <span class="text-2xl mr-3">🌐</span>
+        <div>
+          <h3 class="font-semibold text-yellow-800">English Translation Notice</h3>
+          <p class="text-yellow-700 text-sm">
+            This is an English adaptation of our Turkish content. For the original Turkish version,
+            <a href={`/${category}/${slug}`} class="underline hover:text-yellow-900">click here</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Article Content -->
+    <div class="prose prose-lg max-w-none">
+      <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-8">
+        <div class="text-gray-700 leading-relaxed">
+          <Content />
+        </div>
+      </div>
+    </div>
+
+    <!-- Tags -->
+    {post.data.tags && post.data.tags.length > 0 && (
+      <div class="flex flex-wrap gap-2 mb-8">
+        {post.data.tags.map(tag => (
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
+            #{tag}
+          </span>
+        ))}
+      </div>
+    )}
+
+    <!-- AdSense Ad -->
+    <div class="border rounded-lg p-8 bg-gray-50 text-center mb-8">
+      <ins class="adsbygoogle"
+        style="display: block"
+        data-ad-client="ca-pub-3096725438789562"
+        data-ad-slot="1234567890"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <!-- Navigation -->
+    <div class="flex flex-wrap gap-4 mb-8">
+      <a
+        href={`/en/${category}`}
+        class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-lg hover:bg-blue-200 transition-colors"
+      >
+        <span class="mr-2">←</span>
+        Back to {categoryTitle}
+      </a>
+
+      <a
+        href="/en/categories"
+        class="inline-flex items-center px-4 py-2 bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200 transition-colors"
+      >
+        <span class="mr-2">📁</span>
+        All Categories
+      </a>
+
+      <a
+        href="/en"
+        class="inline-flex items-center px-4 py-2 bg-purple-100 text-purple-800 rounded-lg hover:bg-purple-200 transition-colors"
+      >
+        <span class="mr-2">🏠</span>
+        English Home
+      </a>
+    </div>
+
+    <!-- Related Posts -->
+    <RelatedPosts
+      category={category}
+      currentSlug={post.slug}
+      currentTags={post.data.tags || []}
+      maxResults={4}
+    />
+
+    <!-- Comments Section -->
+    <div class="border-t pt-8 mt-8">
+      <h3 class="text-2xl font-bold mb-6">💬 Comments</h3>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+        <div class="text-center">
+          <span class="text-4xl mb-4 block">🗨️</span>
+          <h4 class="font-semibold text-blue-800 mb-2">Comments Coming Soon</h4>
+          <p class="text-blue-700 text-sm">
+            We're preparing a comment system for English content. Meanwhile, you can share your thoughts
+            on our <a href={`/${category}/${slug}`} class="underline">Turkish version</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <style>
+    .article-header h1 {
+      line-height: 1.2;
+    }
+
+    .prose {
+      color: #374151;
+    }
+
+    .prose h1, .prose h2, .prose h3 {
+      color: #1f2937;
+      font-weight: 700;
+    }
+
+    .prose a {
+      color: #3b82f6;
+      text-decoration: underline;
+    }
+
+    .prose a:hover {
+      color: #1d4ed8;
+    }
+
+    .prose img {
+      border-radius: 8px;
+      margin: 1.5rem 0;
+    }
+
+    .prose blockquote {
+      border-left: 4px solid #3b82f6;
+      background: #f8fafc;
+      padding: 1rem 1.5rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+    }
+  </style>
+
+  <script>
+    // Enhanced reading experience
+    document.addEventListener('DOMContentLoaded', function() {
+      // Calculate reading time
+      const content = document.querySelector('.prose');
+      if (content) {
+        const wordCount = content.textContent.split(/\s+/).length;
+        const readingTime = Math.ceil(wordCount / 200); // Average reading speed
+        const readTimeElement = document.querySelector('#read-time');
+        if (readTimeElement) {
+          readTimeElement.textContent = `⏱️ ~${readingTime} min read`;
+        }
+      }
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</Layout>

@@ -1,0 +1,71 @@
+---
+import Layout from '../../components/Layout.astro';
+
+const categories = ['health', 'love', 'history', 'psychology', 'space', 'quotes', 'astrology'];
+
+const categoryInfo = {
+  health: { name: 'Health', icon: '🏥', color: 'green' },
+  love: { name: 'Love & Relationships', icon: '❤️', color: 'red' },
+  history: { name: 'History', icon: '🏛️', color: 'yellow' },
+  psychology: { name: 'Psychology', icon: '🧠', color: 'purple' },
+  space: { name: 'Space', icon: '🚀', color: 'blue' },
+  quotes: { name: 'Quotes', icon: '💭', color: 'gray' },
+  astrology: { name: 'Astrology', icon: '🔮', color: 'indigo' }
+};
+---
+
+<Layout
+  title="All Categories - MindVerse English"
+  description="Explore all content categories in English: Health, Love, History, Psychology, Space, Quotes, and Astrology."
+  keywords="categories, health, love, history, psychology, space, quotes, astrology, English content"
+>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold text-center mb-8">📁 All Categories</h1>
+
+    <!-- Advertisement area -->
+    <div class="flex justify-center mb-8">
+      <div class="w-full max-w-lg">
+        <ins class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-3096725438789562"
+          data-ad-slot="1234567890"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {categories.map(category => {
+        const info = categoryInfo[category];
+        return (
+          <a
+            href={`/en/${category}`}
+            class="block bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow border-l-4 border-blue-500 hover:border-blue-600"
+          >
+            <div class="text-center">
+              <div class="text-4xl mb-4">{info.icon}</div>
+              <h2 class="text-xl font-bold mb-2">{info.name}</h2>
+              <p class="text-gray-600 text-sm">
+                {category === 'health' && 'Health tips and medical information'}
+                {category === 'love' && 'Relationships, love and emotional connections'}
+                {category === 'history' && 'Historical events and figures'}
+                {category === 'psychology' && 'Human behavior and mind'}
+                {category === 'space' && 'Space science and astronomy'}
+                {category === 'quotes' && 'Inspiring words and quotes'}
+                {category === 'astrology' && 'Horoscopes and astrology guides'}
+              </p>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+
+    <!-- Language switcher -->
+    <div class="text-center mt-12 pt-8 border-t border-gray-200">
+      <p class="text-gray-600 mb-4">Looking for Turkish content?</p>
+      <a href="/categories" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full hover:from-blue-600 hover:to-purple-600 transition-all">
+        <span class="mr-2">🇹🇷</span>Türkçe Kategoriler
+      </a>
+    </div>
+  </div>
+</Layout>

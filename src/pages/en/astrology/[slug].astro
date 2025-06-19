@@ -1,0 +1,314 @@
+---
+export async function getStaticPaths() {
+  const zodiacSigns = [
+    { slug: 'aries-daily', name: 'Aries', symbol: '♈', dates: 'Mar 21 - Apr 19', element: 'Fire', planet: 'Mars', trName: 'Koç' },
+    { slug: 'taurus-daily', name: 'Taurus', symbol: '♉', dates: 'Apr 20 - May 20', element: 'Earth', planet: 'Venus', trName: 'Boğa' },
+    { slug: 'gemini-daily', name: 'Gemini', symbol: '♊', dates: 'May 21 - Jun 20', element: 'Air', planet: 'Mercury', trName: 'İkizler' },
+    { slug: 'cancer-daily', name: 'Cancer', symbol: '♋', dates: 'Jun 21 - Jul 22', element: 'Water', planet: 'Moon', trName: 'Yengeç' },
+    { slug: 'leo-daily', name: 'Leo', symbol: '♌', dates: 'Jul 23 - Aug 22', element: 'Fire', planet: 'Sun', trName: 'Aslan' },
+    { slug: 'virgo-daily', name: 'Virgo', symbol: '♍', dates: 'Aug 23 - Sep 22', element: 'Earth', planet: 'Mercury', trName: 'Başak' },
+    { slug: 'libra-daily', name: 'Libra', symbol: '♎', dates: 'Sep 23 - Oct 22', element: 'Air', planet: 'Venus', trName: 'Terazi' },
+    { slug: 'scorpio-daily', name: 'Scorpio', symbol: '♏', dates: 'Oct 23 - Nov 21', element: 'Water', planet: 'Pluto', trName: 'Akrep' },
+    { slug: 'sagittarius-daily', name: 'Sagittarius', symbol: '♐', dates: 'Nov 22 - Dec 21', element: 'Fire', planet: 'Jupiter', trName: 'Yay' },
+    { slug: 'capricorn-daily', name: 'Capricorn', symbol: '♑', dates: 'Dec 22 - Jan 19', element: 'Earth', planet: 'Saturn', trName: 'Oğlak' },
+    { slug: 'aquarius-daily', name: 'Aquarius', symbol: '♒', dates: 'Jan 20 - Feb 18', element: 'Air', planet: 'Uranus', trName: 'Kova' },
+    { slug: 'pisces-daily', name: 'Pisces', symbol: '♓', dates: 'Feb 19 - Mar 20', element: 'Water', planet: 'Neptune', trName: 'Balık' }
+  ];
+
+  return zodiacSigns.map(sign => ({
+    params: { slug: sign.slug },
+    props: { sign }
+  }));
+}
+
+const { sign } = Astro.props;
+
+// Generate today's horoscope content
+const today = new Date();
+const dateString = today.toLocaleDateString('en-US', {
+  weekday: 'long',
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+});
+
+// Daily horoscope content generator
+function generateDailyHoroscope(signName, element, planet) {
+  const horoscopes = {
+    Aries: {
+      general: "Today brings dynamic energy and new opportunities your way. Your natural leadership qualities shine brightly, making it an ideal time to initiate new projects.",
+      love: "Passion runs high in your romantic life. Single Aries may encounter someone intriguing, while couples should focus on honest communication.",
+      career: "Your ambitious nature drives you toward success. Take calculated risks and trust your instincts in professional matters.",
+      health: "High energy levels require proper channeling. Consider engaging in physical activities to maintain balance.",
+      lucky: { numbers: [3, 15, 27], color: "Red", time: "Morning" }
+    },
+    Taurus: {
+      general: "Stability and persistence are your strengths today. Focus on practical matters and building solid foundations for the future.",
+      love: "Sensuality and comfort define your romantic interactions. Create cozy moments with your partner or focus on self-love.",
+      career: "Steady progress in work matters. Your reliability impresses colleagues and superiors alike.",
+      health: "Pay attention to your diet and eating habits. Comfort foods may be tempting but choose wisely.",
+      lucky: { numbers: [6, 18, 33], color: "Green", time: "Afternoon" }
+    },
+    Gemini: {
+      general: "Communication and versatility are highlighted. Your quick wit and adaptability open doors to new possibilities.",
+      love: "Intellectual connections spark romantic interest. Engage in meaningful conversations with your partner or potential love interests.",
+      career: "Multiple projects require your attention. Use your multitasking abilities to stay on top of everything.",
+      health: "Mental stimulation is important. Balance brain activities with physical exercise.",
+      lucky: { numbers: [5, 14, 23], color: "Yellow", time: "Evening" }
+    },
+    Cancer: {
+      general: "Intuition and emotional wisdom guide your decisions today. Trust your inner voice and nurture your closest relationships.",
+      love: "Deep emotional bonds strengthen. Focus on creating security and comfort in your romantic life.",
+      career: "Team collaboration brings positive results. Your caring nature helps create harmony in the workplace.",
+      health: "Emotional wellbeing affects physical health. Practice stress-reduction techniques.",
+      lucky: { numbers: [2, 16, 29], color: "Silver", time: "Night" }
+    },
+    Leo: {
+      general: "Your natural charisma and confidence attract positive attention. It's a perfect day to showcase your talents and creativity.",
+      love: "Romance takes center stage. Plan something special for your loved one or put yourself out there if single.",
+      career: "Leadership opportunities arise. Your enthusiasm and vision inspire others to follow your lead.",
+      health: "Maintain your energy levels with proper rest. Your vitality is one of your greatest assets.",
+      lucky: { numbers: [1, 19, 31], color: "Gold", time: "Midday" }
+    },
+    Virgo: {
+      general: "Attention to detail and practical thinking serve you well. Focus on organization and improving existing systems.",
+      love: "Show love through acts of service. Small gestures mean more than grand romantic displays today.",
+      career: "Precision and analysis lead to breakthrough moments. Your methodical approach solves complex problems.",
+      health: "Establish healthy routines. Your body responds well to consistent care and attention.",
+      lucky: { numbers: [8, 17, 26], color: "Navy Blue", time: "Morning" }
+    },
+    Libra: {
+      general: "Balance and harmony are essential themes. Seek fairness in all situations and maintain peaceful relationships.",
+      love: "Partnership energy is strong. Focus on cooperation and finding middle ground in romantic matters.",
+      career: "Diplomatic skills help resolve workplace conflicts. Your ability to see all sides proves valuable.",
+      health: "Balance work and rest. Avoid extremes and maintain moderation in all activities.",
+      lucky: { numbers: [7, 21, 35], color: "Pink", time: "Afternoon" }
+    },
+    Scorpio: {
+      general: "Intensity and transformation mark this day. Dig deep into matters that truly matter and embrace necessary changes.",
+      love: "Passionate encounters and deep emotional connections are favored. Honesty strengthens bonds.",
+      career: "Research and investigation reveal hidden opportunities. Trust your instincts about people's motivations.",
+      health: "Emotional healing supports physical wellbeing. Address any lingering stress or tension.",
+      lucky: { numbers: [9, 22, 37], color: "Deep Red", time: "Night" }
+    },
+    Sagittarius: {
+      general: "Adventure and expansion call to you. Broaden your horizons through learning, travel, or philosophical exploration.",
+      love: "Optimism attracts romantic opportunities. Share your dreams and aspirations with loved ones.",
+      career: "Big picture thinking leads to innovative solutions. Your vision inspires others to think beyond limitations.",
+      health: "Outdoor activities and movement boost your spirits. Embrace physical adventures.",
+      lucky: { numbers: [4, 13, 28], color: "Purple", time: "Morning" }
+    },
+    Capricorn: {
+      general: "Discipline and ambition drive your success today. Set clear goals and work systematically toward achievement.",
+      love: "Serious commitment and long-term planning strengthen relationships. Discuss future plans with your partner.",
+      career: "Professional advancement is possible through persistent effort. Your reliability opens new doors.",
+      health: "Structure and routine support your wellbeing. Consistent habits yield the best results.",
+      lucky: { numbers: [10, 25, 32], color: "Brown", time: "Evening" }
+    },
+    Aquarius: {
+      general: "Innovation and friendship take precedence. Connect with like-minded individuals and explore unconventional ideas.",
+      love: "Friendship forms the foundation of lasting romance. Intellectual compatibility matters most.",
+      career: "Technology and progressive thinking advance your projects. Embrace new methods and tools.",
+      health: "Group activities and social exercise benefit your physical and mental health.",
+      lucky: { numbers: [11, 24, 36], color: "Electric Blue", time: "Afternoon" }
+    },
+    Pisces: {
+      general: "Intuition and compassion guide your interactions. Trust your psychic abilities and help others when possible.",
+      love: "Romantic dreams and fantasies inspire your love life. Create magical moments with your partner.",
+      career: "Creative projects and artistic endeavors flourish. Let your imagination guide professional decisions.",
+      health: "Water activities and meditation restore your energy. Pay attention to your spiritual needs.",
+      lucky: { numbers: [12, 20, 30], color: "Sea Green", time: "Night" }
+    }
+  };
+
+  return horoscopes[signName] || horoscopes.Aries;
+}
+
+const horoscope = generateDailyHoroscope(sign.name, sign.element, sign.planet);
+
+import Layout from '../../../components/Layout.astro';
+---
+
+<Layout
+  title={`${sign.name} Daily Horoscope - ${dateString} - MindVerse`}
+  description={`Today's horoscope for ${sign.name} (${sign.dates}). Get insights about love, career, health, and general guidance for ${dateString}.`}
+  keywords={`${sign.name.toLowerCase()}, daily horoscope, ${sign.element.toLowerCase()}, astrology, zodiac, ${sign.dates}`}
+>
+  <div class="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50">
+    <div class="container mx-auto px-4 py-12">
+
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center justify-center w-24 h-24 mb-6 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 text-white shadow-2xl">
+          <span class="text-5xl">{sign.symbol}</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+          {sign.name} Daily Horoscope
+        </h1>
+        <p class="text-xl text-gray-600 mb-2">{sign.dates}</p>
+        <p class="text-lg text-gray-500 mb-6">{dateString}</p>
+
+        <!-- Quick Info -->
+        <div class="flex justify-center gap-4 mb-8">
+          <span class="bg-white/80 backdrop-blur-md px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+            🌟 Element: {sign.element}
+          </span>
+          <span class="bg-white/80 backdrop-blur-md px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+            🪐 Ruler: {sign.planet}
+          </span>
+        </div>
+      </div>
+
+      <!-- Daily Insights Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+
+        <!-- General -->
+        <div class="bg-white/90 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/50">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center mr-4">
+              <span class="text-2xl">🌟</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800">General Guidance</h3>
+          </div>
+          <p class="text-gray-700 leading-relaxed text-lg">{horoscope.general}</p>
+        </div>
+
+        <!-- Love -->
+        <div class="bg-white/90 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/50">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
+              <span class="text-2xl">❤️</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800">Love & Romance</h3>
+          </div>
+          <p class="text-gray-700 leading-relaxed text-lg">{horoscope.love}</p>
+        </div>
+
+        <!-- Career -->
+        <div class="bg-white/90 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/50">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-500 rounded-full flex items-center justify-center mr-4">
+              <span class="text-2xl">💼</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800">Career & Work</h3>
+          </div>
+          <p class="text-gray-700 leading-relaxed text-lg">{horoscope.career}</p>
+        </div>
+
+        <!-- Health -->
+        <div class="bg-white/90 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/50">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-full flex items-center justify-center mr-4">
+              <span class="text-2xl">🏥</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800">Health & Wellness</h3>
+          </div>
+          <p class="text-gray-700 leading-relaxed text-lg">{horoscope.health}</p>
+        </div>
+      </div>
+
+      <!-- Lucky Elements -->
+      <div class="bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 rounded-3xl p-8 text-white mb-12 shadow-2xl">
+        <div class="text-center mb-8">
+          <h3 class="text-3xl font-bold mb-4">🍀 Today's Lucky Elements</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+          <div class="bg-white/20 backdrop-blur-md rounded-2xl p-6">
+            <div class="text-3xl mb-3">🔢</div>
+            <h4 class="font-bold mb-2">Lucky Numbers</h4>
+            <p class="text-lg">{horoscope.lucky.numbers.join(', ')}</p>
+          </div>
+          <div class="bg-white/20 backdrop-blur-md rounded-2xl p-6">
+            <div class="text-3xl mb-3">🎨</div>
+            <h4 class="font-bold mb-2">Lucky Color</h4>
+            <p class="text-lg">{horoscope.lucky.color}</p>
+          </div>
+          <div class="bg-white/20 backdrop-blur-md rounded-2xl p-6">
+            <div class="text-3xl mb-3">⏰</div>
+            <h4 class="font-bold mb-2">Best Time</h4>
+            <p class="text-lg">{horoscope.lucky.time}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="text-center mb-12">
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/en" class="bg-white/90 backdrop-blur-md px-6 py-3 rounded-full hover:bg-white transition-all font-semibold shadow-lg">
+            🏠 English Home
+          </a>
+          <a href="/en/astrology" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all font-semibold shadow-lg">
+            🔮 All Astrology
+          </a>
+          <a href={`/astrology/${sign.trName.toLowerCase()}-gunluk`} class="bg-white/90 backdrop-blur-md px-6 py-3 rounded-full hover:bg-white transition-all font-semibold shadow-lg">
+            🇹🇷 Türkçe
+          </a>
+        </div>
+      </div>
+
+      <!-- Other Signs -->
+      <div class="bg-white/70 backdrop-blur-md rounded-3xl p-8 shadow-xl">
+        <h3 class="text-2xl font-bold text-center mb-8 text-gray-800">Other Zodiac Signs</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          <a href="/en/astrology/aries-daily" class="group text-center p-4 rounded-xl hover:bg-white/50 transition-all">
+            <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">♈</div>
+            <span class="text-sm font-semibold">Aries</span>
+          </a>
+          <a href="/en/astrology/taurus-daily" class="group text-center p-4 rounded-xl hover:bg-white/50 transition-all">
+            <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">♉</div>
+            <span class="text-sm font-semibold">Taurus</span>
+          </a>
+          <a href="/en/astrology/gemini-daily" class="group text-center p-4 rounded-xl hover:bg-white/50 transition-all">
+            <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">♊</div>
+            <span class="text-sm font-semibold">Gemini</span>
+          </a>
+          <a href="/en/astrology/cancer-daily" class="group text-center p-4 rounded-xl hover:bg-white/50 transition-all">
+            <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">♋</div>
+            <span class="text-sm font-semibold">Cancer</span>
+          </a>
+          <a href="/en/astrology/leo-daily" class="group text-center p-4 rounded-xl hover:bg-white/50 transition-all">
+            <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">♌</div>
+            <span class="text-sm font-semibold">Leo</span>
+          </a>
+          <a href="/en/astrology/virgo-daily" class="group text-center p-4 rounded-xl hover:bg-white/50 transition-all">
+            <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">♍</div>
+            <span class="text-sm font-semibold">Virgo</span>
+          </a>
+          <a href="/en/astrology/libra-daily" class="group text-center p-4 rounded-xl hover:bg-white/50 transition-all">
+            <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">♎</div>
+            <span class="text-sm font-semibold">Libra</span>
+          </a>
+          <a href="/en/astrology/scorpio-daily" class="group text-center p-4 rounded-xl hover:bg-white/50 transition-all">
+            <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">♏</div>
+            <span class="text-sm font-semibold">Scorpio</span>
+          </a>
+          <a href="/en/astrology/sagittarius-daily" class="group text-center p-4 rounded-xl hover:bg-white/50 transition-all">
+            <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">♐</div>
+            <span class="text-sm font-semibold">Sagittarius</span>
+          </a>
+          <a href="/en/astrology/capricorn-daily" class="group text-center p-4 rounded-xl hover:bg-white/50 transition-all">
+            <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">♑</div>
+            <span class="text-sm font-semibold">Capricorn</span>
+          </a>
+          <a href="/en/astrology/aquarius-daily" class="group text-center p-4 rounded-xl hover:bg-white/50 transition-all">
+            <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">♒</div>
+            <span class="text-sm font-semibold">Aquarius</span>
+          </a>
+          <a href="/en/astrology/pisces-daily" class="group text-center p-4 rounded-xl hover:bg-white/50 transition-all">
+            <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">♓</div>
+            <span class="text-sm font-semibold">Pisces</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- AdSense Ad -->
+      <div class="flex justify-center mt-12">
+        <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl p-8 text-center">
+          <p class="text-gray-500 text-sm">Daily Horoscope Advertisement - 728x90</p>
+          <p class="text-gray-400 text-xs">AdSense Slot</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</Layout>

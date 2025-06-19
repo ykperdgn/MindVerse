@@ -1,151 +1,43 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>MindVerse Daily - Astroloji ve Yaşam Rehberi</title>
-    <link>https://mindversedaily.com</link>
-    <description>Günlük burç yorumları, astroloji analizleri ve yaşam rehberliği</description>
+    <title>MindVerse Blog - Bilingual Astrology &amp; Lifestyle</title>
+    <link>https://mindverseblog.com</link>
+    <description>Daily horoscopes, astrology insights, and lifestyle content in Turkish and English | Günlük burç yorumları, astroloji analizleri ve yaşam rehberleri</description>
     <language>tr-TR</language>
-    <lastBuildDate>Thu, 19 Jun 2025 21:13:53 GMT</lastBuildDate>
-    <atom:link href="https://mindversedaily.com/rss.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 19 Jun 2025 21:56:05 </pubDate>
+    <atom:link href="https://mindverseblog.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Kozmik Enerji - Yengeç Burcu Aylık Yorumu</title>
-      <link>https://mindversedaily.com/astrology/yengec-burcu-ruhsal-özel-yorum</link>
-      <description>Yengeç burcu için detaylı astroloji yorumu. kozmik enerji konusunda rehberlik.</description>
-      <pubDate>Wed, 19 Jun 2025 10:00:00 GMT</pubDate>
-      <guid>https://mindversedaily.com/astrology/yengec-burcu-ruhsal-özel-yorum</guid>
+      <title>Daily Horoscopes - English | Günlük Burç Yorumları</title>
+      <link>https://mindverseblog.com/en/astrology</link>
+      <description>Get your daily horoscope in English with detailed insights for all zodiac signs.</description>
+      <category>astrology</category>
+      <pubDate>Thu, 19 Jun 2025 21:56:05 </pubDate>
+      <guid isPermaLink="true">https://mindverseblog.com/en/astrology</guid>
     </item>
     <item>
-      <title>Yaratıcılığın Zirvesi - Yengeç Burcu Haftalk Yorumu</title>
-      <link>https://mindversedaily.com/astrology/yengec-burcu-haftalik-yorum</link>
-      <description>Yengeç burcu için detaylı astroloji yorumu. yaratıcılığın zirvesi konusunda rehberlik.</description>
-      <pubDate>Wed, 19 Jun 2025 10:00:00 GMT</pubDate>
-      <guid>https://mindversedaily.com/astrology/yengec-burcu-haftalik-yorum</guid>
+      <title>Rising Sign Calculator | Yükselen Burç Hesaplayıcısı</title>
+      <link>https://mindverseblog.com/en/astrology/rising-sign</link>
+      <description>Calculate your rising sign and discover its influence on your personality.</description>
+      <category>astrology</category>
+      <pubDate>Thu, 19 Jun 2025 21:56:05 </pubDate>
+      <guid isPermaLink="true">https://mindverseblog.com/en/astrology/rising-sign</guid>
     </item>
     <item>
-      <title>Duygusal Denge - Yengeç Burcu Günlük Yorumu</title>
-      <link>https://mindversedaily.com/astrology/yengec-burcu-gunluk-yorum</link>
-      <description>Yengeç burcu için detaylı astroloji yorumu. duygusal denge konusunda rehberlik.</description>
-      <pubDate>Wed, 19 Jun 2025 10:00:00 GMT</pubDate>
-      <guid>https://mindversedaily.com/astrology/yengec-burcu-gunluk-yorum</guid>
+      <title>Birth Chart Analysis | Doğum Haritası Analizi</title>
+      <link>https://mindverseblog.com/en/astrology/birth-chart</link>
+      <description>Professional birth chart analysis with planetary positions and interpretations.</description>
+      <category>astrology</category>
+      <pubDate>Thu, 19 Jun 2025 21:56:05 </pubDate>
+      <guid isPermaLink="true">https://mindverseblog.com/en/astrology/birth-chart</guid>
     </item>
     <item>
-      <title>Ruhsal Evrim - Yengeç Burcu Aylık Yorumu</title>
-      <link>https://mindversedaily.com/astrology/yengec-burcu-aylik-yorum</link>
-      <description>Yengeç burcu için detaylı astroloji yorumu. ruhsal evrim konusunda rehberlik.</description>
-      <pubDate>Wed, 19 Jun 2025 10:00:00 GMT</pubDate>
-      <guid>https://mindversedaily.com/astrology/yengec-burcu-aylik-yorum</guid>
-    </item>
-    <item>
-      <title>Aşk Enerjisi - Yengeç Burcu Özel Yorumu</title>
-      <link>https://mindversedaily.com/astrology/yengec-burcu-ask-özel-yorum</link>
-      <description>Yengeç burcu için detaylı astroloji yorumu. aşk enerjisi konusunda rehberlik.</description>
-      <pubDate>Wed, 19 Jun 2025 10:00:00 GMT</pubDate>
-      <guid>https://mindversedaily.com/astrology/yengec-burcu-ask-özel-yorum</guid>
-    </item>
-    <item>
-      <title>Yay Burcu Seyahat ve Macera Yorumu</title>
-      <link>https://mindversedaily.com/astrology/yay-burcu-seyahat-macera</link>
-      <description>Yay burcu için seyahat, macera ve kişisel gelişim yorumu. Ufuklar genişliyor!</description>
-      <pubDate>Wed, 19 Jun 2025 10:00:00 GMT</pubDate>
-      <guid>https://mindversedaily.com/astrology/yay-burcu-seyahat-macera</guid>
-    </item>
-    <item>
-      <title>Yaşam Dönüşümü - Yay Burcu Aylık Yorumu</title>
-      <link>https://mindversedaily.com/astrology/yay-burcu-ruhsal-özel-yorum</link>
-      <description>Yay burcu için detaylı astroloji yorumu. yaşam dönüşümü konusunda rehberlik.</description>
-      <pubDate>Wed, 19 Jun 2025 10:00:00 GMT</pubDate>
-      <guid>https://mindversedaily.com/astrology/yay-burcu-ruhsal-özel-yorum</guid>
-    </item>
-    <item>
-      <title>Yaratıcılığın Zirvesi - Yay Burcu Haftalk Yorumu</title>
-      <link>https://mindversedaily.com/astrology/yay-burcu-haftalik-yorum</link>
-      <description>Yay burcu için detaylı astroloji yorumu. yaratıcılığın zirvesi konusunda rehberlik.</description>
-      <pubDate>Wed, 19 Jun 2025 10:00:00 GMT</pubDate>
-      <guid>https://mindversedaily.com/astrology/yay-burcu-haftalik-yorum</guid>
-    </item>
-    <item>
-      <title>Yaratıcılık Zamanı - Yay Burcu Gnlk Yorumu</title>
-      <link>https://mindversedaily.com/astrology/yay-burcu-gunluk-yorum</link>
-      <description>Yay burcu için detaylı astroloji yorumu. yaratıcılık zamanı konusunda rehberlik.</description>
-      <pubDate>Wed, 19 Jun 2025 10:00:00 GMT</pubDate>
-      <guid>https://mindversedaily.com/astrology/yay-burcu-gunluk-yorum</guid>
-    </item>
-    <item>
-      <title>Büyük Dönüşümler - Yay Burcu Aylk Yorumu</title>
-      <link>https://mindversedaily.com/astrology/yay-burcu-aylik-yorum</link>
-      <description>Yay burcu için detaylı astroloji yorumu. büyük dönüşümler konusunda rehberlik.</description>
-      <pubDate>Wed, 19 Jun 2025 10:00:00 GMT</pubDate>
-      <guid>https://mindversedaily.com/astrology/yay-burcu-aylik-yorum</guid>
-    </item>
-    <item>
-      <title>Ruhsal Yolculuk - Terazi Burcu Haftalk Yorumu</title>
-      <link>https://mindversedaily.com/astrology/terazi-burcu-haftalik-yorum</link>
-      <description>Terazi burcu için detaylı astroloji yorumu. ruhsal yolculuk konusunda rehberlik.</description>
-      <pubDate>Wed, 19 Jun 2025 10:00:00 GMT</pubDate>
-      <guid>https://mindversedaily.com/astrology/terazi-burcu-haftalik-yorum</guid>
-    </item>
-    <item>
-      <title>İç Huzur - Terazi Burcu Günlük Yorumu</title>
-      <link>https://mindversedaily.com/astrology/terazi-burcu-gunluk-yorum</link>
-      <description>Terazi burcu için detaylı astroloji yorumu. i̇ç huzur konusunda rehberlik.</description>
-      <pubDate>Wed, 19 Jun 2025 10:00:00 GMT</pubDate>
-      <guid>https://mindversedaily.com/astrology/terazi-burcu-gunluk-yorum</guid>
-    </item>
-    <item>
-      <title>Büyük Dönüşümler - Terazi Burcu Aylk Yorumu</title>
-      <link>https://mindversedaily.com/astrology/terazi-burcu-aylik-yorum</link>
-      <description>Terazi burcu için detaylı astroloji yorumu. büyük dönüşümler konusunda rehberlik.</description>
-      <pubDate>Wed, 19 Jun 2025 10:00:00 GMT</pubDate>
-      <guid>https://mindversedaily.com/astrology/terazi-burcu-aylik-yorum</guid>
-    </item>
-    <item>
-      <title>Yeni Başlangıçlar - Terazi Burcu Günlük Yorumu</title>
-      <link>https://mindversedaily.com/astrology/terazi-burcu-ask-özel-yorum</link>
-      <description>Terazi burcu için detaylı astroloji yorumu. yeni başlangıçlar konusunda rehberlik.</description>
-      <pubDate>Wed, 19 Jun 2025 10:00:00 GMT</pubDate>
-      <guid>https://mindversedaily.com/astrology/terazi-burcu-ask-özel-yorum</guid>
-    </item>
-    <item>
-      <title>Güçlü Enerji Akışı - Oğlak Burcu Haftalık Yorumu</title>
-      <link>https://mindversedaily.com/astrology/oglak-burcu-kariyer-özel-yorum</link>
-      <description>Oğlak burcu için detaylı astroloji yorumu. güçlü enerji akışı konusunda rehberlik.</description>
-      <pubDate>Wed, 19 Jun 2025 10:00:00 GMT</pubDate>
-      <guid>https://mindversedaily.com/astrology/oglak-burcu-kariyer-özel-yorum</guid>
-    </item>
-    <item>
-      <title>Kariyer Fırsatları - Oğlak Burcu Haftalk Yorumu</title>
-      <link>https://mindversedaily.com/astrology/oglak-burcu-haftalik-yorum</link>
-      <description>Oğlak burcu için detaylı astroloji yorumu. kariyer fırsatları konusunda rehberlik.</description>
-      <pubDate>Wed, 19 Jun 2025 10:00:00 GMT</pubDate>
-      <guid>https://mindversedaily.com/astrology/oglak-burcu-haftalik-yorum</guid>
-    </item>
-    <item>
-      <title>Kariyer Atılımı - Oğlak Burcu Günlük Yorumu</title>
-      <link>https://mindversedaily.com/astrology/oglak-burcu-gunluk-yorum</link>
-      <description>Oğlak burcu için detaylı astroloji yorumu. kariyer atılımı konusunda rehberlik.</description>
-      <pubDate>Wed, 19 Jun 2025 10:00:00 GMT</pubDate>
-      <guid>https://mindversedaily.com/astrology/oglak-burcu-gunluk-yorum</guid>
-    </item>
-    <item>
-      <title>Aşkın Gücü - Oğlak Burcu Aylk Yorumu</title>
-      <link>https://mindversedaily.com/astrology/oglak-burcu-aylik-yorum</link>
-      <description>Oğlak burcu için detaylı astroloji yorumu. aşkın gücü konusunda rehberlik.</description>
-      <pubDate>Wed, 19 Jun 2025 10:00:00 GMT</pubDate>
-      <guid>https://mindversedaily.com/astrology/oglak-burcu-aylik-yorum</guid>
-    </item>
-    <item>
-      <title>Dönüşüm Haftası - Kova Burcu Haftalk Yorumu</title>
-      <link>https://mindversedaily.com/astrology/kova-burcu-haftalik-yorum</link>
-      <description>Kova burcu için detaylı astroloji yorumu. dönüşüm haftası konusunda rehberlik.</description>
-      <pubDate>Wed, 19 Jun 2025 10:00:00 GMT</pubDate>
-      <guid>https://mindversedaily.com/astrology/kova-burcu-haftalik-yorum</guid>
-    </item>
-    <item>
-      <title>Kariyer Atılımı - Kova Burcu Gnlk Yorumu</title>
-      <link>https://mindversedaily.com/astrology/kova-burcu-gunluk-yorum</link>
-      <description>Kova burcu için detaylı astroloji yorumu. kariyer atılımı konusunda rehberlik.</description>
-      <pubDate>Wed, 19 Jun 2025 10:00:00 GMT</pubDate>
-      <guid>https://mindversedaily.com/astrology/kova-burcu-gunluk-yorum</guid>
+      <title>Synastry Analysis | Sinastri Analizi</title>
+      <link>https://mindverseblog.com/en/astrology/synastry</link>
+      <description>Discover relationship compatibility through synastry analysis.</description>
+      <category>astrology</category>
+      <pubDate>Thu, 19 Jun 2025 21:56:05 </pubDate>
+      <guid isPermaLink="true">https://mindverseblog.com/en/astrology/synastry</guid>
     </item>
   </channel>
 </rss>

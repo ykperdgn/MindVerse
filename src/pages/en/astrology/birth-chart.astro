@@ -1,0 +1,542 @@
+---
+title: "Birth Chart Analysis - Professional Astrology Tool - MindVerse"
+description: "Generate your complete natal chart with planetary positions, house analysis, and detailed astrological insights."
+keywords: "birth chart, natal chart, astrology analysis, planetary positions, houses, aspects"
+layout: "../../components/Layout.astro"
+---
+
+<div class="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 py-12">
+  <div class="container mx-auto px-4">
+
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <div class="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 text-white shadow-xl">
+        <span class="text-4xl">🌟</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+        Birth Chart Analysis
+      </h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Generate your complete natal chart with planetary positions, house analysis, and detailed astrological insights.
+      </p>
+    </div>
+
+    <!-- Birth Data Form -->
+    <div class="max-w-2xl mx-auto mb-12">
+      <div class="bg-white/90 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/50">
+        <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Enter Your Birth Information</h2>
+        
+        <form id="birth-chart-form" class="space-y-6">
+          <!-- Name -->
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Full Name</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+              placeholder="Enter your full name"
+            >
+          </div>
+
+          <!-- Date of Birth -->
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Date of Birth</label>
+            <input 
+              type="date" 
+              id="birth-date" 
+              name="birth-date" 
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+            >
+          </div>
+
+          <!-- Time of Birth -->
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Time of Birth</label>
+            <input 
+              type="time" 
+              id="birth-time" 
+              name="birth-time" 
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+            >
+            <p class="text-sm text-gray-500 mt-1">Exact time is important for accurate house calculations</p>
+          </div>
+
+          <!-- Place of Birth -->
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Place of Birth</label>
+            <input 
+              type="text" 
+              id="birth-place" 
+              name="birth-place" 
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+              placeholder="City, Country (e.g., Istanbul, Turkey)"
+            >
+          </div>
+
+          <!-- Generate Button -->
+          <button 
+            type="submit" 
+            class="w-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white py-4 rounded-xl font-semibold hover:from-indigo-600 hover:to-purple-600 transition-all transform hover:scale-105 shadow-lg"
+          >
+            🌟 Generate Birth Chart
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Chart Results Section (Initially Hidden) -->
+    <div id="chart-results" class="hidden">
+      
+      <!-- Chart Display -->
+      <div class="bg-white/90 backdrop-blur-md rounded-3xl p-8 mb-8 shadow-xl border border-white/50">
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Your Birth Chart</h2>
+        
+        <!-- Chart Circle Placeholder -->
+        <div class="relative mx-auto mb-8" style="width: 400px; height: 400px;">
+          <div class="absolute inset-0 rounded-full border-4 border-indigo-200 bg-gradient-to-br from-indigo-50 to-purple-50">
+            <!-- Zodiac Wheel -->
+            <div class="absolute inset-4 rounded-full border-2 border-purple-200">
+              <!-- Houses -->
+              <div class="absolute inset-8 rounded-full border border-gray-300">
+                <!-- Planetary Positions will be inserted here by JavaScript -->
+                <div id="chart-wheel" class="w-full h-full relative">
+                  <!-- Chart visualization will be generated dynamically -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Birth Data Summary -->
+        <div id="birth-summary" class="text-center mb-6">
+          <!-- Will be populated by JavaScript -->
+        </div>
+      </div>
+
+      <!-- Planetary Positions -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        
+        <!-- Sun -->
+        <div class="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-orange-100">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-orange-400 to-yellow-400 rounded-full flex items-center justify-center mr-4">
+              <span class="text-2xl">☉</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-800">Sun</h3>
+              <p id="sun-position" class="text-sm text-gray-600">Position will be calculated</p>
+            </div>
+          </div>
+          <p id="sun-meaning" class="text-sm text-gray-700">Your core identity and life purpose</p>
+        </div>
+
+        <!-- Moon -->
+        <div class="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-blue-100">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-full flex items-center justify-center mr-4">
+              <span class="text-2xl">☽</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-800">Moon</h3>
+              <p id="moon-position" class="text-sm text-gray-600">Position will be calculated</p>
+            </div>
+          </div>
+          <p id="moon-meaning" class="text-sm text-gray-700">Your emotions and inner world</p>
+        </div>
+
+        <!-- Rising -->
+        <div class="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-green-100">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-teal-400 rounded-full flex items-center justify-center mr-4">
+              <span class="text-2xl">⬆</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-800">Rising Sign</h3>
+              <p id="rising-position" class="text-sm text-gray-600">Position will be calculated</p>
+            </div>
+          </div>
+          <p id="rising-meaning" class="text-sm text-gray-700">Your outer personality and first impression</p>
+        </div>
+
+        <!-- Mercury -->
+        <div class="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-yellow-100">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-full flex items-center justify-center mr-4">
+              <span class="text-2xl">☿</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-800">Mercury</h3>
+              <p id="mercury-position" class="text-sm text-gray-600">Position will be calculated</p>
+            </div>
+          </div>
+          <p id="mercury-meaning" class="text-sm text-gray-700">Communication and thinking style</p>
+        </div>
+
+        <!-- Venus -->
+        <div class="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-pink-100">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-pink-400 to-rose-400 rounded-full flex items-center justify-center mr-4">
+              <span class="text-2xl">♀</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-800">Venus</h3>
+              <p id="venus-position" class="text-sm text-gray-600">Position will be calculated</p>
+            </div>
+          </div>
+          <p id="venus-meaning" class="text-sm text-gray-700">Love, beauty, and relationships</p>
+        </div>
+
+        <!-- Mars -->
+        <div class="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-red-100">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-red-400 to-pink-400 rounded-full flex items-center justify-center mr-4">
+              <span class="text-2xl">♂</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-800">Mars</h3>
+              <p id="mars-position" class="text-sm text-gray-600">Position will be calculated</p>
+            </div>
+          </div>
+          <p id="mars-meaning" class="text-sm text-gray-700">Action, energy, and desire</p>
+        </div>
+      </div>
+
+      <!-- House Analysis -->
+      <div class="bg-white/90 backdrop-blur-md rounded-3xl p-8 mb-8 shadow-xl border border-white/50">
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">House Analysis</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Houses 1-12 will be populated by JavaScript -->
+          <div id="houses-container">
+            <!-- House cards will be inserted here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Aspects -->
+      <div class="bg-white/90 backdrop-blur-md rounded-3xl p-8 mb-8 shadow-xl border border-white/50">
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Planetary Aspects</h2>
+        
+        <div id="aspects-container" class="space-y-4">
+          <!-- Aspects will be populated by JavaScript -->
+        </div>
+      </div>
+
+      <!-- Interpretation -->
+      <div class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-3xl p-8 text-white">
+        <h2 class="text-3xl font-bold mb-6 text-center">Personalized Interpretation</h2>
+        
+        <div id="interpretation-content" class="space-y-6">
+          <!-- Detailed interpretation will be generated -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Language Switch -->
+    <div class="text-center mt-12">
+      <div class="inline-flex bg-white rounded-full p-2 shadow-lg">
+        <a href="/astrology/dogum-haritasi" class="px-6 py-2 text-gray-600 hover:text-blue-600 transition-all">
+          🇹🇷 Türkçe
+        </a>
+        <span class="px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full font-semibold">
+          🇺🇸 English
+        </span>
+      </div>
+    </div>
+
+    <!-- AdSense Ad -->
+    <div class="flex justify-center mt-12">
+      <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl p-8 text-center">
+        <p class="text-gray-500 text-sm">Birth Chart Analysis Advertisement - 728x90</p>
+        <p class="text-gray-400 text-xs">AdSense Slot</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  // Birth Chart Calculator
+  class BirthChartCalculator {
+    constructor() {
+      this.zodiacSigns = [
+        'Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo',
+        'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'
+      ];
+      
+      this.planets = {
+        sun: { symbol: '☉', name: 'Sun' },
+        moon: { symbol: '☽', name: 'Moon' },
+        mercury: { symbol: '☿', name: 'Mercury' },
+        venus: { symbol: '♀', name: 'Venus' },
+        mars: { symbol: '♂', name: 'Mars' },
+        jupiter: { symbol: '♃', name: 'Jupiter' },
+        saturn: { symbol: '♄', name: 'Saturn' },
+        uranus: { symbol: '♅', name: 'Uranus' },
+        neptune: { symbol: '♆', name: 'Neptune' },
+        pluto: { symbol: '♇', name: 'Pluto' }
+      };
+
+      this.houses = [
+        { name: '1st House', meaning: 'Identity, Appearance, First Impressions' },
+        { name: '2nd House', meaning: 'Money, Possessions, Values' },
+        { name: '3rd House', meaning: 'Communication, Siblings, Short Trips' },
+        { name: '4th House', meaning: 'Home, Family, Roots' },
+        { name: '5th House', meaning: 'Creativity, Romance, Children' },
+        { name: '6th House', meaning: 'Health, Work, Daily Routine' },
+        { name: '7th House', meaning: 'Partnerships, Marriage, Open Enemies' },
+        { name: '8th House', meaning: 'Transformation, Shared Resources, Death' },
+        { name: '9th House', meaning: 'Higher Learning, Philosophy, Travel' },
+        { name: '10th House', meaning: 'Career, Reputation, Public Image' },
+        { name: '11th House', meaning: 'Friends, Groups, Hopes and Dreams' },
+        { name: '12th House', meaning: 'Spirituality, Hidden Things, Subconscious' }
+      ];
+    }
+
+    // Simplified planetary position calculation (for demo purposes)
+    calculatePlanetaryPositions(birthDate, birthTime) {
+      // In a real application, this would use ephemeris data
+      // For demo, we'll generate realistic-looking positions
+      
+      const date = new Date(birthDate + 'T' + birthTime);
+      const dayOfYear = Math.floor((date - new Date(date.getFullYear(), 0, 0)) / 86400000);
+      
+      return {
+        sun: this.calculateSignPosition(dayOfYear, 0),
+        moon: this.calculateSignPosition(dayOfYear * 13, 120), // Moon moves faster
+        mercury: this.calculateSignPosition(dayOfYear + 15, 45),
+        venus: this.calculateSignPosition(dayOfYear - 20, 75),
+        mars: this.calculateSignPosition(dayOfYear * 0.5, 200),
+        jupiter: this.calculateSignPosition(dayOfYear * 0.08, 90),
+        saturn: this.calculateSignPosition(dayOfYear * 0.03, 180),
+        uranus: this.calculateSignPosition(dayOfYear * 0.012, 270),
+        neptune: this.calculateSignPosition(dayOfYear * 0.006, 315),
+        pluto: this.calculateSignPosition(dayOfYear * 0.004, 135)
+      };
+    }
+
+    calculateSignPosition(dayValue, offset) {
+      const position = (dayValue + offset) % 360;
+      const signIndex = Math.floor(position / 30);
+      const degree = Math.floor(position % 30);
+      const minute = Math.floor((position % 1) * 60);
+      
+      return {
+        sign: this.zodiacSigns[signIndex],
+        degree: degree,
+        minute: minute,
+        position: position
+      };
+    }
+
+    calculateRisingSign(birthDate, birthTime, birthPlace) {
+      // Simplified rising sign calculation
+      // In reality, this requires complex astronomical calculations
+      const timeValue = parseInt(birthTime.replace(':', ''));
+      const placeHash = birthPlace.length * 7; // Simple hash
+      const signIndex = (timeValue + placeHash) % 12;
+      
+      return {
+        sign: this.zodiacSigns[signIndex],
+        degree: Math.floor(Math.random() * 30),
+        minute: Math.floor(Math.random() * 60)
+      };
+    }
+
+    generateInterpretation(positions, rising) {
+      const sunSign = positions.sun.sign;
+      const moonSign = positions.moon.sign;
+      const risingSign = rising.sign;
+
+      return {
+        overview: `With your Sun in ${sunSign}, Moon in ${moonSign}, and ${risingSign} rising, you have a unique cosmic blueprint that shapes your personality and life path.`,
+        
+        sunAnalysis: `Your Sun in ${sunSign} represents your core identity and life purpose. This placement suggests you are naturally ${this.getSignTraits(sunSign)}.`,
+        
+        moonAnalysis: `Your Moon in ${moonSign} reveals your emotional nature and inner world. You likely process emotions in a ${this.getSignTraits(moonSign)} way.`,
+        
+        risingAnalysis: `With ${risingSign} rising, others first perceive you as ${this.getSignTraits(risingSign)}. This is the mask you wear when meeting new people.`,
+        
+        advice: `Focus on integrating your ${sunSign} sun energy with your ${moonSign} emotional nature, while expressing yourself authentically through your ${risingSign} rising sign qualities.`
+      };
+    }
+
+    getSignTraits(sign) {
+      const traits = {
+        'Aries': 'dynamic, pioneering, and energetic',
+        'Taurus': 'stable, practical, and sensual',
+        'Gemini': 'versatile, communicative, and curious',
+        'Cancer': 'nurturing, intuitive, and protective',
+        'Leo': 'creative, confident, and generous',
+        'Virgo': 'analytical, helpful, and detail-oriented',
+        'Libra': 'harmonious, diplomatic, and aesthetic',
+        'Scorpio': 'intense, transformative, and mysterious',
+        'Sagittarius': 'adventurous, philosophical, and optimistic',
+        'Capricorn': 'ambitious, disciplined, and practical',
+        'Aquarius': 'innovative, independent, and humanitarian',
+        'Pisces': 'compassionate, intuitive, and artistic'
+      };
+      
+      return traits[sign] || 'unique and special';
+    }
+  }
+
+  // Initialize calculator
+  const calculator = new BirthChartCalculator();
+
+  // Form submission handler
+  document.getElementById('birth-chart-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(this);
+    const birthData = {
+      name: formData.get('name'),
+      date: formData.get('birth-date'),
+      time: formData.get('birth-time'),
+      place: formData.get('birth-place')
+    };
+
+    generateChart(birthData);
+  });
+
+  function generateChart(birthData) {
+    // Show loading state
+    document.getElementById('chart-results').classList.remove('hidden');
+    document.getElementById('chart-results').scrollIntoView({ behavior: 'smooth' });
+
+    // Calculate positions
+    const positions = calculator.calculatePlanetaryPositions(birthData.date, birthData.time);
+    const rising = calculator.calculateRisingSign(birthData.date, birthData.time, birthData.place);
+
+    // Update birth summary
+    const birthDate = new Date(birthData.date);
+    document.getElementById('birth-summary').innerHTML = `
+      <h3 class="text-xl font-bold text-gray-800 mb-2">${birthData.name}</h3>
+      <p class="text-gray-600">Born on ${birthDate.toLocaleDateString('en-US', { 
+        weekday: 'long', 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric' 
+      })}</p>
+      <p class="text-gray-600">At ${birthData.time} in ${birthData.place}</p>
+    `;
+
+    // Update planetary positions
+    updatePlanetaryPositions(positions, rising);
+
+    // Generate house analysis
+    generateHouseAnalysis();
+
+    // Generate aspects
+    generateAspects(positions);
+
+    // Generate interpretation
+    const interpretation = calculator.generateInterpretation(positions, rising);
+    updateInterpretation(interpretation);
+  }
+
+  function updatePlanetaryPositions(positions, rising) {
+    // Update Sun
+    document.getElementById('sun-position').textContent = 
+      `${positions.sun.sign} ${positions.sun.degree}°${positions.sun.minute}'`;
+    
+    // Update Moon
+    document.getElementById('moon-position').textContent = 
+      `${positions.moon.sign} ${positions.moon.degree}°${positions.moon.minute}'`;
+    
+    // Update Rising
+    document.getElementById('rising-position').textContent = 
+      `${rising.sign} ${rising.degree}°${rising.minute}'`;
+    
+    // Update Mercury
+    document.getElementById('mercury-position').textContent = 
+      `${positions.mercury.sign} ${positions.mercury.degree}°${positions.mercury.minute}'`;
+    
+    // Update Venus
+    document.getElementById('venus-position').textContent = 
+      `${positions.venus.sign} ${positions.venus.degree}°${positions.venus.minute}'`;
+    
+    // Update Mars
+    document.getElementById('mars-position').textContent = 
+      `${positions.mars.sign} ${positions.mars.degree}°${positions.mars.minute}'`;
+  }
+
+  function generateHouseAnalysis() {
+    const housesContainer = document.getElementById('houses-container');
+    housesContainer.innerHTML = '';
+
+    calculator.houses.forEach((house, index) => {
+      const houseCard = document.createElement('div');
+      houseCard.className = 'bg-white/50 rounded-xl p-4 border border-gray-200';
+      houseCard.innerHTML = `
+        <h4 class="font-bold text-gray-800 mb-2">${house.name}</h4>
+        <p class="text-sm text-gray-600">${house.meaning}</p>
+        <div class="mt-2 text-xs text-gray-500">
+          Sign: ${calculator.zodiacSigns[index % 12]}
+        </div>
+      `;
+      housesContainer.appendChild(houseCard);
+    });
+  }
+
+  function generateAspects(positions) {
+    const aspectsContainer = document.getElementById('aspects-container');
+    
+    // Generate some example aspects
+    const aspects = [
+      { planets: 'Sun - Moon', type: 'Trine', meaning: 'Harmonious connection between identity and emotions' },
+      { planets: 'Venus - Mars', type: 'Conjunction', meaning: 'Strong blend of love and passion energies' },
+      { planets: 'Mercury - Jupiter', type: 'Sextile', meaning: 'Positive communication and learning abilities' }
+    ];
+
+    aspectsContainer.innerHTML = aspects.map(aspect => `
+      <div class="flex items-center justify-between p-4 bg-white/50 rounded-xl border border-gray-200">
+        <div class="flex-1">
+          <h4 class="font-semibold text-gray-800">${aspect.planets}</h4>
+          <p class="text-sm text-gray-600">${aspect.meaning}</p>
+        </div>
+        <div class="ml-4">
+          <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">
+            ${aspect.type}
+          </span>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  function updateInterpretation(interpretation) {
+    document.getElementById('interpretation-content').innerHTML = `
+      <div class="mb-6">
+        <h3 class="text-xl font-bold mb-3">Overview</h3>
+        <p class="text-white/90 leading-relaxed">${interpretation.overview}</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+        <div class="bg-white/10 rounded-xl p-4">
+          <h4 class="font-bold mb-2">☉ Sun Analysis</h4>
+          <p class="text-sm text-white/80">${interpretation.sunAnalysis}</p>
+        </div>
+        
+        <div class="bg-white/10 rounded-xl p-4">
+          <h4 class="font-bold mb-2">☽ Moon Analysis</h4>
+          <p class="text-sm text-white/80">${interpretation.moonAnalysis}</p>
+        </div>
+        
+        <div class="bg-white/10 rounded-xl p-4">
+          <h4 class="font-bold mb-2">⬆ Rising Analysis</h4>
+          <p class="text-sm text-white/80">${interpretation.risingAnalysis}</p>
+        </div>
+      </div>
+      
+      <div class="bg-white/10 rounded-xl p-6">
+        <h3 class="text-xl font-bold mb-3">Personal Guidance</h3>
+        <p class="text-white/90 leading-relaxed">${interpretation.advice}</p>
+      </div>
+    `;
+  }
+</script>

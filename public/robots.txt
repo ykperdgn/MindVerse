@@ -1,26 +1,46 @@
 User-agent: *
 Allow: /
 
-# Sitemap lokasyonu
-Sitemap: https://www.mindversedaily.com/sitemap.xml
+# Sitemaps
+Sitemap: https://mindverseblog.com/sitemap.xml
 
-# Arama motorları için önemli sayfalar
-Allow: /health
-Allow: /love
-Allow: /history
-Allow: /psychology
-Allow: /space
-Allow: /quotes
-Allow: /popular
-Allow: /categories
-Allow: /astrology
+# Allow all content in both languages
+Allow: /astrology/
+Allow: /en/astrology/
+Allow: /health/
+Allow: /en/health/
+Allow: /love/
+Allow: /en/love/
+Allow: /history/
+Allow: /en/history/
+Allow: /psychology/
+Allow: /en/psychology/
+Allow: /space/
+Allow: /en/space/
+Allow: /quotes/
+Allow: /en/quotes/
+
+# English site root
+Allow: /en/
+
+# Special astrology tools
 Allow: /astrology/yukselen-burc
 Allow: /astrology/sinastri
+Allow: /en/astrology/birth-chart
+Allow: /en/astrology/rising-sign
+Allow: /en/astrology/synastry
 
-# Crawl hızı ayarı (saniyede 1 istek)
+# Daily horoscopes
+Allow: /en/astrology/*-daily
+
+# Disallow admin areas (if any exist in future)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_astro/
+Disallow: /node_modules/
+
+# Crawl delay (be nice to servers)
 Crawl-delay: 1
 
-# Google'a özel ayarlar
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 0
+# Host directive
+Host: mindverseblog.com
