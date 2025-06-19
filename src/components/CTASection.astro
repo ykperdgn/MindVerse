@@ -53,58 +53,39 @@
       * İstediğiniz zaman abonelikten çıkabilirsiniz. Spam yapmıyoruz!
     </p>
   </div>
-  <!-- Sosyal Paylaşım Alanı - Mobil Optimized -->
+
+  <!-- Link Paylaşım Alanı -->
   <div class="bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-xl p-4 sm:p-6">
     <div class="flex items-center mb-4">
       <span class="text-2xl sm:text-3xl mr-3">📤</span>
       <h3 class="text-lg sm:text-xl font-bold text-green-800">Bu İçeriği Paylaşın</h3>
     </div>
     <p class="text-green-700 mb-4 text-sm sm:text-base">
-      Bu makale size faydalı olduysa, sosyal medyada paylaşarak daha fazla kişinin
-      bu değerli bilgilere ulaşmasına yardımcı olabilirsiniz!
+      Bu makale size faydalı olduysa, link kopyalayarak arkadaşlarınızla paylaşabilirsiniz!
     </p>
 
-    <!-- Mobil için dikey, desktop için yatay düzen -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-wrap gap-3">
-      <!-- Twitter Paylaşımı - Çalışıyor -->
-      <button
-        onclick="shareOnTwitter()"
-        class="flex items-center justify-center bg-[#1DA1F2] text-white px-4 py-3 rounded-lg hover:bg-[#1a8cd8] transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg w-full lg:w-auto"
-        title="Twitter'da paylaş"
-      >
-        <span class="mr-2">🐦</span>
-        <span class="font-medium">Twitter'da Paylaş</span>
-      </button>
-
-      <!-- Link Kopyalama - Çalışıyor -->
+    <!-- Link Kopyalama Butonu -->
+    <div class="flex justify-center">
       <button
         onclick="copyToClipboard()"
-        class="flex items-center justify-center bg-gray-600 text-white px-4 py-3 rounded-lg hover:bg-gray-700 transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg w-full lg:w-auto"
+        class="flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg"
         title="Makale linkini kopyala"
       >
         <span class="mr-2">🔗</span>
-        <span class="font-medium">Linki Kopyala</span>
+        <span class="font-medium">Makale Linkini Kopyala</span>
       </button>
     </div>
 
-    <!-- Twitter Takip Teşviki -->
-    <div class="mt-4 p-3 bg-blue-100 rounded-lg border border-blue-200">
-      <div class="flex items-center justify-between flex-wrap gap-2">
-        <div class="flex items-center">
-          <span class="text-xl mr-2">🐦</span>
-          <span class="text-blue-800 text-sm font-medium">@MindVerseDaily'i takip edin!</span>
-        </div>
-        <a
-          href="https://twitter.com/MindVerseDaily"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="bg-[#1DA1F2] text-white px-3 py-1 rounded text-sm hover:bg-[#1a8cd8] transition-colors"
-        >
-          Takip Et
-        </a>
+    <!-- Paylaşım Teşviki -->
+    <div class="mt-4 p-3 bg-indigo-100 rounded-lg border border-indigo-200">
+      <div class="text-center">
+        <span class="text-indigo-800 text-sm">
+          💡 Bu linki WhatsApp, e-posta veya herhangi bir platformda paylaşabilirsiniz!
+        </span>
       </div>
     </div>
   </div>
+
   <!-- İstatistik ve Motivasyon -->
   <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-6">
     <div class="flex items-center justify-between">
@@ -140,40 +121,13 @@
     } else {
       showMessage('ℹ️ Bu e-posta adresi zaten kayıtlı.', 'info');
     }
-  }  // Sosyal medya paylaşım fonksiyonları - Sadece çalışanlar
-  function shareOnTwitter() {
-    const url = window.location.href;
-    const title = document.title.replace(' | MindVerse', '').replace(' | MindVerse Daily', '');
-    const text = `📖 ${title}`;
-    const hashtags = 'mindversedaily,blog,bilgi,gelişim,eğitim';
-
-    const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}&hashtags=${hashtags}&via=MindVerseDaily`;
-
-    // Mobil cihaz kontrolü
-    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-    if (isMobile) {
-      // Mobil: Direkt yönlendirme daha güvenilir
-      window.open(twitterUrl, '_blank');
-    } else {
-      // Desktop: Popup dene, olmazsa yönlendir
-      try {
-        const popup = window.open(twitterUrl, '_blank', 'width=550,height=420,scrollbars=yes,resizable=yes');
-        if (!popup || popup.closed || typeof popup.closed === 'undefined') {
-          window.open(twitterUrl, '_blank');
-        }
-      } catch (error) {
-        window.open(twitterUrl, '_blank');
-      }
-    }
-
-    showMessage('🐦 Twitter paylaşım sayfası açılıyor...', 'info');
   }
 
+  // Link kopyalama fonksiyonu
   function copyToClipboard() {
     const url = window.location.href;
     const title = document.title.replace(' | MindVerse', '').replace(' | MindVerse Daily', '');
-    const shareText = `📖 ${title}\n\n${url}\n\nvia @MindVerseDaily`;
+    const shareText = `📖 ${title}\n\n${url}\n\nMindVerse Daily'den paylaşıldı`;
 
     // Modern tarayıcılar için Clipboard API
     if (navigator.clipboard && window.isSecureContext) {

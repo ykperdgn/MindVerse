@@ -15,20 +15,15 @@ Profesyonel standartlarda uzun format makaleler (1000+ kelime), otomatik içerik
 - iOS zoom önleme (16px input font-size)
 
 #### 🔗 **Sosyal Medya Entegrasyonu**
-- ✅ **Twitter Paylaşımı**: Çalışan ve optimize edilmiş
-- ✅ **Link Kopyalama**: Çalışan ve enhance edilmiş
-- ❌ **Facebook/WhatsApp**: Çalışmayan özellikler kaldırıldı
-- 🆕 **@MindVerseDaily**: Twitter hesabı entegrasyonu
+- ✅ **Link Kopyalama**: Çalışan ve optimize edilmiş
+- 📱 **Mobil Paylaşım**: WhatsApp, e-posta vb. için link kopyalama
+- 🚫 **Twitter**: Ücretli API nedeniyle kaldırıldı
 
 #### 🤖 **Otomatik İçerik Sistemi**
 - **1000+ kelimeli uzun makaleler**: Profesyonel standartlarda
 - **Kategorize edilmiş içerik**: 6 ana kategori
 - **Günlük otomatik üretim**: Saat 02:30 (Türkiye saati)
 - **Git auto-deploy**: Commit + push + Vercel build
-
-#### 🐦 **Twitter Otomatik Paylaşım**
-- Yeni makaleleri otomatik tweet
-- @MindVerseDaily hesabı entegrasyonu
 - Günde 3 kez paylaşım (09:00, 15:00, 21:00)
 - Smart URL generation ve hashtag ekleme
 
