@@ -1,11 +1,14 @@
 ---
-title: 'Taurus Daily Horoscope - June 20, 2025'
+title: "Taurus Daily Horoscope - June 20, 2025"
+description: "Taurus Daily Horoscope - June 20, 2025"
+pubDate: 2025-06-20
+category: "daily-horoscope"
 date: 2025-06-20
-summary: 'Daily astrology reading and recommendations for Taurus on June 20, 2025.'
-tags: ['astrology', 'daily-horoscope', 'taurus', 'zodiac', 'stars']
+summary: "Daily astrology reading and recommendations for Taurus on June 20, 2025."
+tags: ["astrology", "daily-horoscope", "taurus", "zodiac", "stars"]
 views: 337
-author: 'MindVerse Astrology Expert'
-keywords: 'Taurus, daily horoscope, astrology, zodiac reading, June 20, 2025'
+author: "MindVerse Astrology Expert"
+keywords: "Taurus, daily horoscope, astrology, zodiac reading, June 20, 2025"
 ---
 
 ## ♉ Taurus Daily Astrology Reading

@@ -1,8 +1,8 @@
 ---
-title: 'Tarihi Olaylar'
+title: "Tarihi Olaylar"
 date: 2025-06-19
-summary: 'Tarihi Olaylar hakkında detaylı rehber ve uzman önerileri.'
-tags: ['history', 'rehber', 'uzman-tavsiyeleri']
+summary: "Tarihi Olaylar hakkında detaylı rehber ve uzman önerileri."
+tags: ["history", "rehber", "uzman-tavsiyeleri"]
 ---
 
 ## Bilimsel Devrimler

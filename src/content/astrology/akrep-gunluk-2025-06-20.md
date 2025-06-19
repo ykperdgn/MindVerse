@@ -1,11 +1,14 @@
 ---
-title: 'Akrep Günlük Yorumu - 20 June 2025'
+title: "Akrep Günlük Yorumu - 20 June 2025"
+description: "Akrep Günlük Yorumu - 20 June 2025"
+pubDate: 2025-06-20
+category: "daily-horoscope"
 date: 2025-06-20
-summary: 'Akrep burcu için 20 June 2025 günlük astroloji yorumu ve önerileri.'
-tags: ['astroloji', 'günlük-yorum', 'akrep', 'burç', 'yıldız']
+summary: "Akrep burcu için 20 June 2025 günlük astroloji yorumu ve önerileri."
+tags: ["astroloji", "günlük-yorum", "akrep", "burç", "yıldız"]
 views: 425
-author: 'MindVerse Astroloji Uzmanı'
-keywords: 'Akrep, günlük yorum, astroloji, burç yorumu, 20 June 2025'
+author: "MindVerse Astroloji Uzmanı"
+keywords: "Akrep, günlük yorum, astroloji, burç yorumu, 20 June 2025"
 ---
 
 ## ♏ Akrep Günlük Astroloji Yorumu

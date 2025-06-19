@@ -1,11 +1,11 @@
 ---
-title: 'Black Holes and Dark Matter'
+title: "Black Holes and Dark Matter"
 date: 2025-06-20
-summary: 'Comprehensive guide about black holes and dark matter with expert insights and practical advice.'
-tags: ['space', 'NASA', 'planets', 'english']
+summary: "Comprehensive guide about black holes and dark matter with expert insights and practical advice."
+tags: ["space", "NASA", "planets", "english"]
 views: 368
-author: 'MindVerse Team'
-keywords: 'space, NASA, planets, english, guide, tips, advice'
+author: "MindVerse Team"
+keywords: "space, NASA, planets, english, guide, tips, advice"
 ---
 ## Exploring Black Holes and Dark Matter
 

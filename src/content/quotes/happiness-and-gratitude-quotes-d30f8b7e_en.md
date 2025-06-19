@@ -1,11 +1,11 @@
 ---
-title: 'Happiness and Gratitude Quotes'
+title: "Happiness and Gratitude Quotes"
 date: 2025-06-20
-summary: 'Comprehensive guide about happiness and gratitude quotes with expert insights and practical advice.'
-tags: ['quotes', 'motivation', 'wisdom', 'english']
+summary: "Comprehensive guide about happiness and gratitude quotes with expert insights and practical advice."
+tags: ["quotes", "motivation", "wisdom", "english"]
 views: 901
-author: 'MindVerse Team'
-keywords: 'quotes, motivation, wisdom, english, guide, tips, advice'
+author: "MindVerse Team"
+keywords: "quotes, motivation, wisdom, english, guide, tips, advice"
 ---
 ## The Power of Happiness and Gratitude Quotes
 

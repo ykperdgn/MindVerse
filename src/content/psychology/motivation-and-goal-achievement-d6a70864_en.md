@@ -1,11 +1,11 @@
 ---
-title: 'Motivation and Goal Achievement'
+title: "Motivation and Goal Achievement"
 date: 2025-06-20
-summary: 'Comprehensive guide about motivation and goal achievement with expert insights and practical advice.'
-tags: ['cognition', 'emotion', 'psychology', 'english']
+summary: "Comprehensive guide about motivation and goal achievement with expert insights and practical advice."
+tags: ["cognition", "emotion", "psychology", "english"]
 views: 369
-author: 'MindVerse Team'
-keywords: 'cognition, emotion, psychology, english, guide, tips, advice'
+author: "MindVerse Team"
+keywords: "cognition, emotion, psychology, english, guide, tips, advice"
 ---
 ## Understanding Motivation and Goal Achievement
 

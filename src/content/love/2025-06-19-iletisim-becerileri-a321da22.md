@@ -1,8 +1,8 @@
 ---
-title: 'İletişim Becerileri'
+title: "İletişim Becerileri"
 date: 2025-06-19
-summary: 'İletişim Becerileri hakkında detaylı rehber ve uzman önerileri.'
-tags: ['love', 'rehber', 'uzman-tavsiyeleri']
+summary: "İletişim Becerileri hakkında detaylı rehber ve uzman önerileri."
+tags: ["love", "rehber", "uzman-tavsiyeleri"]
 ---
 
 ## Karşılıklı Anlayış Geliştirme

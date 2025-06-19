@@ -1,11 +1,11 @@
 ---
-title: 'Exoplanet Discoveries'
+title: "Exoplanet Discoveries"
 date: 2025-06-20
-summary: 'Comprehensive guide about exoplanet discoveries with expert insights and practical advice.'
-tags: ['exploration', 'planets', 'astronomy', 'english']
+summary: "Comprehensive guide about exoplanet discoveries with expert insights and practical advice."
+tags: ["exploration", "planets", "astronomy", "english"]
 views: 1198
-author: 'MindVerse Team'
-keywords: 'exploration, planets, astronomy, english, guide, tips, advice'
+author: "MindVerse Team"
+keywords: "exploration, planets, astronomy, english, guide, tips, advice"
 ---
 ## Exploring Exoplanet Discoveries
 

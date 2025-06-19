@@ -1,8 +1,8 @@
 ---
-title: 'Egzersiz Programı Hazırlama'
+title: "Egzersiz Programı Hazırlama"
 date: 2025-06-19
-summary: 'Egzersiz Programı Hazırlama hakkında detaylı rehber ve uzman önerileri.'
-tags: ['health', 'rehber', 'uzman-tavsiyeleri']
+summary: "Egzersiz Programı Hazırlama hakkında detaylı rehber ve uzman önerileri."
+tags: ["health", "rehber", "uzman-tavsiyeleri"]
 ---
 
 ## Kalp Sağlığını Koruma

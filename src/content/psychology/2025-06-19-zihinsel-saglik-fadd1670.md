@@ -1,8 +1,8 @@
 ---
-title: 'Zihinsel Sağlık'
+title: "Zihinsel Sağlık"
 date: 2025-06-19
-summary: 'Zihinsel Sağlık hakkında detaylı rehber ve uzman önerileri.'
-tags: ['psychology', 'rehber', 'uzman-tavsiyeleri']
+summary: "Zihinsel Sağlık hakkında detaylı rehber ve uzman önerileri."
+tags: ["psychology", "rehber", "uzman-tavsiyeleri"]
 ---
 
 ## Pozitif Düşünce Alışkanlıkları

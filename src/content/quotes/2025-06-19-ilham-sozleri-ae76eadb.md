@@ -1,8 +1,8 @@
 ---
-title: 'İlham Sözleri'
+title: "İlham Sözleri"
 date: 2025-06-19
-summary: 'İlham Sözleri hakkında detaylı rehber ve uzman önerileri.'
-tags: ['quotes', 'rehber', 'uzman-tavsiyeleri']
+summary: "İlham Sözleri hakkında detaylı rehber ve uzman önerileri."
+tags: ["quotes", "rehber", "uzman-tavsiyeleri"]
 ---
 
 ## Motivasyonel Alıntılar

@@ -1,8 +1,8 @@
 ---
-title: 'Motivasyon Teknikleri'
+title: "Motivasyon Teknikleri"
 date: 2025-06-19
-summary: 'Motivasyon Teknikleri hakkında detaylı rehber ve uzman önerileri.'
-tags: ['psychology', 'rehber', 'uzman-tavsiyeleri']
+summary: "Motivasyon Teknikleri hakkında detaylı rehber ve uzman önerileri."
+tags: ["psychology", "rehber", "uzman-tavsiyeleri"]
 ---
 
 ## Mindfulness ve Meditasyon

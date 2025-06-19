@@ -1,11 +1,11 @@
 ---
-title: 'Understanding Human Behavior'
+title: "Understanding Human Behavior"
 date: 2025-06-20
-summary: 'Comprehensive guide about understanding human behavior with expert insights and practical advice.'
-tags: ['emotion', 'motivation', 'psychology', 'english']
+summary: "Comprehensive guide about understanding human behavior with expert insights and practical advice."
+tags: ["emotion", "motivation", "psychology", "english"]
 views: 1125
-author: 'MindVerse Team'
-keywords: 'emotion, motivation, psychology, english, guide, tips, advice'
+author: "MindVerse Team"
+keywords: "emotion, motivation, psychology, english, guide, tips, advice"
 ---
 ## Understanding Understanding Human Behavior
 

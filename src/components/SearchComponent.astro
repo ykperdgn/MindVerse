@@ -1,0 +1,170 @@
+---
+// Astro Search Component
+interface Props {
+  articles: Array<{
+    slug: string;
+    title: string;
+    summary: string;
+    tags: string[];
+    category: string;
+  }>;
+  category?: string;
+}
+
+const { articles, category } = Astro.props;
+
+// Get all unique tags
+const allTags = [...new Set(articles.flatMap(article => article.tags))].sort();
+---
+
+<div class="search-container mb-8">
+  <div class="search-controls flex flex-col md:flex-row gap-4 mb-6">
+    <!-- Search Input -->
+    <div class="flex-1">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder={category ? `${category} içinde ara...` : "Makalelerde ara..."}
+        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+      />
+    </div>
+
+    <!-- Tag Filter -->
+    <div class="md:w-48">
+      <select
+        id="tagFilter"
+        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+      >
+        <option value="">Tüm etiketler</option>
+        {allTags.map(tag => (
+          <option value={tag}>{tag}</option>
+        ))}
+      </select>
+    </div>
+  </div>
+
+  <!-- Search Results Count -->
+  <div id="searchStats" class="search-stats mb-4">
+    <p class="text-gray-600">
+      {articles.length} makale bulundu
+    </p>
+  </div>
+
+  <!-- Search Results -->
+  <div id="searchResults" class="search-results">
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {articles.map(article => (
+        <div class="article-card bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6" data-title={article.title.toLowerCase()} data-summary={article.summary.toLowerCase()} data-tags={article.tags.join(',').toLowerCase()}>
+          <h3 class="text-xl font-semibold mb-3 text-gray-800 hover:text-blue-600">
+            <a href={`/${article.category}/${article.slug}`} class="hover:underline">
+              {article.title}
+            </a>
+          </h3>
+          <p class="text-gray-600 mb-4 line-clamp-3">{article.summary}</p>
+          <div class="tags flex flex-wrap gap-2">
+            {article.tags.slice(0, 3).map(tag => (
+              <span class="px-2 py-1 bg-blue-100 text-blue-800 text-sm rounded">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- No Results -->
+  <div id="noResults" class="no-results text-center py-8 hidden">
+    <p class="text-gray-500 text-lg">Aradığınız kriterlere uygun makale bulunamadı.</p>
+    <p class="text-gray-400 mt-2">Lütfen farklı anahtar kelimeler deneyin.</p>
+  </div>
+</div>
+
+<script>
+  function initializeSearch() {
+    const searchInput = document.getElementById('searchInput');
+    const tagFilter = document.getElementById('tagFilter');
+    const searchResults = document.getElementById('searchResults');
+    const searchStats = document.getElementById('searchStats');
+    const noResults = document.getElementById('noResults');
+    const allCards = document.querySelectorAll('.article-card');
+
+    function performSearch() {
+      const searchTerm = searchInput.value.toLowerCase().trim();
+      const selectedTag = tagFilter.value.toLowerCase();
+
+      let visibleCount = 0;
+
+      allCards.forEach(card => {
+        const title = card.getAttribute('data-title') || '';
+        const summary = card.getAttribute('data-summary') || '';
+        const tags = card.getAttribute('data-tags') || '';
+
+        const matchesSearch = !searchTerm ||
+          title.includes(searchTerm) ||
+          summary.includes(searchTerm);
+
+        const matchesTag = !selectedTag || tags.includes(selectedTag);
+
+        if (matchesSearch && matchesTag) {
+          card.style.display = 'block';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Update stats
+      const statsText = visibleCount === 0
+        ? 'Hiç makale bulunamadı'
+        : `${visibleCount} makale bulundu${searchTerm ? ` "${searchInput.value}" için` : ''}${selectedTag ? ` "${tagFilter.options[tagFilter.selectedIndex].text}" etiketinde` : ''}`;
+
+      searchStats.querySelector('p').textContent = statsText;
+
+      // Show/hide no results
+      if (visibleCount === 0) {
+        searchResults.style.display = 'none';
+        noResults.style.display = 'block';
+      } else {
+        searchResults.style.display = 'block';
+        noResults.style.display = 'none';
+      }
+    }
+
+    // Add event listeners
+    searchInput.addEventListener('input', performSearch);
+    tagFilter.addEventListener('change', performSearch);
+
+    // Handle URL search parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchQuery = urlParams.get('q');
+    if (searchQuery) {
+      searchInput.value = searchQuery;
+      performSearch();
+    }
+  }
+
+  // Initialize when DOM is loaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeSearch);
+  } else {
+    initializeSearch();
+  }
+</script>
+
+<style>
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .article-card {
+    transition: all 0.2s ease;
+  }
+
+  .article-card:hover {
+    transform: translateY(-2px);
+  }
+</style>

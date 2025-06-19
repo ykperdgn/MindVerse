@@ -1,11 +1,14 @@
 ---
-title: 'Capricorn Daily Horoscope - June 20, 2025'
+title: "Capricorn Daily Horoscope - June 20, 2025"
+description: "Capricorn Daily Horoscope - June 20, 2025"
+pubDate: 2025-06-20
+category: "daily-horoscope"
 date: 2025-06-20
-summary: 'Daily astrology reading and recommendations for Capricorn on June 20, 2025.'
-tags: ['astrology', 'daily-horoscope', 'capricorn', 'zodiac', 'stars']
+summary: "Daily astrology reading and recommendations for Capricorn on June 20, 2025."
+tags: ["astrology", "daily-horoscope", "capricorn", "zodiac", "stars"]
 views: 342
-author: 'MindVerse Astrology Expert'
-keywords: 'Capricorn, daily horoscope, astrology, zodiac reading, June 20, 2025'
+author: "MindVerse Astrology Expert"
+keywords: "Capricorn, daily horoscope, astrology, zodiac reading, June 20, 2025"
 ---
 
 ## ♑ Capricorn Daily Astrology Reading

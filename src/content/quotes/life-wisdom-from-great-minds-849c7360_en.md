@@ -1,11 +1,11 @@
 ---
-title: 'Life Wisdom from Great Minds'
+title: "Life Wisdom from Great Minds"
 date: 2025-06-20
-summary: 'Comprehensive guide about life wisdom from great minds with expert insights and practical advice.'
-tags: ['motivation', 'inspiration', 'quotes', 'english']
+summary: "Comprehensive guide about life wisdom from great minds with expert insights and practical advice."
+tags: ["motivation", "inspiration", "quotes", "english"]
 views: 173
-author: 'MindVerse Team'
-keywords: 'motivation, inspiration, quotes, english, guide, tips, advice'
+author: "MindVerse Team"
+keywords: "motivation, inspiration, quotes, english, guide, tips, advice"
 ---
 ## The Power of Life Wisdom from Great Minds
 

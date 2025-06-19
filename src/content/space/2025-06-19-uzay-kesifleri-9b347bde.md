@@ -1,8 +1,8 @@
 ---
-title: 'Uzay Keşifleri'
+title: "Uzay Keşifleri"
 date: 2025-06-19
-summary: 'Uzay Keşifleri hakkında detaylı rehber ve uzman önerileri.'
-tags: ['space', 'rehber', 'uzman-tavsiyeleri']
+summary: "Uzay Keşifleri hakkında detaylı rehber ve uzman önerileri."
+tags: ["space", "rehber", "uzman-tavsiyeleri"]
 ---
 
 ## Uzay Teknolojileri

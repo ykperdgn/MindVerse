@@ -1,8 +1,8 @@
 ---
-title: 'Sağlıklı Yaşam Rehberi'
+title: "Sağlıklı Yaşam Rehberi"
 date: 2025-06-19
-summary: 'Sağlıklı Yaşam Rehberi hakkında detaylı rehber ve uzman önerileri.'
-tags: ['health', 'rehber', 'uzman-tavsiyeleri']
+summary: "Sağlıklı Yaşam Rehberi hakkında detaylı rehber ve uzman önerileri."
+tags: ["health", "rehber", "uzman-tavsiyeleri"]
 ---
 
 ## Yaşlanma Karşıtı Stratejiler

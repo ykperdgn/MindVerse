@@ -1,8 +1,8 @@
 ---
-title: 'Beslenme Önerileri'
+title: "Beslenme Önerileri"
 date: 2025-06-19
-summary: 'Beslenme Önerileri hakkında detaylı rehber ve uzman önerileri.'
-tags: ['health', 'rehber', 'uzman-tavsiyeleri']
+summary: "Beslenme Önerileri hakkında detaylı rehber ve uzman önerileri."
+tags: ["health", "rehber", "uzman-tavsiyeleri"]
 ---
 
 ## Mental Sağlık ve Fiziksel Aktivite

@@ -1,8 +1,8 @@
 ---
-title: 'Mars Misyonları'
+title: "Mars Misyonları"
 date: 2025-06-19
-summary: 'Mars Misyonları hakkında detaylı rehber ve uzman önerileri.'
-tags: ['space', 'rehber', 'uzman-tavsiyeleri']
+summary: "Mars Misyonları hakkında detaylı rehber ve uzman önerileri."
+tags: ["space", "rehber", "uzman-tavsiyeleri"]
 ---
 
 ## Mars Misyonları

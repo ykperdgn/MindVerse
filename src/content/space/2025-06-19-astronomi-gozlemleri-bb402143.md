@@ -1,8 +1,8 @@
 ---
-title: 'Astronomi Gözlemleri'
+title: "Astronomi Gözlemleri"
 date: 2025-06-19
-summary: 'Astronomi Gözlemleri hakkında detaylı rehber ve uzman önerileri.'
-tags: ['space', 'rehber', 'uzman-tavsiyeleri']
+summary: "Astronomi Gözlemleri hakkında detaylı rehber ve uzman önerileri."
+tags: ["space", "rehber", "uzman-tavsiyeleri"]
 ---
 
 ## Astronomi Gözlemleri

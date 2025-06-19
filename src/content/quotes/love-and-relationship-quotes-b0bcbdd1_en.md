@@ -1,11 +1,11 @@
 ---
-title: 'Love and Relationship Quotes'
+title: "Love and Relationship Quotes"
 date: 2025-06-20
-summary: 'Comprehensive guide about love and relationship quotes with expert insights and practical advice.'
-tags: ['inspiration', 'quotes', 'success', 'english']
+summary: "Comprehensive guide about love and relationship quotes with expert insights and practical advice."
+tags: ["inspiration", "quotes", "success", "english"]
 views: 235
-author: 'MindVerse Team'
-keywords: 'inspiration, quotes, success, english, guide, tips, advice'
+author: "MindVerse Team"
+keywords: "inspiration, quotes, success, english, guide, tips, advice"
 ---
 ## The Power of Love and Relationship Quotes
 

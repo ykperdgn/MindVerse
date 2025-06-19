@@ -1,11 +1,14 @@
 ---
-title: 'Balık Günlük Yorumu - 20 June 2025'
+title: "Balık Günlük Yorumu - 20 June 2025"
+description: "Balık Günlük Yorumu - 20 June 2025"
+pubDate: 2025-06-20
+category: "daily-horoscope"
 date: 2025-06-20
-summary: 'Balık burcu için 20 June 2025 günlük astroloji yorumu ve önerileri.'
-tags: ['astroloji', 'günlük-yorum', 'balık', 'burç', 'yıldız']
+summary: "Balık burcu için 20 June 2025 günlük astroloji yorumu ve önerileri."
+tags: ["astroloji", "günlük-yorum", "balık", "burç", "yıldız"]
 views: 562
-author: 'MindVerse Astroloji Uzmanı'
-keywords: 'Balık, günlük yorum, astroloji, burç yorumu, 20 June 2025'
+author: "MindVerse Astroloji Uzmanı"
+keywords: "Balık, günlük yorum, astroloji, burç yorumu, 20 June 2025"
 ---
 
 ## ♓ Balık Günlük Astroloji Yorumu

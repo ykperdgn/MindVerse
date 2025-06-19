@@ -1,11 +1,14 @@
 ---
-title: 'Oğlak Günlük Yorumu - 20 June 2025'
+title: "Oğlak Günlük Yorumu - 20 June 2025"
+description: "Oğlak Günlük Yorumu - 20 June 2025"
+pubDate: 2025-06-20
+category: "daily-horoscope"
 date: 2025-06-20
-summary: 'Oğlak burcu için 20 June 2025 günlük astroloji yorumu ve önerileri.'
-tags: ['astroloji', 'günlük-yorum', 'oğlak', 'burç', 'yıldız']
+summary: "Oğlak burcu için 20 June 2025 günlük astroloji yorumu ve önerileri."
+tags: ["astroloji", "günlük-yorum", "oğlak", "burç", "yıldız"]
 views: 691
-author: 'MindVerse Astroloji Uzmanı'
-keywords: 'Oğlak, günlük yorum, astroloji, burç yorumu, 20 June 2025'
+author: "MindVerse Astroloji Uzmanı"
+keywords: "Oğlak, günlük yorum, astroloji, burç yorumu, 20 June 2025"
 ---
 
 ## ♑ Oğlak Günlük Astroloji Yorumu

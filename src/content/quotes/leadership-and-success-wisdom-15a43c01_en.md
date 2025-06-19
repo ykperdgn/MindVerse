@@ -1,11 +1,11 @@
 ---
-title: 'Leadership and Success Wisdom'
+title: "Leadership and Success Wisdom"
 date: 2025-06-20
-summary: 'Comprehensive guide about leadership and success wisdom with expert insights and practical advice.'
-tags: ['quotes', 'motivation', 'wisdom', 'english']
+summary: "Comprehensive guide about leadership and success wisdom with expert insights and practical advice."
+tags: ["quotes", "motivation", "wisdom", "english"]
 views: 111
-author: 'MindVerse Team'
-keywords: 'quotes, motivation, wisdom, english, guide, tips, advice'
+author: "MindVerse Team"
+keywords: "quotes, motivation, wisdom, english, guide, tips, advice"
 ---
 ## The Power of Leadership and Success Wisdom
 

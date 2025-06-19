@@ -1,11 +1,14 @@
 ---
-title: 'Libra Daily Horoscope - June 20, 2025'
+title: "Libra Daily Horoscope - June 20, 2025"
+description: "Libra Daily Horoscope - June 20, 2025"
+pubDate: 2025-06-20
+category: "daily-horoscope"
 date: 2025-06-20
-summary: 'Daily astrology reading and recommendations for Libra on June 20, 2025.'
-tags: ['astrology', 'daily-horoscope', 'libra', 'zodiac', 'stars']
+summary: "Daily astrology reading and recommendations for Libra on June 20, 2025."
+tags: ["astrology", "daily-horoscope", "libra", "zodiac", "stars"]
 views: 139
-author: 'MindVerse Astrology Expert'
-keywords: 'Libra, daily horoscope, astrology, zodiac reading, June 20, 2025'
+author: "MindVerse Astrology Expert"
+keywords: "Libra, daily horoscope, astrology, zodiac reading, June 20, 2025"
 ---
 
 ## ♎ Libra Daily Astrology Reading

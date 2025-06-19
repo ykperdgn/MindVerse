@@ -1,11 +1,14 @@
 ---
-title: 'Koç Günlük Yorumu - 20 June 2025'
+title: "Koç Günlük Yorumu - 20 June 2025"
+description: "Koç Günlük Yorumu - 20 June 2025"
+pubDate: 2025-06-20
+category: "daily-horoscope"
 date: 2025-06-20
-summary: 'Koç burcu için 20 June 2025 günlük astroloji yorumu ve önerileri.'
-tags: ['astroloji', 'günlük-yorum', 'koç', 'burç', 'yıldız']
+summary: "Koç burcu için 20 June 2025 günlük astroloji yorumu ve önerileri."
+tags: ["astroloji", "günlük-yorum", "koç", "burç", "yıldız"]
 views: 295
-author: 'MindVerse Astroloji Uzmanı'
-keywords: 'Koç, günlük yorum, astroloji, burç yorumu, 20 June 2025'
+author: "MindVerse Astroloji Uzmanı"
+keywords: "Koç, günlük yorum, astroloji, burç yorumu, 20 June 2025"
 ---
 
 ## ♈ Koç Günlük Astroloji Yorumu

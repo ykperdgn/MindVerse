@@ -1,11 +1,14 @@
 ---
-title: 'Aquarius Daily Horoscope - June 20, 2025'
+title: "Aquarius Daily Horoscope - June 20, 2025"
+description: "Aquarius Daily Horoscope - June 20, 2025"
+pubDate: 2025-06-20
+category: "daily-horoscope"
 date: 2025-06-20
-summary: 'Daily astrology reading and recommendations for Aquarius on June 20, 2025.'
-tags: ['astrology', 'daily-horoscope', 'aquarius', 'zodiac', 'stars']
+summary: "Daily astrology reading and recommendations for Aquarius on June 20, 2025."
+tags: ["astrology", "daily-horoscope", "aquarius", "zodiac", "stars"]
 views: 332
-author: 'MindVerse Astrology Expert'
-keywords: 'Aquarius, daily horoscope, astrology, zodiac reading, June 20, 2025'
+author: "MindVerse Astrology Expert"
+keywords: "Aquarius, daily horoscope, astrology, zodiac reading, June 20, 2025"
 ---
 
 ## ♒ Aquarius Daily Astrology Reading

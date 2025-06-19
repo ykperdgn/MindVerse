@@ -1,8 +1,8 @@
 ---
-title: 'Stres Yönetimi Teknikleri'
+title: "Stres Yönetimi Teknikleri"
 date: 2025-06-19
-summary: 'Stres Yönetimi Teknikleri hakkında detaylı rehber ve uzman önerileri.'
-tags: ['health', 'rehber', 'uzman-tavsiyeleri']
+summary: "Stres Yönetimi Teknikleri hakkında detaylı rehber ve uzman önerileri."
+tags: ["health", "rehber", "uzman-tavsiyeleri"]
 ---
 
 ## Stres Yönetimi Teknikleri

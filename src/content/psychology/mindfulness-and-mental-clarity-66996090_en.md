@@ -1,11 +1,11 @@
 ---
-title: 'Mindfulness and Mental Clarity'
+title: "Mindfulness and Mental Clarity"
 date: 2025-06-20
-summary: 'Comprehensive guide about mindfulness and mental clarity with expert insights and practical advice.'
-tags: ['emotion', 'behavior', 'cognition', 'english']
+summary: "Comprehensive guide about mindfulness and mental clarity with expert insights and practical advice."
+tags: ["emotion", "behavior", "cognition", "english"]
 views: 1434
-author: 'MindVerse Team'
-keywords: 'emotion, behavior, cognition, english, guide, tips, advice'
+author: "MindVerse Team"
+keywords: "emotion, behavior, cognition, english, guide, tips, advice"
 ---
 ## Understanding Mindfulness and Mental Clarity
 

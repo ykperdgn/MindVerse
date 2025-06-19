@@ -1,11 +1,14 @@
 ---
-title: 'Virgo Daily Horoscope - June 20, 2025'
+title: "Virgo Daily Horoscope - June 20, 2025"
+description: "Virgo Daily Horoscope - June 20, 2025"
+pubDate: 2025-06-20
+category: "daily-horoscope"
 date: 2025-06-20
-summary: 'Daily astrology reading and recommendations for Virgo on June 20, 2025.'
-tags: ['astrology', 'daily-horoscope', 'virgo', 'zodiac', 'stars']
+summary: "Daily astrology reading and recommendations for Virgo on June 20, 2025."
+tags: ["astrology", "daily-horoscope", "virgo", "zodiac", "stars"]
 views: 180
-author: 'MindVerse Astrology Expert'
-keywords: 'Virgo, daily horoscope, astrology, zodiac reading, June 20, 2025'
+author: "MindVerse Astrology Expert"
+keywords: "Virgo, daily horoscope, astrology, zodiac reading, June 20, 2025"
 ---
 
 ## ♍ Virgo Daily Astrology Reading

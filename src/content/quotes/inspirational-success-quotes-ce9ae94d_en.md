@@ -1,11 +1,11 @@
 ---
-title: 'Inspirational Success Quotes'
+title: "Inspirational Success Quotes"
 date: 2025-06-20
-summary: 'Comprehensive guide about inspirational success quotes with expert insights and practical advice.'
-tags: ['inspiration', 'quotes', 'success', 'english']
+summary: "Comprehensive guide about inspirational success quotes with expert insights and practical advice."
+tags: ["inspiration", "quotes", "success", "english"]
 views: 951
-author: 'MindVerse Team'
-keywords: 'inspiration, quotes, success, english, guide, tips, advice'
+author: "MindVerse Team"
+keywords: "inspiration, quotes, success, english, guide, tips, advice"
 ---
 ## The Power of Inspirational Success Quotes
 

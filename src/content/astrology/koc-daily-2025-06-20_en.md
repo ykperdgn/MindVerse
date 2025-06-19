@@ -1,11 +1,14 @@
 ---
-title: 'Aries Daily Horoscope - June 20, 2025'
+title: "Aries Daily Horoscope - June 20, 2025"
+description: "Aries Daily Horoscope - June 20, 2025"
+pubDate: 2025-06-20
+category: "daily-horoscope"
 date: 2025-06-20
-summary: 'Daily astrology reading and recommendations for Aries on June 20, 2025.'
-tags: ['astrology', 'daily-horoscope', 'aries', 'zodiac', 'stars']
+summary: "Daily astrology reading and recommendations for Aries on June 20, 2025."
+tags: ["astrology", "daily-horoscope", "aries", "zodiac", "stars"]
 views: 157
-author: 'MindVerse Astrology Expert'
-keywords: 'Aries, daily horoscope, astrology, zodiac reading, June 20, 2025'
+author: "MindVerse Astrology Expert"
+keywords: "Aries, daily horoscope, astrology, zodiac reading, June 20, 2025"
 ---
 
 ## ♈ Aries Daily Astrology Reading

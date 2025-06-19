@@ -1,11 +1,11 @@
 ---
-title: 'Solar System Exploration'
+title: "Solar System Exploration"
 date: 2025-06-20
-summary: 'Comprehensive guide about solar system exploration with expert insights and practical advice.'
-tags: ['space', 'exploration', 'NASA', 'english']
+summary: "Comprehensive guide about solar system exploration with expert insights and practical advice."
+tags: ["space", "exploration", "NASA", "english"]
 views: 1095
-author: 'MindVerse Team'
-keywords: 'space, exploration, NASA, english, guide, tips, advice'
+author: "MindVerse Team"
+keywords: "space, exploration, NASA, english, guide, tips, advice"
 ---
 ## Exploring Solar System Exploration
 

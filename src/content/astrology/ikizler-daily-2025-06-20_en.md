@@ -1,11 +1,14 @@
 ---
-title: 'Gemini Daily Horoscope - June 20, 2025'
+title: "Gemini Daily Horoscope - June 20, 2025"
+description: "Gemini Daily Horoscope - June 20, 2025"
+pubDate: 2025-06-20
+category: "daily-horoscope"
 date: 2025-06-20
-summary: 'Daily astrology reading and recommendations for Gemini on June 20, 2025.'
-tags: ['astrology', 'daily-horoscope', 'gemini', 'zodiac', 'stars']
+summary: "Daily astrology reading and recommendations for Gemini on June 20, 2025."
+tags: ["astrology", "daily-horoscope", "gemini", "zodiac", "stars"]
 views: 332
-author: 'MindVerse Astrology Expert'
-keywords: 'Gemini, daily horoscope, astrology, zodiac reading, June 20, 2025'
+author: "MindVerse Astrology Expert"
+keywords: "Gemini, daily horoscope, astrology, zodiac reading, June 20, 2025"
 ---
 
 ## ♊ Gemini Daily Astrology Reading

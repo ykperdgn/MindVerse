@@ -1,11 +1,11 @@
 ---
-title: 'Emotional Intelligence Development'
+title: "Emotional Intelligence Development"
 date: 2025-06-20
-summary: 'Comprehensive guide about emotional intelligence development with expert insights and practical advice.'
-tags: ['behavior', 'psychology', 'cognition', 'english']
+summary: "Comprehensive guide about emotional intelligence development with expert insights and practical advice."
+tags: ["behavior", "psychology", "cognition", "english"]
 views: 608
-author: 'MindVerse Team'
-keywords: 'behavior, psychology, cognition, english, guide, tips, advice'
+author: "MindVerse Team"
+keywords: "behavior, psychology, cognition, english, guide, tips, advice"
 ---
 ## Understanding Emotional Intelligence Development
 

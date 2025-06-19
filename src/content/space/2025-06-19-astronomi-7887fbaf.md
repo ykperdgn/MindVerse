@@ -1,8 +1,8 @@
 ---
-title: 'Astronomi'
+title: "Astronomi"
 date: 2025-06-19
-summary: 'Astronomi hakkında detaylı rehber ve uzman önerileri.'
-tags: ['space', 'rehber', 'uzman-tavsiyeleri']
+summary: "Astronomi hakkında detaylı rehber ve uzman önerileri."
+tags: ["space", "rehber", "uzman-tavsiyeleri"]
 ---
 
 ## Gezegen Keşifleri

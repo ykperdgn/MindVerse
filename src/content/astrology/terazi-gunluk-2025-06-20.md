@@ -1,11 +1,14 @@
 ---
-title: 'Terazi Günlük Yorumu - 20 June 2025'
+title: "Terazi Günlük Yorumu - 20 June 2025"
+description: "Terazi Günlük Yorumu - 20 June 2025"
+pubDate: 2025-06-20
+category: "daily-horoscope"
 date: 2025-06-20
-summary: 'Terazi burcu için 20 June 2025 günlük astroloji yorumu ve önerileri.'
-tags: ['astroloji', 'günlük-yorum', 'terazi', 'burç', 'yıldız']
+summary: "Terazi burcu için 20 June 2025 günlük astroloji yorumu ve önerileri."
+tags: ["astroloji", "günlük-yorum", "terazi", "burç", "yıldız"]
 views: 776
-author: 'MindVerse Astroloji Uzmanı'
-keywords: 'Terazi, günlük yorum, astroloji, burç yorumu, 20 June 2025'
+author: "MindVerse Astroloji Uzmanı"
+keywords: "Terazi, günlük yorum, astroloji, burç yorumu, 20 June 2025"
 ---
 
 ## ♎ Terazi Günlük Astroloji Yorumu

@@ -1,11 +1,14 @@
 ---
-title: 'Cancer Daily Horoscope - June 20, 2025'
+title: "Cancer Daily Horoscope - June 20, 2025"
+description: "Cancer Daily Horoscope - June 20, 2025"
+pubDate: 2025-06-20
+category: "daily-horoscope"
 date: 2025-06-20
-summary: 'Daily astrology reading and recommendations for Cancer on June 20, 2025.'
-tags: ['astrology', 'daily-horoscope', 'cancer', 'zodiac', 'stars']
+summary: "Daily astrology reading and recommendations for Cancer on June 20, 2025."
+tags: ["astrology", "daily-horoscope", "cancer", "zodiac", "stars"]
 views: 92
-author: 'MindVerse Astrology Expert'
-keywords: 'Cancer, daily horoscope, astrology, zodiac reading, June 20, 2025'
+author: "MindVerse Astrology Expert"
+keywords: "Cancer, daily horoscope, astrology, zodiac reading, June 20, 2025"
 ---
 
 ## ♋ Cancer Daily Astrology Reading

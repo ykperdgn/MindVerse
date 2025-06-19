@@ -1,11 +1,11 @@
 ---
-title: 'Mars Mission Updates'
+title: "Mars Mission Updates"
 date: 2025-06-20
-summary: 'Comprehensive guide about mars mission updates with expert insights and practical advice.'
-tags: ['astronomy', 'planets', 'exploration', 'english']
+summary: "Comprehensive guide about mars mission updates with expert insights and practical advice."
+tags: ["astronomy", "planets", "exploration", "english"]
 views: 1146
-author: 'MindVerse Team'
-keywords: 'astronomy, planets, exploration, english, guide, tips, advice'
+author: "MindVerse Team"
+keywords: "astronomy, planets, exploration, english, guide, tips, advice"
 ---
 ## Exploring Mars Mission Updates
 

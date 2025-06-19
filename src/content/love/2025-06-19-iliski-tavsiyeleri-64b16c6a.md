@@ -1,8 +1,8 @@
 ---
-title: 'İlişki Tavsiyeleri'
+title: "İlişki Tavsiyeleri"
 date: 2025-06-19
-summary: 'İlişki Tavsiyeleri hakkında detaylı rehber ve uzman önerileri.'
-tags: ['love', 'rehber', 'uzman-tavsiyeleri']
+summary: "İlişki Tavsiyeleri hakkında detaylı rehber ve uzman önerileri."
+tags: ["love", "rehber", "uzman-tavsiyeleri"]
 ---
 
 ## Güven İnşa Etme Yolları

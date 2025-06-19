@@ -1,11 +1,11 @@
 ---
-title: 'Cognitive Psychology Insights'
+title: "Cognitive Psychology Insights"
 date: 2025-06-20
-summary: 'Comprehensive guide about cognitive psychology insights with expert insights and practical advice.'
-tags: ['emotion', 'behavior', 'cognition', 'english']
+summary: "Comprehensive guide about cognitive psychology insights with expert insights and practical advice."
+tags: ["emotion", "behavior", "cognition", "english"]
 views: 393
-author: 'MindVerse Team'
-keywords: 'emotion, behavior, cognition, english, guide, tips, advice'
+author: "MindVerse Team"
+keywords: "emotion, behavior, cognition, english, guide, tips, advice"
 ---
 ## Understanding Cognitive Psychology Insights
 

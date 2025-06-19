@@ -1,11 +1,14 @@
 ---
-title: 'Sagittarius Daily Horoscope - June 20, 2025'
+title: "Sagittarius Daily Horoscope - June 20, 2025"
+description: "Sagittarius Daily Horoscope - June 20, 2025"
+pubDate: 2025-06-20
+category: "daily-horoscope"
 date: 2025-06-20
-summary: 'Daily astrology reading and recommendations for Sagittarius on June 20, 2025.'
-tags: ['astrology', 'daily-horoscope', 'sagittarius', 'zodiac', 'stars']
+summary: "Daily astrology reading and recommendations for Sagittarius on June 20, 2025."
+tags: ["astrology", "daily-horoscope", "sagittarius", "zodiac", "stars"]
 views: 162
-author: 'MindVerse Astrology Expert'
-keywords: 'Sagittarius, daily horoscope, astrology, zodiac reading, June 20, 2025'
+author: "MindVerse Astrology Expert"
+keywords: "Sagittarius, daily horoscope, astrology, zodiac reading, June 20, 2025"
 ---
 
 ## ♐ Sagittarius Daily Astrology Reading
