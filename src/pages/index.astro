@@ -31,14 +31,16 @@ const categories = [
     <div class="text-center mb-8">
       <a
         href="/popular"
-        class="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all transform hover:scale-105 shadow-lg"
+        class="inline-flex items-center animate-gradient-move bg-gradient-to-r from-orange-400 via-pink-400 to-purple-400 text-white px-8 py-4 rounded-lg font-semibold shadow-lg transition-all transform hover:scale-105 border-0"
+        style="background-size:200% 200%;"
       >
         🔥 Popüler İçerikler
         <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
         </svg>
       </a>
-    </div>    <!-- AdSense ana sayfa reklam alanı -->
+    </div>
+    <!-- AdSense ana sayfa reklam alanı -->
     <div class="flex justify-center mb-8">
       <div class="w-full max-w-lg">
         <ins class="adsbygoogle"
@@ -54,11 +56,12 @@ const categories = [
       {categories.map(category => (
         <a
           href={category.url}
-          class="block bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all transform hover:scale-105 border-l-4 border-blue-500"
+          class={`block rounded-xl shadow-lg p-6 hover:shadow-xl transition-all transform hover:scale-105 border-l-4 font-medium category-card-${category.name.toLowerCase()}`}
         >
           <div class="text-center">
             <div class="text-4xl mb-4">{category.icon}</div>
-            <h2 class="text-xl font-bold mb-2 text-gray-800">{category.title}</h2>            <p class="text-gray-600 text-sm">
+            <h2 class="text-xl font-bold mb-2 text-gray-800">{category.title}</h2>
+            <p class="text-gray-600 text-sm">
               {category.name === 'Health' && 'Sağlıklı yaşam ipuçları ve medikal bilgiler'}
               {category.name === 'Love' && 'İlişkiler, aşk ve duygusal bağlar hakkında'}
               {category.name === 'History' && 'Tarihi olaylar ve kişiler'}
@@ -73,7 +76,8 @@ const categories = [
           </div>
         </a>
       ))}
-    </div>    <!-- Alt reklam alanı -->
+    </div>
+    <!-- Alt reklam alanı -->
     <div class="flex justify-center mt-12">
       <div class="w-full max-w-lg">
         <ins class="adsbygoogle"
@@ -100,6 +104,34 @@ const categories = [
     .animate-gradient-move {
       background-size: 200% 200%;
       animation: gradient-move 5s ease-in-out infinite;
+    }
+    .category-card-health {
+      background: linear-gradient(135deg, #f7ffe0 0%, #e0ffe7 100%);
+      border-left-color: #34d399;
+    }
+    .category-card-love {
+      background: linear-gradient(135deg, #fff0f6 0%, #ffe0e7 100%);
+      border-left-color: #fb7185;
+    }
+    .category-card-history {
+      background: linear-gradient(135deg, #fdf6e3 0%, #f5e9da 100%);
+      border-left-color: #fbbf24;
+    }
+    .category-card-psychology {
+      background: linear-gradient(135deg, #e0e7ff 0%, #ede9fe 100%);
+      border-left-color: #818cf8;
+    }
+    .category-card-space {
+      background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+      border-left-color: #38bdf8;
+    }
+    .category-card-quotes {
+      background: linear-gradient(135deg, #f3e8ff 0%, #fdf2ff 100%);
+      border-left-color: #a78bfa;
+    }
+    .category-card-astrology {
+      background: linear-gradient(135deg, #fef9c3 0%, #fce7f3 100%);
+      border-left-color: #f472b6;
     }
   </style>
 </Layout>
