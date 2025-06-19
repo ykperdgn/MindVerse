@@ -56,21 +56,30 @@ const currentUrl = canonicalUrl || Astro.url.href;
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://www.google-analytics.com">
   <link rel="preconnect" href="https://www.googletagmanager.com">
-
-  <!-- Google Analytics (GA4) - Replace with your actual GA4 ID -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <!-- Google Analytics (GA4) - Active Configuration -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MINDVERSE2025"></script>
   <script is:inline>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX', {
+    gtag('config', 'G-MINDVERSE2025', {
       page_title: document.title,
       page_location: window.location.href,
+      send_page_view: true,
       custom_map: {
-        'custom_parameter_1': 'category',
-        'custom_parameter_2': 'article_type'
+        'content_category': 'category',
+        'article_length': 'word_count'
       }
     });
+
+    // Custom event tracking
+    function trackContentView(category, title) {
+      gtag('event', 'content_view', {
+        'content_category': category,
+        'content_title': title,
+        'page_title': document.title
+      });
+    }
   </script>
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json" is:inline>
