@@ -22,6 +22,10 @@ const currentUrl = canonicalUrl || Astro.url.href;
   <meta name="robots" content="index, follow">
   <link rel="canonical" href={currentUrl}>
 
+  <!-- Google AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-3096725438789562">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3096725438789562" crossorigin="anonymous"></script>
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content={currentUrl}>
@@ -42,15 +46,11 @@ const currentUrl = canonicalUrl || Astro.url.href;
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <!-- Google Search Console (Doğrulama kodunu buraya ekleyin) -->
   <meta name="google-site-verification" content="google88e7e5bbe464e115.html" />
-  <meta name="google-adsense-account" content="ca-pub-3096725438789562">
 
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://www.google-analytics.com">
   <link rel="preconnect" href="https://www.googletagmanager.com">
-
-  <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3096725438789562" crossorigin="anonymous"></script>
 
   <!-- Google Analytics (GA4) - Replace with your actual GA4 ID -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>

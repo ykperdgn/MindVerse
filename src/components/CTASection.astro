@@ -47,43 +47,9 @@
       >
         📧 Bültene Katıl
       </button>
-    </form>
-
-    <p class="text-xs text-purple-600 mt-2">
+    </form>    <p class="text-xs text-purple-600 mt-2">
       * İstediğiniz zaman abonelikten çıkabilirsiniz. Spam yapmıyoruz!
     </p>
-  </div>
-
-  <!-- Link Paylaşım Alanı -->
-  <div class="bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-xl p-4 sm:p-6">
-    <div class="flex items-center mb-4">
-      <span class="text-2xl sm:text-3xl mr-3">📤</span>
-      <h3 class="text-lg sm:text-xl font-bold text-green-800">Bu İçeriği Paylaşın</h3>
-    </div>
-    <p class="text-green-700 mb-4 text-sm sm:text-base">
-      Bu makale size faydalı olduysa, link kopyalayarak arkadaşlarınızla paylaşabilirsiniz!
-    </p>
-
-    <!-- Link Kopyalama Butonu -->
-    <div class="flex justify-center">
-      <button
-        onclick="copyToClipboard()"
-        class="flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg"
-        title="Makale linkini kopyala"
-      >
-        <span class="mr-2">🔗</span>
-        <span class="font-medium">Makale Linkini Kopyala</span>
-      </button>
-    </div>
-
-    <!-- Paylaşım Teşviki -->
-    <div class="mt-4 p-3 bg-indigo-100 rounded-lg border border-indigo-200">
-      <div class="text-center">
-        <span class="text-indigo-800 text-sm">
-          💡 Bu linki WhatsApp, e-posta veya herhangi bir platformda paylaşabilirsiniz!
-        </span>
-      </div>
-    </div>
   </div>
 
   <!-- İstatistik ve Motivasyon -->
@@ -120,50 +86,7 @@
       event.target.reset();
     } else {
       showMessage('ℹ️ Bu e-posta adresi zaten kayıtlı.', 'info');
-    }
-  }
-
-  // Link kopyalama fonksiyonu
-  function copyToClipboard() {
-    const url = window.location.href;
-    const title = document.title.replace(' | MindVerse', '').replace(' | MindVerse Daily', '');
-    const shareText = `📖 ${title}\n\n${url}\n\nMindVerse Daily'den paylaşıldı`;
-
-    // Modern tarayıcılar için Clipboard API
-    if (navigator.clipboard && window.isSecureContext) {
-      navigator.clipboard.writeText(shareText).then(() => {
-        showMessage('🔗 Link ve başlık başarıyla kopyalandı!', 'success');
-      }).catch(() => {
-        fallbackCopyToClipboard(shareText);
-      });
-    } else {
-      fallbackCopyToClipboard(shareText);
-    }
-  }
-
-  function fallbackCopyToClipboard(text) {
-    const textArea = document.createElement('textarea');
-    textArea.value = text;
-    textArea.style.position = 'fixed';
-    textArea.style.left = '-999999px';
-    textArea.style.top = '-999999px';
-    document.body.appendChild(textArea);
-    textArea.focus();
-    textArea.select();
-
-    try {
-      const successful = document.execCommand('copy');
-      if (successful) {
-        showMessage('🔗 Link ve başlık başarıyla kopyalandı!', 'success');
-      } else {
-        showMessage('❌ Kopyalama başarısız. Manuel olarak kopyalayın.', 'error');
-      }
-    } catch (err) {
-      showMessage('❌ Kopyalama hatası. Manuel olarak kopyalayın.', 'error');
-    }
-
-    document.body.removeChild(textArea);
-  }
+    }  }
 
   // Mesaj gösterme fonksiyonu
   function showMessage(message, type) {
