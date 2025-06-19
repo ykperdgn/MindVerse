@@ -11,7 +11,7 @@ heroImage: "/social-media/og-image.jpg"
 
 🦀 **Yengeç Burcu** (**21 Haziran - 22 Temmuz**)
 
-Bugün Yengeç burcu için **Mars** gezegeninin etkisiyle duygusal denge yaşayacağınız bir gün olacak.
+Bugün Yengeç burcu için **Satürn** gezegeninin etkisiyle duygusal denge yaşayacağınız bir gün olacak.
 
 ## 🌟 Burç Özellikleri
 
@@ -23,27 +23,27 @@ Bugün Yengeç burcu için **Mars** gezegeninin etkisiyle duygusal denge yaşaya
 
 ## 💫 Günlük Genel Durum
 
-**Mars** gezegeninin etkisiyle bu günlük döneminde Yengeç burcu için **tutku** enerjisi ön plana çıkacak.
+**Satürn** gezegeninin etkisiyle bu günlük döneminde Yengeç burcu için **sorumluluk** enerjisi ön plana çıkacak.
 
-Artan Ay'ın gücü ile hedeflerinizi büyütebilirsiniz.
+Yeni Ay'ın etkisi ile yeni başlangıçlar yapma zamanı.
 
-Yengeç burcu olarak doğal **duygusal** özelliğiniz bu dönemde avantajınız olacak.
+**Su** elementi size günlük boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
 
 ## 💕 Aşk ve İlişkiler
 
 💖 **Bekar Yengeçlar:** İş yerinde ilginizi çekecek kişilerle tanışabilirsiniz.
 
-💑 **İlişkisi Olanlar:** Partnerinizle güzel sürprizler yaşayabilirsiniz.
+💑 **İlişkisi Olanlar:** Partnerinizle özel aktiviteler yaşayabilirsiniz.
 
 🌹 **Gümüş** rengi bu günlük aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** **Koruyuculuk** özelliğiniz sayesinde günlük boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** **Sezgi** özelliğiniz sayesinde günlük boyunca dikkat çekeceksiniz.
 
-💰 **Mali Durum:** **Hemşirelik** alanında fırsatlar değerlendirilebilir.
+💰 **Mali Durum:** **Emlak** alanında fırsatlar değerlendirilebilir.
 
-📈 Bu günlük terfi fırsatları için uygun zaman.
+📈 Bu günlük ek gelir için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
@@ -53,10 +53,10 @@ Yengeç burcu olarak doğal **duygusal** özelliğiniz bu dönemde avantajınız
 
 ## 🎯 Günlük Tavsiyeleri
 
-1. **Sadakat** özelliğinizi bu günlük daha aktif kullanın
-2. **Değişken ruh hali** konusunda dikkatli olun ve kendinizi geliştirin
+1. **Empati** özelliğinizi bu günlük daha aktif kullanın
+2. **Aşırı duyarlılık** konusunda dikkatli olun ve kendinizi geliştirin
 3. **Gümüş** rengi bu günlük şansınızı artıracak
-4. **Başak** burcu ile işbirliği yapın
+4. **Akrep** burcu ile işbirliği yapın
 5. **Emlak** alanında fırsatları değerlendirin
 
 ## 🔮 Şanslı Elementler
@@ -71,7 +71,7 @@ Yengeç burcu olarak doğal **duygusal** özelliğiniz bu dönemde avantajınız
 
 ## 💫 Sonuç
 
-Bu günlük **Yengeç** burcu için duygusal denge yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.
+**Yengeç** burcu olarak doğal yeteneklerinizi kullanarak bu günlük büyük adımlar atabilirsiniz.
 
 ---
 

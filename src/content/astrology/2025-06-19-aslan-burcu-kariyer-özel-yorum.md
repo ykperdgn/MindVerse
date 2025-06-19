@@ -11,7 +11,7 @@ heroImage: "/social-media/og-image.jpg"
 
 🦁 **Aslan Burcu** (**23 Temmuz - 22 Ağustos**)
 
-Bu hafta Aslan burcu için **Merkür** etkisiyle ruhsal yolculuk dönemine giriyorsunuz.
+Bu hafta Aslan burcu için **Mars** etkisiyle ruhsal yolculuk dönemine giriyorsunuz.
 
 ## 🌟 Burç Özellikleri
 
@@ -23,9 +23,9 @@ Bu hafta Aslan burcu için **Merkür** etkisiyle ruhsal yolculuk dönemine giriy
 
 ## 💫 Haftalık Genel Durum
 
-**Merkür** gezegeninin etkisiyle bu haftalık döneminde Aslan burcu için **iletişim** enerjisi ön plana çıkacak.
+**Mars** gezegeninin etkisiyle bu haftalık döneminde Aslan burcu için **rekabet** enerjisi ön plana çıkacak.
 
-Dolunay'ın etkisi ile duygularınız yoğunlaşacak.
+Azalan Ay'ın etkisi ile bırakma ve temizlenme zamanı.
 
 Bu haftalık **Güneş** gezegenizin etkisiyle **karizmatik** yanınız öne çıkacak.
 
@@ -33,7 +33,7 @@ Bu haftalık **Güneş** gezegenizin etkisiyle **karizmatik** yanınız öne ç�
 
 💖 **Bekar Aslanlar:** Sosyal ortamlarda ilginizi çekecek kişilerle tanışabilirsiniz.
 
-💑 **İlişkisi Olanlar:** Partnerinizle romantik anlar yaşayabilirsiniz.
+💑 **İlişkisi Olanlar:** Partnerinizle güzel sürprizler yaşayabilirsiniz.
 
 🌹 **Altın** rengi bu haftalık aşk hayatınızda şans getirebilir.
 
@@ -41,7 +41,7 @@ Bu haftalık **Güneş** gezegenizin etkisiyle **karizmatik** yanınız öne ç�
 
 🚀 **İş Hayatı:** **Yaratıcılık** özelliğiniz sayesinde haftalık boyunca dikkat çekeceksiniz.
 
-💰 **Mali Durum:** **Tasarım** alanında fırsatlar değerlendirilebilir.
+💰 **Mali Durum:** **Sanat** alanında fırsatlar değerlendirilebilir.
 
 📈 Bu haftalık ek gelir için uygun zaman.
 
@@ -53,7 +53,7 @@ Bu haftalık **Güneş** gezegenizin etkisiyle **karizmatik** yanınız öne ç�
 
 ## 🎯 Haftalık Tavsiyeleri
 
-1. **Optimizm** özelliğinizi bu haftalık daha aktif kullanın
+1. **Karizma** özelliğinizi bu haftalık daha aktif kullanın
 2. **Dikkat arayışı** konusunda dikkatli olun ve kendinizi geliştirin
 3. **Altın** rengi bu haftalık şansınızı artıracak
 4. **Terazi** burcu ile işbirliği yapın

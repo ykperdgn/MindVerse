@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-MindVerse Daily - Gelişmiş Astroloji İçerik Üreticisi
+MindVerse Daily - Gelişmiş Astroloji İçerik Üreticisi v2.0
 Günlük, Haftalık, Aylık Burç Yorumları + Burç Özellikleri
 """
 
@@ -12,7 +12,7 @@ import hashlib
 from datetime import datetime, timedelta
 from typing import Dict, List, Tuple
 
-class AdvancedAstrologyGenerator:
+class EnhancedAstrologyGenerator:
     def __init__(self):
         self.base_path = "src/content/astrology"
 
@@ -222,7 +222,9 @@ class AdvancedAstrologyGenerator:
                 "compatible_signs": ["Yengeç", "Akrep", "Boğa", "Oğlak"],
                 "career_fields": ["Sanat", "Müzik", "Psikoloji", "Sağlık", "Spiritüel hizmetler"]
             }
-        }        # İçerik şablonları
+        }
+
+        # İçerik şablonları
         self.content_templates = {
             "daily": {
                 "title_formats": [
@@ -263,12 +265,7 @@ class AdvancedAstrologyGenerator:
             }
         }
 
-        # Türkçe dönem isimleri
-        self.period_names = {
-            "daily": "günlük",
-            "weekly": "haftalık",
-            "monthly": "aylık"
-        }        # Astrolojik konular ve öneriler
+        # Astrolojik konular ve öneriler
         self.astrological_aspects = {
             "planets": {
                 "Mars": ["enerji", "cesaret", "savaşçı ruh", "girişkenlik", "rekabet", "tutku"],
@@ -318,10 +315,9 @@ class AdvancedAstrologyGenerator:
             sign=sign_data["name"],
             theme=theme,
             date=datetime.now().strftime("%d %B")
-        )        # İçerik oluştur
-        content = self._generate_detailed_content(sign_data, "daily", theme)
+        )
 
-        # Slug oluştur
+        content = self._generate_detailed_content(sign_data, "günlük", theme)
         slug = f"{date_str}-{sign}-burcu-gunluk-yorum"
 
         return {
@@ -335,7 +331,9 @@ class AdvancedAstrologyGenerator:
     def generate_weekly_content(self, sign: str = None) -> Dict[str, str]:
         """Haftalık burç yorumu oluştur."""
         if not sign:
-            sign = self.get_random_sign()        sign_data = self.zodiac_signs[sign]
+            sign = self.get_random_sign()
+
+        sign_data = self.zodiac_signs[sign]
         theme = random.choice(self.content_templates["weekly"]["themes"])
         title_format = random.choice(self.content_templates["weekly"]["title_formats"])
 
@@ -345,7 +343,7 @@ class AdvancedAstrologyGenerator:
             theme=theme
         )
 
-        content = self._generate_detailed_content(sign_data, "weekly", theme)
+        content = self._generate_detailed_content(sign_data, "haftalık", theme)
         slug = f"{date_str}-{sign}-burcu-haftalik-yorum"
 
         return {
@@ -373,19 +371,20 @@ class AdvancedAstrologyGenerator:
             month=month_name
         )
 
-        content = self._generate_detailed_content(sign_data, "monthly", theme)
-        slug = f"{date_str}-{sign}-burcu-aylik-yorum"        return {
+        content = self._generate_detailed_content(sign_data, "aylık", theme)
+        slug = f"{date_str}-{sign}-burcu-aylik-yorum"
+
+        return {
             "title": title,
             "content": content,
             "slug": slug,
             "sign": sign,
             "period": "aylık"
-        }    def _generate_detailed_content(self, sign_data: Dict, period: str, theme: str) -> str:
+        }
+
+    def _generate_detailed_content(self, sign_data: Dict, period: str, theme: str) -> str:
         """Detaylı içerik oluştur."""
         sign_name = sign_data["name"]
-
-        # Türkçe dönem adı
-        period_turkish = self.period_names.get(period, period)
 
         # Gezegen etkisi seç
         planets = list(self.astrological_aspects["planets"].keys())
@@ -397,15 +396,15 @@ class AdvancedAstrologyGenerator:
 
         # İçerik başlangıcı
         content = f"""---
-title: "{theme} - {sign_name} Burcu {period_turkish.title()} Yorumu"
+title: "{theme} - {sign_name} Burcu {period.title()} Yorumu"
 description: "{sign_name} burcu için detaylı astroloji yorumu. {theme.lower()} konusunda rehberlik."
 pubDate: {datetime.now().strftime('%Y-%m-%d')}
 category: "astrology"
-tags: ["{sign_name.lower()} burcu", "{period_turkish} yorum", "astroloji", "burç yorumu"]
+tags: ["{sign_name.lower()} burcu", "{period} yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# {sign_name} Burcu {period_turkish.title()} Yorumu
+# {sign_name} Burcu {period.title()} Yorumu
 
 {sign_data['symbol']} **{sign_name} Burcu** (**{sign_data['dates']}**)
 
@@ -419,29 +418,29 @@ heroImage: "/social-media/og-image.jpg"
 
 **Dikkat Edilmesi Gerekenler:** {', '.join(sign_data['weaknesses'])}
 
-## 💫 {period_turkish.title()} Genel Durum
+## 💫 {period.title()} Genel Durum
 
-**{active_planet}** gezegeninin etkisiyle bu {period_turkish} döneminde {sign_name} burcu için **{random.choice(planet_effects)}** enerjisi ön plana çıkacak.
+**{active_planet}** gezegeninin etkisiyle bu {period} döneminde {sign_name} burcu için **{random.choice(planet_effects)}** enerjisi ön plana çıkacak.
 
 {moon_phase}.
 
-{self._generate_general_forecast(sign_data, period_turkish)}
+{self._generate_general_forecast(sign_data, period)}
 
 ## 💕 Aşk ve İlişkiler
 
-{self._generate_love_forecast(sign_data, period_turkish)}
+{self._generate_love_forecast(sign_data, period)}
 
 ## 💼 Kariyer ve Para
 
-{self._generate_career_forecast(sign_data, period_turkish)}
+{self._generate_career_forecast(sign_data, period)}
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
-{self._generate_health_forecast(sign_data, period_turkish)}
+{self._generate_health_forecast(sign_data, period)}
 
-## 🎯 {period_turkish.title()} Tavsiyeleri
+## 🎯 {period.title()} Tavsiyeleri
 
-{self._generate_advice(sign_data, period_turkish)}
+{self._generate_advice(sign_data, period)}
 
 ## 🔮 Şanslı Elementler
 
@@ -455,7 +454,7 @@ heroImage: "/social-media/og-image.jpg"
 
 ## 💫 Sonuç
 
-{self._generate_conclusion(sign_data, period_turkish, theme)}
+{self._generate_conclusion(sign_data, period, theme)}
 
 ---
 
@@ -466,12 +465,12 @@ heroImage: "/social-media/og-image.jpg"
 
     def _get_period_intro(self, period: str, sign_name: str, theme: str, planet: str) -> str:
         """Dönem bazlı giriş metni."""
-        if period == "daily":
-            return f"Bugün {sign_name} burcu için {planet} gezeninizin etkisiyle {theme.lower()} yaşayacağınız bir gün olacak."
-        elif period == "weekly":
-            return f"Bu hafta {sign_name} burcu için {planet} etkisiyle {theme.lower()} dönemine giriyorsunuz."
-        else:  # monthly
-            return f"Bu ay {sign_name} burcu için {planet} gezeninizin güçlü etkisiyle {theme.lower()} yaşayacağınız bereketli bir dönem başlıyor."
+        if period == "günlük":
+            return f"Bugün {sign_name} burcu için **{planet}** gezegeninin etkisiyle {theme.lower()} yaşayacağınız bir gün olacak."
+        elif period == "haftalık":
+            return f"Bu hafta {sign_name} burcu için **{planet}** etkisiyle {theme.lower()} dönemine giriyorsunuz."
+        else:  # aylık
+            return f"Bu ay {sign_name} burcu için **{planet}** gezegeninin güçlü etkisiyle {theme.lower()} yaşayacağınız bereketli bir dönem başlıyor."
 
     def _generate_general_forecast(self, sign_data: Dict, period: str) -> str:
         """Genel durum tahmini."""
@@ -479,9 +478,9 @@ heroImage: "/social-media/og-image.jpg"
         personality_traits = sign_data['keywords']
 
         forecasts = [
-            f"{sign_data['name']} burcu olarak doğal {personality_traits[0].lower()} özelliğiniz bu dönemde avantajınız olacak.",
-            f"{element} elementi size {period} boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.",
-            f"Bu {period} {sign_data['ruling_planet']} gezereninizin etkisiyle {personality_traits[1].lower()} yanınız öne çıkacak."
+            f"{sign_data['name']} burcu olarak doğal **{personality_traits[0].lower()}** özelliğiniz bu dönemde avantajınız olacak.",
+            f"**{element}** elementi size {period} boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.",
+            f"Bu {period} **{sign_data['ruling_planet']}** gezegenizin etkisiyle **{personality_traits[1].lower()}** yanınız öne çıkacak."
         ]
 
         return random.choice(forecasts)
@@ -491,7 +490,7 @@ heroImage: "/social-media/og-image.jpg"
         love_aspects = [
             f"💖 **Bekar {sign_data['name']}lar:** {random.choice(['Sosyal ortamlarda', 'İş yerinde', 'Hobilerle uğraşırken', 'Spor yaparken'])} ilginizi çekecek kişilerle tanışabilirsiniz.",
             f"💑 **İlişkisi Olanlar:** Partnerinizle {random.choice(['daha derin bağlar', 'romantik anlar', 'güzel sürprizler', 'özel aktiviteler'])} yaşayabilirsiniz.",
-            f"🌹 {sign_data['colors'][0]} rengi bu {period} aşk hayatınızda şans getirebilir."
+            f"🌹 **{sign_data['colors'][0]}** rengi bu {period} aşk hayatınızda şans getirebilir."
         ]
 
         return '\n\n'.join(love_aspects)
@@ -502,8 +501,8 @@ heroImage: "/social-media/og-image.jpg"
         strength = random.choice(sign_data['strengths'])
 
         career_aspects = [
-            f"🚀 **İş Hayatı:** {strength} özelliğiniz sayesinde {period} boyunca dikkat çekeceksiniz.",
-            f"💰 **Mali Durum:** {career_field} alanında fırsatlar değerlendirilebilir.",
+            f"🚀 **İş Hayatı:** **{strength}** özelliğiniz sayesinde {period} boyunca dikkat çekeceksiniz.",
+            f"💰 **Mali Durum:** **{career_field}** alanında fırsatlar değerlendirilebilir.",
             f"📈 Bu {period} {random.choice(['yeni projeler', 'iş birliği', 'terfi fırsatları', 'ek gelir'])} için uygun zaman."
         ]
 
@@ -516,7 +515,7 @@ heroImage: "/social-media/og-image.jpg"
         health_aspects = {
             "Ateş": f"🔥 Enerji seviyeniz yüksek olacak. Aktif sporları tercih edin.",
             "Toprak": f"🌱 Vücudunuzla uyum içinde olacaksınız. Doğal beslenmeye önem verin.",
-            "Hava": f"💨 Zihinsel aktifiteniz artacak. Nefes egzerzilerine zaman ayırın.",
+            "Hava": f"💨 Zihinsel aktiveniz artacak. Nefes egzersizlerine zaman ayırın.",
             "Su": f"💧 Duygusal dengeniz önemli. Su sporları ve meditasyon faydalı olacak."
         }
 
@@ -540,9 +539,9 @@ heroImage: "/social-media/og-image.jpg"
     def _generate_conclusion(self, sign_data: Dict, period: str, theme: str) -> str:
         """Sonuç bölümü."""
         conclusions = [
-            f"Bu {period} {sign_data['name']} burcu için {theme.lower()} yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.",
-            f"{sign_data['name']} burcu olarak doğal yeteneklerinizi kullanarak bu {period} büyük adımlar atabilirsiniz.",
-            f"Bu {period} sonunda kendinizi daha güçlü ve {random.choice(sign_data['keywords']).lower()} hissedeceksiniz."
+            f"Bu {period} **{sign_data['name']}** burcu için {theme.lower()} yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.",
+            f"**{sign_data['name']}** burcu olarak doğal yeteneklerinizi kullanarak bu {period} büyük adımlar atabilirsiniz.",
+            f"Bu {period} sonunda kendinizi daha güçlü ve **{random.choice(sign_data['keywords']).lower()}** hissedeceksiniz."
         ]
 
         return random.choice(conclusions)
@@ -595,9 +594,31 @@ heroImage: "/social-media/og-image.jpg"
 
         return created_files
 
+    def generate_bulk_content(self, count: int = 10) -> List[str]:
+        """Toplu içerik üretimi - karışık dönemler."""
+        created_files = []
+        periods = ["günlük", "haftalık", "aylık"]
+
+        for i in range(count):
+            sign = self.get_random_sign()
+            period = random.choice(periods)
+
+            if period == "günlük":
+                content_data = self.generate_daily_content(sign)
+            elif period == "haftalık":
+                content_data = self.generate_weekly_content(sign)
+            else:
+                content_data = self.generate_monthly_content(sign)
+
+            filepath = self.create_content_file(content_data)
+            created_files.append(filepath)
+            print(f"✅ {content_data['title']} oluşturuldu")
+
+        return created_files
+
     def run_interactive_mode(self):
         """İnteraktif mod çalıştır."""
-        print("🔮 Gelişmiş Astroloji İçerik Üreticisi")
+        print("🔮 Gelişmiş Astroloji İçerik Üreticisi v2.0")
         print("=" * 50)
 
         while True:
@@ -608,10 +629,11 @@ heroImage: "/social-media/og-image.jpg"
             print("4. Tüm burçlar günlük yorumlar")
             print("5. Tüm burçlar haftalık yorumlar")
             print("6. Tüm burçlar aylık yorumlar")
-            print("7. Burç özellikleri görüntüle")
-            print("8. Çıkış")
+            print("7. Toplu karışık içerik (10 adet)")
+            print("8. Burç özellikleri görüntüle")
+            print("9. Çıkış")
 
-            choice = input("\nSeçiminiz (1-8): ").strip()
+            choice = input("\nSeçiminiz (1-9): ").strip()
 
             if choice == "1":
                 sign = input("Burç adı (örn: koc, aslan) veya boş bırakın: ").strip().lower()
@@ -650,14 +672,21 @@ heroImage: "/social-media/og-image.jpg"
                 print(f"✅ {len(files)} aylık yorum oluşturuldu!")
 
             elif choice == "7":
-                self.display_zodiac_info()
+                count = input("Kaç adet içerik oluşturulsun? (varsayılan: 10): ").strip()
+                count = int(count) if count.isdigit() else 10
+                print(f"🚀 {count} adet karışık içerik oluşturuluyor...")
+                files = self.generate_bulk_content(count)
+                print(f"✅ {len(files)} içerik oluşturuldu!")
 
             elif choice == "8":
+                self.display_zodiac_info()
+
+            elif choice == "9":
                 print("👋 Görüşürüz!")
                 break
 
             else:
-                print("❌ Geçersiz seçim. Lütfen 1-8 arası bir sayı girin.")
+                print("❌ Geçersiz seçim. Lütfen 1-9 arası bir sayı girin.")
 
     def display_zodiac_info(self):
         """Burç bilgilerini görüntüle."""
@@ -676,5 +705,5 @@ heroImage: "/social-media/og-image.jpg"
             print("-" * 60)
 
 if __name__ == "__main__":
-    generator = AdvancedAstrologyGenerator()
+    generator = EnhancedAstrologyGenerator()
     generator.run_interactive_mode()

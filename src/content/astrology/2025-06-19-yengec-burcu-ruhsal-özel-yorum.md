@@ -1,6 +1,6 @@
 ---
-title: "Ruhsal Evrim - Yengeç Burcu Aylık Yorumu"
-description: "Yengeç burcu için detaylı astroloji yorumu. ruhsal evrim konusunda rehberlik."
+title: "Kozmik Enerji - Yengeç Burcu Aylık Yorumu"
+description: "Yengeç burcu için detaylı astroloji yorumu. kozmik enerji konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
 tags: ["yengeç burcu", "aylık yorum", "astroloji", "burç yorumu"]
@@ -11,7 +11,7 @@ heroImage: "/social-media/og-image.jpg"
 
 🦀 **Yengeç Burcu** (**21 Haziran - 22 Temmuz**)
 
-Bu ay Yengeç burcu için **Venüs** gezegeninin güçlü etkisiyle ruhsal evrim yaşayacağınız bereketli bir dönem başlıyor.
+Bu ay Yengeç burcu için **Uranüs** gezegeninin güçlü etkisiyle kozmik enerji yaşayacağınız bereketli bir dönem başlıyor.
 
 ## 🌟 Burç Özellikleri
 
@@ -23,25 +23,25 @@ Bu ay Yengeç burcu için **Venüs** gezegeninin güçlü etkisiyle ruhsal evrim
 
 ## 💫 Aylık Genel Durum
 
-**Venüs** gezegeninin etkisiyle bu aylık döneminde Yengeç burcu için **romantizm** enerjisi ön plana çıkacak.
+**Uranüs** gezegeninin etkisiyle bu aylık döneminde Yengeç burcu için **değişim** enerjisi ön plana çıkacak.
 
-Artan Ay'ın gücü ile hedeflerinizi büyütebilirsiniz.
+Yeni Ay'ın etkisi ile yeni başlangıçlar yapma zamanı.
 
-Bu aylık **Ay** gezegenizin etkisiyle **koruyucu** yanınız öne çıkacak.
+**Su** elementi size aylık boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
 
 ## 💕 Aşk ve İlişkiler
 
-💖 **Bekar Yengeçlar:** Hobilerle uğraşırken ilginizi çekecek kişilerle tanışabilirsiniz.
+💖 **Bekar Yengeçlar:** Sosyal ortamlarda ilginizi çekecek kişilerle tanışabilirsiniz.
 
-💑 **İlişkisi Olanlar:** Partnerinizle daha derin bağlar yaşayabilirsiniz.
+💑 **İlişkisi Olanlar:** Partnerinizle özel aktiviteler yaşayabilirsiniz.
 
 🌹 **Gümüş** rengi bu aylık aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** **Empati** özelliğiniz sayesinde aylık boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** **Sezgi** özelliğiniz sayesinde aylık boyunca dikkat çekeceksiniz.
 
-💰 **Mali Durum:** **Emlak** alanında fırsatlar değerlendirilebilir.
+💰 **Mali Durum:** **Eğitim** alanında fırsatlar değerlendirilebilir.
 
 📈 Bu aylık ek gelir için uygun zaman.
 
@@ -53,11 +53,11 @@ Bu aylık **Ay** gezegenizin etkisiyle **koruyucu** yanınız öne çıkacak.
 
 ## 🎯 Aylık Tavsiyeleri
 
-1. **Koruyuculuk** özelliğinizi bu aylık daha aktif kullanın
+1. **Sadakat** özelliğinizi bu aylık daha aktif kullanın
 2. **Geçmişe takılma** konusunda dikkatli olun ve kendinizi geliştirin
 3. **Gümüş** rengi bu aylık şansınızı artıracak
-4. **Balık** burcu ile işbirliği yapın
-5. **Hemşirelik** alanında fırsatları değerlendirin
+4. **Akrep** burcu ile işbirliği yapın
+5. **Emlak** alanında fırsatları değerlendirin
 
 ## 🔮 Şanslı Elementler
 
@@ -71,7 +71,7 @@ Bu aylık **Ay** gezegenizin etkisiyle **koruyucu** yanınız öne çıkacak.
 
 ## 💫 Sonuç
 
-Bu aylık **Yengeç** burcu için ruhsal evrim yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.
+Bu aylık sonunda kendinizi daha güçlü ve **koruyucu** hissedeceksiniz.
 
 ---
 
