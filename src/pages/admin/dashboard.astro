@@ -96,6 +96,15 @@ const posts = [
           </ul>
         </section>
       </div>
+      <!-- Otomatik Gönderi/Test Kutusu -->
+      <section class="w-full bg-yellow-50 rounded-xl p-6 shadow flex flex-col gap-4 mt-8">
+        <h2 class="text-xl font-bold mb-2 text-yellow-700">Otomatik Gönderi & Test Kutusu</h2>
+        <form class="flex flex-col gap-2 md:flex-row md:items-end md:gap-4">
+          <textarea placeholder="Komut veya test içeriği yazın (ör: otomatik gönderi oluştur, ayar değiştir, hata testi yap)" class="border rounded px-3 py-2 flex-1 min-h-[60px]"></textarea>
+          <button type="button" class="bg-gradient-to-r from-yellow-400 to-pink-400 text-white font-bold px-6 py-2 rounded hover:from-pink-400 hover:to-yellow-400 transition-all">Çalıştır</button>
+        </form>
+        <div class="text-xs text-gray-600 mt-2">Buradan otomatik içerik oluşturma, ayar testi veya hata simülasyonu yapabilirsiniz. (Şu an sadece görsel, fonksiyon eklenebilir.)</div>
+      </section>
     </div>
   </body>
 </html>
