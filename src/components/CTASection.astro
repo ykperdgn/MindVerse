@@ -53,52 +53,56 @@
       * İstediğiniz zaman abonelikten çıkabilirsiniz. Spam yapmıyoruz!
     </p>
   </div>
-
-  <!-- Sosyal Paylaşım Alanı -->
-  <div class="bg-green-50 border border-green-200 rounded-xl p-6">
+  <!-- Sosyal Paylaşım Alanı - Mobil Optimized -->
+  <div class="bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-xl p-4 sm:p-6">
     <div class="flex items-center mb-4">
-      <span class="text-3xl mr-3">📤</span>
-      <h3 class="text-xl font-bold text-green-800">Bu İçeriği Paylaşın</h3>
+      <span class="text-2xl sm:text-3xl mr-3">📤</span>
+      <h3 class="text-lg sm:text-xl font-bold text-green-800">Bu İçeriği Paylaşın</h3>
     </div>
-    <p class="text-green-700 mb-4">
+    <p class="text-green-700 mb-4 text-sm sm:text-base">
       Bu makale size faydalı olduysa, sosyal medyada paylaşarak daha fazla kişinin
       bu değerli bilgilere ulaşmasına yardımcı olabilirsiniz!
-    </p>    <div class="flex flex-wrap gap-3">
+    </p>
+
+    <!-- Mobil için dikey, desktop için yatay düzen -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-wrap gap-3">
+      <!-- Twitter Paylaşımı - Çalışıyor -->
       <button
         onclick="shareOnTwitter()"
-        class="flex items-center bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg"
-        title="Twitter'da paylaş - Yeni sekmede açılır"
+        class="flex items-center justify-center bg-[#1DA1F2] text-white px-4 py-3 rounded-lg hover:bg-[#1a8cd8] transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg w-full lg:w-auto"
+        title="Twitter'da paylaş"
       >
         <span class="mr-2">🐦</span>
-        Twitter'da Paylaş
+        <span class="font-medium">Twitter'da Paylaş</span>
       </button>
 
-      <button
-        onclick="shareOnFacebook()"
-        class="flex items-center bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg"
-        title="Facebook'ta paylaş - Yeni sekmede açılır"
-      >
-        <span class="mr-2">📘</span>
-        Facebook'ta Paylaş
-      </button>
-
-      <button
-        onclick="shareOnWhatsApp()"
-        class="flex items-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg"
-        title="WhatsApp'ta paylaş - Uygulama/Web açılır"
-      >
-        <span class="mr-2">📱</span>
-        WhatsApp'ta Paylaş
-      </button>
-
+      <!-- Link Kopyalama - Çalışıyor -->
       <button
         onclick="copyToClipboard()"
-        class="flex items-center bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg"
+        class="flex items-center justify-center bg-gray-600 text-white px-4 py-3 rounded-lg hover:bg-gray-700 transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg w-full lg:w-auto"
         title="Makale linkini kopyala"
       >
         <span class="mr-2">🔗</span>
-        Linki Kopyala
+        <span class="font-medium">Linki Kopyala</span>
       </button>
+    </div>
+
+    <!-- Twitter Takip Teşviki -->
+    <div class="mt-4 p-3 bg-blue-100 rounded-lg border border-blue-200">
+      <div class="flex items-center justify-between flex-wrap gap-2">
+        <div class="flex items-center">
+          <span class="text-xl mr-2">🐦</span>
+          <span class="text-blue-800 text-sm font-medium">@MindVerseDaily'i takip edin!</span>
+        </div>
+        <a
+          href="https://twitter.com/MindVerseDaily"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-[#1DA1F2] text-white px-3 py-1 rounded text-sm hover:bg-[#1a8cd8] transition-colors"
+        >
+          Takip Et
+        </a>
+      </div>
     </div>
   </div>
   <!-- İstatistik ve Motivasyon -->
@@ -136,129 +140,56 @@
     } else {
       showMessage('ℹ️ Bu e-posta adresi zaten kayıtlı.', 'info');
     }
-  }  // Sosyal medya paylaşım fonksiyonları - Debug Mode
+  }  // Sosyal medya paylaşım fonksiyonları - Sadece çalışanlar
   function shareOnTwitter() {
-    console.log('Twitter buton tıklandı'); // Debug
     const url = window.location.href;
     const title = document.title.replace(' | MindVerse', '').replace(' | MindVerse Daily', '');
     const text = `📖 ${title}`;
     const hashtags = 'mindversedaily,blog,bilgi,gelişim,eğitim';
 
-    const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}&hashtags=${hashtags}`;
-    console.log('Twitter URL:', twitterUrl); // Debug
+    const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}&hashtags=${hashtags}&via=MindVerseDaily`;
 
-    // Popup açma - daha güvenilir yöntem
-    try {
-      const popup = window.open(twitterUrl, '_blank', 'width=550,height=420,scrollbars=yes,resizable=yes,noopener,noreferrer');
-      console.log('Popup açma denemesi:', popup); // Debug
+    // Mobil cihaz kontrolü
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-      // Popup açılamadıysa alternatif yöntem
-      if (!popup || popup.closed || typeof popup.closed === 'undefined') {
-        console.log('Popup bloklandı, yönlendirme yapılıyor'); // Debug
-        // Timeout ile yönlendirme - bazı tarayıcılar için gerekli
-        setTimeout(() => {
+    if (isMobile) {
+      // Mobil: Direkt yönlendirme daha güvenilir
+      window.open(twitterUrl, '_blank');
+    } else {
+      // Desktop: Popup dene, olmazsa yönlendir
+      try {
+        const popup = window.open(twitterUrl, '_blank', 'width=550,height=420,scrollbars=yes,resizable=yes');
+        if (!popup || popup.closed || typeof popup.closed === 'undefined') {
           window.open(twitterUrl, '_blank');
-        }, 100);
+        }
+      } catch (error) {
+        window.open(twitterUrl, '_blank');
       }
-    } catch (error) {
-      console.error('Twitter paylaşım hatası:', error); // Debug
-      // Son çare - direkt yönlendirme
-      window.location.href = twitterUrl;
     }
 
     showMessage('🐦 Twitter paylaşım sayfası açılıyor...', 'info');
   }
 
-  function shareOnFacebook() {
-    console.log('Facebook buton tıklandı'); // Debug
-    const url = window.location.href;
-    const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
-    console.log('Facebook URL:', facebookUrl); // Debug
-
-    try {
-      const popup = window.open(facebookUrl, '_blank', 'width=580,height=296,scrollbars=yes,resizable=yes,noopener,noreferrer');
-      console.log('Popup açma denemesi:', popup); // Debug
-
-      if (!popup || popup.closed || typeof popup.closed === 'undefined') {
-        console.log('Popup bloklandı, yönlendirme yapılıyor'); // Debug
-        setTimeout(() => {
-          window.open(facebookUrl, '_blank');
-        }, 100);
-      }
-    } catch (error) {
-      console.error('Facebook paylaşım hatası:', error); // Debug
-      window.location.href = facebookUrl;
-    }
-
-    showMessage('📘 Facebook paylaşım sayfası açılıyor...', 'info');
-  }
-  function shareOnWhatsApp() {
-    console.log('WhatsApp buton tıklandı'); // Debug
-    const url = window.location.href;
-    const title = document.title.replace(' | MindVerse', '').replace(' | MindVerse Daily', '');
-    const text = `📖 ${title}\n\n${url}`;
-
-    // Mobil cihaz kontrolü
-    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    console.log('Mobil cihaz:', isMobile); // Debug
-
-    if (isMobile) {
-      // Mobil: WhatsApp uygulamasını aç
-      const whatsappMobileUrl = `whatsapp://send?text=${encodeURIComponent(text)}`;
-      console.log('WhatsApp Mobile URL:', whatsappMobileUrl); // Debug
-      try {
-        window.location.href = whatsappMobileUrl;
-        showMessage('📱 WhatsApp uygulaması açılıyor...', 'info');
-      } catch (error) {
-        console.error('WhatsApp mobil hatası:', error); // Debug
-        // Fallback to web version
-        shareWhatsAppWeb(text);
-      }
-    } else {
-      shareWhatsAppWeb(text);
-    }
-  }
-
-  function shareWhatsAppWeb(text) {
-    const whatsappUrl = `https://web.whatsapp.com/send?text=${encodeURIComponent(text)}`;
-    console.log('WhatsApp Web URL:', whatsappUrl); // Debug
-
-    try {
-      const popup = window.open(whatsappUrl, '_blank', 'width=800,height=600,scrollbars=yes,resizable=yes,noopener,noreferrer');
-      console.log('WhatsApp popup açma denemesi:', popup); // Debug
-
-      if (!popup || popup.closed || typeof popup.closed === 'undefined') {
-        console.log('WhatsApp popup bloklandı, yönlendirme yapılıyor'); // Debug
-        setTimeout(() => {
-          window.open(whatsappUrl, '_blank');
-        }, 100);
-      }
-    } catch (error) {
-      console.error('WhatsApp web hatası:', error); // Debug
-      window.location.href = whatsappUrl;
-    }
-
-    showMessage('📱 WhatsApp Web açılıyor...', 'info');
-  }
-
   function copyToClipboard() {
     const url = window.location.href;
+    const title = document.title.replace(' | MindVerse', '').replace(' | MindVerse Daily', '');
+    const shareText = `📖 ${title}\n\n${url}\n\nvia @MindVerseDaily`;
 
     // Modern tarayıcılar için Clipboard API
     if (navigator.clipboard && window.isSecureContext) {
-      navigator.clipboard.writeText(url).then(() => {
-        showMessage('🔗 Link başarıyla kopyalandı!', 'success');
+      navigator.clipboard.writeText(shareText).then(() => {
+        showMessage('🔗 Link ve başlık başarıyla kopyalandı!', 'success');
       }).catch(() => {
-        fallbackCopyToClipboard(url);
+        fallbackCopyToClipboard(shareText);
       });
     } else {
-      // Eski tarayıcılar için fallback
-      fallbackCopyToClipboard(url);
+      fallbackCopyToClipboard(shareText);
     }
   }
-  function fallbackCopyToClipboard(url) {
+
+  function fallbackCopyToClipboard(text) {
     const textArea = document.createElement('textarea');
-    textArea.value = url;
+    textArea.value = text;
     textArea.style.position = 'fixed';
     textArea.style.left = '-999999px';
     textArea.style.top = '-999999px';
@@ -269,12 +200,12 @@
     try {
       const successful = document.execCommand('copy');
       if (successful) {
-        showMessage('🔗 Link başarıyla kopyalandı!', 'success');
+        showMessage('🔗 Link ve başlık başarıyla kopyalandı!', 'success');
       } else {
-        showMessage('❌ Link kopyalanamadı. Manuel olarak kopyalayın.', 'error');
+        showMessage('❌ Kopyalama başarısız. Manuel olarak kopyalayın.', 'error');
       }
     } catch (err) {
-      showMessage('❌ Link kopyalanamadı. Manuel olarak kopyalayın.', 'error');
+      showMessage('❌ Kopyalama hatası. Manuel olarak kopyalayın.', 'error');
     }
 
     document.body.removeChild(textArea);
