@@ -11,9 +11,10 @@ export async function getStaticPaths() {
 
 const { category } = Astro.params;
 
-// Get only English articles (files ending with _en.md)
+// Get only English articles (files ending with _en.md) or fallback to Turkish if no English exists
 const allArticles = await getCollection(category);
-const articles = allArticles.filter(article => article.id.endsWith('_en.md') || article.id.endsWith('_en'));
+const englishArticles = allArticles.filter(article => article.id.endsWith('_en.md') || article.id.endsWith('_en'));
+const articles = englishArticles.length > 0 ? englishArticles : allArticles;
 
 // Category information for English
 const categoryInfo = {
