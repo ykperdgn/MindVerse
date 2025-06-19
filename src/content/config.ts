@@ -8,6 +8,22 @@ const blogSchema = z.object({
   views: z.number().optional(),
 });
 
+// Extended schema for new content types
+const extendedBlogSchema = z.object({
+  title: z.string(),
+  summary: z.string(),
+  publishDate: z.date().transform((date) => date.toISOString().split('T')[0]),
+  author: z.string().optional(),
+  authorImage: z.string().optional(),
+  category: z.string(),
+  tags: z.array(z.string()),
+  keywords: z.string().optional(),
+  language: z.string().optional(),
+  featured: z.boolean().optional(),
+  viewCount: z.number().optional(),
+  readingTime: z.string().optional(),
+});
+
 // Astroloji için özel schema
 const astrologySchema = z.object({
   title: z.string(),
@@ -57,6 +73,21 @@ const astrology = defineCollection({
   schema: astrologySchema,
 });
 
+const art = defineCollection({
+  type: 'content',
+  schema: extendedBlogSchema,
+});
+
+const cinema = defineCollection({
+  type: 'content',
+  schema: extendedBlogSchema,
+});
+
+const technology = defineCollection({
+  type: 'content',
+  schema: extendedBlogSchema,
+});
+
 export const collections = {
   health,
   love,
@@ -65,4 +96,7 @@ export const collections = {
   space,
   quotes,
   astrology,
+  art,
+  cinema,
+  technology,
 };
