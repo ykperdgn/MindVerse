@@ -96,21 +96,37 @@ const currentUrl = canonicalUrl || Astro.url.href;
   <link rel="stylesheet" href="/src/styles/global.css">
 </head>
 <body>
-  <div class="min-h-screen flex flex-col">    <header class="bg-white border-b border-gray-200 shadow-sm">
-      <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+  <div class="min-h-screen flex flex-col">    <header class="bg-white/95 backdrop-blur-md border-b border-gray-200/50 shadow-lg sticky top-0 z-50">      <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
         <div class="flex items-center">
-          <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-400 shadow-lg mr-3 animate-gradient-move">
-            <span class="text-3xl">🌌</span>
+          <span class="inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-400 shadow-xl mr-2 md:mr-4 animate-gradient-move hover:scale-110 transition-transform">
+            <span class="text-2xl md:text-3xl">🌌</span>
           </span>
-          <a href="/" class="text-2xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-400 bg-clip-text text-transparent tracking-tight drop-shadow-sm hover:from-blue-700 hover:to-purple-700 transition-all animate-gradient-move">
+          <a href="/" class="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-400 bg-clip-text text-transparent tracking-tight drop-shadow-lg hover:scale-105 transition-all animate-gradient-move">
             MindVerse
           </a>
         </div>
-        <div class="flex space-x-6 text-gray-700">
-          <a href="/" class="hover:text-blue-600 transition-colors font-medium">🏠 Ana Sayfa</a>
-          <a href="/popular" class="hover:text-blue-600 transition-colors font-medium">🔥 Popüler</a>
-          <a href="/categories" class="hover:text-blue-600 transition-colors font-medium">📁 Kategoriler</a>
-          <a href="/astrology" class="hover:text-blue-600 transition-colors font-medium">🔮 Astroloji</a>
+        <div class="hidden md:flex space-x-8 text-gray-700">
+          <a href="/" class="flex items-center hover:text-blue-600 transition-all font-semibold hover:scale-105 px-3 py-2 rounded-full hover:bg-blue-50">
+            <span class="mr-2">🏠</span>Ana Sayfa
+          </a>
+          <a href="/popular" class="flex items-center hover:text-orange-600 transition-all font-semibold hover:scale-105 px-3 py-2 rounded-full hover:bg-orange-50">
+            <span class="mr-2">🔥</span>Popüler
+          </a>
+          <a href="/categories" class="flex items-center hover:text-purple-600 transition-all font-semibold hover:scale-105 px-3 py-2 rounded-full hover:bg-purple-50">
+            <span class="mr-2">📁</span>Kategoriler
+          </a>
+          <a href="/astrology" class="flex items-center hover:text-pink-600 transition-all font-semibold hover:scale-105 px-3 py-2 rounded-full hover:bg-pink-50">
+            <span class="mr-2">🔮</span>Astroloji
+          </a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button class="p-2 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
         </div>
       </nav>
 
@@ -131,40 +147,73 @@ const currentUrl = canonicalUrl || Astro.url.href;
       <div class="container mx-auto px-4">
         <slot />
       </div>
-    </main><footer class="bg-white text-gray-800 border-t border-gray-200 p-6">
-      <div class="container mx-auto">
-        <div class="grid md:grid-cols-2 gap-6 mb-6">
-          <div>
-            <h3 class="font-bold text-xl mb-3 text-blue-600">🌌 MindVerse Daily</h3>
-            <p class="text-gray-600 mb-4">Bilginin sonsuz evrenini keşfedin. Kaliteli, araştırma temelli içeriklerle hayatınıza değer katın.</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">🏥 Sağlık</span>
-              <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">❤️ Aşk</span>
-              <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">📚 Tarih</span>
-              <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">🔮 Astroloji</span>
-            </div>
+    </main>    <footer class="bg-gradient-to-br from-gray-50 to-blue-50 text-gray-800 border-t border-gray-200 py-8">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8">
+          <div class="flex items-center justify-center mb-4">
+            <span class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-400 shadow-lg mr-4 animate-gradient-move">
+              <span class="text-4xl">🌌</span>
+            </span>
+            <h3 class="text-3xl font-bold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-400 bg-clip-text text-transparent animate-gradient-move">MindVerse Daily</h3>
           </div>
-          <div>
-            <h3 class="font-bold text-lg mb-3">📋 Hızlı Erişim</h3>
-            <div class="grid grid-cols-2 gap-3 text-sm">
-              <a href="/popular" class="block text-blue-600 hover:text-blue-800 transition-colors">🔥 Popüler İçerikler</a>
-              <a href="/categories" class="block text-blue-600 hover:text-blue-800 transition-colors">📂 Tüm Kategoriler</a>
-              <a href="/astrology" class="block text-blue-600 hover:text-blue-800 transition-colors">🔮 Astroloji</a>
-              <a href="/contact" class="block text-blue-600 hover:text-blue-800 transition-colors">📧 İletişim</a>
-              <a href="/sitemap" class="block text-blue-600 hover:text-blue-800 transition-colors">🗺️ Site Haritası</a>
-              <a href="/admin/newsletter" class="block text-blue-600 hover:text-blue-800 transition-colors">📬 Bülten Yönetimi</a>
-            </div>
-          </div>
+          <p class="text-gray-600 text-lg max-w-2xl mx-auto">Bilginin sonsuz evrenini keşfedin. Kaliteli, araştırma temelli içeriklerle hayatınıza değer katın.</p>
         </div>
 
-        <div class="border-t border-gray-200 pt-4 text-center">
-          <p class="text-sm text-gray-600">
-            © 2025 MindVerse Daily. Tüm hakları saklıdır. |
-            <a href="/contact" class="text-blue-600 hover:text-blue-800">Gizlilik Politikası</a> |
-            <a href="/contact" class="text-blue-600 hover:text-blue-800">Kullanım Koşulları</a>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 mb-8">
+          <a href="/health" class="group block bg-gradient-to-br from-green-50 to-emerald-100 rounded-2xl p-4 border border-green-200 hover:shadow-lg transition-all transform hover:scale-105">
+            <div class="text-center">
+              <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">🏥</div>
+              <span class="text-sm font-semibold text-green-800">Sağlık</span>
+            </div>
+          </a>
+
+          <a href="/love" class="group block bg-gradient-to-br from-red-50 to-pink-100 rounded-2xl p-4 border border-red-200 hover:shadow-lg transition-all transform hover:scale-105">
+            <div class="text-center">
+              <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">❤️</div>
+              <span class="text-sm font-semibold text-red-800">Aşk</span>
+            </div>
+          </a>
+
+          <a href="/history" class="group block bg-gradient-to-br from-yellow-50 to-amber-100 rounded-2xl p-4 border border-yellow-200 hover:shadow-lg transition-all transform hover:scale-105">
+            <div class="text-center">
+              <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">📚</div>
+              <span class="text-sm font-semibold text-yellow-800">Tarih</span>
+            </div>
+          </a>
+
+          <a href="/psychology" class="group block bg-gradient-to-br from-purple-50 to-violet-100 rounded-2xl p-4 border border-purple-200 hover:shadow-lg transition-all transform hover:scale-105">
+            <div class="text-center">
+              <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">🧠</div>
+              <span class="text-sm font-semibold text-purple-800">Psikoloji</span>
+            </div>
+          </a>
+
+          <a href="/space" class="group block bg-gradient-to-br from-blue-50 to-cyan-100 rounded-2xl p-4 border border-blue-200 hover:shadow-lg transition-all transform hover:scale-105">
+            <div class="text-center">
+              <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">🚀</div>
+              <span class="text-sm font-semibold text-blue-800">Uzay</span>
+            </div>
+          </a>
+
+          <a href="/quotes" class="group block bg-gradient-to-br from-indigo-50 to-purple-100 rounded-2xl p-4 border border-indigo-200 hover:shadow-lg transition-all transform hover:scale-105">
+            <div class="text-center">
+              <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">💭</div>
+              <span class="text-sm font-semibold text-indigo-800">Alıntılar</span>
+            </div>
+          </a>
+
+          <a href="/astrology" class="group block bg-gradient-to-br from-pink-50 to-rose-100 rounded-2xl p-4 border border-pink-200 hover:shadow-lg transition-all transform hover:scale-105">
+            <div class="text-center">
+              <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">🔮</div>
+              <span class="text-sm font-semibold text-pink-800">Astroloji</span>
+            </div>
+          </a>
+        </div>        <div class="border-t border-gray-300 pt-6 text-center">
+          <p class="text-sm text-gray-600 mb-2">
+            © 2025 MindVerse Daily. Tüm hakları saklıdır.
           </p>
-          <p class="text-xs text-gray-500 mt-2">
-            📧 Kaliteli içerikler için bültenimize katılın • 🔍 Günlük yeni bilgiler keşfedin
+          <p class="text-xs text-gray-500">
+            🌟 Kaliteli içeriklerle bilginin sonsuz evrenini keşfedin
           </p>
         </div>
       </div>
