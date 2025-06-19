@@ -21,7 +21,4 @@ export default defineConfig({
     },
   },
   compressHTML: true,
-  experimental: {
-    optimizeHoistedScript: true,
-  },
 });
