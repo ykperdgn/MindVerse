@@ -2,7 +2,7 @@
 title: "Libra Daily Horoscope - June 19, 2025"
 description: "Daily astrology reading for Libra. Love, career, health and general guidance."
 keywords: "libra, daily horoscope, air, astrology, zodiac"
-date: 2025-06-19
+pubDate: 2025-06-19
 category: "astrology"
 tags: ["astrology", "terazi", "daily", "air"]
 author: "MindVerse Astroloji"

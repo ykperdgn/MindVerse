@@ -2,7 +2,7 @@
 title: "Başak Günlük Yorumu - 19.06.2025"
 description: "Başak burcu için günlük astroloji yorumu. Aşk, kariyer, sağlık ve genel rehberlik."
 keywords: "başak, günlük yorum, toprak, astroloji, burç"
-date: 2025-06-19
+pubDate: 2025-06-19
 category: "astrology"
 tags: ["astrology", "basak", "daily", "toprak"]
 author: "MindVerse Astroloji"

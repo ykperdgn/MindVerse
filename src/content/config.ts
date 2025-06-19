@@ -16,6 +16,10 @@ const astrologySchema = z.object({
   category: z.string(),
   tags: z.array(z.string()),
   heroImage: z.string().optional(),
+  keywords: z.string().optional(),
+  author: z.string().optional(),
+  summary: z.string().optional(),
+  views: z.number().optional(),
 });
 
 const health = defineCollection({

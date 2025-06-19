@@ -1,14 +1,17 @@
 ---
-title: "MindVerse - Astrology & Life Guidance Portal"
-description: "Daily horoscopes, astrology analysis, and life guidance. Health, love, history, psychology, space content and quotes in English."
-keywords: "astrology, horoscope, daily horoscope, zodiac signs, astrology analysis, life guidance"
-layout: "../components/Layout.astro"
+import Layout from '../components/Layout.astro';
 ---
 
-<div class="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+<Layout
+  title="MindVerse - Astrology & Life Guidance Portal"
+  description="Daily horoscopes, astrology analysis, and life guidance. Health, love, history, psychology, space content and quotes in English."
+  keywords="astrology, horoscope, daily horoscope, zodiac signs, astrology analysis, life guidance"
+>
+
+<div class="min-h-screen bg-white">
   <!-- Hero Section -->
-  <div class="relative overflow-hidden bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white">
-    <div class="absolute inset-0 bg-black opacity-20"></div>
+  <div class="relative overflow-hidden bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white">
+    <div class="absolute inset-0 bg-white/10"></div>
     <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-pink-600/20 animate-pulse"></div>
     <div class="relative container mx-auto px-4 py-20 text-center">
       <div class="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-full bg-white/20 backdrop-blur-md animate-bounce">
@@ -16,9 +19,8 @@ layout: "../components/Layout.astro"
       </div>
       <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-yellow-200 to-pink-200 bg-clip-text text-transparent animate-pulse">
         MindVerse English
-      </h1>
-      <p class="text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-white/90 leading-relaxed">
-        🔮 Discover the secrets of the stars with daily horoscopes, advanced astrology tools, 
+      </h1>      <p class="text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-white/95 leading-relaxed font-light">
+        🔮 Discover the secrets of the stars with daily horoscopes, advanced astrology tools,
         and comprehensive life guidance across health, love, history, psychology, and space.
       </p>
       <div class="flex flex-wrap justify-center gap-4">
@@ -69,7 +71,7 @@ layout: "../components/Layout.astro"
             <p class="text-xs text-gray-500">Mar 21 - Apr 19</p>
           </div>
         </a>
-        
+
         <!-- Taurus -->
         <a href="/en/astrology/taurus-daily" class="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all transform hover:scale-105 border border-green-100">
           <div class="text-center">
@@ -78,7 +80,7 @@ layout: "../components/Layout.astro"
             <p class="text-xs text-gray-500">Apr 20 - May 20</p>
           </div>
         </a>
-        
+
         <!-- Gemini -->
         <a href="/en/astrology/gemini-daily" class="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all transform hover:scale-105 border border-yellow-100">
           <div class="text-center">
@@ -87,7 +89,7 @@ layout: "../components/Layout.astro"
             <p class="text-xs text-gray-500">May 21 - Jun 20</p>
           </div>
         </a>
-        
+
         <!-- Cancer -->
         <a href="/en/astrology/cancer-daily" class="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all transform hover:scale-105 border border-blue-100">
           <div class="text-center">
@@ -96,7 +98,7 @@ layout: "../components/Layout.astro"
             <p class="text-xs text-gray-500">Jun 21 - Jul 22</p>
           </div>
         </a>
-        
+
         <!-- Leo -->
         <a href="/en/astrology/leo-daily" class="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all transform hover:scale-105 border border-orange-100">
           <div class="text-center">
@@ -105,7 +107,7 @@ layout: "../components/Layout.astro"
             <p class="text-xs text-gray-500">Jul 23 - Aug 22</p>
           </div>
         </a>
-        
+
         <!-- Virgo -->
         <a href="/en/astrology/virgo-daily" class="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all transform hover:scale-105 border border-indigo-100">
           <div class="text-center">
@@ -114,7 +116,7 @@ layout: "../components/Layout.astro"
             <p class="text-xs text-gray-500">Aug 23 - Sep 22</p>
           </div>
         </a>
-        
+
         <!-- Libra -->
         <a href="/en/astrology/libra-daily" class="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all transform hover:scale-105 border border-pink-100">
           <div class="text-center">
@@ -123,7 +125,7 @@ layout: "../components/Layout.astro"
             <p class="text-xs text-gray-500">Sep 23 - Oct 22</p>
           </div>
         </a>
-        
+
         <!-- Scorpio -->
         <a href="/en/astrology/scorpio-daily" class="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all transform hover:scale-105 border border-red-800">
           <div class="text-center">
@@ -132,7 +134,7 @@ layout: "../components/Layout.astro"
             <p class="text-xs text-gray-500">Oct 23 - Nov 21</p>
           </div>
         </a>
-        
+
         <!-- Sagittarius -->
         <a href="/en/astrology/sagittarius-daily" class="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all transform hover:scale-105 border border-purple-100">
           <div class="text-center">
@@ -141,7 +143,7 @@ layout: "../components/Layout.astro"
             <p class="text-xs text-gray-500">Nov 22 - Dec 21</p>
           </div>
         </a>
-        
+
         <!-- Capricorn -->
         <a href="/en/astrology/capricorn-daily" class="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all transform hover:scale-105 border border-gray-100">
           <div class="text-center">
@@ -150,7 +152,7 @@ layout: "../components/Layout.astro"
             <p class="text-xs text-gray-500">Dec 22 - Jan 19</p>
           </div>
         </a>
-        
+
         <!-- Aquarius -->
         <a href="/en/astrology/aquarius-daily" class="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all transform hover:scale-105 border border-cyan-100">
           <div class="text-center">
@@ -159,7 +161,7 @@ layout: "../components/Layout.astro"
             <p class="text-xs text-gray-500">Jan 20 - Feb 18</p>
           </div>
         </a>
-        
+
         <!-- Pisces -->
         <a href="/en/astrology/pisces-daily" class="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all transform hover:scale-105 border border-teal-100">
           <div class="text-center">
@@ -300,7 +302,7 @@ layout: "../components/Layout.astro"
             Today's Cosmic Energy - June 19, 2025
           </h2>
           <p class="text-xl mb-8 text-white/90">
-            Mars in Gemini brings strong communication energy today. As Mercury retrograde approaches, 
+            Mars in Gemini brings strong communication energy today. As Mercury retrograde approaches,
             be mindful of important decisions and focus on clarity in all interactions.
           </p>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
@@ -324,8 +326,7 @@ layout: "../components/Layout.astro"
       </div>
     </section>
 
-    <!-- AdSense Ad -->
-    <div class="mb-16 flex justify-center">
+    <!-- AdSense Ad -->    <div class="mb-16 flex justify-center">
       <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl p-8 text-center">
         <p class="text-gray-500 text-sm">English Site Advertisement - 728x90</p>
         <p class="text-gray-400 text-xs">AdSense Slot</p>
@@ -333,4 +334,5 @@ layout: "../components/Layout.astro"
     </div>
 
   </div>
+</Layout>
 </div>

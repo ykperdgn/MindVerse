@@ -2,7 +2,7 @@
 title: "Scorpio Daily Horoscope - June 19, 2025"
 description: "Daily astrology reading for Scorpio. Love, career, health and general guidance."
 keywords: "scorpio, daily horoscope, water, astrology, zodiac"
-date: 2025-06-19
+pubDate: 2025-06-19
 category: "astrology"
 tags: ["astrology", "akrep", "daily", "water"]
 author: "MindVerse Astroloji"

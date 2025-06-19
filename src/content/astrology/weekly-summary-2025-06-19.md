@@ -2,7 +2,7 @@
 title: "Weekly Astrology Summary - Week 25, 2025"
 description: "Weekly astrology summary for all zodiac signs and general cosmic energy analysis."
 keywords: "weekly astrology, horoscope, cosmic energy"
-date: 2025-06-19
+pubDate: 2025-06-19
 category: "astrology"
 tags: ["astrology", "weekly", "summary", "cosmic"]
 author: "MindVerse Astroloji"

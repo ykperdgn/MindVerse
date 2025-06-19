@@ -2,7 +2,7 @@
 title: "Cancer Daily Horoscope - June 19, 2025"
 description: "Daily astrology reading for Cancer. Love, career, health and general guidance."
 keywords: "cancer, daily horoscope, water, astrology, zodiac"
-date: 2025-06-19
+pubDate: 2025-06-19
 category: "astrology"
 tags: ["astrology", "yengec", "daily", "water"]
 author: "MindVerse Astroloji"

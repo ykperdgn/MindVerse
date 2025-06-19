@@ -2,7 +2,7 @@
 title: "Pisces Daily Horoscope - June 19, 2025"
 description: "Daily astrology reading for Pisces. Love, career, health and general guidance."
 keywords: "pisces, daily horoscope, water, astrology, zodiac"
-date: 2025-06-19
+pubDate: 2025-06-19
 category: "astrology"
 tags: ["astrology", "balik", "daily", "water"]
 author: "MindVerse Astroloji"

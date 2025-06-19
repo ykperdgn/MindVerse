@@ -2,7 +2,7 @@
 title: "Haftalık Astroloji Özeti - 25. Hafta 2025"
 description: "Tüm burçlar için haftalık astroloji özeti ve genel kozmik enerji analizi."
 keywords: "haftalık astroloji, burç yorumu, kozmik enerji"
-date: 2025-06-19
+pubDate: 2025-06-19
 category: "astrology"
 tags: ["astrology", "weekly", "summary", "cosmic"]
 author: "MindVerse Astroloji"

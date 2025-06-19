@@ -2,7 +2,7 @@
 title: "Yay Günlük Yorumu - 19.06.2025"
 description: "Yay burcu için günlük astroloji yorumu. Aşk, kariyer, sağlık ve genel rehberlik."
 keywords: "yay, günlük yorum, ateş, astroloji, burç"
-date: 2025-06-19
+pubDate: 2025-06-19
 category: "astrology"
 tags: ["astrology", "yay", "daily", "ateş"]
 author: "MindVerse Astroloji"

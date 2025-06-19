@@ -1,0 +1,282 @@
+---
+import Layout from '../../components/Layout.astro';
+---
+
+<Layout
+  title="Tarot & Oracle Kartları - Mystical Guidance"
+  description="Günlük tarot kartı çekimi, oracle rehberlik ve spiritual yönlendirme. Ücretsiz kart falı."
+>
+  <main class="min-h-screen pt-20">
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 text-white py-16">
+      <div class="container mx-auto px-4 text-center">
+        <div class="text-8xl mb-4">🔮</div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Tarot & Oracle Kartları
+        </h1>
+        <p class="text-xl mb-2">Spiritual Rehberlik ve İç Görü</p>
+        <p class="text-lg opacity-90">Günlük Kart Çekimi ve Yönlendirme</p>
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-12">
+      <!-- Daily Card Draw -->
+      <section class="mb-16">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-bold mb-4">Günün Kartı</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto mb-8">
+            Bugün için özel seçilen kartınız. İç sesinizi dinleyin ve kartın mesajını kalbiyle hissedin.
+          </p>
+        </div>
+
+        <div class="max-w-lg mx-auto">
+          <div class="bg-gradient-to-br from-purple-100 to-pink-100 rounded-3xl p-8 text-center">
+            <div class="bg-white rounded-xl p-6 shadow-lg mb-6">
+              <div class="text-6xl mb-4">🌟</div>
+              <h3 class="text-2xl font-bold text-purple-800 mb-2">The Star</h3>
+              <p class="text-sm text-gray-600 mb-4">XVII - Major Arcana</p>
+              <p class="text-gray-700 mb-4">
+                Umut, ilham ve spiritual rehberlik kartı. Karanlık dönemlerden sonra gelen aydınlanma.
+              </p>
+              <div class="bg-purple-50 rounded-lg p-4">
+                <h4 class="font-semibold text-purple-800 mb-2">Bugünün Mesajı:</h4>
+                <p class="text-sm text-gray-700">
+                  İnancinizi kaybetmeyin. Yıldızlar sizin için doğru yolda olduğunuzu gösteriyor.
+                  Sezgilerinize güvenin ve inner wisdom'ınızı dinleyin.
+                </p>
+              </div>
+            </div>
+
+            <button
+              onclick="drawNewCard()"
+              class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full font-semibold hover:from-purple-600 hover:to-pink-600 transition-all"
+            >
+              Yeni Kart Çek
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card Spread Options -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Kart Yayılımları</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+            <div class="text-center mb-4">
+              <div class="text-4xl mb-2">🎯</div>
+              <h3 class="text-xl font-bold">Tek Kart Rehberlik</h3>
+            </div>
+            <p class="text-gray-600 text-sm mb-4">
+              Günlük rehberlik için basit ve etkili. Bir soru sorun ve kartın mesajını alın.
+            </p>
+            <button class="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white py-2 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-600 transition-all">
+              Kart Çek
+            </button>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+            <div class="text-center mb-4">
+              <div class="text-4xl mb-2">🔺</div>
+              <h3 class="text-xl font-bold">Üçlü Kart (Geçmiş-Şimdi-Gelecek)</h3>
+            </div>
+            <p class="text-gray-600 text-sm mb-4">
+              Durumunuzun farklı boyutlarını anlayın. Zaman çizelgesinde yolculuk yapın.
+            </p>
+            <button class="w-full bg-gradient-to-r from-green-500 to-blue-500 text-white py-2 rounded-lg font-semibold hover:from-green-600 hover:to-blue-600 transition-all">
+              Yayılım Yap
+            </button>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+            <div class="text-center mb-4">
+              <div class="text-4xl mb-2">💎</div>
+              <h3 class="text-xl font-bold">Celtic Cross</h3>
+            </div>
+            <p class="text-gray-600 text-sm mb-4">
+              Kapsamlı analiz için 10 kartlık klasik yayılım. Derinlemesine içgörü.
+            </p>
+            <button class="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-2 rounded-lg font-semibold hover:from-purple-600 hover:to-pink-600 transition-all">
+              Büyük Yayılım
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Oracle vs Tarot -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Tarot vs Oracle Kartları</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl p-8">
+            <div class="text-center mb-6">
+              <div class="text-4xl mb-2">🃏</div>
+              <h3 class="text-2xl font-bold text-purple-800">Tarot Kartları</h3>
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-start space-x-3">
+                <span class="text-purple-500">•</span>
+                <p class="text-gray-700"><strong>78 kart</strong> - 22 Major Arcana, 56 Minor Arcana</p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <span class="text-purple-500">•</span>
+                <p class="text-gray-700"><strong>Yapılandırılmış sistem</strong> - Belirli anlamlar ve semboller</p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <span class="text-purple-500">•</span>
+                <p class="text-gray-700"><strong>Derin analiz</strong> - Karmaşık durumlar için ideal</p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <span class="text-purple-500">•</span>
+                <p class="text-gray-700"><strong>Gelecek odaklı</strong> - Olası sonuçlar ve trendler</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-br from-pink-50 to-orange-50 rounded-xl p-8">
+            <div class="text-center mb-6">
+              <div class="text-4xl mb-2">🌸</div>
+              <h3 class="text-2xl font-bold text-pink-800">Oracle Kartları</h3>
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-start space-x-3">
+                <span class="text-pink-500">•</span>
+                <p class="text-gray-700"><strong>Değişken sayı</strong> - Genellikle 44-50 kart</p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <span class="text-pink-500">•</span>
+                <p class="text-gray-700"><strong>Serbest format</strong> - Yaratıcı ve sezgisel mesajlar</p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <span class="text-pink-500">•</span>
+                <p class="text-gray-700"><strong>Pozitif rehberlik</strong> - İlham ve motivasyon odaklı</p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <span class="text-pink-500">•</span>
+                <p class="text-gray-700"><strong>Şimdiki an</strong> - Mevcut durum ve inner guidance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Card Reading -->
+      <section class="mb-16">
+        <div class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-3xl p-8 text-white">
+          <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold mb-4">İnteraktif Kart Falı</h2>
+            <p class="text-lg opacity-90">Sorunuzu sorun ve kartınızı çekin</p>
+          </div>
+
+          <div class="max-w-2xl mx-auto">
+            <div class="bg-white/20 backdrop-blur-md rounded-xl p-6 mb-6">
+              <label class="block text-sm font-semibold mb-2">Sorunuzu yazın:</label>
+              <textarea
+                class="w-full p-3 rounded-lg text-gray-800 resize-none"
+                rows="3"
+                placeholder="Hangi konuda rehberlik istiyorsunuz?"
+              ></textarea>
+            </div>
+
+            <div class="text-center">
+              <button
+                onclick="performReading()"
+                class="bg-white text-purple-600 px-8 py-3 rounded-full font-bold hover:bg-purple-50 transition-all transform hover:scale-105"
+              >
+                🔮 Kartımı Çek
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card Meanings Guide -->
+      <section>
+        <h2 class="text-3xl font-bold text-center mb-8">Kart Anlamları Rehberi</h2>
+        <div class="grid md:grid-cols-4 gap-4">
+          {[
+            { name: 'The Fool', emoji: '🌟', meaning: 'Yeni başlangıçlar, masumiyet' },
+            { name: 'The Magician', emoji: '✨', meaning: 'Manifestasyon, güç' },
+            { name: 'The High Priestess', emoji: '🌙', meaning: 'Sezgi, gizli bilgi' },
+            { name: 'The Empress', emoji: '🌺', meaning: 'Bolluk, annelik' },
+            { name: 'The Emperor', emoji: '👑', meaning: 'Otorite, liderlik' },
+            { name: 'The Hierophant', emoji: '📿', meaning: 'Gelenek, spiritual öğretim' },
+            { name: 'The Lovers', emoji: '💕', meaning: 'Aşk, seçimler' },
+            { name: 'The Chariot', emoji: '🏆', meaning: 'Zafer, kontrol' }
+          ].map((card) => (
+            <div class="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-all">
+              <div class="text-center">
+                <div class="text-3xl mb-2">{card.emoji}</div>
+                <h4 class="font-semibold text-sm mb-1">{card.name}</h4>
+                <p class="text-xs text-gray-600">{card.meaning}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    function drawNewCard() {
+      // Array of cards with their meanings
+      const cards = [
+        {
+          name: "The Sun",
+          emoji: "☀️",
+          arcana: "XIX - Major Arcana",
+          message: "Mutluluk, başarı ve pozitif enerji kartı. Her şey yoluna giriyor."
+        },
+        {
+          name: "The Moon",
+          emoji: "🌙",
+          arcana: "XVIII - Major Arcana",
+          message: "Sezgiler güçlü, ancak illüzyonlara dikkat. İç sesinizi dinleyin."
+        },
+        {
+          name: "The Star",
+          emoji: "⭐",
+          arcana: "XVII - Major Arcana",
+          message: "Umut, ilham ve spiritual rehberlik. Hayallerinize inanın."
+        },
+        {
+          name: "Death",
+          emoji: "🔄",
+          arcana: "XIII - Major Arcana",
+          message: "Dönüşüm ve yenilenme zamanı. Eskiyi bırakıp yeniye açılın."
+        },
+        {
+          name: "The Wheel of Fortune",
+          emoji: "🎡",
+          arcana: "X - Major Arcana",
+          message: "Şans ve değişim döngüsü. Pozitif bir dönüm noktası yaklaşıyor."
+        }
+      ];
+
+      const randomCard = cards[Math.floor(Math.random() * cards.length)];
+
+      // Update the card display
+      const cardContainer = document.querySelector('.bg-white.rounded-xl.p-6.shadow-lg.mb-6');
+      cardContainer.innerHTML = `
+        <div class="text-6xl mb-4">${randomCard.emoji}</div>
+        <h3 class="text-2xl font-bold text-purple-800 mb-2">${randomCard.name}</h3>
+        <p class="text-sm text-gray-600 mb-4">${randomCard.arcana}</p>
+        <p class="text-gray-700 mb-4">${randomCard.message}</p>
+        <div class="bg-purple-50 rounded-lg p-4">
+          <h4 class="font-semibold text-purple-800 mb-2">Bugünün Mesajı:</h4>
+          <p class="text-sm text-gray-700">${randomCard.message}</p>
+        </div>
+      `;
+    }
+
+    function performReading() {
+      const question = document.querySelector('textarea').value;
+      if (!question.trim()) {
+        alert('Lütfen önce sorunuzu yazın.');
+        return;
+      }
+
+      // Simple reading simulation
+      alert('Kartınız çekiliyor... Kart falınız hazırlanıyor.');
+      drawNewCard();
+    }
+  </script>
+</Layout>

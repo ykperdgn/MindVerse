@@ -2,7 +2,7 @@
 title: "Boğa Günlük Yorumu - 19.06.2025"
 description: "Boğa burcu için günlük astroloji yorumu. Aşk, kariyer, sağlık ve genel rehberlik."
 keywords: "boğa, günlük yorum, toprak, astroloji, burç"
-date: 2025-06-19
+pubDate: 2025-06-19
 category: "astrology"
 tags: ["astrology", "boga", "daily", "toprak"]
 author: "MindVerse Astroloji"

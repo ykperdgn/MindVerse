@@ -11,8 +11,9 @@ export async function getStaticPaths() {
 
 const { category } = Astro.params;
 
-// Get articles from the Turkish collection and adapt for English
-const articles = await getCollection(category);
+// Get only English articles (files ending with _en.md)
+const allArticles = await getCollection(category);
+const articles = allArticles.filter(article => article.id.endsWith('_en.md') || article.id.endsWith('_en'));
 
 // Category information for English
 const categoryInfo = {
@@ -32,8 +33,23 @@ const info = categoryInfo[category];
   title={`${info.name} - MindVerse English`}
   description={`${info.description}. English content about ${category}.`}
   keywords={`${category}, English, ${info.name.toLowerCase()}, articles, content`}
->
-  <div class="container mx-auto px-4 py-8">
+>  <div class="container mx-auto px-4 py-8">
+
+    <!-- Navigation Breadcrumb -->
+    <div class="mb-8">
+      <nav class="flex items-center space-x-2 text-sm">
+        <a href="/en" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+          <span class="mr-1">🏠</span>Home
+        </a>
+        <span class="text-gray-400">›</span>
+        <a href="/en/categories" class="text-blue-600 hover:text-blue-800 transition-colors">
+          📁 All Categories
+        </a>
+        <span class="text-gray-400">›</span>
+        <span class="text-gray-600 font-medium">{info.icon} {info.name}</span>
+      </nav>
+    </div>
+
     <!-- Category Header -->
     <div class="text-center mb-12">
       <div class="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 text-white shadow-xl">

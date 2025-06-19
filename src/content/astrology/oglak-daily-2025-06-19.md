@@ -2,7 +2,7 @@
 title: "Capricorn Daily Horoscope - June 19, 2025"
 description: "Daily astrology reading for Capricorn. Love, career, health and general guidance."
 keywords: "capricorn, daily horoscope, earth, astrology, zodiac"
-date: 2025-06-19
+pubDate: 2025-06-19
 category: "astrology"
 tags: ["astrology", "oglak", "daily", "earth"]
 author: "MindVerse Astroloji"

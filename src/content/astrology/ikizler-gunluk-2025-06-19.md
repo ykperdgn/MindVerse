@@ -2,7 +2,7 @@
 title: "İkizler Günlük Yorumu - 19.06.2025"
 description: "İkizler burcu için günlük astroloji yorumu. Aşk, kariyer, sağlık ve genel rehberlik."
 keywords: "i̇kizler, günlük yorum, hava, astroloji, burç"
-date: 2025-06-19
+pubDate: 2025-06-19
 category: "astrology"
 tags: ["astrology", "ikizler", "daily", "hava"]
 author: "MindVerse Astroloji"

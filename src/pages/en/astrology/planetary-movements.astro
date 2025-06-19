@@ -1,0 +1,223 @@
+---
+import Layout from '../../../components/Layout.astro';
+---
+
+<Layout
+  title="Planetary Movements - Astrology Calendar"
+  description="Current planetary positions, retrogrades and astrological influences. Detailed planetary calendar and analysis."
+>  <main class="min-h-screen">
+
+    <!-- Navigation Breadcrumb -->
+    <div class="bg-gray-50 shadow-sm border-b py-3">
+      <div class="container mx-auto px-4">
+        <nav class="flex items-center space-x-2 text-sm">
+          <a href="/en" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+            <span class="mr-1">🏠</span>Home
+          </a>
+          <span class="text-gray-400">›</span>
+          <a href="/en/categories" class="text-blue-600 hover:text-blue-800 transition-colors">
+            📁 All Categories
+          </a>
+          <span class="text-gray-400">›</span>
+          <a href="/en/astrology" class="text-blue-600 hover:text-blue-800 transition-colors">
+            🔮 Astrology
+          </a>
+          <span class="text-gray-400">›</span>
+          <span class="text-gray-600 font-medium">🪐 Planetary Movements</span>
+        </nav>
+      </div>
+    </div>    <!-- Hero Section -->
+    <div class="bg-gradient-to-br from-blue-500 via-purple-500 to-indigo-500 text-white py-16">
+      <div class="container mx-auto px-4 text-center">
+        <div class="text-8xl mb-4">🪐</div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Planetary Movements
+        </h1>
+        <p class="text-xl mb-2">Current Astrological Positions</p>
+        <p class="text-lg opacity-90">Retrograde Periods and Effects</p>
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-12">
+      <!-- Current Planetary Positions -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Current Planetary Positions</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-xl p-6 shadow-lg">
+            <div class="flex items-center mb-4">
+              <span class="text-3xl mr-3">☀️</span>
+              <div>
+                <h3 class="font-bold text-xl">Sun</h3>
+                <p class="text-gray-600">in Gemini</p>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700">
+              Sun in Gemini enhances communication and learning activities.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-lg">
+            <div class="flex items-center mb-4">
+              <span class="text-3xl mr-3">🌙</span>
+              <div>
+                <h3 class="font-bold text-xl">Moon</h3>
+                <p class="text-gray-600">Variable Position</p>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700">
+              Moon's daily movements affect our emotional state and intuition.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-lg">
+            <div class="flex items-center mb-4">
+              <span class="text-3xl mr-3">☿️</span>
+              <div>
+                <h3 class="font-bold text-xl">Mercury</h3>
+                <p class="text-gray-600">in Gemini</p>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700">
+              Mercury in its home sign brings clarity in communication and technology.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-lg">
+            <div class="flex items-center mb-4">
+              <span class="text-3xl mr-3">♀️</span>
+              <div>
+                <h3 class="font-bold text-xl">Venus</h3>
+                <p class="text-gray-600">in Cancer</p>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700">
+              Venus in Cancer brings positive developments in family and home matters.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-lg">
+            <div class="flex items-center mb-4">
+              <span class="text-3xl mr-3">♂️</span>
+              <div>
+                <h3 class="font-bold text-xl">Mars</h3>
+                <p class="text-gray-600">in Leo</p>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700">
+              Mars in Leo boosts creativity and leadership energy.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-lg">
+            <div class="flex items-center mb-4">
+              <span class="text-3xl mr-3">♃</span>
+              <div>
+                <h3 class="font-bold text-xl">Jupiter</h3>
+                <p class="text-gray-600">in Gemini</p>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700">
+              Jupiter in Gemini brings expansion in education and travel.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Retrograde Periods -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Retrograde Periods</h2>
+        <div class="bg-gradient-to-r from-red-50 to-orange-50 rounded-xl p-8">
+          <div class="text-center mb-6">
+            <span class="text-4xl">⚠️</span>
+            <h3 class="text-2xl font-bold text-red-800 mt-2">Important Periods to Watch</h3>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-bold text-lg mb-2">Mercury Retrograde</h4>
+              <p class="text-gray-600 mb-2">June 23 - July 15, 2025</p>
+              <p class="text-sm text-gray-700">
+                Expect communication issues, technology glitches, and travel delays.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-bold text-lg mb-2">Venus Retrograde</h4>
+              <p class="text-gray-600 mb-2">August 12 - October 3, 2025</p>
+              <p class="text-sm text-gray-700">
+                A time to review relationships. Past lovers may return.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Monthly Forecast -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Monthly Planetary Calendar</h2>
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <div class="bg-gradient-to-r from-purple-500 to-blue-500 text-white p-6">
+            <h3 class="text-xl font-bold">June 2025 Highlights</h3>
+          </div>
+          <div class="p-6">
+            <div class="space-y-4">
+              <div class="flex items-start space-x-4">
+                <div class="bg-blue-100 rounded-full p-2">
+                  <span class="text-xl">🌕</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold">June 21 - Summer Solstice</h4>
+                  <p class="text-gray-600">Sun enters Cancer. Perfect time for new beginnings.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div class="bg-red-100 rounded-full p-2">
+                  <span class="text-xl">☿️</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold">June 23 - Mercury Retrograde Begins</h4>
+                  <p class="text-gray-600">A period requiring caution in communication and technology.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div class="bg-green-100 rounded-full p-2">
+                  <span class="text-xl">♀️</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold">June 28 - Venus in Leo</h4>
+                  <p class="text-gray-600">Positive developments in creativity and romance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tips and Advice -->
+      <section>
+        <h2 class="text-3xl font-bold text-center mb-8">How to Work with Planetary Movements</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-gradient-to-br from-green-400 to-blue-500 text-white rounded-xl p-6">
+            <div class="text-3xl mb-4">🎯</div>
+            <h3 class="text-xl font-bold mb-3">Timing</h3>
+            <p>Time important decisions according to planetary positions.</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-purple-400 to-pink-500 text-white rounded-xl p-6">
+            <div class="text-3xl mb-4">🧘‍♀️</div>
+            <h3 class="text-xl font-bold mb-3">Awareness</h3>
+            <p>Be patient during retrograde periods and focus on review.</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-orange-400 to-red-500 text-white rounded-xl p-6">
+            <div class="text-3xl mb-4">🌟</div>
+            <h3 class="text-xl font-bold mb-3">Growth</h3>
+            <p>Use planetary energies for personal development.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>

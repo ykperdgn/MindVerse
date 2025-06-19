@@ -2,7 +2,7 @@
 title: "Akrep Günlük Yorumu - 19.06.2025"
 description: "Akrep burcu için günlük astroloji yorumu. Aşk, kariyer, sağlık ve genel rehberlik."
 keywords: "akrep, günlük yorum, su, astroloji, burç"
-date: 2025-06-19
+pubDate: 2025-06-19
 category: "astrology"
 tags: ["astrology", "akrep", "daily", "su"]
 author: "MindVerse Astroloji"

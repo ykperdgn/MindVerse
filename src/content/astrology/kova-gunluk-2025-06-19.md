@@ -2,7 +2,7 @@
 title: "Kova Günlük Yorumu - 19.06.2025"
 description: "Kova burcu için günlük astroloji yorumu. Aşk, kariyer, sağlık ve genel rehberlik."
 keywords: "kova, günlük yorum, hava, astroloji, burç"
-date: 2025-06-19
+pubDate: 2025-06-19
 category: "astrology"
 tags: ["astrology", "kova", "daily", "hava"]
 author: "MindVerse Astroloji"

@@ -2,7 +2,7 @@
 title: "Koç Günlük Yorumu - 19.06.2025"
 description: "Koç burcu için günlük astroloji yorumu. Aşk, kariyer, sağlık ve genel rehberlik."
 keywords: "koç, günlük yorum, ateş, astroloji, burç"
-date: 2025-06-19
+pubDate: 2025-06-19
 category: "astrology"
 tags: ["astrology", "koc", "daily", "ateş"]
 author: "MindVerse Astroloji"

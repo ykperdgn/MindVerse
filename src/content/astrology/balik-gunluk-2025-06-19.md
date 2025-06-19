@@ -2,7 +2,7 @@
 title: "Balık Günlük Yorumu - 19.06.2025"
 description: "Balık burcu için günlük astroloji yorumu. Aşk, kariyer, sağlık ve genel rehberlik."
 keywords: "balık, günlük yorum, su, astroloji, burç"
-date: 2025-06-19
+pubDate: 2025-06-19
 category: "astrology"
 tags: ["astrology", "balik", "daily", "su"]
 author: "MindVerse Astroloji"

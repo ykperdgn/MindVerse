@@ -228,7 +228,38 @@ const currentUrl = canonicalUrl || Astro.url.href;
               <span class="text-sm font-semibold text-pink-800">Astroloji</span>
             </div>
           </a>
-        </div>        <div class="border-t border-gray-300 pt-6 text-center">
+        </div>
+
+        <!-- Newsletter Signup Section -->
+        <div class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-3xl p-8 text-white text-center mb-8">
+          <div class="max-w-2xl mx-auto">
+            <div class="text-5xl mb-4">📬</div>
+            <h3 class="text-2xl font-bold mb-3">Stay Updated with MindVerse</h3>
+            <p class="text-white/90 mb-6">Get the latest astrology insights, daily horoscopes, and exclusive content delivered to your inbox.</p>
+
+            <form id="newsletter-form" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                required
+                class="flex-1 px-4 py-3 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all"
+                id="newsletter-email"
+              />
+              <button
+                type="submit"
+                class="bg-white text-purple-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg"
+              >
+                Subscribe ✨
+              </button>
+            </form>
+
+            <p class="text-xs text-white/70 mt-3">
+              🔒 We respect your privacy. Unsubscribe at any time.
+            </p>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-300 pt-6 text-center">
           <p class="text-sm text-gray-600 mb-2">
             © 2025 MindVerse Daily. Tüm hakları saklıdır.
           </p>
@@ -239,6 +270,16 @@ const currentUrl = canonicalUrl || Astro.url.href;
       </div>
     </footer>
   </div>
+
+  <!-- Back to Top Button -->
+  <button
+    id="back-to-top"
+    class="fixed bottom-6 right-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-110 z-50 opacity-0 invisible"
+  >
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+  </button>
 
   <script>
     // Mobile menu toggle functionality
@@ -257,12 +298,53 @@ const currentUrl = canonicalUrl || Astro.url.href;
             mobileMenu.classList.add('hidden');
           }
         });
+      }
 
-        // Close mobile menu when clicking on a link
-        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-        mobileMenuLinks.forEach(link => {
-          link.addEventListener('click', function() {
-            mobileMenu.classList.add('hidden');
+      // Newsletter form functionality
+      const newsletterForm = document.getElementById('newsletter-form');
+      if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const email = document.getElementById('newsletter-email').value;
+
+          // Show success message
+          const button = this.querySelector('button');
+          const originalText = button.textContent;
+          button.textContent = 'Subscribed! ✅';
+          button.classList.add('bg-green-500', 'text-white');
+          button.classList.remove('bg-white', 'text-purple-600');
+
+          // Reset after 3 seconds
+          setTimeout(() => {
+            button.textContent = originalText;
+            button.classList.remove('bg-green-500', 'text-white');
+            button.classList.add('bg-white', 'text-purple-600');
+            document.getElementById('newsletter-email').value = '';
+          }, 3000);          // Here you would typically send the email to your newsletter service
+          console.log('Newsletter signup:', email);
+        });
+      }
+
+      // Back to top functionality
+      const backToTopButton = document.getElementById('back-to-top');
+
+      if (backToTopButton) {
+        // Show/hide button based on scroll position
+        window.addEventListener('scroll', function() {
+          if (window.pageYOffset > 300) {
+            backToTopButton.classList.remove('opacity-0', 'invisible');
+            backToTopButton.classList.add('opacity-100', 'visible');
+          } else {
+            backToTopButton.classList.add('opacity-0', 'invisible');
+            backToTopButton.classList.remove('opacity-100', 'visible');
+          }
+        });
+
+        // Smooth scroll to top when clicked
+        backToTopButton.addEventListener('click', function() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
           });
         });
       }

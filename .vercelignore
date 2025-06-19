@@ -1,0 +1,28 @@
+# Vercel ignore file
+node_modules
+.git
+.env*
+*.log
+.DS_Store
+dist
+.astro
+.vercel
+
+# Development files
+*.md
+!README.md
+completion_*.md
+*_REPORT.md
+*_GUIDE.md
+*_STATUS.md
+
+# Python scripts (not needed for deployment)
+*.py
+__pycache__
+
+# JSON config files that are not needed
+*.json
+!package.json
+
+# Development only files
+.nvmrc

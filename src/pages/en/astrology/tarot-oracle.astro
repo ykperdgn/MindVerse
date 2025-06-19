@@ -1,0 +1,301 @@
+---
+import Layout from '../../../components/Layout.astro';
+---
+
+<Layout
+  title="Tarot & Oracle Cards - Mystical Guidance"
+  description="Daily tarot card reading, oracle guidance and spiritual direction. Free card reading."
+>  <main class="min-h-screen">
+
+    <!-- Navigation Breadcrumb -->
+    <div class="bg-gray-50 shadow-sm border-b py-3">
+      <div class="container mx-auto px-4">
+        <nav class="flex items-center space-x-2 text-sm">
+          <a href="/en" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+            <span class="mr-1">🏠</span>Home
+          </a>
+          <span class="text-gray-400">›</span>
+          <a href="/en/categories" class="text-blue-600 hover:text-blue-800 transition-colors">
+            📁 All Categories
+          </a>
+          <span class="text-gray-400">›</span>
+          <a href="/en/astrology" class="text-blue-600 hover:text-blue-800 transition-colors">
+            🔮 Astrology
+          </a>
+          <span class="text-gray-400">›</span>
+          <span class="text-gray-600 font-medium">🔮 Tarot & Oracle</span>
+        </nav>
+      </div>
+    </div>    <!-- Hero Section -->
+    <div class="bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 text-white py-16">
+      <div class="container mx-auto px-4 text-center">
+        <div class="text-8xl mb-4">🔮</div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Tarot & Oracle Cards
+        </h1>
+        <p class="text-xl mb-2">Spiritual Guidance and Inner Wisdom</p>
+        <p class="text-lg opacity-90">Daily Card Reading and Direction</p>
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-12">
+      <!-- Daily Card Draw -->
+      <section class="mb-16">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-bold mb-4">Card of the Day</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto mb-8">
+            Your specially selected card for today. Listen to your inner voice and feel the card's message with your heart.
+          </p>
+        </div>
+
+        <div class="max-w-lg mx-auto">
+          <div class="bg-gradient-to-br from-purple-100 to-pink-100 rounded-3xl p-8 text-center">
+            <div class="bg-white rounded-xl p-6 shadow-lg mb-6">
+              <div class="text-6xl mb-4">🌟</div>
+              <h3 class="text-2xl font-bold text-purple-800 mb-2">The Star</h3>
+              <p class="text-sm text-gray-600 mb-4">XVII - Major Arcana</p>
+              <p class="text-gray-700 mb-4">
+                Card of hope, inspiration and spiritual guidance. Enlightenment that comes after dark periods.
+              </p>
+              <div class="bg-purple-50 rounded-lg p-4">
+                <h4 class="font-semibold text-purple-800 mb-2">Today's Message:</h4>
+                <p class="text-sm text-gray-700">
+                  Don't lose faith. The stars show you're on the right path.
+                  Trust your intuition and listen to your inner wisdom.
+                </p>
+              </div>
+            </div>
+
+            <button
+              onclick="drawNewCard()"
+              class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full font-semibold hover:from-purple-600 hover:to-pink-600 transition-all"
+            >
+              Draw New Card
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card Spread Options -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Card Spreads</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+            <div class="text-center mb-4">
+              <div class="text-4xl mb-2">🎯</div>
+              <h3 class="text-xl font-bold">Single Card Guidance</h3>
+            </div>
+            <p class="text-gray-600 text-sm mb-4">
+              Simple and effective for daily guidance. Ask a question and receive the card's message.
+            </p>
+            <button class="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white py-2 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-600 transition-all">
+              Draw Card
+            </button>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+            <div class="text-center mb-4">
+              <div class="text-4xl mb-2">🔺</div>
+              <h3 class="text-xl font-bold">Three Card Spread (Past-Present-Future)</h3>
+            </div>
+            <p class="text-gray-600 text-sm mb-4">
+              Understand different dimensions of your situation. Journey through the timeline.
+            </p>
+            <button class="w-full bg-gradient-to-r from-green-500 to-blue-500 text-white py-2 rounded-lg font-semibold hover:from-green-600 hover:to-blue-600 transition-all">
+              Create Spread
+            </button>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+            <div class="text-center mb-4">
+              <div class="text-4xl mb-2">💎</div>
+              <h3 class="text-xl font-bold">Celtic Cross</h3>
+            </div>
+            <p class="text-gray-600 text-sm mb-4">
+              Classic 10-card spread for comprehensive analysis. Deep insights.
+            </p>
+            <button class="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-2 rounded-lg font-semibold hover:from-purple-600 hover:to-pink-600 transition-all">
+              Big Spread
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Oracle vs Tarot -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Tarot vs Oracle Cards</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl p-8">
+            <div class="text-center mb-6">
+              <div class="text-4xl mb-2">🃏</div>
+              <h3 class="text-2xl font-bold text-purple-800">Tarot Cards</h3>
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-start space-x-3">
+                <span class="text-purple-500">•</span>
+                <p class="text-gray-700"><strong>78 cards</strong> - 22 Major Arcana, 56 Minor Arcana</p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <span class="text-purple-500">•</span>
+                <p class="text-gray-700"><strong>Structured system</strong> - Specific meanings and symbols</p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <span class="text-purple-500">•</span>
+                <p class="text-gray-700"><strong>Deep analysis</strong> - Ideal for complex situations</p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <span class="text-purple-500">•</span>
+                <p class="text-gray-700"><strong>Future focused</strong> - Possible outcomes and trends</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-br from-pink-50 to-orange-50 rounded-xl p-8">
+            <div class="text-center mb-6">
+              <div class="text-4xl mb-2">🌸</div>
+              <h3 class="text-2xl font-bold text-pink-800">Oracle Cards</h3>
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-start space-x-3">
+                <span class="text-pink-500">•</span>
+                <p class="text-gray-700"><strong>Variable number</strong> - Usually 44-50 cards</p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <span class="text-pink-500">•</span>
+                <p class="text-gray-700"><strong>Free format</strong> - Creative and intuitive messages</p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <span class="text-pink-500">•</span>
+                <p class="text-gray-700"><strong>Positive guidance</strong> - Inspiration and motivation focused</p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <span class="text-pink-500">•</span>
+                <p class="text-gray-700"><strong>Present moment</strong> - Current situation and inner guidance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Card Reading -->
+      <section class="mb-16">
+        <div class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-3xl p-8 text-white">
+          <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold mb-4">Interactive Card Reading</h2>
+            <p class="text-lg opacity-90">Ask your question and draw your card</p>
+          </div>
+
+          <div class="max-w-2xl mx-auto">
+            <div class="bg-white/20 backdrop-blur-md rounded-xl p-6 mb-6">
+              <label class="block text-sm font-semibold mb-2">Write your question:</label>
+              <textarea
+                class="w-full p-3 rounded-lg text-gray-800 resize-none"
+                rows="3"
+                placeholder="What guidance are you seeking?"
+              ></textarea>
+            </div>
+
+            <div class="text-center">
+              <button
+                onclick="performReading()"
+                class="bg-white text-purple-600 px-8 py-3 rounded-full font-bold hover:bg-purple-50 transition-all transform hover:scale-105"
+              >
+                🔮 Draw My Card
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card Meanings Guide -->
+      <section>
+        <h2 class="text-3xl font-bold text-center mb-8">Card Meanings Guide</h2>
+        <div class="grid md:grid-cols-4 gap-4">
+          {[
+            { name: 'The Fool', emoji: '🌟', meaning: 'New beginnings, innocence' },
+            { name: 'The Magician', emoji: '✨', meaning: 'Manifestation, power' },
+            { name: 'The High Priestess', emoji: '🌙', meaning: 'Intuition, hidden knowledge' },
+            { name: 'The Empress', emoji: '🌺', meaning: 'Abundance, motherhood' },
+            { name: 'The Emperor', emoji: '👑', meaning: 'Authority, leadership' },
+            { name: 'The Hierophant', emoji: '📿', meaning: 'Tradition, spiritual teaching' },
+            { name: 'The Lovers', emoji: '💕', meaning: 'Love, choices' },
+            { name: 'The Chariot', emoji: '🏆', meaning: 'Victory, control' }
+          ].map((card) => (
+            <div class="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-all">
+              <div class="text-center">
+                <div class="text-3xl mb-2">{card.emoji}</div>
+                <h4 class="font-semibold text-sm mb-1">{card.name}</h4>
+                <p class="text-xs text-gray-600">{card.meaning}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    function drawNewCard() {
+      // Array of cards with their meanings
+      const cards = [
+        {
+          name: "The Sun",
+          emoji: "☀️",
+          arcana: "XIX - Major Arcana",
+          message: "Card of happiness, success and positive energy. Everything is falling into place."
+        },
+        {
+          name: "The Moon",
+          emoji: "🌙",
+          arcana: "XVIII - Major Arcana",
+          message: "Intuition is strong, but beware of illusions. Listen to your inner voice."
+        },
+        {
+          name: "The Star",
+          emoji: "⭐",
+          arcana: "XVII - Major Arcana",
+          message: "Hope, inspiration and spiritual guidance. Believe in your dreams."
+        },
+        {
+          name: "Death",
+          emoji: "🔄",
+          arcana: "XIII - Major Arcana",
+          message: "Time for transformation and renewal. Let go of the old and embrace the new."
+        },
+        {
+          name: "The Wheel of Fortune",
+          emoji: "🎡",
+          arcana: "X - Major Arcana",
+          message: "Cycle of luck and change. A positive turning point approaches."
+        }
+      ];
+
+      const randomCard = cards[Math.floor(Math.random() * cards.length)];
+
+      // Update the card display
+      const cardContainer = document.querySelector('.bg-white.rounded-xl.p-6.shadow-lg.mb-6');
+      cardContainer.innerHTML = `
+        <div class="text-6xl mb-4">${randomCard.emoji}</div>
+        <h3 class="text-2xl font-bold text-purple-800 mb-2">${randomCard.name}</h3>
+        <p class="text-sm text-gray-600 mb-4">${randomCard.arcana}</p>
+        <p class="text-gray-700 mb-4">${randomCard.message}</p>
+        <div class="bg-purple-50 rounded-lg p-4">
+          <h4 class="font-semibold text-purple-800 mb-2">Today's Message:</h4>
+          <p class="text-sm text-gray-700">${randomCard.message}</p>
+        </div>
+      `;
+    }
+
+    function performReading() {
+      const question = document.querySelector('textarea').value;
+      if (!question.trim()) {
+        alert('Please write your question first.');
+        return;
+      }
+
+      // Simple reading simulation
+      alert('Drawing your card... Preparing your reading.');
+      drawNewCard();
+    }
+  </script>
+</Layout>

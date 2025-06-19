@@ -41,34 +41,20 @@ layout: "../../components/Layout.astro"
                 </label>
                 <input type="text" id="person1-name" placeholder="Adınız"
                        class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-              </div>
-              <div>
+              </div>              <div>
                 <label class="block text-sm font-semibold text-gray-700 mb-2">
                   Doğum Tarihi
                 </label>
                 <input type="date" id="person1-date" required
-                       class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-              </div>
-              <div>
+                       class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                       onchange="updateZodiacSign('person1')">
+              </div>              <div>
                 <label class="block text-sm font-semibold text-gray-700 mb-2">
-                  Burcu
+                  Burç (Otomatik Hesaplanır)
                 </label>
-                <select id="person1-sign" required
-                        class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                  <option value="">Burç seçin...</option>
-                  <option value="aries">♈ Koç</option>
-                  <option value="taurus">♉ Boğa</option>
-                  <option value="gemini">♊ İkizler</option>
-                  <option value="cancer">♋ Yengeç</option>
-                  <option value="leo">♌ Aslan</option>
-                  <option value="virgo">♍ Başak</option>
-                  <option value="libra">♎ Terazi</option>
-                  <option value="scorpio">♏ Akrep</option>
-                  <option value="sagittarius">♐ Yay</option>
-                  <option value="capricorn">♑ Oğlak</option>
-                  <option value="aquarius">♒ Kova</option>
-                  <option value="pisces">♓ Balık</option>
-                </select>
+                <input type="text" id="person1-sign" readonly
+                       class="w-full px-4 py-3 border border-gray-200 rounded-xl bg-gray-50 text-gray-600"
+                       placeholder="Doğum tarihi seçildikten sonra otomatik hesaplanacak">
               </div>
             </div>
           </div>
@@ -83,36 +69,22 @@ layout: "../../components/Layout.astro"
                 </label>
                 <input type="text" id="person2-name" placeholder="Partnerinizin adı"
                        class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent">
-              </div>
-              <div>
+              </div>              <div>
                 <label class="block text-sm font-semibold text-gray-700 mb-2">
                   Doğum Tarihi
                 </label>
                 <input type="date" id="person2-date" required
-                       class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+                       class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                       onchange="updateZodiacSign('person2')">
               </div>
               <div>
                 <label class="block text-sm font-semibold text-gray-700 mb-2">
-                  Burcu
+                  Burç (Otomatik Hesaplanır)
                 </label>
-                <select id="person2-sign" required
-                        class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent">
-                  <option value="">Burç seçin...</option>
-                  <option value="aries">♈ Koç</option>
-                  <option value="taurus">♉ Boğa</option>
-                  <option value="gemini">♊ İkizler</option>
-                  <option value="cancer">♋ Yengeç</option>
-                  <option value="leo">♌ Aslan</option>
-                  <option value="virgo">♍ Başak</option>
-                  <option value="libra">♎ Terazi</option>
-                  <option value="scorpio">♏ Akrep</option>
-                  <option value="sagittarius">♐ Yay</option>
-                  <option value="capricorn">♑ Oğlak</option>
-                  <option value="aquarius">♒ Kova</option>
-                  <option value="pisces">♓ Balık</option>
-                </select>
-              </div>
-            </div>
+                <input type="text" id="person2-sign" readonly
+                       class="w-full px-4 py-3 border border-gray-200 rounded-xl bg-gray-50 text-gray-600"
+                       placeholder="Doğum tarihi seçildikten sonra otomatik hesaplanacak">
+              </div>            </div>
           </div>
 
           <!-- Analiz Butonu -->
@@ -379,17 +351,18 @@ layout: "../../components/Layout.astro"
     'leo': 'Aslan', 'virgo': 'Başak', 'libra': 'Terazi', 'scorpio': 'Akrep',
     'sagittarius': 'Yay', 'capricorn': 'Oğlak', 'aquarius': 'Kova', 'pisces': 'Balık'
   };
-
   document.getElementById('synastry-calculator').addEventListener('submit', function(e) {
     e.preventDefault();
 
     const person1Name = document.getElementById('person1-name').value || 'Birinci Kişi';
-    const person1Sign = document.getElementById('person1-sign').value;
+    const person1SignInput = document.getElementById('person1-sign');
+    const person1Sign = person1SignInput.getAttribute('data-sign');
     const person2Name = document.getElementById('person2-name').value || 'İkinci Kişi';
-    const person2Sign = document.getElementById('person2-sign').value;
+    const person2SignInput = document.getElementById('person2-sign');
+    const person2Sign = person2SignInput.getAttribute('data-sign');
 
-    if (!person1Sign || !person2Sign) {
-      alert('Lütfen her iki kişinin de burcunu seçin.');
+    if (!person1Sign || !person2Sign || !person1SignInput.value || !person2SignInput.value) {
+      alert('Lütfen her iki kişinin de doğum tarihini girin.');
       return;
     }
 
@@ -497,6 +470,64 @@ layout: "../../components/Layout.astro"
     // Sayfayı sonuç alanına kaydır
     document.getElementById('result-area').scrollIntoView({ behavior: 'smooth' });
   });
+  // Doğum tarihinden burç hesaplama fonksiyonu
+  function updateZodiacSign(person) {
+    const dateInput = document.getElementById(`${person}-date`);
+    const signInput = document.getElementById(`${person}-sign`);
+
+    if (!dateInput.value) {
+      signInput.value = '';
+      return;
+    }
+
+    const date = new Date(dateInput.value);
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+
+    let sign = '';
+    let emoji = '';
+
+    if ((month == 3 && day >= 21) || (month == 4 && day <= 19)) {
+      sign = 'aries';
+      emoji = '♈ Koç';
+    } else if ((month == 4 && day >= 20) || (month == 5 && day <= 20)) {
+      sign = 'taurus';
+      emoji = '♉ Boğa';
+    } else if ((month == 5 && day >= 21) || (month == 6 && day <= 20)) {
+      sign = 'gemini';
+      emoji = '♊ İkizler';
+    } else if ((month == 6 && day >= 21) || (month == 7 && day <= 22)) {
+      sign = 'cancer';
+      emoji = '♋ Yengeç';
+    } else if ((month == 7 && day >= 23) || (month == 8 && day <= 22)) {
+      sign = 'leo';
+      emoji = '♌ Aslan';
+    } else if ((month == 8 && day >= 23) || (month == 9 && day <= 22)) {
+      sign = 'virgo';
+      emoji = '♍ Başak';
+    } else if ((month == 9 && day >= 23) || (month == 10 && day <= 22)) {
+      sign = 'libra';
+      emoji = '♎ Terazi';
+    } else if ((month == 10 && day >= 23) || (month == 11 && day <= 21)) {
+      sign = 'scorpio';
+      emoji = '♏ Akrep';
+    } else if ((month == 11 && day >= 22) || (month == 12 && day <= 21)) {
+      sign = 'sagittarius';
+      emoji = '♐ Yay';
+    } else if ((month == 12 && day >= 22) || (month == 1 && day <= 19)) {
+      sign = 'capricorn';
+      emoji = '♑ Oğlak';
+    } else if ((month == 1 && day >= 20) || (month == 2 && day <= 18)) {
+      sign = 'aquarius';
+      emoji = '♒ Kova';
+    } else {
+      sign = 'pisces';
+      emoji = '♓ Balık';
+    }
+
+    signInput.value = emoji;
+    signInput.setAttribute('data-sign', sign);
+  }
 
   function getCompatibilityDescription(sign1, sign2, score) {
     if (score >= 80) {

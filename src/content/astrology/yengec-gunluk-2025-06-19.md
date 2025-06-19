@@ -2,7 +2,7 @@
 title: "Yengeç Günlük Yorumu - 19.06.2025"
 description: "Yengeç burcu için günlük astroloji yorumu. Aşk, kariyer, sağlık ve genel rehberlik."
 keywords: "yengeç, günlük yorum, su, astroloji, burç"
-date: 2025-06-19
+pubDate: 2025-06-19
 category: "astrology"
 tags: ["astrology", "yengec", "daily", "su"]
 author: "MindVerse Astroloji"

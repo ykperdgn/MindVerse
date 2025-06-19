@@ -1,0 +1,198 @@
+---
+export async function getStaticPaths() {
+  const signs = [
+    { slug: 'aries', name: 'Aries', element: 'fire', dates: 'March 21 - April 19', emoji: '♈', color: 'red' },
+    { slug: 'taurus', name: 'Taurus', element: 'earth', dates: 'April 20 - May 20', emoji: '♉', color: 'green' },
+    { slug: 'gemini', name: 'Gemini', element: 'air', dates: 'May 21 - June 20', emoji: '♊', color: 'yellow' },
+    { slug: 'cancer', name: 'Cancer', element: 'water', dates: 'June 21 - July 22', emoji: '♋', color: 'blue' },
+    { slug: 'leo', name: 'Leo', element: 'fire', dates: 'July 23 - August 22', emoji: '♌', color: 'orange' },
+    { slug: 'virgo', name: 'Virgo', element: 'earth', dates: 'August 23 - September 22', emoji: '♍', color: 'brown' },
+    { slug: 'libra', name: 'Libra', element: 'air', dates: 'September 23 - October 22', emoji: '♎', color: 'pink' },
+    { slug: 'scorpio', name: 'Scorpio', element: 'water', dates: 'October 23 - November 21', emoji: '♏', color: 'purple' },
+    { slug: 'sagittarius', name: 'Sagittarius', element: 'fire', dates: 'November 22 - December 21', emoji: '♐', color: 'indigo' },
+    { slug: 'capricorn', name: 'Capricorn', element: 'earth', dates: 'December 22 - January 19', emoji: '♑', color: 'gray' },
+    { slug: 'aquarius', name: 'Aquarius', element: 'air', dates: 'January 20 - February 18', emoji: '♒', color: 'cyan' },
+    { slug: 'pisces', name: 'Pisces', element: 'water', dates: 'February 19 - March 20', emoji: '♓', color: 'teal' }
+  ];
+
+  return signs.map((sign) => ({
+    params: { slug: sign.slug },
+    props: { sign }
+  }));
+}
+
+const { sign } = Astro.props;
+
+import Layout from '../../../components/Layout.astro';
+import { getCollection } from 'astro:content';
+
+// Get today's horoscope for this sign
+const today = new Date().toISOString().split('T')[0];
+const allHoroscopes = await getCollection('astrology');
+
+// Look for today's horoscope (English version)
+let todayHoroscope = allHoroscopes.find(post =>
+  post.slug.includes(`${sign.slug}-daily-${today}`) ||
+  post.slug.includes(`${sign.slug}-daily`) ||
+  (post.slug.includes(sign.slug) && post.slug.includes('daily'))
+);
+
+// If no specific horoscope found, get the latest one for this sign
+if (!todayHoroscope) {
+  const signHoroscopes = allHoroscopes
+    .filter(post => post.slug.includes(sign.slug) && post.slug.includes('daily'))
+    .sort((a, b) => new Date(b.data.pubDate || b.data.date) - new Date(a.data.pubDate || a.data.date));
+
+  todayHoroscope = signHoroscopes[0];
+}
+
+const colorClasses = {
+  red: 'from-red-500 to-pink-500',
+  green: 'from-green-500 to-emerald-500',
+  yellow: 'from-yellow-500 to-orange-500',
+  blue: 'from-blue-500 to-cyan-500',
+  orange: 'from-orange-500 to-red-500',
+  brown: 'from-amber-600 to-orange-600',
+  pink: 'from-pink-500 to-rose-500',
+  purple: 'from-purple-500 to-indigo-500',
+  indigo: 'from-indigo-500 to-purple-500',
+  gray: 'from-gray-600 to-slate-600',
+  cyan: 'from-cyan-500 to-blue-500',
+  teal: 'from-teal-500 to-cyan-500'
+};
+---
+
+<Layout
+  title={`${sign.name} Daily Horoscope - Today's Astrology Reading`}
+  description={`${sign.name} daily horoscope for today. Love, career, health, and life guidance from professional astrologers.`}
+>
+  <main class="min-h-screen pt-20">
+    <!-- Hero Section -->
+    <div class={`bg-gradient-to-br ${colorClasses[sign.color]} text-white py-16`}>
+      <div class="container mx-auto px-4 text-center">
+        <div class="text-8xl mb-4">{sign.emoji}</div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          {sign.name} Daily Horoscope
+        </h1>
+        <p class="text-xl mb-2">{sign.dates}</p>
+        <p class="text-lg opacity-90">Element: {sign.element.charAt(0).toUpperCase() + sign.element.slice(1)}</p>
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-12">
+      <div class="max-w-4xl mx-auto">
+        <!-- Today's Horoscope Content -->
+        {todayHoroscope ? (
+          <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+            <div class="p-8">
+              <div class="flex items-center justify-between mb-6">
+                <h2 class="text-2xl font-bold text-gray-800">Today's Reading</h2>
+                <span class="text-sm text-gray-500">
+                  {new Date().toLocaleDateString('en-US')}
+                </span>
+              </div>
+
+              <div class="prose max-w-none">
+                <div set:html={todayHoroscope.body} />
+              </div>
+            </div>
+          </div>
+        ) : (
+          <!-- Default horoscope content if no specific content found -->
+          <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+            <div class="p-8">
+              <div class="flex items-center justify-between mb-6">
+                <h2 class="text-2xl font-bold text-gray-800">Today's Reading</h2>
+                <span class="text-sm text-gray-500">
+                  {new Date().toLocaleDateString('en-US')}
+                </span>
+              </div>
+
+              <div class="space-y-6">
+                <div class="p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl">
+                  <h3 class="text-lg font-semibold text-purple-800 mb-3 flex items-center">
+                    <span class="text-2xl mr-2">🌟</span>
+                    General Overview
+                  </h3>
+                  <p class="text-gray-700">
+                    Today brings significant developments for {sign.name}.
+                    Your energy is high and your motivation is at its peak. Don't miss the opportunities that come your way.
+                  </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div class="p-6 bg-gradient-to-r from-red-50 to-pink-50 rounded-xl">
+                    <h3 class="text-lg font-semibold text-red-800 mb-3 flex items-center">
+                      <span class="text-2xl mr-2">💕</span>
+                      Love & Relationships
+                    </h3>
+                    <p class="text-gray-700">
+                      A harmonious day emotionally. Focus on establishing sincere dialogues in your relationships.
+                    </p>
+                  </div>
+
+                  <div class="p-6 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl">
+                    <h3 class="text-lg font-semibold text-blue-800 mb-3 flex items-center">
+                      <span class="text-2xl mr-2">💼</span>
+                      Career & Money
+                    </h3>
+                    <p class="text-gray-700">
+                      New doors may open in your professional life. Don't hesitate to share your creative ideas.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="p-6 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl">
+                  <h3 class="text-lg font-semibold text-green-800 mb-3 flex items-center">
+                    <span class="text-2xl mr-2">🏃‍♀️</span>
+                    Health & Energy
+                  </h3>
+                  <p class="text-gray-700">
+                    Your physical and mental energy is balancing. Pay attention to regular sleep and nutrition.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        <!-- Navigation to other signs -->
+        <div class="mt-12">
+          <h3 class="text-2xl font-bold text-center mb-8">Other Daily Horoscopes</h3>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {[
+              { slug: 'aries', name: 'Aries', emoji: '♈', color: 'red' },
+              { slug: 'taurus', name: 'Taurus', emoji: '♉', color: 'green' },
+              { slug: 'gemini', name: 'Gemini', emoji: '♊', color: 'yellow' },
+              { slug: 'cancer', name: 'Cancer', emoji: '♋', color: 'blue' },
+              { slug: 'leo', name: 'Leo', emoji: '♌', color: 'orange' },
+              { slug: 'virgo', name: 'Virgo', emoji: '♍', color: 'brown' },
+              { slug: 'libra', name: 'Libra', emoji: '♎', color: 'pink' },
+              { slug: 'scorpio', name: 'Scorpio', emoji: '♏', color: 'purple' },
+              { slug: 'sagittarius', name: 'Sagittarius', emoji: '♐', color: 'indigo' },
+              { slug: 'capricorn', name: 'Capricorn', emoji: '♑', color: 'gray' },
+              { slug: 'aquarius', name: 'Aquarius', emoji: '♒', color: 'cyan' },
+              { slug: 'pisces', name: 'Pisces', emoji: '♓', color: 'teal' }
+            ].map((otherSign) => (
+              <a
+                href={`/en/daily-horoscopes/${otherSign.slug}`}
+                class={`group p-4 rounded-xl text-center transition-all transform hover:scale-105 ${
+                  sign.slug === otherSign.slug
+                    ? `bg-gradient-to-br ${colorClasses[otherSign.color]} text-white shadow-lg`
+                    : 'bg-white hover:shadow-lg border border-gray-200'
+                }`}
+              >
+                <div class={`text-3xl mb-2 group-hover:scale-110 transition-transform`}>
+                  {otherSign.emoji}
+                </div>
+                <h4 class={`font-semibold ${sign.slug === otherSign.slug ? 'text-white' : 'text-gray-800'}`}>
+                  {otherSign.name}
+                </h4>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

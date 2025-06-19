@@ -1,0 +1,371 @@
+---
+import Layout from '../../components/Layout.astro';
+---
+
+<Layout
+  title="Kişisel Astroloji Haritası - Birth Chart Analysis"
+  description="Detaylı doğum haritası analizi, kişilik özellikleri ve yaşam rehberliği. Profesyonel astroloji raporu."
+>
+  <main class="min-h-screen pt-20">
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-600 text-white py-16">
+      <div class="container mx-auto px-4 text-center">
+        <div class="text-8xl mb-4">🗺️</div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Kişisel Astroloji Haritası
+        </h1>
+        <p class="text-xl mb-2">Detaylı Doğum Haritası Analizi</p>
+        <p class="text-lg opacity-90">Kişilik, Yetenek ve Yaşam Yolunuz</p>
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-12">
+      <!-- Birth Chart Calculator -->
+      <section class="mb-16">
+        <div class="max-w-2xl mx-auto">
+          <div class="bg-white rounded-3xl shadow-xl p-8">
+            <h2 class="text-2xl font-bold text-center mb-8">Doğum Bilgilerinizi Girin</h2>
+
+            <form id="birth-chart-form" class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-2">Ad</label>
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                    placeholder="Adınız"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-2">Cinsiyet</label>
+                  <select
+                    id="gender"
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                  >
+                    <option value="female">Kadın</option>
+                    <option value="male">Erkek</option>
+                    <option value="other">Diğer</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-2">Doğum Tarihi</label>
+                  <input
+                    type="date"
+                    id="birth-date"
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-2">Doğum Saati</label>
+                  <input
+                    type="time"
+                    id="birth-time"
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Doğum Yeri</label>
+                <input
+                  type="text"
+                  id="birth-place"
+                  class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                  placeholder="Şehir, Ülke"
+                  required
+                />
+              </div>
+
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="bg-gradient-to-r from-purple-500 to-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:from-purple-600 hover:to-blue-600 transition-all transform hover:scale-105"
+                >
+                  Haritamı Oluştur 🗺️
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sample Chart Analysis -->
+      <section class="mb-16" id="chart-result" style="display: none;">
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-3xl p-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Astroloji Haritanız</h2>
+
+            <!-- Chart Visual Placeholder -->
+            <div class="bg-white rounded-xl p-8 mb-8 text-center">
+              <div class="text-6xl mb-4">⭕</div>
+              <h3 class="text-xl font-bold mb-4">Doğum Haritası</h3>
+              <p class="text-gray-600">Burada doğum haritanızın görsel temsili yer alacak</p>
+            </div>
+
+            <!-- Key Positions -->
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+              <div class="bg-white rounded-xl p-6 text-center">
+                <div class="text-3xl mb-2">☀️</div>
+                <h4 class="font-bold text-lg">Güneş Burcu</h4>
+                <p id="sun-sign" class="text-purple-600 font-semibold">İkizler</p>
+                <p class="text-sm text-gray-600 mt-2">Temel kişiliğiniz</p>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 text-center">
+                <div class="text-3xl mb-2">🌙</div>
+                <h4 class="font-bold text-lg">Ay Burcu</h4>
+                <p id="moon-sign" class="text-blue-600 font-semibold">Akrep</p>
+                <p class="text-sm text-gray-600 mt-2">Duygusal doğanız</p>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 text-center">
+                <div class="text-3xl mb-2">⬆️</div>
+                <h4 class="font-bold text-lg">Yükselen Burç</h4>
+                <p id="rising-sign" class="text-green-600 font-semibold">Terazi</p>
+                <p class="text-sm text-gray-600 mt-2">Dış görünümünüz</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Detailed Analysis Sections -->
+      <section class="mb-16" id="detailed-analysis" style="display: none;">
+        <div class="max-w-4xl mx-auto space-y-8">
+          <!-- Personality Analysis -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-6">
+              <h3 class="text-xl font-bold">🌟 Kişilik Analizi</h3>
+            </div>
+            <div class="p-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-lg mb-3">Güçlü Yanlarınız</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-start space-x-2">
+                      <span class="text-green-500">✓</span>
+                      <span>Güçlü iletişim becerileri</span>
+                    </li>
+                    <li class="flex items-start space-x-2">
+                      <span class="text-green-500">✓</span>
+                      <span>Adaptasyon yeteneği</span>
+                    </li>
+                    <li class="flex items-start space-x-2">
+                      <span class="text-green-500">✓</span>
+                      <span>Entelektüel merak</span>
+                    </li>
+                    <li class="flex items-start space-x-2">
+                      <span class="text-green-500">✓</span>
+                      <span>Sosyal zekanız yüksek</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="font-semibold text-lg mb-3">Gelişim Alanları</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-start space-x-2">
+                      <span class="text-orange-500">⚠</span>
+                      <span>Kararlılığı artırma</span>
+                    </li>
+                    <li class="flex items-start space-x-2">
+                      <span class="text-orange-500">⚠</span>
+                      <span>Derinlemesine odaklanma</span>
+                    </li>
+                    <li class="flex items-start space-x-2">
+                      <span class="text-orange-500">⚠</span>
+                      <span>Sabırlı olmayı öğrenme</span>
+                    </li>
+                    <li class="flex items-start space-x-2">
+                      <span class="text-orange-500">⚠</span>
+                      <span>Duygusal istikrar</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Career Guidance -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="bg-gradient-to-r from-blue-500 to-cyan-500 text-white p-6">
+              <h3 class="text-xl font-bold">💼 Kariyer Rehberliği</h3>
+            </div>
+            <div class="p-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-lg mb-3">İdeal Meslekler</h4>
+                  <div class="space-y-3">
+                    <div class="bg-blue-50 rounded-lg p-3">
+                      <p class="font-medium">Medya & İletişim</p>
+                      <p class="text-sm text-gray-600">Gazetecilik, halkla ilişkiler, sosyal medya</p>
+                    </div>
+                    <div class="bg-green-50 rounded-lg p-3">
+                      <p class="font-medium">Eğitim & Öğretim</p>
+                      <p class="text-sm text-gray-600">Öğretmenlik, koçluk, eğitim danışmanlığı</p>
+                    </div>
+                    <div class="bg-purple-50 rounded-lg p-3">
+                      <p class="font-medium">Teknoloji & Yenilik</p>
+                      <p class="text-sm text-gray-600">Yazılım geliştirme, dijital pazarlama</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 class="font-semibold text-lg mb-3">Çalışma Tarzınız</h4>
+                  <div class="space-y-3 text-gray-700">
+                    <p class="flex items-start space-x-2">
+                      <span class="text-blue-500">🎯</span>
+                      <span>Çeşitlilik ve değişiklik seversiniz</span>
+                    </p>
+                    <p class="flex items-start space-x-2">
+                      <span class="text-purple-500">🤝</span>
+                      <span>Takım çalışmasında başarılısınız</span>
+                    </p>
+                    <p class="flex items-start space-x-2">
+                      <span class="text-green-500">💡</span>
+                      <span>Yaratıcı çözümler üretirsiniz</span>
+                    </p>
+                    <p class="flex items-start space-x-2">
+                      <span class="text-orange-500">🌐</span>
+                      <span>Sosyal etkileşimi tercih edersiniz</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Relationship Compatibility -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="bg-gradient-to-r from-pink-500 to-red-500 text-white p-6">
+              <h3 class="text-xl font-bold">💕 İlişki Uyumluluğu</h3>
+            </div>
+            <div class="p-6">
+              <div class="grid md:grid-cols-3 gap-6">
+                <div>
+                  <h4 class="font-semibold text-lg mb-3 text-green-600">Yüksek Uyum</h4>
+                  <div class="space-y-2">
+                    <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">♎ Terazi</span>
+                    <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">♒ Kova</span>
+                    <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">♌ Aslan</span>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 class="font-semibold text-lg mb-3 text-yellow-600">Orta Uyum</h4>
+                  <div class="space-y-2">
+                    <span class="inline-block bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">♈ Koç</span>
+                    <span class="inline-block bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">♐ Yay</span>
+                    <span class="inline-block bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">♊ İkizler</span>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 class="font-semibold text-lg mb-3 text-red-600">Dikkat Gereken</h4>
+                  <div class="space-y-2">
+                    <span class="inline-block bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">♍ Başak</span>
+                    <span class="inline-block bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">♓ Balık</span>
+                    <span class="inline-block bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">♑ Oğlak</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="text-center">
+        <div class="bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600 rounded-3xl p-8 text-white">
+          <h2 class="text-2xl font-bold mb-4">Daha Detaylı Analiz İster misiniz?</h2>
+          <p class="mb-6 opacity-90">
+            Profesyonel astrolog tarafından hazırlanmış kapsamlı doğum haritası analizi
+          </p>
+          <button class="bg-white text-purple-600 px-8 py-3 rounded-full font-bold hover:bg-purple-50 transition-all transform hover:scale-105">
+            Premium Rapor Al
+          </button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('birth-chart-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Get form data
+      const name = document.getElementById('name').value;
+      const birthDate = document.getElementById('birth-date').value;
+      const birthTime = document.getElementById('birth-time').value;
+      const birthPlace = document.getElementById('birth-place').value;
+
+      if (!name || !birthDate || !birthTime || !birthPlace) {
+        alert('Lütfen tüm alanları doldurun.');
+        return;
+      }
+
+      // Calculate zodiac sign based on birth date
+      const date = new Date(birthDate);
+      const month = date.getMonth() + 1;
+      const day = date.getDate();
+
+      let sunSign = '';
+      let moonSign = '';
+      let risingSign = '';
+
+      // Simple zodiac calculation (more complex calculation would be needed for accuracy)
+      if ((month == 3 && day >= 21) || (month == 4 && day <= 19)) {
+        sunSign = 'Koç ♈';
+      } else if ((month == 4 && day >= 20) || (month == 5 && day <= 20)) {
+        sunSign = 'Boğa ♉';
+      } else if ((month == 5 && day >= 21) || (month == 6 && day <= 20)) {
+        sunSign = 'İkizler ♊';
+      } else if ((month == 6 && day >= 21) || (month == 7 && day <= 22)) {
+        sunSign = 'Yengeç ♋';
+      } else if ((month == 7 && day >= 23) || (month == 8 && day <= 22)) {
+        sunSign = 'Aslan ♌';
+      } else if ((month == 8 && day >= 23) || (month == 9 && day <= 22)) {
+        sunSign = 'Başak ♍';
+      } else if ((month == 9 && day >= 23) || (month == 10 && day <= 22)) {
+        sunSign = 'Terazi ♎';
+      } else if ((month == 10 && day >= 23) || (month == 11 && day <= 21)) {
+        sunSign = 'Akrep ♏';
+      } else if ((month == 11 && day >= 22) || (month == 12 && day <= 21)) {
+        sunSign = 'Yay ♐';
+      } else if ((month == 12 && day >= 22) || (month == 1 && day <= 19)) {
+        sunSign = 'Oğlak ♑';
+      } else if ((month == 1 && day >= 20) || (month == 2 && day <= 18)) {
+        sunSign = 'Kova ♒';
+      } else {
+        sunSign = 'Balık ♓';
+      }
+
+      // For demonstration, assign random moon and rising signs
+      const signs = ['Koç ♈', 'Boğa ♉', 'İkizler ♊', 'Yengeç ♋', 'Aslan ♌', 'Başak ♍', 'Terazi ♎', 'Akrep ♏', 'Yay ♐', 'Oğlak ♑', 'Kova ♒', 'Balık ♓'];
+      moonSign = signs[Math.floor(Math.random() * signs.length)];
+      risingSign = signs[Math.floor(Math.random() * signs.length)];
+
+      // Update the results
+      document.getElementById('sun-sign').textContent = sunSign;
+      document.getElementById('moon-sign').textContent = moonSign;
+      document.getElementById('rising-sign').textContent = risingSign;
+
+      // Show results
+      document.getElementById('chart-result').style.display = 'block';
+      document.getElementById('detailed-analysis').style.display = 'block';
+
+      // Scroll to results
+      document.getElementById('chart-result').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</Layout>

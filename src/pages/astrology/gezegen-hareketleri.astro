@@ -1,0 +1,203 @@
+---
+import Layout from '../../components/Layout.astro';
+---
+
+<Layout
+  title="Gezegen Hareketleri - Astroloji Takvimi"
+  description="Güncel gezegen pozisyonları, retrogradlar ve astrolojik etkileri. Detaylı gezegen takvimi ve analizi."
+>
+  <main class="min-h-screen pt-20">
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-600 text-white py-16">
+      <div class="container mx-auto px-4 text-center">
+        <div class="text-8xl mb-4">🪐</div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Gezegen Hareketleri
+        </h1>
+        <p class="text-xl mb-2">Güncel Astrolojik Pozisyonlar</p>
+        <p class="text-lg opacity-90">Retrograd Dönemler ve Etkileri</p>
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-12">
+      <!-- Current Planetary Positions -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Güncel Gezegen Pozisyonları</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-xl p-6 shadow-lg">
+            <div class="flex items-center mb-4">
+              <span class="text-3xl mr-3">☀️</span>
+              <div>
+                <h3 class="font-bold text-xl">Güneş</h3>
+                <p class="text-gray-600">İkizler Burcu</p>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700">
+              Güneş İkizler burcunda konumlanırken, iletişim ve öğrenme konularında artış yaşanıyor.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-lg">
+            <div class="flex items-center mb-4">
+              <span class="text-3xl mr-3">🌙</span>
+              <div>
+                <h3 class="font-bold text-xl">Ay</h3>
+                <p class="text-gray-600">Değişken Pozisyon</p>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700">
+              Ay'ın günlük hareketleri duygusal durumumuzu ve sezgilerimizi etkiliyor.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-lg">
+            <div class="flex items-center mb-4">
+              <span class="text-3xl mr-3">☿️</span>
+              <div>
+                <h3 class="font-bold text-xl">Merkür</h3>
+                <p class="text-gray-600">İkizler Burcu</p>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700">
+              Merkür ev burcunda güçlü konumda. İletişim ve teknoloji konularında bereket.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-lg">
+            <div class="flex items-center mb-4">
+              <span class="text-3xl mr-3">♀️</span>
+              <div>
+                <h3 class="font-bold text-xl">Venüs</h3>
+                <p class="text-gray-600">Yengeç Burcu</p>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700">
+              Venüs Yengeç burcunda iken, aile ve yuva konularında olumlu gelişmeler bekleniyor.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-lg">
+            <div class="flex items-center mb-4">
+              <span class="text-3xl mr-3">♂️</span>
+              <div>
+                <h3 class="font-bold text-xl">Mars</h3>
+                <p class="text-gray-600">Aslan Burcu</p>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700">
+              Mars Aslan burcunda yaratıcılık ve liderlik enerjisi artırıyor.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-lg">
+            <div class="flex items-center mb-4">
+              <span class="text-3xl mr-3">♃</span>
+              <div>
+                <h3 class="font-bold text-xl">Jüpiter</h3>
+                <p class="text-gray-600">İkizler Burcu</p>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700">
+              Jüpiter İkizler burcunda eğitim ve seyahat konularında genişleme getiriyor.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Retrograde Periods -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Retrograd Dönemler</h2>
+        <div class="bg-gradient-to-r from-red-50 to-orange-50 rounded-xl p-8">
+          <div class="text-center mb-6">
+            <span class="text-4xl">⚠️</span>
+            <h3 class="text-2xl font-bold text-red-800 mt-2">Dikkat Edilmesi Gereken Dönemler</h3>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-bold text-lg mb-2">Merkür Retrograd</h4>
+              <p class="text-gray-600 mb-2">23 Haziran - 15 Temmuz 2025</p>
+              <p class="text-sm text-gray-700">
+                İletişim sorunları, teknolojik aksaklıklar ve seyahat gecikmelerinde artış bekleniyor.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-bold text-lg mb-2">Venüs Retrograd</h4>
+              <p class="text-gray-600 mb-2">12 Ağustos - 3 Ekim 2025</p>
+              <p class="text-sm text-gray-700">
+                İlişkilerde gözden geçirme dönemi. Eski sevgililerin geri dönüşü mümkün.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Monthly Forecast -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Aylık Gezegen Takvimi</h2>
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <div class="bg-gradient-to-r from-purple-500 to-blue-500 text-white p-6">
+            <h3 class="text-xl font-bold">Haziran 2025 Öne Çıkanlar</h3>
+          </div>
+          <div class="p-6">
+            <div class="space-y-4">
+              <div class="flex items-start space-x-4">
+                <div class="bg-blue-100 rounded-full p-2">
+                  <span class="text-xl">🌕</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold">21 Haziran - Yaz Gündönümü</h4>
+                  <p class="text-gray-600">Güneş Yengeç burcuna geçiş yapıyor. Yeni başlangıçlar için ideal zaman.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div class="bg-red-100 rounded-full p-2">
+                  <span class="text-xl">☿️</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold">23 Haziran - Merkür Retrograd Başlangıcı</h4>
+                  <p class="text-gray-600">İletişim ve teknoloji konularında dikkatli olunması gereken dönem başlıyor.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div class="bg-green-100 rounded-full p-2">
+                  <span class="text-xl">♀️</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold">28 Haziran - Venüs Aslan Burcunda</h4>
+                  <p class="text-gray-600">Yaratıcılık ve romantizm konularında olumlu gelişmeler.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tips and Advice -->
+      <section>
+        <h2 class="text-3xl font-bold text-center mb-8">Gezegen Hareketlerinden Nasıl Yararlanabilirsiniz?</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-gradient-to-br from-green-400 to-blue-500 text-white rounded-xl p-6">
+            <div class="text-3xl mb-4">🎯</div>
+            <h3 class="text-xl font-bold mb-3">Zamanlama</h3>
+            <p>Önemli kararları gezegen pozisyonlarına göre zamanlayın.</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-purple-400 to-pink-500 text-white rounded-xl p-6">
+            <div class="text-3xl mb-4">🧘‍♀️</div>
+            <h3 class="text-xl font-bold mb-3">Farkındalık</h3>
+            <p>Retrograd dönemlerde sabırlı olun ve gözden geçirme yapın.</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-orange-400 to-red-500 text-white rounded-xl p-6">
+            <div class="text-3xl mb-4">🌟</div>
+            <h3 class="text-xl font-bold mb-3">Büyüme</h3>
+            <p>Gezegen enerjilerini kişisel gelişim için kullanın.</p>
+          </div>
+        </div>
+      </section>
+    </div>  </main>
+</Layout>

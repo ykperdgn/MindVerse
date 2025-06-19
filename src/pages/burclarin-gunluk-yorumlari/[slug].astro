@@ -1,0 +1,198 @@
+---
+export async function getStaticPaths() {
+  const signs = [
+    { slug: 'koc', name: 'Koç', element: 'ateş', dates: '21 Mart - 19 Nisan', emoji: '♈', color: 'red' },
+    { slug: 'boga', name: 'Boğa', element: 'toprak', dates: '20 Nisan - 20 Mayıs', emoji: '♉', color: 'green' },
+    { slug: 'ikizler', name: 'İkizler', element: 'hava', dates: '21 Mayıs - 20 Haziran', emoji: '♊', color: 'yellow' },
+    { slug: 'yengec', name: 'Yengeç', element: 'su', dates: '21 Haziran - 22 Temmuz', emoji: '♋', color: 'blue' },
+    { slug: 'aslan', name: 'Aslan', element: 'ateş', dates: '23 Temmuz - 22 Ağustos', emoji: '♌', color: 'orange' },
+    { slug: 'basak', name: 'Başak', element: 'toprak', dates: '23 Ağustos - 22 Eylül', emoji: '♍', color: 'brown' },
+    { slug: 'terazi', name: 'Terazi', element: 'hava', dates: '23 Eylül - 22 Ekim', emoji: '♎', color: 'pink' },
+    { slug: 'akrep', name: 'Akrep', element: 'su', dates: '23 Ekim - 21 Kasım', emoji: '♏', color: 'purple' },
+    { slug: 'yay', name: 'Yay', element: 'ateş', dates: '22 Kasım - 21 Aralık', emoji: '♐', color: 'indigo' },
+    { slug: 'oglak', name: 'Oğlak', element: 'toprak', dates: '22 Aralık - 19 Ocak', emoji: '♑', color: 'gray' },
+    { slug: 'kova', name: 'Kova', element: 'hava', dates: '20 Ocak - 18 Şubat', emoji: '♒', color: 'cyan' },
+    { slug: 'balik', name: 'Balık', element: 'su', dates: '19 Şubat - 20 Mart', emoji: '♓', color: 'teal' }
+  ];
+
+  return signs.map((sign) => ({
+    params: { slug: sign.slug },
+    props: { sign }
+  }));
+}
+
+const { sign } = Astro.props;
+
+import Layout from '../../components/Layout.astro';
+import { getCollection } from 'astro:content';
+
+// Get today's horoscope for this sign
+const today = new Date().toISOString().split('T')[0];
+const allHoroscopes = await getCollection('astrology');
+
+// Look for today's horoscope
+let todayHoroscope = allHoroscopes.find(post =>
+  post.slug.includes(`${sign.slug}-gunluk-${today}`) ||
+  post.slug.includes(`${sign.slug}-gunluk`) ||
+  post.slug.includes(sign.slug)
+);
+
+// If no specific horoscope found, get the latest one for this sign
+if (!todayHoroscope) {
+  const signHoroscopes = allHoroscopes
+    .filter(post => post.slug.includes(sign.slug) && post.slug.includes('gunluk'))
+    .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
+
+  todayHoroscope = signHoroscopes[0];
+}
+
+const colorClasses = {
+  red: 'from-red-500 to-pink-500',
+  green: 'from-green-500 to-emerald-500',
+  yellow: 'from-yellow-500 to-orange-500',
+  blue: 'from-blue-500 to-cyan-500',
+  orange: 'from-orange-500 to-red-500',
+  brown: 'from-amber-600 to-orange-600',
+  pink: 'from-pink-500 to-rose-500',
+  purple: 'from-purple-500 to-indigo-500',
+  indigo: 'from-indigo-500 to-purple-500',
+  gray: 'from-gray-600 to-slate-600',
+  cyan: 'from-cyan-500 to-blue-500',
+  teal: 'from-teal-500 to-cyan-500'
+};
+---
+
+<Layout
+  title={`${sign.name} Burcu Günlük Yorumu`}
+  description={`${sign.name} burcu için günlük astroloji yorumu. Aşk, kariyer, sağlık ve genel yaşam rehberliği.`}
+>
+  <main class="min-h-screen pt-20">
+    <!-- Hero Section -->
+    <div class={`bg-gradient-to-br ${colorClasses[sign.color]} text-white py-16`}>
+      <div class="container mx-auto px-4 text-center">
+        <div class="text-8xl mb-4">{sign.emoji}</div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          {sign.name} Burcu Günlük Yorumu
+        </h1>
+        <p class="text-xl mb-2">{sign.dates}</p>
+        <p class="text-lg opacity-90">Element: {sign.element.charAt(0).toUpperCase() + sign.element.slice(1)}</p>
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-12">
+      <div class="max-w-4xl mx-auto">
+        <!-- Today's Horoscope Content -->
+        {todayHoroscope ? (
+          <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+            <div class="p-8">
+              <div class="flex items-center justify-between mb-6">
+                <h2 class="text-2xl font-bold text-gray-800">Bugünün Yorumu</h2>
+                <span class="text-sm text-gray-500">
+                  {new Date().toLocaleDateString('tr-TR')}
+                </span>
+              </div>
+
+              <div class="prose max-w-none">
+                <div set:html={todayHoroscope.body} />
+              </div>
+            </div>
+          </div>
+        ) : (
+          <!-- Default horoscope content if no specific content found -->
+          <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+            <div class="p-8">
+              <div class="flex items-center justify-between mb-6">
+                <h2 class="text-2xl font-bold text-gray-800">Bugünün Yorumu</h2>
+                <span class="text-sm text-gray-500">
+                  {new Date().toLocaleDateString('tr-TR')}
+                </span>
+              </div>
+
+              <div class="space-y-6">
+                <div class="p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl">
+                  <h3 class="text-lg font-semibold text-purple-800 mb-3 flex items-center">
+                    <span class="text-2xl mr-2">🌟</span>
+                    Genel Durum
+                  </h3>
+                  <p class="text-gray-700">
+                    {sign.name} burcu için bugün önemli gelişmelerin yaşanacağı bir gün.
+                    Enerjiniz yüksek ve motivasyonunuz tam. Karşınıza çıkacak fırsatları değerlendirmeyi unutmayın.
+                  </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div class="p-6 bg-gradient-to-r from-red-50 to-pink-50 rounded-xl">
+                    <h3 class="text-lg font-semibold text-red-800 mb-3 flex items-center">
+                      <span class="text-2xl mr-2">💕</span>
+                      Aşk & İlişkiler
+                    </h3>
+                    <p class="text-gray-700">
+                      Duygusal anlamda dengeleyici bir gün. İlişkilerinizde samimi diyaloglar kurmaya odaklanın.
+                    </p>
+                  </div>
+
+                  <div class="p-6 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl">
+                    <h3 class="text-lg font-semibold text-blue-800 mb-3 flex items-center">
+                      <span class="text-2xl mr-2">💼</span>
+                      Kariyer & İş
+                    </h3>
+                    <p class="text-gray-700">
+                      Profesyonel hayatınızda yeni kapılar açılabilir. Yaratıcı fikirlerinizi paylaşmaktan çekinmeyin.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="p-6 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl">
+                  <h3 class="text-lg font-semibold text-green-800 mb-3 flex items-center">
+                    <span class="text-2xl mr-2">🏃‍♀️</span>
+                    Sağlık & Enerji
+                  </h3>
+                  <p class="text-gray-700">
+                    Fiziksel ve mental enerjiniz dengelenmekte. Düzenli uyku ve beslenmeye dikkat edin.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        <!-- Navigation to other signs -->
+        <div class="mt-12">
+          <h3 class="text-2xl font-bold text-center mb-8">Diğer Burç Yorumları</h3>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {[
+              { slug: 'koc', name: 'Koç', emoji: '♈', color: 'red' },
+              { slug: 'boga', name: 'Boğa', emoji: '♉', color: 'green' },
+              { slug: 'ikizler', name: 'İkizler', emoji: '♊', color: 'yellow' },
+              { slug: 'yengec', name: 'Yengeç', emoji: '♋', color: 'blue' },
+              { slug: 'aslan', name: 'Aslan', emoji: '♌', color: 'orange' },
+              { slug: 'basak', name: 'Başak', emoji: '♍', color: 'brown' },
+              { slug: 'terazi', name: 'Terazi', emoji: '♎', color: 'pink' },
+              { slug: 'akrep', name: 'Akrep', emoji: '♏', color: 'purple' },
+              { slug: 'yay', name: 'Yay', emoji: '♐', color: 'indigo' },
+              { slug: 'oglak', name: 'Oğlak', emoji: '♑', color: 'gray' },
+              { slug: 'kova', name: 'Kova', emoji: '♒', color: 'cyan' },
+              { slug: 'balik', name: 'Balık', emoji: '♓', color: 'teal' }
+            ].map((otherSign) => (
+              <a
+                href={`/burclarin-gunluk-yorumlari/${otherSign.slug}`}
+                class={`group p-4 rounded-xl text-center transition-all transform hover:scale-105 ${
+                  sign.slug === otherSign.slug
+                    ? `bg-gradient-to-br ${colorClasses[otherSign.color]} text-white shadow-lg`
+                    : 'bg-white hover:shadow-lg border border-gray-200'
+                }`}
+              >
+                <div class={`text-3xl mb-2 group-hover:scale-110 transition-transform`}>
+                  {otherSign.emoji}
+                </div>
+                <h4 class={`font-semibold ${sign.slug === otherSign.slug ? 'text-white' : 'text-gray-800'}`}>
+                  {otherSign.name}
+                </h4>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

@@ -2,7 +2,7 @@
 title: "Aquarius Daily Horoscope - June 19, 2025"
 description: "Daily astrology reading for Aquarius. Love, career, health and general guidance."
 keywords: "aquarius, daily horoscope, air, astrology, zodiac"
-date: 2025-06-19
+pubDate: 2025-06-19
 category: "astrology"
 tags: ["astrology", "kova", "daily", "air"]
 author: "MindVerse Astroloji"
