@@ -1,13 +1,13 @@
 ---
-title: "Aşkın Gücü - Balık Burcu Monthly Yorumu"
+title: "Aşkın Gücü - Balık Burcu Ayl�k Yorumu"
 description: "Balık burcu için detaylı astroloji yorumu. aşkın gücü konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["balık burcu", "monthly yorum", "astroloji", "burç yorumu"]
+tags: ["balık burcu", "ayl�k yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Balık Burcu Monthly Yorumu
+# Balık Burcu Ayl�k Yorumu
 
 🐟 **Balık Burcu** (**19 Şubat - 20 Mart**)
 
@@ -21,11 +21,11 @@ Bu ay Balık burcu için Merkür gezeninizin güçlü etkisiyle aşkın gücü y
 
 **Dikkat Edilmesi Gerekenler:** Aşırı duyarlılık, Kaçış eğilimi, Sınır eksikliği, Hayalperestlik
 
-## 💫 Monthly Genel Durum
+## 💫 Ayl�k Genel Durum
 
-Merkür gezenenin etkisiyle bu monthly döneminde Balık burcu için iletişim enerjisi ön plana çıkacak.
+Merkür gezenenin etkisiyle bu Ayl�k döneminde Balık burcu için iletişim enerjisi ön plana çıkacak.
 
-Su elementi size monthly boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
+Su elementi size Ayl�k boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
 
 ## 💕 Aşk ve İlişkiler
 
@@ -33,27 +33,27 @@ Su elementi size monthly boyunca güç verecek ve hedeflerinize odaklanmanızı 
 
 💑 **İlişkisi Olanlar:** Partnerinizle romantik anlar yaşayabilirsiniz.
 
-🌹 Deniz Yeşili rengi bu monthly aşk hayatınızda şans getirebilir.
+🌹 Deniz Yeşili rengi bu Ayl�k aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Ruhsal bağ özelliğiniz sayesinde monthly boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Ruhsal bağ özelliğiniz sayesinde Ayl�k boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Müzik alanında fırsatlar değerlendirilebilir.
 
-📈 Bu monthly yeni projeler için uygun zaman.
+📈 Bu Ayl�k yeni projeler için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 💧 Duygusal dengeniz önemli. Su sporları ve meditasyon faydalı olacak.
 
-⚖️ Bu monthly genel sağlık durumunuz iyi olacak.
+⚖️ Bu Ayl�k genel sağlık durumunuz iyi olacak.
 
-## 🎯 Monthly Tavsiyeleri
+## 🎯 Ayl�k Tavsiyeleri
 
-1. **Ruhsal bağ** özelliğinizi bu monthly daha aktif kullanın
+1. **Ruhsal bağ** özelliğinizi bu Ayl�k daha aktif kullanın
 2. **Hayalperestlik** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Deniz Yeşili** rengi bu monthly şansınızı artıracak
+3. **Deniz Yeşili** rengi bu Ayl�k şansınızı artıracak
 4. **Oğlak** burcu ile işbirliği yapın
 5. **Müzik** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Su elementi size monthly boyunca güç verecek ve hedeflerinize odaklanmanızı 
 
 ## 💫 Sonuç
 
-Balık burcu olarak doğal yeteneklerinizi kullanarak bu monthly büyük adımlar atabilirsiniz.
+Balık burcu olarak doğal yeteneklerinizi kullanarak bu Ayl�k büyük adımlar atabilirsiniz.
 
 ---
 

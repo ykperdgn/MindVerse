@@ -1,13 +1,13 @@
 ---
-title: "Kariyer Atılımı - Kova Burcu Daily Yorumu"
+title: "Kariyer Atılımı - Kova Burcu G�nl�k Yorumu"
 description: "Kova burcu için detaylı astroloji yorumu. kariyer atılımı konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["kova burcu", "daily yorum", "astroloji", "burç yorumu"]
+tags: ["kova burcu", "g�nl�k yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Kova Burcu Daily Yorumu
+# Kova Burcu G�nl�k Yorumu
 
 🏺 **Kova Burcu** (**20 Ocak - 18 Şubat**)
 
@@ -21,11 +21,11 @@ Bugün Kova burcu için Neptün gezeninizin etkisiyle kariyer atılımı yaşaya
 
 **Dikkat Edilmesi Gerekenler:** Duygusal mesafe, İnatçılık, Aşırı idealizm, Soğukluk
 
-## 💫 Daily Genel Durum
+## 💫 G�nl�k Genel Durum
 
-Neptün gezenenin etkisiyle bu daily döneminde Kova burcu için spiritüalite enerjisi ön plana çıkacak.
+Neptün gezenenin etkisiyle bu G�nl�k döneminde Kova burcu için spiritüalite enerjisi ön plana çıkacak.
 
-Hava elementi size daily boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
+Hava elementi size G�nl�k boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
 
 ## 💕 Aşk ve İlişkiler
 
@@ -33,27 +33,27 @@ Hava elementi size daily boyunca güç verecek ve hedeflerinize odaklanmanızı 
 
 💑 **İlişkisi Olanlar:** Partnerinizle güzel sürprizler yaşayabilirsiniz.
 
-🌹 Elektrik Mavisi rengi bu daily aşk hayatınızda şans getirebilir.
+🌹 Elektrik Mavisi rengi bu G�nl�k aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Vizyon özelliğiniz sayesinde daily boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Vizyon özelliğiniz sayesinde G�nl�k boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Araştırma alanında fırsatlar değerlendirilebilir.
 
-📈 Bu daily terfi fırsatları için uygun zaman.
+📈 Bu G�nl�k terfi fırsatları için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 💨 Zihinsel aktifiteniz artacak. Nefes egzerzilerine zaman ayırın.
 
-⚖️ Bu daily genel sağlık durumunuz iyi olacak.
+⚖️ Bu G�nl�k genel sağlık durumunuz iyi olacak.
 
-## 🎯 Daily Tavsiyeleri
+## 🎯 G�nl�k Tavsiyeleri
 
-1. **Yenilikçilik** özelliğinizi bu daily daha aktif kullanın
+1. **Yenilikçilik** özelliğinizi bu G�nl�k daha aktif kullanın
 2. **Aşırı idealizm** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Elektrik Mavisi** rengi bu daily şansınızı artıracak
+3. **Elektrik Mavisi** rengi bu G�nl�k şansınızı artıracak
 4. **İkizler** burcu ile işbirliği yapın
 5. **Teknoloji** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Hava elementi size daily boyunca güç verecek ve hedeflerinize odaklanmanızı 
 
 ## 💫 Sonuç
 
-Bu daily Kova burcu için kariyer atılımı yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.
+Bu G�nl�k Kova burcu için kariyer atılımı yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.
 
 ---
 

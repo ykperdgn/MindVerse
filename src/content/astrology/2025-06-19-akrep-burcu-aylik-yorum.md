@@ -1,13 +1,13 @@
 ---
-title: "Aşkın Gücü - Akrep Burcu Monthly Yorumu"
+title: "Aşkın Gücü - Akrep Burcu Ayl�k Yorumu"
 description: "Akrep burcu için detaylı astroloji yorumu. aşkın gücü konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["akrep burcu", "monthly yorum", "astroloji", "burç yorumu"]
+tags: ["akrep burcu", "ayl�k yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Akrep Burcu Monthly Yorumu
+# Akrep Burcu Ayl�k Yorumu
 
 🦂 **Akrep Burcu** (**23 Ekim - 21 Kasım**)
 
@@ -21,9 +21,9 @@ Bu ay Akrep burcu için Satürn gezeninizin güçlü etkisiyle aşkın gücü ya
 
 **Dikkat Edilmesi Gerekenler:** Kıskançlık, İntikamcılık, Şüphecilik, Saplantı
 
-## 💫 Monthly Genel Durum
+## 💫 Ayl�k Genel Durum
 
-Satürn gezenenin etkisiyle bu monthly döneminde Akrep burcu için olgunluk enerjisi ön plana çıkacak.
+Satürn gezenenin etkisiyle bu Ayl�k döneminde Akrep burcu için olgunluk enerjisi ön plana çıkacak.
 
 Akrep burcu olarak doğal yoğun özelliğiniz bu dönemde avantajınız olacak.
 
@@ -33,27 +33,27 @@ Akrep burcu olarak doğal yoğun özelliğiniz bu dönemde avantajınız olacak.
 
 💑 **İlişkisi Olanlar:** Partnerinizle güzel sürprizler yaşayabilirsiniz.
 
-🌹 Bordo rengi bu monthly aşk hayatınızda şans getirebilir.
+🌹 Bordo rengi bu Ayl�k aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Güçlü irade özelliğiniz sayesinde monthly boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Güçlü irade özelliğiniz sayesinde Ayl�k boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Psikoloji alanında fırsatlar değerlendirilebilir.
 
-📈 Bu monthly terfi fırsatları için uygun zaman.
+📈 Bu Ayl�k terfi fırsatları için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 💧 Duygusal dengeniz önemli. Su sporları ve meditasyon faydalı olacak.
 
-⚖️ Bu monthly genel sağlık durumunuz iyi olacak.
+⚖️ Bu Ayl�k genel sağlık durumunuz iyi olacak.
 
-## 🎯 Monthly Tavsiyeleri
+## 🎯 Ayl�k Tavsiyeleri
 
-1. **Kararlılık** özelliğinizi bu monthly daha aktif kullanın
+1. **Kararlılık** özelliğinizi bu Ayl�k daha aktif kullanın
 2. **Kıskançlık** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Bordo** rengi bu monthly şansınızı artıracak
+3. **Bordo** rengi bu Ayl�k şansınızı artıracak
 4. **Balık** burcu ile işbirliği yapın
 5. **Psikoloji** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Akrep burcu olarak doğal yoğun özelliğiniz bu dönemde avantajınız olacak.
 
 ## 💫 Sonuç
 
-Akrep burcu olarak doğal yeteneklerinizi kullanarak bu monthly büyük adımlar atabilirsiniz.
+Akrep burcu olarak doğal yeteneklerinizi kullanarak bu Ayl�k büyük adımlar atabilirsiniz.
 
 ---
 

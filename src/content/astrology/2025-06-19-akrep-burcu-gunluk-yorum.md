@@ -1,13 +1,13 @@
 ---
-title: "Kariyer Atılımı - Akrep Burcu Daily Yorumu"
+title: "Kariyer Atılımı - Akrep Burcu G�nl�k Yorumu"
 description: "Akrep burcu için detaylı astroloji yorumu. kariyer atılımı konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["akrep burcu", "daily yorum", "astroloji", "burç yorumu"]
+tags: ["akrep burcu", "g�nl�k yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Akrep Burcu Daily Yorumu
+# Akrep Burcu G�nl�k Yorumu
 
 🦂 **Akrep Burcu** (**23 Ekim - 21 Kasım**)
 
@@ -21,9 +21,9 @@ Bugün Akrep burcu için Mars gezeninizin etkisiyle kariyer atılımı yaşayaca
 
 **Dikkat Edilmesi Gerekenler:** Kıskançlık, İntikamcılık, Şüphecilik, Saplantı
 
-## 💫 Daily Genel Durum
+## 💫 G�nl�k Genel Durum
 
-Mars gezenenin etkisiyle bu daily döneminde Akrep burcu için girişkenlik enerjisi ön plana çıkacak.
+Mars gezenenin etkisiyle bu G�nl�k döneminde Akrep burcu için girişkenlik enerjisi ön plana çıkacak.
 
 Akrep burcu olarak doğal yoğun özelliğiniz bu dönemde avantajınız olacak.
 
@@ -33,27 +33,27 @@ Akrep burcu olarak doğal yoğun özelliğiniz bu dönemde avantajınız olacak.
 
 💑 **İlişkisi Olanlar:** Partnerinizle romantik anlar yaşayabilirsiniz.
 
-🌹 Bordo rengi bu daily aşk hayatınızda şans getirebilir.
+🌹 Bordo rengi bu G�nl�k aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Sezgi özelliğiniz sayesinde daily boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Sezgi özelliğiniz sayesinde G�nl�k boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Finans alanında fırsatlar değerlendirilebilir.
 
-📈 Bu daily yeni projeler için uygun zaman.
+📈 Bu G�nl�k yeni projeler için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 💧 Duygusal dengeniz önemli. Su sporları ve meditasyon faydalı olacak.
 
-⚖️ Bu daily genel sağlık durumunuz iyi olacak.
+⚖️ Bu G�nl�k genel sağlık durumunuz iyi olacak.
 
-## 🎯 Daily Tavsiyeleri
+## 🎯 G�nl�k Tavsiyeleri
 
-1. **Dönüşüm yetisi** özelliğinizi bu daily daha aktif kullanın
+1. **Dönüşüm yetisi** özelliğinizi bu G�nl�k daha aktif kullanın
 2. **Şüphecilik** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Bordo** rengi bu daily şansınızı artıracak
+3. **Bordo** rengi bu G�nl�k şansınızı artıracak
 4. **Yengeç** burcu ile işbirliği yapın
 5. **Psikoloji** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Akrep burcu olarak doğal yoğun özelliğiniz bu dönemde avantajınız olacak.
 
 ## 💫 Sonuç
 
-Bu daily sonunda kendinizi daha güçlü ve güçlü hissedeceksiniz.
+Bu G�nl�k sonunda kendinizi daha güçlü ve güçlü hissedeceksiniz.
 
 ---
 

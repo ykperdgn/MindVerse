@@ -1,13 +1,13 @@
 ---
-title: "İlişkilerde Derinlik - Boğa Burcu Weekly Yorumu"
+title: "İlişkilerde Derinlik - Boğa Burcu Haftal�k Yorumu"
 description: "Boğa burcu için detaylı astroloji yorumu. i̇lişkilerde derinlik konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["boğa burcu", "weekly yorum", "astroloji", "burç yorumu"]
+tags: ["boğa burcu", "haftal�k yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Boğa Burcu Weekly Yorumu
+# Boğa Burcu Haftal�k Yorumu
 
 🐂 **Boğa Burcu** (**20 Nisan - 20 Mayıs**)
 
@@ -21,9 +21,9 @@ Bu hafta Boğa burcu için Satürn etkisiyle i̇lişkilerde derinlik dönemine g
 
 **Dikkat Edilmesi Gerekenler:** İnatçılık, Materialism, Değişime direnç, Kıskançlık
 
-## 💫 Weekly Genel Durum
+## 💫 Haftal�k Genel Durum
 
-Satürn gezenenin etkisiyle bu weekly döneminde Boğa burcu için test enerjisi ön plana çıkacak.
+Satürn gezenenin etkisiyle bu Haftal�k döneminde Boğa burcu için test enerjisi ön plana çıkacak.
 
 Boğa burcu olarak doğal güvenilir özelliğiniz bu dönemde avantajınız olacak.
 
@@ -33,27 +33,27 @@ Boğa burcu olarak doğal güvenilir özelliğiniz bu dönemde avantajınız ola
 
 💑 **İlişkisi Olanlar:** Partnerinizle romantik anlar yaşayabilirsiniz.
 
-🌹 Yeşil rengi bu weekly aşk hayatınızda şans getirebilir.
+🌹 Yeşil rengi bu Haftal�k aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Güvenilirlik özelliğiniz sayesinde weekly boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Güvenilirlik özelliğiniz sayesinde Haftal�k boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Tarım alanında fırsatlar değerlendirilebilir.
 
-📈 Bu weekly ek gelir için uygun zaman.
+📈 Bu Haftal�k ek gelir için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 🌱 Vücudunuzla uyum içinde olacaksınız. Doğal beslenmeye önem verin.
 
-⚖️ Bu weekly genel sağlık durumunuz iyi olacak.
+⚖️ Bu Haftal�k genel sağlık durumunuz iyi olacak.
 
-## 🎯 Weekly Tavsiyeleri
+## 🎯 Haftal�k Tavsiyeleri
 
-1. **Pratiklik** özelliğinizi bu weekly daha aktif kullanın
+1. **Pratiklik** özelliğinizi bu Haftal�k daha aktif kullanın
 2. **Materialism** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Yeşil** rengi bu weekly şansınızı artıracak
+3. **Yeşil** rengi bu Haftal�k şansınızı artıracak
 4. **Balık** burcu ile işbirliği yapın
 5. **Aşçılık** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Boğa burcu olarak doğal güvenilir özelliğiniz bu dönemde avantajınız ola
 
 ## 💫 Sonuç
 
-Bu weekly sonunda kendinizi daha güçlü ve kararlı hissedeceksiniz.
+Bu Haftal�k sonunda kendinizi daha güçlü ve kararlı hissedeceksiniz.
 
 ---
 

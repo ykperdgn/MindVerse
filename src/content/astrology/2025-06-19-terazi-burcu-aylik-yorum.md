@@ -1,13 +1,13 @@
 ---
-title: "Büyük Dönüşümler - Terazi Burcu Monthly Yorumu"
+title: "Büyük Dönüşümler - Terazi Burcu Ayl�k Yorumu"
 description: "Terazi burcu için detaylı astroloji yorumu. büyük dönüşümler konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["terazi burcu", "monthly yorum", "astroloji", "burç yorumu"]
+tags: ["terazi burcu", "ayl�k yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Terazi Burcu Monthly Yorumu
+# Terazi Burcu Ayl�k Yorumu
 
 ⚖️ **Terazi Burcu** (**23 Eylül - 22 Ekim**)
 
@@ -21,11 +21,11 @@ Bu ay Terazi burcu için Mars gezeninizin güçlü etkisiyle büyük dönüşüm
 
 **Dikkat Edilmesi Gerekenler:** Kararsızlık, Çelişki korkusu, Bağımlılık, Yüzeysellik
 
-## 💫 Monthly Genel Durum
+## 💫 Ayl�k Genel Durum
 
-Mars gezenenin etkisiyle bu monthly döneminde Terazi burcu için cesaret enerjisi ön plana çıkacak.
+Mars gezenenin etkisiyle bu Ayl�k döneminde Terazi burcu için cesaret enerjisi ön plana çıkacak.
 
-Hava elementi size monthly boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
+Hava elementi size Ayl�k boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
 
 ## 💕 Aşk ve İlişkiler
 
@@ -33,27 +33,27 @@ Hava elementi size monthly boyunca güç verecek ve hedeflerinize odaklanmanız�
 
 💑 **İlişkisi Olanlar:** Partnerinizle romantik anlar yaşayabilirsiniz.
 
-🌹 Pembe rengi bu monthly aşk hayatınızda şans getirebilir.
+🌹 Pembe rengi bu Ayl�k aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Estetik anlayışı özelliğiniz sayesinde monthly boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Estetik anlayışı özelliğiniz sayesinde Ayl�k boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** İnsan kaynakları alanında fırsatlar değerlendirilebilir.
 
-📈 Bu monthly iş birliği için uygun zaman.
+📈 Bu Ayl�k iş birliği için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 💨 Zihinsel aktifiteniz artacak. Nefes egzerzilerine zaman ayırın.
 
-⚖️ Bu monthly genel sağlık durumunuz iyi olacak.
+⚖️ Bu Ayl�k genel sağlık durumunuz iyi olacak.
 
-## 🎯 Monthly Tavsiyeleri
+## 🎯 Ayl�k Tavsiyeleri
 
-1. **Diplomasi** özelliğinizi bu monthly daha aktif kullanın
+1. **Diplomasi** özelliğinizi bu Ayl�k daha aktif kullanın
 2. **Bağımlılık** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Pembe** rengi bu monthly şansınızı artıracak
+3. **Pembe** rengi bu Ayl�k şansınızı artıracak
 4. **Kova** burcu ile işbirliği yapın
 5. **Sanat** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Hava elementi size monthly boyunca güç verecek ve hedeflerinize odaklanmanız�
 
 ## 💫 Sonuç
 
-Bu monthly sonunda kendinizi daha güçlü ve sosyal hissedeceksiniz.
+Bu Ayl�k sonunda kendinizi daha güçlü ve sosyal hissedeceksiniz.
 
 ---
 

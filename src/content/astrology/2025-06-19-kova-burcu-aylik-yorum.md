@@ -1,13 +1,13 @@
 ---
-title: "Ruhsal Uyanış - Kova Burcu Monthly Yorumu"
+title: "Ruhsal Uyanış - Kova Burcu Ayl�k Yorumu"
 description: "Kova burcu için detaylı astroloji yorumu. ruhsal uyanış konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["kova burcu", "monthly yorum", "astroloji", "burç yorumu"]
+tags: ["kova burcu", "ayl�k yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Kova Burcu Monthly Yorumu
+# Kova Burcu Ayl�k Yorumu
 
 🏺 **Kova Burcu** (**20 Ocak - 18 Şubat**)
 
@@ -21,9 +21,9 @@ Bu ay Kova burcu için Merkür gezeninizin güçlü etkisiyle ruhsal uyanış ya
 
 **Dikkat Edilmesi Gerekenler:** Duygusal mesafe, İnatçılık, Aşırı idealizm, Soğukluk
 
-## 💫 Monthly Genel Durum
+## 💫 Ayl�k Genel Durum
 
-Merkür gezenenin etkisiyle bu monthly döneminde Kova burcu için iletişim enerjisi ön plana çıkacak.
+Merkür gezenenin etkisiyle bu Ayl�k döneminde Kova burcu için iletişim enerjisi ön plana çıkacak.
 
 Kova burcu olarak doğal bağımsız özelliğiniz bu dönemde avantajınız olacak.
 
@@ -33,27 +33,27 @@ Kova burcu olarak doğal bağımsız özelliğiniz bu dönemde avantajınız ola
 
 💑 **İlişkisi Olanlar:** Partnerinizle güzel sürprizler yaşayabilirsiniz.
 
-🌹 Elektrik Mavisi rengi bu monthly aşk hayatınızda şans getirebilir.
+🌹 Elektrik Mavisi rengi bu Ayl�k aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Özgünlük özelliğiniz sayesinde monthly boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Özgünlük özelliğiniz sayesinde Ayl�k boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Bilim alanında fırsatlar değerlendirilebilir.
 
-📈 Bu monthly terfi fırsatları için uygun zaman.
+📈 Bu Ayl�k terfi fırsatları için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 💨 Zihinsel aktifiteniz artacak. Nefes egzerzilerine zaman ayırın.
 
-⚖️ Bu monthly genel sağlık durumunuz iyi olacak.
+⚖️ Bu Ayl�k genel sağlık durumunuz iyi olacak.
 
-## 🎯 Monthly Tavsiyeleri
+## 🎯 Ayl�k Tavsiyeleri
 
-1. **Vizyon** özelliğinizi bu monthly daha aktif kullanın
+1. **Vizyon** özelliğinizi bu Ayl�k daha aktif kullanın
 2. **Aşırı idealizm** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Elektrik Mavisi** rengi bu monthly şansınızı artıracak
+3. **Elektrik Mavisi** rengi bu Ayl�k şansınızı artıracak
 4. **Terazi** burcu ile işbirliği yapın
 5. **Teknoloji** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Kova burcu olarak doğal bağımsız özelliğiniz bu dönemde avantajınız ola
 
 ## 💫 Sonuç
 
-Kova burcu olarak doğal yeteneklerinizi kullanarak bu monthly büyük adımlar atabilirsiniz.
+Kova burcu olarak doğal yeteneklerinizi kullanarak bu Ayl�k büyük adımlar atabilirsiniz.
 
 ---
 

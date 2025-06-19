@@ -1,13 +1,13 @@
 ---
-title: "İç Yolculuk - Koç Burcu Monthly Yorumu"
+title: "İç Yolculuk - Koç Burcu Ayl�k Yorumu"
 description: "Koç burcu için detaylı astroloji yorumu. i̇ç yolculuk konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["koç burcu", "monthly yorum", "astroloji", "burç yorumu"]
+tags: ["koç burcu", "ayl�k yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Koç Burcu Monthly Yorumu
+# Koç Burcu Ayl�k Yorumu
 
 🐏 **Koç Burcu** (**21 Mart - 19 Nisan**)
 
@@ -21,11 +21,11 @@ Bu ay Koç burcu için Plüton gezeninizin güçlü etkisiyle i̇ç yolculuk ya�
 
 **Dikkat Edilmesi Gerekenler:** Sabırsızlık, Öfke, Düşüncesizlik, Egoist davranış
 
-## 💫 Monthly Genel Durum
+## 💫 Ayl�k Genel Durum
 
-Plüton gezenenin etkisiyle bu monthly döneminde Koç burcu için güç enerjisi ön plana çıkacak.
+Plüton gezenenin etkisiyle bu Ayl�k döneminde Koç burcu için güç enerjisi ön plana çıkacak.
 
-Bu monthly Mars gezereninizin etkisiyle lider yanınız öne çıkacak.
+Bu Ayl�k Mars gezereninizin etkisiyle lider yanınız öne çıkacak.
 
 ## 💕 Aşk ve İlişkiler
 
@@ -33,27 +33,27 @@ Bu monthly Mars gezereninizin etkisiyle lider yanınız öne çıkacak.
 
 💑 **İlişkisi Olanlar:** Partnerinizle daha derin bağlar yaşayabilirsiniz.
 
-🌹 Kırmızı rengi bu monthly aşk hayatınızda şans getirebilir.
+🌹 Kırmızı rengi bu Ayl�k aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Liderlik özelliğiniz sayesinde monthly boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Liderlik özelliğiniz sayesinde Ayl�k boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Askerlik alanında fırsatlar değerlendirilebilir.
 
-📈 Bu monthly yeni projeler için uygun zaman.
+📈 Bu Ayl�k yeni projeler için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 🔥 Enerji seviyeniz yüksek olacak. Aktif sporları tercih edin.
 
-⚖️ Bu monthly genel sağlık durumunuz iyi olacak.
+⚖️ Bu Ayl�k genel sağlık durumunuz iyi olacak.
 
-## 🎯 Monthly Tavsiyeleri
+## 🎯 Ayl�k Tavsiyeleri
 
-1. **Liderlik** özelliğinizi bu monthly daha aktif kullanın
+1. **Liderlik** özelliğinizi bu Ayl�k daha aktif kullanın
 2. **Sabırsızlık** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Kırmızı** rengi bu monthly şansınızı artıracak
+3. **Kırmızı** rengi bu Ayl�k şansınızı artıracak
 4. **Yay** burcu ile işbirliği yapın
 5. **Girişimcilik** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Bu monthly Mars gezereninizin etkisiyle lider yanınız öne çıkacak.
 
 ## 💫 Sonuç
 
-Bu monthly sonunda kendinizi daha güçlü ve cesur hissedeceksiniz.
+Bu Ayl�k sonunda kendinizi daha güçlü ve cesur hissedeceksiniz.
 
 ---
 

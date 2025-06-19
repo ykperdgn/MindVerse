@@ -1,13 +1,13 @@
 ---
-title: "Ruhsal Yolculuk - Terazi Burcu Weekly Yorumu"
+title: "Ruhsal Yolculuk - Terazi Burcu Haftal�k Yorumu"
 description: "Terazi burcu için detaylı astroloji yorumu. ruhsal yolculuk konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["terazi burcu", "weekly yorum", "astroloji", "burç yorumu"]
+tags: ["terazi burcu", "haftal�k yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Terazi Burcu Weekly Yorumu
+# Terazi Burcu Haftal�k Yorumu
 
 ⚖️ **Terazi Burcu** (**23 Eylül - 22 Ekim**)
 
@@ -21,11 +21,11 @@ Bu hafta Terazi burcu için Uranüs etkisiyle ruhsal yolculuk dönemine giriyors
 
 **Dikkat Edilmesi Gerekenler:** Kararsızlık, Çelişki korkusu, Bağımlılık, Yüzeysellik
 
-## 💫 Weekly Genel Durum
+## 💫 Haftal�k Genel Durum
 
-Uranüs gezenenin etkisiyle bu weekly döneminde Terazi burcu için değişim enerjisi ön plana çıkacak.
+Uranüs gezenenin etkisiyle bu Haftal�k döneminde Terazi burcu için değişim enerjisi ön plana çıkacak.
 
-Bu weekly Venüs gezereninizin etkisiyle diplomatlık yanınız öne çıkacak.
+Bu Haftal�k Venüs gezereninizin etkisiyle diplomatlık yanınız öne çıkacak.
 
 ## 💕 Aşk ve İlişkiler
 
@@ -33,27 +33,27 @@ Bu weekly Venüs gezereninizin etkisiyle diplomatlık yanınız öne çıkacak.
 
 💑 **İlişkisi Olanlar:** Partnerinizle güzel sürprizler yaşayabilirsiniz.
 
-🌹 Pembe rengi bu weekly aşk hayatınızda şans getirebilir.
+🌹 Pembe rengi bu Haftal�k aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Diplomasi özelliğiniz sayesinde weekly boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Diplomasi özelliğiniz sayesinde Haftal�k boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Diplomasi alanında fırsatlar değerlendirilebilir.
 
-📈 Bu weekly terfi fırsatları için uygun zaman.
+📈 Bu Haftal�k terfi fırsatları için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 💨 Zihinsel aktifiteniz artacak. Nefes egzerzilerine zaman ayırın.
 
-⚖️ Bu weekly genel sağlık durumunuz iyi olacak.
+⚖️ Bu Haftal�k genel sağlık durumunuz iyi olacak.
 
-## 🎯 Weekly Tavsiyeleri
+## 🎯 Haftal�k Tavsiyeleri
 
-1. **Estetik anlayışı** özelliğinizi bu weekly daha aktif kullanın
+1. **Estetik anlayışı** özelliğinizi bu Haftal�k daha aktif kullanın
 2. **Bağımlılık** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Pembe** rengi bu weekly şansınızı artıracak
+3. **Pembe** rengi bu Haftal�k şansınızı artıracak
 4. **Yay** burcu ile işbirliği yapın
 5. **Sanat** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Bu weekly Venüs gezereninizin etkisiyle diplomatlık yanınız öne çıkacak.
 
 ## 💫 Sonuç
 
-Terazi burcu olarak doğal yeteneklerinizi kullanarak bu weekly büyük adımlar atabilirsiniz.
+Terazi burcu olarak doğal yeteneklerinizi kullanarak bu Haftal�k büyük adımlar atabilirsiniz.
 
 ---
 

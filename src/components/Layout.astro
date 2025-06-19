@@ -98,9 +98,14 @@ const currentUrl = canonicalUrl || Astro.url.href;
 <body>
   <div class="min-h-screen flex flex-col">    <header class="bg-white border-b border-gray-200 shadow-sm">
       <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-          <a href="/" class="hover:from-blue-700 hover:to-purple-700 transition-all">🌌 MindVerse</a>
-        </h1>
+        <div class="flex items-center">
+          <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-400 shadow-lg mr-3 animate-gradient-move">
+            <span class="text-3xl">🌌</span>
+          </span>
+          <a href="/" class="text-2xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-400 bg-clip-text text-transparent tracking-tight drop-shadow-sm hover:from-blue-700 hover:to-purple-700 transition-all animate-gradient-move">
+            MindVerse
+          </a>
+        </div>
         <div class="flex space-x-6 text-gray-700">
           <a href="/" class="hover:text-blue-600 transition-colors font-medium">🏠 Ana Sayfa</a>
           <a href="/popular" class="hover:text-blue-600 transition-colors font-medium">🔥 Popüler</a>
@@ -165,5 +170,17 @@ const currentUrl = canonicalUrl || Astro.url.href;
       </div>
     </footer>
   </div>
+
+  <style>
+    @keyframes gradient-move {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .animate-gradient-move {
+      background-size: 200% 200%;
+      animation: gradient-move 5s ease-in-out infinite;
+    }
+  </style>
 </body>
 </html>

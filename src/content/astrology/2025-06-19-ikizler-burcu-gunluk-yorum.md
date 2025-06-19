@@ -1,13 +1,13 @@
 ---
-title: "Ruhsal Gelişim - İkizler Burcu Daily Yorumu"
+title: "Ruhsal Gelişim - İkizler Burcu G�nl�k Yorumu"
 description: "İkizler burcu için detaylı astroloji yorumu. ruhsal gelişim konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["i̇kizler burcu", "daily yorum", "astroloji", "burç yorumu"]
+tags: ["i̇kizler burcu", "g�nl�k yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# İkizler Burcu Daily Yorumu
+# İkizler Burcu G�nl�k Yorumu
 
 👯 **İkizler Burcu** (**21 Mayıs - 20 Haziran**)
 
@@ -21,11 +21,11 @@ Bugün İkizler burcu için Neptün gezeninizin etkisiyle ruhsal gelişim yaşay
 
 **Dikkat Edilmesi Gerekenler:** Kararsızlık, Yüzeysellik, Sabırsızlık, Güvenilmezlik
 
-## 💫 Daily Genel Durum
+## 💫 G�nl�k Genel Durum
 
-Neptün gezenenin etkisiyle bu daily döneminde İkizler burcu için spiritüalite enerjisi ön plana çıkacak.
+Neptün gezenenin etkisiyle bu G�nl�k döneminde İkizler burcu için spiritüalite enerjisi ön plana çıkacak.
 
-Bu daily Merkür gezereninizin etkisiyle zeki yanınız öne çıkacak.
+Bu G�nl�k Merkür gezereninizin etkisiyle zeki yanınız öne çıkacak.
 
 ## 💕 Aşk ve İlişkiler
 
@@ -33,27 +33,27 @@ Bu daily Merkür gezereninizin etkisiyle zeki yanınız öne çıkacak.
 
 💑 **İlişkisi Olanlar:** Partnerinizle güzel sürprizler yaşayabilirsiniz.
 
-🌹 Sarı rengi bu daily aşk hayatınızda şans getirebilir.
+🌹 Sarı rengi bu G�nl�k aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Sosyallik özelliğiniz sayesinde daily boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Sosyallik özelliğiniz sayesinde G�nl�k boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Teknoloji alanında fırsatlar değerlendirilebilir.
 
-📈 Bu daily yeni projeler için uygun zaman.
+📈 Bu G�nl�k yeni projeler için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 💨 Zihinsel aktifiteniz artacak. Nefes egzerzilerine zaman ayırın.
 
-⚖️ Bu daily genel sağlık durumunuz iyi olacak.
+⚖️ Bu G�nl�k genel sağlık durumunuz iyi olacak.
 
-## 🎯 Daily Tavsiyeleri
+## 🎯 G�nl�k Tavsiyeleri
 
-1. **Çok yönlülük** özelliğinizi bu daily daha aktif kullanın
+1. **Çok yönlülük** özelliğinizi bu G�nl�k daha aktif kullanın
 2. **Yüzeysellik** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Sarı** rengi bu daily şansınızı artıracak
+3. **Sarı** rengi bu G�nl�k şansınızı artıracak
 4. **Terazi** burcu ile işbirliği yapın
 5. **Yazarlık** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Bu daily Merkür gezereninizin etkisiyle zeki yanınız öne çıkacak.
 
 ## 💫 Sonuç
 
-İkizler burcu olarak doğal yeteneklerinizi kullanarak bu daily büyük adımlar atabilirsiniz.
+İkizler burcu olarak doğal yeteneklerinizi kullanarak bu G�nl�k büyük adımlar atabilirsiniz.
 
 ---
 

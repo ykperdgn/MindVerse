@@ -1,13 +1,13 @@
 ---
-title: "Büyük Dönüşümler - Yay Burcu Monthly Yorumu"
+title: "Büyük Dönüşümler - Yay Burcu Ayl�k Yorumu"
 description: "Yay burcu için detaylı astroloji yorumu. büyük dönüşümler konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["yay burcu", "monthly yorum", "astroloji", "burç yorumu"]
+tags: ["yay burcu", "ayl�k yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Yay Burcu Monthly Yorumu
+# Yay Burcu Ayl�k Yorumu
 
 🏹 **Yay Burcu** (**22 Kasım - 21 Aralık**)
 
@@ -21,11 +21,11 @@ Bu ay Yay burcu için Jüpiter gezeninizin güçlü etkisiyle büyük dönüşü
 
 **Dikkat Edilmesi Gerekenler:** Sabırsızlık, Düşüncesizlik, Aşırı dürüstlük, Sorumluluktan kaçış
 
-## 💫 Monthly Genel Durum
+## 💫 Ayl�k Genel Durum
 
-Jüpiter gezenenin etkisiyle bu monthly döneminde Yay burcu için şans enerjisi ön plana çıkacak.
+Jüpiter gezenenin etkisiyle bu Ayl�k döneminde Yay burcu için şans enerjisi ön plana çıkacak.
 
-Ateş elementi size monthly boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
+Ateş elementi size Ayl�k boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
 
 ## 💕 Aşk ve İlişkiler
 
@@ -33,27 +33,27 @@ Ateş elementi size monthly boyunca güç verecek ve hedeflerinize odaklanmanız
 
 💑 **İlişkisi Olanlar:** Partnerinizle romantik anlar yaşayabilirsiniz.
 
-🌹 Mor rengi bu monthly aşk hayatınızda şans getirebilir.
+🌹 Mor rengi bu Ayl�k aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Dürüstlük özelliğiniz sayesinde monthly boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Dürüstlük özelliğiniz sayesinde Ayl�k boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Turizm alanında fırsatlar değerlendirilebilir.
 
-📈 Bu monthly yeni projeler için uygun zaman.
+📈 Bu Ayl�k yeni projeler için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 🔥 Enerji seviyeniz yüksek olacak. Aktif sporları tercih edin.
 
-⚖️ Bu monthly genel sağlık durumunuz iyi olacak.
+⚖️ Bu Ayl�k genel sağlık durumunuz iyi olacak.
 
-## 🎯 Monthly Tavsiyeleri
+## 🎯 Ayl�k Tavsiyeleri
 
-1. **Macera ruhu** özelliğinizi bu monthly daha aktif kullanın
+1. **Macera ruhu** özelliğinizi bu Ayl�k daha aktif kullanın
 2. **Aşırı dürüstlük** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Mor** rengi bu monthly şansınızı artıracak
+3. **Mor** rengi bu Ayl�k şansınızı artıracak
 4. **Koç** burcu ile işbirliği yapın
 5. **Felsefe** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Ateş elementi size monthly boyunca güç verecek ve hedeflerinize odaklanmanız
 
 ## 💫 Sonuç
 
-Bu monthly Yay burcu için büyük dönüşümler yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.
+Bu Ayl�k Yay burcu için büyük dönüşümler yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.
 
 ---
 

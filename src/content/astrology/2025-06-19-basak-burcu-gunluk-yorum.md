@@ -1,13 +1,13 @@
 ---
-title: "Yeni Başlangıçlar - Başak Burcu Daily Yorumu"
+title: "Yeni Başlangıçlar - Başak Burcu G�nl�k Yorumu"
 description: "Başak burcu için detaylı astroloji yorumu. yeni başlangıçlar konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["başak burcu", "daily yorum", "astroloji", "burç yorumu"]
+tags: ["başak burcu", "g�nl�k yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Başak Burcu Daily Yorumu
+# Başak Burcu G�nl�k Yorumu
 
 👩‍🌾 **Başak Burcu** (**23 Ağustos - 22 Eylül**)
 
@@ -21,11 +21,11 @@ Bugün Başak burcu için Venüs gezeninizin etkisiyle yeni başlangıçlar yaş
 
 **Dikkat Edilmesi Gerekenler:** Aşırı eleştiri, Endişe, Mükemmeliyetçilik, Katılık
 
-## 💫 Daily Genel Durum
+## 💫 G�nl�k Genel Durum
 
-Venüs gezenenin etkisiyle bu daily döneminde Başak burcu için uyum enerjisi ön plana çıkacak.
+Venüs gezenenin etkisiyle bu G�nl�k döneminde Başak burcu için uyum enerjisi ön plana çıkacak.
 
-Bu daily Merkür gezereninizin etkisiyle analitik yanınız öne çıkacak.
+Bu G�nl�k Merkür gezereninizin etkisiyle analitik yanınız öne çıkacak.
 
 ## 💕 Aşk ve İlişkiler
 
@@ -33,27 +33,27 @@ Bu daily Merkür gezereninizin etkisiyle analitik yanınız öne çıkacak.
 
 💑 **İlişkisi Olanlar:** Partnerinizle romantik anlar yaşayabilirsiniz.
 
-🌹 Kahverengi rengi bu daily aşk hayatınızda şans getirebilir.
+🌹 Kahverengi rengi bu G�nl�k aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Detay odağı özelliğiniz sayesinde daily boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Detay odağı özelliğiniz sayesinde G�nl�k boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Sağlık alanında fırsatlar değerlendirilebilir.
 
-📈 Bu daily terfi fırsatları için uygun zaman.
+📈 Bu G�nl�k terfi fırsatları için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 🌱 Vücudunuzla uyum içinde olacaksınız. Doğal beslenmeye önem verin.
 
-⚖️ Bu daily genel sağlık durumunuz iyi olacak.
+⚖️ Bu G�nl�k genel sağlık durumunuz iyi olacak.
 
-## 🎯 Daily Tavsiyeleri
+## 🎯 G�nl�k Tavsiyeleri
 
-1. **Analitik düşünce** özelliğinizi bu daily daha aktif kullanın
+1. **Analitik düşünce** özelliğinizi bu G�nl�k daha aktif kullanın
 2. **Mükemmeliyetçilik** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Kahverengi** rengi bu daily şansınızı artıracak
+3. **Kahverengi** rengi bu G�nl�k şansınızı artıracak
 4. **Boğa** burcu ile işbirliği yapın
 5. **Muhasebe** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Bu daily Merkür gezereninizin etkisiyle analitik yanınız öne çıkacak.
 
 ## 💫 Sonuç
 
-Bu daily sonunda kendinizi daha güçlü ve mükemmeliyetçi hissedeceksiniz.
+Bu G�nl�k sonunda kendinizi daha güçlü ve mükemmeliyetçi hissedeceksiniz.
 
 ---
 

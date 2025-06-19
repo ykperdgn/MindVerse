@@ -1,13 +1,13 @@
 ---
-title: "İlişkilerde Derinlik - Akrep Burcu Weekly Yorumu"
+title: "İlişkilerde Derinlik - Akrep Burcu Haftalık Yorumu"
 description: "Akrep burcu için detaylı astroloji yorumu. i̇lişkilerde derinlik konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["akrep burcu", "weekly yorum", "astroloji", "burç yorumu"]
+tags: ["akrep burcu", "haftalık yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Akrep Burcu Weekly Yorumu
+# Akrep Burcu Haftalık Yorumu
 
 🦂 **Akrep Burcu** (**23 Ekim - 21 Kasım**)
 
@@ -21,11 +21,11 @@ Bu hafta Akrep burcu için Neptün etkisiyle i̇lişkilerde derinlik dönemine g
 
 **Dikkat Edilmesi Gerekenler:** Kıskançlık, İntikamcılık, Şüphecilik, Saplantı
 
-## 💫 Weekly Genel Durum
+## 💫 Haftalık Genel Durum
 
-Neptün gezenenin etkisiyle bu weekly döneminde Akrep burcu için rüyalar enerjisi ön plana çıkacak.
+Neptün gezenenin etkisiyle bu haftalık döneminde Akrep burcu için rüyalar enerjisi ön plana çıkacak.
 
-Su elementi size weekly boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
+Su elementi size haftalık boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
 
 ## 💕 Aşk ve İlişkiler
 
@@ -33,27 +33,27 @@ Su elementi size weekly boyunca güç verecek ve hedeflerinize odaklanmanızı s
 
 💑 **İlişkisi Olanlar:** Partnerinizle güzel sürprizler yaşayabilirsiniz.
 
-🌹 Bordo rengi bu weekly aşk hayatınızda şans getirebilir.
+🌹 Bordo rengi bu Haftal�k aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Sezgi özelliğiniz sayesinde weekly boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Sezgi özelliğiniz sayesinde Haftal�k boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Tıp alanında fırsatlar değerlendirilebilir.
 
-📈 Bu weekly yeni projeler için uygun zaman.
+📈 Bu Haftal�k yeni projeler için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 💧 Duygusal dengeniz önemli. Su sporları ve meditasyon faydalı olacak.
 
-⚖️ Bu weekly genel sağlık durumunuz iyi olacak.
+⚖️ Bu Haftal�k genel sağlık durumunuz iyi olacak.
 
-## 🎯 Weekly Tavsiyeleri
+## 🎯 Haftal�k Tavsiyeleri
 
-1. **Kararlılık** özelliğinizi bu weekly daha aktif kullanın
+1. **Kararlılık** özelliğinizi bu Haftal�k daha aktif kullanın
 2. **Şüphecilik** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Bordo** rengi bu weekly şansınızı artıracak
+3. **Bordo** rengi bu Haftal�k şansınızı artıracak
 4. **Başak** burcu ile işbirliği yapın
 5. **Araştırma** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Su elementi size weekly boyunca güç verecek ve hedeflerinize odaklanmanızı s
 
 ## 💫 Sonuç
 
-Bu weekly Akrep burcu için i̇lişkilerde derinlik yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.
+Bu Haftal�k Akrep burcu için i̇lişkilerde derinlik yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.
 
 ---
 

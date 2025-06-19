@@ -1,13 +1,13 @@
 ---
-title: "Ruhsal Uyanış - Aslan Burcu Monthly Yorumu"
+title: "Ruhsal Uyanış - Aslan Burcu Ayl�k Yorumu"
 description: "Aslan burcu için detaylı astroloji yorumu. ruhsal uyanış konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["aslan burcu", "monthly yorum", "astroloji", "burç yorumu"]
+tags: ["aslan burcu", "ayl�k yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Aslan Burcu Monthly Yorumu
+# Aslan Burcu Ayl�k Yorumu
 
 🦁 **Aslan Burcu** (**23 Temmuz - 22 Ağustos**)
 
@@ -21,11 +21,11 @@ Bu ay Aslan burcu için Plüton gezeninizin güçlü etkisiyle ruhsal uyanış y
 
 **Dikkat Edilmesi Gerekenler:** Ego, Drama, Dikkat arayışı, İnatçılık, Kibir
 
-## 💫 Monthly Genel Durum
+## 💫 Ayl�k Genel Durum
 
-Plüton gezenenin etkisiyle bu monthly döneminde Aslan burcu için yeniden doğuş enerjisi ön plana çıkacak.
+Plüton gezenenin etkisiyle bu Ayl�k döneminde Aslan burcu için yeniden doğuş enerjisi ön plana çıkacak.
 
-Ateş elementi size monthly boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
+Ateş elementi size Ayl�k boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
 
 ## 💕 Aşk ve İlişkiler
 
@@ -33,27 +33,27 @@ Ateş elementi size monthly boyunca güç verecek ve hedeflerinize odaklanmanız
 
 💑 **İlişkisi Olanlar:** Partnerinizle özel aktiviteler yaşayabilirsiniz.
 
-🌹 Altın rengi bu monthly aşk hayatınızda şans getirebilir.
+🌹 Altın rengi bu Ayl�k aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Yaratıcılık özelliğiniz sayesinde monthly boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Yaratıcılık özelliğiniz sayesinde Ayl�k boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Yöneticilik alanında fırsatlar değerlendirilebilir.
 
-📈 Bu monthly iş birliği için uygun zaman.
+📈 Bu Ayl�k iş birliği için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 🔥 Enerji seviyeniz yüksek olacak. Aktif sporları tercih edin.
 
-⚖️ Bu monthly genel sağlık durumunuz iyi olacak.
+⚖️ Bu Ayl�k genel sağlık durumunuz iyi olacak.
 
-## 🎯 Monthly Tavsiyeleri
+## 🎯 Ayl�k Tavsiyeleri
 
-1. **Cömertlik** özelliğinizi bu monthly daha aktif kullanın
+1. **Cömertlik** özelliğinizi bu Ayl�k daha aktif kullanın
 2. **İnatçılık** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Altın** rengi bu monthly şansınızı artıracak
+3. **Altın** rengi bu Ayl�k şansınızı artıracak
 4. **Terazi** burcu ile işbirliği yapın
 5. **Yöneticilik** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Ateş elementi size monthly boyunca güç verecek ve hedeflerinize odaklanmanız
 
 ## 💫 Sonuç
 
-Bu monthly Aslan burcu için ruhsal uyanış yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.
+Bu Ayl�k Aslan burcu için ruhsal uyanış yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.
 
 ---
 

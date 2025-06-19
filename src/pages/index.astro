@@ -13,26 +13,35 @@ const categories = [
 ---
 
 <Layout title="MindVerse - Çoklu Niş Bilgi Portalı">
-  <header class="text-center py-10 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-    <h1 class="text-5xl font-bold mb-4">🌌 MindVerse</h1>
-    <p class="text-xl mb-6">Bilginin sonsuz evrenini keşfedin</p>
-    <p class="text-lg opacity-90">Zengin içerikler • Güncel bilgiler • Uzman tavsiyeleri</p>
+  <header class="relative flex flex-col items-center justify-center py-16 md:py-20 overflow-hidden">
+    <div class="absolute inset-0 w-full h-full animate-gradient-move bg-gradient-to-br from-blue-100 via-pink-100 to-purple-100 opacity-60 blur-2xl z-0"></div>
+    <div class="relative z-10 flex flex-col items-center">
+      <span class="inline-flex items-center justify-center w-28 h-28 md:w-32 md:h-32 rounded-full animate-gradient-move bg-gradient-to-br from-blue-500 via-purple-500 to-pink-400 shadow-2xl mb-6 border-4 border-white/80">
+        <span class="text-6xl md:text-7xl drop-shadow-lg">🌌</span>
+      </span>
+      <h1 class="text-6xl md:text-7xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-400 bg-clip-text text-transparent tracking-tight drop-shadow-xl animate-gradient-move mb-2">
+        MindVerse
+      </h1>
+      <p class="text-2xl md:text-3xl mb-2 font-semibold text-gray-800 drop-shadow-sm">Bilginin sonsuz evrenini keşfedin</p>
+      <p class="text-lg md:text-xl opacity-90 font-medium text-gray-700 mb-2">Zengin içerikler • Güncel bilgiler • Uzman tavsiyeleri</p>
+    </div>
   </header>
 
-  <main class="container mx-auto px-4 py-8">
-    <!-- Popüler içerikler hızlı erişim -->
-    <div class="text-center mb-8">
-      <a
+  <main class="container mx-auto px-4 py-10 md:py-16">    <!-- Popüler içerikler hızlı erişim -->
+    <div class="text-center mb-12">      <a
         href="/popular"
-        class="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all transform hover:scale-105 shadow-lg"
+        class="inline-flex items-center animate-gradient-move bg-gradient-to-r from-orange-400 via-pink-400 to-purple-400 text-white px-10 py-5 rounded-2xl font-bold shadow-2xl transition-all transform hover:scale-105 border-0 ring-2 ring-pink-200 hover:ring-purple-300 focus:outline-none focus:ring-4 focus:ring-blue-300 relative overflow-hidden pop-button"
+        style="background-size:200% 200%;"
       >
-        🔥 Popüler İçerikler
-        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <span class="mr-3 text-2xl">🔥</span> Popüler İçerikler
+        <svg class="w-6 h-6 ml-3 animate-bounce-x" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
         </svg>
-      </a>
-    </div>    <!-- AdSense ana sayfa reklam alanı -->
-    <div class="flex justify-center mb-8">
+        <span class="absolute inset-0 pointer-events-none pop-glow"></span>
+      </a>    </div>
+
+    <!-- AdSense ana sayfa reklam alanı -->
+    <div class="flex justify-center mb-10">
       <div class="w-full max-w-lg">
         <ins class="adsbygoogle"
           style="display: block"
@@ -43,31 +52,32 @@ const categories = [
       </div>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      {categories.map(category => (
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">      {categories.map(category => (
         <a
           href={category.url}
-          class="block bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all transform hover:scale-105 border-l-4 border-blue-500"
+          class={`block rounded-2xl shadow-xl p-8 md:p-10 hover:shadow-2xl transition-all transform hover:scale-[1.04] border-l-8 font-semibold category-card-${category.name.toLowerCase()} group relative overflow-hidden`}
         >
-          <div class="text-center">
-            <div class="text-4xl mb-4">{category.icon}</div>
-            <h2 class="text-xl font-bold mb-2 text-gray-800">{category.title}</h2>            <p class="text-gray-600 text-sm">
+          <div class="flex flex-col items-center">
+            <div class="text-6xl md:text-7xl mb-6 group-hover:scale-110 transition-transform duration-300">{category.icon}</div>
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-800 group-hover:text-gray-900">{category.title}</h2>
+            <p class="text-gray-600 text-sm md:text-base leading-relaxed text-center">
               {category.name === 'Health' && 'Sağlıklı yaşam ipuçları ve medikal bilgiler'}
               {category.name === 'Love' && 'İlişkiler, aşk ve duygusal bağlar hakkında'}
               {category.name === 'History' && 'Tarihi olaylar ve kişiler'}
               {category.name === 'Psychology' && 'İnsan davranışları ve zihin'}
               {category.name === 'Space' && 'Uzay bilimleri ve astronomi'}
               {category.name === 'Quotes' && 'İlham verici sözler ve alıntılar'}
-              {category.name === 'Astrology' && 'Burç yorumları ve astroloji rehberleri'}
-            </p>
-            <div class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded text-sm">
+              {category.name === 'Astrology' && 'Burç yorumları ve astroloji rehberleri'}            </p>
+            <div class="mt-6 inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-full text-sm font-semibold shadow-lg group-hover:shadow-xl transition-all">
               Keşfet →
             </div>
           </div>
         </a>
       ))}
-    </div>    <!-- Alt reklam alanı -->
-    <div class="flex justify-center mt-12">
+    </div>
+
+    <!-- Alt reklam alanı -->
+    <div class="flex justify-center mt-16">
       <div class="w-full max-w-lg">
         <ins class="adsbygoogle"
           style="display: block"
@@ -78,4 +88,61 @@ const categories = [
       </div>
     </div>
   </main>
+
+  <style>
+    @keyframes gradient-move {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .animate-gradient-move {
+      background-size: 200% 200%;
+      animation: gradient-move 5s ease-in-out infinite;
+    }
+    .pop-button .pop-glow {
+      background: radial-gradient(circle, #fff7ed 0%, #fbbf24 40%, transparent 80%);
+      opacity: 0.25;
+      filter: blur(12px);
+      z-index: 1;
+      transition: opacity 0.3s;
+    }
+    .pop-button:hover .pop-glow {
+      opacity: 0.5;
+    }
+    @keyframes bounce-x {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(8px); }
+    }
+    .animate-bounce-x {
+      animation: bounce-x 1.2s infinite;
+    }
+    .category-card-health {
+      background: linear-gradient(135deg, #f7ffe0 0%, #e0ffe7 100%);
+      border-left-color: #34d399;
+    }
+    .category-card-love {
+      background: linear-gradient(135deg, #fff0f6 0%, #ffe0e7 100%);
+      border-left-color: #fb7185;
+    }
+    .category-card-history {
+      background: linear-gradient(135deg, #fdf6e3 0%, #f5e9da 100%);
+      border-left-color: #fbbf24;
+    }
+    .category-card-psychology {
+      background: linear-gradient(135deg, #e0e7ff 0%, #ede9fe 100%);
+      border-left-color: #818cf8;
+    }
+    .category-card-space {
+      background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+      border-left-color: #38bdf8;
+    }
+    .category-card-quotes {
+      background: linear-gradient(135deg, #f3e8ff 0%, #fdf2ff 100%);
+      border-left-color: #a78bfa;
+    }
+    .category-card-astrology {
+      background: linear-gradient(135deg, #fef9c3 0%, #fce7f3 100%);
+      border-left-color: #f472b6;
+    }
+  </style>
 </Layout>
