@@ -45,12 +45,5 @@
         }
       ]
     }
-  ],
-  "redirects": [
-    {
-      "source": "/admin",
-      "destination": "/admin/newsletter",
-      "permanent": false
-    }
   ]
 }
