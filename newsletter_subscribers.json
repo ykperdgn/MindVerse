@@ -1,0 +1,10 @@
+{
+  "subscribers": [
+    {
+      "email": "test@example.com",
+      "language": "Test User",
+      "subscribed_date": "2025-06-20T01:12:23.121211",
+      "active": true
+    }
+  ]
+}
