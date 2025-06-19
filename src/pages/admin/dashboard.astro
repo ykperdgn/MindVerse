@@ -1,9 +1,27 @@
+export const prerender = false;
+
 ---
 import { Astro } from 'astro';
 const { cookies } = Astro;
 if (cookies.get('admin_auth')?.value !== 'true') {
   return Astro.redirect('/admin');
 }
+
+// MOCK: Kategoriler ve içerikler (gerçek dosya işlemi yok, örnek veri)
+const categories = [
+  { name: 'Sağlık', slug: 'health' },
+  { name: 'Aşk', slug: 'love' },
+  { name: 'Tarih', slug: 'history' },
+  { name: 'Psikoloji', slug: 'psychology' },
+  { name: 'Uzay', slug: 'space' },
+  { name: 'Alıntılar', slug: 'quotes' },
+  { name: 'Astroloji', slug: 'astrology' },
+];
+const posts = [
+  { id: 1, title: 'Sağlıklı Yaşam İpuçları', category: 'health', summary: 'Daha sağlıklı bir yaşam için öneriler.', content: '...' },
+  { id: 2, title: 'Aşk ve İlişkiler', category: 'love', summary: 'İlişkilerde mutluluk için ipuçları.', content: '...' },
+  { id: 3, title: 'Tarihte Bugün', category: 'history', summary: 'Tarihte bugün yaşanan önemli olaylar.', content: '...' },
+];
 ---
 
 <html lang="tr">
@@ -14,22 +32,69 @@ if (cookies.get('admin_auth')?.value !== 'true') {
     <link rel="stylesheet" href="/src/styles/global.css" />
   </head>
   <body class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-100 via-pink-100 to-purple-100">
-    <div class="bg-white rounded-2xl shadow-2xl p-10 w-full max-w-2xl flex flex-col gap-6 items-center">
+    <div class="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-4xl flex flex-col gap-8 items-center">
       <h1 class="text-3xl font-extrabold mb-2 bg-gradient-to-r from-blue-600 via-purple-500 to-pink-400 bg-clip-text text-transparent">MindVerse Admin Paneli</h1>
-      <p class="text-lg text-gray-700 mb-4">Hoş geldiniz, <b>ykperdgn</b>! Buradan site içeriklerinizi ve ayarlarınızı yönetebilirsiniz.</p>
-      <div class="flex flex-wrap gap-4 justify-center">
+      <div class="flex flex-wrap gap-4 justify-center w-full">
         <a href="/" class="px-6 py-3 rounded-lg bg-blue-100 text-blue-800 font-bold hover:bg-blue-200 transition">Siteye Dön</a>
         <form method="POST" action="/admin/logout" class="inline">
           <button type="submit" class="px-6 py-3 rounded-lg bg-red-100 text-red-800 font-bold hover:bg-red-200 transition">Çıkış Yap</button>
         </form>
       </div>
-      <div class="w-full mt-8">
-        <h2 class="text-xl font-bold mb-2">Yönetim Özellikleri</h2>
-        <ul class="list-disc pl-6 text-gray-700">
-          <li>İçerik ekleme, düzenleme ve silme (manuel dosya ile)</li>
-          <li>Kategori yönetimi (manuel dosya ile)</li>
-          <li>Gelişmiş yönetim için özel geliştirme yapılabilir</li>
-        </ul>
+      <div class="w-full grid md:grid-cols-2 gap-8">
+        <!-- İçerik Yönetimi -->
+        <section class="bg-gray-50 rounded-xl p-6 shadow flex flex-col gap-4">
+          <h2 class="text-xl font-bold mb-2 text-blue-700">İçerik Yönetimi</h2>
+          <form class="flex flex-col gap-2 mb-4">
+            <input type="text" placeholder="Başlık" class="border rounded px-3 py-2" />
+            <select class="border rounded px-3 py-2">
+              {categories.map(cat => <option value={cat.slug}>{cat.name}</option>)}
+            </select>
+            <input type="text" placeholder="Özet" class="border rounded px-3 py-2" />
+            <textarea placeholder="İçerik" class="border rounded px-3 py-2 min-h-[80px]"></textarea>
+            <button type="button" class="bg-gradient-to-r from-blue-500 to-pink-500 text-white font-bold py-2 rounded hover:from-pink-500 hover:to-blue-500 transition-all">Ekle</button>
+          </form>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="text-left text-gray-600">
+                  <th>Başlık</th>
+                  <th>Kategori</th>
+                  <th>Özet</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                {posts.map(post => (
+                  <tr class="border-b last:border-0">
+                    <td class="py-1 pr-2 font-semibold">{post.title}</td>
+                    <td class="py-1 pr-2">{categories.find(c=>c.slug===post.category)?.name}</td>
+                    <td class="py-1 pr-2">{post.summary}</td>
+                    <td class="py-1 flex gap-2">
+                      <button class="text-blue-600 hover:underline">Düzenle</button>
+                      <button class="text-red-600 hover:underline">Sil</button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <!-- Kategori Yönetimi -->
+        <section class="bg-gray-50 rounded-xl p-6 shadow flex flex-col gap-4">
+          <h2 class="text-xl font-bold mb-2 text-purple-700">Kategori Yönetimi</h2>
+          <form class="flex gap-2 mb-4">
+            <input type="text" placeholder="Yeni kategori adı" class="border rounded px-3 py-2 flex-1" />
+            <button type="button" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold px-4 py-2 rounded hover:from-pink-500 hover:to-purple-500 transition-all">Ekle</button>
+          </form>
+          <ul class="flex flex-col gap-2">
+            {categories.map(cat => (
+              <li class="flex items-center justify-between bg-white rounded px-3 py-2 shadow-sm">
+                <span>{cat.name}</span>
+                <button class="text-red-600 hover:underline text-xs">Sil</button>
+              </li>
+            ))}
+          </ul>
+        </section>
       </div>
     </div>
   </body>
