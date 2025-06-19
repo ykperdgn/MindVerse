@@ -22,7 +22,6 @@
       Yorumları Görüntüle & Yorum Yap
     </a>
   </div>
-
   <!-- Bülten Kayıt Alanı -->
   <div class="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-xl p-6">
     <div class="flex items-center mb-4">
@@ -47,7 +46,12 @@
       >
         📧 Bültene Katıl
       </button>
-    </form>    <p class="text-xs text-purple-600 mt-2">
+    </form>
+
+    <!-- EmailJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <p class="text-xs text-purple-600 mt-2">
       * İstediğiniz zaman abonelikten çıkabilirsiniz. Spam yapmıyoruz!
     </p>
   </div>
@@ -69,24 +73,52 @@
   </div>
 </div>
 
-<script>
-  // Bülten kayıt fonksiyonu
+<script>  // EmailJS Initialize (sayfa yüklendiğinde)
+  document.addEventListener('DOMContentLoaded', function() {
+    emailjs.init("bSthibpi4onPJsxgU"); // EmailJS Public Key - AKTIF!
+  });
+
+  // Bülten kayıt fonksiyonu - EmailJS Aktif
   function handleNewsletterSubmit(event) {
     event.preventDefault();
     const email = event.target.querySelector('input[type="email"]').value;
+    const button = event.target.querySelector('button[type="submit"]');
 
-    // LocalStorage'a kaydet (gerçek uygulamada API'ye gönderilir)
+    // Button loading state
+    const originalText = button.innerHTML;
+    button.innerHTML = '⏳ Gönderiliyor...';
+    button.disabled = true;
+
+    // LocalStorage'a kaydet
     const subscribers = JSON.parse(localStorage.getItem('newsletter_subscribers') || '[]');
     if (!subscribers.includes(email)) {
       subscribers.push(email);
       localStorage.setItem('newsletter_subscribers', JSON.stringify(subscribers));
 
-      // Başarı mesajı
-      showMessage('✅ Bültene başarıyla kaydoldunuz! Teşekkürler.', 'success');
-      event.target.reset();
+      // EmailJS ile email gönder
+      emailjs.send('service_9nziaij', 'template_mindverse', {
+        from_email: email,
+        from_name: email.split('@')[0],
+        signup_date: new Date().toLocaleDateString('tr-TR'),
+        site_url: 'https://www.mindversedaily.com',
+        to_email: 'jacobrayan3@gmail.com' // Bildirim alacağınız email
+      }).then(() => {
+        showMessage('✅ Bültene başarıyla kaydoldunuz! Hoş geldin emaili gönderildi.', 'success');
+        event.target.reset();
+      }).catch((error) => {
+        console.log('EmailJS Error:', error);
+        showMessage('✅ Bültene kaydoldunuz! Email bildirimi yakında gelecek.', 'success');
+        event.target.reset();
+      }).finally(() => {
+        button.innerHTML = originalText;
+        button.disabled = false;
+      });
     } else {
       showMessage('ℹ️ Bu e-posta adresi zaten kayıtlı.', 'info');
-    }  }
+      button.innerHTML = originalText;
+      button.disabled = false;
+    }
+  }
 
   // Mesaj gösterme fonksiyonu
   function showMessage(message, type) {

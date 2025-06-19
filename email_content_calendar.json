@@ -1,0 +1,334 @@
+{
+  "2025-06-19": {
+    "date": "2025-06-19",
+    "weekday": "thursday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-06-19",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-06-20": {
+    "date": "2025-06-20",
+    "weekday": "friday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-06-20",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-06-21": {
+    "date": "2025-06-21",
+    "weekday": "saturday",
+    "emails": []
+  },
+  "2025-06-22": {
+    "date": "2025-06-22",
+    "weekday": "sunday",
+    "emails": [
+      {
+        "type": "weekly_roundup",
+        "time": "10:00",
+        "subject": "🔥 Bu Haftanın En Popüler İçerikleri",
+        "template": "weekly_roundup"
+      }
+    ]
+  },
+  "2025-06-23": {
+    "date": "2025-06-23",
+    "weekday": "monday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-06-23",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-06-24": {
+    "date": "2025-06-24",
+    "weekday": "tuesday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-06-24",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-06-25": {
+    "date": "2025-06-25",
+    "weekday": "wednesday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-06-25",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-06-26": {
+    "date": "2025-06-26",
+    "weekday": "thursday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-06-26",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-06-27": {
+    "date": "2025-06-27",
+    "weekday": "friday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-06-27",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-06-28": {
+    "date": "2025-06-28",
+    "weekday": "saturday",
+    "emails": []
+  },
+  "2025-06-29": {
+    "date": "2025-06-29",
+    "weekday": "sunday",
+    "emails": [
+      {
+        "type": "weekly_roundup",
+        "time": "10:00",
+        "subject": "🔥 Bu Haftanın En Popüler İçerikleri",
+        "template": "weekly_roundup"
+      }
+    ]
+  },
+  "2025-06-30": {
+    "date": "2025-06-30",
+    "weekday": "monday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-06-30",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-07-01": {
+    "date": "2025-07-01",
+    "weekday": "tuesday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-07-01",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-07-02": {
+    "date": "2025-07-02",
+    "weekday": "wednesday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-07-02",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-07-03": {
+    "date": "2025-07-03",
+    "weekday": "thursday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-07-03",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-07-04": {
+    "date": "2025-07-04",
+    "weekday": "friday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-07-04",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-07-05": {
+    "date": "2025-07-05",
+    "weekday": "saturday",
+    "emails": []
+  },
+  "2025-07-06": {
+    "date": "2025-07-06",
+    "weekday": "sunday",
+    "emails": [
+      {
+        "type": "weekly_roundup",
+        "time": "10:00",
+        "subject": "🔥 Bu Haftanın En Popüler İçerikleri",
+        "template": "weekly_roundup"
+      }
+    ]
+  },
+  "2025-07-07": {
+    "date": "2025-07-07",
+    "weekday": "monday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-07-07",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-07-08": {
+    "date": "2025-07-08",
+    "weekday": "tuesday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-07-08",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-07-09": {
+    "date": "2025-07-09",
+    "weekday": "wednesday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-07-09",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-07-10": {
+    "date": "2025-07-10",
+    "weekday": "thursday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-07-10",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-07-11": {
+    "date": "2025-07-11",
+    "weekday": "friday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-07-11",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-07-12": {
+    "date": "2025-07-12",
+    "weekday": "saturday",
+    "emails": []
+  },
+  "2025-07-13": {
+    "date": "2025-07-13",
+    "weekday": "sunday",
+    "emails": [
+      {
+        "type": "weekly_roundup",
+        "time": "10:00",
+        "subject": "🔥 Bu Haftanın En Popüler İçerikleri",
+        "template": "weekly_roundup"
+      }
+    ]
+  },
+  "2025-07-14": {
+    "date": "2025-07-14",
+    "weekday": "monday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-07-14",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-07-15": {
+    "date": "2025-07-15",
+    "weekday": "tuesday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-07-15",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-07-16": {
+    "date": "2025-07-16",
+    "weekday": "wednesday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-07-16",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-07-17": {
+    "date": "2025-07-17",
+    "weekday": "thursday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-07-17",
+        "template": "daily_digest"
+      }
+    ]
+  },
+  "2025-07-18": {
+    "date": "2025-07-18",
+    "weekday": "friday",
+    "emails": [
+      {
+        "type": "daily_digest",
+        "time": "09:00",
+        "subject": "📚 Günlük Bilgi Dozu - 2025-07-18",
+        "template": "daily_digest"
+      }
+    ]
+  }
+}

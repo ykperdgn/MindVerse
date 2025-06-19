@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haftalık Özet</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffa726 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .stat-card {
+            background: #f8f9fa;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            border-left: 4px solid #ff6b6b;
+        }
+        .top-articles {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .article-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .button {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 10px 5px;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔥 Bu Haftanın En İyileri</h1>
+            <p>{week_start} - {week_end} Özeti</p>
+        </div>
+
+        <div class="content">
+            <h2>Merhaba!</h2>
+            <p>Bu hafta MindVerse'te neler oldu? İşte öne çıkanlar:</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>{total_views}</h3>
+                    <p>Toplam Okuma</p>
+                </div>
+                <div class="stat-card">
+                    <h3>{new_articles}</h3>
+                    <p>Yeni Makale</p>
+                </div>
+            </div>
+
+            <div class="top-articles">
+                <h3>🏆 Bu Haftanın En Çok Okunanları</h3>
+
+                <div class="article-item">
+                    <strong>1. {top1_title}</strong><br>
+                    <small>{top1_category} • {top1_views} okuma</small>
+                </div>
+
+                <div class="article-item">
+                    <strong>2. {top2_title}</strong><br>
+                    <small>{top2_category} • {top2_views} okuma</small>
+                </div>
+
+                <div class="article-item">
+                    <strong>3. {top3_title}</strong><br>
+                    <small>{top3_category} • {top3_views} okuma</small>
+                </div>
+
+                <div class="article-item">
+                    <strong>4. {top4_title}</strong><br>
+                    <small>{top4_category} • {top4_views} okuma</small>
+                </div>
+
+                <div class="article-item">
+                    <strong>5. {top5_title}</strong><br>
+                    <small>{top5_category} • {top5_views} okuma</small>
+                </div>
+            </div>
+
+            <h3>📊 Kategori Analizi</h3>
+            <p>Bu hafta en çok ilgi gören kategori: <strong>{trending_category}</strong></p>
+
+            <h3>🎯 Gelecek Hafta</h3>
+            <p>{next_week_preview}</p>
+
+            <p style="text-align: center; margin-top: 30px;">
+                <a href="https://www.mindversedaily.com/popular" class="button">Popüler İçerikler</a>
+                <a href="https://www.mindversedaily.com/categories" class="button">Tüm Kategoriler</a>
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>Bir sonraki haftalık özet 7 gün sonra gelecek!</p>
+            <p>Bu emaili almak istemiyorsanız <a href="#">buradan</a> çıkabilirsiniz.</p>
+            <p>© 2025 MindVerse. Web: <a href="https://www.mindversedaily.com">https://www.mindversedaily.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
