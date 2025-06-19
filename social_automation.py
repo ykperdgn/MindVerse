@@ -15,7 +15,7 @@ from pathlib import Path
 
 class SocialMediaAutomator:
     def __init__(self):
-        self.base_url = "https://www.mindversedaily.com"
+        self.base_url = "https://mindverse-orcin.vercel.app"
         self.categories = {
             'health': {'emoji': '🏥', 'hashtags': ['#sağlık', '#wellness', '#health', '#sağlıklıyaşam', '#tıp']},
             'love': {'emoji': '❤️', 'hashtags': ['#aşk', '#ilişkiler', '#love', '#relationship', '#dating']},

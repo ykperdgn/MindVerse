@@ -1,4 +1,5 @@
 ---
+export const prerender = false;
 import { Astro } from 'astro';
 const { cookies } = Astro;
 cookies.delete('admin_auth', { path: '/' });

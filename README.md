@@ -1,38 +1,17 @@
-# 🌌 MindVerse Daily - Profesyonel Çoklu Niş İçerik Platformu
+# 🌌 MindVerse - Çoklu Niş Bilgi Portalı
 
-**www.mindversedaily.com** - Türkiye'nin önde gelen multi-niche bilgi portalı
+MindVerse, sağlık, aşk, tarih, psikoloji, uzay ve alıntılar kategorilerinde zengin içerikler sunan çok nişli bir bilgi portalıdır. Astro ve Tailwind CSS kullanılarak modern ve responsive bir deneyim sunmak üzere geliştirilmiştir.
 
-Profesyonel standartlarda uzun format makaleler (1000+ kelime), otomatik içerik üretimi ve sosyal medya entegrasyonu ile donatılmış modern blog platformu.
+## ✨ Özellikler
 
-## 🚀 Platform Özellikleri
-
-### ✅ **Tamamlanmış Profesyonel Özellikler**
-
-#### 📱 **Mobil-First Responsive Tasarım**
-- Tüm cihazlarda mükemmel görüntüleme
-- Touch-friendly buton boyutları (min 44px)
-- Mobil optimize edilmiş tipografi
-- iOS zoom önleme (16px input font-size)
-
-#### 🔗 **Sosyal Medya Entegrasyonu**
-- ✅ **Link Kopyalama**: Çalışan ve optimize edilmiş
-- 📱 **Mobil Paylaşım**: WhatsApp, e-posta vb. için link kopyalama
-- 🚫 **Twitter**: Ücretli API nedeniyle kaldırıldı
-
-#### 🤖 **Otomatik İçerik Sistemi**
-- **1000+ kelimeli uzun makaleler**: Profesyonel standartlarda
-- **Kategorize edilmiş içerik**: 6 ana kategori
-- **Günlük otomatik üretim**: Saat 02:30 (Türkiye saati)
-- **Git auto-deploy**: Commit + push + Vercel build
-- Günde 3 kez paylaşım (09:00, 15:00, 21:00)
-- Smart URL generation ve hashtag ekleme
-
-#### 📊 **SEO & Analytics Hazır**
-- Google Search Console setup
-- Sitemap.xml otomatik güncelleme
-- Structured data (JSON-LD)
-- Meta tags ve Open Graph
-- Google AdSense entegrasyonu
+- 🏥 **6 Farklı Kategori**: Sağlık, Aşk, Tarih, Psikoloji, Uzay, Alıntılar
+- 📝 **Zengin İçerik**: Otomatik içerik üretimi sistemi
+- 🔍 **Kategoriye Özel Arama**: Her kategoride gelişmiş arama
+- 🔥 **Popüler İçerikler**: Görüntülenme bazlı sıralama
+- 💬 **Yorum Sistemi**: Kullanıcı etkileşimi
+- 📱 **Responsive Tasarım**: Mobil uyumlu
+- 🎯 **SEO Optimizasyonu**: Meta etiketler, sitemap
+- 💰 **AdSense Hazır**: Reklam alanları entegre
 
 ## 🚀 Kurulum
 

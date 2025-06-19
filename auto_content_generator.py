@@ -11,14 +11,12 @@ import random
 import schedule
 import time
 import requests
-import subprocess
 from datetime import datetime, timedelta
 import hashlib
 
 class AutoContentGenerator:
     def __init__(self):
         self.base_path = "src/content"
-        self.base_url = "https://www.mindversedaily.com"
         self.categories = ["health", "love", "history", "psychology", "space", "quotes"]
 
         # Ücretsiz AI API seçenekleri
@@ -131,7 +129,8 @@ class AutoContentGenerator:
         """
 
         payload = {
-            "inputs": prompt,            "parameters": {
+            "inputs": prompt,
+            "parameters": {
                 "max_length": 800,
                 "temperature": 0.7
             }
@@ -153,355 +152,107 @@ class AutoContentGenerator:
         return self.generate_template_content(topic, category)
 
     def generate_template_content(self, topic, category):
-        """Template tabanlı içerik üretimi - Her zaman uzun ve detaylı makaleler"""
+        """Template tabanlı içerik üretimi"""
+        templates = self.content_templates.get(category, [])
+        if not templates:
+            # Generic template
+            content = f"""
+## {topic}
 
-        # Her kategori için zengin topic listesi
-        category_topics = {
-            'health': [
-                'Bağışıklık Sistemini Güçlendirme',
-                'Kalp Sağlığını Koruma',
-                'Stres Yönetimi Teknikleri',
-                'Sağlıklı Beslenme Alışkanlıkları',
-                'Düzenli Egzersizin Faydaları',
-                'Uyku Kalitesini İyileştirme',
-                'Mental Sağlık ve Fiziksel Aktivite',
-                'Detoksifikasyon ve Temizlik',
-                'Yaşlanma Karşıtı Stratejiler'
-            ],
-            'psychology': [
-                'Motivasyon Artırma Yöntemleri',
-                'Özgüven Geliştirme Teknikleri',
-                'Anksiyete ile Başa Çıkma',
-                'Pozitif Düşünce Alışkanlıkları',
-                'Duygusal Zeka Geliştirme',
-                'Mindfulness ve Meditasyon',
-                'Karar Verme Psikolojisi',
-                'Sosyal Beceri Geliştirme',
-                'Öfke Yönetimi Stratejileri'
-            ],
-            'love': [
-                'Etkili İletişim Kurma',
-                'Güven İnşa Etme Yolları',
-                'Çatışma Çözüme Yaklaşımları',
-                'Romantizmi Canlı Tutma',
-                'Duygusal Bağ Güçlendirme',
-                'Karşılıklı Anlayış Geliştirme',
-                'İlişkilerde Sınır Belirleme',
-                'Aşkın Nörokimyası',
-                'Uzun Mesafeli İlişkiler'
-            ],
-            'history': [
-                'Antik Medeniyetler',
-                'Tarihi Keşifler',
-                'Büyük Savaşlar',
-                'Kültürel Dönüşümler',
-                'Bilimsel Devrimler',
-                'İmparatorlukların Yükselişi',
-                'Teknolojik İlerlemeler',
-                'Sosyal Hareketler'
-            ],
-            'space': [
-                'Gezegen Keşifleri',
-                'Uzay Teknolojileri',
-                'Astronomi Gözlemleri',
-                'Mars Misyonları',
-                'Kara Delik Araştırmaları',
-                'Galaksi Sistemleri',
-                'Uzaydaki Yaşam Arayışı',
-                'Kuantum Fiziği'
-            ],
-            'quotes': [
-                'Motivasyonel Alıntılar',
-                'Felsefe Sözleri',
-                'Başarı Alıntıları',
-                'Yaşam Hikmeti',
-                'İlham Verici Sözler',
-                'Büyük Düşünürler',
-                'Modern Motivasyon',
-                'Antik Hikmetler'
-            ]
-        }
+{topic} konusu günümüzde büyük önem taşımaktadır. Bu makalede {topic.lower()} hakkında detaylı bilgiler ve pratik öneriler sunacağız.
 
-        # Seçilen kategoriden rastgele topic al veya verilen topic'i kullan
-        if topic in category_topics.get(category, []):
-            selected_topic = topic
+### Temel Bilgiler
+
+{topic} ile ilgili temel bilgiler ve güncel yaklaşımlar aşağıda açıklanmaktadır.
+
+### Pratik Öneriler
+
+1. **Araştırma Yapın**: Konuyla ilgili güncel kaynaklardan bilgi edinin
+2. **Uzman Görüşü Alın**: Alanında uzman kişilerden tavsiyeleri dinleyin
+3. **Adım Adım İlerleyin**: Hedeflerinize aşamalı olarak ulaşın
+4. **Sabırlı Olun**: Değişim için zaman tanıyın
+
+### Önemli Noktalar
+
+{topic} konusunda dikkat edilmesi gereken önemli noktalar:
+
+- Bilimsel yaklaşımları tercih edin
+- Kanıtlanmış yöntemleri uygulayın
+- Bireysel farklılıkları göz önünde bulundurun
+- Sürekli öğrenmeye açık olun
+
+### Sonuç
+
+{topic} hakkında edindiğiniz bilgileri pratik hayatınızda uygulayarak olumlu değişiklikler yaratabilirsiniz. Unutmayın ki her bireyin ihtiyaçları farklıdır ve kişiselleştirilmiş yaklaşımlar daha etkili olur.
+
+Bu konuda daha fazla bilgi için diğer makalelerimizi inceleyebilir ve uzman tavsiyeleri alabilirsiniz.
+"""
         else:
-            # Eğer verilen topic listede yoksa, kategoriye uygun rastgele birini seç
-            selected_topic = random.choice(category_topics.get(category, [topic]))
+            template = random.choice(templates)
+            topic_item = random.choice(template['topics'])
+            content = f"""
+## {topic_item}
 
-        # Her zaman uzun ve detaylı makale üret
-        content = f"""
-## {selected_topic}
+{topic_item} konusu modern yaşamın önemli bir parçasıdır. Bu rehberde {topic_item.lower()} hakkında kapsamlı bilgiler bulacaksınız.
 
-{selected_topic} konusu günümüzde büyük önem taşımaktadır. Bu kapsamlı rehberde {selected_topic.lower()} hakkında derinlemesine bilgiler, uzman önerileri ve pratik çözümler sunacağız.
+### Temel Yaklaşımlar
 
-### Giriş
+Uzmanlar {topic_item.lower()} konusunda şu temel yaklaşımları önermektedir:
 
-Modern yaşamın karmaşık dinamikleri içinde {selected_topic.lower()} konusu, hem bireysel gelişim hem de genel yaşam kalitesi açısından kritik bir rol oynamaktadır. Son yıllarda yapılan araştırmalar, bu alandaki gelişmelerin ne kadar önemli olduğunu gözler önüne sermektedir.
+1. **Bilimsel Temeller**: Kanıtlanmış yöntemleri tercih edin
+2. **Kişisel Uyum**: Bireysel ihtiyaçlarınıza göre adapte edin
+3. **Süreklilik**: Düzenli uygulamaya önem verin
+4. **Sabır**: Sonuçlar için zaman tanıyın
 
-### Temel Prensipler ve Bilimsel Yaklaşım
+### Pratik Uygulamalar
 
-{selected_topic} ile ilgili temel bilgiler ve güncel bilimsel yaklaşımlar şu şekilde özetlenebilir:
+{topic_item} için önerilen praktik uygulamalar:
 
-#### 1. Teorik Temeller
-- Konuyla ilgili temel kavramları anlamak
-- Bilimsel literatürdeki son gelişmeleri takip etmek
-- Farklı perspektiflerden konuya yaklaşmak
-- Eleştirel düşünme becerileri geliştirmek
+- Günlük rutinler oluşturun
+- Hedeflerinizi belirleyin
+- İlerlemenizi takip edin
+- Gerektiğinde destek alın
 
-#### 2. Pratik Uygulamalar
-- Günlük hayatta uygulanabilir stratejiler
-- Adım adım uygulama rehberleri
-- Yaygın hataları önleme yöntemleri
-- Başarı ölçütleri ve değerlendirme kriterleri
+### Yaygın Hatalar
 
-### Detaylı Öneriler ve Stratejiler
+Bu konuda yapılan yaygın hatalardan kaçının:
 
-#### A. Başlangıç Seviyesi İçin:
+- Aşırı beklentiler
+- Tutarsız uygulama
+- Uzman desteğini ihmal etme
+- Bireysel farklılıkları görmezden gelme
 
-1. **Temel Araştırma Yapın**
-   - Konuyla ilgili güncel ve güvenilir kaynaklardan bilgi edinin
-   - Akademik makaleler, uzman görüşleri ve vaka çalışmalarını inceleyin
-   - Farklı görüşleri karşılaştırarak objektif bir yaklaşım benimseyin
+### Sonuç ve Öneriler
 
-2. **Uzman Görüşü Alın**
-   - Alanında deneyimli kişilerden tavsiyeleri dinleyin
-   - Mentörlük ilişkileri kurarak sürekli öğrenim sağlayın
-   - Profesyonel ağlarınızı genişleterek bilgi paylaşımında bulunun
-
-3. **Adım Adım İlerleyin**
-   - Büyük hedeflerinizi küçük, yönetilebilir parçalara bölün
-   - Her aşamada somut başarılar elde etmeye odaklanın
-   - İlerlemenizi düzenli olarak değerlendirin ve gerektiğinde ayarlamalar yapın
-
-#### B. İleri Seviye Uygulamalar:
-
-1. **Derinlemesine Analiz**
-   - Konunun farklı boyutlarını kapsamlı şekilde inceleyin
-   - Neden-sonuç ilişkilerini analiz edin
-   - Uzun vadeli etkileri değerlendirin
-
-2. **Yenilikçi Yaklaşımlar**
-   - Geleneksel yöntemlerin yanı sıra yaratıcı çözümler geliştirin
-   - Teknoloji destekli araçları etkin şekilde kullanın
-   - Sürekli iyileştirme anlayışını benimseyin
-
-### Önemli Hususlar ve Dikkat Edilmesi Gerekenler
-
-{selected_topic} konusunda dikkat edilmesi gereken kritik noktalar:
-
-- **Bilimsel Yaklaşım:** Kanıtlanmış yöntemleri tercih edin ve spekülatif bilgilerden kaçının
-- **Bireyselleştirme:** Her bireyin farklı ihtiyaçları olduğunu göz önünde bulundurun
-- **Süreklilik:** Düzenli uygulama ve sabır gerektiren bir süreç olduğunu unutmayın
-- **Esneklik:** Değişen koşullara adapte olabilecek esnek stratejiler geliştirin
-- **Sürekli Öğrenme:** Bu alanda sürekli gelişen bilgiye açık olun
-
-### Yaygın Hatalar ve Çözüm Önerileri
-
-Bu alanda sıkça karşılaşılan hatalar ve bunlara yönelik çözüm önerileri:
-
-1. **Acele Etmek:** Sonuçları hemen beklemek yerine sabırlı olmak
-2. **Tek Boyutlu Yaklaşım:** Konuyu sadece bir açıdan değerlendirmek
-3. **Süreklilik Eksikliği:** Düzenli uygulama yapmamak
-4. **Uzman Desteğini İhmal Etmek:** Kendi kendine çözmeye çalışmak
-
-### Gelecek Perspektifleri ve Trendler
-
-{selected_topic} alanında gelecekte beklenen gelişmeler:
-
-- Teknolojik yeniliklerin rolü
-- Bilimsel araştırmalardaki yeni bulgular
-- Toplumsal değişimlerin etkileri
-- Küresel trendler ve yerel uygulamalar
-
-### Kategori Özel İçerik - {category.title()}
-
-{self._get_category_specific_content(category, selected_topic)}
-
-### Sonuç ve Eylem Planı
-
-{selected_topic} hakkında edindiğiniz bu kapsamlı bilgileri pratik hayatınızda uygulamaya geçirmek için:
-
-1. **Kısa Vadeli Hedefler (1-3 ay):**
-   - Temel kavramları öğrenin
-   - Basit uygulamaları hayatınıza entegre edin
-   - İlk sonuçları gözlemleyin
-
-2. **Orta Vadeli Hedefler (3-12 ay):**
-   - Daha karmaşık stratejileri uygulayın
-   - Uzman desteği alın
-   - Sürekli iyileştirmeler yapın
-
-3. **Uzun Vadeli Hedefler (1+ yıl):**
-   - Konuda uzmanlaşın
-   - Deneyimlerinizi başkalarıyla paylaşın
-   - Sürekli öğrenme ve gelişim sürecini devam ettirin
-
-Unutmayın ki her bireyin ihtiyaçları farklıdır ve kişiselleştirilmiş yaklaşımlar her zaman daha etkili sonuçlar verir. Bu konuda daha fazla bilgi için diğer makalelerimizi inceleyebilir, uzman tavsiyeleri alabilir ve sürekli öğrenme yolculuğunuza devam edebilirsiniz.
-
-**Önemli Not:** Bu rehberdeki öneriler genel bilgilendirme amaçlıdır. Spesifik durumlar için mutlaka uzman görüşü alınmalıdır.
+{topic_item} konusunda başarılı olmak için sabırlı, tutarlı ve bilgili yaklaşım sergilemek önemlidir. Bu rehberdeki önerileri hayatınıza adapte ederek olumlu değişiklikler yaratabilirsiniz.
 """
 
         return content.strip()
-
-    def _get_category_specific_content(self, category, topic):
-        """Kategori-spesifik içerik üretir"""
-        category_content = {
-            'health': f"""
-#### Sağlık Uzmanlarının Önerileri
-
-{topic} konusunda sağlık uzmanları şu önerilerde bulunmaktadır:
-
-- **Beslenme:** Dengeli ve sağlıklı beslenme alışkanlıkları
-- **Egzersiz:** Düzenli fiziksel aktivite programları
-- **Uyku:** Kaliteli ve yeterli uyku düzeni
-- **Stres Yönetimi:** Etkili stres azaltma teknikleri
-- **Periyodik Kontrol:** Düzenli sağlık muayeneleri
-
-#### Bilimsel Araştırmalar
-
-Son araştırmaların gösterdiği üzere, {topic.lower()} konusunda yapılan çalışmalar umut verici sonuçlar ortaya koymaktadır. Özellikle:
-
-- Kapsamlı veri analizleri
-- Uzun vadeli gözlem çalışmaları
-- Klinik test sonuçları
-- Meta-analiz bulguları""",
-
-            'psychology': f"""
-#### Psikolojik Yaklaşımlar
-
-{topic} konusunda psikoloji alanından öneriler:
-
-- **Bilişsel Terapi:** Düşünce kalıplarını yeniden yapılandırma
-- **Davranışsal Teknikler:** Pozitif alışkanlık oluşturma
-- **Mindfulness:** Farkındalık ve meditasyon pratikleri
-- **Sosyal Destek:** İnsan ilişkilerinin önemi
-- **Kişisel Gelişim:** Sürekli öğrenme ve büyüme
-
-#### Psikolojik Araştırmalar
-
-Yapılan psikolojik araştırmalar {topic.lower()} konusunda şu sonuçları ortaya koymaktadır:
-
-- Nörolojik etki mekanizmaları
-- Davranışsal değişim modelleri
-- Sosyal psikoloji bulguları
-- Gelişimsel psikoloji perspektifleri""",
-
-            'love': f"""
-#### İlişki Uzmanlarının Tavsiyeleri
-
-{topic} konusunda ilişki uzmanları şu önerilerde bulunmaktadır:
-
-- **İletişim:** Açık ve dürüst iletişim kurma
-- **Empati:** Karşılıklı anlayış geliştirme
-- **Kalite Zaman:** Birlikte geçirilen anlamlı zamanlar
-- **Güven:** Karşılıklı güven inşa etme
-- **Büyüme:** Birlikte gelişim ve büyüme
-
-#### Aşk ve İlişki Araştırmaları
-
-Modern araştırmalar {topic.lower()} konusunda şu bulgulara işaret etmektedir:
-
-- Nörobiyolojik süreçler
-- Bağlanma teorileri
-- İletişim kalıpları
-- Uzun vadeli ilişki başarı faktörleri""",
-
-            'history': f"""
-#### Tarihçi Perspektifleri
-
-{topic} konusunda tarih uzmanları şu yaklaşımları benimser:
-
-- **Kaynak Analizi:** Birincil ve ikincil kaynakların incelenmesi
-- **Bağlam:** Tarihsel olayların çağdaş koşullar içinde değerlendirilmesi
-- **Karşılaştırmalı Analiz:** Farklı dönem ve bölgelerle karşılaştırma
-- **Süreklilik:** Tarihsel süreçlerin günümüze etkileri
-- **Objektiflik:** Önyargısız ve bilimsel yaklaşım
-
-#### Tarihsel Araştırmalar
-
-{topic.lower()} konusundaki son tarihsel araştırmalar:
-
-- Arkeolojik bulgular
-- Yeni keşfedilen belgeler
-- Teknolojik analiz yöntemleri
-- İnterdisipliner çalışmalar""",
-
-            'space': f"""
-#### Uzay Bilimcilerinin Görüşleri
-
-{topic} konusunda uzay bilimcileri şu yaklaşımları önerir:
-
-- **Gözlem:** Sistematik ve teknoloji destekli gözlemler
-- **Teorik Modeller:** Matematiksel ve fiziksel modelleme
-- **Deneysel Araştırma:** Laboratuvar ve uzay misyonları
-- **Teknolojik Yenilik:** Sürekli teknoloji geliştirme
-- **Uluslararası İşbirliği:** Küresel bilimsel ortaklıklar
-
-#### Uzay Araştırmaları
-
-{topic.lower()} alanındaki güncel araştırmalar:
-
-- Teleskop gözlemleri
-- Uzay misyonu verileri
-- Teorik fizik çalışmaları
-- Teknolojik gelişimler""",
-
-            'quotes': f"""
-#### Büyük Düşünürlerin Sözleri
-
-{topic} konusunda tarih boyunca büyük düşünürler şu sözleri söylemiştir:
-
-- **Antik Filozoflar:** Yaşam hikmeti ve değerler
-- **Modern Myasgalarımızler:** Çağdaş görüşler ve perspektifler
-- **Bilim İnsanları:** Akıl ve mantık temelli yaklaşımlar
-- **Sanatçılar:** Yaratıcılık ve ilham
-- **Liderler:** Vizyoner düşünce ve liderlik
-
-#### Motivasyonel Araştırmalar
-
-{topic.lower()} konusundaki motivasyon araştırmaları:
-
-- Psikolojik etki mekanizmaları
-- Davranışsal değişim süreçleri
-- Başarı hikayeleri analizi
-- Kişisel gelişim modelleri"""
-        }
-
-        return category_content.get(category, f"""
-#### Uzman Değerlendirmeleri
-
-{topic} konusunda uzmanlar genel olarak şu yaklaşımları önermektedir:
-
-- Bilimsel temelli yaklaşımlar
-- Kanıtlanmış metodolojiler
-- Sürekli öğrenme anlayışı
-- Pratik uygulama becerileri
-- Eleştirel düşünme yetenekleri
-
-#### Araştırma Sonuçları
-
-Bu alandaki son araştırmalar umut verici sonuçlar göstermektedir ve {topic.lower()} konusunda yeni perspektifler sunmaktadır.
-""")
 
     def create_article_file(self, title, content, category):
         """Makale dosyası oluşturma"""
         # Tarih ve unique ID
         now = datetime.now()
         date_str = now.strftime('%Y-%m-%d')
-        unique_id = hashlib.md5(f"{title}{now}".encode()).hexdigest()[:8]        # Slug oluşturma
+        unique_id = hashlib.md5(f"{title}{now}".encode()).hexdigest()[:8]
+
+        # Slug oluşturma
         slug = title.lower()
         slug = slug.replace(' ', '-')
         slug = slug.replace('ı', 'i').replace('ğ', 'g').replace('ü', 'u')
         slug = slug.replace('ş', 's').replace('ö', 'o').replace('ç', 'c')
         slug = ''.join(c for c in slug if c.isalnum() or c == '-')
 
-        # Front matter (views kaldırıldı)
+        # Views sayısı (random)
+        views = random.randint(50, 500)
+
+        # Front matter
         frontmatter = f"""---
 title: '{title}'
 date: {now.strftime('%Y-%m-%d')}
 summary: '{title} hakkında detaylı rehber ve uzman önerileri.'
 tags: ['{category}', 'rehber', 'uzman-tavsiyeleri']
+views: {views}
 ---
 
 """
@@ -521,31 +272,7 @@ tags: ['{category}', 'rehber', 'uzman-tavsiyeleri']
             f.write(full_content)
 
         print(f"✅ Yeni makale oluşturuldu: {filename}")
-
-        # Git commit ve push (otomatik yayınlama için)
-        self.auto_deploy_article(filename, title, category)
-
         return file_path
-
-    def auto_deploy_article(self, filename, title, category):
-        """Otomatik Git commit ve deploy"""
-        try:
-            # Git add
-            subprocess.run(['git', 'add', '.'], check=True, cwd='.')
-
-            # Git commit
-            commit_message = f"🤖 Otomatik makale: {title} ({category})"
-            subprocess.run(['git', 'commit', '-m', commit_message], check=True, cwd='.')
-
-            # Git push (Vercel otomatik deploy)
-            subprocess.run(['git', 'push'], check=True, cwd='.')
-
-            print(f"🚀 Site otomatik güncellendi: {filename}")
-            print(f"📡 Vercel'de build başlatıldı...")
-
-        except subprocess.CalledProcessError as e:
-            print(f"⚠️ Git işlemi başarısız: {e}")
-            print("📝 Makale oluşturuldu ama manuel commit gerekiyor")
 
     def generate_daily_content(self):
         """Günlük içerik üretimi"""
@@ -596,7 +323,8 @@ tags: ['{category}', 'rehber', 'uzman-tavsiyeleri']
                 'Felsefe Sözleri',
                 'Başarı Alıntıları',
                 'Yaşam Hikmeti',
-                'İlham Verici Sözler'            ]
+                'İlham Verici Sözler'
+            ]
         }
 
         # Rastgele topic seç
@@ -612,19 +340,16 @@ tags: ['{category}', 'rehber', 'uzman-tavsiyeleri']
 
     def schedule_content_generation(self):
         """İçerik üretimi programlama"""
-        # TEST - Birkaç dakika sonra
-        schedule.every().day.at("02:40").do(self.generate_daily_content)
-
-        # Normal çalışma saati (gece geç saat)
-        schedule.every().day.at("02:30").do(self.generate_daily_content)
+        # Test için - bugün 18:30
+        schedule.every().day.at("18:30").do(self.generate_daily_content)
 
         # Hafta sonu ekstra makale
         schedule.every().saturday.at("15:00").do(self.generate_daily_content)
 
         print("📅 Otomatik içerik üretimi programlandı:")
-        print("   - TEST: Bugün 02:40 (Türkiye saati)")
-        print("   - Normal: Her gün 02:30 (gece sessiz saat)")
+        print("   - Test: Bugün 18:30")
         print("   - Cumartesi 15:00: Ekstra makale")
+        print("   - Normal çalışma: Her gün 23:00")
 
         while True:
             schedule.run_pending()

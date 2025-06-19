@@ -1,0 +1,78 @@
+---
+import Layout from '../../components/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const { category } = Astro.params;
+const articles = await getCollection(category);
+
+// URL'den arama parametresini al
+const url = new URL(Astro.request.url);
+const search = url.searchParams.get('q') || '';
+
+// Arama varsa filtrele
+let filteredArticles = articles;
+if (search) {
+  filteredArticles = articles.filter(article =>
+    article.data.title.toLowerCase().includes(search.toLowerCase()) ||
+    (article.data.summary && article.data.summary.toLowerCase().includes(search.toLowerCase()))
+  );
+}
+---
+
+<Layout title={`${category} - MindVerse`}>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-4 capitalize">{category}</h1>
+
+    <!-- Kategoriye özel arama alanı -->
+    <form method="get" class="mb-6 flex justify-center">
+      <input
+        type="text"
+        name="q"
+        value={search}
+        placeholder="Bu kategoride ara..."
+        class="border rounded-l px-4 py-2 w-64"
+      />
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-r">Ara</button>
+    </form>
+
+    <!-- Kategori sayfası reklam alanı -->
+    <div class="flex justify-center mb-6">
+      <div class="w-full max-w-lg">
+        <ins class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+          data-ad-slot="1234567890"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {filteredArticles.length === 0 ? (
+        <div class="col-span-full text-center text-gray-500">Aradığınız kriterlere uygun içerik bulunamadı.</div>
+      ) : (
+        filteredArticles.map(article => (
+          <div class="border p-4 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-2">
+              <a href={`/${category}/${article.slug}`} class="hover:text-blue-600 transition-colors">
+                {article.data.title}
+              </a>
+            </h2>
+            <p class="text-gray-600 mb-3">{article.data.summary}</p>
+            <div class="flex flex-wrap gap-1 mb-3">
+              {article.data.tags?.map(tag => (
+                <span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">#{tag}</span>
+              ))}
+            </div>
+            <a
+              href={`/${category}/${article.slug}`}
+              class="inline-block bg-blue-600 text-white px-4 py-2 rounded text-sm hover:bg-blue-700 transition-colors"
+            >
+              Devamını Oku
+            </a>
+          </div>
+        ))
+      )}
+    </div>
+  </div>
+</Layout>

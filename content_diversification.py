@@ -13,7 +13,7 @@ from pathlib import Path
 
 class ContentDiversificationSystem:
     def __init__(self):
-        self.base_url = "https://www.mindversedaily.com"
+        self.base_url = "https://mindverse-orcin.vercel.app"
         self.categories = {
             'health': {
                 'emoji': '🏥',

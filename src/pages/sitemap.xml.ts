@@ -1,7 +1,7 @@
 import { getCollection } from 'astro:content';
 
-// Tüm kategorileri al (astrology dahil)
-const categories = ['health', 'love', 'history', 'psychology', 'space', 'quotes', 'astrology'];
+// Tüm kategorileri al
+const categories = ['health', 'love', 'history', 'psychology', 'space', 'quotes'];
 const allPosts = [];
 
 for (const category of categories) {
@@ -15,22 +15,20 @@ for (const category of categories) {
   })));
 }
 
-// Statik sayfalar (güncellenmiş)
+// Statik sayfalar
 const staticPages = [
   { url: '/', lastmod: new Date().toISOString().split('T')[0], changefreq: 'daily', priority: '1.0' },
   { url: '/popular', lastmod: new Date().toISOString().split('T')[0], changefreq: 'daily', priority: '0.9' },
   { url: '/categories', lastmod: new Date().toISOString().split('T')[0], changefreq: 'weekly', priority: '0.8' },
-  { url: '/search', lastmod: new Date().toISOString().split('T')[0], changefreq: 'weekly', priority: '0.7' },
   { url: '/health', lastmod: new Date().toISOString().split('T')[0], changefreq: 'daily', priority: '0.9' },
   { url: '/love', lastmod: new Date().toISOString().split('T')[0], changefreq: 'daily', priority: '0.9' },
   { url: '/history', lastmod: new Date().toISOString().split('T')[0], changefreq: 'daily', priority: '0.9' },
   { url: '/psychology', lastmod: new Date().toISOString().split('T')[0], changefreq: 'daily', priority: '0.9' },
   { url: '/space', lastmod: new Date().toISOString().split('T')[0], changefreq: 'daily', priority: '0.9' },
   { url: '/quotes', lastmod: new Date().toISOString().split('T')[0], changefreq: 'daily', priority: '0.9' },
-  { url: '/astrology', lastmod: new Date().toISOString().split('T')[0], changefreq: 'daily', priority: '0.9' },
 ];
 
-const siteUrl = 'https://www.mindversedaily.com';
+const siteUrl = 'https://mindverse-orcin.vercel.app';
 const allUrls = [...staticPages, ...allPosts];
 
 // XML sitemap içeriği
