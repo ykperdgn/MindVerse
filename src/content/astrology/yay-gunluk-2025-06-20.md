@@ -3,7 +3,7 @@ title: 'Yay Günlük Yorumu - 20 June 2025'
 date: 2025-06-20
 summary: 'Yay burcu için 20 June 2025 günlük astroloji yorumu ve önerileri.'
 tags: ['astroloji', 'günlük-yorum', 'yay', 'burç', 'yıldız']
-views: 606
+views: 259
 author: 'MindVerse Astroloji Uzmanı'
 keywords: 'Yay, günlük yorum, astroloji, burç yorumu, 20 June 2025'
 ---
@@ -34,10 +34,10 @@ Bugün özellikle kırmızı renk size şans getirebilir. Önemli kararları ver
 
 ### Şanslı Detaylar
 
-- **Şanslı Sayılar:** 17, 42, 35
+- **Şanslı Sayılar:** 41, 31, 36
 - **Şanslı Renk:** Kırmızı
-- **Şanslı Taş:** Akik
-- **Şanslı Yön:** Kuzey
+- **Şanslı Taş:** Obsidyen
+- **Şanslı Yön:** Güney
 
 ### Dikkat Edilmesi Gerekenler
 
