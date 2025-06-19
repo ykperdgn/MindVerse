@@ -13,10 +13,17 @@ const categories = [
 ---
 
 <Layout title="MindVerse - Çoklu Niş Bilgi Portalı">
-  <header class="text-center py-10 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-    <h1 class="text-5xl font-bold mb-4">🌌 MindVerse</h1>
-    <p class="text-xl mb-6">Bilginin sonsuz evrenini keşfedin</p>
-    <p class="text-lg opacity-90">Zengin içerikler • Güncel bilgiler • Uzman tavsiyeleri</p>
+  <header class="text-center py-10">
+    <div class="mx-auto flex flex-col items-center justify-center">
+      <span class="inline-flex items-center justify-center w-20 h-20 rounded-full animate-gradient-move bg-gradient-to-br from-blue-500 via-purple-500 to-pink-400 shadow-xl mb-4">
+        <span class="text-5xl">🌌</span>
+      </span>
+      <h1 class="text-5xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-400 bg-clip-text text-transparent tracking-tight drop-shadow-sm animate-gradient-move">
+        MindVerse
+      </h1>
+      <p class="text-xl mb-2 font-medium text-gray-800">Bilginin sonsuz evrenini keşfedin</p>
+      <p class="text-lg opacity-90 font-medium text-gray-700">Zengin içerikler • Güncel bilgiler • Uzman tavsiyeleri</p>
+    </div>
   </header>
 
   <main class="container mx-auto px-4 py-8">
@@ -78,4 +85,21 @@ const categories = [
       </div>
     </div>
   </main>
+  <style>
+    @keyframes gradient-move {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    .animate-gradient-move {
+      background-size: 200% 200%;
+      animation: gradient-move 5s ease-in-out infinite;
+    }
+  </style>
 </Layout>
