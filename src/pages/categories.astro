@@ -1,7 +1,7 @@
 ---
 import Layout from '../components/Layout.astro';
 
-const categories = ['health', 'love', 'history', 'psychology', 'space', 'quotes'];
+const categories = ['health', 'love', 'history', 'psychology', 'space', 'quotes', 'astrology'];
 
 const categoryInfo = {
   health: { name: 'Sağlık', icon: '🏥', color: 'green' },
@@ -9,7 +9,8 @@ const categoryInfo = {
   history: { name: 'Tarih', icon: '📚', color: 'yellow' },
   psychology: { name: 'Psikoloji', icon: '🧠', color: 'purple' },
   space: { name: 'Uzay', icon: '🚀', color: 'blue' },
-  quotes: { name: 'Alıntılar', icon: '💭', color: 'gray' }
+  quotes: { name: 'Alıntılar', icon: '💭', color: 'gray' },
+  astrology: { name: 'Astroloji', icon: '🔮', color: 'indigo' }
 };
 ---
 
@@ -38,14 +39,14 @@ const categoryInfo = {
           >
             <div class="text-center">
               <div class="text-4xl mb-4">{info.icon}</div>
-              <h2 class="text-xl font-bold mb-2">{info.name}</h2>
-              <p class="text-gray-600 text-sm">
+              <h2 class="text-xl font-bold mb-2">{info.name}</h2>              <p class="text-gray-600 text-sm">
                 {category === 'health' && 'Sağlıklı yaşam ipuçları ve medikal bilgiler'}
                 {category === 'love' && 'İlişkiler, aşk ve duygusal bağlar hakkında'}
                 {category === 'history' && 'Tarihi olaylar ve kişiler'}
                 {category === 'psychology' && 'İnsan davranışları ve zihin'}
                 {category === 'space' && 'Uzay bilimleri ve astronomi'}
                 {category === 'quotes' && 'İlham verici sözler ve alıntılar'}
+                {category === 'astrology' && 'Burç yorumları ve astroloji rehberleri'}
               </p>
             </div>
           </a>

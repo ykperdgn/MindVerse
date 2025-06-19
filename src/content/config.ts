@@ -38,6 +38,11 @@ const quotes = defineCollection({
   schema: blogSchema,
 });
 
+const astrology = defineCollection({
+  type: 'content',
+  schema: blogSchema,
+});
+
 export const collections = {
   health,
   love,
@@ -45,4 +50,5 @@ export const collections = {
   psychology,
   space,
   quotes,
+  astrology,
 };

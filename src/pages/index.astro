@@ -8,6 +8,7 @@ const categories = [
   { name: 'Psychology', url: '/psychology', title: 'Psikoloji', icon: '🧠' },
   { name: 'Space', url: '/space', title: 'Uzay', icon: '🚀' },
   { name: 'Quotes', url: '/quotes', title: 'Alıntılar', icon: '💭' },
+  { name: 'Astrology', url: '/astrology', title: 'Astroloji', icon: '🔮' },
 ];
 ---
 
@@ -52,14 +53,14 @@ const categories = [
         >
           <div class="text-center">
             <div class="text-4xl mb-4">{category.icon}</div>
-            <h2 class="text-xl font-bold mb-2 text-gray-800">{category.title}</h2>
-            <p class="text-gray-600 text-sm">
+            <h2 class="text-xl font-bold mb-2 text-gray-800">{category.title}</h2>            <p class="text-gray-600 text-sm">
               {category.name === 'Health' && 'Sağlıklı yaşam ipuçları ve medikal bilgiler'}
               {category.name === 'Love' && 'İlişkiler, aşk ve duygusal bağlar hakkında'}
               {category.name === 'History' && 'Tarihi olaylar ve kişiler'}
               {category.name === 'Psychology' && 'İnsan davranışları ve zihin'}
               {category.name === 'Space' && 'Uzay bilimleri ve astronomi'}
               {category.name === 'Quotes' && 'İlham verici sözler ve alıntılar'}
+              {category.name === 'Astrology' && 'Burç yorumları ve astroloji rehberleri'}
             </p>
             <div class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded text-sm">
               Keşfet →
