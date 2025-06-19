@@ -3,7 +3,7 @@ import Layout from '../../components/Layout.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-  const categories = ['health', 'love', 'history', 'psychology', 'space', 'quotes'];
+  const categories = ['health', 'love', 'history', 'psychology', 'space', 'quotes', 'astrology'];
   return categories.map(category => ({
     params: { category }
   }));
@@ -33,7 +33,7 @@ const articles = await getCollection(category);
       <div class="w-full max-w-lg">
         <ins class="adsbygoogle"
           style="display: block"
-          data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+          data-ad-client="ca-pub-3096725438789562"
           data-ad-slot="1234567890"
           data-ad-format="auto"
           data-full-width-responsive="true"></ins>

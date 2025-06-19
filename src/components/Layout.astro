@@ -96,57 +96,72 @@ const currentUrl = canonicalUrl || Astro.url.href;
   <link rel="stylesheet" href="/src/styles/global.css">
 </head>
 <body>
-  <div class="min-h-screen flex flex-col">
-    <header class="bg-blue-600 text-white p-4">
-      <nav class="container mx-auto flex justify-between items-center">
-        <h1 class="text-2xl font-bold">
-          <a href="/" class="hover:text-blue-200 transition-colors">MindVerse</a>
+  <div class="min-h-screen flex flex-col">    <header class="bg-white border-b border-gray-200 shadow-sm">
+      <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <a href="/" class="hover:from-blue-700 hover:to-purple-700 transition-all">🌌 MindVerse</a>
         </h1>
-        <div class="flex space-x-4">
-          <a href="/" class="hover:text-blue-200 transition-colors">Ana Sayfa</a>
-          <a href="/popular" class="hover:text-blue-200 transition-colors">🔥 Popüler</a>
-          <a href="/categories" class="hover:text-blue-200 transition-colors">📁 Kategoriler</a>
+        <div class="flex space-x-6 text-gray-700">
+          <a href="/" class="hover:text-blue-600 transition-colors font-medium">🏠 Ana Sayfa</a>
+          <a href="/popular" class="hover:text-blue-600 transition-colors font-medium">🔥 Popüler</a>
+          <a href="/categories" class="hover:text-blue-600 transition-colors font-medium">📁 Kategoriler</a>
+          <a href="/astrology" class="hover:text-blue-600 transition-colors font-medium">🔮 Astroloji</a>
         </div>
       </nav>
-      <div class="my-4 flex justify-center">
-        <div class="w-full max-w-md">
-          <ins class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
-            data-ad-slot="1234567890"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
+
+      <!-- AdSense Header Ad -->
+      <div class="border-t border-gray-100 py-3 bg-gray-50">
+        <div class="container mx-auto flex justify-center">
+          <div class="w-full max-w-lg">
+            <ins class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-3096725438789562"
+              data-ad-slot="1234567890"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
+          </div>
         </div>
       </div>
-    </header>
-    <main class="flex-grow p-4">
-      <slot />
-    </main>
-    <footer class="bg-gray-800 text-white text-center p-4">
+    </header>    <main class="flex-grow bg-white py-6">
+      <div class="container mx-auto px-4">
+        <slot />
+      </div>
+    </main><footer class="bg-white text-gray-800 border-t border-gray-200 p-6">
       <div class="container mx-auto">
-        <div class="grid md:grid-cols-3 gap-4 mb-4">
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
           <div>
-            <h3 class="font-bold mb-2">MindVerse</h3>
-            <p class="text-sm text-gray-300">Çoklu niş bilgi portalı</p>
-          </div>
-          <div>
-            <h3 class="font-bold mb-2">Hızlı Linkler</h3>
-            <div class="text-sm space-y-1">
-              <a href="/popular" class="block hover:text-blue-300">Popüler İçerikler</a>
-              <a href="/categories" class="block hover:text-blue-300">Kategoriler</a>
-              <a href="/sitemap" class="block hover:text-blue-300">Site Haritası</a>
+            <h3 class="font-bold text-xl mb-3 text-blue-600">🌌 MindVerse Daily</h3>
+            <p class="text-gray-600 mb-4">Bilginin sonsuz evrenini keşfedin. Kaliteli, araştırma temelli içeriklerle hayatınıza değer katın.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">🏥 Sağlık</span>
+              <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">❤️ Aşk</span>
+              <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">📚 Tarih</span>
+              <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">🔮 Astroloji</span>
             </div>
           </div>
           <div>
-            <h3 class="font-bold mb-2">Sosyal Medya</h3>
-            <div class="flex justify-center space-x-4">
-              <a href="#" class="hover:text-blue-300">📘</a>
-              <a href="#" class="hover:text-blue-300">🐦</a>
-              <a href="#" class="hover:text-blue-300">📷</a>
+            <h3 class="font-bold text-lg mb-3">📋 Hızlı Erişim</h3>
+            <div class="grid grid-cols-2 gap-3 text-sm">
+              <a href="/popular" class="block text-blue-600 hover:text-blue-800 transition-colors">🔥 Popüler İçerikler</a>
+              <a href="/categories" class="block text-blue-600 hover:text-blue-800 transition-colors">📂 Tüm Kategoriler</a>
+              <a href="/astrology" class="block text-blue-600 hover:text-blue-800 transition-colors">🔮 Astroloji</a>
+              <a href="/contact" class="block text-blue-600 hover:text-blue-800 transition-colors">📧 İletişim</a>
+              <a href="/sitemap" class="block text-blue-600 hover:text-blue-800 transition-colors">🗺️ Site Haritası</a>
+              <a href="/admin/newsletter" class="block text-blue-600 hover:text-blue-800 transition-colors">📬 Bülten Yönetimi</a>
             </div>
           </div>
         </div>
-        <p class="text-sm">&copy; 2025 MindVerse. All rights reserved.</p>
+
+        <div class="border-t border-gray-200 pt-4 text-center">
+          <p class="text-sm text-gray-600">
+            © 2025 MindVerse Daily. Tüm hakları saklıdır. |
+            <a href="/contact" class="text-blue-600 hover:text-blue-800">Gizlilik Politikası</a> |
+            <a href="/contact" class="text-blue-600 hover:text-blue-800">Kullanım Koşulları</a>
+          </p>
+          <p class="text-xs text-gray-500 mt-2">
+            📧 Kaliteli içerikler için bültenimize katılın • 🔍 Günlük yeni bilgiler keşfedin
+          </p>
+        </div>
       </div>
     </footer>
   </div>
