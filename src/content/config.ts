@@ -8,6 +8,16 @@ const blogSchema = z.object({
   views: z.number().optional(),
 });
 
+// Astroloji için özel schema
+const astrologySchema = z.object({
+  title: z.string(),
+  description: z.string(),
+  pubDate: z.date().transform((date) => date.toISOString().split('T')[0]),
+  category: z.string(),
+  tags: z.array(z.string()),
+  heroImage: z.string().optional(),
+});
+
 const health = defineCollection({
   type: 'content',
   schema: blogSchema,
@@ -40,7 +50,7 @@ const quotes = defineCollection({
 
 const astrology = defineCollection({
   type: 'content',
-  schema: blogSchema,
+  schema: astrologySchema,
 });
 
 export const collections = {

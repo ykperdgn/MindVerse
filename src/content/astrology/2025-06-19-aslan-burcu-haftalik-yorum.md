@@ -1,44 +1,76 @@
 ---
-title: "Aslan Burcu Haftalık Yorumu - Yaratıcılığın Zirvesi"
-description: "Aslan burcu için haftalık astroloji yorumu. Bu hafta sizi neler bekliyor?"
+title: "Kariyer Fırsatları - Aslan Burcu Weekly Yorumu"
+description: "Aslan burcu için detaylı astroloji yorumu. kariyer fırsatları konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["aslan burcu", "haftalık yorum", "astroloji", "yıldız falı"]
+tags: ["aslan burcu", "weekly yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Aslan Burcu Haftalık Yorumu
+# Aslan Burcu Weekly Yorumu
 
-Bu hafta Aslan burcu için yaratıcılık ve kendini ifade etme konularında bereketli bir dönem başlıyor.
+🦁 **Aslan Burcu** (**23 Temmuz - 22 Ağustos**)
 
-## Bu Hafta Genel Durum
+Bu hafta Aslan burcu için Satürn etkisiyle kariyer fırsatları dönemine giriyorsunuz.
 
-🌟 Güneş gezeninizin etkisiyle karizmanız artacak. Çevrenizdekiler sizi takdir edecek.
+## 🌟 Burç Özellikleri
 
-## Aşk Hayatı
+**Element:** Ateş | **Kalite:** Sabit | **Yönetici Gezegen:** Güneş
 
-💖 **Bekar Aslanlar:** Yaratıcı aktivitelerde tanışacağınız kişiler ilginizi çekebilir.
+**Güçlü Yanlar:** Karizma, Yaratıcılık, Cömertlik, Liderlik, Optimizm
 
-💕 **İlişkisi Olanlar:** Partnerinizle sanatsal etkinliklere katılmak ilişkinizi güçlendirecek.
+**Dikkat Edilmesi Gerekenler:** Ego, Drama, Dikkat arayışı, İnatçılık, Kibir
 
-## Kariyer
+## 💫 Weekly Genel Durum
 
-🎭 Yaratıcı projeleriniz için mükemmel bir hafta. Sanat, tasarım, eğlence sektörlerinde fırsatlar.
+Satürn gezenenin etkisiyle bu weekly döneminde Aslan burcu için olgunluk enerjisi ön plana çıkacak.
 
-👑 Liderlik konumunda olacaksınız. Ekibinizi motive etmekte başarılı olacaksınız.
+Ateş elementi size weekly boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
 
-## Sağlık ve Enerji
+## 💕 Aşk ve İlişkiler
 
-☀️ Enerji seviyen oldukça yüksek. Dış aktiviteleri tercih edin.
+💖 **Bekar Aslanlar:** Spor yaparken ilginizi çekecek kişilerle tanışabilirsiniz.
 
-❤️ Kalp sağlığınıza dikkat edin. Düzenli kontrol yaptırın.
+💑 **İlişkisi Olanlar:** Partnerinizle romantik anlar yaşayabilirsiniz.
 
-## Haftalık Tavsiye
+🌹 Altın rengi bu weekly aşk hayatınızda şans getirebilir.
 
-Bu hafta yeteneklerinizi sergilemekten çekinmeyin. Sahneye çıkma zamanınız geldi!
+## 💼 Kariyer ve Para
 
-## Bu Haftanın Renkleri
-Altın sarısı, turuncu
+🚀 **İş Hayatı:** Karizma özelliğiniz sayesinde weekly boyunca dikkat çekeceksiniz.
 
-## Şanslı Günler
-Salı, Perşembe
+💰 **Mali Durum:** Eğlence alanında fırsatlar değerlendirilebilir.
+
+📈 Bu weekly yeni projeler için uygun zaman.
+
+## 🏃‍♀️ Sağlık ve Enerji
+
+🔥 Enerji seviyeniz yüksek olacak. Aktif sporları tercih edin.
+
+⚖️ Bu weekly genel sağlık durumunuz iyi olacak.
+
+## 🎯 Weekly Tavsiyeleri
+
+1. **Yaratıcılık** özelliğinizi bu weekly daha aktif kullanın
+2. **Dikkat arayışı** konusunda dikkatli olun ve kendinizi geliştirin
+3. **Altın** rengi bu weekly şansınızı artıracak
+4. **Koç** burcu ile işbirliği yapın
+5. **Oyunculuk** alanında fırsatları değerlendirin
+
+## 🔮 Şanslı Elementler
+
+**Şanslı Sayılar:** 1, 3, 10, 19
+
+**Şanslı Renkler:** Altın, Turuncu, Kırmızı
+
+**Uyumlu Burçlar:** Koç, Yay, İkizler, Terazi
+
+**Uygun Kariyer Alanları:** Oyunculuk, Sanat, Eğlence, Yöneticilik, Tasarım
+
+## 💫 Sonuç
+
+Bu weekly sonunda kendinizi daha güçlü ve karizmatik hissedeceksiniz.
+
+---
+
+*Karizmatik ve yaratıcı olan Aslanlar, dikkat çekmeyi seven, doğal performans yetisi olan kişilerdir.*
