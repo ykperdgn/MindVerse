@@ -27,10 +27,39 @@ export async function getStaticPaths() {
 }
 
 const { category, slug } = Astro.params;
-const { post } = Astro.props;
 
-// Render the content
-const { Content } = await post.render();
+// SSR mode: Fetch post directly if not in props
+let post = Astro.props.post;
+if (!post && category && slug) {
+  try {
+    // Try to get the English post first
+    const englishPosts = await getCollection(category, ({ id }) => id.endsWith('_en'));
+    post = englishPosts.find(p => p.slug === slug);
+
+    // If no English version found, try Turkish version as fallback
+    if (!post) {
+      const turkishPosts = await getCollection(category, ({ id }) => !id.endsWith('_en'));
+      post = turkishPosts.find(p => p.slug === slug);
+    }
+  } catch (error) {
+    console.warn(`Error loading post ${category}/${slug}:`, error);
+  }
+}
+
+// If no post found, return 404
+if (!post) {
+  return Astro.redirect('/en/404');
+}
+
+// Render the content safely
+let Content;
+try {
+  const rendered = await post.render();
+  Content = rendered.Content;
+} catch (error) {
+  console.error(`Error rendering post ${category}/${slug}:`, error);
+  return Astro.redirect('/en/404');
+}
 
 // Category information for English
 const categoryInfo = {

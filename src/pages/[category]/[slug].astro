@@ -28,10 +28,33 @@ export async function getStaticPaths() {
 }
 
 const { category, slug } = Astro.params;
-const { post } = Astro.props;
 
-// Render the content
-const { Content } = await post.render();
+// SSR mode: Fetch post directly if not in props
+let post = Astro.props.post;
+if (!post && category && slug) {
+  try {
+    // Try to get the post from the collection
+    const posts = await getCollection(category);
+    post = posts.find(p => p.slug === slug);
+  } catch (error) {
+    console.warn(`Error loading post ${category}/${slug}:`, error);
+  }
+}
+
+// If no post found, return 404
+if (!post) {
+  return Astro.redirect('/404');
+}
+
+// Render the content safely
+let Content;
+try {
+  const rendered = await post.render();
+  Content = rendered.Content;
+} catch (error) {
+  console.error(`Error rendering post ${category}/${slug}:`, error);
+  return Astro.redirect('/404');
+}
 ---
 
 <Layout title={post.data.title}>
