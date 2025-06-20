@@ -1,6 +1,9 @@
 ---
 title: 'Scorpio Daily Horoscope - June 20, 2025'
 date: 2025-06-20
+description: 'Daily astrology reading and recommendations for Scorpio on June 20, 2025. Positive changes and creative solutions await.'
+pubDate: 2025-06-20
+category: 'astrology'
 summary: 'Daily astrology reading and recommendations for Scorpio on June 20, 2025.'
 tags: ['astrology', 'daily-horoscope', 'scorpio', 'zodiac', 'stars']
 views: 177
