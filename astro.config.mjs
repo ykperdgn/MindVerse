@@ -7,14 +7,14 @@ export default defineConfig({
   integrations: [tailwind()],
   site: 'https://www.mindversedaily.com',
   base: '/',
-  output: 'server',
-  adapter: vercel({
+  output: 'server',  adapter: vercel({
     webAnalytics: {
       enabled: true,
     },
     edgeMiddleware: false,
     functionPerRoute: false,
-  }),  markdown: {
+  }),
+  markdown: {
     shikiConfig: {
       theme: 'nord',
     },
