@@ -17,14 +17,20 @@ Bu proje **Vercel** üzerinde deploy edilmektedir.
 - ✅ Static optimization
 
 ### Build Settings
-- **Framework**: Astro
-- **Build Command**: `npm run build`
-- **Output Directory**: `dist`
-- **Node Version**: 18.x
+- **Framework**: Astro (Auto-detected)
+- **Build Command**: `npm run build` (Auto-detected)
+- **Output Directory**: `dist` (Auto-detected)
+- **Node Version**: 18.x (Auto-configured by @astrojs/vercel)
+
+### Vercel Configuration
+- ✅ No manual vercel.json needed
+- ✅ Astro adapter handles all configuration
+- ✅ Auto-detects framework and settings
+- ✅ SSR functions automatically configured
 
 ### Environment Variables (Vercel Dashboard)
-- NODE_VERSION=18
-- (Add any other env variables as needed)
+- No manual environment variables needed
+- Node.js version automatically set to 18.x
 
 ## 📝 Notes
 - GitHub Pages devre dışı bırakılmıştır
