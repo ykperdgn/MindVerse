@@ -1,6 +1,6 @@
 ---
 title: "İçsel Huzur - Akrep Burcu Günlük Yorumu"
-description: "Akrep burcu için detaylı astroloji yorumu. i̇çsel huzur konusunda rehberlik."
+description: "Akrep burcu için detaylı astroloji yorumu. İçsel huzur konusunda rehberlik."
 pubDate: 2025-06-20
 category: "astrology"
 tags: ["akrep burcu", "günlük yorum", "astroloji", "burç yorumu"]
@@ -11,7 +11,7 @@ heroImage: "/social-media/og-image.jpg"
 
 🦂 **Akrep Burcu** (**23 Ekim - 21 Kasım**)
 
-Bugün Akrep burcu için **Merkür** gezegeninin etkisiyle i̇çsel huzur yaşayacağınız bir gün olacak.
+Bugün Akrep burcu için **Merkür** gezegeninin etkisiyle içsel huzur yaşayacağınız bir gün olacak.
 
 ## 🌟 Burç Özellikleri
 

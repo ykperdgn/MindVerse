@@ -34,27 +34,27 @@ Akrep burcu olarak doğal yoğun özelliğiniz bu dönemde avantajınız olacak.
 
 💑 **İlişkisi Olanlar:** Partnerinizle romantik anlar yaşayabilirsiniz.
 
-🌹 Bordo rengi bu G�nl�k aşk hayatınızda şans getirebilir.
+🌹 Bordo rengi bu Günlük aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Sezgi özelliğiniz sayesinde G�nl�k boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Sezgi özelliğiniz sayesinde Günlük boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Finans alanında fırsatlar değerlendirilebilir.
 
-📈 Bu G�nl�k yeni projeler için uygun zaman.
+📈 Bu Günlük yeni projeler için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 💧 Duygusal dengeniz önemli. Su sporları ve meditasyon faydalı olacak.
 
-⚖️ Bu G�nl�k genel sağlık durumunuz iyi olacak.
+⚖️ Bu Günlük genel sağlık durumunuz iyi olacak.
 
-## 🎯 G�nl�k Tavsiyeleri
+## 🎯 Günlük Tavsiyeleri
 
-1. **Dönüşüm yetisi** özelliğinizi bu G�nl�k daha aktif kullanın
+1. **Dönüşüm yetisi** özelliğinizi bu Günlük daha aktif kullanın
 2. **Şüphecilik** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Bordo** rengi bu G�nl�k şansınızı artıracak
+3. **Bordo** rengi bu Günlük şansınızı artıracak
 4. **Yengeç** burcu ile işbirliği yapın
 5. **Psikoloji** alanında fırsatları değerlendirin
 
