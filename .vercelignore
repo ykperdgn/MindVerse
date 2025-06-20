@@ -8,13 +8,17 @@ dist
 .astro
 .vercel
 
-# Development files
-*.md
+# Development files - exclude only root level docs
+/*.md
 !README.md
+!README_DEPLOYMENT.md
 completion_*.md
 *_REPORT.md
 *_GUIDE.md
 *_STATUS.md
+
+# IMPORTANT: Allow content markdown files
+!src/content/**/*.md
 
 # Python scripts (not needed for deployment)
 *.py
