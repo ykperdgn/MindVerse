@@ -47,11 +47,6 @@
   ],
   "redirects": [
     {
-      "source": "https://mindversedaily.com/:path*",
-      "destination": "https://www.mindversedaily.com/:path*",
-      "permanent": true
-    },
-    {
       "source": "/:path*",
       "has": [
         { "type": "host", "value": "mindversedaily.com" }
