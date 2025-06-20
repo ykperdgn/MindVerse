@@ -2,42 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MindVerse Blog - Bilingual Astrology &amp; Lifestyle</title>
-    <link>https://mindverseblog.com</link>
+    <link>https://www.mindversedaily.com</link>
     <description>Daily horoscopes, astrology insights, and lifestyle content in Turkish and English | Günlük burç yorumları, astroloji analizleri ve yaşam rehberleri</description>
     <language>tr-TR</language>
-    <pubDate>Fri, 20 Jun 2025 18:12:42 </pubDate>
-    <atom:link href="https://mindverseblog.com/rss.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 20 Jun 2025 18:14:31 </pubDate>
+    <atom:link href="https://www.mindversedaily.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Horoscopes - English | Günlük Burç Yorumları</title>
-      <link>https://mindverseblog.com/en/astrology</link>
+      <link>https://www.mindversedaily.com/en/astrology</link>
       <description>Get your daily horoscope in English with detailed insights for all zodiac signs.</description>
       <category>astrology</category>
-      <pubDate>Fri, 20 Jun 2025 18:12:42 </pubDate>
-      <guid isPermaLink="true">https://mindverseblog.com/en/astrology</guid>
+      <pubDate>Fri, 20 Jun 2025 18:14:31 </pubDate>
+      <guid isPermaLink="true">https://www.mindversedaily.com/en/astrology</guid>
     </item>
     <item>
       <title>Rising Sign Calculator | Yükselen Burç Hesaplayıcısı</title>
-      <link>https://mindverseblog.com/en/astrology/rising-sign</link>
+      <link>https://www.mindversedaily.com/en/astrology/rising-sign</link>
       <description>Calculate your rising sign and discover its influence on your personality.</description>
       <category>astrology</category>
-      <pubDate>Fri, 20 Jun 2025 18:12:42 </pubDate>
-      <guid isPermaLink="true">https://mindverseblog.com/en/astrology/rising-sign</guid>
+      <pubDate>Fri, 20 Jun 2025 18:14:31 </pubDate>
+      <guid isPermaLink="true">https://www.mindversedaily.com/en/astrology/rising-sign</guid>
     </item>
     <item>
       <title>Birth Chart Analysis | Doğum Haritası Analizi</title>
-      <link>https://mindverseblog.com/en/astrology/birth-chart</link>
+      <link>https://www.mindversedaily.com/en/astrology/birth-chart</link>
       <description>Professional birth chart analysis with planetary positions and interpretations.</description>
       <category>astrology</category>
-      <pubDate>Fri, 20 Jun 2025 18:12:42 </pubDate>
-      <guid isPermaLink="true">https://mindverseblog.com/en/astrology/birth-chart</guid>
+      <pubDate>Fri, 20 Jun 2025 18:14:31 </pubDate>
+      <guid isPermaLink="true">https://www.mindversedaily.com/en/astrology/birth-chart</guid>
     </item>
     <item>
       <title>Synastry Analysis | Sinastri Analizi</title>
-      <link>https://mindverseblog.com/en/astrology/synastry</link>
+      <link>https://www.mindversedaily.com/en/astrology/synastry</link>
       <description>Discover relationship compatibility through synastry analysis.</description>
       <category>astrology</category>
-      <pubDate>Fri, 20 Jun 2025 18:12:42 </pubDate>
-      <guid isPermaLink="true">https://mindverseblog.com/en/astrology/synastry</guid>
+      <pubDate>Fri, 20 Jun 2025 18:14:31 </pubDate>
+      <guid isPermaLink="true">https://www.mindversedaily.com/en/astrology/synastry</guid>
     </item>
   </channel>
 </rss>

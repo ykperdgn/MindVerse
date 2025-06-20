@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://mindverseblog.com/sitemap.xml
+Sitemap: https://www.mindversedaily.com/sitemap.xml
 
 # Allow all content in both languages
 Allow: /astrology/
@@ -43,4 +43,4 @@ Disallow: /node_modules/
 Crawl-delay: 1
 
 # Host directive
-Host: mindverseblog.com
+Host: www.mindversedaily.com

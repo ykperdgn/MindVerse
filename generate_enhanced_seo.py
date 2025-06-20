@@ -11,7 +11,7 @@ import glob
 from pathlib import Path
 
 class BilingualSEOGenerator:
-    def __init__(self, base_url="https://mindverseblog.com"):
+    def __init__(self, base_url="https://www.mindversedaily.com"):
         self.base_url = base_url
         self.current_time = datetime.now(timezone.utc).isoformat()
 
