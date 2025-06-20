@@ -21,7 +21,7 @@ Today will be a special day for Pisces. The energies sent by the stars will open
 
 ### Love & Relationships ❤️
 
-Time to form deeper connections in your relationship. Express your romantic feelings openly and don't hesitate to show your love.
+You will have beautiful moments with your loved one. Express your romantic feelings openly and don't hesitate to show your love.
 
 ### Career & Work 💼
 
@@ -33,14 +33,14 @@ Balanced nutrition and regular exercise are important. Listen to the signals you
 
 ### Today's Recommendation
 
-The color yellow may bring you luck today. Trust your intuition when making important decisions.
+The color orange may bring you luck today. Trust your intuition when making important decisions.
 
 ### Lucky Details
 
-- **Lucky Numbers:** 27, 48, 35
-- **Lucky Color:** Yellow
-- **Lucky Stone:** Amethyst
-- **Lucky Direction:** North
+- **Lucky Numbers:** 28, 49, 47
+- **Lucky Color:** Orange
+- **Lucky Stone:** Agate
+- **Lucky Direction:** West
 
 ### Things to Consider
 

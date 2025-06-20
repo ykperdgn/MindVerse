@@ -1,12 +1,9 @@
 ---
 title: 'Akrep Günlük Yorumu - 20 June 2025'
-description: "Akrep Günlük Yorumu - 20 June 2025"
-pubDate: 2025-06-20
-category: "daily-horoscope"
 date: 2025-06-20
 summary: 'Akrep burcu için 20 June 2025 günlük astroloji yorumu ve önerileri.'
 tags: ['astroloji', 'günlük-yorum', 'akrep', 'burç', 'yıldız']
-views: 638
+views: 294
 author: 'MindVerse Astroloji Uzmanı'
 keywords: 'Akrep, günlük yorum, astroloji, burç yorumu, 20 June 2025'
 ---
@@ -21,7 +18,7 @@ Bugün Akrep burcu için özel bir gün olacak. Yıldızların size gönderdiği
 
 ### Aşk ve İlişkiler ❤️
 
-Romantik sürprizler günü renklendirrebilir. İçinizdeki romantik duyguları açığa çıkarın ve sevginizi göstermekten çekinmeyin.
+İlişkinizde daha derin bağlar kurma zamanı. İçinizdeki romantik duyguları açığa çıkarın ve sevginizi göstermekten çekinmeyin.
 
 ### Kariyer ve İş 💼
 
@@ -33,14 +30,14 @@ Stres seviyenizi kontrol altında tutun. Vücudunuzun verdiği sinyalleri dinley
 
 ### Günün Önerisi
 
-Bugün özellikle yeşil renk size şans getirebilir. Önemli kararları verirken sezgilerinizi dinleyin.
+Bugün özellikle kırmızı renk size şans getirebilir. Önemli kararları verirken sezgilerinizi dinleyin.
 
 ### Şanslı Detaylar
 
-- **Şanslı Sayılar:** 41, 13, 11
-- **Şanslı Renk:** Yeşil
-- **Şanslı Taş:** Jade
-- **Şanslı Yön:** Batı
+- **Şanslı Sayılar:** 9, 30, 27
+- **Şanslı Renk:** Kırmızı
+- **Şanslı Taş:** Obsidyen
+- **Şanslı Yön:** Doğu
 
 ### Dikkat Edilmesi Gerekenler
 

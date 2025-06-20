@@ -37,9 +37,9 @@ The color orange may bring you luck today. Trust your intuition when making impo
 
 ### Lucky Details
 
-- **Lucky Numbers:** 8, 26, 39
+- **Lucky Numbers:** 38, 33, 34
 - **Lucky Color:** Orange
-- **Lucky Stone:** Jade
+- **Lucky Stone:** Obsidian
 - **Lucky Direction:** North
 
 ### Things to Consider

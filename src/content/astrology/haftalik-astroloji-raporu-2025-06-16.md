@@ -3,11 +3,11 @@ title: "Haftalık Astroloji Raporu - 16 June - 22 June 2025"
 description: "16 June - 22 June 2025 haftası için detaylı astroloji raporu ve burç yorumları."
 pubDate: 2025-06-16
 category: "astrology"
-tags: ["haftalık", "astroloji raporu", "kariyer ve para", "burç yorumları"]
+tags: ["haftalık", "astroloji raporu", "manevi gelişim", "burç yorumları"]
 heroImage: "/images/weekly-astrology.jpg"
 type: "weekly-report"
 featured: true
-weekly_theme: "Kariyer ve Para"
+weekly_theme: "Manevi Gelişim"
 main_planet: "Mars"
 week_start: "2025-06-16"
 week_end: "2025-06-22"
@@ -17,9 +17,9 @@ week_end: "2025-06-22"
 
 ## 📅 Hafta Genel Görünümü
 
-Bu hafta **Kariyer ve Para** konularında önemli gelişmeler yaşanacak. Mars gezegeninin etkisi altında geçecek olan bu dönemde, astrolojik enerjiler özellikle şu alanlarda hissedilecek:
+Bu hafta **Manevi Gelişim** konularında önemli gelişmeler yaşanacak. Mars gezegeninin etkisi altında geçecek olan bu dönemde, astrolojik enerjiler özellikle şu alanlarda hissedilecek:
 
-Astrolojik açıdan bakıldığında, kariyer ve para temasında dönüşümler yaşanacak.
+**Mars** gezegeninin güçlü etkisi altında, manevi gelişim alanında önemli gelişmeler bekleniyor.
 
 **Mars Etkisi:** Bu gezegen özellikle iletişim, düşünce ve karar verme süreçlerinizi etkileyecek. Önemli kararları bu dönemde almanız avantajlı olabilir.
 
@@ -29,180 +29,180 @@ Astrolojik açıdan bakıldığında, kariyer ve para temasında dönüşümler 
 
 
 ### ♈ Koç Burcu
-**Haftalık Enerji:** %76 | **Şanslı Gün:** Cuma
+**Haftalık Enerji:** %94 | **Şanslı Gün:** Pazar
 
-Bu hafta enerjiniz 76% seviyesinde olacak.
+Ateş elementi size güç katacak.
 
 **Detay Puanlar:**
-- 💕 Aşk: %73
-- 💼 Kariyer: %89
-- 🏥 Sağlık: %74
-- 💰 Para: %59
+- 💕 Aşk: %75
+- 💼 Kariyer: %73
+- 🏥 Sağlık: %75
+- 💰 Para: %82
 
-**Tavsiye:** Ateş enerjisini kullanarak dengeli kalın.
+**Odak:** Koç enerjisini en iyi şekilde değerlendirin.
 
 ---
 
 ### ♉ Boğa Burcu
-**Haftalık Enerji:** %77 | **Şanslı Gün:** Cumartesi
+**Haftalık Enerji:** %72 | **Şanslı Gün:** Pazartesi
 
-Özellikle Cumartesi günü şanslı gününüz.
+Toprak elementi size güç katacak.
 
 **Detay Puanlar:**
-- 💕 Aşk: %87
-- 💼 Kariyer: %95
-- 🏥 Sağlık: %76
-- 💰 Para: %71
+- 💕 Aşk: %76
+- 💼 Kariyer: %68
+- 🏥 Sağlık: %86
+- 💰 Para: %57
 
-**Dikkat:** Sabit özelliğiniz bu hafta avantaj sağlayacak.
+**Fırsat:** Venüs etkisiyle yeni kapılar açılabilir.
 
 ---
 
 ### ♊ İkizler Burcu
-**Haftalık Enerji:** %76 | **Şanslı Gün:** Çarşamba
+**Haftalık Enerji:** %89 | **Şanslı Gün:** Çarşamba
 
-Bu hafta enerjiniz 76% seviyesinde olacak.
+Özellikle Çarşamba günü şanslı gününüz.
 
 **Detay Puanlar:**
 - 💕 Aşk: %60
-- 💼 Kariyer: %80
-- 🏥 Sağlık: %87
-- 💰 Para: %56
+- 💼 Kariyer: %84
+- 🏥 Sağlık: %90
+- 💰 Para: %57
 
 **Odak:** İkizler enerjisini en iyi şekilde değerlendirin.
 
 ---
 
 ### ♋ Yengeç Burcu
-**Haftalık Enerji:** %90 | **Şanslı Gün:** Cuma
+**Haftalık Enerji:** %94 | **Şanslı Gün:** Cumartesi
 
-Bu hafta enerjiniz 90% seviyesinde olacak.
+Su elementi size güç katacak.
 
 **Detay Puanlar:**
-- 💕 Aşk: %77
-- 💼 Kariyer: %74
-- 🏥 Sağlık: %83
+- 💕 Aşk: %74
+- 💼 Kariyer: %86
+- 🏥 Sağlık: %80
 - 💰 Para: %58
 
-**Tavsiye:** Su enerjisini kullanarak dengeli kalın.
+**Fırsat:** Ay etkisiyle yeni kapılar açılabilir.
 
 ---
 
 ### ♌ Aslan Burcu
-**Haftalık Enerji:** %84 | **Şanslı Gün:** Cuma
+**Haftalık Enerji:** %95 | **Şanslı Gün:** Cuma
 
-Ateş elementi size güç katacak.
+Yönetici gezegen Güneş olumlu etki yapacak.
 
 **Detay Puanlar:**
-- 💕 Aşk: %65
-- 💼 Kariyer: %84
-- 🏥 Sağlık: %88
-- 💰 Para: %60
+- 💕 Aşk: %85
+- 💼 Kariyer: %73
+- 🏥 Sağlık: %74
+- 💰 Para: %71
 
 **Odak:** Aslan enerjisini en iyi şekilde değerlendirin.
 
 ---
 
 ### ♍ Başak Burcu
-**Haftalık Enerji:** %95 | **Şanslı Gün:** Çarşamba
+**Haftalık Enerji:** %72 | **Şanslı Gün:** Perşembe
 
-Toprak elementi size güç katacak.
+Özellikle Perşembe günü şanslı gününüz.
 
 **Detay Puanlar:**
-- 💕 Aşk: %88
-- 💼 Kariyer: %88
-- 🏥 Sağlık: %80
-- 💰 Para: %68
+- 💕 Aşk: %85
+- 💼 Kariyer: %83
+- 🏥 Sağlık: %70
+- 💰 Para: %59
 
 **Fırsat:** Merkür etkisiyle yeni kapılar açılabilir.
 
 ---
 
 ### ♎ Terazi Burcu
-**Haftalık Enerji:** %92 | **Şanslı Gün:** Pazar
+**Haftalık Enerji:** %79 | **Şanslı Gün:** Salı
 
-Bu hafta enerjiniz 92% seviyesinde olacak.
+Bu hafta enerjiniz 79% seviyesinde olacak.
 
 **Detay Puanlar:**
-- 💕 Aşk: %73
-- 💼 Kariyer: %73
-- 🏥 Sağlık: %72
-- 💰 Para: %84
+- 💕 Aşk: %69
+- 💼 Kariyer: %80
+- 🏥 Sağlık: %79
+- 💰 Para: %80
 
-**Fırsat:** Venüs etkisiyle yeni kapılar açılabilir.
+**Tavsiye:** Hava enerjisini kullanarak dengeli kalın.
 
 ---
 
 ### ♏ Akrep Burcu
-**Haftalık Enerji:** %83 | **Şanslı Gün:** Salı
+**Haftalık Enerji:** %92 | **Şanslı Gün:** Cuma
 
-Su elementi size güç katacak.
+Yönetici gezegen Plüton olumlu etki yapacak.
 
 **Detay Puanlar:**
-- 💕 Aşk: %70
-- 💼 Kariyer: %94
-- 🏥 Sağlık: %88
-- 💰 Para: %65
+- 💕 Aşk: %65
+- 💼 Kariyer: %82
+- 🏥 Sağlık: %90
+- 💰 Para: %55
 
 **Tavsiye:** Su enerjisini kullanarak dengeli kalın.
 
 ---
 
 ### ♐ Yay Burcu
-**Haftalık Enerji:** %91 | **Şanslı Gün:** Perşembe
+**Haftalık Enerji:** %92 | **Şanslı Gün:** Pazartesi
 
 Ateş elementi size güç katacak.
 
 **Detay Puanlar:**
-- 💕 Aşk: %64
-- 💼 Kariyer: %88
-- 🏥 Sağlık: %81
-- 💰 Para: %61
+- 💕 Aşk: %85
+- 💼 Kariyer: %65
+- 🏥 Sağlık: %82
+- 💰 Para: %60
 
-**Fırsat:** Jüpiter etkisiyle yeni kapılar açılabilir.
+**Dikkat:** Değişken özelliğiniz bu hafta avantaj sağlayacak.
 
 ---
 
 ### ♑ Oğlak Burcu
-**Haftalık Enerji:** %69 | **Şanslı Gün:** Pazartesi
+**Haftalık Enerji:** %86 | **Şanslı Gün:** Perşembe
 
 Toprak elementi size güç katacak.
 
 **Detay Puanlar:**
-- 💕 Aşk: %78
-- 💼 Kariyer: %81
-- 🏥 Sağlık: %83
-- 💰 Para: %81
+- 💕 Aşk: %84
+- 💼 Kariyer: %87
+- 🏥 Sağlık: %88
+- 💰 Para: %84
 
-**Dikkat:** Öncü özelliğiniz bu hafta avantaj sağlayacak.
+**Odak:** Oğlak enerjisini en iyi şekilde değerlendirin.
 
 ---
 
 ### ♒ Kova Burcu
-**Haftalık Enerji:** %94 | **Şanslı Gün:** Cuma
+**Haftalık Enerji:** %82 | **Şanslı Gün:** Salı
 
-Hava elementi size güç katacak.
+Bu hafta enerjiniz 82% seviyesinde olacak.
 
 **Detay Puanlar:**
-- 💕 Aşk: %80
-- 💼 Kariyer: %92
-- 🏥 Sağlık: %87
-- 💰 Para: %61
+- 💕 Aşk: %61
+- 💼 Kariyer: %75
+- 🏥 Sağlık: %79
+- 💰 Para: %72
 
-**Odak:** Kova enerjisini en iyi şekilde değerlendirin.
+**Tavsiye:** Hava enerjisini kullanarak dengeli kalın.
 
 ---
 
 ### ♓ Balık Burcu
-**Haftalık Enerji:** %76 | **Şanslı Gün:** Cumartesi
+**Haftalık Enerji:** %83 | **Şanslı Gün:** Cuma
 
-Bu hafta enerjiniz 76% seviyesinde olacak.
+Bu hafta enerjiniz 83% seviyesinde olacak.
 
 **Detay Puanlar:**
-- 💕 Aşk: %67
-- 💼 Kariyer: %65
-- 🏥 Sağlık: %70
-- 💰 Para: %73
+- 💕 Aşk: %84
+- 💼 Kariyer: %74
+- 🏥 Sağlık: %84
+- 💰 Para: %69
 
 **Odak:** Balık enerjisini en iyi şekilde değerlendirin.
 
@@ -215,7 +215,7 @@ Bu hafta enerjiniz 76% seviyesinde olacak.
 
 ### Pazartesi (16.06)
 - **Ay Evresi:** Dolunay
-- **Önemli Açı:** Karşıtlık
+- **Önemli Açı:** Kare
 - **Odak:** Hafta başı enerjisi ve yeni projeler
 
 ### Çarşamba (18.06)
@@ -240,17 +240,17 @@ Bu hafta enerjiniz 76% seviyesinde olacak.
 ### 🌟 Genel Tavsiyeler
 - **En İyi Günler:** Çarşamba ve Cuma
 - **Dikkat Edilecek:** Pazartesi ve Perşembe
-- **Şanslı Renkler:** Turuncu ve Altın
-- **Şanslı Sayılar:** 5, 16, 22
+- **Şanslı Renkler:** Mavi ve Gümüş
+- **Şanslı Sayılar:** 8, 10, 22
 
 ### 💝 Aşk ve İlişkiler
-Bu hafta kariyer ve para temasının etkisiyle, ilişkilerde derin bağlar kurma zamanı. Özellikle su burçları için romantik fırsatlar.
+Bu hafta manevi gelişim temasının etkisiyle, ilişkilerde derin bağlar kurma zamanı. Özellikle su burçları için romantik fırsatlar.
 
 ### 💼 Kariyer ve Finans
-Mars etkisi altında, profesyonel hayatta yeni kapılar açılabilir. Mali konularda dengeli yaklaşım sergilemek önemli.
+Mars etkisi altında, profesyonel hayatta yeni kapılar açılabilir. Mali konularda temkinli yaklaşım sergilemek önemli.
 
 ### 🏥 Sağlık ve Enerji
-Enerji seviyeniz bu hafta değişken olacak. Yoga gibi aktiviteler önerilir.
+Enerji seviyeniz bu hafta yüksek olacak. Doğa yürüyüşü gibi aktiviteler önerilir.
 
 ---
 

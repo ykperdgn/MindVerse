@@ -33,14 +33,14 @@ Keep your stress levels under control. Listen to the signals your body gives and
 
 ### Today's Recommendation
 
-The color red may bring you luck today. Trust your intuition when making important decisions.
+The color yellow may bring you luck today. Trust your intuition when making important decisions.
 
 ### Lucky Details
 
-- **Lucky Numbers:** 30, 28, 1
-- **Lucky Color:** Red
-- **Lucky Stone:** Obsidian
-- **Lucky Direction:** North
+- **Lucky Numbers:** 1, 20, 43
+- **Lucky Color:** Yellow
+- **Lucky Stone:** Amethyst
+- **Lucky Direction:** East
 
 ### Things to Consider
 

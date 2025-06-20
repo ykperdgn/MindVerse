@@ -33,13 +33,13 @@ Maintain mental and physical balance. Listen to the signals your body gives and 
 
 ### Today's Recommendation
 
-The color yellow may bring you luck today. Trust your intuition when making important decisions.
+The color orange may bring you luck today. Trust your intuition when making important decisions.
 
 ### Lucky Details
 
-- **Lucky Numbers:** 30, 45, 19
-- **Lucky Color:** Yellow
-- **Lucky Stone:** Jade
+- **Lucky Numbers:** 25, 7, 24
+- **Lucky Color:** Orange
+- **Lucky Stone:** Obsidian
 - **Lucky Direction:** East
 
 ### Things to Consider

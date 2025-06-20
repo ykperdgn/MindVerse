@@ -33,14 +33,14 @@ Maintain mental and physical balance. Listen to the signals your body gives and 
 
 ### Today's Recommendation
 
-The color orange may bring you luck today. Trust your intuition when making important decisions.
+The color green may bring you luck today. Trust your intuition when making important decisions.
 
 ### Lucky Details
 
-- **Lucky Numbers:** 38, 22, 21
-- **Lucky Color:** Orange
-- **Lucky Stone:** Amethyst
-- **Lucky Direction:** South
+- **Lucky Numbers:** 41, 13, 11
+- **Lucky Color:** Green
+- **Lucky Stone:** Jade
+- **Lucky Direction:** West
 
 ### Things to Consider
 

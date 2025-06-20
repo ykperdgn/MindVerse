@@ -40,7 +40,8 @@ except ImportError:
             return self
 
         def do(self, func):
-            self.jobs.append({"func": func, "time": time_str if hasattr(self, 'time_str') else "unknown"})
+            # Fallback: time_str is not defined in this context, so always set to 'unknown'
+            self.jobs.append({"func": func, "time": "unknown"})
             return self
 
         def run_pending(self):

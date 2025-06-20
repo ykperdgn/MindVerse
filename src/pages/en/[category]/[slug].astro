@@ -11,7 +11,8 @@ export async function getStaticPaths() {
 
   for (const category of categories) {
     try {
-      const posts = await getCollection(category);
+      // Only include posts that actually exist in English (_en.md or _en)
+      const posts = await getCollection(category, ({ id }) => id.endsWith('_en.md') || id.endsWith('_en'));
       for (const post of posts) {
         if (post.slug && post.slug.trim() !== '') {
           paths.push({

@@ -1,12 +1,9 @@
 ---
 title: 'Kova Günlük Yorumu - 20 June 2025'
-description: "Kova Günlük Yorumu - 20 June 2025"
-pubDate: 2025-06-20
-category: "daily-horoscope"
 date: 2025-06-20
 summary: 'Kova burcu için 20 June 2025 günlük astroloji yorumu ve önerileri.'
 tags: ['astroloji', 'günlük-yorum', 'kova', 'burç', 'yıldız']
-views: 238
+views: 557
 author: 'MindVerse Astroloji Uzmanı'
 keywords: 'Kova, günlük yorum, astroloji, burç yorumu, 20 June 2025'
 ---
@@ -21,26 +18,26 @@ Bugün Kova burcu için özel bir gün olacak. Yıldızların size gönderdiği 
 
 ### Aşk ve İlişkiler ❤️
 
-İlişkinizde daha derin bağlar kurma zamanı. İçinizdeki romantik duyguları açığa çıkarın ve sevginizi göstermekten çekinmeyin.
+Sevdiğiniz kişiyle güzel anlar yaşayacaksınız. İçinizdeki romantik duyguları açığa çıkarın ve sevginizi göstermekten çekinmeyin.
 
 ### Kariyer ve İş 💼
 
-Mesleki hedeflerinize odaklanın. Bugün aldığınız kararlar, geleceğinizi şekillendirebilir.
+Kariyerinizde yeni adımlar atma zamanı. Bugün aldığınız kararlar, geleceğinizi şekillendirebilir.
 
 ### Sağlık ve Enerji 🌟
 
-Sağlığınıza özel önem gösterin. Vücudunuzun verdiği sinyalleri dinleyin ve gerekli önlemleri alın.
+Dengeli beslenme ve düzenli egzersiz önemli. Vücudunuzun verdiği sinyalleri dinleyin ve gerekli önlemleri alın.
 
 ### Günün Önerisi
 
-Bugün özellikle kırmızı renk size şans getirebilir. Önemli kararları verirken sezgilerinizi dinleyin.
+Bugün özellikle turuncu renk size şans getirebilir. Önemli kararları verirken sezgilerinizi dinleyin.
 
 ### Şanslı Detaylar
 
-- **Şanslı Sayılar:** 6, 2, 35
-- **Şanslı Renk:** Kırmızı
-- **Şanslı Taş:** Obsidyen
-- **Şanslı Yön:** Kuzey
+- **Şanslı Sayılar:** 44, 4, 6
+- **Şanslı Renk:** Turuncu
+- **Şanslı Taş:** Ametist
+- **Şanslı Yön:** Batı
 
 ### Dikkat Edilmesi Gerekenler
 

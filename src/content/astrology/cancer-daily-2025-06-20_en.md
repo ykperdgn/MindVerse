@@ -37,10 +37,10 @@ The color blue may bring you luck today. Trust your intuition when making import
 
 ### Lucky Details
 
-- **Lucky Numbers:** 37, 49, 39
+- **Lucky Numbers:** 21, 2, 11
 - **Lucky Color:** Blue
-- **Lucky Stone:** Jade
-- **Lucky Direction:** West
+- **Lucky Stone:** Obsidian
+- **Lucky Direction:** East
 
 ### Things to Consider
 

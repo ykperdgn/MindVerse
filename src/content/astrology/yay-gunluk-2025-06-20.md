@@ -1,12 +1,9 @@
 ---
 title: 'Yay Günlük Yorumu - 20 June 2025'
-description: "Yay Günlük Yorumu - 20 June 2025"
-pubDate: 2025-06-20
-category: "daily-horoscope"
 date: 2025-06-20
 summary: 'Yay burcu için 20 June 2025 günlük astroloji yorumu ve önerileri.'
 tags: ['astroloji', 'günlük-yorum', 'yay', 'burç', 'yıldız']
-views: 406
+views: 369
 author: 'MindVerse Astroloji Uzmanı'
 keywords: 'Yay, günlük yorum, astroloji, burç yorumu, 20 June 2025'
 ---
@@ -21,11 +18,11 @@ Bugün Yay burcu için özel bir gün olacak. Yıldızların size gönderdiği e
 
 ### Aşk ve İlişkiler ❤️
 
-Aşk hayatında yeni fırsatlar sizi bekliyor. İçinizdeki romantik duyguları açığa çıkarın ve sevginizi göstermekten çekinmeyin.
+İlişkinizde daha derin bağlar kurma zamanı. İçinizdeki romantik duyguları açığa çıkarın ve sevginizi göstermekten çekinmeyin.
 
 ### Kariyer ve İş 💼
 
-İş birliği halinde büyük başarılar elde edebilirsiniz. Bugün aldığınız kararlar, geleceğinizi şekillendirebilir.
+İş hayatında yaratıcı çözümler bulacaksınız. Bugün aldığınız kararlar, geleceğinizi şekillendirebilir.
 
 ### Sağlık ve Enerji 🌟
 
@@ -37,10 +34,10 @@ Bugün özellikle mavi renk size şans getirebilir. Önemli kararları verirken 
 
 ### Şanslı Detaylar
 
-- **Şanslı Sayılar:** 41, 14, 7
+- **Şanslı Sayılar:** 34, 41, 32
 - **Şanslı Renk:** Mavi
-- **Şanslı Taş:** Obsidyen
-- **Şanslı Yön:** Doğu
+- **Şanslı Taş:** Akik
+- **Şanslı Yön:** Güney
 
 ### Dikkat Edilmesi Gerekenler
 

@@ -33,14 +33,14 @@ Maintain mental and physical balance. Listen to the signals your body gives and 
 
 ### Today's Recommendation
 
-The color purple may bring you luck today. Trust your intuition when making important decisions.
+The color blue may bring you luck today. Trust your intuition when making important decisions.
 
 ### Lucky Details
 
-- **Lucky Numbers:** 28, 40, 42
-- **Lucky Color:** Purple
-- **Lucky Stone:** Amethyst
-- **Lucky Direction:** West
+- **Lucky Numbers:** 44, 9, 32
+- **Lucky Color:** Blue
+- **Lucky Stone:** Agate
+- **Lucky Direction:** South
 
 ### Things to Consider
 

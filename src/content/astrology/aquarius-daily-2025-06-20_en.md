@@ -21,25 +21,25 @@ Today will be a special day for Aquarius. The energies sent by the stars will op
 
 ### Love & Relationships ❤️
 
-New opportunities in love life await you. Express your romantic feelings openly and don't hesitate to show your love.
+Time to form deeper connections in your relationship. Express your romantic feelings openly and don't hesitate to show your love.
 
 ### Career & Work 💼
 
-You'll find creative solutions in your work life. The decisions you make today can shape your future.
+Focus on your professional goals. The decisions you make today can shape your future.
 
 ### Health & Energy 🌟
 
-Keep your stress levels under control. Listen to the signals your body gives and take necessary precautions.
+Pay special attention to your health. Listen to the signals your body gives and take necessary precautions.
 
 ### Today's Recommendation
 
-The color orange may bring you luck today. Trust your intuition when making important decisions.
+The color red may bring you luck today. Trust your intuition when making important decisions.
 
 ### Lucky Details
 
-- **Lucky Numbers:** 13, 2, 39
-- **Lucky Color:** Orange
-- **Lucky Stone:** Amethyst
+- **Lucky Numbers:** 6, 2, 35
+- **Lucky Color:** Red
+- **Lucky Stone:** Obsidian
 - **Lucky Direction:** North
 
 ### Things to Consider

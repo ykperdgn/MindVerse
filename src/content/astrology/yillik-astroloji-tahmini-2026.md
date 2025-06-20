@@ -8,7 +8,7 @@ heroImage: "/images/yearly-forecast.jpg"
 type: "yearly-forecast"
 featured: true
 forecast_year: 2026
-main_themes: ["Dijital Dönüşüm ve Teknoloji", "Kariyer ve Profesyonel Gelişim", "Finansal Bağımsızlık"]
+main_themes: ["Manevi Gelişim ve İç Yolculuk", "Finansal Bağımsızlık", "Kariyer ve Profesyonel Gelişim"]
 ---
 
 # 🌟 2026 Yılı Detaylı Astroloji Tahmini
@@ -19,14 +19,14 @@ main_themes: ["Dijital Dönüşüm ve Teknoloji", "Kariyer ve Profesyonel Geliş
 
 ### 📅 Yılın Ana Temaları
 
-**1. Dijital Dönüşüm ve Teknoloji**
-Bu yıl teknolojik ilerlemeler hayatımızda büyük rol oynayacak.
+**1. Manevi Gelişim ve İç Yolculuk**
+İç dünyamızı keşfetme ve manevi gelişim önem kazanacak.
 
-**2. Kariyer ve Profesyonel Gelişim**
-Mesleki gelişim ve kariyer değişimleri ön planda.
-
-**3. Finansal Bağımsızlık**
+**2. Finansal Bağımsızlık**
 Mali özgürlük ve finansal planlama önem kazanacak.
+
+**3. Kariyer ve Profesyonel Gelişim**
+Mesleki gelişim ve kariyer değişimleri ön planda.
 
 
 
@@ -36,59 +36,59 @@ Mali özgürlük ve finansal planlama önem kazanacak.
 
 
 ### 🌿 İlkbahar Dönemi (Mart, Nisan, Mayıs)
-**Tema:** Yenilenme ve Başlangıçlar | **Enerji:** %90
+**Tema:** Yenilenme ve Başlangıçlar | **Enerji:** %70
 
-Bu dönemde enerji seviyeniz %90 olacak.
-
-**Öne Çıkan Konular:**
-- Yeni projeler
-- İç gelişim
-- Aile zamanı
-
-**Dikkat Edilecek:**
-- Aşırı hıza kapılma
-
----
-
-### 🌿 Yaz Dönemi (Haziran, Temmuz, Ağustos)
-**Tema:** Büyüme ve Başarı | **Enerji:** %86
-
-Bu dönemde enerji seviyeniz %86 olacak.
-
-**Öne Çıkan Konular:**
-- Kariyer fırsatları
-- Sosyal aktiviteler
-- Aile zamanı
-
-**Dikkat Edilecek:**
-- İletişim sorunları
-
----
-
-### 🌿 Sonbahar Dönemi (Eylül, Ekim, Kasım)
-**Tema:** Hasat ve Değerlendirme | **Enerji:** %83
-
-Astrolojik enerjiler size destek olacak.
+Bu dönemde enerji seviyeniz %70 olacak.
 
 **Öne Çıkan Konular:**
 - Sağlık iyileşmesi
-- İç gelişim
-- Seyahat fırsatları
+- Sosyal aktiviteler
+- Aile zamanı
 
 **Dikkat Edilecek:**
 - Enerji dağılımı
 
 ---
 
-### 🌿 Kış Dönemi (Aralık, Ocak, Şubat)
-**Tema:** İç Gözlem ve Hazırlık | **Enerji:** %88
+### 🌿 Yaz Dönemi (Haziran, Temmuz, Ağustos)
+**Tema:** Büyüme ve Başarı | **Enerji:** %83
 
-Bu dönemde enerji seviyeniz %88 olacak.
+Astrolojik enerjiler size destek olacak.
 
 **Öne Çıkan Konular:**
-- Kariyer fırsatları
-- Yaratıcı projeler
-- Hobi geliştirme
+- Sağlık iyileşmesi
+- İç gelişim
+- Eğitim ve öğrenme
+
+**Dikkat Edilecek:**
+- Mali konularda aceleci olma
+
+---
+
+### 🌿 Sonbahar Dönemi (Eylül, Ekim, Kasım)
+**Tema:** Hasat ve Değerlendirme | **Enerji:** %72
+
+Bu dönemde enerji seviyeniz %72 olacak.
+
+**Öne Çıkan Konular:**
+- Yeni projeler
+- İç gelişim
+- Seyahat fırsatları
+
+**Dikkat Edilecek:**
+- İletişim sorunları
+
+---
+
+### 🌿 Kış Dönemi (Aralık, Ocak, Şubat)
+**Tema:** İç Gözlem ve Hazırlık | **Enerji:** %84
+
+İç Gözlem ve Hazırlık teması hayatınızda ön plana çıkacak.
+
+**Öne Çıkan Konular:**
+- Yeni projeler
+- İç gelişim
+- Aile zamanı
 
 **Dikkat Edilecek:**
 - Mali konularda aceleci olma
@@ -102,41 +102,151 @@ Bu dönemde enerji seviyeniz %88 olacak.
 
 
 ### ♈ Koç Burcu - 2026
-**Yıllık Enerji:** %95 | **Şanslı Aylar:** Eylül, Ağustos, Nisan
+**Yıllık Enerji:** %84 | **Şanslı Aylar:** Eylül, Temmuz, Mayıs
 
 Bu yıl Koç burcu için **büyüme** yılı olacak. Mars gezeni size özel destek sağlayacak.
 
 **Yaşam Alanları Puanları:**
-- Aşk ve İlişkiler: %70
-- Kariyer ve İş: %85
-- Sağlık ve Enerji: %85
-- Finans ve Para: %70
-- Aile ve Ev: %89
-- Sosyal Hayat: %84
+- Aşk ve İlişkiler: %79
+- Kariyer ve İş: %92
+- Sağlık ve Enerji: %88
+- Finans ve Para: %67
+- Aile ve Ev: %81
+- Sosyal Hayat: %77
 
 **En İyi Dönem:** Kış - İç Gözlem ve Hazırlık
 
 **Yıllık Tavsiyeler:**
-- Sabırlı olun
-- Kariyere odaklanın
-- Yaratıcılığınızı kullanın
+- Dengeyi koruyun
+- İlişkilere yatırım yapın
+- İç sesinizi dinleyin
 
 ---
 
 ### ♉ Boğa Burcu - 2026
-**Yıllık Enerji:** %93 | **Şanslı Aylar:** Nisan, Ekim, Mayıs
+**Yıllık Enerji:** %88 | **Şanslı Aylar:** Mart, Nisan, Eylül
 
-Bu yıl Boğa burcu için **başarı** yılı olacak. Venüs gezeni size özel destek sağlayacak.
+Bu yıl Boğa burcu için **dönüşüm** yılı olacak. Venüs gezeni size özel destek sağlayacak.
 
 **Yaşam Alanları Puanları:**
-- Aşk ve İlişkiler: %81
-- Kariyer ve İş: %85
-- Sağlık ve Enerji: %94
+- Aşk ve İlişkiler: %90
+- Kariyer ve İş: %77
+- Sağlık ve Enerji: %81
 - Finans ve Para: %80
-- Aile ve Ev: %88
-- Sosyal Hayat: %79
+- Aile ve Ev: %71
+- Sosyal Hayat: %85
 
-**En İyi Dönem:** Yaz - Büyüme ve Başarı
+**En İyi Dönem:** Sonbahar - Hasat ve Değerlendirme
+
+**Yıllık Tavsiyeler:**
+- Sabırlı olun
+- İlişkilere yatırım yapın
+- Öğrenmeye devam edin
+
+---
+
+### ♊ İkizler Burcu - 2026
+**Yıllık Enerji:** %76 | **Şanslı Aylar:** Ağustos, Ekim, Temmuz
+
+Bu yıl İkizler burcu için **dengeleme** yılı olacak. Merkür gezeni size özel destek sağlayacak.
+
+**Yaşam Alanları Puanları:**
+- Aşk ve İlişkiler: %70
+- Kariyer ve İş: %82
+- Sağlık ve Enerji: %95
+- Finans ve Para: %78
+- Aile ve Ev: %84
+- Sosyal Hayat: %90
+
+**En İyi Dönem:** Sonbahar - Hasat ve Değerlendirme
+
+**Yıllık Tavsiyeler:**
+- Değişime açık olun
+- Sağlığınızı öncelik yapın
+- Yaratıcılığınızı kullanın
+
+---
+
+### ♋ Yengeç Burcu - 2026
+**Yıllık Enerji:** %84 | **Şanslı Aylar:** Ekim, Ağustos, Kasım
+
+Bu yıl Yengeç burcu için **dengeleme** yılı olacak. Ay gezeni size özel destek sağlayacak.
+
+**Yaşam Alanları Puanları:**
+- Aşk ve İlişkiler: %86
+- Kariyer ve İş: %88
+- Sağlık ve Enerji: %94
+- Finans ve Para: %72
+- Aile ve Ev: %77
+- Sosyal Hayat: %85
+
+**En İyi Dönem:** Kış - İç Gözlem ve Hazırlık
+
+**Yıllık Tavsiyeler:**
+- Değişime açık olun
+- İlişkilere yatırım yapın
+- Yaratıcılığınızı kullanın
+
+---
+
+### ♌ Aslan Burcu - 2026
+**Yıllık Enerji:** %81 | **Şanslı Aylar:** Nisan, Ağustos, Mayıs
+
+Bu yıl Aslan burcu için **başarı** yılı olacak. Güneş gezeni size özel destek sağlayacak.
+
+**Yaşam Alanları Puanları:**
+- Aşk ve İlişkiler: %74
+- Kariyer ve İş: %91
+- Sağlık ve Enerji: %87
+- Finans ve Para: %66
+- Aile ve Ev: %77
+- Sosyal Hayat: %82
+
+**En İyi Dönem:** İlkbahar - Yenilenme ve Başlangıçlar
+
+**Yıllık Tavsiyeler:**
+- Sabırlı olun
+- Kariyere odaklanın
+- Öğrenmeye devam edin
+
+---
+
+### ♍ Başak Burcu - 2026
+**Yıllık Enerji:** %83 | **Şanslı Aylar:** Kasım, Mayıs, Haziran
+
+Bu yıl Başak burcu için **başarı** yılı olacak. Merkür gezeni size özel destek sağlayacak.
+
+**Yaşam Alanları Puanları:**
+- Aşk ve İlişkiler: %90
+- Kariyer ve İş: %77
+- Sağlık ve Enerji: %89
+- Finans ve Para: %69
+- Aile ve Ev: %72
+- Sosyal Hayat: %83
+
+**En İyi Dönem:** Kış - İç Gözlem ve Hazırlık
+
+**Yıllık Tavsiyeler:**
+- Cesur adımlar atın
+- İlişkilere yatırım yapın
+- İç sesinizi dinleyin
+
+---
+
+### ♎ Terazi Burcu - 2026
+**Yıllık Enerji:** %81 | **Şanslı Aylar:** Kasım, Mart, Temmuz
+
+Bu yıl Terazi burcu için **başarı** yılı olacak. Venüs gezeni size özel destek sağlayacak.
+
+**Yaşam Alanları Puanları:**
+- Aşk ve İlişkiler: %80
+- Kariyer ve İş: %78
+- Sağlık ve Enerji: %87
+- Finans ve Para: %81
+- Aile ve Ev: %87
+- Sosyal Hayat: %86
+
+**En İyi Dönem:** İlkbahar - Yenilenme ve Başlangıçlar
 
 **Yıllık Tavsiyeler:**
 - Dengeyi koruyun
@@ -145,223 +255,113 @@ Bu yıl Boğa burcu için **başarı** yılı olacak. Venüs gezeni size özel d
 
 ---
 
-### ♊ İkizler Burcu - 2026
-**Yıllık Enerji:** %82 | **Şanslı Aylar:** Nisan, Ekim, Eylül
-
-Bu yıl İkizler burcu için **başarı** yılı olacak. Merkür gezeni size özel destek sağlayacak.
-
-**Yaşam Alanları Puanları:**
-- Aşk ve İlişkiler: %72
-- Kariyer ve İş: %78
-- Sağlık ve Enerji: %89
-- Finans ve Para: %80
-- Aile ve Ev: %81
-- Sosyal Hayat: %79
-
-**En İyi Dönem:** Kış - İç Gözlem ve Hazırlık
-
-**Yıllık Tavsiyeler:**
-- Cesur adımlar atın
-- Sağlığınızı öncelik yapın
-- İç sesinizi dinleyin
-
----
-
-### ♋ Yengeç Burcu - 2026
-**Yıllık Enerji:** %75 | **Şanslı Aylar:** Nisan, Mayıs, Eylül
-
-Bu yıl Yengeç burcu için **başarı** yılı olacak. Ay gezeni size özel destek sağlayacak.
-
-**Yaşam Alanları Puanları:**
-- Aşk ve İlişkiler: %74
-- Kariyer ve İş: %82
-- Sağlık ve Enerji: %87
-- Finans ve Para: %67
-- Aile ve Ev: %72
-- Sosyal Hayat: %84
-
-**En İyi Dönem:** Kış - İç Gözlem ve Hazırlık
-
-**Yıllık Tavsiyeler:**
-- Değişime açık olun
-- Sağlığınızı öncelik yapın
-- Sosyal bağlar kurun
-
----
-
-### ♌ Aslan Burcu - 2026
-**Yıllık Enerji:** %95 | **Şanslı Aylar:** Ekim, Temmuz, Haziran
-
-Bu yıl Aslan burcu için **dönüşüm** yılı olacak. Güneş gezeni size özel destek sağlayacak.
-
-**Yaşam Alanları Puanları:**
-- Aşk ve İlişkiler: %87
-- Kariyer ve İş: %75
-- Sağlık ve Enerji: %83
-- Finans ve Para: %65
-- Aile ve Ev: %80
-- Sosyal Hayat: %75
-
-**En İyi Dönem:** Yaz - Büyüme ve Başarı
-
-**Yıllık Tavsiyeler:**
-- Cesur adımlar atın
-- Finansal planlama yapın
-- Sosyal bağlar kurun
-
----
-
-### ♍ Başak Burcu - 2026
-**Yıllık Enerji:** %88 | **Şanslı Aylar:** Mart, Mayıs, Nisan
-
-Bu yıl Başak burcu için **büyüme** yılı olacak. Merkür gezeni size özel destek sağlayacak.
-
-**Yaşam Alanları Puanları:**
-- Aşk ve İlişkiler: %74
-- Kariyer ve İş: %89
-- Sağlık ve Enerji: %90
-- Finans ve Para: %79
-- Aile ve Ev: %71
-- Sosyal Hayat: %87
-
-**En İyi Dönem:** Yaz - Büyüme ve Başarı
-
-**Yıllık Tavsiyeler:**
-- Cesur adımlar atın
-- Kariyere odaklanın
-- İç sesinizi dinleyin
-
----
-
-### ♎ Terazi Burcu - 2026
-**Yıllık Enerji:** %84 | **Şanslı Aylar:** Ekim, Eylül, Nisan
-
-Bu yıl Terazi burcu için **dönüşüm** yılı olacak. Venüs gezeni size özel destek sağlayacak.
-
-**Yaşam Alanları Puanları:**
-- Aşk ve İlişkiler: %76
-- Kariyer ve İş: %93
-- Sağlık ve Enerji: %92
-- Finans ve Para: %67
-- Aile ve Ev: %81
-- Sosyal Hayat: %84
-
-**En İyi Dönem:** Sonbahar - Hasat ve Değerlendirme
-
-**Yıllık Tavsiyeler:**
-- Değişime açık olun
-- Finansal planlama yapın
-- Yaratıcılığınızı kullanın
-
----
-
 ### ♏ Akrep Burcu - 2026
-**Yıllık Enerji:** %92 | **Şanslı Aylar:** Nisan, Ekim, Eylül
+**Yıllık Enerji:** %88 | **Şanslı Aylar:** Eylül, Mart, Nisan
 
 Bu yıl Akrep burcu için **büyüme** yılı olacak. Plüton gezeni size özel destek sağlayacak.
 
 **Yaşam Alanları Puanları:**
-- Aşk ve İlişkiler: %80
-- Kariyer ve İş: %83
-- Sağlık ve Enerji: %93
-- Finans ve Para: %81
-- Aile ve Ev: %71
-- Sosyal Hayat: %81
-
-**En İyi Dönem:** Kış - İç Gözlem ve Hazırlık
-
-**Yıllık Tavsiyeler:**
-- Cesur adımlar atın
-- Finansal planlama yapın
-- Yaratıcılığınızı kullanın
-
----
-
-### ♐ Yay Burcu - 2026
-**Yıllık Enerji:** %91 | **Şanslı Aylar:** Kasım, Ekim, Mayıs
-
-Bu yıl Yay burcu için **dengeleme** yılı olacak. Jüpiter gezeni size özel destek sağlayacak.
-
-**Yaşam Alanları Puanları:**
-- Aşk ve İlişkiler: %74
-- Kariyer ve İş: %82
-- Sağlık ve Enerji: %86
-- Finans ve Para: %83
-- Aile ve Ev: %77
-- Sosyal Hayat: %83
-
-**En İyi Dönem:** Sonbahar - Hasat ve Değerlendirme
-
-**Yıllık Tavsiyeler:**
-- Sabırlı olun
-- Sağlığınızı öncelik yapın
-- Sosyal bağlar kurun
-
----
-
-### ♑ Oğlak Burcu - 2026
-**Yıllık Enerji:** %90 | **Şanslı Aylar:** Ağustos, Eylül, Kasım
-
-Bu yıl Oğlak burcu için **büyüme** yılı olacak. Satürn gezeni size özel destek sağlayacak.
-
-**Yaşam Alanları Puanları:**
-- Aşk ve İlişkiler: %84
-- Kariyer ve İş: %79
-- Sağlık ve Enerji: %84
-- Finans ve Para: %78
-- Aile ve Ev: %84
-- Sosyal Hayat: %76
-
-**En İyi Dönem:** Yaz - Büyüme ve Başarı
-
-**Yıllık Tavsiyeler:**
-- Değişime açık olun
-- Finansal planlama yapın
-- Öğrenmeye devam edin
-
----
-
-### ♒ Kova Burcu - 2026
-**Yıllık Enerji:** %80 | **Şanslı Aylar:** Mayıs, Mart, Kasım
-
-Bu yıl Kova burcu için **büyüme** yılı olacak. Uranüs gezeni size özel destek sağlayacak.
-
-**Yaşam Alanları Puanları:**
 - Aşk ve İlişkiler: %72
-- Kariyer ve İş: %86
-- Sağlık ve Enerji: %88
-- Finans ve Para: %73
-- Aile ve Ev: %73
-- Sosyal Hayat: %76
-
-**En İyi Dönem:** Yaz - Büyüme ve Başarı
-
-**Yıllık Tavsiyeler:**
-- Değişime açık olun
-- Kariyere odaklanın
-- Sosyal bağlar kurun
-
----
-
-### ♓ Balık Burcu - 2026
-**Yıllık Enerji:** %84 | **Şanslı Aylar:** Mayıs, Ekim, Ağustos
-
-Bu yıl Balık burcu için **dönüşüm** yılı olacak. Neptün gezeni size özel destek sağlayacak.
-
-**Yaşam Alanları Puanları:**
-- Aşk ve İlişkiler: %89
-- Kariyer ve İş: %82
-- Sağlık ve Enerji: %86
+- Kariyer ve İş: %90
+- Sağlık ve Enerji: %89
 - Finans ve Para: %81
-- Aile ve Ev: %78
-- Sosyal Hayat: %79
+- Aile ve Ev: %75
+- Sosyal Hayat: %84
 
 **En İyi Dönem:** İlkbahar - Yenilenme ve Başlangıçlar
 
 **Yıllık Tavsiyeler:**
 - Değişime açık olun
 - Finansal planlama yapın
-- Öğrenmeye devam edin
+- İç sesinizi dinleyin
+
+---
+
+### ♐ Yay Burcu - 2026
+**Yıllık Enerji:** %87 | **Şanslı Aylar:** Kasım, Mart, Haziran
+
+Bu yıl Yay burcu için **dengeleme** yılı olacak. Jüpiter gezeni size özel destek sağlayacak.
+
+**Yaşam Alanları Puanları:**
+- Aşk ve İlişkiler: %74
+- Kariyer ve İş: %94
+- Sağlık ve Enerji: %94
+- Finans ve Para: %83
+- Aile ve Ev: %90
+- Sosyal Hayat: %87
+
+**En İyi Dönem:** Kış - İç Gözlem ve Hazırlık
+
+**Yıllık Tavsiyeler:**
+- Değişime açık olun
+- Finansal planlama yapın
+- Yaratıcılığınızı kullanın
+
+---
+
+### ♑ Oğlak Burcu - 2026
+**Yıllık Enerji:** %91 | **Şanslı Aylar:** Nisan, Temmuz, Eylül
+
+Bu yıl Oğlak burcu için **dengeleme** yılı olacak. Satürn gezeni size özel destek sağlayacak.
+
+**Yaşam Alanları Puanları:**
+- Aşk ve İlişkiler: %74
+- Kariyer ve İş: %85
+- Sağlık ve Enerji: %85
+- Finans ve Para: %66
+- Aile ve Ev: %83
+- Sosyal Hayat: %89
+
+**En İyi Dönem:** Kış - İç Gözlem ve Hazırlık
+
+**Yıllık Tavsiyeler:**
+- Sabırlı olun
+- Kariyere odaklanın
+- Sosyal bağlar kurun
+
+---
+
+### ♒ Kova Burcu - 2026
+**Yıllık Enerji:** %92 | **Şanslı Aylar:** Kasım, Temmuz, Ekim
+
+Bu yıl Kova burcu için **başarı** yılı olacak. Uranüs gezeni size özel destek sağlayacak.
+
+**Yaşam Alanları Puanları:**
+- Aşk ve İlişkiler: %80
+- Kariyer ve İş: %77
+- Sağlık ve Enerji: %92
+- Finans ve Para: %85
+- Aile ve Ev: %78
+- Sosyal Hayat: %83
+
+**En İyi Dönem:** Yaz - Büyüme ve Başarı
+
+**Yıllık Tavsiyeler:**
+- Dengeyi koruyun
+- Kariyere odaklanın
+- İç sesinizi dinleyin
+
+---
+
+### ♓ Balık Burcu - 2026
+**Yıllık Enerji:** %90 | **Şanslı Aylar:** Haziran, Ağustos, Kasım
+
+Bu yıl Balık burcu için **başarı** yılı olacak. Neptün gezeni size özel destek sağlayacak.
+
+**Yaşam Alanları Puanları:**
+- Aşk ve İlişkiler: %80
+- Kariyer ve İş: %93
+- Sağlık ve Enerji: %89
+- Finans ve Para: %67
+- Aile ve Ev: %76
+- Sosyal Hayat: %80
+
+**En İyi Dönem:** İlkbahar - Yenilenme ve Başlangıçlar
+
+**Yıllık Tavsiyeler:**
+- Cesur adımlar atın
+- Finansal planlama yapın
+- İç sesinizi dinleyin
 
 ---
 
@@ -371,7 +371,7 @@ Bu yıl Balık burcu için **dönüşüm** yılı olacak. Neptün gezeni size ö
 ## 🌙 2026 Yılının Önemli Astrolojik Olayları
 
 ### Ayın Ek Detayları
-- **Süper Ay:** Eylül
+- **Süper Ay:** Mart
 - **Mavi Ay:** Ağustos
 - **Ay Tutulması:** Haziran-Aralık
 - **Güneş Tutulması:** Mart-Eylül
@@ -379,7 +379,7 @@ Bu yıl Balık burcu için **dönüşüm** yılı olacak. Neptün gezeni size ö
 ### Gezegen Gerilemelerı
 - **Merkür Geriler:** 3-4 kez (İletişim ve teknoloji)
 - **Venüs Geriler:** 1 kez (Aşk ve finans)
-- **Mars Geriler:** Yok (Enerji ve eylem)
+- **Mars Geriler:** 1 kez (Enerji ve eylem)
 
 ---
 
@@ -387,7 +387,7 @@ Bu yıl Balık burcu için **dönüşüm** yılı olacak. Neptün gezeni size ö
 
 ### 🌟 En İyi Dönemler
 1. **İlkbahar (Mayıs):** Yeni başlangıçlar için ideal
-2. **Yaz (Haziran):** Büyüme ve başarı dönemi
+2. **Yaz (Ağustos):** Büyüme ve başarı dönemi
 3. **Sonbahar (Kasım):** Hasat ve değerlendirme zamanı
 
 ### ⚠️ Dikkatli Olunacak Dönemler
@@ -396,30 +396,30 @@ Bu yıl Balık burcu için **dönüşüm** yılı olacak. Neptün gezeni size ö
 - **Gezegen Kavuşumları:** Yoğun enerji dönemleri
 
 ### 💎 Yıllık Şans Faktörleri
-- **Şanslı Aylar:** Mayıs, Temmuz, Ekim
+- **Şanslı Aylar:** Mart, Ağustos, Kasım
 - **Şanslı Günler:** Pazartesi, Cumartesi
-- **Şanslı Renkler:** Mavi, Yeşil
+- **Şanslı Renkler:** Turuncu, Gümüş
 - **Şanslı Sayılar:** 2, 6, 9
 
 ---
 
 ## 💝 Aşk ve İlişkiler - 2026
 
-Bu yıl aşk hayatında **yeni başlangıçlar** yaşanacak. Özellikle hava burçları için romantik dönem.
+Bu yıl aşk hayatında **dönüşümler** yaşanacak. Özellikle hava burçları için romantik dönem.
 
 **En İyi Aşk Dönemleri:**
-- Sonbahar: Yeni ilişkiler
-- Yaz: Mevcut ilişkilerde derinleşme
+- İlkbahar: Yeni ilişkiler
+- Sonbahar: Mevcut ilişkilerde derinleşme
 
 ---
 
 ## 💼 Kariyer ve Finans - 2026
 
-Profesyonel hayatta **karıyer değişimleri** yılı. Özellikle hizmet sektörlerde gelişmeler.
+Profesyonel hayatta **finansal büyüme** yılı. Özellikle yaratıcı sektörlerde gelişmeler.
 
 **Mali Tavsiyeler:**
 - **Yatırım:** İlkbahar döneminde değerlendir
-- **Harcama:** İlkbahar aylarında dikkatli ol
+- **Harcama:** Sonbahar aylarında dikkatli ol
 - **Gelir:** Yıl ortasından itibaren artış bekleniyor
 
 ---

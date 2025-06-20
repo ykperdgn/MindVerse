@@ -31,16 +31,43 @@ You'll find creative solutions in your work life. The decisions you make today c
 
 Balanced nutrition and regular exercise are important. Listen to the signals your body gives and take necessary precautions.
 
-### Today's Recommendation
+### Recommendations
 
-The color red may bring you luck today. Trust your intuition when making important decisions.
+- This is a great time to start new projects.
+- Focus on collaboration and teamwork.
+- Share your creative ideas openly.
+
+### Health & Energy 🏃‍♀️
+
+**The Fire element gives you special strength today:**
+
+- Your energy level will be high. Prefer active sports, but avoid overexertion.
+- A protein-rich diet will benefit you.
+- Breathing exercises can help you feel even better.
+
+### Detailed Tips 🎯
+
+1. Use your leadership skills actively.
+2. The color **red** will boost your luck today.
+3. The number **8** can guide you.
+4. Positive interactions with Aquarius signs are likely.
+5. Trust your intuition and keep a positive mindset.
 
 ### Lucky Details
 
-- **Lucky Numbers:** 9, 2, 30
-- **Lucky Color:** Red
-- **Lucky Stone:** Agate
-- **Lucky Direction:** West
+- **Lucky Numbers:** 27, 40, 4
+- **Lucky Color:** Purple
+- **Lucky Stone:** Obsidian
+- **Lucky Direction:** North
+
+### Lucky Elements 🔮
+
+- **Lucky Colors:** Red, Orange
+- **Lucky Numbers:** 1, 8, 17
+- **Lucky Hours:** 7:00 PM - 9:00 PM
+- **Compatible Signs:** Leo, Sagittarius, Gemini, Aquarius
+- **Lucky Stone:** Obsidian
+- **Lucky Direction:** North
 
 ### Things to Consider
 
@@ -50,6 +77,11 @@ The color red may bring you luck today. Trust your intuition when making importa
 - Be cautious in financial matters
 
 ---
+
+**Conclusion:**
+Today is a day of courage and strength for Aries, supporting your personal growth. With the support of Mars, you can use your natural talents to take successful steps forward.
+
+*Astrology Note: This reading is prepared for June 20, 2025. Use it as a guide for your personal development.*
 
 **Note:** This reading is based on general astrological information. For your personal situation, you can get a detailed astrological analysis.
 

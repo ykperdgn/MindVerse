@@ -29,17 +29,17 @@ Great achievements can be made through collaboration. The decisions you make tod
 
 ### Health & Energy 🌟
 
-Pay special attention to your health. Listen to the signals your body gives and take necessary precautions.
+Balanced nutrition and regular exercise are important. Listen to the signals your body gives and take necessary precautions.
 
 ### Today's Recommendation
 
-The color purple may bring you luck today. Trust your intuition when making important decisions.
+The color yellow may bring you luck today. Trust your intuition when making important decisions.
 
 ### Lucky Details
 
-- **Lucky Numbers:** 41, 47, 44
-- **Lucky Color:** Purple
-- **Lucky Stone:** Agate
+- **Lucky Numbers:** 23, 9, 30
+- **Lucky Color:** Yellow
+- **Lucky Stone:** Amethyst
 - **Lucky Direction:** North
 
 ### Things to Consider

@@ -1,12 +1,9 @@
 ---
 title: 'Oğlak Günlük Yorumu - 20 June 2025'
-description: "Oğlak Günlük Yorumu - 20 June 2025"
-pubDate: 2025-06-20
-category: "daily-horoscope"
 date: 2025-06-20
 summary: 'Oğlak burcu için 20 June 2025 günlük astroloji yorumu ve önerileri.'
 tags: ['astroloji', 'günlük-yorum', 'oğlak', 'burç', 'yıldız']
-views: 211
+views: 113
 author: 'MindVerse Astroloji Uzmanı'
 keywords: 'Oğlak, günlük yorum, astroloji, burç yorumu, 20 June 2025'
 ---
@@ -21,11 +18,11 @@ Bugün Oğlak burcu için özel bir gün olacak. Yıldızların size gönderdiğ
 
 ### Aşk ve İlişkiler ❤️
 
-Romantik sürprizler günü renklendirrebilir. İçinizdeki romantik duyguları açığa çıkarın ve sevginizi göstermekten çekinmeyin.
+İlişkinizde daha derin bağlar kurma zamanı. İçinizdeki romantik duyguları açığa çıkarın ve sevginizi göstermekten çekinmeyin.
 
 ### Kariyer ve İş 💼
 
-İş birliği halinde büyük başarılar elde edebilirsiniz. Bugün aldığınız kararlar, geleceğinizi şekillendirebilir.
+Mesleki hedeflerinize odaklanın. Bugün aldığınız kararlar, geleceğinizi şekillendirebilir.
 
 ### Sağlık ve Enerji 🌟
 
@@ -33,14 +30,14 @@ Dengeli beslenme ve düzenli egzersiz önemli. Vücudunuzun verdiği sinyalleri 
 
 ### Günün Önerisi
 
-Bugün özellikle sarı renk size şans getirebilir. Önemli kararları verirken sezgilerinizi dinleyin.
+Bugün özellikle yeşil renk size şans getirebilir. Önemli kararları verirken sezgilerinizi dinleyin.
 
 ### Şanslı Detaylar
 
-- **Şanslı Sayılar:** 23, 9, 30
-- **Şanslı Renk:** Sarı
-- **Şanslı Taş:** Ametist
-- **Şanslı Yön:** Kuzey
+- **Şanslı Sayılar:** 47, 46, 10
+- **Şanslı Renk:** Yeşil
+- **Şanslı Taş:** Jade
+- **Şanslı Yön:** Doğu
 
 ### Dikkat Edilmesi Gerekenler
 
