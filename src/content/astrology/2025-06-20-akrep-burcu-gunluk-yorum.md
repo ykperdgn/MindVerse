@@ -17,15 +17,15 @@ theme: "Pozitif Değişim"
 
 ## 🌟 Günün Genel Enerjisi
 
-Bugün Akrep burcu için **Neptün** gezeninizin etkisiyle pozitif değişim yaşayacağınız bereketli bir gün olacak. Su elementi size güç katarken, doğal tutkulu özelliğiniz ön plana çıkacak.
+Bugün Akrep burcu için **Venüs** gezeninizin etkisiyle pozitif değişim yaşayacağınız bereketli bir gün olacak. Su elementi size güç katarken, doğal gizemli özelliğiniz ön plana çıkacak.
 
-Azalan Ay'ın temizlenme gücü. Bu kozmik enerji sizin için özellikle sanat konusunda faydalı olacak.
+Artan Ay'ın büyüme etkisi. Bu kozmik enerji sizin için özellikle sanat konusunda faydalı olacak.
 
 ## 💕 Aşk ve İlişkiler
 
 **💖 Bekar Akreplar:** İş yerinde dikkatinizi çekecek biriyle tanışabilirsiniz. Plüton gezeninizin pozitif etkisi altında samimi bağlantılar kurabilirsiniz.
 
-**💑 İlişkisi Olan Akreplar:** Partnerinizle daha derin bağlar kurabilir, duygusal anlar yaşayabilirsiniz. Bordo rengi bugün aşk hayatınızda şans getirebilir.
+**💑 İlişkisi Olan Akreplar:** Partnerinizle daha derin bağlar kurabilir, duygusal anlar yaşayabilirsiniz. Koyu Kırmızı rengi bugün aşk hayatınızda şans getirebilir.
 
 **🌹 İlişki Önerileri:**
 • Duygularınızı samimi şekilde paylaşın
@@ -35,13 +35,13 @@ Azalan Ay'ın temizlenme gücü. Bu kozmik enerji sizin için özellikle sanat k
 
 ## 💼 Kariyer ve İş Hayatı
 
-**🚀 İş Hayatı:** Sadakat özelliğiniz sayesinde bugün dikkat çekeceksiniz. Tıp alanında yeni fırsatlar değerlendirilebilir.
+**🚀 İş Hayatı:** Sezgi özelliğiniz sayesinde bugün dikkat çekeceksiniz. Finans alanında yeni fırsatlar değerlendirilebilir.
 
-**💰 Mali Durum:** Maddi konularda akıllıca davranın. Bugün finansal planlama konularında doğru kararlar alabilirsiniz.
+**💰 Mali Durum:** Maddi konularda stratejik davranın. Bugün alışveriş konularında doğru kararlar alabilirsiniz.
 
 **📈 Öneriler:**
 • Yeni projelere başlamak için uygun zaman
-• İş birliği odaklanın
+• Takım çalışması odaklanın
 • Yaratıcı fikirlerinizi paylaşın
 
 ## 🏃‍♀️ Sağlık ve Enerji
@@ -50,21 +50,21 @@ Azalan Ay'ın temizlenme gücü. Bu kozmik enerji sizin için özellikle sanat k
 
 💧 Duygusal dengeniz önemli. Bol su içmeyi unutmayın. Su sporları ve meditasyon faydalı olacak.
 
-**⚖️ Genel Sağlık:** Enerji seviyeniz dengeli olacak. Yürüyüş yaparak kendinizi daha iyi hissedebilirsiniz.
+**⚖️ Genel Sağlık:** Enerji seviyeniz dengeli olacak. Spor yaparak kendinizi daha iyi hissedebilirsiniz.
 
 ## 🎯 Günün Tavsiyeleri
 
-1. **Sezgi** özelliğinizi aktif kullanın
+1. **Sadakat** özelliğinizi aktif kullanın
 2. **Koyu Kırmızı** rengi bugün şansınızı artıracak
-3. **18** sayısı size rehberlik edebilir
-4. **Başak** burcu ile pozitif etkileşimler kurun
+3. **11** sayısı size rehberlik edebilir
+4. **Yengeç** burcu ile pozitif etkileşimler kurun
 5. Sezgilerinize güvenin ve pozitif düşünün
 
 ## 🔮 Şanslı Elementler
 
 **🎨 Şanslı Renkler:** Bordo, Siyah, Koyu Kırmızı
 **🔢 Şanslı Sayılar:** 8, 11, 18, 22
-**🌟 Güçlü Saatler:** 14:00-16:00
+**🌟 Güçlü Saatler:** 19:00-21:00
 **💫 Uyumlu Burçlar:** Yengeç, Balık, Başak, Oğlak
 
 ## 💫 Sonuç

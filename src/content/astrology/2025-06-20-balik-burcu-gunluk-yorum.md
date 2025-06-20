@@ -17,15 +17,15 @@ theme: "Ruhsal Gelişim"
 
 ## 🌟 Günün Genel Enerjisi
 
-Bugün Balık burcu için **Mars** gezeninizin etkisiyle ruhsal gelişim yaşayacağınız bereketli bir gün olacak. Su elementi size güç katarken, doğal yaratıcı özelliğiniz ön plana çıkacak.
+Bugün Balık burcu için **Jüpiter** gezeninizin etkisiyle ruhsal gelişim yaşayacağınız bereketli bir gün olacak. Su elementi size güç katarken, doğal duygusal özelliğiniz ön plana çıkacak.
 
-Dolunay'ın güçlü enerjisi. Bu kozmik enerji sizin için özellikle cesaret konusunda faydalı olacak.
+Yeni Ay etkisi ile yeni başlangıçlar. Bu kozmik enerji sizin için özellikle şans konusunda faydalı olacak.
 
 ## 💕 Aşk ve İlişkiler
 
 **💖 Bekar Balıklar:** Sosyal ortamlarda dikkatinizi çekecek biriyle tanışabilirsiniz. Neptün gezeninizin pozitif etkisi altında samimi bağlantılar kurabilirsiniz.
 
-**💑 İlişkisi Olan Balıklar:** Partnerinizle daha derin bağlar kurabilir, duygusal anlar yaşayabilirsiniz. Gümüş rengi bugün aşk hayatınızda şans getirebilir.
+**💑 İlişkisi Olan Balıklar:** Partnerinizle daha derin bağlar kurabilir, özel anlar yaşayabilirsiniz. Gümüş rengi bugün aşk hayatınızda şans getirebilir.
 
 **🌹 İlişki Önerileri:**
 • Duygularınızı samimi şekilde paylaşın
@@ -35,13 +35,13 @@ Dolunay'ın güçlü enerjisi. Bu kozmik enerji sizin için özellikle cesaret k
 
 ## 💼 Kariyer ve İş Hayatı
 
-**🚀 İş Hayatı:** Şefkat özelliğiniz sayesinde bugün dikkat çekeceksiniz. Müzik alanında yeni fırsatlar değerlendirilebilir.
+**🚀 İş Hayatı:** Empati özelliğiniz sayesinde bugün dikkat çekeceksiniz. Psikoloji alanında yeni fırsatlar değerlendirilebilir.
 
-**💰 Mali Durum:** Maddi konularda stratejik davranın. Bugün alışveriş konularında doğru kararlar alabilirsiniz.
+**💰 Mali Durum:** Maddi konularda temkinli davranın. Bugün tasarruf konularında doğru kararlar alabilirsiniz.
 
 **📈 Öneriler:**
 • Yeni projelere başlamak için uygun zaman
-• Görüşmeler odaklanın
+• İş birliği odaklanın
 • Yaratıcı fikirlerinizi paylaşın
 
 ## 🏃‍♀️ Sağlık ve Enerji
@@ -50,14 +50,14 @@ Dolunay'ın güçlü enerjisi. Bu kozmik enerji sizin için özellikle cesaret k
 
 💧 Duygusal dengeniz önemli. Bol su içmeyi unutmayın. Su sporları ve meditasyon faydalı olacak.
 
-**⚖️ Genel Sağlık:** Enerji seviyeniz yüksek olacak. Nefes egzersizleri yaparak kendinizi daha iyi hissedebilirsiniz.
+**⚖️ Genel Sağlık:** Enerji seviyeniz yüksek olacak. Spor yaparak kendinizi daha iyi hissedebilirsiniz.
 
 ## 🎯 Günün Tavsiyeleri
 
-1. **Şefkat** özelliğinizi aktif kullanın
+1. **Empati** özelliğinizi aktif kullanın
 2. **Gümüş** rengi bugün şansınızı artıracak
-3. **9** sayısı size rehberlik edebilir
-4. **Oğlak** burcu ile pozitif etkileşimler kurun
+3. **12** sayısı size rehberlik edebilir
+4. **Boğa** burcu ile pozitif etkileşimler kurun
 5. Sezgilerinize güvenin ve pozitif düşünün
 
 ## 🔮 Şanslı Elementler
@@ -73,6 +73,6 @@ Bugün Balık burcu için ruhsal gelişim yaşayacağınız, kişisel gelişimin
 
 ---
 
-*Balık burcu olarak doğal duygusal özelliğiniz bugün size büyük avantaj sağlayacak.*
+*Balık burcu olarak doğal sezgisel özelliğiniz bugün size büyük avantaj sağlayacak.*
 
 **Astroloji Notu:** Bu yorum 20 June 2025 tarihi için hazırlanmıştır. Kişisel gelişiminiz için bir rehber olarak kullanın.

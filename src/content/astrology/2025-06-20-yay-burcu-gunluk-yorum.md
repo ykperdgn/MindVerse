@@ -17,15 +17,15 @@ theme: "Aşk Fısıltıları"
 
 ## 🌟 Günün Genel Enerjisi
 
-Bugün Yay burcu için **Satürn** gezeninizin etkisiyle aşk fısıltıları yaşayacağınız bereketli bir gün olacak. Ateş elementi size güç katarken, doğal i̇yimser özelliğiniz ön plana çıkacak.
+Bugün Yay burcu için **Uranüs** gezeninizin etkisiyle aşk fısıltıları yaşayacağınız bereketli bir gün olacak. Ateş elementi size güç katarken, doğal felsefi özelliğiniz ön plana çıkacak.
 
-Artan Ay'ın büyüme etkisi. Bu kozmik enerji sizin için özellikle sorumluluk konusunda faydalı olacak.
+Dolunay'ın güçlü enerjisi. Bu kozmik enerji sizin için özellikle özgürlük konusunda faydalı olacak.
 
 ## 💕 Aşk ve İlişkiler
 
 **💖 Bekar Yaylar:** Spor yaparken dikkatinizi çekecek biriyle tanışabilirsiniz. Jüpiter gezeninizin pozitif etkisi altında samimi bağlantılar kurabilirsiniz.
 
-**💑 İlişkisi Olan Yaylar:** Partnerinizle daha derin bağlar kurabilir, romantik anlar yaşayabilirsiniz. Turuncu rengi bugün aşk hayatınızda şans getirebilir.
+**💑 İlişkisi Olan Yaylar:** Partnerinizle daha derin bağlar kurabilir, anlamlı anlar yaşayabilirsiniz. Turkuaz rengi bugün aşk hayatınızda şans getirebilir.
 
 **🌹 İlişki Önerileri:**
 • Duygularınızı samimi şekilde paylaşın
@@ -41,7 +41,7 @@ Artan Ay'ın büyüme etkisi. Bu kozmik enerji sizin için özellikle sorumluluk
 
 **📈 Öneriler:**
 • Yeni projelere başlamak için uygun zaman
-• İş birliği odaklanın
+• Takım çalışması odaklanın
 • Yaratıcı fikirlerinizi paylaşın
 
 ## 🏃‍♀️ Sağlık ve Enerji
@@ -50,14 +50,14 @@ Artan Ay'ın büyüme etkisi. Bu kozmik enerji sizin için özellikle sorumluluk
 
 🔥 Enerji seviyeniz yüksek olacak. Aktif sporları tercih edin, ancak aşırıya kaçmayın. Protein açısından zengin beslenme size iyi gelecek.
 
-**⚖️ Genel Sağlık:** Enerji seviyeniz iyi olacak. Spor yaparak kendinizi daha iyi hissedebilirsiniz.
+**⚖️ Genel Sağlık:** Enerji seviyeniz dengeli olacak. Spor yaparak kendinizi daha iyi hissedebilirsiniz.
 
 ## 🎯 Günün Tavsiyeleri
 
-1. **İyimserlik** özelliğinizi aktif kullanın
-2. **Turkuaz** rengi bugün şansınızı artıracak
-3. **15** sayısı size rehberlik edebilir
-4. **Kova** burcu ile pozitif etkileşimler kurun
+1. **Macera ruhu** özelliğinizi aktif kullanın
+2. **Turuncu** rengi bugün şansınızı artıracak
+3. **3** sayısı size rehberlik edebilir
+4. **Koç** burcu ile pozitif etkileşimler kurun
 5. Sezgilerinize güvenin ve pozitif düşünün
 
 ## 🔮 Şanslı Elementler
@@ -73,6 +73,6 @@ Bugün Yay burcu için aşk fısıltıları yaşayacağınız, kişisel gelişim
 
 ---
 
-*Yay burcu olarak doğal i̇yimser özelliğiniz bugün size büyük avantaj sağlayacak.*
+*Yay burcu olarak doğal maceraperest özelliğiniz bugün size büyük avantaj sağlayacak.*
 
 **Astroloji Notu:** Bu yorum 20 June 2025 tarihi için hazırlanmıştır. Kişisel gelişiminiz için bir rehber olarak kullanın.

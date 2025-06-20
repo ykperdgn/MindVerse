@@ -17,15 +17,15 @@ theme: "Cesaret ve Güç"
 
 ## 🌟 Günün Genel Enerjisi
 
-Bugün Yengeç burcu için **Uranüs** gezeninizin etkisiyle cesaret ve güç yaşayacağınız bereketli bir gün olacak. Su elementi size güç katarken, doğal sezgisel özelliğiniz ön plana çıkacak.
+Bugün Yengeç burcu için **Merkür** gezeninizin etkisiyle cesaret ve güç yaşayacağınız bereketli bir gün olacak. Su elementi size güç katarken, doğal sezgisel özelliğiniz ön plana çıkacak.
 
-Azalan Ay'ın temizlenme gücü. Bu kozmik enerji sizin için özellikle özgürlük konusunda faydalı olacak.
+Dolunay'ın güçlü enerjisi. Bu kozmik enerji sizin için özellikle zeka konusunda faydalı olacak.
 
 ## 💕 Aşk ve İlişkiler
 
-**💖 Bekar Yengeçlar:** Hobilerle uğraşırken dikkatinizi çekecek biriyle tanışabilirsiniz. Ay gezeninizin pozitif etkisi altında samimi bağlantılar kurabilirsiniz.
+**💖 Bekar Yengeçlar:** Spor yaparken dikkatinizi çekecek biriyle tanışabilirsiniz. Ay gezeninizin pozitif etkisi altında samimi bağlantılar kurabilirsiniz.
 
-**💑 İlişkisi Olan Yengeçlar:** Partnerinizle daha derin bağlar kurabilir, duygusal anlar yaşayabilirsiniz. Beyaz rengi bugün aşk hayatınızda şans getirebilir.
+**💑 İlişkisi Olan Yengeçlar:** Partnerinizle daha derin bağlar kurabilir, anlamlı anlar yaşayabilirsiniz. Beyaz rengi bugün aşk hayatınızda şans getirebilir.
 
 **🌹 İlişki Önerileri:**
 • Duygularınızı samimi şekilde paylaşın
@@ -35,13 +35,13 @@ Azalan Ay'ın temizlenme gücü. Bu kozmik enerji sizin için özellikle özgür
 
 ## 💼 Kariyer ve İş Hayatı
 
-**🚀 İş Hayatı:** Sezgi özelliğiniz sayesinde bugün dikkat çekeceksiniz. Psikoloji alanında yeni fırsatlar değerlendirilebilir.
+**🚀 İş Hayatı:** Sadakat özelliğiniz sayesinde bugün dikkat çekeceksiniz. Psikoloji alanında yeni fırsatlar değerlendirilebilir.
 
-**💰 Mali Durum:** Maddi konularda planlı davranın. Bugün yatırım konularında doğru kararlar alabilirsiniz.
+**💰 Mali Durum:** Maddi konularda akıllıca davranın. Bugün yatırım konularında doğru kararlar alabilirsiniz.
 
 **📈 Öneriler:**
 • Yeni projelere başlamak için uygun zaman
-• İş birliği odaklanın
+• Networking odaklanın
 • Yaratıcı fikirlerinizi paylaşın
 
 ## 🏃‍♀️ Sağlık ve Enerji
@@ -50,21 +50,21 @@ Azalan Ay'ın temizlenme gücü. Bu kozmik enerji sizin için özellikle özgür
 
 💧 Duygusal dengeniz önemli. Bol su içmeyi unutmayın. Su sporları ve meditasyon faydalı olacak.
 
-**⚖️ Genel Sağlık:** Enerji seviyeniz pozitif olacak. Spor yaparak kendinizi daha iyi hissedebilirsiniz.
+**⚖️ Genel Sağlık:** Enerji seviyeniz iyi olacak. Meditasyon yaparak kendinizi daha iyi hissedebilirsiniz.
 
 ## 🎯 Günün Tavsiyeleri
 
-1. **Duygusal zeka** özelliğinizi aktif kullanın
-2. **Beyaz** rengi bugün şansınızı artıracak
-3. **7** sayısı size rehberlik edebilir
-4. **Boğa** burcu ile pozitif etkileşimler kurun
+1. **Sezgi** özelliğinizi aktif kullanın
+2. **Deniz Mavisi** rengi bugün şansınızı artıracak
+3. **11** sayısı size rehberlik edebilir
+4. **Başak** burcu ile pozitif etkileşimler kurun
 5. Sezgilerinize güvenin ve pozitif düşünün
 
 ## 🔮 Şanslı Elementler
 
 **🎨 Şanslı Renkler:** Gümüş, Beyaz, Deniz Mavisi
 **🔢 Şanslı Sayılar:** 2, 7, 11, 16
-**🌟 Güçlü Saatler:** 14:00-16:00
+**🌟 Güçlü Saatler:** 19:00-21:00
 **💫 Uyumlu Burçlar:** Akrep, Balık, Boğa, Başak
 
 ## 💫 Sonuç
@@ -73,6 +73,6 @@ Bugün Yengeç burcu için cesaret ve güç yaşayacağınız, kişisel gelişim
 
 ---
 
-*Yengeç burcu olarak doğal koruyucu özelliğiniz bugün size büyük avantaj sağlayacak.*
+*Yengeç burcu olarak doğal duygusal özelliğiniz bugün size büyük avantaj sağlayacak.*
 
 **Astroloji Notu:** Bu yorum 20 June 2025 tarihi için hazırlanmıştır. Kişisel gelişiminiz için bir rehber olarak kullanın.
