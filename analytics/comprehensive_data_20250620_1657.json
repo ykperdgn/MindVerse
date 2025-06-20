@@ -1,0 +1,1897 @@
+{
+  "content_performance": {
+    "total_content": 197,
+    "category_performance": {
+      "other": {
+        "avg_score": 85.0,
+        "count": 12,
+        "best_score": 85,
+        "worst_score": 85
+      },
+      "astrology": {
+        "avg_score": 63.44444444444444,
+        "count": 45,
+        "best_score": 95,
+        "worst_score": 50
+      },
+      "health": {
+        "avg_score": 80.41666666666667,
+        "count": 24,
+        "best_score": 85,
+        "worst_score": 50
+      },
+      "history": {
+        "avg_score": 82.6086956521739,
+        "count": 23,
+        "best_score": 85,
+        "worst_score": 50
+      },
+      "love": {
+        "avg_score": 81.25,
+        "count": 24,
+        "best_score": 85,
+        "worst_score": 50
+      },
+      "psychology": {
+        "avg_score": 82.6086956521739,
+        "count": 23,
+        "best_score": 85,
+        "worst_score": 50
+      },
+      "quotes": {
+        "avg_score": 82.6086956521739,
+        "count": 23,
+        "best_score": 85,
+        "worst_score": 50
+      },
+      "space": {
+        "avg_score": 82.6086956521739,
+        "count": 23,
+        "best_score": 85,
+        "worst_score": 50
+      }
+    },
+    "top_performers": [
+      {
+        "path": "src\\content\\art\\cagdas-sanat-akimlari-21-yuzyil-sanat-dinamikleri.md",
+        "category": "other",
+        "score": 80.83550623171861
+      },
+      {
+        "path": "src\\content\\astrology\\2025-06-20-akrep-burcu-gunluk-yorum.md",
+        "category": "astrology",
+        "score": 86.861572681725
+      },
+      {
+        "path": "src\\content\\astrology\\2025-06-20-aslan-burcu-gunluk-yorum.md",
+        "category": "astrology",
+        "score": 95.07581842062167
+      },
+      {
+        "path": "src\\content\\astrology\\2025-06-20-balik-burcu-gunluk-yorum.md",
+        "category": "astrology",
+        "score": 90.15834195441991
+      },
+      {
+        "path": "src\\content\\astrology\\2025-06-20-basak-burcu-gunluk-yorum.md",
+        "category": "astrology",
+        "score": 86.20179873000015
+      },
+      {
+        "path": "src\\content\\astrology\\2025-06-20-boga-burcu-gunluk-yorum.md",
+        "category": "astrology",
+        "score": 86.16199204719933
+      },
+      {
+        "path": "src\\content\\astrology\\2025-06-20-ikizler-burcu-gunluk-yorum.md",
+        "category": "astrology",
+        "score": 90.0080956011366
+      },
+      {
+        "path": "src\\content\\astrology\\2025-06-20-kova-burcu-gunluk-yorum.md",
+        "category": "astrology",
+        "score": 85.72263205607635
+      },
+      {
+        "path": "src\\content\\astrology\\2025-06-20-oglak-burcu-gunluk-yorum.md",
+        "category": "astrology",
+        "score": 90.91845952559571
+      },
+      {
+        "path": "src\\content\\astrology\\2025-06-20-yay-burcu-gunluk-yorum.md",
+        "category": "astrology",
+        "score": 94.67381915967573
+      },
+      {
+        "path": "src\\content\\astrology\\2025-06-20-yengec-burcu-gunluk-yorum.md",
+        "category": "astrology",
+        "score": 95.11723972143731
+      },
+      {
+        "path": "src\\content\\astrology\\dogum-haritasi-zeynep-akrep-2025-06-20.md",
+        "category": "astrology",
+        "score": 97.54977452251934
+      },
+      {
+        "path": "src\\content\\astrology\\haftalik-astroloji-raporu-2025-06-16.md",
+        "category": "astrology",
+        "score": 86.77855951985184
+      },
+      {
+        "path": "src\\content\\astrology\\uyumluluk-yay-terazi-analizi-2025-06-20.md",
+        "category": "astrology",
+        "score": 81.8936432548087
+      },
+      {
+        "path": "src\\content\\astrology\\yillik-astroloji-tahmini-2026.md",
+        "category": "astrology",
+        "score": 100
+      },
+      {
+        "path": "src\\content\\cinema\\2025-vizyona-girecek-hollywood-filmleri-beklentiler.md",
+        "category": "other",
+        "score": 86.21689217841472
+      },
+      {
+        "path": "src\\content\\cinema\\cult-movies-hidden-gems-underrated-films-recognition.md",
+        "category": "other",
+        "score": 100
+      },
+      {
+        "path": "src\\content\\cinema\\netflix-dijital-platform-dizileri-altin-cag-yapimlari.md",
+        "category": "other",
+        "score": 100
+      },
+      {
+        "path": "src\\content\\health\\2025-06-19-beslenme-ve-saglikli-yasam-rehberi-0ff08343.md",
+        "category": "health",
+        "score": 83.70882067398287
+      },
+      {
+        "path": "src\\content\\health\\2025-06-19-egzersiz-programi-hazirlama-7add8611.md",
+        "category": "health",
+        "score": 93.01742204497799
+      },
+      {
+        "path": "src\\content\\health\\2025-06-19-metabolizma-hizlandirma-yontemleri-a32837cc.md",
+        "category": "health",
+        "score": 82.30953215558941
+      },
+      {
+        "path": "src\\content\\health\\2025-06-19-saglikli-yasam-rehberi-08e19438.md",
+        "category": "health",
+        "score": 90.29111430645304
+      },
+      {
+        "path": "src\\content\\health\\2025-06-19-zihinsel-saglik-ve-fiziksel-aktivite-e9e16bc4.md",
+        "category": "health",
+        "score": 90.29702358799638
+      },
+      {
+        "path": "src\\content\\health\\advanced-metabolic-health-and-longevity-strategies_943c2b0e_en.md",
+        "category": "health",
+        "score": 95.3425735009501
+      },
+      {
+        "path": "src\\content\\health\\beyin-sagligi-ve-hafiza-guclendirme-stratejileri-f20645bf.md",
+        "category": "health",
+        "score": 83.00789680860596
+      },
+      {
+        "path": "src\\content\\health\\brain-health-and-cognitive-enhancement_eaa53943_en.md",
+        "category": "health",
+        "score": 96.40368633951857
+      },
+      {
+        "path": "src\\content\\health\\dogal-agri-kesici-ve-antiinflamatuar-yontemler-4de4c2ce.md",
+        "category": "health",
+        "score": 94.95778916444057
+      },
+      {
+        "path": "src\\content\\health\\immune-system-optimization-through-nutrition_d399be71_en.md",
+        "category": "health",
+        "score": 95.21076493223526
+      },
+      {
+        "path": "src\\content\\health\\metabolizma-hizlandirma-yontemleri-ve-dogal-detoks-dd3af513.md",
+        "category": "health",
+        "score": 88.44254926778741
+      },
+      {
+        "path": "src\\content\\health\\sleep-science-and-circadian-rhythm-optimization_db89214e_en.md",
+        "category": "health",
+        "score": 80.96234995027797
+      },
+      {
+        "path": "src\\content\\health\\stres-ve-anksiyete-ile-basa-cikma-teknikleri-7912a60b.md",
+        "category": "health",
+        "score": 85.90357760941929
+      },
+      {
+        "path": "src\\content\\health\\stress-management-and-resilience-building_43ec9ee2_en.md",
+        "category": "health",
+        "score": 84.42767770482635
+      },
+      {
+        "path": "src\\content\\health\\uyku-kalitesini-iyilestiren-bilimsel-yaklasimlar-b9c94c1c.md",
+        "category": "health",
+        "score": 89.33276385314511
+      },
+      {
+        "path": "src\\content\\history\\2025-06-19-buyuk-kesifler-cagi-ve-sonuclari-428fb21c.md",
+        "category": "history",
+        "score": 92.26710464172584
+      },
+      {
+        "path": "src\\content\\history\\2025-06-19-soguk-savas-donemi-ve-jeopolitik-074a8891.md",
+        "category": "history",
+        "score": 82.80155402980289
+      },
+      {
+        "path": "src\\content\\history\\antik-yunan-felsefesi-ve-modern-dusunceye-etkisi-4e235b52.md",
+        "category": "history",
+        "score": 84.85594481968609
+      },
+      {
+        "path": "src\\content\\history\\dunya-savaslari-ve-kuresel-guc-dengeleri-4b5bfa49.md",
+        "category": "history",
+        "score": 86.09450274956473
+      },
+      {
+        "path": "src\\content\\history\\historical-development-of-turkishislamic-art_31324d15_en.md",
+        "category": "history",
+        "score": 87.84005195754918
+      },
+      {
+        "path": "src\\content\\history\\impact-of-industrial-revolution-on-social-transformation_2291634a_en.md",
+        "category": "history",
+        "score": 90.80307643525502
+      },
+      {
+        "path": "src\\content\\history\\ipek-yolu-ve-antik-ticaret-rotalari-19bf9e8b.md",
+        "category": "history",
+        "score": 90.82478572239447
+      },
+      {
+        "path": "src\\content\\history\\osmanli-imparatorlugunun-yukselis-ve-cokus-donemi-1d06570f.md",
+        "category": "history",
+        "score": 82.7188304991427
+      },
+      {
+        "path": "src\\content\\history\\renaissance-scientific-and-artistic-revolution_180ed1ff_en.md",
+        "category": "history",
+        "score": 88.23895498049785
+      },
+      {
+        "path": "src\\content\\history\\rise-and-fall-of-the-ottoman-empire_454e3a20_en.md",
+        "category": "history",
+        "score": 89.11688877229334
+      },
+      {
+        "path": "src\\content\\history\\ronesans-doneminde-bilim-ve-sanat-devrimi-518736fa.md",
+        "category": "history",
+        "score": 81.38454960771611
+      },
+      {
+        "path": "src\\content\\history\\turkislam-sanatinin-tarihi-gelisimi-356d2ca2.md",
+        "category": "history",
+        "score": 82.67833995058785
+      },
+      {
+        "path": "src\\content\\history\\world-wars-and-global-power-balances_9af21b2b_en.md",
+        "category": "history",
+        "score": 100
+      },
+      {
+        "path": "src\\content\\love\\2025-06-19-iliski-tavsiyeleri-64b16c6a.md",
+        "category": "love",
+        "score": 82.5310176067146
+      },
+      {
+        "path": "src\\content\\love\\2025-06-19-iliskilerde-sinir-belirleme-352672dd.md",
+        "category": "love",
+        "score": 92.08485289264131
+      },
+      {
+        "path": "src\\content\\love\\2025-06-19-uzun-mesafe-iliskilerin-basarisi-9990df22.md",
+        "category": "love",
+        "score": 87.81746910435541
+      },
+      {
+        "path": "src\\content\\love\\ask-dillerini-anlamak-5-temel-ifade-bicimi-fdf89f86.md",
+        "category": "love",
+        "score": 94.70176056956467
+      },
+      {
+        "path": "src\\content\\love\\catisma-cozumu-ve-saglikli-tartisma-teknikleri-970fa8dc.md",
+        "category": "love",
+        "score": 97.12288561120202
+      },
+      {
+        "path": "src\\content\\love\\evlilik-oncesi-uyumluluk-analizi-f80e0f02.md",
+        "category": "love",
+        "score": 83.90982592487558
+      },
+      {
+        "path": "src\\content\\love\\modern-iliskilerde-iletisim-sanati-ve-empati-eb1802b1.md",
+        "category": "love",
+        "score": 96.2516995150983
+      },
+      {
+        "path": "src\\content\\love\\premarriage-compatibility-analysis_6b776dd3_en.md",
+        "category": "love",
+        "score": 90.51959481908912
+      },
+      {
+        "path": "src\\content\\love\\rebuilding-trust-after-infidelity_50c909b8_en.md",
+        "category": "love",
+        "score": 95.85595266806214
+      },
+      {
+        "path": "src\\content\\love\\romantizmin-psikolojisi-ve-bilimsel-temelleri-4cf4e5a9.md",
+        "category": "love",
+        "score": 100
+      },
+      {
+        "path": "src\\content\\love\\sosyal-medya-caginda-iliski-yonetimi-6550da68.md",
+        "category": "love",
+        "score": 90.24106844034274
+      },
+      {
+        "path": "src\\content\\love\\the-art-of-communication-in-modern-relationships_e2a49081_en.md",
+        "category": "love",
+        "score": 90.09667128723228
+      },
+      {
+        "path": "src\\content\\love\\the-psychology-and-science-of-romance_3ff31d6f_en.md",
+        "category": "love",
+        "score": 80.70301368430776
+      },
+      {
+        "path": "src\\content\\love\\uzun-mesafe-iliskilerinde-guven-insasi-738884ce.md",
+        "category": "love",
+        "score": 83.89977905146392
+      },
+      {
+        "path": "src\\content\\psychology\\2025-06-19-motivasyon-teknikleri-908c002b.md",
+        "category": "psychology",
+        "score": 80.41739436105908
+      },
+      {
+        "path": "src\\content\\psychology\\2025-06-19-travma-sonrasi-buyume-ve-iyilesme-37b62e36.md",
+        "category": "psychology",
+        "score": 86.98551829421339
+      },
+      {
+        "path": "src\\content\\psychology\\2025-06-19-zihinsel-saglik-fadd1670.md",
+        "category": "psychology",
+        "score": 85.48792857035775
+      },
+      {
+        "path": "src\\content\\psychology\\anksiyete-ve-panik-atak-ile-basa-cikma-yontemleri-0a8eb1ab.md",
+        "category": "psychology",
+        "score": 85.88772641639818
+      },
+      {
+        "path": "src\\content\\psychology\\bilincalti-programlama-ve-davranis-degisimi-ac1785b9.md",
+        "category": "psychology",
+        "score": 90.5662262415603
+      },
+      {
+        "path": "src\\content\\psychology\\bilissel-onyargilar-ve-objektif-dusunce-a9fa2a8a.md",
+        "category": "psychology",
+        "score": 82.0387230798207
+      },
+      {
+        "path": "src\\content\\psychology\\cognitive-psychology-insights-3118b7a2_en.md",
+        "category": "psychology",
+        "score": 100
+      },
+      {
+        "path": "src\\content\\psychology\\emotional-intelligence-development-8015b5c0_en.md",
+        "category": "psychology",
+        "score": 88.25897168816087
+      },
+      {
+        "path": "src\\content\\psychology\\emotional-intelligence-development-and-social-skills_1859cc6f_en.md",
+        "category": "psychology",
+        "score": 82.98888093147409
+      },
+      {
+        "path": "src\\content\\psychology\\mindfulness-and-mental-clarity-66996090_en.md",
+        "category": "psychology",
+        "score": 95.96545005633305
+      },
+      {
+        "path": "src\\content\\psychology\\motivation-and-goal-achievement-d6a70864_en.md",
+        "category": "psychology",
+        "score": 86.56895628985681
+      },
+      {
+        "path": "src\\content\\psychology\\neuroplasticity-and-mental-flexibility_9459df7d_en.md",
+        "category": "psychology",
+        "score": 82.47500652689574
+      },
+      {
+        "path": "src\\content\\psychology\\norolojik-plastisite-ve-zihinsel-esneklik-b09882cf.md",
+        "category": "psychology",
+        "score": 96.88527928886299
+      },
+      {
+        "path": "src\\content\\psychology\\posttraumatic-growth-and-psychological-resilience_42cdc6ed_en.md",
+        "category": "psychology",
+        "score": 83.78102903278969
+      },
+      {
+        "path": "src\\content\\psychology\\understanding-human-behavior-9de7d2ab_en.md",
+        "category": "psychology",
+        "score": 93.84696023085372
+      },
+      {
+        "path": "src\\content\\quotes\\2025-06-19-motivasyon-472ba450.md",
+        "category": "quotes",
+        "score": 100
+      },
+      {
+        "path": "src\\content\\quotes\\ask-ve-sevgi-romantik-duygulari-anlatan-guzel-sozler-f1a62409.md",
+        "category": "quotes",
+        "score": 97.22738225165216
+      },
+      {
+        "path": "src\\content\\quotes\\basari-ve-motivasyon-buyuk-liderlerin-ilham-sozleri-e7f5098e.md",
+        "category": "quotes",
+        "score": 96.16339191142981
+      },
+      {
+        "path": "src\\content\\quotes\\dostluk-ve-sadakat-arkadasligin-degerini-anlatan-sozler-865f0951.md",
+        "category": "quotes",
+        "score": 95.25222752336192
+      },
+      {
+        "path": "src\\content\\quotes\\happiness-and-gratitude-quotes-d30f8b7e_en.md",
+        "category": "quotes",
+        "score": 88.9380374667431
+      },
+      {
+        "path": "src\\content\\quotes\\happiness-and-inner-peace-words-finding-spiritual-tranquility_7e80b4de_en.md",
+        "category": "quotes",
+        "score": 92.43572039855532
+      },
+      {
+        "path": "src\\content\\quotes\\inspirational-success-quotes-ce9ae94d_en.md",
+        "category": "quotes",
+        "score": 91.73750686374045
+      },
+      {
+        "path": "src\\content\\quotes\\leadership-and-success-wisdom-15a43c01_en.md",
+        "category": "quotes",
+        "score": 94.96681505713511
+      },
+      {
+        "path": "src\\content\\quotes\\life-wisdom-from-great-minds-849c7360_en.md",
+        "category": "quotes",
+        "score": 84.4163709370423
+      },
+      {
+        "path": "src\\content\\quotes\\love-and-relationship-quotes-b0bcbdd1_en.md",
+        "category": "quotes",
+        "score": 90.94905487071225
+      },
+      {
+        "path": "src\\content\\quotes\\patience-and-resilience-advice-for-overcoming-challenges_3fc7c9cb_en.md",
+        "category": "quotes",
+        "score": 84.28838062106558
+      },
+      {
+        "path": "src\\content\\quotes\\philosophy-of-life-wise-words-from-sage-minds_3d4349d0_en.md",
+        "category": "quotes",
+        "score": 94.15071749458069
+      },
+      {
+        "path": "src\\content\\quotes\\sabir-ve-dayaniklilik-zorluklari-asmaya-dair-ogutler-30891ec0.md",
+        "category": "quotes",
+        "score": 100
+      },
+      {
+        "path": "src\\content\\quotes\\success-and-motivation-inspiring-words-from-great-leaders_b46ca038_en.md",
+        "category": "quotes",
+        "score": 87.6702048691413
+      },
+      {
+        "path": "src\\content\\quotes\\yasam-felsefesi-bilge-insanlarin-hikmet-dolu-sozleri-db740b03.md",
+        "category": "quotes",
+        "score": 83.58213250893311
+      },
+      {
+        "path": "src\\content\\space\\2025-06-19-astronomi-7887fbaf.md",
+        "category": "space",
+        "score": 93.11604361265442
+      },
+      {
+        "path": "src\\content\\space\\2025-06-19-astronomi-gozlemleri-bb402143.md",
+        "category": "space",
+        "score": 86.8405126260478
+      },
+      {
+        "path": "src\\content\\space\\2025-06-19-galaksi-carpismalari-ve-evrenin-gelecegi-4f78e0c5.md",
+        "category": "space",
+        "score": 80.81797073317601
+      },
+      {
+        "path": "src\\content\\space\\2025-06-19-mars-misyonlari-dae7c57f.md",
+        "category": "space",
+        "score": 83.86527507861942
+      },
+      {
+        "path": "src\\content\\space\\2025-06-19-uzay-kesifleri-9b347bde.md",
+        "category": "space",
+        "score": 100
+      },
+      {
+        "path": "src\\content\\space\\black-holes-and-dark-matter-42b651f7_en.md",
+        "category": "space",
+        "score": 86.72835654421338
+      },
+      {
+        "path": "src\\content\\space\\black-holes-and-spacetime-geometry_d8649c1a_en.md",
+        "category": "space",
+        "score": 91.52681139783861
+      },
+      {
+        "path": "src\\content\\space\\exogezegenler-ve-yasam-arayislari-500a21d1.md",
+        "category": "space",
+        "score": 96.22931845408806
+      },
+      {
+        "path": "src\\content\\space\\exoplanet-discoveries-5d459cb4_en.md",
+        "category": "space",
+        "score": 94.6194475191697
+      },
+      {
+        "path": "src\\content\\space\\galaksi-olusumu-ve-kozmik-evrimsel-surecler-0b7ea1b3.md",
+        "category": "space",
+        "score": 82.97751196090076
+      },
+      {
+        "path": "src\\content\\space\\kara-delikler-ve-uzayzaman-geometrisi-3f538f07.md",
+        "category": "space",
+        "score": 90.38935746729584
+      },
+      {
+        "path": "src\\content\\space\\mars-colonization-and-humanitys-future-plans_23512244_en.md",
+        "category": "space",
+        "score": 96.03552676439094
+      },
+      {
+        "path": "src\\content\\space\\mars-kolonizasyonu-ve-insanligin-gelecek-planlari-a5bbaf5e.md",
+        "category": "space",
+        "score": 86.93181050074695
+      },
+      {
+        "path": "src\\content\\space\\mars-mission-updates-74b83397_en.md",
+        "category": "space",
+        "score": 82.66153075584643
+      },
+      {
+        "path": "src\\content\\space\\quantum-physics-and-multiverse-theory_5662c7f8_en.md",
+        "category": "space",
+        "score": 90.99450236287294
+      },
+      {
+        "path": "src\\content\\space\\solar-system-exploration-2ec7c483_en.md",
+        "category": "space",
+        "score": 86.83638606843296
+      },
+      {
+        "path": "src\\content\\space\\uzay-madenciligi-ve-asteroidal-kaynaklar-29fc4bab.md",
+        "category": "space",
+        "score": 81.56610665903035
+      },
+      {
+        "path": "src\\content\\technology\\blockchain-kripto-para-teknolojileri-gelecek-finansal-altyapi.md",
+        "category": "other",
+        "score": 93.38656607494204
+      },
+      {
+        "path": "src\\content\\technology\\metaverse-sanal-dunyalar-gelecek-dijital-yasam.md",
+        "category": "other",
+        "score": 88.1262936848926
+      },
+      {
+        "path": "src\\content\\technology\\yapay-zeka-devrimi-chatgpt-gelecek-teknolojileri.md",
+        "category": "other",
+        "score": 93.19525880065757
+      }
+    ],
+    "underperformers": [
+      {
+        "path": "src\\content\\astrology\\2025-06-19-akrep-burcu-gunluk-yorum.md",
+        "category": "astrology",
+        "score": 38.506886822293
+      },
+      {
+        "path": "src\\content\\astrology\\2025-06-19-aslan-burcu-haftalik-yorum.md",
+        "category": "astrology",
+        "score": 39.937700982943674
+      },
+      {
+        "path": "src\\content\\astrology\\2025-06-19-ikizler-burcu-kariyer-yorumu.md",
+        "category": "astrology",
+        "score": 38.90395768577373
+      },
+      {
+        "path": "src\\content\\astrology\\basak-burcu-gunluk.md",
+        "category": "astrology",
+        "score": 24.783311322266364
+      },
+      {
+        "path": "src\\content\\astrology\\kova-burcu-gunluk.md",
+        "category": "astrology",
+        "score": 32.1454158126756
+      },
+      {
+        "path": "src\\content\\astrology\\weekly-summary-2025-06-19.md",
+        "category": "astrology",
+        "score": 39.83509428168961
+      },
+      {
+        "path": "src\\content\\astrology\\yengec-burcu-gunluk.md",
+        "category": "astrology",
+        "score": 39.55239186921719
+      },
+      {
+        "path": "src\\content\\health\\2025-06-18-01.md",
+        "category": "health",
+        "score": 36.94068507505241
+      }
+    ],
+    "content_gaps": [],
+    "quality_scores": {
+      "other": [
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85
+      ],
+      "astrology": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        75,
+        85,
+        95,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        85,
+        50,
+        50,
+        50,
+        95
+      ],
+      "health": [
+        50,
+        50,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        75,
+        85,
+        85,
+        85,
+        85,
+        75,
+        75,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        75
+      ],
+      "history": [
+        50,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        75,
+        85,
+        85,
+        85,
+        75,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85
+      ],
+      "love": [
+        50,
+        50,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        75,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        75,
+        85,
+        85,
+        85,
+        85
+      ],
+      "psychology": [
+        50,
+        85,
+        85,
+        85,
+        85,
+        85,
+        75,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        75,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85
+      ],
+      "quotes": [
+        50,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        75,
+        85,
+        85,
+        85,
+        85,
+        75,
+        85,
+        85,
+        85,
+        85,
+        85
+      ],
+      "space": [
+        50,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        75,
+        85,
+        75,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85
+      ]
+    }
+  },
+  "user_engagement": {
+    "daily_visitors": {
+      "2025-06-20": 1046,
+      "2025-06-19": 978,
+      "2025-06-18": 1000,
+      "2025-06-17": 1031,
+      "2025-06-16": 1037,
+      "2025-06-15": 1016,
+      "2025-06-14": 1020,
+      "2025-06-13": 1002,
+      "2025-06-12": 985,
+      "2025-06-11": 962,
+      "2025-06-10": 982,
+      "2025-06-09": 1014,
+      "2025-06-08": 991,
+      "2025-06-07": 996,
+      "2025-06-06": 985,
+      "2025-06-05": 1051,
+      "2025-06-04": 1029,
+      "2025-06-03": 996,
+      "2025-06-02": 964,
+      "2025-06-01": 984,
+      "2025-05-31": 1038,
+      "2025-05-30": 1039,
+      "2025-05-29": 959,
+      "2025-05-28": 982,
+      "2025-05-27": 994,
+      "2025-05-26": 983,
+      "2025-05-25": 1010,
+      "2025-05-24": 1004,
+      "2025-05-23": 1050,
+      "2025-05-22": 1020
+    },
+    "page_views": {
+      "2025-06-20": 3040,
+      "2025-06-19": 3037,
+      "2025-06-18": 3029,
+      "2025-06-17": 2979,
+      "2025-06-16": 2977,
+      "2025-06-15": 3089,
+      "2025-06-14": 3005,
+      "2025-06-13": 3080,
+      "2025-06-12": 2957,
+      "2025-06-11": 2960,
+      "2025-06-10": 3023,
+      "2025-06-09": 3074,
+      "2025-06-08": 3024,
+      "2025-06-07": 3055,
+      "2025-06-06": 2985,
+      "2025-06-05": 3043,
+      "2025-06-04": 3031,
+      "2025-06-03": 2980,
+      "2025-06-02": 2977,
+      "2025-06-01": 2921,
+      "2025-05-31": 2984,
+      "2025-05-30": 2977,
+      "2025-05-29": 2978,
+      "2025-05-28": 2980,
+      "2025-05-27": 2966,
+      "2025-05-26": 2939,
+      "2025-05-25": 2977,
+      "2025-05-24": 3087,
+      "2025-05-23": 3078,
+      "2025-05-22": 3003
+    },
+    "session_duration": {
+      "2025-06-20": 171.42713187879838,
+      "2025-06-19": 126.87517581394553,
+      "2025-06-18": 187.55895638179857,
+      "2025-06-17": 146.93350978014863,
+      "2025-06-16": 154.5282849102278,
+      "2025-06-15": 172.03827954454903,
+      "2025-06-14": 225.51129306184973,
+      "2025-06-13": 182.14181192540872,
+      "2025-06-12": 210.99716888068946,
+      "2025-06-11": 198.31773454214147,
+      "2025-06-10": 187.70885275229887,
+      "2025-06-09": 167.77208835673457,
+      "2025-06-08": 173.1461428871555,
+      "2025-06-07": 168.86102092135278,
+      "2025-06-06": 159.55303122692325,
+      "2025-06-05": 193.06795857278934,
+      "2025-06-04": 196.8444003720715,
+      "2025-06-03": 241.22589541792428,
+      "2025-06-02": 199.69169964399867,
+      "2025-06-01": 125.91104828046403,
+      "2025-05-31": 199.61476225527505,
+      "2025-05-30": 149.60608721308543,
+      "2025-05-29": 197.20020026786017,
+      "2025-05-28": 178.5850865594315,
+      "2025-05-27": 191.73610714213802,
+      "2025-05-26": 153.91028612909656,
+      "2025-05-25": 203.56735626482563,
+      "2025-05-24": 201.21710663632166,
+      "2025-05-23": 102.4052082217416,
+      "2025-05-22": 206.3625494899144
+    },
+    "bounce_rate": {
+      "2025-06-20": 51.150620826007454,
+      "2025-06-19": 37.71507033874302,
+      "2025-06-18": 52.323144156961646,
+      "2025-06-17": 28.935053156220306,
+      "2025-06-16": 62.111558157564104,
+      "2025-06-15": 24.415592755370955,
+      "2025-06-14": 55.57825090992304,
+      "2025-06-13": 40.35731932838894,
+      "2025-06-12": 55.266890182600946,
+      "2025-06-11": 50.93792241051078,
+      "2025-06-10": 51.22320734901602,
+      "2025-06-09": 41.26700692573323,
+      "2025-06-08": 47.87500110435903,
+      "2025-06-07": 57.00445668513591,
+      "2025-06-06": 43.57353473815801,
+      "2025-06-05": 35.180286132424854,
+      "2025-06-04": 49.30301637845843,
+      "2025-06-03": 41.17289451820841,
+      "2025-06-02": 57.537827506320525,
+      "2025-06-01": 47.49872024270854,
+      "2025-05-31": 44.63428919406661,
+      "2025-05-30": 42.25018800313827,
+      "2025-05-29": 45.0766840495436,
+      "2025-05-28": 52.32894672973878,
+      "2025-05-27": 51.299644335792856,
+      "2025-05-26": 50.403976159032304,
+      "2025-05-25": 34.92826465908994,
+      "2025-05-24": 38.327105020437614,
+      "2025-05-23": 45.157655629074526,
+      "2025-05-22": 29.777254623763607
+    },
+    "popular_content": [
+      {
+        "title": "Popular Content 0",
+        "views": 1322
+      },
+      {
+        "title": "Popular Content 1",
+        "views": 2682
+      },
+      {
+        "title": "Popular Content 2",
+        "views": 1986
+      },
+      {
+        "title": "Popular Content 3",
+        "views": 1507
+      },
+      {
+        "title": "Popular Content 4",
+        "views": 4781
+      },
+      {
+        "title": "Popular Content 5",
+        "views": 4340
+      },
+      {
+        "title": "Popular Content 6",
+        "views": 4193
+      },
+      {
+        "title": "Popular Content 7",
+        "views": 1151
+      },
+      {
+        "title": "Popular Content 8",
+        "views": 2671
+      },
+      {
+        "title": "Popular Content 9",
+        "views": 4896
+      }
+    ],
+    "user_flow": {
+      "entry_pages": [
+        "/",
+        "/astrology/",
+        "/health/"
+      ],
+      "exit_pages": [
+        "/contact/",
+        "/about/",
+        "/astrology/"
+      ],
+      "popular_paths": [
+        "/ -> /astrology/ -> /astrology/daily/",
+        "/ -> /health/ -> /health/tips/",
+        "/astrology/ -> /astrology/weekly/"
+      ]
+    },
+    "conversion_metrics": {
+      "newsletter_signups": 103,
+      "social_follows": 423,
+      "page_shares": 724,
+      "conversion_rate": 3.179849007658057
+    }
+  },
+  "seo_metrics": {
+    "keyword_rankings": {
+      "total_keywords": 819,
+      "avg_position": 22.255800588862293
+    },
+    "organic_traffic": {
+      "monthly_sessions": 25375,
+      "growth_rate": 2.504699681613962
+    },
+    "search_visibility": {
+      "visibility_score": 68.52955349064408,
+      "indexed_pages": 174,
+      "ranking_keywords": 839
+    },
+    "featured_snippets": {
+      "current_snippets": 13,
+      "potential_opportunities": 79
+    },
+    "backlink_profile": {
+      "total_backlinks": 623,
+      "referring_domains": 74,
+      "domain_authority": 30
+    },
+    "technical_seo": {
+      "crawl_errors": 8,
+      "page_speed_score": 92,
+      "mobile_friendly": true,
+      "ssl_score": 100
+    },
+    "local_seo": {
+      "local_visibility": 73.29587771218898,
+      "google_my_business": false,
+      "local_citations": 48
+    }
+  },
+  "social_metrics": {
+    "social_shares": {
+      "facebook_shares": 456,
+      "twitter_shares": 79,
+      "pinterest_shares": 553,
+      "total_shares": 1850
+    },
+    "social_engagement": {
+      "engagement_rate": 3.009461076254174,
+      "follower_growth": 11.552494861119763,
+      "post_reach": 4157
+    },
+    "viral_content": [
+      {
+        "title": "Günlük Astroloji",
+        "shares": 850
+      },
+      {
+        "title": "Sağlık İpuçları",
+        "shares": 650
+      },
+      {
+        "title": "Aşk Rehberi",
+        "shares": 480
+      }
+    ],
+    "social_traffic": {
+      "social_sessions": 1390,
+      "conversion_rate": 1.7265087857119017,
+      "top_platforms": [
+        "Facebook",
+        "Twitter",
+        "Pinterest"
+      ]
+    },
+    "influencer_mentions": {
+      "total_mentions": 35,
+      "reach": 26391,
+      "sentiment": "positive"
+    },
+    "hashtag_performance": {
+      "top_hashtags": [
+        "#astroloji",
+        "#sağlık",
+        "#günlük"
+      ],
+      "total_reach": 148370,
+      "engagement": 3.782015633826854
+    }
+  },
+  "technical_performance": {
+    "error": "'AdvancedAnalytics' object has no attribute 'calculate_speed_score'"
+  },
+  "content_quality": {
+    "readability_scores": {
+      "other": [
+        40,
+        40,
+        40,
+        85,
+        55,
+        55,
+        40,
+        85,
+        70,
+        40,
+        40,
+        40
+      ],
+      "astrology": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        85,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        55,
+        70,
+        70,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        40,
+        50,
+        50,
+        50,
+        40
+      ],
+      "health": [
+        50,
+        50,
+        40,
+        70,
+        40,
+        70,
+        40,
+        40,
+        70,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        55,
+        55,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40
+      ],
+      "history": [
+        50,
+        70,
+        40,
+        70,
+        70,
+        40,
+        40,
+        55,
+        55,
+        55,
+        55,
+        55,
+        40,
+        55,
+        55,
+        55,
+        40,
+        40,
+        55,
+        40,
+        40,
+        55,
+        40
+      ],
+      "love": [
+        50,
+        50,
+        70,
+        40,
+        40,
+        70,
+        70,
+        40,
+        40,
+        40,
+        40,
+        55,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        55,
+        40,
+        40,
+        40,
+        40
+      ],
+      "psychology": [
+        50,
+        70,
+        70,
+        40,
+        70,
+        40,
+        55,
+        55,
+        55,
+        40,
+        40,
+        55,
+        40,
+        40,
+        40,
+        40,
+        55,
+        55,
+        55,
+        40,
+        40,
+        55,
+        40
+      ],
+      "quotes": [
+        50,
+        70,
+        70,
+        40,
+        40,
+        55,
+        55,
+        55,
+        40,
+        40,
+        40,
+        40,
+        55,
+        40,
+        40,
+        40,
+        55,
+        55,
+        40,
+        40,
+        55,
+        40,
+        55
+      ],
+      "space": [
+        50,
+        40,
+        40,
+        70,
+        70,
+        40,
+        40,
+        40,
+        40,
+        55,
+        40,
+        55,
+        40,
+        55,
+        40,
+        55,
+        55,
+        40,
+        55,
+        40,
+        40,
+        40,
+        55
+      ]
+    },
+    "content_depth": {
+      "other": [
+        70,
+        70,
+        70,
+        50,
+        70,
+        70,
+        70,
+        70,
+        70,
+        70,
+        70,
+        70
+      ],
+      "astrology": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        20,
+        20,
+        65,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        20,
+        0,
+        0,
+        0,
+        85
+      ],
+      "health": [
+        0,
+        0,
+        50,
+        65,
+        50,
+        65,
+        50,
+        50,
+        65,
+        50,
+        20,
+        50,
+        50,
+        50,
+        50,
+        20,
+        20,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        20
+      ],
+      "history": [
+        0,
+        65,
+        50,
+        65,
+        65,
+        50,
+        50,
+        50,
+        50,
+        20,
+        50,
+        50,
+        50,
+        20,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "love": [
+        0,
+        0,
+        65,
+        50,
+        50,
+        65,
+        65,
+        50,
+        50,
+        50,
+        50,
+        20,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        20,
+        50,
+        50,
+        50,
+        50
+      ],
+      "psychology": [
+        0,
+        65,
+        65,
+        50,
+        65,
+        50,
+        20,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        20,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "quotes": [
+        0,
+        65,
+        65,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        20,
+        50,
+        50,
+        50,
+        50,
+        20,
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "space": [
+        0,
+        50,
+        50,
+        65,
+        65,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        20,
+        50,
+        20,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50
+      ]
+    },
+    "expertise_signals": {},
+    "freshness_scores": {
+      "other": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "astrology": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "health": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "history": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "love": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "psychology": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "quotes": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "space": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    "uniqueness_scores": {},
+    "multimedia_usage": {}
+  },
+  "competitor_analysis": {
+    "competitor_rankings": {
+      "astroloji.com": {
+        "domain_authority": 73,
+        "organic_keywords": 26888,
+        "monthly_traffic": 1388497,
+        "content_count": 2419
+      },
+      "hurriyet.com.tr/astroloji": {
+        "domain_authority": 83,
+        "organic_keywords": 9208,
+        "monthly_traffic": 940905,
+        "content_count": 4966
+      },
+      "mynet.com/astroloji": {
+        "domain_authority": 42,
+        "organic_keywords": 42836,
+        "monthly_traffic": 1359053,
+        "content_count": 1164
+      }
+    },
+    "content_gaps": [],
+    "opportunity_keywords": [],
+    "competitive_advantages": [],
+    "threat_assessment": {}
+  },
+  "trend_analysis": {
+    "content_trends": {
+      "trending_topics": [
+        "Astroloji",
+        "Wellness",
+        "Mental Sağlık"
+      ],
+      "declining_topics": [
+        "Genel Bilgi"
+      ],
+      "emerging_categories": [
+        "Mindfulness",
+        "Doğal Yaşam"
+      ]
+    },
+    "search_trends": {
+      "rising_keywords": [
+        "günlük burç",
+        "sağlık ipuçları",
+        "yoga"
+      ],
+      "stable_keywords": [
+        "astroloji",
+        "horoskop"
+      ],
+      "declining_keywords": [
+        "genel bilgi"
+      ]
+    },
+    "seasonal_patterns": {
+      "spring_trends": [
+        "Yenilenmek",
+        "Detoks"
+      ],
+      "summer_trends": [
+        "Tatil",
+        "Enerji"
+      ],
+      "fall_trends": [
+        "Başlangıçlar",
+        "Planlama"
+      ],
+      "winter_trends": [
+        "İçerik",
+        "Sağlık"
+      ]
+    },
+    "emerging_topics": [
+      "AI ve Astroloji",
+      "Dijital Detoks",
+      "Sürdürülebilir Yaşam",
+      "Mental Wellness"
+    ],
+    "declining_topics": [
+      "Genel Horoskop",
+      "Basit İpuçları"
+    ],
+    "future_predictions": {
+      "next_month": [
+        "Kişiselleştirilmiş İçerik",
+        "Video Formatları"
+      ],
+      "next_quarter": [
+        "Interaktif Deneyimler",
+        "Podcast İçeriği"
+      ],
+      "next_year": [
+        "AI Destekli Astroloji",
+        "VR Deneyimleri"
+      ]
+    }
+  },
+  "collection_timestamp": "2025-06-20T16:57:58.667914"
+}
