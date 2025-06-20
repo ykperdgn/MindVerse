@@ -3,7 +3,7 @@ title: 'Kova Günlük Yorumu - 20 June 2025'
 date: 2025-06-20
 summary: 'Kova burcu için 20 June 2025 günlük astroloji yorumu ve önerileri.'
 tags: ['astroloji', 'günlük-yorum', 'kova', 'burç', 'yıldız']
-views: 367
+views: 238
 author: 'MindVerse Astroloji Uzmanı'
 keywords: 'Kova, günlük yorum, astroloji, burç yorumu, 20 June 2025'
 ---
@@ -30,13 +30,13 @@ Sağlığınıza özel önem gösterin. Vücudunuzun verdiği sinyalleri dinleyi
 
 ### Günün Önerisi
 
-Bugün özellikle mor renk size şans getirebilir. Önemli kararları verirken sezgilerinizi dinleyin.
+Bugün özellikle kırmızı renk size şans getirebilir. Önemli kararları verirken sezgilerinizi dinleyin.
 
 ### Şanslı Detaylar
 
-- **Şanslı Sayılar:** 22, 21, 12
-- **Şanslı Renk:** Mor
-- **Şanslı Taş:** Kuvars
+- **Şanslı Sayılar:** 6, 2, 35
+- **Şanslı Renk:** Kırmızı
+- **Şanslı Taş:** Obsidyen
 - **Şanslı Yön:** Kuzey
 
 ### Dikkat Edilmesi Gerekenler

@@ -3,7 +3,7 @@ title: 'Koç Günlük Yorumu - 20 June 2025'
 date: 2025-06-20
 summary: 'Koç burcu için 20 June 2025 günlük astroloji yorumu ve önerileri.'
 tags: ['astroloji', 'günlük-yorum', 'koç', 'burç', 'yıldız']
-views: 129
+views: 416
 author: 'MindVerse Astroloji Uzmanı'
 keywords: 'Koç, günlük yorum, astroloji, burç yorumu, 20 June 2025'
 ---
@@ -18,11 +18,11 @@ Bugün Koç burcu için özel bir gün olacak. Yıldızların size gönderdiği 
 
 ### Aşk ve İlişkiler ❤️
 
-Romantik sürprizler günü renklendirrebilir. İçinizdeki romantik duyguları açığa çıkarın ve sevginizi göstermekten çekinmeyin.
+İlişkinizde daha derin bağlar kurma zamanı. İçinizdeki romantik duyguları açığa çıkarın ve sevginizi göstermekten çekinmeyin.
 
 ### Kariyer ve İş 💼
 
-Mesleki hedeflerinize odaklanın. Bugün aldığınız kararlar, geleceğinizi şekillendirebilir.
+İş hayatında yaratıcı çözümler bulacaksınız. Bugün aldığınız kararlar, geleceğinizi şekillendirebilir.
 
 ### Sağlık ve Enerji 🌟
 
@@ -34,10 +34,10 @@ Bugün özellikle mor renk size şans getirebilir. Önemli kararları verirken s
 
 ### Şanslı Detaylar
 
-- **Şanslı Sayılar:** 7, 22, 12
+- **Şanslı Sayılar:** 27, 40, 4
 - **Şanslı Renk:** Mor
-- **Şanslı Taş:** Kuvars
-- **Şanslı Yön:** Doğu
+- **Şanslı Taş:** Obsidyen
+- **Şanslı Yön:** Kuzey
 
 ### Dikkat Edilmesi Gerekenler
 

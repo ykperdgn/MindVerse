@@ -3,7 +3,7 @@ title: 'Yengeç Günlük Yorumu - 20 June 2025'
 date: 2025-06-20
 summary: 'Yengeç burcu için 20 June 2025 günlük astroloji yorumu ve önerileri.'
 tags: ['astroloji', 'günlük-yorum', 'yengeç', 'burç', 'yıldız']
-views: 633
+views: 682
 author: 'MindVerse Astroloji Uzmanı'
 keywords: 'Yengeç, günlük yorum, astroloji, burç yorumu, 20 June 2025'
 ---
@@ -22,7 +22,7 @@ Sevdiğiniz kişiyle güzel anlar yaşayacaksınız. İçinizdeki romantik duygu
 
 ### Kariyer ve İş 💼
 
-İş hayatında yaratıcı çözümler bulacaksınız. Bugün aldığınız kararlar, geleceğinizi şekillendirebilir.
+Mesleki hedeflerinize odaklanın. Bugün aldığınız kararlar, geleceğinizi şekillendirebilir.
 
 ### Sağlık ve Enerji 🌟
 
@@ -30,14 +30,14 @@ Sağlığınıza özel önem gösterin. Vücudunuzun verdiği sinyalleri dinleyi
 
 ### Günün Önerisi
 
-Bugün özellikle kırmızı renk size şans getirebilir. Önemli kararları verirken sezgilerinizi dinleyin.
+Bugün özellikle mavi renk size şans getirebilir. Önemli kararları verirken sezgilerinizi dinleyin.
 
 ### Şanslı Detaylar
 
-- **Şanslı Sayılar:** 41, 38, 36
-- **Şanslı Renk:** Kırmızı
-- **Şanslı Taş:** Ametist
-- **Şanslı Yön:** Kuzey
+- **Şanslı Sayılar:** 21, 2, 11
+- **Şanslı Renk:** Mavi
+- **Şanslı Taş:** Obsidyen
+- **Şanslı Yön:** Doğu
 
 ### Dikkat Edilmesi Gerekenler
 
