@@ -664,6 +664,109 @@ class MindVerseControlCenter:
         else:
             print("❌ Geçersiz seçim")
 
+    def show_recent_logs(self):
+        """Son log kayıtlarını göster"""
+        try:
+            log_files = [
+                "automation.log",
+                "alerts.log",
+                "deployment.log"
+            ]
+
+            print("📋 Son Log Kayıtları:")
+            for log_file in log_files:
+                log_path = Path(log_file)
+                if log_path.exists():
+                    print(f"\n--- {log_file} ---")
+                    with open(log_path, 'r', encoding='utf-8') as f:
+                        lines = f.readlines()
+                        # Son 10 satırı göster
+                        for line in lines[-10:]:
+                            print(f"   {line.strip()}")
+                else:
+                    print(f"⚠️ {log_file} bulunamadı")
+        except Exception as e:
+            print(f"❌ Log okuma hatası: {e}")
+
+    def show_performance_reports(self):
+        """Performans raporlarını göster"""
+        try:
+            reports_dir = Path("reports")
+            if not reports_dir.exists():
+                print("❌ Reports klasörü bulunamadı")
+                return
+
+            performance_reports = list(reports_dir.glob("performance_*.md"))
+
+            if not performance_reports:
+                print("⚠️ Performans raporu bulunamadı")
+                return
+
+            print("📈 Performans Raporları:")
+            for report in sorted(performance_reports)[-5:]:  # Son 5 rapor
+                print(f"   📄 {report.name}")
+
+        except Exception as e:
+            print(f"❌ Performans raporu hatası: {e}")
+
+    def show_analysis_reports(self):
+        """Site analiz raporlarını göster"""
+        try:
+            reports_dir = Path("reports")
+            if not reports_dir.exists():
+                print("❌ Reports klasörü bulunamadı")
+                return
+
+            analysis_reports = list(reports_dir.glob("site_analysis_*.md"))
+
+            if not analysis_reports:
+                print("⚠️ Analiz raporu bulunamadı")
+                return
+
+            print("🔍 Site Analiz Raporları:")
+            for report in sorted(analysis_reports)[-5:]:  # Son 5 rapor
+                print(f"   📄 {report.name}")
+                # Rapor özeti göster
+                try:
+                    with open(report, 'r', encoding='utf-8') as f:
+                        content = f.read()
+                        # İlk birkaç satırı göster
+                        lines = content.split('\n')[:10]
+                        for line in lines:
+                            if line.strip() and not line.startswith('#'):
+                                print(f"      {line[:100]}...")
+                                break
+                except Exception:
+                    pass
+
+        except Exception as e:
+            print(f"❌ Analiz raporu hatası: {e}")
+
+    def show_monitoring_logs(self):
+        """İzleme loglarını göster"""
+        try:
+            monitoring_file = Path("monitoring_data.json")
+            if monitoring_file.exists():
+                print("🔄 İzleme Verileri:")
+                with open(monitoring_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    print(f"   Son güncelleme: {data.get('last_update', 'Bilinmiyor')}")
+                    print(f"   İzleme sayısı: {len(data.get('checks', []))}")
+            else:
+                print("⚠️ İzleme verisi bulunamadı")
+
+            # Alert logları
+            alerts_file = Path("alerts.log")
+            if alerts_file.exists():
+                print("\n⚠️ Son Uyarılar:")
+                with open(alerts_file, 'r', encoding='utf-8') as f:
+                    lines = f.readlines()
+                    for line in lines[-5:]:  # Son 5 uyarı
+                        print(f"   {line.strip()}")
+
+        except Exception as e:
+            print(f"❌ İzleme log hatası: {e}")
+
     def run_intelligent_scheduler(self):
         """Akıllı zamanlayıcı çalıştırma"""
         if not ADVANCED_MODULES_LOADED or not self.scheduler:
