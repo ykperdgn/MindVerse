@@ -4,13 +4,38 @@ import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
   const categories = ['health', 'love', 'history', 'psychology', 'space', 'quotes', 'astrology', 'art', 'cinema', 'technology'];
-  return categories.map(category => ({
-    params: { category }
-  }));
+  const paths = [];
+
+  for (const category of categories) {
+    try {
+      // Test if collection exists
+      const posts = await getCollection(category);
+      if (posts && posts.length > 0) {
+        paths.push({
+          params: { category }
+        });
+      }
+    } catch (error) {
+      console.warn(`Warning: Category ${category} not found, skipping...`);
+      // Still add the path to prevent 404s
+      paths.push({
+        params: { category }
+      });
+    }
+  }
+
+  return paths;
 }
 
 const { category } = Astro.params;
-const articles = await getCollection(category);
+
+let articles = [];
+try {
+  articles = await getCollection(category);
+} catch (error) {
+  console.warn(`Error loading category ${category}:`, error);
+  articles = [];
+}
 ---
 
 <Layout title={`${category.charAt(0).toUpperCase() + category.slice(1)} - MindVerse`}>
