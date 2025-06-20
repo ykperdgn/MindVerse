@@ -1,0 +1,19 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="starGradient" cx="40" cy="40" r="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fffbe6"/>
+      <stop offset="0.5" stop-color="#a5b4fc"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </radialGradient>
+    <linearGradient id="ringGradient" x1="0" y1="40" x2="80" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f0abfc"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+  <circle cx="40" cy="40" r="28" fill="url(#starGradient)" stroke="#fff" stroke-width="2"/>
+  <ellipse cx="40" cy="48" rx="24" ry="8" fill="none" stroke="url(#ringGradient)" stroke-width="3"/>
+  <g>
+    <polygon points="40,18 43,30 56,30 45,37 48,50 40,42 32,50 35,37 24,30 37,30" fill="#fff" opacity="0.8"/>
+    <circle cx="40" cy="40" r="6" fill="#7c3aed"/>
+  </g>
+</svg>

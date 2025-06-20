@@ -3,7 +3,7 @@ title: 'Terazi Günlük Yorumu - 20 June 2025'
 date: 2025-06-20
 summary: 'Terazi burcu için 20 June 2025 günlük astroloji yorumu ve önerileri.'
 tags: ['astroloji', 'günlük-yorum', 'terazi', 'burç', 'yıldız']
-views: 708
+views: 510
 author: 'MindVerse Astroloji Uzmanı'
 keywords: 'Terazi, günlük yorum, astroloji, burç yorumu, 20 June 2025'
 ---
@@ -22,7 +22,7 @@ Sevdiğiniz kişiyle güzel anlar yaşayacaksınız. İçinizdeki romantik duygu
 
 ### Kariyer ve İş 💼
 
-Mesleki hedeflerinize odaklanın. Bugün aldığınız kararlar, geleceğinizi şekillendirebilir.
+İş birliği halinde büyük başarılar elde edebilirsiniz. Bugün aldığınız kararlar, geleceğinizi şekillendirebilir.
 
 ### Sağlık ve Enerji 🌟
 
@@ -30,14 +30,14 @@ Sağlığınıza özel önem gösterin. Vücudunuzun verdiği sinyalleri dinleyi
 
 ### Günün Önerisi
 
-Bugün özellikle sarı renk size şans getirebilir. Önemli kararları verirken sezgilerinizi dinleyin.
+Bugün özellikle kırmızı renk size şans getirebilir. Önemli kararları verirken sezgilerinizi dinleyin.
 
 ### Şanslı Detaylar
 
-- **Şanslı Sayılar:** 36, 38, 4
-- **Şanslı Renk:** Sarı
-- **Şanslı Taş:** Ametist
-- **Şanslı Yön:** Kuzey
+- **Şanslı Sayılar:** 21, 32, 47
+- **Şanslı Renk:** Kırmızı
+- **Şanslı Taş:** Jade
+- **Şanslı Yön:** Batı
 
 ### Dikkat Edilmesi Gerekenler
 
