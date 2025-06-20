@@ -21,11 +21,11 @@ Bugün Oğlak burcu için Venüs gezeninizin etkisiyle kariyer atılımı yaşay
 
 **Dikkat Edilmesi Gerekenler:** Katılık, Karamsar, Aşırı ciddiyet, Materialism
 
-## 💫 G�nl�k Genel Durum
+## 💫 Gnlk Genel Durum
 
-Venüs gezenenin etkisiyle bu G�nl�k döneminde Oğlak burcu için uyum enerjisi ön plana çıkacak.
+Venüs gezenenin etkisiyle bu Gnlk döneminde Oğlak burcu için uyum enerjisi ön plana çıkacak.
 
-Toprak elementi size G�nl�k boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
+Toprak elementi size Gnlk boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
 
 ## 💕 Aşk ve İlişkiler
 
@@ -33,27 +33,27 @@ Toprak elementi size G�nl�k boyunca güç verecek ve hedeflerinize odaklanmanız
 
 💑 **İlişkisi Olanlar:** Partnerinizle romantik anlar yaşayabilirsiniz.
 
-🌹 Siyah rengi bu G�nl�k aşk hayatınızda şans getirebilir.
+🌹 Siyah rengi bu Gnlk aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Sorumluluk özelliğiniz sayesinde G�nl�k boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Sorumluluk özelliğiniz sayesinde Gnlk boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Bankacılık alanında fırsatlar değerlendirilebilir.
 
-📈 Bu G�nl�k iş birliği için uygun zaman.
+📈 Bu Gnlk iş birliği için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 🌱 Vücudunuzla uyum içinde olacaksınız. Doğal beslenmeye önem verin.
 
-⚖️ Bu G�nl�k genel sağlık durumunuz iyi olacak.
+⚖️ Bu Gnlk genel sağlık durumunuz iyi olacak.
 
-## 🎯 G�nl�k Tavsiyeleri
+## 🎯 Gnlk Tavsiyeleri
 
-1. **Sorumluluk** özelliğinizi bu G�nl�k daha aktif kullanın
+1. **Sorumluluk** özelliğinizi bu Gnlk daha aktif kullanın
 2. **Katılık** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Siyah** rengi bu G�nl�k şansınızı artıracak
+3. **Siyah** rengi bu Gnlk şansınızı artıracak
 4. **Balık** burcu ile işbirliği yapın
 5. **Yöneticilik** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Toprak elementi size G�nl�k boyunca güç verecek ve hedeflerinize odaklanmanız
 
 ## 💫 Sonuç
 
-Bu G�nl�k Oğlak burcu için kariyer atılımı yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.
+Bu Gnlk Oğlak burcu için kariyer atılımı yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.
 
 ---
 

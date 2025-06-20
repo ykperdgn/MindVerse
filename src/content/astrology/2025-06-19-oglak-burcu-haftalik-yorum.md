@@ -1,13 +1,13 @@
 ---
-title: "Kariyer Fırsatları - Oğlak Burcu Haftal�k Yorumu"
+title: "Kariyer Fırsatları - Oğlak Burcu Haftalk Yorumu"
 description: "Oğlak burcu için detaylı astroloji yorumu. kariyer fırsatları konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["oğlak burcu", "haftal�k yorum", "astroloji", "burç yorumu"]
+tags: ["oğlak burcu", "haftalk yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Oğlak Burcu Haftal�k Yorumu
+# Oğlak Burcu Haftalk Yorumu
 
 🐐 **Oğlak Burcu** (**22 Aralık - 19 Ocak**)
 
@@ -21,9 +21,9 @@ Bu hafta Oğlak burcu için Venüs etkisiyle kariyer fırsatları dönemine giri
 
 **Dikkat Edilmesi Gerekenler:** Katılık, Karamsar, Aşırı ciddiyet, Materialism
 
-## 💫 Haftal�k Genel Durum
+## 💫 Haftalk Genel Durum
 
-Venüs gezenenin etkisiyle bu Haftal�k döneminde Oğlak burcu için aşk enerjisi ön plana çıkacak.
+Venüs gezenenin etkisiyle bu Haftalk döneminde Oğlak burcu için aşk enerjisi ön plana çıkacak.
 
 Oğlak burcu olarak doğal disiplinli özelliğiniz bu dönemde avantajınız olacak.
 
@@ -33,27 +33,27 @@ Oğlak burcu olarak doğal disiplinli özelliğiniz bu dönemde avantajınız ol
 
 💑 **İlişkisi Olanlar:** Partnerinizle özel aktiviteler yaşayabilirsiniz.
 
-🌹 Siyah rengi bu Haftal�k aşk hayatınızda şans getirebilir.
+🌹 Siyah rengi bu Haftalk aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Kararlılık özelliğiniz sayesinde Haftal�k boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Kararlılık özelliğiniz sayesinde Haftalk boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Siyaset alanında fırsatlar değerlendirilebilir.
 
-📈 Bu Haftal�k yeni projeler için uygun zaman.
+📈 Bu Haftalk yeni projeler için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 🌱 Vücudunuzla uyum içinde olacaksınız. Doğal beslenmeye önem verin.
 
-⚖️ Bu Haftal�k genel sağlık durumunuz iyi olacak.
+⚖️ Bu Haftalk genel sağlık durumunuz iyi olacak.
 
-## 🎯 Haftal�k Tavsiyeleri
+## 🎯 Haftalk Tavsiyeleri
 
-1. **Hırs** özelliğinizi bu Haftal�k daha aktif kullanın
+1. **Hırs** özelliğinizi bu Haftalk daha aktif kullanın
 2. **Katılık** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Siyah** rengi bu Haftal�k şansınızı artıracak
+3. **Siyah** rengi bu Haftalk şansınızı artıracak
 4. **Balık** burcu ile işbirliği yapın
 5. **Siyaset** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Oğlak burcu olarak doğal disiplinli özelliğiniz bu dönemde avantajınız ol
 
 ## 💫 Sonuç
 
-Bu Haftal�k Oğlak burcu için kariyer fırsatları yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.
+Bu Haftalk Oğlak burcu için kariyer fırsatları yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.
 
 ---
 

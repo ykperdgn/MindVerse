@@ -1,13 +1,13 @@
 ---
-title: "Ruhsal Uyanış - Aslan Burcu Ayl�k Yorumu"
+title: "Ruhsal Uyanış - Aslan Burcu Aylk Yorumu"
 description: "Aslan burcu için detaylı astroloji yorumu. ruhsal uyanış konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["aslan burcu", "ayl�k yorum", "astroloji", "burç yorumu"]
+tags: ["aslan burcu", "aylk yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Aslan Burcu Ayl�k Yorumu
+# Aslan Burcu Aylk Yorumu
 
 🦁 **Aslan Burcu** (**23 Temmuz - 22 Ağustos**)
 
@@ -21,11 +21,11 @@ Bu ay Aslan burcu için Plüton gezeninizin güçlü etkisiyle ruhsal uyanış y
 
 **Dikkat Edilmesi Gerekenler:** Ego, Drama, Dikkat arayışı, İnatçılık, Kibir
 
-## 💫 Ayl�k Genel Durum
+## 💫 Aylk Genel Durum
 
-Plüton gezenenin etkisiyle bu Ayl�k döneminde Aslan burcu için yeniden doğuş enerjisi ön plana çıkacak.
+Plüton gezenenin etkisiyle bu Aylk döneminde Aslan burcu için yeniden doğuş enerjisi ön plana çıkacak.
 
-Ateş elementi size Ayl�k boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
+Ateş elementi size Aylk boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
 
 ## 💕 Aşk ve İlişkiler
 
@@ -33,27 +33,27 @@ Ateş elementi size Ayl�k boyunca güç verecek ve hedeflerinize odaklanmanızı
 
 💑 **İlişkisi Olanlar:** Partnerinizle özel aktiviteler yaşayabilirsiniz.
 
-🌹 Altın rengi bu Ayl�k aşk hayatınızda şans getirebilir.
+🌹 Altın rengi bu Aylk aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Yaratıcılık özelliğiniz sayesinde Ayl�k boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Yaratıcılık özelliğiniz sayesinde Aylk boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Yöneticilik alanında fırsatlar değerlendirilebilir.
 
-📈 Bu Ayl�k iş birliği için uygun zaman.
+📈 Bu Aylk iş birliği için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 🔥 Enerji seviyeniz yüksek olacak. Aktif sporları tercih edin.
 
-⚖️ Bu Ayl�k genel sağlık durumunuz iyi olacak.
+⚖️ Bu Aylk genel sağlık durumunuz iyi olacak.
 
-## 🎯 Ayl�k Tavsiyeleri
+## 🎯 Aylk Tavsiyeleri
 
-1. **Cömertlik** özelliğinizi bu Ayl�k daha aktif kullanın
+1. **Cömertlik** özelliğinizi bu Aylk daha aktif kullanın
 2. **İnatçılık** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Altın** rengi bu Ayl�k şansınızı artıracak
+3. **Altın** rengi bu Aylk şansınızı artıracak
 4. **Terazi** burcu ile işbirliği yapın
 5. **Yöneticilik** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Ateş elementi size Ayl�k boyunca güç verecek ve hedeflerinize odaklanmanızı
 
 ## 💫 Sonuç
 
-Bu Ayl�k Aslan burcu için ruhsal uyanış yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.
+Bu Aylk Aslan burcu için ruhsal uyanış yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.
 
 ---
 

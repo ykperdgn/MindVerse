@@ -1,13 +1,13 @@
 ---
-title: "Enerji Dolu Bir Gün - Aslan Burcu G�nl�k Yorumu"
+title: "Enerji Dolu Bir Gün - Aslan Burcu Gnlk Yorumu"
 description: "Aslan burcu için detaylı astroloji yorumu. enerji dolu bir gün konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["aslan burcu", "g�nl�k yorum", "astroloji", "burç yorumu"]
+tags: ["aslan burcu", "gnlk yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Aslan Burcu G�nl�k Yorumu
+# Aslan Burcu Gnlk Yorumu
 
 🦁 **Aslan Burcu** (**23 Temmuz - 22 Ağustos**)
 
@@ -21,11 +21,11 @@ Bugün Aslan burcu için Jüpiter gezeninizin etkisiyle enerji dolu bir gün ya�
 
 **Dikkat Edilmesi Gerekenler:** Ego, Drama, Dikkat arayışı, İnatçılık, Kibir
 
-## 💫 G�nl�k Genel Durum
+## 💫 Gnlk Genel Durum
 
-Jüpiter gezenenin etkisiyle bu G�nl�k döneminde Aslan burcu için felsefe enerjisi ön plana çıkacak.
+Jüpiter gezenenin etkisiyle bu Gnlk döneminde Aslan burcu için felsefe enerjisi ön plana çıkacak.
 
-Ateş elementi size G�nl�k boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
+Ateş elementi size Gnlk boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
 
 ## 💕 Aşk ve İlişkiler
 
@@ -33,27 +33,27 @@ Ateş elementi size G�nl�k boyunca güç verecek ve hedeflerinize odaklanmanız�
 
 💑 **İlişkisi Olanlar:** Partnerinizle güzel sürprizler yaşayabilirsiniz.
 
-🌹 Altın rengi bu G�nl�k aşk hayatınızda şans getirebilir.
+🌹 Altın rengi bu Gnlk aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Yaratıcılık özelliğiniz sayesinde G�nl�k boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Yaratıcılık özelliğiniz sayesinde Gnlk boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Tasarım alanında fırsatlar değerlendirilebilir.
 
-📈 Bu G�nl�k ek gelir için uygun zaman.
+📈 Bu Gnlk ek gelir için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 🔥 Enerji seviyeniz yüksek olacak. Aktif sporları tercih edin.
 
-⚖️ Bu G�nl�k genel sağlık durumunuz iyi olacak.
+⚖️ Bu Gnlk genel sağlık durumunuz iyi olacak.
 
-## 🎯 G�nl�k Tavsiyeleri
+## 🎯 Gnlk Tavsiyeleri
 
-1. **Yaratıcılık** özelliğinizi bu G�nl�k daha aktif kullanın
+1. **Yaratıcılık** özelliğinizi bu Gnlk daha aktif kullanın
 2. **Kibir** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Altın** rengi bu G�nl�k şansınızı artıracak
+3. **Altın** rengi bu Gnlk şansınızı artıracak
 4. **İkizler** burcu ile işbirliği yapın
 5. **Yöneticilik** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Ateş elementi size G�nl�k boyunca güç verecek ve hedeflerinize odaklanmanız�
 
 ## 💫 Sonuç
 
-Bu G�nl�k sonunda kendinizi daha güçlü ve drama hissedeceksiniz.
+Bu Gnlk sonunda kendinizi daha güçlü ve drama hissedeceksiniz.
 
 ---
 

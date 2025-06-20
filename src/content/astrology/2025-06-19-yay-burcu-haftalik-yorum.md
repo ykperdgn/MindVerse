@@ -1,13 +1,13 @@
 ---
-title: "Yaratıcılığın Zirvesi - Yay Burcu Haftal�k Yorumu"
+title: "Yaratıcılığın Zirvesi - Yay Burcu Haftalk Yorumu"
 description: "Yay burcu için detaylı astroloji yorumu. yaratıcılığın zirvesi konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["yay burcu", "haftal�k yorum", "astroloji", "burç yorumu"]
+tags: ["yay burcu", "haftalk yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Yay Burcu Haftal�k Yorumu
+# Yay Burcu Haftalk Yorumu
 
 🏹 **Yay Burcu** (**22 Kasım - 21 Aralık**)
 
@@ -21,11 +21,11 @@ Bu hafta Yay burcu için Venüs etkisiyle yaratıcılığın zirvesi dönemine g
 
 **Dikkat Edilmesi Gerekenler:** Sabırsızlık, Düşüncesizlik, Aşırı dürüstlük, Sorumluluktan kaçış
 
-## 💫 Haftal�k Genel Durum
+## 💫 Haftalk Genel Durum
 
-Venüs gezenenin etkisiyle bu Haftal�k döneminde Yay burcu için uyum enerjisi ön plana çıkacak.
+Venüs gezenenin etkisiyle bu Haftalk döneminde Yay burcu için uyum enerjisi ön plana çıkacak.
 
-Bu Haftal�k Jüpiter gezereninizin etkisiyle maceraperest yanınız öne çıkacak.
+Bu Haftalk Jüpiter gezereninizin etkisiyle maceraperest yanınız öne çıkacak.
 
 ## 💕 Aşk ve İlişkiler
 
@@ -33,27 +33,27 @@ Bu Haftal�k Jüpiter gezereninizin etkisiyle maceraperest yanınız öne çıkac
 
 💑 **İlişkisi Olanlar:** Partnerinizle daha derin bağlar yaşayabilirsiniz.
 
-🌹 Mor rengi bu Haftal�k aşk hayatınızda şans getirebilir.
+🌹 Mor rengi bu Haftalk aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Özgürlük sevgisi özelliğiniz sayesinde Haftal�k boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Özgürlük sevgisi özelliğiniz sayesinde Haftalk boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Turizm alanında fırsatlar değerlendirilebilir.
 
-📈 Bu Haftal�k yeni projeler için uygun zaman.
+📈 Bu Haftalk yeni projeler için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 🔥 Enerji seviyeniz yüksek olacak. Aktif sporları tercih edin.
 
-⚖️ Bu Haftal�k genel sağlık durumunuz iyi olacak.
+⚖️ Bu Haftalk genel sağlık durumunuz iyi olacak.
 
-## 🎯 Haftal�k Tavsiyeleri
+## 🎯 Haftalk Tavsiyeleri
 
-1. **Macera ruhu** özelliğinizi bu Haftal�k daha aktif kullanın
+1. **Macera ruhu** özelliğinizi bu Haftalk daha aktif kullanın
 2. **Düşüncesizlik** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Mor** rengi bu Haftal�k şansınızı artıracak
+3. **Mor** rengi bu Haftalk şansınızı artıracak
 4. **Koç** burcu ile işbirliği yapın
 5. **Yayıncılık** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Bu Haftal�k Jüpiter gezereninizin etkisiyle maceraperest yanınız öne çıkac
 
 ## 💫 Sonuç
 
-Yay burcu olarak doğal yeteneklerinizi kullanarak bu Haftal�k büyük adımlar atabilirsiniz.
+Yay burcu olarak doğal yeteneklerinizi kullanarak bu Haftalk büyük adımlar atabilirsiniz.
 
 ---
 

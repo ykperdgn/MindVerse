@@ -1,13 +1,13 @@
 ---
-title: "Yaratıcılığın Zirvesi - Yengeç Burcu Haftal�k Yorumu"
+title: "Yaratıcılığın Zirvesi - Yengeç Burcu Haftalk Yorumu"
 description: "Yengeç burcu için detaylı astroloji yorumu. yaratıcılığın zirvesi konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["yengeç burcu", "haftal�k yorum", "astroloji", "burç yorumu"]
+tags: ["yengeç burcu", "haftalk yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Yengeç Burcu Haftal�k Yorumu
+# Yengeç Burcu Haftalk Yorumu
 
 🦀 **Yengeç Burcu** (**21 Haziran - 22 Temmuz**)
 
@@ -21,9 +21,9 @@ Bu hafta Yengeç burcu için Uranüs etkisiyle yaratıcılığın zirvesi dönem
 
 **Dikkat Edilmesi Gerekenler:** Aşırı duyarlılık, Geçmişe takılma, Değişken ruh hali, Savunmacı tutum
 
-## 💫 Haftal�k Genel Durum
+## 💫 Haftalk Genel Durum
 
-Uranüs gezenenin etkisiyle bu Haftal�k döneminde Yengeç burcu için değişim enerjisi ön plana çıkacak.
+Uranüs gezenenin etkisiyle bu Haftalk döneminde Yengeç burcu için değişim enerjisi ön plana çıkacak.
 
 Yengeç burcu olarak doğal duygusal özelliğiniz bu dönemde avantajınız olacak.
 
@@ -33,27 +33,27 @@ Yengeç burcu olarak doğal duygusal özelliğiniz bu dönemde avantajınız ola
 
 💑 **İlişkisi Olanlar:** Partnerinizle güzel sürprizler yaşayabilirsiniz.
 
-🌹 Gümüş rengi bu Haftal�k aşk hayatınızda şans getirebilir.
+🌹 Gümüş rengi bu Haftalk aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Koruyuculuk özelliğiniz sayesinde Haftal�k boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Koruyuculuk özelliğiniz sayesinde Haftalk boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Eğitim alanında fırsatlar değerlendirilebilir.
 
-📈 Bu Haftal�k ek gelir için uygun zaman.
+📈 Bu Haftalk ek gelir için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 💧 Duygusal dengeniz önemli. Su sporları ve meditasyon faydalı olacak.
 
-⚖️ Bu Haftal�k genel sağlık durumunuz iyi olacak.
+⚖️ Bu Haftalk genel sağlık durumunuz iyi olacak.
 
-## 🎯 Haftal�k Tavsiyeleri
+## 🎯 Haftalk Tavsiyeleri
 
-1. **Koruyuculuk** özelliğinizi bu Haftal�k daha aktif kullanın
+1. **Koruyuculuk** özelliğinizi bu Haftalk daha aktif kullanın
 2. **Geçmişe takılma** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Gümüş** rengi bu Haftal�k şansınızı artıracak
+3. **Gümüş** rengi bu Haftalk şansınızı artıracak
 4. **Boğa** burcu ile işbirliği yapın
 5. **Beslenme** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Yengeç burcu olarak doğal duygusal özelliğiniz bu dönemde avantajınız ola
 
 ## 💫 Sonuç
 
-Yengeç burcu olarak doğal yeteneklerinizi kullanarak bu Haftal�k büyük adımlar atabilirsiniz.
+Yengeç burcu olarak doğal yeteneklerinizi kullanarak bu Haftalk büyük adımlar atabilirsiniz.
 
 ---
 

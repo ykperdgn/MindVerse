@@ -14,12 +14,15 @@ export default defineConfig({
     },
     edgeMiddleware: false,
     functionPerRoute: false,
-  }),
-  markdown: {
+  }),  markdown: {
     shikiConfig: {
       theme: 'nord',
     },
   },
+  build: {
+    inlineStylesheets: 'auto',
+  },
+  compressHTML: false,
   vite: {
     define: {
       __DATE__: `"${new Date().toISOString()}"`,

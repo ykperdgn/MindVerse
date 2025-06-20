@@ -1,13 +1,13 @@
 ---
-title: "Yaratıcılığın Zirvesi - Başak Burcu Haftal�k Yorumu"
+title: "Yaratıcılığın Zirvesi - Başak Burcu Haftalk Yorumu"
 description: "Başak burcu için detaylı astroloji yorumu. yaratıcılığın zirvesi konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["başak burcu", "haftal�k yorum", "astroloji", "burç yorumu"]
+tags: ["başak burcu", "haftalk yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Başak Burcu Haftal�k Yorumu
+# Başak Burcu Haftalk Yorumu
 
 👩‍🌾 **Başak Burcu** (**23 Ağustos - 22 Eylül**)
 
@@ -21,11 +21,11 @@ Bu hafta Başak burcu için Mars etkisiyle yaratıcılığın zirvesi dönemine 
 
 **Dikkat Edilmesi Gerekenler:** Aşırı eleştiri, Endişe, Mükemmeliyetçilik, Katılık
 
-## 💫 Haftal�k Genel Durum
+## 💫 Haftalk Genel Durum
 
-Mars gezenenin etkisiyle bu Haftal�k döneminde Başak burcu için girişkenlik enerjisi ön plana çıkacak.
+Mars gezenenin etkisiyle bu Haftalk döneminde Başak burcu için girişkenlik enerjisi ön plana çıkacak.
 
-Toprak elementi size Haftal�k boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
+Toprak elementi size Haftalk boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
 
 ## 💕 Aşk ve İlişkiler
 
@@ -33,27 +33,27 @@ Toprak elementi size Haftal�k boyunca güç verecek ve hedeflerinize odaklanman�
 
 💑 **İlişkisi Olanlar:** Partnerinizle özel aktiviteler yaşayabilirsiniz.
 
-🌹 Kahverengi rengi bu Haftal�k aşk hayatınızda şans getirebilir.
+🌹 Kahverengi rengi bu Haftalk aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Güvenilirlik özelliğiniz sayesinde Haftal�k boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Güvenilirlik özelliğiniz sayesinde Haftalk boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Hukuk alanında fırsatlar değerlendirilebilir.
 
-📈 Bu Haftal�k yeni projeler için uygun zaman.
+📈 Bu Haftalk yeni projeler için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 🌱 Vücudunuzla uyum içinde olacaksınız. Doğal beslenmeye önem verin.
 
-⚖️ Bu Haftal�k genel sağlık durumunuz iyi olacak.
+⚖️ Bu Haftalk genel sağlık durumunuz iyi olacak.
 
-## 🎯 Haftal�k Tavsiyeleri
+## 🎯 Haftalk Tavsiyeleri
 
-1. **Detay odağı** özelliğinizi bu Haftal�k daha aktif kullanın
+1. **Detay odağı** özelliğinizi bu Haftalk daha aktif kullanın
 2. **Aşırı eleştiri** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Kahverengi** rengi bu Haftal�k şansınızı artıracak
+3. **Kahverengi** rengi bu Haftalk şansınızı artıracak
 4. **Yengeç** burcu ile işbirliği yapın
 5. **Hukuk** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Toprak elementi size Haftal�k boyunca güç verecek ve hedeflerinize odaklanman�
 
 ## 💫 Sonuç
 
-Başak burcu olarak doğal yeteneklerinizi kullanarak bu Haftal�k büyük adımlar atabilirsiniz.
+Başak burcu olarak doğal yeteneklerinizi kullanarak bu Haftalk büyük adımlar atabilirsiniz.
 
 ---
 

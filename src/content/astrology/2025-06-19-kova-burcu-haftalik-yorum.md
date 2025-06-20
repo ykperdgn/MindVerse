@@ -1,13 +1,13 @@
 ---
-title: "Dönüşüm Haftası - Kova Burcu Haftal�k Yorumu"
+title: "Dönüşüm Haftası - Kova Burcu Haftalk Yorumu"
 description: "Kova burcu için detaylı astroloji yorumu. dönüşüm haftası konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["kova burcu", "haftal�k yorum", "astroloji", "burç yorumu"]
+tags: ["kova burcu", "haftalk yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Kova Burcu Haftal�k Yorumu
+# Kova Burcu Haftalk Yorumu
 
 🏺 **Kova Burcu** (**20 Ocak - 18 Şubat**)
 
@@ -21,11 +21,11 @@ Bu hafta Kova burcu için Neptün etkisiyle dönüşüm haftası dönemine giriy
 
 **Dikkat Edilmesi Gerekenler:** Duygusal mesafe, İnatçılık, Aşırı idealizm, Soğukluk
 
-## 💫 Haftal�k Genel Durum
+## 💫 Haftalk Genel Durum
 
-Neptün gezenenin etkisiyle bu Haftal�k döneminde Kova burcu için rüyalar enerjisi ön plana çıkacak.
+Neptün gezenenin etkisiyle bu Haftalk döneminde Kova burcu için rüyalar enerjisi ön plana çıkacak.
 
-Bu Haftal�k Uranüs/Satürn gezereninizin etkisiyle yenilikçi yanınız öne çıkacak.
+Bu Haftalk Uranüs/Satürn gezereninizin etkisiyle yenilikçi yanınız öne çıkacak.
 
 ## 💕 Aşk ve İlişkiler
 
@@ -33,27 +33,27 @@ Bu Haftal�k Uranüs/Satürn gezereninizin etkisiyle yenilikçi yanınız öne ç
 
 💑 **İlişkisi Olanlar:** Partnerinizle daha derin bağlar yaşayabilirsiniz.
 
-🌹 Elektrik Mavisi rengi bu Haftal�k aşk hayatınızda şans getirebilir.
+🌹 Elektrik Mavisi rengi bu Haftalk aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Özgünlük özelliğiniz sayesinde Haftal�k boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Özgünlük özelliğiniz sayesinde Haftalk boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Bilim alanında fırsatlar değerlendirilebilir.
 
-📈 Bu Haftal�k terfi fırsatları için uygun zaman.
+📈 Bu Haftalk terfi fırsatları için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 💨 Zihinsel aktifiteniz artacak. Nefes egzerzilerine zaman ayırın.
 
-⚖️ Bu Haftal�k genel sağlık durumunuz iyi olacak.
+⚖️ Bu Haftalk genel sağlık durumunuz iyi olacak.
 
-## 🎯 Haftal�k Tavsiyeleri
+## 🎯 Haftalk Tavsiyeleri
 
-1. **İnsancıllık** özelliğinizi bu Haftal�k daha aktif kullanın
+1. **İnsancıllık** özelliğinizi bu Haftalk daha aktif kullanın
 2. **İnatçılık** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Elektrik Mavisi** rengi bu Haftal�k şansınızı artıracak
+3. **Elektrik Mavisi** rengi bu Haftalk şansınızı artıracak
 4. **Terazi** burcu ile işbirliği yapın
 5. **Teknoloji** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Bu Haftal�k Uranüs/Satürn gezereninizin etkisiyle yenilikçi yanınız öne ç
 
 ## 💫 Sonuç
 
-Bu Haftal�k sonunda kendinizi daha güçlü ve yenilikçi hissedeceksiniz.
+Bu Haftalk sonunda kendinizi daha güçlü ve yenilikçi hissedeceksiniz.
 
 ---
 

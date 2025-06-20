@@ -1,13 +1,13 @@
 ---
-title: "Yaratıcılığın Zirvesi - İkizler Burcu Haftal�k Yorumu"
+title: "Yaratıcılığın Zirvesi - İkizler Burcu Haftalk Yorumu"
 description: "İkizler burcu için detaylı astroloji yorumu. yaratıcılığın zirvesi konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["i̇kizler burcu", "haftal�k yorum", "astroloji", "burç yorumu"]
+tags: ["i̇kizler burcu", "haftalk yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# İkizler Burcu Haftal�k Yorumu
+# İkizler Burcu Haftalk Yorumu
 
 👯 **İkizler Burcu** (**21 Mayıs - 20 Haziran**)
 
@@ -21,11 +21,11 @@ Bu hafta İkizler burcu için Neptün etkisiyle yaratıcılığın zirvesi döne
 
 **Dikkat Edilmesi Gerekenler:** Kararsızlık, Yüzeysellik, Sabırsızlık, Güvenilmezlik
 
-## 💫 Haftal�k Genel Durum
+## 💫 Haftalk Genel Durum
 
-Neptün gezenenin etkisiyle bu Haftal�k döneminde İkizler burcu için spiritüalite enerjisi ön plana çıkacak.
+Neptün gezenenin etkisiyle bu Haftalk döneminde İkizler burcu için spiritüalite enerjisi ön plana çıkacak.
 
-Bu Haftal�k Merkür gezereninizin etkisiyle zeki yanınız öne çıkacak.
+Bu Haftalk Merkür gezereninizin etkisiyle zeki yanınız öne çıkacak.
 
 ## 💕 Aşk ve İlişkiler
 
@@ -33,27 +33,27 @@ Bu Haftal�k Merkür gezereninizin etkisiyle zeki yanınız öne çıkacak.
 
 💑 **İlişkisi Olanlar:** Partnerinizle daha derin bağlar yaşayabilirsiniz.
 
-🌹 Sarı rengi bu Haftal�k aşk hayatınızda şans getirebilir.
+🌹 Sarı rengi bu Haftalk aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** İletişim özelliğiniz sayesinde Haftal�k boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** İletişim özelliğiniz sayesinde Haftalk boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Yazarlık alanında fırsatlar değerlendirilebilir.
 
-📈 Bu Haftal�k yeni projeler için uygun zaman.
+📈 Bu Haftalk yeni projeler için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 💨 Zihinsel aktifiteniz artacak. Nefes egzerzilerine zaman ayırın.
 
-⚖️ Bu Haftal�k genel sağlık durumunuz iyi olacak.
+⚖️ Bu Haftalk genel sağlık durumunuz iyi olacak.
 
-## 🎯 Haftal�k Tavsiyeleri
+## 🎯 Haftalk Tavsiyeleri
 
-1. **Zeka** özelliğinizi bu Haftal�k daha aktif kullanın
+1. **Zeka** özelliğinizi bu Haftalk daha aktif kullanın
 2. **Yüzeysellik** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Sarı** rengi bu Haftal�k şansınızı artıracak
+3. **Sarı** rengi bu Haftalk şansınızı artıracak
 4. **Koç** burcu ile işbirliği yapın
 5. **Teknoloji** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Bu Haftal�k Merkür gezereninizin etkisiyle zeki yanınız öne çıkacak.
 
 ## 💫 Sonuç
 
-Bu Haftal�k İkizler burcu için yaratıcılığın zirvesi yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.
+Bu Haftalk İkizler burcu için yaratıcılığın zirvesi yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.
 
 ---
 

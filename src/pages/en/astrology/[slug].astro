@@ -23,6 +23,12 @@ export async function getStaticPaths() {
 
 const { sign } = Astro.props;
 
+// Safety check for sign object
+if (!sign || !sign.name) {
+  console.error('Sign object is undefined or invalid:', sign);
+  return Astro.redirect('/en/astrology');
+}
+
 // Generate today's horoscope content
 const today = new Date();
 const dateString = today.toLocaleDateString('en-US', {

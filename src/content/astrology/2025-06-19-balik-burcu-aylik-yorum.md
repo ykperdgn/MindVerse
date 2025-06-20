@@ -1,13 +1,13 @@
 ---
-title: "Aşkın Gücü - Balık Burcu Ayl�k Yorumu"
+title: "Aşkın Gücü - Balık Burcu Aylk Yorumu"
 description: "Balık burcu için detaylı astroloji yorumu. aşkın gücü konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["balık burcu", "ayl�k yorum", "astroloji", "burç yorumu"]
+tags: ["balık burcu", "aylk yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Balık Burcu Ayl�k Yorumu
+# Balık Burcu Aylk Yorumu
 
 🐟 **Balık Burcu** (**19 Şubat - 20 Mart**)
 
@@ -21,11 +21,11 @@ Bu ay Balık burcu için Merkür gezeninizin güçlü etkisiyle aşkın gücü y
 
 **Dikkat Edilmesi Gerekenler:** Aşırı duyarlılık, Kaçış eğilimi, Sınır eksikliği, Hayalperestlik
 
-## 💫 Ayl�k Genel Durum
+## 💫 Aylk Genel Durum
 
-Merkür gezenenin etkisiyle bu Ayl�k döneminde Balık burcu için iletişim enerjisi ön plana çıkacak.
+Merkür gezenenin etkisiyle bu Aylk döneminde Balık burcu için iletişim enerjisi ön plana çıkacak.
 
-Su elementi size Ayl�k boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
+Su elementi size Aylk boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
 
 ## 💕 Aşk ve İlişkiler
 
@@ -33,27 +33,27 @@ Su elementi size Ayl�k boyunca güç verecek ve hedeflerinize odaklanmanızı sa
 
 💑 **İlişkisi Olanlar:** Partnerinizle romantik anlar yaşayabilirsiniz.
 
-🌹 Deniz Yeşili rengi bu Ayl�k aşk hayatınızda şans getirebilir.
+🌹 Deniz Yeşili rengi bu Aylk aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Ruhsal bağ özelliğiniz sayesinde Ayl�k boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Ruhsal bağ özelliğiniz sayesinde Aylk boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Müzik alanında fırsatlar değerlendirilebilir.
 
-📈 Bu Ayl�k yeni projeler için uygun zaman.
+📈 Bu Aylk yeni projeler için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 💧 Duygusal dengeniz önemli. Su sporları ve meditasyon faydalı olacak.
 
-⚖️ Bu Ayl�k genel sağlık durumunuz iyi olacak.
+⚖️ Bu Aylk genel sağlık durumunuz iyi olacak.
 
-## 🎯 Ayl�k Tavsiyeleri
+## 🎯 Aylk Tavsiyeleri
 
-1. **Ruhsal bağ** özelliğinizi bu Ayl�k daha aktif kullanın
+1. **Ruhsal bağ** özelliğinizi bu Aylk daha aktif kullanın
 2. **Hayalperestlik** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Deniz Yeşili** rengi bu Ayl�k şansınızı artıracak
+3. **Deniz Yeşili** rengi bu Aylk şansınızı artıracak
 4. **Oğlak** burcu ile işbirliği yapın
 5. **Müzik** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Su elementi size Ayl�k boyunca güç verecek ve hedeflerinize odaklanmanızı sa
 
 ## 💫 Sonuç
 
-Balık burcu olarak doğal yeteneklerinizi kullanarak bu Ayl�k büyük adımlar atabilirsiniz.
+Balık burcu olarak doğal yeteneklerinizi kullanarak bu Aylk büyük adımlar atabilirsiniz.
 
 ---
 

@@ -33,27 +33,27 @@ Su elementi size haftalık boyunca güç verecek ve hedeflerinize odaklanmanız�
 
 💑 **İlişkisi Olanlar:** Partnerinizle güzel sürprizler yaşayabilirsiniz.
 
-🌹 Bordo rengi bu Haftal�k aşk hayatınızda şans getirebilir.
+🌹 Bordo rengi bu Haftalk aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Sezgi özelliğiniz sayesinde Haftal�k boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Sezgi özelliğiniz sayesinde Haftalk boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Tıp alanında fırsatlar değerlendirilebilir.
 
-📈 Bu Haftal�k yeni projeler için uygun zaman.
+📈 Bu Haftalk yeni projeler için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 💧 Duygusal dengeniz önemli. Su sporları ve meditasyon faydalı olacak.
 
-⚖️ Bu Haftal�k genel sağlık durumunuz iyi olacak.
+⚖️ Bu Haftalk genel sağlık durumunuz iyi olacak.
 
-## 🎯 Haftal�k Tavsiyeleri
+## 🎯 Haftalk Tavsiyeleri
 
-1. **Kararlılık** özelliğinizi bu Haftal�k daha aktif kullanın
+1. **Kararlılık** özelliğinizi bu Haftalk daha aktif kullanın
 2. **Şüphecilik** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Bordo** rengi bu Haftal�k şansınızı artıracak
+3. **Bordo** rengi bu Haftalk şansınızı artıracak
 4. **Başak** burcu ile işbirliği yapın
 5. **Araştırma** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Su elementi size haftalık boyunca güç verecek ve hedeflerinize odaklanmanız�
 
 ## 💫 Sonuç
 
-Bu Haftal�k Akrep burcu için i̇lişkilerde derinlik yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.
+Bu Haftalk Akrep burcu için i̇lişkilerde derinlik yaşayacağınız, kişisel gelişiminizi destekleyecek bir dönem olacak.
 
 ---
 

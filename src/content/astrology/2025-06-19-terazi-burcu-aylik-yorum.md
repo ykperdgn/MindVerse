@@ -1,13 +1,13 @@
 ---
-title: "Büyük Dönüşümler - Terazi Burcu Ayl�k Yorumu"
+title: "Büyük Dönüşümler - Terazi Burcu Aylk Yorumu"
 description: "Terazi burcu için detaylı astroloji yorumu. büyük dönüşümler konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["terazi burcu", "ayl�k yorum", "astroloji", "burç yorumu"]
+tags: ["terazi burcu", "aylk yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Terazi Burcu Ayl�k Yorumu
+# Terazi Burcu Aylk Yorumu
 
 ⚖️ **Terazi Burcu** (**23 Eylül - 22 Ekim**)
 
@@ -21,11 +21,11 @@ Bu ay Terazi burcu için Mars gezeninizin güçlü etkisiyle büyük dönüşüm
 
 **Dikkat Edilmesi Gerekenler:** Kararsızlık, Çelişki korkusu, Bağımlılık, Yüzeysellik
 
-## 💫 Ayl�k Genel Durum
+## 💫 Aylk Genel Durum
 
-Mars gezenenin etkisiyle bu Ayl�k döneminde Terazi burcu için cesaret enerjisi ön plana çıkacak.
+Mars gezenenin etkisiyle bu Aylk döneminde Terazi burcu için cesaret enerjisi ön plana çıkacak.
 
-Hava elementi size Ayl�k boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
+Hava elementi size Aylk boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
 
 ## 💕 Aşk ve İlişkiler
 
@@ -33,27 +33,27 @@ Hava elementi size Ayl�k boyunca güç verecek ve hedeflerinize odaklanmanızı 
 
 💑 **İlişkisi Olanlar:** Partnerinizle romantik anlar yaşayabilirsiniz.
 
-🌹 Pembe rengi bu Ayl�k aşk hayatınızda şans getirebilir.
+🌹 Pembe rengi bu Aylk aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Estetik anlayışı özelliğiniz sayesinde Ayl�k boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Estetik anlayışı özelliğiniz sayesinde Aylk boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** İnsan kaynakları alanında fırsatlar değerlendirilebilir.
 
-📈 Bu Ayl�k iş birliği için uygun zaman.
+📈 Bu Aylk iş birliği için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 💨 Zihinsel aktifiteniz artacak. Nefes egzerzilerine zaman ayırın.
 
-⚖️ Bu Ayl�k genel sağlık durumunuz iyi olacak.
+⚖️ Bu Aylk genel sağlık durumunuz iyi olacak.
 
-## 🎯 Ayl�k Tavsiyeleri
+## 🎯 Aylk Tavsiyeleri
 
-1. **Diplomasi** özelliğinizi bu Ayl�k daha aktif kullanın
+1. **Diplomasi** özelliğinizi bu Aylk daha aktif kullanın
 2. **Bağımlılık** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Pembe** rengi bu Ayl�k şansınızı artıracak
+3. **Pembe** rengi bu Aylk şansınızı artıracak
 4. **Kova** burcu ile işbirliği yapın
 5. **Sanat** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Hava elementi size Ayl�k boyunca güç verecek ve hedeflerinize odaklanmanızı 
 
 ## 💫 Sonuç
 
-Bu Ayl�k sonunda kendinizi daha güçlü ve sosyal hissedeceksiniz.
+Bu Aylk sonunda kendinizi daha güçlü ve sosyal hissedeceksiniz.
 
 ---
 

@@ -1,13 +1,13 @@
 ---
-title: "Yaratıcılık Zamanı - Yay Burcu G�nl�k Yorumu"
+title: "Yaratıcılık Zamanı - Yay Burcu Gnlk Yorumu"
 description: "Yay burcu için detaylı astroloji yorumu. yaratıcılık zamanı konusunda rehberlik."
 pubDate: 2025-06-19
 category: "astrology"
-tags: ["yay burcu", "g�nl�k yorum", "astroloji", "burç yorumu"]
+tags: ["yay burcu", "gnlk yorum", "astroloji", "burç yorumu"]
 heroImage: "/social-media/og-image.jpg"
 ---
 
-# Yay Burcu G�nl�k Yorumu
+# Yay Burcu Gnlk Yorumu
 
 🏹 **Yay Burcu** (**22 Kasım - 21 Aralık**)
 
@@ -21,11 +21,11 @@ Bugün Yay burcu için Venüs gezeninizin etkisiyle yaratıcılık zamanı yaşa
 
 **Dikkat Edilmesi Gerekenler:** Sabırsızlık, Düşüncesizlik, Aşırı dürüstlük, Sorumluluktan kaçış
 
-## 💫 G�nl�k Genel Durum
+## 💫 Gnlk Genel Durum
 
-Venüs gezenenin etkisiyle bu G�nl�k döneminde Yay burcu için güzellik enerjisi ön plana çıkacak.
+Venüs gezenenin etkisiyle bu Gnlk döneminde Yay burcu için güzellik enerjisi ön plana çıkacak.
 
-Ateş elementi size G�nl�k boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
+Ateş elementi size Gnlk boyunca güç verecek ve hedeflerinize odaklanmanızı sağlayacak.
 
 ## 💕 Aşk ve İlişkiler
 
@@ -33,27 +33,27 @@ Ateş elementi size G�nl�k boyunca güç verecek ve hedeflerinize odaklanmanız�
 
 💑 **İlişkisi Olanlar:** Partnerinizle güzel sürprizler yaşayabilirsiniz.
 
-🌹 Mor rengi bu G�nl�k aşk hayatınızda şans getirebilir.
+🌹 Mor rengi bu Gnlk aşk hayatınızda şans getirebilir.
 
 ## 💼 Kariyer ve Para
 
-🚀 **İş Hayatı:** Özgürlük sevgisi özelliğiniz sayesinde G�nl�k boyunca dikkat çekeceksiniz.
+🚀 **İş Hayatı:** Özgürlük sevgisi özelliğiniz sayesinde Gnlk boyunca dikkat çekeceksiniz.
 
 💰 **Mali Durum:** Felsefe alanında fırsatlar değerlendirilebilir.
 
-📈 Bu G�nl�k ek gelir için uygun zaman.
+📈 Bu Gnlk ek gelir için uygun zaman.
 
 ## 🏃‍♀️ Sağlık ve Enerji
 
 🔥 Enerji seviyeniz yüksek olacak. Aktif sporları tercih edin.
 
-⚖️ Bu G�nl�k genel sağlık durumunuz iyi olacak.
+⚖️ Bu Gnlk genel sağlık durumunuz iyi olacak.
 
-## 🎯 G�nl�k Tavsiyeleri
+## 🎯 Gnlk Tavsiyeleri
 
-1. **Felsefi düşünce** özelliğinizi bu G�nl�k daha aktif kullanın
+1. **Felsefi düşünce** özelliğinizi bu Gnlk daha aktif kullanın
 2. **Sabırsızlık** konusunda dikkatli olun ve kendinizi geliştirin
-3. **Mor** rengi bu G�nl�k şansınızı artıracak
+3. **Mor** rengi bu Gnlk şansınızı artıracak
 4. **Kova** burcu ile işbirliği yapın
 5. **Yayıncılık** alanında fırsatları değerlendirin
 
@@ -69,7 +69,7 @@ Ateş elementi size G�nl�k boyunca güç verecek ve hedeflerinize odaklanmanız�
 
 ## 💫 Sonuç
 
-Yay burcu olarak doğal yeteneklerinizi kullanarak bu G�nl�k büyük adımlar atabilirsiniz.
+Yay burcu olarak doğal yeteneklerinizi kullanarak bu Gnlk büyük adımlar atabilirsiniz.
 
 ---
 
