@@ -1,0 +1,183 @@
+---
+export interface Props {
+	title: string;
+	description?: string;
+	keywords?: string;
+	ogImage?: string;
+	canonicalUrl?: string;
+}
+
+const { title, description = "MindVerse Daily - Astroloji, Teknoloji, Uzay ve yaşam hakkında güncel içerikler", keywords = "astroloji, teknoloji, uzay, yaşam, günlük burç yorumları", ogImage = "/og-default.jpg", canonicalUrl } = Astro.props;
+
+const canonicalURL = canonicalUrl || new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="tr" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+
+		<!-- Primary Meta Tags -->
+		<title>{title}</title>
+		<meta name="title" content={title} />
+		<meta name="description" content={description} />
+		<meta name="keywords" content={keywords} />
+		<meta name="author" content="MindVerse Daily" />
+		<meta name="robots" content="index, follow" />
+
+		<!-- Canonical URL -->
+		<link rel="canonical" href={canonicalURL} />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={new URL(ogImage, Astro.site)} />
+		<meta property="og:site_name" content="MindVerse Daily" />
+		<meta property="og:locale" content="tr_TR" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={canonicalURL} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content={new URL(ogImage, Astro.site)} />
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+		<!-- Theme -->
+		<meta name="theme-color" content="#3b82f6" />
+		<meta name="color-scheme" content="light dark" />
+
+		<!-- Preload critical resources -->
+		<link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin />
+
+		<!-- JSON-LD Schema -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebSite",
+			"name": "MindVerse Daily",
+			"description": "Astroloji, teknoloji, uzay ve yaşam hakkında güncel içerikler",
+			"url": "https://www.mindversedaily.com",
+			"potentialAction": {
+				"@type": "SearchAction",
+				"target": "https://www.mindversedaily.com/search?q={search_term_string}",
+				"query-input": "required name=search_term_string"
+			}
+		}
+		</script>
+
+		<!-- Performance and Security -->
+		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+		<meta http-equiv="X-Frame-Options" content="DENY" />
+		<meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+		<meta name="referrer" content="strict-origin-when-cross-origin" />
+	</head>
+	<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-inter antialiased">
+		<!-- Skip to content link for accessibility -->
+		<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded-md">
+			Ana içeriğe geç
+		</a>
+
+		<!-- Main content area -->
+		<div id="main-content" class="min-h-screen flex flex-col">
+			<slot />
+		</div>
+
+		<!-- Analytics and tracking scripts -->
+		<script>
+			// Theme detection and management
+			if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+				document.documentElement.classList.add('dark')
+			} else {
+				document.documentElement.classList.remove('dark')
+			}
+		</script>
+
+		<!-- Service Worker registration -->
+		<script>
+			if ('serviceWorker' in navigator) {
+				window.addEventListener('load', () => {
+					navigator.serviceWorker.register('/sw.js')
+						.then((registration) => {
+							console.log('SW registered: ', registration);
+						})
+						.catch((registrationError) => {
+							console.log('SW registration failed: ', registrationError);
+						});
+				});
+			}
+		</script>
+	</body>
+</html>
+
+<style>
+	html {
+		font-family: 'Inter', system-ui, sans-serif;
+		font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+	}
+
+	body {
+		font-synthesis: none;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	/* Custom scrollbar */
+	::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: #f1f5f9;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: #cbd5e1;
+		border-radius: 4px;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: #94a3b8;
+	}
+
+	/* Dark mode scrollbar */
+	.dark ::-webkit-scrollbar-track {
+		background: #1e293b;
+	}
+
+	.dark ::-webkit-scrollbar-thumb {
+		background: #475569;
+	}
+
+	.dark ::-webkit-scrollbar-thumb:hover {
+		background: #64748b;
+	}
+
+	/* Focus styles */
+	*:focus {
+		outline: 2px solid #3b82f6;
+		outline-offset: 2px;
+	}
+
+	/* Print styles */
+	@media print {
+		body {
+			background: white;
+			color: black;
+		}
+	}
+</style>

@@ -3,6 +3,8 @@ import Layout from '../../../components/Layout.astro';
 import RelatedPosts from '../../../components/RelatedPosts.astro';
 import { getCollection, getEntry } from 'astro:content';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const categories = ['health', 'love', 'history', 'psychology', 'space', 'quotes', 'astrology', 'art', 'cinema', 'technology'];
   const paths = [];

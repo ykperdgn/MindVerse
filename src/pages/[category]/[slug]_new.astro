@@ -1,0 +1,19 @@
+---
+import Layout from "../../layouts/Layout.astro";
+export const prerender = true;
+
+export async function getStaticPaths() {
+  return [
+    { params: { category: "test", slug: "test-article" } },
+  ];
+}
+
+const { category, slug } = Astro.params;
+---
+
+<Layout title="MindVerse Daily" description="Astroloji, teknoloji ve yaşam">
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-8">MindVerse Daily</h1>
+        <p>Bu sayfa geliştirilme aşamasındadır.</p>
+    </main>
+</Layout>
