@@ -45,13 +45,6 @@
       ]
     }
   ],
-  "redirects": [
-    {
-      "source": "/astrology/(.*)",
-      "destination": "/astrology/$1",
-      "permanent": false
-    }
-  ],
   "rewrites": [
     {
       "source": "/api/(.*)",

@@ -137,7 +137,7 @@ const relatedPosts = allPosts
         <h3 class="text-lg font-semibold mb-4">Bu yorumu paylaş:</h3>
         <div class="flex space-x-4">
           <a
-            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.data.title)}&url=${encodeURIComponent(`https://mindversedaily.com/astrology/${post.slug}`)}`}
+            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.data.title)}&url=${encodeURIComponent(`https://www.mindversedaily.com/astrology/${post.slug}`)}`}
             target="_blank"
             class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors"
           >
@@ -145,7 +145,7 @@ const relatedPosts = allPosts
           </a>
 
           <a
-            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://mindversedaily.com/astrology/${post.slug}`)}`}
+            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://www.mindversedaily.com/astrology/${post.slug}`)}`}
             target="_blank"
             class="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-colors"
           >
@@ -153,7 +153,7 @@ const relatedPosts = allPosts
           </a>
 
           <a
-            href={`https://api.whatsapp.com/send?text=${encodeURIComponent(post.data.title + ' ' + `https://mindversedaily.com/astrology/${post.slug}`)}`}
+            href={`https://api.whatsapp.com/send?text=${encodeURIComponent(post.data.title + ' ' + `https://www.mindversedaily.com/astrology/${post.slug}`)}`}
             target="_blank"
             class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors"
           >
@@ -245,11 +245,11 @@ const relatedPosts = allPosts
       "publisher": {
         "@type": "Organization",
         "name": "MindVerse Daily",
-        "url": "https://mindversedaily.com"
+        "url": "https://www.mindversedaily.com"
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": `https://mindversedaily.com/astrology/${post.slug}`
+        "@id": `https://www.mindversedaily.com/astrology/${post.slug}`
       },
       "keywords": post.data.tags?.join(', ') || '',
       "inLanguage": "tr-TR"

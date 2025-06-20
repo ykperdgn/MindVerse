@@ -802,7 +802,7 @@ Bugün özellikle {lucky_color.lower()} renk size şans getirebilir. Önemli kar
 
 ### Diğer Burç Yorumları
 
-Diğer burçların günlük yorumlarını da incelemek için [astroloji sayfamızı](/astrology) ziyaret edebilirsiniz.
+Diğer burçların günlük yorumlarını da incelemek için [astroloji sayfamızı](https://www.mindversedaily.com) ziyaret edebilirsiniz.
 """
 
         return frontmatter + content
@@ -894,7 +894,7 @@ The color {lucky_color.lower()} may bring you luck today. Trust your intuition w
 
 ### Other Zodiac Readings
 
-To check daily readings for other zodiac signs, visit our [astrology page](/en/astrology).
+To check daily readings for other zodiac signs, visit our [astrology page](https://www.mindversedaily.com/en).
 """
 
         return frontmatter + content
@@ -1113,8 +1113,7 @@ Bu hafta sizin için hazırladığımız özel içerikler:
 ### 🎯 Özel Öneriler
 Bu hafta özellikle kişisel gelişim alanında harika fırsatlar sizi bekliyor!
 
-Daha fazla içerik için sitemizi ziyaret edin: https://mindversedaily.com
-
+Daha fazla içerik için sitemizi ziyaret edin: https://www.mindversedaily.com
 Selamlar,
 MindVerse Ekibi
 """
@@ -1136,8 +1135,7 @@ Special content we've prepared for you this week:
 ### 🎯 Special Recommendations
 This week, especially great opportunities await you in personal development!
 
-Visit our website for more content: https://mindversedaily.com/en
-
+Visit our website for more content: https://www.mindversedaily.com
 Best regards,
 MindVerse Team
 """

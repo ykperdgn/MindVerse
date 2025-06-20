@@ -16,7 +16,7 @@ import subprocess
 
 class PerformanceTracker:
     def __init__(self):
-        self.site_url = "https://mindversedaily.com"
+        self.site_url = "https://www.mindversedaily.com"
         self.data_dir = Path("performance_data")
         self.data_dir.mkdir(exist_ok=True)
 

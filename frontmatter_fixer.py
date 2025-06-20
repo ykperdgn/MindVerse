@@ -117,7 +117,7 @@ class FrontmatterFixer:
                 <h2 class="text-2xl font-semibold mb-4">İletişim Bilgileri</h2>
                 <div class="space-y-3">
                     <p><strong>E-posta:</strong> info@mindversedaily.com</p>
-                    <p><strong>Website:</strong> www.mindversedaily.com</p>
+                    <p><strong>Website:</strong> https://www.mindversedaily.com</p>
                 </div>
             </div>
         </div>

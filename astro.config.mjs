@@ -6,7 +6,6 @@ import vercel from '@astrojs/vercel';
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://www.mindversedaily.com',
-  base: '/',
   output: 'server',
   adapter: vercel({
     webAnalytics: {

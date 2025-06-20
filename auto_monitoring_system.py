@@ -16,7 +16,7 @@ import subprocess
 
 class AutoMonitoringSystem:
     def __init__(self):
-        self.site_url = "https://mindversedaily.com"
+        self.site_url = "https://www.mindversedaily.com"
         self.monitoring_data = Path("monitoring_data.json")
         self.alerts_log = Path("alerts.log")
         self.config = self.load_config()

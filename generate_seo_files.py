@@ -12,7 +12,7 @@ def generate_sitemap():
 
     print("🗺️ Sitemap oluşturuluyor...")
 
-    base_url = "https://mindversedaily.com"
+    base_url = "https://www.mindversedaily.com"
 
     # XML namespace
     urlset = ET.Element("urlset")
@@ -118,14 +118,14 @@ def generate_rss_feed():
 
     # Channel bilgileri
     ET.SubElement(channel, "title").text = "MindVerse Daily - Astroloji ve Yaşam Rehberi"
-    ET.SubElement(channel, "link").text = "https://mindversedaily.com"
+    ET.SubElement(channel, "link").text = "https://www.mindversedaily.com"
     ET.SubElement(channel, "description").text = "Günlük burç yorumları, astroloji analizleri ve yaşam rehberliği"
     ET.SubElement(channel, "language").text = "tr-TR"
     ET.SubElement(channel, "lastBuildDate").text = datetime.now().strftime("%a, %d %b %Y %H:%M:%S GMT")
 
     # Atom link
     atom_link = ET.SubElement(channel, "atom:link")
-    atom_link.set("href", "https://mindversedaily.com/rss.xml")
+    atom_link.set("href", "https://www.mindversedaily.com/rss.xml")
     atom_link.set("rel", "self")
     atom_link.set("type", "application/rss+xml")
 
@@ -150,10 +150,10 @@ def generate_rss_feed():
 
                     item = ET.SubElement(channel, "item")
                     ET.SubElement(item, "title").text = title_match.group(1)
-                    ET.SubElement(item, "link").text = f"https://mindversedaily.com/astrology/{url_path}"
+                    ET.SubElement(item, "link").text = f"https://www.mindversedaily.com/astrology/{url_path}"
                     ET.SubElement(item, "description").text = desc_match.group(1)
                     ET.SubElement(item, "pubDate").text = "Wed, 19 Jun 2025 10:00:00 GMT"
-                    ET.SubElement(item, "guid").text = f"https://mindversedaily.com/astrology/{url_path}"
+                    ET.SubElement(item, "guid").text = f"https://www.mindversedaily.com/astrology/{url_path}"
 
             except Exception as e:
                 print(f"⚠️ RSS error: {e}")

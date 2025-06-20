@@ -226,7 +226,7 @@ class AdvancedAnalytics:
         try:
             # Site hızı testi
             start_time = time.time()
-            response = requests.get("https://mindversedaily.com", timeout=10)
+            response = requests.get("https://www.mindversedaily.com", timeout=10)
             response_time = time.time() - start_time
 
             technical_metrics = {

@@ -21,7 +21,7 @@ class MindVerseSiteAgent:
         self.base_dir = Path(".")
         self.content_dir = Path("src/content")
         self.pages_dir = Path("src/pages")
-        self.site_url = "https://mindversedaily.com"
+        self.site_url = "https://www.mindversedaily.com"
 
         # Analytics ve raporlama
         self.reports_dir = Path("reports")

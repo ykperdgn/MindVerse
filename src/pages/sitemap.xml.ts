@@ -28,7 +28,7 @@ const staticPages = [
   { url: '/quotes', lastmod: new Date().toISOString().split('T')[0], changefreq: 'daily', priority: '0.9' },
 ];
 
-const siteUrl = 'https://mindverse-orcin.vercel.app';
+const siteUrl = 'https://www.mindversedaily.com';
 const allUrls = [...staticPages, ...allPosts];
 
 // XML sitemap içeriği

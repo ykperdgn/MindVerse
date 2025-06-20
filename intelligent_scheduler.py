@@ -213,7 +213,7 @@ class IntelligentScheduler:
         try:
             # Basit site durumu kontrolü
             import requests
-            response = requests.get("https://mindversedaily.com", timeout=10)
+            response = requests.get("https://www.mindversedaily.com", timeout=10)
 
             if response.status_code == 200:
                 self.log("INFO", f"Site healthy - Response time: {response.elapsed.total_seconds():.2f}s")

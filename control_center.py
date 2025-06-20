@@ -39,7 +39,7 @@ except ImportError as e:
 
 class MindVerseControlCenter:
     def __init__(self):
-        self.site_url = "https://mindversedaily.com"
+        self.site_url = "https://www.mindversedaily.com"
         self.project_dir = Path(".")
 
         # Alt sistemleri başlat
