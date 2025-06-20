@@ -7,7 +7,7 @@ Handles daily content generation, builds, and deployment
 import os
 import subprocess
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 import json
 
@@ -132,15 +132,14 @@ class AutomatedDeployment:
 
     def deploy_to_github_pages(self):
         """Deploy to GitHub Pages (if configured)"""
-        self.log("🚀 Checking GitHub Pages deployment...")
-
-        # Check if .github/workflows exists
+        self.log("🚀 Checking GitHub Pages deployment...")        # Check if .github/workflows exists
         github_workflows = self.project_root / '.github' / 'workflows'
+
         if github_workflows.exists():
             # Commit and push changes
             commands = [
                 "git add .",
-                f'git commit -m "Daily content update - {datetime.now().strftime(\"%Y-%m-%d\")}"',
+                f'git commit -m "Daily content update - {datetime.now().strftime("%Y-%m-%d")}"',
                 "git push origin main"
             ]
 

@@ -318,7 +318,9 @@ class AdvancedAstrologyGenerator:
             sign=sign_data["name"],
             theme=theme,
             date=datetime.now().strftime("%d %B")
-        )        # İçerik oluştur
+        )
+
+        # İçerik oluştur
         content = self._generate_detailed_content(sign_data, "daily", theme)
 
         # Slug oluştur
@@ -335,7 +337,9 @@ class AdvancedAstrologyGenerator:
     def generate_weekly_content(self, sign: str = None) -> Dict[str, str]:
         """Haftalık burç yorumu oluştur."""
         if not sign:
-            sign = self.get_random_sign()        sign_data = self.zodiac_signs[sign]
+            sign = self.get_random_sign()
+
+        sign_data = self.zodiac_signs[sign]
         theme = random.choice(self.content_templates["weekly"]["themes"])
         title_format = random.choice(self.content_templates["weekly"]["title_formats"])
 
@@ -374,13 +378,17 @@ class AdvancedAstrologyGenerator:
         )
 
         content = self._generate_detailed_content(sign_data, "monthly", theme)
-        slug = f"{date_str}-{sign}-burcu-aylik-yorum"        return {
+        slug = f"{date_str}-{sign}-burcu-aylik-yorum"
+
+        return {
             "title": title,
             "content": content,
             "slug": slug,
             "sign": sign,
             "period": "aylık"
-        }    def _generate_detailed_content(self, sign_data: Dict, period: str, theme: str) -> str:
+        }
+
+    def _generate_detailed_content(self, sign_data: Dict, period: str, theme: str) -> str:
         """Detaylı içerik oluştur."""
         sign_name = sign_data["name"]
 

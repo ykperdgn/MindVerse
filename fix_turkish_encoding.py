@@ -52,16 +52,18 @@ def fix_turkish_characters():
         # Unicode replacement characters
         '\ufffd': '',  # Remove replacement characters
         'Gï¿½nlï¿½k': 'Günlük',
-        'gï¿½nlï¿½k': 'günlük',
-    }
+        'gï¿½nlï¿½k': 'günlük',    }
 
     astrology_dir = "src/content/astrology"
+
     if not os.path.exists(astrology_dir):
         print(f"Directory {astrology_dir} not found!")
         return
 
     files = glob.glob(os.path.join(astrology_dir, "*.md"))
-    fixed_count = 0    for file_path in files:
+    fixed_count = 0
+
+    for file_path in files:
         try:
             # Farklı encoding'lerle deneyelim
             content = None

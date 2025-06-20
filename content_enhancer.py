@@ -51,16 +51,18 @@ def enhance_astrology_content():
                 "\n## 📈 Fırsat Dönemleri\n\n- **İlk hafta**: Yeni başlangıçlar ve projeler\n- **İkinci hafta**: İlişkiler ve sosyal bağlantılar\n- **Üçüncü hafta**: Kariyer ve başarı\n- **Son hafta**: Değerlendirme ve planlama\n",
                 "\n## 🔮 Astrolojik Destek\n\nBu ay boyunca gezegen hareketleri sizden yana. Özellikle yaratıcı projelerinizde büyük ilerlemeler kaydedebilirsiniz.\n"
             ]
-        }
-    }
+        }    }
 
     astrology_dir = "src/content/astrology"
+
     if not os.path.exists(astrology_dir):
         print(f"❌ {astrology_dir} bulunamadı!")
         return
 
     files = glob.glob(os.path.join(astrology_dir, "*.md"))
-    enhanced_count = 0    for file_path in files:
+    enhanced_count = 0
+
+    for file_path in files:
         filename = os.path.basename(file_path)
         try:
             # Farklı encoding'lerle deneyelim

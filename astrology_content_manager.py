@@ -10,7 +10,13 @@ import json
 import random
 from datetime import datetime, timedelta
 from typing import Dict, List, Tuple
-from enhanced_astrology_generator import EnhancedAstrologyGenerator
+
+# Try to import from enhanced or fallback to basic generator
+try:
+    from enhanced_astrology_generator import EnhancedAstrologyGenerator
+except ImportError:
+    print("Enhanced generator not found, using basic astrology generator...")
+    from astrology_content_generator import AdvancedAstrologyGenerator as EnhancedAstrologyGenerator
 
 class AstrologyContentManager:
     def __init__(self):
@@ -224,7 +230,9 @@ class AstrologyContentManager:
 
                 content_data = self.generator.generate_daily_content(sign)
                 # Başlığı özelleştir
-                content_data["title"] = f"{theme} - {self.generator.zodiac_signs[sign]['name']} Burcu Özel Yorumu"                filepath = self.generator.create_content_file(content_data)
+                content_data["title"] = f"{theme} - {self.generator.zodiac_signs[sign]['name']} Burcu Özel Yorumu"
+
+                filepath = self.generator.create_content_file(content_data)
                 created_files.append(filepath)
                 print(f"💖 {self.generator.zodiac_signs[sign]['name']} aşk özel yorumu oluşturuldu")
 
