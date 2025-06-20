@@ -5,7 +5,6 @@ Otomatik Premium İçerik Oluşturucu v2.0
 Premium Özellik 4 ve 5 dahil
 """
 
-from premium_astrology_tools import PremiumAstrologyTools
 from premium_astrology_tools_v2 import PremiumAstrologyToolsV2
 import random
 

@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-🌟 Premium Astroloji Araçları - Doğum Haritası & Uyumluluk
-MindVerse Daily için gelişmiş premium özellikler
+🌟 Premium Astroloji Araçları v2.0 - Gelişmiş Özellikler
+MindVerse Daily için premium astroloji özellikleri
+Premium Özellik 4: Haftalık Astroloji Raporu
+Premium Özellik 5: Yıllık Astroloji Tahmini
 """
 
 import random
@@ -10,445 +12,510 @@ import json
 from datetime import datetime, timedelta
 from typing import Dict, List, Tuple
 import os
+from calendar import monthrange
 
-class PremiumAstrologyTools:
+class PremiumAstrologyToolsV2:
     def __init__(self):
         self.content_dir = "src/content/astrology"
         os.makedirs(self.content_dir, exist_ok=True)
 
         # Gelişmiş burç bilgileri
         self.zodiac_data = {
-            "koc": {"name": "Koç", "english": "Aries", "symbol": "♈", "element": "Ateş", "quality": "Öncü", "ruling_planet": "Mars"},
-            "boga": {"name": "Boğa", "english": "Taurus", "symbol": "♉", "element": "Toprak", "quality": "Sabit", "ruling_planet": "Venüs"},
-            "ikizler": {"name": "İkizler", "english": "Gemini", "symbol": "♊", "element": "Hava", "quality": "Değişken", "ruling_planet": "Merkür"},
-            "yengec": {"name": "Yengeç", "english": "Cancer", "symbol": "♋", "element": "Su", "quality": "Öncü", "ruling_planet": "Ay"},
-            "aslan": {"name": "Aslan", "english": "Leo", "symbol": "♌", "element": "Ateş", "quality": "Sabit", "ruling_planet": "Güneş"},
-            "basak": {"name": "Başak", "english": "Virgo", "symbol": "♍", "element": "Toprak", "quality": "Değişken", "ruling_planet": "Merkür"},
-            "terazi": {"name": "Terazi", "english": "Libra", "symbol": "♎", "element": "Hava", "quality": "Öncü", "ruling_planet": "Venüs"},
-            "akrep": {"name": "Akrep", "english": "Scorpio", "symbol": "♏", "element": "Su", "quality": "Sabit", "ruling_planet": "Plüton"},
-            "yay": {"name": "Yay", "english": "Sagittarius", "symbol": "♐", "element": "Ateş", "quality": "Değişken", "ruling_planet": "Jüpiter"},
-            "oglak": {"name": "Oğlak", "english": "Capricorn", "symbol": "♑", "element": "Toprak", "quality": "Öncü", "ruling_planet": "Satürn"},
-            "kova": {"name": "Kova", "english": "Aquarius", "symbol": "♒", "element": "Hava", "quality": "Sabit", "ruling_planet": "Uranüs"},
-            "balik": {"name": "Balık", "english": "Pisces", "symbol": "♓", "element": "Su", "quality": "Değişken", "ruling_planet": "Neptün"}
+            "koc": {"name": "Koç", "english": "Aries", "symbol": "♈", "element": "Ateş", "quality": "Öncü", "ruling_planet": "Mars", "dates": (3, 21, 4, 19)},
+            "boga": {"name": "Boğa", "english": "Taurus", "symbol": "♉", "element": "Toprak", "quality": "Sabit", "ruling_planet": "Venüs", "dates": (4, 20, 5, 20)},
+            "ikizler": {"name": "İkizler", "english": "Gemini", "symbol": "♊", "element": "Hava", "quality": "Değişken", "ruling_planet": "Merkür", "dates": (5, 21, 6, 20)},
+            "yengec": {"name": "Yengeç", "english": "Cancer", "symbol": "♋", "element": "Su", "quality": "Öncü", "ruling_planet": "Ay", "dates": (6, 21, 7, 22)},
+            "aslan": {"name": "Aslan", "english": "Leo", "symbol": "♌", "element": "Ateş", "quality": "Sabit", "ruling_planet": "Güneş", "dates": (7, 23, 8, 22)},
+            "basak": {"name": "Başak", "english": "Virgo", "symbol": "♍", "element": "Toprak", "quality": "Değişken", "ruling_planet": "Merkür", "dates": (8, 23, 9, 22)},
+            "terazi": {"name": "Terazi", "english": "Libra", "symbol": "♎", "element": "Hava", "quality": "Öncü", "ruling_planet": "Venüs", "dates": (9, 23, 10, 22)},
+            "akrep": {"name": "Akrep", "english": "Scorpio", "symbol": "♏", "element": "Su", "quality": "Sabit", "ruling_planet": "Plüton", "dates": (10, 23, 11, 21)},
+            "yay": {"name": "Yay", "english": "Sagittarius", "symbol": "♐", "element": "Ateş", "quality": "Değişken", "ruling_planet": "Jüpiter", "dates": (11, 22, 12, 21)},
+            "oglak": {"name": "Oğlak", "english": "Capricorn", "symbol": "♑", "element": "Toprak", "quality": "Öncü", "ruling_planet": "Satürn", "dates": (12, 22, 1, 19)},
+            "kova": {"name": "Kova", "english": "Aquarius", "symbol": "♒", "element": "Hava", "quality": "Sabit", "ruling_planet": "Uranüs", "dates": (1, 20, 2, 18)},
+            "balik": {"name": "Balık", "english": "Pisces", "symbol": "♓", "element": "Su", "quality": "Değişken", "ruling_planet": "Neptün", "dates": (2, 19, 3, 20)}
         }
 
-    def create_birth_chart_content(self, name: str, sign_key: str, birth_details: Dict) -> Dict[str, str]:
-        """Detaylı doğum haritası içeriği oluştur"""
-        sign_data = self.zodiac_data[sign_key]
-        date_str = datetime.now().strftime("%Y-%m-%d")
+        # Haftalık astroloji konuları
+        self.weekly_themes = [
+            "Aşk ve İlişkiler", "Kariyer ve Para", "Sağlık ve Enerji", "Aile ve Ev",
+            "Yaratıcılık ve Hobi", "Arkadaşlık ve Sosyal", "Manevi Gelişim", "Seyahat ve Macera"
+        ]
 
-        title = f"{name} İçin Detaylı Doğum Haritası Analizi"
+        # Yıllık dönemler
+        self.yearly_periods = {
+            "İlkbahar": {"months": [3, 4, 5], "theme": "Yenilenme ve Başlangıçlar"},
+            "Yaz": {"months": [6, 7, 8], "theme": "Büyüme ve Başarı"},
+            "Sonbahar": {"months": [9, 10, 11], "theme": "Hasat ve Değerlendirme"},
+            "Kış": {"months": [12, 1, 2], "theme": "İç Gözlem ve Hazırlık"}
+        }
+
+        # Astrolojik yönler
+        self.aspects = {
+            "conjunction": {"name": "Kavuşum", "effect": "güçlendirici", "score": 90},
+            "trine": {"name": "Üçgen", "effect": "uyumlu", "score": 85},
+            "sextile": {"name": "Altıgen", "effect": "destekleyici", "score": 75},
+            "square": {"name": "Kare", "effect": "zorlu", "score": 45},
+            "opposition": {"name": "Karşıtlık", "effect": "dengeleyici", "score": 55}
+        }
+
+    def create_weekly_astrology_report(self) -> str:
+        """Premium Özellik 4: Haftalık Astroloji Raporu"""
+        today = datetime.now()
+        week_start = today - timedelta(days=today.weekday())
+        week_end = week_start + timedelta(days=6)
+
+        theme = random.choice(self.weekly_themes)
+        main_planet = random.choice(["Merkür", "Venüs", "Mars", "Jüpiter", "Satürn"])
+
+        date_str = week_start.strftime("%Y-%m-%d")
+        week_range = f"{week_start.strftime('%d %B')} - {week_end.strftime('%d %B %Y')}"
+
+        title = f"Haftalık Astroloji Raporu - {week_range}"
+        filename = f"haftalik-astroloji-raporu-{date_str}.md"
+
+        # Haftalık genel tahmin
+        general_forecast = self.generate_weekly_general_forecast(theme, main_planet)
+
+        # Her burç için haftalık yorum
+        weekly_signs = self.generate_weekly_signs_forecast()
 
         content = f"""---
 title: "{title}"
-description: "{name} için kişiselleştirilmiş doğum haritası analizi ve astrolojik rehberlik."
+description: "{week_range} haftası için detaylı astroloji raporu ve burç yorumları."
 pubDate: {date_str}
 category: "astrology"
-tags: ["doğum haritası", "{sign_data['name'].lower()}", "kişisel analiz", "astroloji"]
-heroImage: "/images/birth-chart.jpg"
-type: "birth-chart"
+tags: ["haftalık", "astroloji raporu", "{theme.lower()}", "burç yorumları"]
+heroImage: "/images/weekly-astrology.jpg"
+type: "weekly-report"
 featured: true
+weekly_theme: "{theme}"
+main_planet: "{main_planet}"
+week_start: "{week_start.strftime('%Y-%m-%d')}"
+week_end: "{week_end.strftime('%Y-%m-%d')}"
 ---
 
-# {title}
+# 🌟 {title}
 
-## 🌟 Kişisel Bilgiler
+## 📅 Hafta Genel Görünümü
 
-**👤 İsim:** {name}
-**🌅 Ana Burç:** {sign_data['symbol']} {sign_data['name']}
-**🌍 Element:** {sign_data['element']}
-**⚡ Kalite:** {sign_data['quality']}
-**🪐 Yönetici Gezegen:** {sign_data['ruling_planet']}
+Bu hafta **{theme}** konularında önemli gelişmeler yaşanacak. {main_planet} gezegeninin etkisi altında geçecek olan bu dönemde, astrolojik enerjiler özellikle şu alanlarda hissedilecek:
 
----
-
-## 🔮 Detaylı Doğum Haritası Analizi
-
-### Ana Kişilik Yapısı
-
-{sign_data['symbol']} **{sign_data['name']} burcu** olarak doğmuş olan {name}, doğal olarak {self._get_personality_traits(sign_data)} özelliklere sahiptir. {sign_data['element']} elementi, yaşama bakış açınızı ve enerji akışınızı belirleyen temel faktördür.
-
-### 🏠 Astrolojik Ev Analizleri
-
-#### 1. Ev - Kişilik ve Kimlik
-**{sign_data['ruling_planet']} Etkisi:** {self._get_house_analysis(1, sign_data)}
-
-#### 2. Ev - Değerler ve Kaynaklar
-**Mali Durum:** {self._get_house_analysis(2, sign_data)}
-
-#### 7. Ev - İlişkiler ve Partnerlik
-**Aşk Hayatı:** {self._get_house_analysis(7, sign_data)}
-
-#### 10. Ev - Kariyer ve Toplumsal Statü
-**Meslek Hayatı:** {self._get_house_analysis(10, sign_data)}
-
-### 🌙 Ay Etkisi ve Duygusal Yapı
-
-{self._get_moon_analysis(sign_data)}
-
-### ⭐ Yükselen Burç Etkisi
-
-{self._get_rising_sign_analysis(sign_data)}
-
-### 🪐 Gezegen Pozisyonları
-
-{self._get_planetary_positions(sign_data)}
-
-## 💫 Yaşam Rehberi
-
-### Güçlü Yönleriniz
-{self._get_strengths_analysis(sign_data)}
-
-### Gelişim Alanlarınız
-{self._get_development_areas(sign_data)}
-
-### Kariyer Tavsiyeleri
-{self._get_career_guidance(sign_data)}
-
-### İlişki Rehberi
-{self._get_relationship_guidance(sign_data)}
-
-## 🎯 2025 Yılı Özel Tahminleri
-
-### Bu Yıl Sizin İçin Özel
-{self._get_yearly_predictions(sign_data)}
-
-### Önemli Tarihler
-{self._get_important_dates(sign_data)}
-
-## 🔮 Sonuç ve Öneriler
-
-{name}, doğum haritanız sizin benzersiz potansiyelinizi gösteriyor. {sign_data['name']} burcu olarak sahip olduğunuz {sign_data['element'].lower()} elementi enerjisi, yaşamınızda güçlü bir rehber olacak.
-
-**En Önemli Tavsiyeler:**
-- {sign_data['ruling_planet']} gezeninizin enerjisini pozitif yönde kullanın
-- {sign_data['element']} elementi özelliklerinizi geliştirin
-- Doğal {sign_data['quality'].lower()} kalitenizi avantaja çevirin
+{general_forecast}
 
 ---
 
-*Bu analiz {name} için özel olarak hazırlanmış kişiselleştirilmiş bir doğum haritası yorumudur.*
+## 🔮 Haftalık Burç Yorumları
 
-**📞 Kişisel Danışmanlık:** Daha detaylı analiz için iletişime geçebilirsiniz.
+{weekly_signs}
+
+---
+
+## 🌙 Haftalık Önemli Tarihler
+
+### Pazartesi ({week_start.strftime('%d.%m')})
+- **Ay Evresi:** {self.get_moon_phase(week_start)}
+- **Önemli Açı:** {random.choice(list(self.aspects.values()))['name']}
+- **Odak:** Hafta başı enerjisi ve yeni projeler
+
+### Çarşamba ({(week_start + timedelta(days=2)).strftime('%d.%m')})
+- **Hızlı Gezegen:** {random.choice(["Merkür", "Venüs"])} hareketi
+- **Enerji:** Orta haftanın dönüşüm enerjisi
+- **Tavsiye:** İletişim ve düşünce netliği
+
+### Cuma ({(week_start + timedelta(days=4)).strftime('%d.%m')})
+- **Sosyal Enerji:** Venüs etkisi güçlü
+- **Aktivite:** Sosyal buluşmalar ve romantik anlar
+- **Şans:** Mali konularda dikkatli olun
+
+### Pazar ({week_end.strftime('%d.%m')})
+- **Dinlenme:** Hafta sonu refleksiyonu
+- **Ay Enerjisi:** İç dünya ve rüyalar
+- **Hazırlık:** Gelecek hafta için planning
+
+---
+
+## 💫 Haftalık Astroloji Tavsiyeleri
+
+### 🌟 Genel Tavsiyeler
+- **En İyi Günler:** Çarşamba ve Cuma
+- **Dikkat Edilecek:** Pazartesi ve Perşembe
+- **Şanslı Renkler:** {random.choice(['Mavi', 'Yeşil', 'Mor', 'Turuncu'])} ve {random.choice(['Altın', 'Gümüş', 'Beyaz'])}
+- **Şanslı Sayılar:** {random.randint(1, 9)}, {random.randint(10, 19)}, {random.randint(20, 31)}
+
+### 💝 Aşk ve İlişkiler
+Bu hafta {theme.lower()} temasının etkisiyle, ilişkilerde derin bağlar kurma zamanı. Özellikle {random.choice(['su', 'toprak', 'ateş', 'hava'])} burçları için romantik fırsatlar.
+
+### 💼 Kariyer ve Finans
+{main_planet} etkisi altında, profesyonel hayatta yeni kapılar açılabilir. Mali konularda {random.choice(['temkinli', 'cesur', 'dengeli'])} yaklaşım sergilemek önemli.
+
+### 🏥 Sağlık ve Enerji
+Enerji seviyeniz bu hafta {random.choice(['yüksek', 'değişken', 'dengeli'])} olacak. {random.choice(['Yoga', 'Meditasyon', 'Doğa yürüyüşü'])} gibi aktiviteler önerilir.
+
+---
+
+*🔮 Bu haftalık rapor, genel astrolojik eğilimleri yansıtır. Kişisel doğum haritanız için özel danışmanlık alabilirsiniz.*
+
+**Sonraki Hafta:** Daha detaylı tahminler için takipte kalın!
+
+---
+
+### 📚 İlgili İçerikler
+- [Günlük Burç Yorumları](/astrology/gunluk-burç-yorumlari)
+- [Kişisel Doğum Haritası](/astrology/dogum-haritasi)
+- [Burç Uyumluluğu](/astrology/uyumluluk-analizi)
 """
 
-        slug = f"dogum-haritasi-{name.lower().replace(' ', '-')}-{sign_key}-{date_str}"
+        filepath = os.path.join(self.content_dir, filename)
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write(content)
 
-        return {
-            "title": title,
-            "content": content,
-            "slug": slug,
-            "type": "birth-chart",
-            "name": name,
-            "sign": sign_key
-        }
+        print(f"✅ Haftalık astroloji raporu oluşturuldu: {filename}")
+        return filepath
 
-    def create_compatibility_analysis(self, sign1_key: str, sign2_key: str) -> Dict[str, str]:
-        """Burç uyumluluk analizi oluştur"""
-        sign1_data = self.zodiac_data[sign1_key]
-        sign2_data = self.zodiac_data[sign2_key]
+    def generate_weekly_general_forecast(self, theme: str, main_planet: str) -> str:
+        """Haftalık genel tahmin oluştur"""
+        forecasts = [
+            f"**{main_planet}** gezegeninin güçlü etkisi altında, {theme.lower()} alanında önemli gelişmeler bekleniyor.",
+            f"Bu dönemde evrensel enerjiler {theme.lower()} konularına odaklanıyor.",
+            f"Astrolojik açıdan bakıldığında, {theme.lower()} temasında dönüşümler yaşanacak.",
+            f"Kozmik enerjiler bu hafta özellikle {theme.lower()} alanında hissedilecek."
+        ]
+
+        return random.choice(forecasts) + f"\n\n**{main_planet} Etkisi:** Bu gezegen özellikle iletişim, düşünce ve karar verme süreçlerinizi etkileyecek. Önemli kararları bu dönemde almanız avantajlı olabilir."
+
+    def generate_weekly_signs_forecast(self) -> str:
+        """Haftalık burç yorumları oluştur"""
+        signs_content = ""
+
+        for sign_key, sign_data in self.zodiac_data.items():
+            weekly_score = random.randint(65, 95)
+            lucky_day = random.choice(['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'])
+
+            areas = {
+                "Aşk": random.randint(60, 90),
+                "Kariyer": random.randint(65, 95),
+                "Sağlık": random.randint(70, 90),
+                "Para": random.randint(55, 85)
+            }
+
+            forecast_texts = [
+                f"Bu hafta enerjiniz {weekly_score}% seviyesinde olacak.",
+                f"Özellikle {lucky_day} günü şanslı gününüz.",
+                f"{sign_data['element']} elementi size güç katacak.",
+                f"Yönetici gezegen {sign_data['ruling_planet']} olumlu etki yapacak."
+            ]
+
+            signs_content += f"""
+### {sign_data['symbol']} {sign_data['name']} Burcu
+**Haftalık Enerji:** %{weekly_score} | **Şanslı Gün:** {lucky_day}
+
+{random.choice(forecast_texts)}
+
+**Detay Puanlar:**
+- 💕 Aşk: %{areas['Aşk']}
+- 💼 Kariyer: %{areas['Kariyer']}
+- 🏥 Sağlık: %{areas['Sağlık']}
+- 💰 Para: %{areas['Para']}
+
+{self.generate_weekly_advice(sign_data)}
+
+---
+"""
+
+        return signs_content
+
+    def generate_weekly_advice(self, sign_data: Dict) -> str:
+        """Haftalık tavsiye oluştur"""
+        advices = [
+            f"**Tavsiye:** {sign_data['element']} enerjisini kullanarak dengeli kalın.",
+            f"**Dikkat:** {sign_data['quality']} özelliğiniz bu hafta avantaj sağlayacak.",
+            f"**Fırsat:** {sign_data['ruling_planet']} etkisiyle yeni kapılar açılabilir.",
+            f"**Odak:** {sign_data['name']} enerjisini en iyi şekilde değerlendirin."
+        ]
+
+        return random.choice(advices)
+
+    def create_yearly_astrology_forecast(self) -> str:
+        """Premium Özellik 5: Yıllık Astroloji Tahmini"""
+        year = datetime.now().year + 1  # Gelecek yıl tahmini
+
+        title = f"{year} Yılı Detaylı Astroloji Tahmini"
+        filename = f"yillik-astroloji-tahmini-{year}.md"
         date_str = datetime.now().strftime("%Y-%m-%d")
 
-        title = f"{sign1_data['name']} - {sign2_data['name']} Burç Uyumluluk Analizi"
+        # Yıllık ana temalar
+        main_themes = self.generate_yearly_themes(year)
 
-        # Uyumluluk skorunu hesapla
-        compatibility_score = self._calculate_compatibility(sign1_data, sign2_data)
+        # Dönemlik tahminler
+        seasonal_forecasts = self.generate_seasonal_forecasts(year)
+
+        # Burç bazında yıllık tahminler
+        zodiac_yearly = self.generate_zodiac_yearly_forecasts(year)
 
         content = f"""---
 title: "{title}"
-description: "{sign1_data['name']} ve {sign2_data['name']} burçları arasında detaylı uyumluluk analizi."
+description: "{year} yılı için kapsamlı astroloji tahmini, dönemlik analizler ve burç yorumları."
 pubDate: {date_str}
 category: "astrology"
-tags: ["uyumluluk", "{sign1_data['name'].lower()}", "{sign2_data['name'].lower()}", "ilişki", "astroloji"]
-heroImage: "/images/compatibility.jpg"
-type: "compatibility"
+tags: ["yıllık tahmin", "{year}", "astroloji", "gelecek", "dönemlik analiz"]
+heroImage: "/images/yearly-forecast.jpg"
+type: "yearly-forecast"
 featured: true
-compatibilityScore: {compatibility_score}
+forecast_year: {year}
+main_themes: {json.dumps(main_themes, ensure_ascii=False)}
 ---
 
-# {title}
+# 🌟 {title}
 
-## 💕 Genel Uyumluluk Skoru: {compatibility_score}%
+## 🔮 Yıl Genel Görünümü
 
-{sign1_data['symbol']} **{sign1_data['name']}** + {sign2_data['symbol']} **{sign2_data['name']}**
+{year} yılı, astrolojik açıdan **dönüşüm ve büyüme** yılı olarak öne çıkıyor. Bu yıl boyunca yaşanacak olan önemli astrolojik hareketler, hem bireysel hem de toplumsal düzeyde derin değişimlere işaret ediyor.
 
----
+### 📅 Yılın Ana Temaları
 
-## 🔍 Uyumluluk Analizi
-
-### Element Uyumluluğu
-**{sign1_data['name']} ({sign1_data['element']}) - {sign2_data['name']} ({sign2_data['element']})**
-
-{self._get_element_compatibility(sign1_data, sign2_data)}
-
-### Kalite Uyumluluğu
-**{sign1_data['quality']} - {sign2_data['quality']}**
-
-{self._get_quality_compatibility(sign1_data, sign2_data)}
-
-### Gezegen Uyumluluğu
-**{sign1_data['ruling_planet']} - {sign2_data['ruling_planet']}**
-
-{self._get_planetary_compatibility(sign1_data, sign2_data)}
-
-## 💖 İlişki Dinamikleri
-
-### Aşk ve Romantizm
-{self._get_love_compatibility(sign1_data, sign2_data)}
-
-### İletişim Tarzı
-{self._get_communication_style(sign1_data, sign2_data)}
-
-### Çatışma Çözümü
-{self._get_conflict_resolution(sign1_data, sign2_data)}
-
-### Uzun Vadeli Uyum
-{self._get_long_term_compatibility(sign1_data, sign2_data)}
-
-## 🎯 İlişki Tavsiyeleri
-
-### {sign1_data['name']} İçin Öneriler
-{self._get_advice_for_sign(sign1_data, sign2_data)}
-
-### {sign2_data['name']} İçin Öneriler
-{self._get_advice_for_sign(sign2_data, sign1_data)}
-
-### Ortak Aktivite Önerileri
-{self._get_shared_activities(sign1_data, sign2_data)}
-
-## 📊 Detaylı Uyumluluk Skorları
-
-| Alan | Skor | Açıklama |
-|------|------|----------|
-| **Duygusal Bağ** | {random.randint(70, 95)}% | {self._get_emotional_score_desc()} |
-| **İletişim** | {random.randint(65, 90)}% | {self._get_communication_score_desc()} |
-| **Fiziksel Uyum** | {random.randint(75, 95)}% | {self._get_physical_score_desc()} |
-| **Yaşam Tarzı** | {random.randint(60, 85)}% | {self._get_lifestyle_score_desc()} |
-| **Değerler** | {random.randint(70, 90)}% | {self._get_values_score_desc()} |
-
-## 🌟 Özel Tavsiyeler
-
-### Güçlü Yönleriniz
-{self._get_relationship_strengths(sign1_data, sign2_data)}
-
-### Dikkat Edilmesi Gerekenler
-{self._get_relationship_challenges(sign1_data, sign2_data)}
-
-### İlişkiyi Güçlendirme Yolları
-{self._get_relationship_enhancement(sign1_data, sign2_data)}
-
-## 🔮 Sonuç
-
-{sign1_data['name']} ve {sign2_data['name']} burçları arasındaki uyumluluk %{compatibility_score} olarak değerlendirilmektedir. Bu {self._get_compatibility_level(compatibility_score)} bir uyumluluk seviyesini göstermektedir.
-
-**Önemli Hatırlatma:** Astroloji bir rehberdir, gerçek ilişki uyumunuz kişisel çabanıza, anlayışınıza ve sevginize bağlıdır.
+{self.format_yearly_themes(main_themes)}
 
 ---
 
-*Bu analiz {sign1_data['name']} ve {sign2_data['name']} burçları için özel olarak hazırlanmıştır.*
+## 🌍 Dönemlik Astroloji Tahminleri
 
-**💕 İlişki Danışmanlığı:** Daha detaylı analiz için uzman desteği alabilirsiniz.
+{seasonal_forecasts}
+
+---
+
+## 🔮 Burç Bazında {year} Yılı Tahminleri
+
+{zodiac_yearly}
+
+---
+
+## 🌙 {year} Yılının Önemli Astrolojik Olayları
+
+### Ayın Ek Detayları
+- **Süper Ay:** {random.choice(['Mart', 'Haziran', 'Eylül', 'Aralık'])}
+- **Mavi Ay:** {random.choice(['Mayıs', 'Ağustos', 'Kasım'])}
+- **Ay Tutulması:** {random.choice(['Nisan-Ekim', 'Mayıs-Kasım', 'Haziran-Aralık'])}
+- **Güneş Tutulması:** {random.choice(['Mart-Eylül', 'Nisan-Ekim', 'Mayıs-Kasım'])}
+
+### Gezegen Gerilemelerı
+- **Merkür Geriler:** 3-4 kez (İletişim ve teknoloji)
+- **Venüs Geriler:** 1 kez (Aşk ve finans)
+- **Mars Geriler:** {random.choice(['Yok', '1 kez'])} (Enerji ve eylem)
+
+---
+
+## 💫 {year} Yılı İçin Genel Tavsiyeler
+
+### 🌟 En İyi Dönemler
+1. **İlkbahar ({random.choice(['Mart', 'Nisan', 'Mayıs'])}):** Yeni başlangıçlar için ideal
+2. **Yaz ({random.choice(['Haziran', 'Temmuz', 'Ağustos'])}):** Büyüme ve başarı dönemi
+3. **Sonbahar ({random.choice(['Eylül', 'Ekim', 'Kasım'])}):** Hasat ve değerlendirme zamanı
+
+### ⚠️ Dikkatli Olunacak Dönemler
+- **Merkür Geri Dönemleri:** İletişimde dikkat
+- **Tutulma Dönemleri:** Ani değişimlere hazır olun
+- **Gezegen Kavuşumları:** Yoğun enerji dönemleri
+
+### 💎 Yıllık Şans Faktörleri
+- **Şanslı Aylar:** {random.choice(['Nisan, Haziran, Eylül', 'Mayıs, Temmuz, Ekim', 'Mart, Ağustos, Kasım'])}
+- **Şanslı Günler:** {random.choice(['Çarşamba, Cuma', 'Salı, Perşembe', 'Pazartesi, Cumartesi'])}
+- **Şanslı Renkler:** {random.choice(['Mavi, Yeşil', 'Mor, Altın', 'Turuncu, Gümüş'])}
+- **Şanslı Sayılar:** {random.choice(['3, 7, 11', '2, 6, 9', '4, 8, 12'])}
+
+---
+
+## 💝 Aşk ve İlişkiler - {year}
+
+Bu yıl aşk hayatında **{random.choice(['derin bağlar', 'yeni başlangıçlar', 'dönüşümler'])}** yaşanacak. Özellikle {random.choice(['su', 'toprak', 'ateş', 'hava'])} burçları için romantik dönem.
+
+**En İyi Aşk Dönemleri:**
+- {random.choice(['İlkbahar', 'Yaz', 'Sonbahar'])}: Yeni ilişkiler
+- {random.choice(['Yaz', 'Sonbahar', 'Kış'])}: Mevcut ilişkilerde derinleşme
+
+---
+
+## 💼 Kariyer ve Finans - {year}
+
+Profesyonel hayatta **{random.choice(['büyük fırsatlar', 'karıyer değişimleri', 'finansal büyüme'])}** yılı. Özellikle {random.choice(['dijital', 'yaratıcı', 'hizmet', 'teknoloji'])} sektörlerde gelişmeler.
+
+**Mali Tavsiyeler:**
+- **Yatırım:** {random.choice(['İlkbahar', 'Yaz', 'Sonbahar'])} döneminde değerlendir
+- **Harcama:** {random.choice(['Kış', 'Sonbahar', 'İlkbahar'])} aylarında dikkatli ol
+- **Gelir:** Yıl ortasından itibaren artış bekleniyor
+
+---
+
+## 🏥 Sağlık ve Enerji - {year}
+
+Bu yıl sağlık konusunda **{random.choice(['dengeli yaklaşım', 'yenilenme', 'güçlenme'])}** ön planda. Özellikle mental sağlık ve enerji yönetimine odaklanın.
+
+**Sağlık Tavsiyeleri:**
+- **Beslenme:** Mevsimsel beslenme modeli
+- **Egzersiz:** Düzenli ve keyifli aktiviteler
+- **Mental:** Meditasyon ve stres yönetimi
+
+---
+
+*🔮 Bu yıllık tahmin, genel astrolojik eğilimleri yansıtır. Kişisel doğum haritanız için özel danışmanlık alabilirsiniz.*
+
+**Gelecek Yıl:** {year + 1} yılı tahminleri için takipte kalın!
+
+---
+
+### 📚 İlgili İçerikler
+- [Haftalık Astroloji Raporu](/astrology/haftalik-rapor)
+- [Aylık Burç Yorumları](/astrology/aylik-burc-yorumlari)
+- [Kişisel Doğum Haritası](/astrology/dogum-haritasi)
 """
 
-        slug = f"uyumluluk-{sign1_key}-{sign2_key}-analizi-{date_str}"
+        filepath = os.path.join(self.content_dir, filename)
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write(content)
 
-        return {
-            "title": title,
-            "content": content,
-            "slug": slug,
-            "type": "compatibility",
-            "sign1": sign1_key,
-            "sign2": sign2_key,
-            "score": compatibility_score
-        }
+        print(f"✅ {year} yılı astroloji tahmini oluşturuldu: {filename}")
+        return filepath
 
-    def _get_personality_traits(self, sign_data: Dict) -> str:
-        """Kişilik özelliklerini getir"""
-        traits = {
-            "Ateş": "enerjik, girişken ve liderlik",
-            "Toprak": "pratik, güvenilir ve kararlı",
-            "Hava": "zeki, sosyal ve iletişimci",
-            "Su": "duygusal, sezgisel ve empatik"
-        }
-        return traits.get(sign_data['element'], "güçlü")
-
-    def _get_house_analysis(self, house_num: int, sign_data: Dict) -> str:
-        """Ev analizlerini getir"""
-        analyses = {
-            1: f"{sign_data['ruling_planet']} etkisiyle güçlü bir kişiliğe sahipsiniz.",
-            2: f"{sign_data['element']} elementi mali konularda size rehberlik eder.",
-            7: f"İlişkilerde {sign_data['quality'].lower()} yaklaşımınız dikkat çeker.",
-            10: f"Kariyerinizde {sign_data['ruling_planet']} enerjisi öne çıkar."
-        }
-        return analyses.get(house_num, "Pozitif enerji hakimdir.")
-
-    def _get_moon_analysis(self, sign_data: Dict) -> str:
-        """Ay analizi"""
-        return f"Duygusal dünyanızda {sign_data['element'].lower()} elementi hakimdir. Bu size {random.choice(['içsel huzur', 'güçlü sezgiler', 'dengeli duygular'])} kazandırır."
-
-    def _get_rising_sign_analysis(self, sign_data: Dict) -> str:
-        """Yükselen burç analizi"""
-        return f"Dış dünyadaki imajınız {sign_data['name']} enerjisiyle şekillenir. İlk izlenim olarak {random.choice(['güçlü', 'karizmatik', 'çekici', 'etkileyici'])} görünürsünüz."
-
-    def _get_planetary_positions(self, sign_data: Dict) -> str:
-        """Gezegen pozisyonları"""
-        return f"**{sign_data['ruling_planet']}** ana yönetici gezegininiz olarak hayatınızda {random.choice(['güç', 'denge', 'yaratıcılık', 'ilham'])} sağlar."
-
-    def _get_strengths_analysis(self, sign_data: Dict) -> str:
-        """Güçlü yönler analizi"""
-        strengths = [
-            f"Doğal {sign_data['element'].lower()} elementi gücü",
-            f"{sign_data['quality']} kalitesinden gelen kararlılık",
-            f"{sign_data['ruling_planet']} enerjisinin desteği"
+    def generate_yearly_themes(self, year: int) -> List[str]:
+        """Yıllık ana temalar oluştur"""
+        themes = [
+            "Dijital Dönüşüm ve Teknoloji",
+            "Sürdürülebilirlik ve Çevre",
+            "Manevi Gelişim ve İç Yolculuk",
+            "İnovasyonlarve Yaratıcılık",
+            "İnsan İlişkileri ve Sosyal Bağlar",
+            "Kariyer ve Profesyonel Gelişim",
+            "Sağlık ve Yaşam Kalitesi",
+            "Finansal Bağımsızlık"
         ]
-        return "• " + "\n• ".join(strengths)
 
-    def _get_development_areas(self, sign_data: Dict) -> str:
-        """Gelişim alanları"""
-        areas = [
-            f"{sign_data['element']} elementinin dengelenmesi",
-            "Sabır ve empati geliştirme",
-            "İletişim becerilerini güçlendirme"
-        ]
-        return "• " + "\n• ".join(areas)
+        return random.sample(themes, 3)
 
-    def _get_career_guidance(self, sign_data: Dict) -> str:
-        """Kariyer rehberi"""
-        guidance = {
-            "Mars": "Liderlik gerektiren pozisyonlarda başarılısınız",
-            "Venüs": "Sanat, güzellik ve diplomasi alanları size uygun",
-            "Merkür": "İletişim, teknoloji ve eğitim alanlarında yeteneklisiniz",
-            "Jüpiter": "Eğitim, hukuk ve uluslararası işler size uygun",
-            "Satürn": "Yöneticilik, mühendislik ve yapısal işlerde başarılısınız",
-            "Uranüs": "Teknoloji, yenilikçilik ve araştırma alanlarında başarılısınız",
-            "Neptün": "Sanat, müzik ve spiritüel alanlarda yeteneklisiniz",
-            "Plüton": "Dönüşüm, araştırma ve psikoloji alanlarında güçlüsünüz"
-        }
-        return guidance.get(sign_data['ruling_planet'], "Çok yönlü yetenekleriniz vardır")
+    def format_yearly_themes(self, themes: List[str]) -> str:
+        """Yıllık temaları formatla"""
+        formatted = ""
+        for i, theme in enumerate(themes, 1):
+            descriptions = {
+                "Dijital Dönüşüm ve Teknoloji": "Bu yıl teknolojik ilerlemeler hayatımızda büyük rol oynayacak.",
+                "Sürdürülebilirlik ve Çevre": "Çevre bilinci ve sürdürülebilir yaşam ön plana çıkacak.",
+                "Manevi Gelişim ve İç Yolculuk": "İç dünyamızı keşfetme ve manevi gelişim önem kazanacak.",
+                "İnovasyonlarve Yaratıcılık": "Yaratıcı projeler ve yenilikçi çözümler dönem olacak.",
+                "İnsan İlişkileri ve Sosyal Bağlar": "İlişkiler ve sosyal bağlantılar güçlenecek.",
+                "Kariyer ve Profesyonel Gelişim": "Mesleki gelişim ve kariyer değişimleri ön planda.",
+                "Sağlık ve Yaşam Kalitesi": "Sağlıklı yaşam ve yaşam kalitesi artırımı önemli.",
+                "Finansal Bağımsızlık": "Mali özgürlük ve finansal planlama önem kazanacak."
+            }
 
-    def _get_relationship_guidance(self, sign_data: Dict) -> str:
-        """İlişki rehberi"""
-        return f"{sign_data['element']} elementi size ilişkilerde {random.choice(['tutku', 'denge', 'anlayış', 'sadakat'])} getirir."
+            formatted += f"**{i}. {theme}**\n"
+            formatted += f"{descriptions.get(theme, 'Bu tema yıl boyunca öne çıkacak.')}\n\n"
 
-    def _get_yearly_predictions(self, sign_data: Dict) -> str:
-        """Yıllık tahminler"""
-        return f"2025 yılı {sign_data['name']} burcu için {random.choice(['büyüme', 'dönüşüm', 'başarı', 'yenilik'])} yılı olacak."
+        return formatted
 
-    def _get_important_dates(self, sign_data: Dict) -> str:
-        """Önemli tarihler"""
-        months = ["Mart", "Haziran", "Eylül", "Aralık"]
-        return f"• {random.choice(months)} ayı: Önemli kararlar\n• {random.choice(months)} ayı: Yeni fırsatlar"
+    def generate_seasonal_forecasts(self, year: int) -> str:
+        """Dönemlik tahminler oluştur"""
+        seasons_content = ""
 
-    def _calculate_compatibility(self, sign1: Dict, sign2: Dict) -> int:
-        """Uyumluluk skoru hesapla"""
-        base_score = 70
+        for season, data in self.yearly_periods.items():
+            months_names = {
+                1: "Ocak", 2: "Şubat", 3: "Mart", 4: "Nisan",
+                5: "Mayıs", 6: "Haziran", 7: "Temmuz", 8: "Ağustos",
+                9: "Eylül", 10: "Ekim", 11: "Kasım", 12: "Aralık"
+            }
 
-        # Element uyumluluğu
-        if sign1['element'] == sign2['element']:
-            base_score += 10
-        elif self._elements_compatible(sign1['element'], sign2['element']):
-            base_score += 5
+            season_months = [months_names[m] for m in data['months']]
+            energy_level = random.randint(70, 90)
 
-        # Kalite uyumluluğu
-        if sign1['quality'] != sign2['quality']:
-            base_score += 5
+            forecasts = [
+                f"Bu dönemde enerji seviyeniz %{energy_level} olacak.",
+                f"{data['theme']} teması hayatınızda ön plana çıkacak.",
+                f"Önemli değişimler ve fırsatlar sizi bekliyor.",
+                f"Astrolojik enerjiler size destek olacak."
+            ]
 
-        return min(95, base_score + random.randint(-5, 15))
+            seasons_content += f"""
+### 🌿 {season} Dönemi ({', '.join(season_months)})
+**Tema:** {data['theme']} | **Enerji:** %{energy_level}
 
-    def _elements_compatible(self, elem1: str, elem2: str) -> bool:
-        """Element uyumluluğu kontrol et"""
-        compatible_pairs = [
-            ("Ateş", "Hava"), ("Toprak", "Su"),
-            ("Ateş", "Toprak"), ("Hava", "Su")
-        ]
-        return (elem1, elem2) in compatible_pairs or (elem2, elem1) in compatible_pairs
+{random.choice(forecasts)}
 
-    def _get_element_compatibility(self, sign1: Dict, sign2: Dict) -> str:
-        """Element uyumluluğu açıklaması"""
-        if sign1['element'] == sign2['element']:
-            return f"Aynı {sign1['element'].lower()} elementinden gelmeniz ortak anlayış yaratır."
-        else:
-            return f"{sign1['element']} ve {sign2['element']} elementleri tamamlayıcı enerji yaratır."
+**Öne Çıkan Konular:**
+- {random.choice(['Yeni projeler', 'İlişki gelişimi', 'Kariyer fırsatları', 'Sağlık iyileşmesi'])}
+- {random.choice(['Finansal gelişim', 'Yaratıcı projeler', 'Sosyal aktiviteler', 'İç gelişim'])}
+- {random.choice(['Seyahat fırsatları', 'Eğitim ve öğrenme', 'Aile zamanı', 'Hobi geliştirme'])}
 
-    def _get_quality_compatibility(self, sign1: Dict, sign2: Dict) -> str:
-        """Kalite uyumluluğu"""
-        return f"{sign1['quality']} ve {sign2['quality']} kaliteler dinamik bir denge oluşturur."
+**Dikkat Edilecek:**
+- {random.choice(['Aşırı hıza kapılma', 'Mali konularda aceleci olma', 'İletişim sorunları', 'Enerji dağılımı'])}
 
-    def _get_planetary_compatibility(self, sign1: Dict, sign2: Dict) -> str:
-        """Gezegen uyumluluğu"""
-        return f"{sign1['ruling_planet']} ve {sign2['ruling_planet']} enerjileri güçlü bir kombinasyon yaratır."
+---
+"""
 
-    def _get_love_compatibility(self, sign1: Dict, sign2: Dict) -> str:
-        """Aşk uyumluluğu"""
-        return f"Romantik ilişkinizde {sign1['element'].lower()} ve {sign2['element'].lower()} enerjileri güzel bir uyum yaratır."
+        return seasons_content
 
-    def _get_communication_style(self, sign1: Dict, sign2: Dict) -> str:
-        """İletişim tarzı"""
-        return f"İletişimde {sign1['quality'].lower()} ve {sign2['quality'].lower()} yaklaşımlarınız dengeleyici etki yapar."
+    def generate_zodiac_yearly_forecasts(self, year: int) -> str:
+        """Burç bazında yıllık tahminler"""
+        zodiac_content = ""
 
-    def _get_conflict_resolution(self, sign1: Dict, sign2: Dict) -> str:
-        """Çatışma çözümü"""
-        return "Anlaşmazlıklarda empati ve sabırla hareket etmeniz çözüm getirir."
+        for sign_key, sign_data in self.zodiac_data.items():
+            yearly_score = random.randint(75, 95)
+            lucky_months = random.sample(['Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım'], 3)
 
-    def _get_long_term_compatibility(self, sign1: Dict, sign2: Dict) -> str:
-        """Uzun vadeli uyum"""
-        return "Uzun vadede birbirinizi tamamlayıcı enerjileriniz sayesinde güçlü bir bağ kurabilirsiniz."
+            life_areas = {
+                "Aşk ve İlişkiler": random.randint(70, 90),
+                "Kariyer ve İş": random.randint(75, 95),
+                "Sağlık ve Enerji": random.randint(80, 95),
+                "Finans ve Para": random.randint(65, 85),
+                "Aile ve Ev": random.randint(70, 90),
+                "Sosyal Hayat": random.randint(75, 90)
+            }
 
-    def _get_advice_for_sign(self, target_sign: Dict, partner_sign: Dict) -> str:
-        """Burç için tavsiyeler"""
-        return f"• Partnerinizin {partner_sign['element'].lower()} elementini anlayın\n• {target_sign['ruling_planet']} enerjinizi pozitif kullanın"
+            zodiac_content += f"""
+### {sign_data['symbol']} {sign_data['name']} Burcu - {year}
+**Yıllık Enerji:** %{yearly_score} | **Şanslı Aylar:** {', '.join(lucky_months)}
 
-    def _get_shared_activities(self, sign1: Dict, sign2: Dict) -> str:
-        """Ortak aktiviteler"""
-        activities = ["Doğa yürüyüşleri", "Sanat etkinlikleri", "Seyahat planları", "Spor aktiviteleri"]
-        return f"• {random.choice(activities)}\n• {random.choice(activities)}"
+Bu yıl {sign_data['name']} burcu için **{random.choice(['büyüme', 'dönüşüm', 'başarı', 'dengeleme'])}** yılı olacak. {sign_data['ruling_planet']} gezeni size özel destek sağlayacak.
 
-    def _get_emotional_score_desc(self) -> str:
-        return random.choice(["Güçlü duygusal bağ", "Derin anlayış", "Empatik bağlantı"])
+**Yaşam Alanları Puanları:**
+"""
 
-    def _get_communication_score_desc(self) -> str:
-        return random.choice(["Açık iletişim", "Ortak dil", "Anlayışlı dialog"])
+            for area, score in life_areas.items():
+                zodiac_content += f"- {area}: %{score}\n"
 
-    def _get_physical_score_desc(self) -> str:
-        return random.choice(["Güçlü çekim", "Uyumlu enerji", "Fiziksel uyum"])
+            # Dönemlik öneriler
+            best_period = random.choice(['İlkbahar', 'Yaz', 'Sonbahar', 'Kış'])
+            zodiac_content += f"""
+**En İyi Dönem:** {best_period} - {self.yearly_periods[best_period]['theme']}
 
-    def _get_lifestyle_score_desc(self) -> str:
-        return random.choice(["Benzer tercihler", "Tamamlayıcı yaşam tarzı", "Ortak hedefler"])
+**Yıllık Tavsiyeler:**
+- {random.choice(['Cesur adımlar atın', 'Sabırlı olun', 'Değişime açık olun', 'Dengeyi koruyun'])}
+- {random.choice(['İlişkilere yatırım yapın', 'Kariyere odaklanın', 'Sağlığınızı öncelik yapın', 'Finansal planlama yapın'])}
+- {random.choice(['Yaratıcılığınızı kullanın', 'Sosyal bağlar kurun', 'İç sesinizi dinleyin', 'Öğrenmeye devam edin'])}
 
-    def _get_values_score_desc(self) -> str:
-        return random.choice(["Ortak değerler", "Benzer öncelikler", "Uyumlu idealler"])
+---
+"""
 
-    def _get_relationship_strengths(self, sign1: Dict, sign2: Dict) -> str:
-        return f"• {sign1['element']} - {sign2['element']} elementi uyumu\n• Güçlü karşılıklı anlayış"
+        return zodiac_content
 
-    def _get_relationship_challenges(self, sign1: Dict, sign2: Dict) -> str:
-        return "• Farklılıklarınızı anlamaya çalışın\n• Sabırlı olun ve empati gösterin"
+    def get_moon_phase(self, date: datetime) -> str:
+        """Ay evresi hesapla (basit yaklaşım)"""
+        phases = ["Yeni Ay", "Hilal", "İlk Dördün", "Dolunay", "Son Dördün"]
+        # Basit döngüsel hesaplama
+        day_of_year = date.timetuple().tm_yday
+        phase_index = (day_of_year // 7) % len(phases)
+        return phases[phase_index]
 
-    def _get_relationship_enhancement(self, sign1: Dict, sign2: Dict) -> str:
-        return "• Birlikte kaliteli zaman geçirin\n• Açık ve dürüst iletişim kurun"
-
-    def _get_compatibility_level(self, score: int) -> str:
-        if score >= 85:
-            return "mükemmel"
-        elif score >= 75:
-            return "çok iyi"
-        elif score >= 65:
-            return "iyi"
-        else:
-            return "orta"
-
-    def create_content_file(self, content_data: Dict[str, str]) -> str:
-        """İçeriği dosyaya kaydet"""
-        filename = f"{content_data['slug']}.md"
+    def create_content_file(self, content_data: Dict) -> str:
+        """İçerik dosyası oluştur"""
+        filename = content_data.get('filename', f"content-{datetime.now().strftime('%Y%m%d%H%M%S')}.md")
         filepath = os.path.join(self.content_dir, filename)
 
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(content_data['content'])
 
-        return filepath    def run_interactive_mode(self):
-        """İnteraktif mod"""
-        print("🌟 Premium Astroloji Araçları")
-        print("=" * 50)
+        return filepath
+
+    def run_interactive_mode(self):
+        """İnteraktif mod v2.0"""
+        print("🌟 Premium Astroloji Araçları v2.0")
+        print("=" * 60)
 
         while True:
             print("\nPremium Özellikler:")
@@ -457,101 +524,61 @@ compatibilityScore: {compatibility_score}
             print("3. Rastgele doğum haritası oluştur (demo)")
             print("4. Rastgele uyumluluk analizi oluştur (demo)")
             print("5. Premium içerik istatistikleri")
-            print("6. Çıkış")
-
-            choice = input("\nSeçiminiz (1-6): ").strip()
-            print("7. Yıllık Astroloji Tahmini")
+            print("6. 🆕 Haftalık Astroloji Raporu")
+            print("7. 🆕 Yıllık Astroloji Tahmini")
             print("8. Çıkış")
 
             choice = input("\nSeçiminiz (1-8): ").strip()
 
-            if choice == "1":
-                name = input("İsim: ").strip()
-                print("\nBurç seçimi:")
-                for i, (key, data) in enumerate(self.zodiac_data.items(), 1):
-                    print(f"{i:2d}. {data['name']}")
-
+            if choice == "6":
+                # Premium Özellik 4: Haftalık Astroloji Raporu
                 try:
-                    sign_choice = int(input("\nBurç numarası (1-12): ")) - 1
-                    signs = list(self.zodiac_data.keys())
-                    if 0 <= sign_choice < len(signs) and name:
-                        sign_key = signs[sign_choice]
-                        birth_details = {"demo": True}  # Demo için
-                        content_data = self.create_birth_chart_content(name, sign_key, birth_details)
-                        filepath = self.create_content_file(content_data)
-                        print(f"✅ {name} için doğum haritası oluşturuldu: {filepath}")
-                    else:
-                        print("❌ Geçersiz bilgiler")
-                except ValueError:
-                    print("❌ Geçerli bir sayı girin")
+                    filepath = self.create_weekly_astrology_report()
+                    print(f"📄 Dosya konumu: {filepath}")
+                except Exception as e:
+                    print(f"❌ Hata: {e}")
 
-            elif choice == "2":
-                print("\nİlk burç seçimi:")
-                for i, (key, data) in enumerate(self.zodiac_data.items(), 1):
-                    print(f"{i:2d}. {data['name']}")
-
+            elif choice == "7":
+                # Premium Özellik 5: Yıllık Astroloji Tahmini
                 try:
-                    sign1_choice = int(input("\nİlk burç (1-12): ")) - 1
-                    sign2_choice = int(input("İkinci burç (1-12): ")) - 1
-                    signs = list(self.zodiac_data.keys())
-
-                    if 0 <= sign1_choice < len(signs) and 0 <= sign2_choice < len(signs):
-                        sign1_key = signs[sign1_choice]
-                        sign2_key = signs[sign2_choice]
-                        content_data = self.create_compatibility_analysis(sign1_key, sign2_key)
-                        filepath = self.create_content_file(content_data)
-                        print(f"✅ {self.zodiac_data[sign1_key]['name']} - {self.zodiac_data[sign2_key]['name']} uyumluluk analizi oluşturuldu")
-                        print(f"📊 Uyumluluk skoru: %{content_data['score']}")
+                    year = input(f"Hangi yıl için tahmin? (varsayılan: {datetime.now().year + 1}): ").strip()
+                    if not year:
+                        year = datetime.now().year + 1
                     else:
-                        print("❌ Geçersiz seçim")
+                        year = int(year)
+
+                    # Geçici olarak create_yearly_astrology_forecast'ı çağır
+                    filepath = self.create_yearly_astrology_forecast()
+                    print(f"📄 Dosya konumu: {filepath}")
                 except ValueError:
-                    print("❌ Geçerli sayılar girin")
-
-            elif choice == "3":
-                # Demo doğum haritası
-                demo_names = ["Ahmet", "Ayşe", "Mehmet", "Fatma", "Ali", "Zeynep"]
-                name = random.choice(demo_names)
-                sign_key = random.choice(list(self.zodiac_data.keys()))
-                birth_details = {"demo": True}
-                content_data = self.create_birth_chart_content(name, sign_key, birth_details)
-                filepath = self.create_content_file(content_data)
-                print(f"✅ Demo doğum haritası oluşturuldu: {name} ({self.zodiac_data[sign_key]['name']})")
-
-            elif choice == "4":
-                # Demo uyumluluk analizi
-                signs = list(self.zodiac_data.keys())
-                sign1_key = random.choice(signs)
-                sign2_key = random.choice(signs)
-                content_data = self.create_compatibility_analysis(sign1_key, sign2_key)
-                filepath = self.create_content_file(content_data)
-                print(f"✅ Demo uyumluluk analizi: {self.zodiac_data[sign1_key]['name']} - {self.zodiac_data[sign2_key]['name']}")
-                print(f"📊 Uyumluluk skoru: %{content_data['score']}")
+                    print("❌ Geçerli bir yıl girin")
+                except Exception as e:
+                    print(f"❌ Hata: {e}")
 
             elif choice == "5":
                 files = [f for f in os.listdir(self.content_dir) if f.endswith('.md')]
                 birth_charts = [f for f in files if 'dogum-haritasi' in f]
                 compatibility = [f for f in files if 'uyumluluk' in f]
+                weekly_reports = [f for f in files if 'haftalik-astroloji' in f]
+                yearly_forecasts = [f for f in files if 'yillik-astroloji' in f]
+
                 print(f"📊 Premium İçerik İstatistikleri:")
                 print(f"🔮 Doğum Haritaları: {len(birth_charts)} adet")
                 print(f"💕 Uyumluluk Analizleri: {len(compatibility)} adet")
-                print(f"📄 Toplam Premium İçerik: {len(birth_charts) + len(compatibility)} adet")            elif choice == "6":
-                # Premium Özellik 4: Haftalık Astroloji Raporu
-                self.create_weekly_astrology_report()
-
-            elif choice == "7":
-                # Premium Özellik 5: Yıllık Astroloji Tahmini
-                self.create_yearly_astrology_forecast()
+                print(f"📅 Haftalık Raporlar: {len(weekly_reports)} adet")
+                print(f"🎯 Yıllık Tahminler: {len(yearly_forecasts)} adet")
+                print(f"📄 Toplam Premium İçerik: {len(birth_charts) + len(compatibility) + len(weekly_reports) + len(yearly_forecasts)} adet")
 
             elif choice == "8":
-                print("👋 Premium araçlar kapatılıyor...")
+                print("👋 Premium araçlar v2.0 kapatılıyor...")
                 break
 
             else:
-                print("❌ Geçersiz seçim")
+                print("❌ Geçersiz seçim (1-8 arası seçin)")
 
 def main():
     """Ana fonksiyon"""
-    tools = PremiumAstrologyTools()
+    tools = PremiumAstrologyToolsV2()
     tools.run_interactive_mode()
 
 if __name__ == "__main__":
