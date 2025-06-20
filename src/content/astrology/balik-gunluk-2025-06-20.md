@@ -3,7 +3,7 @@ title: 'Balık Günlük Yorumu - 20 June 2025'
 date: 2025-06-20
 summary: 'Balık burcu için 20 June 2025 günlük astroloji yorumu ve önerileri.'
 tags: ['astroloji', 'günlük-yorum', 'balık', 'burç', 'yıldız']
-views: 625
+views: 211
 author: 'MindVerse Astroloji Uzmanı'
 keywords: 'Balık, günlük yorum, astroloji, burç yorumu, 20 June 2025'
 ---
@@ -22,7 +22,7 @@ Sevdiğiniz kişiyle güzel anlar yaşayacaksınız. İçinizdeki romantik duygu
 
 ### Kariyer ve İş 💼
 
-Kariyerinizde yeni adımlar atma zamanı. Bugün aldığınız kararlar, geleceğinizi şekillendirebilir.
+İş hayatında yaratıcı çözümler bulacaksınız. Bugün aldığınız kararlar, geleceğinizi şekillendirebilir.
 
 ### Sağlık ve Enerji 🌟
 
@@ -30,14 +30,14 @@ Zihinsel ve fiziksel dengeyi koruyun. Vücudunuzun verdiği sinyalleri dinleyin 
 
 ### Günün Önerisi
 
-Bugün özellikle yeşil renk size şans getirebilir. Önemli kararları verirken sezgilerinizi dinleyin.
+Bugün özellikle kırmızı renk size şans getirebilir. Önemli kararları verirken sezgilerinizi dinleyin.
 
 ### Şanslı Detaylar
 
-- **Şanslı Sayılar:** 46, 5, 19
-- **Şanslı Renk:** Yeşil
-- **Şanslı Taş:** Obsidyen
-- **Şanslı Yön:** Doğu
+- **Şanslı Sayılar:** 48, 32, 15
+- **Şanslı Renk:** Kırmızı
+- **Şanslı Taş:** Ametist
+- **Şanslı Yön:** Kuzey
 
 ### Dikkat Edilmesi Gerekenler
 

@@ -3,7 +3,7 @@ title: 'Capricorn Daily Horoscope - June 20, 2025'
 date: 2025-06-20
 summary: 'Daily astrology reading and recommendations for Capricorn on June 20, 2025.'
 tags: ['astrology', 'daily-horoscope', 'capricorn', 'zodiac', 'stars']
-views: 386
+views: 478
 author: 'MindVerse Astrology Expert'
 keywords: 'Capricorn, daily horoscope, astrology, zodiac reading, June 20, 2025'
 ---
@@ -22,7 +22,7 @@ Time to form deeper connections in your relationship. Express your romantic feel
 
 ### Career & Work 💼
 
-Time to take new steps in your career. The decisions you make today can shape your future.
+Focus on your professional goals. The decisions you make today can shape your future.
 
 ### Health & Energy 🌟
 
@@ -30,14 +30,14 @@ Keep your stress levels under control. Listen to the signals your body gives and
 
 ### Today's Recommendation
 
-The color red may bring you luck today. Trust your intuition when making important decisions.
+The color green may bring you luck today. Trust your intuition when making important decisions.
 
 ### Lucky Details
 
-- **Lucky Numbers:** 24, 19, 31
-- **Lucky Color:** Red
-- **Lucky Stone:** Agate
-- **Lucky Direction:** South
+- **Lucky Numbers:** 20, 32, 34
+- **Lucky Color:** Green
+- **Lucky Stone:** Quartz
+- **Lucky Direction:** North
 
 ### Things to Consider
 
