@@ -10,7 +10,7 @@
 
 ### Initial Issues:
 1. **404 Errors** - Astrology category showing 404 errors
-2. **Turkish Character Encoding** - Characters displaying as "YÄ±ldÄ±zlarÄ±n", "GÃ¼nlÃ¼k" instead of proper Turkish
+2. **Turkish Character Encoding** - Characters displaying as "Yıldızların", "Günlük" instead of proper Turkish
 3. **SSR Crashes** - Sign object undefined errors in dynamic routes
 4. **Content Access** - Inability to access astrology content properly
 
@@ -81,8 +81,8 @@ const sign = signs[slug] || {
 2. **Encoding Fixes** (Applied to 1,010+ files):
 ```python
 replacements = {
-  'Ã§': 'ç', 'Ã‡': 'Ç',
-  'ÄŸ': 'ğ', 'Ä±': 'ı', 'İ': 'İ',
+  'ç': 'ç', 'Ç': 'Ç',
+  'ğ': 'ğ', 'ı': 'ı', 'İ': 'İ',
   'ö': 'ö', 'Ö': 'Ö',
   'ş': 'ş', 'Ş': 'Ş',
   'ü': 'ü', 'Ü': 'Ü'
