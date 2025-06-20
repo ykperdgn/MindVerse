@@ -1,4 +1,6 @@
 ---
+import SpeedInsights from "@vercel/speed-insights/astro";
+
 const { title, description, keywords, image, canonicalUrl } = Astro.props;
 
 // SEO meta verileri
@@ -350,7 +352,6 @@ const currentUrl = canonicalUrl || Astro.url.href;
       }
     });
   </script>
-
   <style>
     @keyframes gradient-move {
       0% { background-position: 0% 50%; }
@@ -362,5 +363,8 @@ const currentUrl = canonicalUrl || Astro.url.href;
       animation: gradient-move 5s ease-in-out infinite;
     }
   </style>
+
+  <!-- Vercel Speed Insights -->
+  <SpeedInsights />
 </body>
 </html>
