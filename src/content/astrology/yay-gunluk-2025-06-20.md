@@ -1,5 +1,8 @@
 ---
 title: 'Yay Günlük Yorumu - 20 June 2025'
+description: "Yay Günlük Yorumu - 20 June 2025"
+pubDate: 2025-06-20
+category: "daily-horoscope"
 date: 2025-06-20
 summary: 'Yay burcu için 20 June 2025 günlük astroloji yorumu ve önerileri.'
 tags: ['astroloji', 'günlük-yorum', 'yay', 'burç', 'yıldız']

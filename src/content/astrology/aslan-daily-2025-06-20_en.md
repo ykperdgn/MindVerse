@@ -1,5 +1,8 @@
 ---
 title: 'Leo Daily Horoscope - June 20, 2025'
+description: "Leo Daily Horoscope - June 20, 2025"
+pubDate: 2025-06-20
+category: "daily-horoscope"
 date: 2025-06-20
 summary: 'Daily astrology reading and recommendations for Leo on June 20, 2025.'
 tags: ['astrology', 'daily-horoscope', 'leo', 'zodiac', 'stars']

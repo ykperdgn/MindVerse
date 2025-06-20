@@ -1,5 +1,8 @@
 ---
 title: 'Aquarius Daily Horoscope - June 20, 2025'
+description: "Aquarius Daily Horoscope - June 20, 2025"
+pubDate: 2025-06-20
+category: "daily-horoscope"
 date: 2025-06-20
 summary: 'Daily astrology reading and recommendations for Aquarius on June 20, 2025.'
 tags: ['astrology', 'daily-horoscope', 'aquarius', 'zodiac', 'stars']

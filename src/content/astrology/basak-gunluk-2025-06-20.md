@@ -1,5 +1,8 @@
 ---
 title: 'Başak Günlük Yorumu - 20 June 2025'
+description: "Başak Günlük Yorumu - 20 June 2025"
+pubDate: 2025-06-20
+category: "daily-horoscope"
 date: 2025-06-20
 summary: 'Başak burcu için 20 June 2025 günlük astroloji yorumu ve önerileri.'
 tags: ['astroloji', 'günlük-yorum', 'başak', 'burç', 'yıldız']
