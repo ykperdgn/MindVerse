@@ -1,18 +1,21 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Otomatik Premium İçerik Oluşturucu
+Otomatik Premium İçerik Oluşturucu v2.0
+Premium Özellik 4 ve 5 dahil
 """
 
 from premium_astrology_tools import PremiumAstrologyTools
+from premium_astrology_tools_v2 import PremiumAstrologyToolsV2
 import random
 
 def create_premium_demos():
     """Otomatik demo içerikler oluştur"""
     tools = PremiumAstrologyTools()
+    tools_v2 = PremiumAstrologyToolsV2()
 
-    print("🌟 Otomatik Premium İçerik Oluşturuluyor...")
-    print("=" * 50)
+    print("🌟 Otomatik Premium İçerik Oluşturucu v2.0")
+    print("=" * 60)
 
     # Demo isimleri
     demo_names = ["Ahmet", "Ayşe", "Mehmet", "Fatma", "Ali", "Zeynep", "Can", "Elif", "Murat", "Selin"]
@@ -43,7 +46,26 @@ def create_premium_demos():
         created_files.append(filepath)
         print(f"✅ {tools.zodiac_data[sign1_key]['name']} - {tools.zodiac_data[sign2_key]['name']} uyumluluk analizi (%{content_data['score']})")
 
+    # 3 haftalık rapor oluştur (v2.0 özelliği)
+    print("\n📅 Haftalık Astroloji Raporları Oluşturuluyor...")
+    for i in range(3):
+        filepath = tools_v2.create_weekly_astrology_report()
+        created_files.append(filepath)
+        print(f"✅ Haftalık astroloji raporu oluşturuldu")
+
+    # 2 yıllık tahmin oluştur (v2.0 özelliği)
+    print("\n🎯 Yıllık Astroloji Tahminleri Oluşturuluyor...")
+    for year in [2026, 2027]:
+        filepath = tools_v2.create_yearly_astrology_forecast()
+        created_files.append(filepath)
+        print(f"✅ {year} yılı astroloji tahmini oluşturuldu")
+
     print(f"\n🎉 Toplam {len(created_files)} premium içerik oluşturuldu!")
+    print("\n📊 İçerik Dağılımı:")
+    print(f"🔮 Doğum Haritaları: 5 adet")
+    print(f"💕 Uyumluluk Analizleri: 5 adet")
+    print(f"📅 Haftalık Raporlar: 3 adet")
+    print(f"🎯 Yıllık Tahminler: 2 adet")
 
     return created_files
 

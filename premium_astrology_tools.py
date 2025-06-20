@@ -445,20 +445,21 @@ compatibilityScore: {compatibility_score}
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(content_data['content'])
 
-        return filepath
-
-    def run_interactive_mode(self):
+        return filepath    def run_interactive_mode(self):
         """İnteraktif mod"""
         print("🌟 Premium Astroloji Araçları")
         print("=" * 50)
 
-        while True:            print("\nPremium Özellikler:")
+        while True:
+            print("\nPremium Özellikler:")
             print("1. Kişiselleştirilmiş Doğum Haritası")
             print("2. Burç Uyumluluk Analizi")
             print("3. Rastgele doğum haritası oluştur (demo)")
             print("4. Rastgele uyumluluk analizi oluştur (demo)")
             print("5. Premium içerik istatistikleri")
-            print("6. Haftalık Astroloji Raporu")
+            print("6. Çıkış")
+
+            choice = input("\nSeçiminiz (1-6): ").strip()
             print("7. Yıllık Astroloji Tahmini")
             print("8. Çıkış")
 
