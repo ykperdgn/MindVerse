@@ -992,7 +992,13 @@ Important lessons in responsibility and order...
 
 
 class NewsletterSystem:
-    """Newsletter subscription and sending system"""
+    """Newsletter subscription and sending system
+
+    Subscribers receive newsletters in their preferred language (tr/en).
+    - If a user subscribes from the Turkish page (language='tr'), they get Turkish newsletters.
+    - If a user subscribes from the English page (language='en'), they get English newsletters.
+    The system automatically groups subscribers by language and sends the correct content.
+    """
 
     def __init__(self):
         self.base_path = Path(__file__).parent
@@ -1040,7 +1046,11 @@ class NewsletterSystem:
             return []
 
     def send_weekly_newsletter(self, articles, horoscopes):
-        """Send weekly newsletter to subscribers"""
+        """Send weekly newsletter to subscribers
+
+        This function automatically groups all active subscribers by their language preference
+        and sends Turkish or English newsletters accordingly. No manual filtering is needed.
+        """
         print("📧 Preparing weekly newsletter...")
 
         try:
@@ -1069,25 +1079,50 @@ class NewsletterSystem:
             print(f"   ❌ Error sending newsletter: {e}")
 
     def send_newsletter_batch(self, subscribers, articles, horoscopes, language):
-        """Send newsletter to a batch of subscribers"""
+        """Send newsletter to a batch of subscribers via Gmail SMTP"""
+        import smtplib
+        from email.mime.text import MIMEText
+        from email.mime.multipart import MIMEMultipart
 
-        # Create newsletter content
+        # Gmail SMTP ayarları
+        SMTP_SERVER = 'smtp.gmail.com'
+        SMTP_PORT = 587
+        GMAIL_USER = 'mindversedaily@gmail.com'  # GÖNDEREN ADRESİNİZ
+        GMAIL_PASSWORD = 'zlmgmoaaryfjidlf'      # Gmail uygulama şifresi (boşluksuz yazın)
+
         subject, content = self.create_newsletter_content(articles, horoscopes, language)
+        print(f"   📬 Sending {language.upper()} newsletter to {len(subscribers)} subscribers via Gmail SMTP")
 
-        print(f"   📬 Sending {language.upper()} newsletter to {len(subscribers)} subscribers")
+        # E-posta gönderimi
+        try:
+            server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
+            server.starttls()
+            server.login(GMAIL_USER, GMAIL_PASSWORD)
 
-        # In production, this would integrate with email service like SendGrid, Mailgun, etc.
-        # For now, we'll just log the action
+            for subscriber in subscribers:
+                to_email = subscriber['email']
+                msg = MIMEMultipart()
+                msg['From'] = GMAIL_USER
+                msg['To'] = to_email
+                msg['Subject'] = subject
+                msg.attach(MIMEText(content, 'plain', 'utf-8'))
+                server.sendmail(GMAIL_USER, to_email, msg.as_string())
+                print(f"      ✅ Sent to {to_email}")
 
+            server.quit()
+            status = 'sent'
+        except Exception as e:
+            print(f"      ❌ Error sending: {e}")
+            status = f'error: {e}'
+
+        # Save newsletter log
         newsletter_log = {
             'date': datetime.now().isoformat(),
             'language': language,
             'subscribers_count': len(subscribers),
             'subject': subject,
-            'status': 'sent'
+            'status': status
         }
-
-        # Save newsletter log
         log_file = self.base_path / f"newsletter_log_{language}_{datetime.now().strftime('%Y%m%d')}.json"
         with open(log_file, 'w', encoding='utf-8') as f:
             json.dump(newsletter_log, f, ensure_ascii=False, indent=2)
