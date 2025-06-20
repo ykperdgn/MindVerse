@@ -1,0 +1,281 @@
+---
+import Layout from '../../components/Layout.astro';
+import RelatedPosts from '../../components/RelatedPosts.astro';
+import { getCollection, getEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const astrologyPosts = await getCollection('astrology');
+
+  return astrologyPosts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post }
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+// Burç bilgileri
+const zodiacSigns = {
+  'koc': { name: 'Koç', symbol: '♈', element: 'Ateş', color: 'red' },
+  'boga': { name: 'Boğa', symbol: '♉', element: 'Toprak', color: 'green' },
+  'ikizler': { name: 'İkizler', symbol: '♊', element: 'Hava', color: 'blue' },
+  'yengec': { name: 'Yengeç', symbol: '♋', element: 'Su', color: 'cyan' },
+  'aslan': { name: 'Aslan', symbol: '♌', element: 'Ateş', color: 'orange' },
+  'basak': { name: 'Başak', symbol: '♍', element: 'Toprak', color: 'green' },
+  'terazi': { name: 'Terazi', symbol: '♎', element: 'Hava', color: 'pink' },
+  'akrep': { name: 'Akrep', symbol: '♏', element: 'Su', color: 'purple' },
+  'yay': { name: 'Yay', symbol: '♐', element: 'Ateş', color: 'orange' },
+  'oglak': { name: 'Oğlak', symbol: '♑', element: 'Toprak', color: 'gray' },
+  'kova': { name: 'Kova', symbol: '♒', element: 'Hava', color: 'blue' },
+  'balik': { name: 'Balık', symbol: '♓', element: 'Su', color: 'cyan' }
+};
+
+const signKey = post.data.zodiacSign ||
+  Object.keys(zodiacSigns).find(key => post.slug.includes(key)) || 'koc';
+const signInfo = zodiacSigns[signKey];
+
+// Benzer içerikler
+const allPosts = await getCollection('astrology');
+const relatedPosts = allPosts
+  .filter(p => p.slug !== post.slug && (p.data.zodiacSign === signKey || p.slug.includes(signKey)))
+  .slice(0, 3);
+---
+
+<Layout
+  title={post.data.title}
+  description={post.data.description}
+  ogImage={post.data.heroImage}
+>
+  <!-- Hero Section -->
+  <div class={`bg-gradient-to-br from-${signInfo.color}-600 via-${signInfo.color}-700 to-${signInfo.color}-800 text-white py-16`}>
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+
+        <!-- Burç Bilgisi -->
+        <div class="flex justify-center items-center mb-6">
+          <div class="bg-white/20 rounded-full p-4 mr-4">
+            <span class="text-6xl">{signInfo.symbol}</span>
+          </div>
+          <div class="text-left">
+            <h2 class="text-2xl font-bold">{signInfo.name} Burcu</h2>
+            <p class="text-lg opacity-90">Element: {signInfo.element}</p>
+          </div>
+        </div>
+
+        <!-- Başlık -->
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+          {post.data.title}
+        </h1>
+
+        <!-- Meta Bilgiler -->
+        <div class="flex justify-center items-center space-x-6 text-sm opacity-90">
+          <div class="flex items-center">
+            <span class="mr-2">📅</span>
+            {new Date(post.data.pubDate).toLocaleDateString('tr-TR', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            })}
+          </div>
+
+          {post.data.theme && (
+            <div class="flex items-center">
+              <span class="mr-2">🌟</span>
+              {post.data.theme}
+            </div>
+          )}
+
+          <div class="flex items-center">
+            <span class="mr-2">⏱️</span>
+            3 dk okuma
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- İçerik -->
+  <article class="container mx-auto px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+
+      <!-- Navigasyon -->
+      <nav class="mb-8 text-sm">
+        <ol class="flex items-center space-x-2 text-gray-500">
+          <li><a href="/" class="hover:text-purple-600">Ana Sayfa</a></li>
+          <li>→</li>
+          <li><a href="/astrology" class="hover:text-purple-600">Astroloji</a></li>
+          <li>→</li>
+          <li class="text-gray-800 font-medium">{signInfo.name} Burcu</li>
+        </ol>
+      </nav>
+
+      <!-- Ana İçerik -->
+      <div class="prose prose-lg max-w-none">
+        <!-- Özel uyarı kutusu -->
+        <div class={`bg-${signInfo.color}-50 border-l-4 border-${signInfo.color}-500 p-6 mb-8 rounded-r-lg`}>
+          <div class="flex items-start">
+            <span class="text-2xl mr-3">{signInfo.symbol}</span>
+            <div>
+              <h3 class="font-bold text-lg mb-2">🔮 Astroloji Rehberi</h3>
+              <p class="text-gray-700">
+                Bu yorum {signInfo.name} burcu için özel olarak hazırlanmıştır.
+                Kişisel gelişiminiz için rehber olarak kullanın.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Markdown İçerik -->
+        <Content />
+      </div>
+
+      <!-- Paylaşım Butonları -->
+      <div class="mt-12 pt-8 border-t border-gray-200">
+        <h3 class="text-lg font-semibold mb-4">Bu yorumu paylaş:</h3>
+        <div class="flex space-x-4">
+          <a
+            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.data.title)}&url=${encodeURIComponent(`https://mindversedaily.com/astrology/${post.slug}`)}`}
+            target="_blank"
+            class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors"
+          >
+            🐦 Twitter
+          </a>
+
+          <a
+            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://mindversedaily.com/astrology/${post.slug}`)}`}
+            target="_blank"
+            class="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-colors"
+          >
+            📘 Facebook
+          </a>
+
+          <a
+            href={`https://api.whatsapp.com/send?text=${encodeURIComponent(post.data.title + ' ' + `https://mindversedaily.com/astrology/${post.slug}`)}`}
+            target="_blank"
+            class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors"
+          >
+            📱 WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Benzer Burç Yorumları -->
+      {relatedPosts.length > 0 && (
+        <section class="mt-16">
+          <h3 class="text-2xl font-bold mb-8 text-center">
+            📰 {signInfo.name} Burcu Diğer Yorumlar
+          </h3>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            {relatedPosts.map((relatedPost) => (
+              <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <div class="p-6">
+                  <div class="flex items-center mb-3">
+                    <span class="text-2xl mr-2">{signInfo.symbol}</span>
+                    <span class="text-sm text-gray-500">
+                      {new Date(relatedPost.data.pubDate).toLocaleDateString('tr-TR')}
+                    </span>
+                  </div>
+
+                  <h4 class="font-semibold text-gray-800 mb-3 line-clamp-2">
+                    {relatedPost.data.title}
+                  </h4>
+
+                  <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                    {relatedPost.data.description}
+                  </p>
+
+                  <a
+                    href={`/astrology/${relatedPost.slug}`}
+                    class={`inline-block bg-${signInfo.color}-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-${signInfo.color}-700 transition-colors`}
+                  >
+                    Yorumu Oku →
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
+    </div>
+  </article>
+
+  <!-- Newsletter Signup -->
+  <section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="text-2xl font-bold mb-4">📧 Günlük Burç Yorumları</h3>
+      <p class="text-gray-600 mb-6">
+        {signInfo.name} burcu günlük yorumlarını e-posta ile almak ister misiniz?
+      </p>
+
+      <div class="max-w-md mx-auto flex">
+        <input
+          type="email"
+          placeholder="E-posta adresiniz"
+          class="flex-1 px-4 py-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+        />
+        <button class={`bg-${signInfo.color}-600 text-white px-6 py-3 rounded-r-lg hover:bg-${signInfo.color}-700 transition-colors font-medium`}>
+          Abone Ol
+        </button>
+      </div>
+
+      <p class="text-xs text-gray-500 mt-2">
+        Spam yapmayız. İstediğiniz zaman abonelikten çıkabilirsiniz.
+      </p>
+    </div>
+  </section>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": post.data.title,
+      "description": post.data.description,
+      "datePublished": post.data.pubDate,
+      "dateModified": post.data.pubDate,
+      "author": {
+        "@type": "Organization",
+        "name": "MindVerse Daily"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "MindVerse Daily",
+        "url": "https://mindversedaily.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": `https://mindversedaily.com/astrology/${post.slug}`
+      },
+      "keywords": post.data.tags?.join(', ') || '',
+      "inLanguage": "tr-TR"
+    }
+  </script>
+
+  <style>
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .prose h1 { @apply text-3xl font-bold mb-6 text-gray-900; }
+    .prose h2 { @apply text-2xl font-bold mb-4 mt-8 text-gray-800; }
+    .prose h3 { @apply text-xl font-bold mb-3 mt-6 text-gray-800; }
+    .prose p { @apply mb-4 text-gray-700 leading-relaxed; }
+    .prose ul { @apply mb-4 pl-6; }
+    .prose li { @apply mb-2 text-gray-700; }
+    .prose strong { @apply font-semibold text-gray-900; }
+    .prose em { @apply italic; }
+  </style>
+</Layout>

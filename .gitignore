@@ -43,3 +43,4 @@ temp/
 
 # Temporary problematic files
 src/pages/[category]/index_new.astro
+.vercel
