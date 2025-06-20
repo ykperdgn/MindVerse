@@ -1,0 +1,7 @@
+{
+  "email_notifications": false,
+  "slack_webhook": null,
+  "auto_fix_enabled": true,
+  "monitoring_enabled": true,
+  "log_level": "info"
+}

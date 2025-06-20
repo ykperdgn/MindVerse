@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-🚀 Enhanced Daily Automation - 12 Articles Per Day
+Enhanced Daily Automation - 12 Articles Per Day
 Generates 2 articles per category daily (1 Turkish + 1 English)
 """
 
@@ -102,14 +102,14 @@ class EnhancedDailyAutomation:
 
     def generate_daily_content(self):
         """Generate 2 articles per category (12 total daily)"""
-        print("🚀 Enhanced Daily Content Generation Starting...")
-        print(f"📊 Target: {self.articles_per_category} articles × {len(self.categories)} categories = {self.articles_per_category * len(self.categories)} articles")
+        print("Enhanced Daily Content Generation Starting...")
+        print(f"Target: {self.articles_per_category} articles * {len(self.categories)} categories = {self.articles_per_category * len(self.categories)} articles")
 
         total_created = 0
         today = datetime.now().strftime("%Y-%m-%d")
 
         for category in self.categories.keys():
-            print(f"\n📁 Generating {category} articles...")
+            print(f"\nGenerating {category} articles...")
 
             try:
                 # Generate Turkish article
@@ -117,22 +117,22 @@ class EnhancedDailyAutomation:
                 tr_file = self.create_article(category, 'tr', tr_topic, today)
                 if tr_file:
                     total_created += 1
-                    print(f"  ✅ Turkish: {Path(tr_file).name}")
+                    print(f"  Turkish: {Path(tr_file).name}")
 
                 # Generate English article
                 en_topic = random.choice(self.topic_pools[category]['en'])
                 en_file = self.create_article(category, 'en', en_topic, today)
                 if en_file:
                     total_created += 1
-                    print(f"  ✅ English: {Path(en_file).name}")
+                    print(f"  English: {Path(en_file).name}")
 
             except Exception as e:
-                print(f"  ❌ Error in {category}: {e}")
+                print(f"  Error in {category}: {e}")
 
-        print(f"\n🎉 Daily generation completed!")
-        print(f"📈 Created {total_created} articles today ({today})")
-        print(f"📊 Monthly projection: ~{total_created * 30} articles")
-        print(f"📈 Annual projection: ~{total_created * 365} articles")
+        print(f"\nDaily generation completed!")
+        print(f"Created {total_created} articles today ({today})")
+        print(f"Monthly projection: ~{total_created * 30} articles")
+        print(f"Annual projection: ~{total_created * 365} articles")
 
         return total_created
 
