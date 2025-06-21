@@ -1,7 +1,7 @@
 ---
 import Layout from '../components/Layout.astro';
 
-const categories = ['health', 'love', 'history', 'psychology', 'space', 'quotes', 'astrology'];
+const categories = ['health', 'love', 'history', 'psychology', 'space', 'quotes', 'astrology', 'art', 'cinema', 'technology'];
 
 const categoryInfo = {
   health: { name: 'Sağlık', icon: '🏥', color: 'green' },
@@ -10,7 +10,10 @@ const categoryInfo = {
   psychology: { name: 'Psikoloji', icon: '🧠', color: 'purple' },
   space: { name: 'Uzay', icon: '🚀', color: 'blue' },
   quotes: { name: 'Alıntılar', icon: '💭', color: 'gray' },
-  astrology: { name: 'Astroloji', icon: '🔮', color: 'indigo' }
+  astrology: { name: 'Astroloji', icon: '🔮', color: 'indigo' },
+  art: { name: 'Sanat', icon: '🎨', color: 'pink' },
+  cinema: { name: 'Sinema', icon: '🎬', color: 'orange' },
+  technology: { name: 'Teknoloji', icon: '💻', color: 'teal' }
 };
 ---
 
@@ -29,7 +32,7 @@ const categoryInfo = {
       </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
       {categories.map(category => {
         const info = categoryInfo[category];
         return (
@@ -47,6 +50,9 @@ const categoryInfo = {
                 {category === 'space' && 'Uzay bilimleri ve astronomi'}
                 {category === 'quotes' && 'İlham verici sözler ve alıntılar'}
                 {category === 'astrology' && 'Burç yorumları ve astroloji rehberleri'}
+                {category === 'art' && 'Sanat eserleri ve yaratıcı çalışmalar'}
+                {category === 'cinema' && 'Film önerileri ve sinema dünyası'}
+                {category === 'technology' && 'Teknolojik gelişmeler ve yenilikler'}
               </p>
             </div>
           </a>
